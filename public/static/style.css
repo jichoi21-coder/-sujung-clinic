@@ -5901,26 +5901,26 @@ section { padding: 80px 0; }
 .review-login-box {
   background: #fff; border-radius: 16px;
   box-shadow: 0 4px 32px rgba(0,0,0,.10);
-  padding: 56px 100px 48px;
+  padding: 32px 100px 28px;
   max-width: 780px; width: 100%;
   text-align: center;
 }
 .review-login-icon { display: none; }
 .review-login-title {
   font-size: 2.6rem; font-weight: 900; letter-spacing: 0.1em;
-  color: #111; margin-bottom: 24px;
+  color: #111; margin-bottom: 14px;
 }
 .review-login-divider {
-  width: 100%; height: 1px; background: #e5e7eb; margin-bottom: 28px;
+  width: 100%; height: 1px; background: #e5e7eb; margin-bottom: 18px;
 }
 .review-login-desc {
-  font-size: 1.05rem; color: #444; line-height: 1.8; margin-bottom: 32px;
+  font-size: 1.05rem; color: #444; line-height: 1.8; margin-bottom: 20px;
 }
 .review-login-desc span {
   display: block; font-size: 0.97rem; color: #777; margin-top: 8px;
 }
 .review-login-btns {
-  display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px;
+  display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px;
 }
 .review-login-btn {
   display: flex; align-items: center; justify-content: center;
