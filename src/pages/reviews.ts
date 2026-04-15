@@ -475,17 +475,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <!-- 후기 목록 섹션 -->
     <section class="review-list-section sec-wrap">
 
-      <!-- 카테고리 필터 -->
+      <!-- 카테고리 필터 (2행: 일반진료 + 특설클리닉) -->
       <div class="review-filter-wrap">
-        <button class="review-filter-btn active" data-cat="all">전체</button>
-        <button class="review-filter-btn" data-cat="구안와사">구안와사·안면마비</button>
-        <button class="review-filter-btn" data-cat="디스크">디스크·척추</button>
-        <button class="review-filter-btn" data-cat="피부">피부·아토피</button>
-        <button class="review-filter-btn" data-cat="소화기">소화기</button>
-        <button class="review-filter-btn" data-cat="자율신경">자율신경·공황</button>
-        <button class="review-filter-btn" data-cat="여성">여성질환</button>
-        <button class="review-filter-btn" data-cat="성장">소아성장</button>
-        <button class="review-filter-btn" data-cat="기타">기타</button>
+
+        <!-- 행1: 일반 진료 -->
+        <div class="review-filter-group">
+          <span class="review-filter-label">
+            <i class="fas fa-list-ul"></i> 일반 진료
+          </span>
+          <div class="review-filter-btns">
+            <button class="review-filter-btn active" data-cat="all">전체</button>
+            <button class="review-filter-btn" data-cat="체질다이어트">체질 다이어트</button>
+            <button class="review-filter-btn" data-cat="디스크">디스크·척추</button>
+            <button class="review-filter-btn" data-cat="피부">피부·아토피</button>
+            <button class="review-filter-btn" data-cat="소화기">소화기</button>
+            <button class="review-filter-btn" data-cat="자율신경">자율신경·공황</button>
+            <button class="review-filter-btn" data-cat="여성">여성질환</button>
+            <button class="review-filter-btn" data-cat="성장">소아성장</button>
+            <button class="review-filter-btn" data-cat="기타">기타</button>
+          </div>
+        </div>
+
+        <!-- 행2: 특설클리닉 -->
+        <div class="review-filter-group review-filter-group-special">
+          <span class="review-filter-label review-filter-label-special">
+            <i class="fas fa-star"></i> 특설클리닉
+          </span>
+          <div class="review-filter-btns">
+            <button class="review-filter-btn review-filter-btn-special" data-cat="구안와사">구안와사·안면마비</button>
+            <button class="review-filter-btn review-filter-btn-special" data-cat="편두통">만성 편두통</button>
+            <button class="review-filter-btn review-filter-btn-special" data-cat="기타">대상포진·후신경통</button>
+            <button class="review-filter-btn review-filter-btn-special" data-cat="천식">만성천식·마이코플라즈마</button>
+            <button class="review-filter-btn review-filter-btn-special" data-cat="소화기">궤양성 대장염</button>
+          </div>
+        </div>
+
       </div>
 
       <!-- ── 3열 요약 박스 그리드 스타일 ── -->
@@ -613,10 +637,31 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         }
       </style>
 
+      <!-- 자필후기 안내 배너 -->
+      <div class="review-handwritten-banner">
+        <i class="fas fa-pen-nib"></i>
+        <span>아래 자필 후기는 환자분이 직접 손으로 작성하신 원본입니다. 이미지와 함께 원문 텍스트를 제공합니다.</span>
+      </div>
+
       <!-- 후기 카드 그리드 -->
       <div class="review-grid" id="reviewGrid">
 
-        <!-- ① 구안와사·안면마비 -->
+        <!-- ① 체질 다이어트 -->
+        <article class="review-card" data-cat="체질다이어트" data-id="r10" role="button" tabindex="0"
+          aria-label="후기 상세 보기: 6개월 만에 17.3kg 감량">
+          <div class="review-card-header">
+            <span class="review-cat-tag">체질 다이어트</span>
+            <span class="review-date">2020.01.21</span>
+          </div>
+          <h3 class="review-card-title">6개월 만에 17.3kg 감량 — 내과 다이어트 약 부작용으로 포기했다가 체질로 성공</h3>
+          <p class="review-card-body">내과에서 다이어트 약을 먹었지만 부작용만 심해지고 체중은 그대로였습니다. 우울증까지 생겼어요.</p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*은 (40대, 여)</span>
+            <div class="review-stars">★★★★★</div>
+          </div>
+        </article>
+
+        <!-- ③ 구안와사·안면마비 -->
         <article class="review-card" data-cat="구안와사" data-id="r1" role="button" tabindex="0"
           aria-label="후기 상세 보기: 2주 만에 눈이 완전히 감겼어요">
           <div class="review-card-header">
@@ -781,6 +826,20 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   <script>
   // ── 후기 상세 데이터 ──────────────────────────────────────────
   const REVIEWS = {
+    r10: {
+      cat: '체질 다이어트', date: '2020.01.21',
+      title: '6개월 만에 17.3kg 감량 — 내과 다이어트 약 부작용으로 포기했다가 체질로 성공',
+      author: '김*은 (40대, 여)', stars: 5,
+      qa: [
+        { q: '다이어트를 시도하게 된 계기와 이전 경험을 알려주세요.',
+          a: '내과에서 처방받은 다이어트 약을 6개월 복용했지만 부작용(두근거림, 불면, 우울감)만 심해지고 체중은 거의 빠지지 않았습니다. 약을 끊고 나서 요요까지 와서 시작 전보다 오히려 더 쪘어요. 다이어트 자체를 포기하려던 참이었습니다.' },
+        { q: '8체질 다이어트가 기존 방법과 어떻게 달랐나요?',
+          a: '체질 진단 결과 토양체질이었고, 제가 살을 빼겠다고 열심히 먹던 닭가슴살·계란이 오히려 토양체질에 맞지 않는 음식이었다는 걸 알게 됐습니다. 체질에 맞는 음식으로 바꾸고 체질 한약을 복용하면서 배고프지 않은데 살이 빠지기 시작했습니다.' },
+        { q: '6개월 치료 결과를 구체적으로 말씀해 주세요.',
+          a: '시작 시 몸무게가 82.3kg이었는데 6개월 후 65.0kg으로 17.3kg 감량에 성공했습니다. 식이 제한이 아닌 체질에 맞는 식이로 바꿨을 뿐인데, 몸이 가벼워지고 피부도 좋아졌습니다. 지금도 요요 없이 유지 중입니다.' }
+      ],
+      handwrittenImg: null
+    },
     r1: {
       cat: '구안와사·안면마비', date: '2025.03.15',
       title: '2주 만에 눈이 완전히 감겼어요',
