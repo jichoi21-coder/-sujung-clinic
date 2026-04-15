@@ -5901,8 +5901,8 @@ section { padding: 80px 0; }
 .review-login-box {
   background: #fff; border-radius: 16px;
   box-shadow: 0 4px 32px rgba(0,0,0,.10);
-  padding: 56px 72px 48px;
-  max-width: 560px; width: 100%;
+  padding: 56px 100px 48px;
+  max-width: 780px; width: 100%;
   text-align: center;
 }
 .review-login-icon { display: none; }
