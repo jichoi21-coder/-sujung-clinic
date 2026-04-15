@@ -488,7 +488,30 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <button class="review-filter-btn" data-cat="기타">기타</button>
       </div>
 
-      <!-- 후기 카드 그리드 -->
+      <!-- 후기 카드 그리드 (3열 요약 모드) -->
+      <style>
+        #reviewGrid {
+          grid-template-columns: repeat(3, 1fr) !important;
+        }
+        #reviewGrid .review-card {
+          padding: 20px;
+          gap: 10px;
+        }
+        #reviewGrid .review-card-body {
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          font-size: 0.9rem;
+          line-height: 1.65;
+        }
+        @media (max-width: 768px) {
+          #reviewGrid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+        @media (max-width: 480px) {
+          #reviewGrid { grid-template-columns: 1fr !important; }
+        }
+      </style>
       <div class="review-grid" id="reviewGrid">
 
         <div class="review-card" data-cat="구안와사">
