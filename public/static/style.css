@@ -5901,14 +5901,14 @@ section { padding: 80px 0; }
 .review-login-box {
   background: #fff; border-radius: 16px;
   box-shadow: 0 4px 32px rgba(0,0,0,.10);
-  padding: 52px 64px 44px;
-  max-width: 780px; width: 100%;
+  padding: 56px 72px 48px;
+  max-width: 560px; width: 100%;
   text-align: center;
 }
 .review-login-icon { display: none; }
 .review-login-title {
-  font-size: 2.4rem; font-weight: 900; letter-spacing: 0.08em;
-  color: #111; margin-bottom: 20px;
+  font-size: 2.6rem; font-weight: 900; letter-spacing: 0.1em;
+  color: #111; margin-bottom: 24px;
 }
 .review-login-divider {
   width: 100%; height: 1px; background: #e5e7eb; margin-bottom: 28px;
@@ -5924,7 +5924,7 @@ section { padding: 80px 0; }
 }
 .review-login-btn {
   display: flex; align-items: center; justify-content: center;
-  gap: 10px; padding: 11px 24px;
+  gap: 10px; padding: 15px 24px;
   border-radius: 10px; font-size: 1.08rem; font-weight: 700;
   text-decoration: none; transition: filter 0.18s, transform 0.18s;
   letter-spacing: 0.01em; width: 100%;
