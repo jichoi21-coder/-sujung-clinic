@@ -1252,7 +1252,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
-          <span class="review-qa-a">전신 침 치료를 받고 싶었고, 비슷한 질환으로 고통받고 있는 환자들이 희망을 갖고 치료를 받을 수 있도록, 이동 중 침과 약침 치료를 받으며 통증이 사라지고 많이 좋아졌습니다.</span>
+          <span class="review-qa-a">정형외과와 내과에서 치료받고도 너무나 아프고 고통스러워서 찾다가 찾다가 수정한의원 간판을 보고 오게 됐습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
