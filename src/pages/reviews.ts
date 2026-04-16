@@ -707,6 +707,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- ===== 자필후기 카드 #9 — 홍0임 (갱년기·불면·족저근막염) ===== -->
+        <div id="reviewCard09" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal09')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">갱년기·불면</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">갱년기 불면과 족저근막염이 함께 좋아졌습니다 — 잠도 잘 자고 생활에 불편함이 없어졌어요</h3>
+          <p class="review-story">
+            갱년기로 잠을 못 자고 자다 깨는 일이 잦았습니다. 족저근막염까지 겹쳐 생활이 매우 힘들었는데,
+            체질침 한약 치료 후 잠도 잘 자고 발 통증도 없어져 생활하는 데 불편함이 없어졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 홍*임 (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1163,6 +1185,54 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     </div>
   </div>
 
+  <!-- 상세 모달 #09 -->
+  <div id="detailModal09" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal09')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">갱년기·불면</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">갱년기 불면과 족저근막염이 함께 좋아졌습니다 — 잠도 잘 자고 생활에 불편함이 없어졌어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        갱년기로 잠을 못 자고 자다 깨는 일이 잦았습니다. 족저근막염까지 겹쳐 생활이 매우 힘들었는데,
+        체질침 한약 치료 후 잠도 잘 자고 발 통증도 없어져 생활하는 데 불편함이 없어졌습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">족저근막염과 갱년기로 인해 잠을 못 자고 자다 깨는 일이 잦아 생활이 힘들었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">건강을 생각해서 치료를 받게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">전반적으로 좋아졌습니다. 피하지 않아도 되고, 잠을 자는데 많이 좋아졌습니다. 장과 손발도 생활하는 데 많이 좋아졌습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">건강하게 잠을 잘 자고 당당해졌습니다. 잘 잠을 자서 당당하게, 생활하는 데 불편함이 없어진 점이 가장 좋습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment-dots"></i> 수정한의원에 하고 싶은 말</span>
+          <span class="review-qa-a">많이 편안하게 해주셔서, 필요한 한의원이라고 생각합니다. 감사합니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-09-hongoim-p1.jpg" alt="갱년기 불면 족저근막염 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 홍*임 (여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
     </section>
   </div>
 
@@ -1188,7 +1258,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard05'), cat: '여성' },
       { el: document.getElementById('reviewCard06'), cat: '디스크' },
       { el: document.getElementById('reviewCard07'), cat: '자율신경' },
-      { el: document.getElementById('reviewCard08'), cat: '대장염' }
+      { el: document.getElementById('reviewCard08'), cat: '대장염' },
+      { el: document.getElementById('reviewCard09'), cat: '여성' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
