@@ -722,7 +722,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   <!-- 상세 모달 #01 -->
   <div id="detailModal01" class="review-detail-modal" onclick="closeReviewModal(event, this)" style="display:none;">
     <div class="review-detail-inner">
-      <button class="review-detail-close" onclick="document.getElementById('detailModal01').style.display='none'">✕ 닫기</button>
+      <button class="review-detail-close" onclick="closeModalById('detailModal01')">✕ 닫기</button>
       <div class="review-detail-header">
         <span class="review-cat-tag review-cat-tag-special">궤양성 대장염</span>
         <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
@@ -774,7 +774,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   <!-- 상세 모달 #02 -->
   <div id="detailModal02" class="review-detail-modal" onclick="closeReviewModal(event, this)" style="display:none;">
     <div class="review-detail-inner">
-      <button class="review-detail-close" onclick="document.getElementById('detailModal02').style.display='none'">✕ 닫기</button>
+      <button class="review-detail-close" onclick="closeModalById('detailModal02')">✕ 닫기</button>
       <div class="review-detail-header">
         <span class="review-cat-tag">체질 다이어트</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (3장)</span>
@@ -837,7 +837,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   <!-- 상세 모달 #03 -->
   <div id="detailModal03" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
-      <button class="review-detail-close" onclick="document.getElementById('detailModal03').style.display='none'">✕ 닫기</button>
+      <button class="review-detail-close" onclick="closeModalById('detailModal03')">✕ 닫기</button>
       <div class="review-detail-header">
         <span class="review-cat-tag">피부·아토피</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -882,7 +882,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   <!-- 상세 모달 #04 -->
   <div id="detailModal04" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
-      <button class="review-detail-close" onclick="document.getElementById('detailModal04').style.display='none'">✕ 닫기</button>
+      <button class="review-detail-close" onclick="closeModalById('detailModal04')">✕ 닫기</button>
       <div class="review-detail-header">
         <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
         <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
@@ -933,7 +933,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   <!-- 상세 모달 #05 -->
   <div id="detailModal05" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
-      <button class="review-detail-close" onclick="document.getElementById('detailModal05').style.display='none'">✕ 닫기</button>
+      <button class="review-detail-close" onclick="closeModalById('detailModal05')">✕ 닫기</button>
       <div class="review-detail-header">
         <span class="review-cat-tag">여성질환</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (2장)</span>
@@ -980,7 +980,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   <!-- 상세 모달 #06 -->
   <div id="detailModal06" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
-      <button class="review-detail-close" onclick="document.getElementById('detailModal06').style.display='none'">✕ 닫기</button>
+      <button class="review-detail-close" onclick="closeModalById('detailModal06')">✕ 닫기</button>
       <div class="review-detail-header">
         <span class="review-cat-tag">디스크·척추</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -1025,7 +1025,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   <!-- 상세 모달 #07 -->
   <div id="detailModal07" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
-      <button class="review-detail-close" onclick="document.getElementById('detailModal07').style.display='none'">✕ 닫기</button>
+      <button class="review-detail-close" onclick="closeModalById('detailModal07')">✕ 닫기</button>
       <div class="review-detail-header">
         <span class="review-cat-tag">자율신경·공황</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -1074,7 +1074,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   <!-- 상세 모달 #08 -->
   <div id="detailModal08" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
-      <button class="review-detail-close" onclick="document.getElementById('detailModal08').style.display='none'">✕ 닫기</button>
+      <button class="review-detail-close" onclick="closeModalById('detailModal08')">✕ 닫기</button>
       <div class="review-detail-header">
         <span class="review-cat-tag review-cat-tag-special">궤양성 대장염</span>
         <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
@@ -1192,6 +1192,12 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       modal.style.display = 'none';
       document.body.style.overflow = '';
     }
+  }
+  function closeModalById(id) {
+    const modal = document.getElementById(id);
+    if (!modal) return;
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
   }
 
   /* ── 이미지 전체보기 ── */
