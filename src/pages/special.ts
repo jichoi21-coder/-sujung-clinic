@@ -21,7 +21,7 @@ export const specialPage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 대상포진, 소아성장, 마이코플라즈마, 양자퀀텀치료, 면역치료, 난치병, 특수치료, 노원구한의원, 8체질"/>
+  <meta name="keywords" content="수정한의원, 노원대상포진, 노원소아성장, 노원마이코플라즈마, 노원면역치료, 노원난치병, 상계동대상포진, 중계동소아성장, 노원양자퀀텀치료, 8체질면역"/>  
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>

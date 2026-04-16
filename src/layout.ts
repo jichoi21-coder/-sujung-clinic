@@ -104,7 +104,7 @@ export function layout(content: string, pageTitle?: string, pageDesc?: string, r
   <meta name="description" content="${desc}"/>
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 노원구한의원, 노원역한의원, 8체질, 8체질의학, 체질침, 한의학박사, 근본치료, 난치병, 구안와사, 안면마비, 아토피, 지루성피부염, 건선, 비염, 천식, COPD, 허리디스크, 척추관협착증, 무릎관절염, 오십견, 만성소화불량, 역류성식도염, 과민성대장증후군, 궤양성대장염, 두통, 편두통, 이명, 불면증, 만성피로, 공황장애, 우울증, 자율신경실조, 난임, 생리통, 갱년기, 산후조리, 대상포진, 소아성장, 마이코플라즈마, 추나치료, 침치료, 한약처방"/>
+  <meta name="keywords" content="수정한의원, 노원구한의원, 노원역한의원, 상계동한의원, 중계동한의원, 노원구안와사, 노원아토피, 노원디스크, 노원협착증, 노원비염, 노원공황장애, 노원난임, 노원대상포진, 노원소아성장, 8체질, 체질침, 한의학박사, 근본치료, 난치병"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>

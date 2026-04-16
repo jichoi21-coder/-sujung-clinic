@@ -21,7 +21,7 @@ export const clinic_womenPage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 난임, 생리통, 생리불순, 갱년기, 산후조리, 계류유산, 반복유산, 여성질환, 노원구한의원"/>
+  <meta name="keywords" content="수정한의원, 노원난임, 노원생리통, 노원갱년기, 노원산후조리, 노원여성한의원, 상계동난임, 중계동생리통, 노원계류유산, 8체질난임치료"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>

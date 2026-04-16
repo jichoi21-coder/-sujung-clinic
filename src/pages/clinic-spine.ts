@@ -21,7 +21,7 @@ export const clinic_spinePage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 허리디스크, 척추관협착증, 무릎관절염, 오십견, 회전근개파열, 추간판탈출증, 관절통증, 추나치료, 노원구한의원"/>
+  <meta name="keywords" content="수정한의원, 노원디스크, 노원협착증, 노원무릎관절염, 노원오십견, 노원허리통증, 상계동디스크, 중계동협착증, 노원회전근개, 노원추나치료, 8체질척추치료"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>

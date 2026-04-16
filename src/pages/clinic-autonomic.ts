@@ -21,7 +21,7 @@ export const clinic_autonomicPage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 자율신경실조, 공황장애, 불면증, 이명, 두통, 만성피로, 우울증, 어지럼증, 노원구한의원"/>
+  <meta name="keywords" content="수정한의원, 노원공황장애, 노원불면증, 노원이명, 노원편두통, 노원만성피로, 노원우울증, 노원어지럼증, 상계동자율신경, 중계동공황장애, 8체질자율신경"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>

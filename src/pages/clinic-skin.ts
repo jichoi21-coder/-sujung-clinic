@@ -21,7 +21,7 @@ export const clinic_skinPage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 아토피피부염, 지루성피부염, 건선, 두드러기, 구안와사, 안면마비, 피부질환, 노원구한의원, 8체질"/>
+  <meta name="keywords" content="수정한의원, 노원구안와사, 노원안면마비, 노원아토피, 노원지루성피부염, 노원두드러기, 노원건선, 상계동아토피, 중계동아토피, 노원피부질환한의원, 8체질피부치료"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>

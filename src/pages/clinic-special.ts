@@ -21,7 +21,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 대상포진후신경통, 소아성장치료, 마이코플라즈마, 특수클리닉, 면역질환, 노원구한의원, 8체질, 근본치료, 난치병"/>
+  <meta name="keywords" content="수정한의원, 노원대상포진후신경통, 노원소아성장치료, 노원마이코플라즈마, 상계동대상포진, 중계동소아성장, 노원특수클리닉, 노원면역질환, 8체질특수치료, 노원난치병한의원"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>

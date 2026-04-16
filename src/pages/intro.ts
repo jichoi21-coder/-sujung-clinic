@@ -21,7 +21,7 @@ export const introPage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 노원역한의원, 한의학박사, 1995년개원, 30년임상, 8체질, 노원역5번출구, 근본치료, 노원구한의원, 서울한의원"/>
+  <meta name="keywords" content="수정한의원, 노원역한의원, 노원구한의원, 상계동한의원, 중계동한의원, 한의학박사, 1995년개원, 30년임상, 노원역5번출구, 노원근본치료한의원"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>

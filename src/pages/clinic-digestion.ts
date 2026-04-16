@@ -21,7 +21,7 @@ export const clinic_digestionPage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 만성소화불량, 역류성식도염, 과민성대장증후군, 궤양성대장염, 만성변비, 췌장염, 소화기질환, 노원구한의원, 8체질"/>
+  <meta name="keywords" content="수정한의원, 노원소화불량, 노원역류성식도염, 노원과민성대장, 노원궤양성대장염, 노원만성변비, 상계동소화불량, 중계동역류성식도염, 노원소화기한의원, 8체질소화치료"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>
