@@ -11,6 +11,7 @@ import { clinic_digestionPage } from './pages/clinic-digestion'
 import { clinic_skinPage } from './pages/clinic-skin'
 import { clinic_spinePage } from './pages/clinic-spine'
 import { clinic_womenPage } from './pages/clinic-women'
+import { blogPage } from './pages/blog'
 
 const app = new Hono()
 
@@ -49,9 +50,9 @@ app.get('/clinic/skin', (c) => c.html(clinic_skinPage))
 app.get('/clinic/spine', (c) => c.html(clinic_spinePage))
 app.get('/clinic/women', (c) => c.html(clinic_womenPage))
 
-// ── 블로그 리다이렉트 (인블로그 외부 연결) ─────────────────────
-app.get('/blog', (c) => c.redirect('https://sujeong.inblog.io', 302))
-app.get('/blog/*', (c) => c.redirect('https://sujeong.inblog.io', 302))
+// ── 블로그 (인블로그 iframe 임베드) ───────────────────────────
+app.get('/blog', (c) => c.html(blogPage(c.req.url)))
+app.get('/blog/*', (c) => c.html(blogPage(c.req.url)))
 
 // ── 치료후기 (로그인 게이트) ────────────────────────────────────
 app.get('/reviews', (c) => {
