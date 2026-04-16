@@ -707,6 +707,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- ===== 자필후기 카드 #10 — 최0종 (뇌수종·어지럼증) ===== -->
+        <div id="reviewCard10" class="review-card review-card-handwritten" data-cat="자율신경" onclick="openReviewModal('detailModal10')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">어지럼증·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2020.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">뇌수종으로 인한 어지럼증이 다 가셨습니다 — 비틀거림 없이 걷게 되고 생활이 편리해졌어요</h3>
+          <p class="review-story">
+            뇌수종으로 매일 어지럼증과 두통이 심해 일상생활이 매우 힘들었습니다.
+            수정한의원 치료 후 어지럼증이 다 가시고 두통도 사라졌으며, 비틀거림 없이 편하게 걸을 수 있게 됐습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 최*종 (만 67세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- ===== 자필후기 카드 #9 — 홍0임 (갱년기·불면·족저근막염) ===== -->
         <div id="reviewCard09" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal09')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -1185,6 +1207,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     </div>
   </div>
 
+  <!-- 상세 모달 #10 -->
+  <div id="detailModal10" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal10')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">어지럼증·두통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2020.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">뇌수종으로 인한 어지럼증이 다 가셨습니다 — 비틀거림 없이 걷게 되고 생활이 편리해졌어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        뇌수종으로 매일 어지럼증과 두통이 심해 일상생활이 매우 힘들었습니다.
+        수정한의원 치료 후 어지럼증이 다 가시고 두통도 사라졌으며, 비틀거림 없이 편하게 걸을 수 있게 됐습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">뇌수종으로 인해 갈수록 어지럼증이 심해지면서 잠을 많이 자게 되었고, 매일 어지러움과 두통 때문에 혼자서는 일상생활이 힘들었습니다. 잠을 잘 때도 비틀거림이 느껴지고 생활하는 데 많이 불편하였습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">생활에 불편함을 자주 느껴 치료를 받게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">어지럼증이 다 가시고 두통도 많이 없어졌습니다. 매일 고통스럽던 증상들이 현저히 줄었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">한약 한 종류 복용으로 처음 하루 이제는 비틀거리는 느낌 없이 걸을 수 있게 되었습니다. 몸이 좋아지고 생활이 편리해졌습니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-10-choijong-p1.jpg" alt="뇌수종 어지럼증 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 최*종 (만 67세, 남)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #09 -->
   <div id="detailModal09" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
@@ -1259,7 +1325,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard06'), cat: '디스크' },
       { el: document.getElementById('reviewCard07'), cat: '자율신경' },
       { el: document.getElementById('reviewCard08'), cat: '대장염' },
-      { el: document.getElementById('reviewCard09'), cat: '여성' }
+      { el: document.getElementById('reviewCard09'), cat: '여성' },
+      { el: document.getElementById('reviewCard10'), cat: '자율신경' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
