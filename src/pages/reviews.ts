@@ -781,10 +781,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2021.08</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">소화불량·무릎통증·허리통증이 함께 좋아졌습니다 — 통증이 사라지고 무기력함이 없어져 활력이 생겼어요</h3>
+          <h3 class="review-card-title">무릎통증이 너무나 심해서 걷지를 못했어요 — 한약 먹으면서 소화불량·허리통증까지 함께 좋아졌습니다</h3>
           <p class="review-story">
-            소화불량에 무릎·허리 통증까지 겹쳐 걷기도 힘들고 일상생활이 매우 불편했습니다.
-            체질 한약·침 치료 후 통증이 사라지고 혈색까지 좋아졌습니다.
+            무릎통증이 너무나 심해 좌식(양반다리)도 못 하고 걷지도 힘들었습니다.
+            체질 한약을 먹으면서 소화불량과 허리통증까지 함께 좋아졌습니다.
           </p>
           <div class="review-card-footer">
             <span class="review-author"><i class="fas fa-user"></i> 서*영 (만 45세, 여)</span>
@@ -1261,10 +1261,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2021.08</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">소화불량·무릎통증·허리통증이 함께 좋아졌습니다 — 통증이 사라지고 무기력함이 없어져 활력이 생겼어요</h3>
+      <h3 class="review-detail-title">무릎통증이 너무나 심해서 걷지를 못했어요 — 한약 먹으면서 소화불량·허리통증까지 함께 좋아졌습니다</h3>
       <p class="review-story" style="margin-bottom:18px;">
-        소화불량에 무릎·허리 통증까지 겹쳐 걷기도 힘들고 아침에는 몸이 뻣뻣해 무기력했습니다.
-        체질 한약·침 치료 후 통증이 점점 사라지고 혈색까지 좋아져 활력이 생겼습니다.
+        무릎통증이 너무나 심해 좌식(양반다리)도 못 하고 걷지도 힘들고 아침에는 몸이 뻣뻣해 무기력했습니다.
+        체질 한약을 먹으면서 소화불량과 허리통증까지 함께 점점 좋아지고 혈색까지 좋아져 활력이 생겼습니다.
       </p>
       <div class="review-qa-wrap">
         <div class="review-qa-item">
