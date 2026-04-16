@@ -863,26 +863,30 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-quote-mark">"</div>
       <h3 class="review-detail-title">어릴 때부터의 아토피가 손발가락까지 좋아졌어요 — 체질을 알고 나니 음식도 내 편이 됐습니다</h3>
       <p class="review-story" style="margin-bottom:18px;">
-        어릴 때부터 아토피가 있어서 손가락, 발가락에 빨갛게 올라오고 가려움증이 동반됐습니다.
-        꾸준히 한약을 먹고 체질 침 치료를 병행하면서 손발가락에 남아있던 아토피·흉터가 없어졌습니다.
-        무엇보다 체질을 알게 되어 식이요법을 통해 효율적으로 내 몸에 맞는 식이를 할 수 있어 정말 좋아졌습니다.
+        어릴 때부터 아토피가 있어서 손가락·발가락에 빨갛게 올라오고 가려움증이 동반됐습니다.
+        밤에는 바닥이 자꾸 갈라져 양말을 신으면 아팠고, 극심할 때는 흉터가 생겨 부끄러웠습니다.
+        한약·체질침 치료 후 손발가락 아토피·홍진이 없어졌고, 스트레스를 받아도 긁지 않게 됐습니다.
       </p>
       <div class="review-qa-wrap">
         <div class="review-qa-item">
-          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유가 무엇인가요?</span>
-          <span class="review-qa-a">아토피를 계속 안고 가야 하나 고민이었는데 체질치료로 개선할 수 있을 것 같았습니다. 가족들도 치료를 많이 받고 있던 터라 믿음이 더 컸습니다.</span>
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">어릴 때부터 아토피가 있어서 손가락과 발가락에 빨갛게 올라오고 가려움증이 동반됐습니다. 밤만 되면 바닥이 자꾸 갈라져서 양말을 신으면 아팠습니다. 그리고 긁다 보면 흉이 져서 피부도 부분부분 어두워졌습니다.</span>
         </div>
         <div class="review-qa-item">
-          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질은?</span>
-          <span class="review-qa-a">아토피로 겨울이 되면 각질이 갈라지고 떨어졌는데 많이 호전되어 신발을 신을 때도 아프지 않고, 발바닥도 깨끗해졌습니다. 시험기간이나 스트레스 받는 날에도 예전처럼 긁지 않습니다.</span>
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">아토피를 계속 안고 가야 하나 고민이었는데 체질치료로 개선할 수 있을 것 같았습니다. 가족들도 치료를 같이 받고 있던 터라 믿음이 더 갔습니다.</span>
         </div>
         <div class="review-qa-item">
-          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 원문 전체 내용</span>
-          <span class="review-qa-a">
-            <strong>[증상]</strong> 어릴 때부터 아토피가 있어서 손가락과 발가락에 빨갛게 올라오고 가려움증이 동반됐습니다. 밤에 바닥이 자꾸 갈라져서 양말을 신으면 아팠습니다.<br><br>
-            <strong>[개선된 점]</strong> 한약을 꾸준히 먹고, 체질 침 치료도 병행하여 손가락과 발가락에 남아있던 아토피·흉터가 없어졌습니다.<br><br>
-            <strong>[하고 싶은 말]</strong> 항상 밝은 미소로 대해주시고 체질치료 하면서 궁금한 것도 많이 알려주셨습니다. 아토피가 호전되면서 같이 응원해주셔서 감사합니다. ^^
-          </span>
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">한약을 꾸준히 먹고, 침 치료도 병행하여 손가락과 발가락에 질질 남아있던 아토피·홍진이 없어졌습니다. 무엇보다 체질을 알게 되어 식이요법을 할 때도 효율적으로 내게 맞는 식이를 할 수 있었고, 채소와 가까워진 게 가장 좋았습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">아토피로 겨울이 되면 발바닥이 갈라지고 각질도 떨어졌는데 많이 호전되어 신발을 신을 때도 아프지 않고, 발바닥도 깨끗해졌습니다. 시험기간이나 스트레스 받는 날이면 많이 긁었는데 치료를 받은 후로 긁지 않습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment-dots"></i> 수정한의원에 하고 싶은 말</span>
+          <span class="review-qa-a">항상 밝은 미소로 대해주시고 체질치료 하면서 궁금한 것들 많이 여쭤봤습니다. 아토피가 호전되면서 같이 응원해주셔서 감사합니다. ^^</span>
         </div>
       </div>
       <div class="review-detail-images">
