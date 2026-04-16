@@ -833,9 +833,9 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       </div>
       <div class="review-detail-images">
         <div class="review-detail-gallery">
-          <img id="dm02-main" src="/static/reviews/review-02-kimjungeun-p1.jpg" alt="체질 다이어트 자필후기 1페이지" class="review-detail-img-main" onclick="openImgFull(this.src)">
+          <img id="dm02-main" src="/static/reviews/review-02-kimjungeun-p1v2.jpg" alt="체질 다이어트 자필후기 1페이지" class="review-detail-img-main" onclick="openImgFull(this.src)">
           <div class="review-detail-thumbs">
-            <img src="/static/reviews/review-02-kimjungeun-p1.jpg" alt="1페이지" class="review-detail-thumb active" onclick="switchDetailImg('dm02-main',this)">
+            <img src="/static/reviews/review-02-kimjungeun-p1v2.jpg" alt="1페이지" class="review-detail-thumb active" onclick="switchDetailImg('dm02-main',this)">
             <img src="/static/reviews/review-02-kimjungeun-p2.jpg" alt="2페이지" class="review-detail-thumb" onclick="switchDetailImg('dm02-main',this)">
             <img src="/static/reviews/review-02-kimjungeun-p3.jpg" alt="3페이지" class="review-detail-thumb" onclick="switchDetailImg('dm02-main',this)">
           </div>
@@ -890,7 +890,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
       </div>
       <div class="review-detail-images">
-        <img src="/static/reviews/review-03-kimjieun.jpg" alt="아토피 자필후기 원본" class="review-detail-img" onclick="openImgFull(this.src)">
+        <img src="/static/reviews/review-03-kimjieun-v2.jpg" alt="아토피 자필후기 원본" class="review-detail-img" onclick="openImgFull(this.src)">
         <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
