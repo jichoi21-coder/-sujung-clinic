@@ -50,9 +50,39 @@ app.get('/clinic/skin', (c) => c.html(clinic_skinPage))
 app.get('/clinic/spine', (c) => c.html(clinic_spinePage))
 app.get('/clinic/women', (c) => c.html(clinic_womenPage))
 
-// ── 블로그 (인블로그 iframe 임베드) ───────────────────────────
-app.get('/blog', (c) => c.html(blogPage(c.req.url)))
-app.get('/blog/*', (c) => c.html(blogPage(c.req.url)))
+// ── 블로그 (인블로그 프록시) ───────────────────────────────────
+app.get('/blog', async (c) => {
+  const url = 'https://sujeong.inblog.io'
+  const res = await fetch(url, {
+    headers: {
+      'User-Agent': c.req.header('user-agent') || 'Mozilla/5.0',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'Accept-Language': 'ko-KR,ko;q=0.9,en;q=0.8',
+    }
+  })
+  let html = await res.text()
+  // 인블로그 내부 링크를 우리 도메인 /blog 경로로 변환
+  html = html.replace(/https:\/\/sujeong\.inblog\.io\//g, '/blog/')
+  html = html.replace(/href="\/(?!blog)/g, 'href="https://sujeong.inblog.io/')
+  html = html.replace(/src="\/(?!blog|static)/g, 'src="https://sujeong.inblog.io/')
+  return c.html(html)
+})
+app.get('/blog/:slug', async (c) => {
+  const slug = c.req.param('slug')
+  const url = `https://sujeong.inblog.io/${slug}`
+  const res = await fetch(url, {
+    headers: {
+      'User-Agent': c.req.header('user-agent') || 'Mozilla/5.0',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+      'Accept-Language': 'ko-KR,ko;q=0.9,en;q=0.8',
+    }
+  })
+  let html = await res.text()
+  html = html.replace(/https:\/\/sujeong\.inblog\.io\//g, '/blog/')
+  html = html.replace(/href="\/(?!blog)/g, 'href="https://sujeong.inblog.io/')
+  html = html.replace(/src="\/(?!blog|static)/g, 'src="https://sujeong.inblog.io/')
+  return c.html(html)
+})
 
 // ── 치료후기 (로그인 게이트) ────────────────────────────────────
 app.get('/reviews', (c) => {
