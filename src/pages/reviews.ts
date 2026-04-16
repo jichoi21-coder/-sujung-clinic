@@ -1269,7 +1269,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-qa-wrap">
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
-          <span class="review-qa-a">(소화불량, 무릎통증, 허리통증, 붓기) 무릎 통증이 너무 심해서 걷기도 장수관절이고, 계단 오르내리기도 힘들었습니다. 아침에는 뻣뻣하게 움직였고 무기력했습니다.</span>
+          <span class="review-qa-a">(소화불량, 무릎통증, 허리통증, 붓기) 무릎 통증이 너무 심해서 좌식(양반다리)을 할 수 없었고, 계단 오르내리기도 힘들었습니다. 아침에는 뻣뻣하게 움직였고 무기력했습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
@@ -1277,7 +1277,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
-          <span class="review-qa-a">체질을 확실히 진단받고 식단관리와 한약·침 치료로 점점 좋아지기 시작했습니다. 한참 정도 치료 받으면서 무릎통증도 많이 사라졌고, 통증이 너무 심해서 고생했던 것이 비교할 수 없을 정도로 좋아졌습니다. 혈색도 좋아졌습니다.</span>
+          <span class="review-qa-a">체질을 확실히 진단받고 식단관리와 한약·침 치료로 점점 좋아지기 시작했습니다. 한달 정도 치료 받으면서 무릎통증도 많이 사라졌고, 통증이 너무 심해서 고생했던 것이 비교할 수 없을 정도로 좋아졌습니다. 혈색도 좋아졌습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
