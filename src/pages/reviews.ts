@@ -608,14 +608,15 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-header">
             <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
             <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (3장)</span>
             <span class="review-date">2021.02</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">대상포진 한 달 넘게 진통제·주사도 안 들었는데 — 파동치료 후 처음으로 통증이 가라앉았습니다</h3>
+          <h3 class="review-card-title">대상포진 후 신경통 — 대학병원·피부과 한 달 넘게 진통제·주사도 소용없었는데 면역침·파동치료로 회복했습니다</h3>
           <p class="review-story">
-            대상포진으로 진통제와 주사를 한 달 이상 맞았지만 극심한 통증과 수면장애가 전혀 줄지 않았습니다.
-            수정한의원 파동치료 후 처음으로 피부 느낌이 달라지고 통증이 가라앉기 시작했습니다.
+            유방 절명 후 대상포진이 생겨 피부과·대학병원에서 한 달 넘게 진통제와 주사를 맞았지만
+            극심한 통증과 수면장애가 전혀 줄지 않아 결국 입원까지 했습니다.
+            수정한의원 면역침·약침·파동치료 후 처음으로 통증이 가라앉기 시작해 일상으로 돌아왔습니다.
           </p>
           <div class="review-card-footer">
             <span class="review-author"><i class="fas fa-user"></i> 박*임 (만 54세, 남)</span>
@@ -890,35 +891,39 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2021.02</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">대상포진 한 달 넘게 진통제·주사도 안 들었는데 — 파동치료 후 처음으로 통증이 가라앉았습니다</h3>
+      <h3 class="review-detail-title">대상포진 후 신경통 — 대학병원·피부과 한 달 넘게 진통제·주사도 소용없었는데 면역침·파동치료로 회복했습니다</h3>
       <p class="review-story" style="margin-bottom:18px;">
-        대상포진으로 피부과 진료를 한 달 가까이 받았습니다. 진통제와 주사를 한 달 전부터 매일 맞았지만
-        심한 통증과 수면장애는 전혀 줄지 않았습니다. 수정한의원에서 파동치료를 받고 나서야 처음으로 통증이 가라앉기 시작했습니다.
+        유방 절명 후 대상포진이 발생해 피부과·대학병원에서 마약성 진통제·주사를 한 달 넘게 맞았지만
+        극심한 통증과 23일간의 수면장애가 전혀 줄지 않아 결국 대학병원에 입원했습니다.
+        지인 소개로 수정한의원에서 면역침·약침·파동치료를 시작한 후 처음으로 통증이 줄기 시작했고,
+        육체적·정신적으로 안정을 되찾아 일상으로 돌아오게 됐습니다.
       </p>
       <div class="review-qa-wrap">
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 내원 당시 상태는 어땠나요?</span>
-          <span class="review-qa-a">그 당시 몸 상태는 매우 좋지 않은 상태였고, 설 명절연휴가 있었기에 심적으로도 불안했고 체력 저하로 일상이 불가능했습니다. 타 병원에서 한 달간 진통제·주사 치료를 받았지만 전혀 차도가 없었습니다.</span>
+          <span class="review-qa-a">2021년 1월 12일부터 약국에서 소염·진통제를 먹었고, 3일째 통증이 너무 심해 정형외과에서 진통제 주사와 물리치료를 받았습니다. 1월 20일 가슴 밑에 빨간 반점이 여러 선으로 나타나 피부과에서 대상포진 진단을 받았지만 통증이 가라앉지 않았고, 23일간 수면장애로 체력이 전혀 나빠진 상태였습니다. 대학병원 입원 3일째 아침 6시부터 가슴통증과 호흡곤란이 와서 긴급 주사를 맞는 상황까지 됐었습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료 후 달라진 점은?</span>
-          <span class="review-qa-a">지금은 육체적·정신적으로 많이 안정되어 일상으로 돌아가고 있는 중입니다. 저의 가족에게 수정한의원은 어느 병원에서도 치료가 불가능한 증상도 원장님께 상담하고 진료를 받으면 반드시 고칠 수 있다는 믿음의 장소입니다.</span>
+          <span class="review-qa-a">2월 8일 오전 피부과 주사 후 통증이 조금 줄었다는 느낌을 받았고, 그날 오후 수정한의원에 와서 면역침·약침·파동치료가 시작됐습니다. 하루(2/8), 이틀(2/9), 사흘(2/10) 치료 후 통증이 피부로 느낄 만큼 줄어들기 시작했으며, 원장님의 정성스러운 치료와 간호사 선생님들의 간호로 회복의 속도가 신기할 정도로 빠르게 나타나고 있습니다. 지금은 육체적·정신적으로 안정을 되찾아 일상으로 돌아가고 있습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 원문 전체 내용</span>
           <span class="review-qa-a">
-            <strong>[증상 및 치료 경과]</strong> 저는 대상포진으로 피부과 진료를 한 달 가까이 받았습니다. 진통제와 주사를 한 달 전부터 매일 맞았지만 심한 통증과 수면장애는 전혀 줄지 않았습니다.<br><br>
-            <strong>[수정한의원 치료]</strong> 수정한의원에 와서 원장님의 정성스러운 치료와 간호사 선생님의 간호로 호전을 보게 되었습니다. 특히 파동치료를 받기 전에는 회복의 속도가 보일 것 같지 않았었는데, 신기할 정도로 피부가 느낄 정도의 속도로 갑자기 나아졌습니다.<br><br>
-            <strong>[하고 싶은 말]</strong> 저의 가족에게 수정한의원은 어느 병원에서도 치료가 불가능한 어떤 증상과 질병도 원장님께 상담하고 진료를 받으면 반드시 고칠 수 있다는 믿음의 장소입니다.
+            <strong>[발병 및 타 병원 경과]</strong> 유방 절명 후 2021년 1월 12일부터 약국에서 소염·진통제를 복용했습니다. 3일째 통증이 너무 심해 정형외과에서 진통제 주사와 물리치료를 받았고, 1월 20일 가슴 밑에 빨간 반점이 여러 선으로 나타났습니다. 피부과에서 대상포진 진단 후 마약성 진통제를 처방받았지만 통증이 가라앉지 않았고, 대학병원에서 치료를 받으라는 말씀과 신경차단 수술 안내까지 매우 미우라하셨습니다.<br><br>
+            <strong>[대학병원 입원]</strong> 처방받은 후 10일째 되던 날 결국 입원하여 집중 치료를 받게 됐습니다. 통증은 가라앉지 않았고, 23일 동안 수면장애로 체력을 전혀 나빠졌습니다. 입원 3일째 아침 6시부터 밤새 잠 못 자던 가슴통증과 호흡곤란이 와서 9시 30분에 긴급 주사를 맞는 상황이 됐습니다.<br><br>
+            <strong>[수정한의원 치료]</strong> 2월 5일 지인의 소개로 수정한의원에 내원했습니다. 면역침와 한약을 처방해 주셔서 희망을 갖고 하루(2/8), 이틀(2/9), 사흘(2/10) 면역침·약침·파동치료가 진행됐습니다. 통증의 정도가 피부로 느낄 만큼 줄어들기 시작했으며, 원장님의 정성스러운 치료와 간호사 선생님들의 간호로 회복의 속도가 신기할 정도로 빠르게 나타나고 있습니다.<br><br>
+            <strong>[수정한의원에 하고 싶은 말]</strong> 저의 가족에게 수정한의원은 원장님께 상담하고 진료를 받으면 어느 병원에서도 치료가 어려운 증상도 반드시 고칠 수 있고 꼭 회복할 수 있다는 믿음으로 치료를 받습니다. 바이러스로 인해 손상된 신경을 원장님의 면역침과 약침·파동치료를 통해 다시 회복된 것에 감사드리며, 많은 환자들이 수정한의원을 통해 완쿈하시길 기원드립니다.
           </span>
         </div>
       </div>
       <div class="review-detail-images">
         <div class="review-detail-gallery">
-          <img id="dm04-main" src="/static/reviews/review-04-parksangim-p1.jpg" alt="대상포진 자필후기 1페이지" class="review-detail-img-main" onclick="openImgFull(this.src)">
+          <img id="dm04-main" src="/static/reviews/review-04-parksangim-p1.jpg" alt="대상포진후신경통 자필후기 1페이지" class="review-detail-img-main" onclick="openImgFull(this.src)">
           <div class="review-detail-thumbs">
             <img src="/static/reviews/review-04-parksangim-p1.jpg" alt="1페이지" class="review-detail-thumb active" onclick="switchDetailImg('dm04-main',this)">
             <img src="/static/reviews/review-04-parksangim-p2.jpg" alt="2페이지" class="review-detail-thumb" onclick="switchDetailImg('dm04-main',this)">
+            <img src="/static/reviews/review-04-parksangim-p3.jpg" alt="3페이지" class="review-detail-thumb" onclick="switchDetailImg('dm04-main',this)">
           </div>
         </div>
         <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지 클릭하면 원본 크기로 | 썸네일로 페이지 전환</p>
