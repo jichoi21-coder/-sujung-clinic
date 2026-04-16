@@ -759,9 +759,9 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2024.07</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">허리·어깨 디스크 통증이 사라졌습니다 — 앉고 서는 것도 편해지고 몸에 활력이 생겼어요</h3>
+          <h3 class="review-card-title">허리·옆구리 통증이 사라졌습니다 — 앉고 서는 것도 편해지고 몸에 활력이 생겼어요</h3>
           <p class="review-story">
-            허리와 양 어깨가 뻐근하고 아파 앉거나 서 있는 것도 힘들었습니다.
+            허리와 양 옆구리가 터질 듯이 아파 앉거나 서 있는 것도 힘들었습니다.
             한약과 침 치료 후 통증이 사라지고 몸에 활력이 생겨 생활이 편안해졌습니다.
           </p>
           <div class="review-card-footer">
@@ -1239,16 +1239,16 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2024.07</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">허리·어깨 디스크 통증이 사라졌습니다 — 앉고 서는 것도 편해지고 몸에 활력이 생겼어요</h3>
+      <h3 class="review-detail-title">허리·옆구리 통증이 사라졌습니다 — 앉고 서는 것도 편해지고 몸에 활력이 생겼어요</h3>
       <p class="review-story" style="margin-bottom:18px;">
-        허리와 양 어깨가 뻐근하고 심하게 아파 눕거나 일어나기도 힘들었습니다.
+        허리와 양 옆구리가 터질 듯이 아파 눕거나 일어나기도 힘들었습니다.
         앉거나 서 있을 때도 통증이 있어 일상생활이 매우 불편했는데,
         수정한의원 한약·침 치료 후 통증이 사라지고 몸에 활력이 생겨 편안해졌습니다.
       </p>
       <div class="review-qa-wrap">
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
-          <span class="review-qa-a">허리와 양 어깨가 뻐근하고 아파 눕혀도 일어나기 힘들었습니다. 앉거나 서 있을 때도 통증이 있어 일상생활이 매우 불편하였습니다. 나중에는 너무 고통스러워서 한약과 침과 수정한의원을 찾아보고 방문하였습니다.</span>
+          <span class="review-qa-a">허리와 양 옆구리가 터질 듯이 아파 눕혀도 일어나기 힘들었습니다. 앉거나 서 있을 때도 통증이 있어 일상생활이 매우 불편하였습니다. 나중에는 너무 고통스러워서 한약과 침과 수정한의원을 찾아보고 방문하였습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
