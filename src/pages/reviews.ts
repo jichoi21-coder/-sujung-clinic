@@ -569,10 +569,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2020.01.21</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">6개월 만에 17.3kg 감량 — 내과 다이어트 약 부작용으로 포기했다가 체질로 성공</h3>
+          <h3 class="review-card-title">6개월 만에 체중 17.3kg·체지방 17.9kg 감량 — 내과 다이어트 약 부작용으로 포기했다가 8체질 디톡스로 성공</h3>
           <p class="review-story">
-            내과에서 다이어트 약을 먹었지만 부작용만 심해지고 체중은 그대로였습니다. 우울증까지 생겼어요.
-            지인 소개로 수정한의원 체질 다이어트를 시작했는데, 6개월 만에 68.8kg에서 51.5kg으로 줄었습니다.
+            내과 다이어트 약 부작용으로 불면증·우울증까지 생겼습니다. 수정한의원 8체질침 + 면역디톡스로
+            68.8kg → 51.5kg, 체지방 29.3kg → 11.4kg으로 줄었습니다.
           </p>
           <div class="review-card-footer">
             <span class="review-author"><i class="fas fa-user"></i> 김*은 (만 48세, 여)</span>
@@ -782,37 +782,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2020.01.21</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">6개월 만에 17.3kg 감량 — 내과 다이어트 약 부작용으로 포기했다가 체질로 성공</h3>
+      <h3 class="review-detail-title">6개월 만에 체중 17.3kg·체지방 17.9kg 감량 — 내과 다이어트 약 부작용으로 포기했다가 8체질 디톡스로 성공</h3>
       <p class="review-story" style="margin-bottom:18px;">
-        내과에서 다이어트 약을 먹었지만 부작용만 심해지고 체중은 그대로였습니다. 우울증까지 생겼어요.
-        지인 소개로 수정한의원 체질 다이어트를 시작했는데, 6개월 만에 68.8kg에서 51.5kg으로 줄었습니다.
+        내과 처방 다이어트 약의 부작용으로 배변장애·불면증·우울증까지 생겼습니다.
+        수정한의원 8체질침 + 면역디톡스 프로그램으로 6개월 만에 68.8kg → 51.5kg, 체지방 29.3kg → 11.4kg으로 줄었습니다.
       </p>
       <div class="review-qa-wrap">
         <div class="review-qa-item">
-          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 치료를 받으셨나요?</span>
-          <span class="review-qa-a">체질 검사로 제 체질을 알게 됐고, 체질에 맞는 음식과 해로운 음식을 알게 됐습니다. 체질침·한약·면역디톡스 프로그램을 병행했는데, 다이어트 중에도 기력이 소진되지 않아 정말 도움이 됐어요.</span>
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 내원 동기</span>
+          <span class="review-qa-a">8체질 면역디톡스 프로그램을 통해 건강하게 체중을 감량하고 유지하고 계시다는 지인의 소개를 받고 방문했습니다. 가장 기억에 남는 원장님 말씀은 <strong>"생애 마지막 다이어트가 될 것이다"</strong>, <strong>"꾸준히 하면 저절로 체지방이 빠지는 몸이 된다"</strong>는 것이었습니다. 그 말씀에 불안한 마음이 사라지고 희망과 용기가 생기면서, 반드시 체중감량을 하겠다는 의지가 생겼습니다.</span>
         </div>
         <div class="review-qa-item">
-          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 실제 체중 변화 (자필 기록)</span>
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 내원 당시 몸 상태 · 타 병원 치료 내역</span>
+          <span class="review-qa-a">
+            <strong>내원 날짜:</strong> 2020년 5월 1일<br><br>
+            <strong>[내원 당시 몸 상태]</strong> 40대 중반부터 체중이 급격하게 늘어나기 시작했습니다. 약에 내성이 생겨 효과도 없었으며, 부작용으로 인한 혈액순환 장애와 불면증, 배변장애, 갱년기 증상 등 생활의 불편함이 많았습니다. 체질 검사를 통해 몸에 해로운 음식을 많이 먹고 있었다는 것을 알게 되었고, 인바디를 통한 몸 상태는 너무 충격적이었습니다. 체지방은 표준 이상이었고, 살이 찔 수밖에 없는 몸 상태였습니다.<br><br>
+            <strong>[타 병원 치료 내역]</strong> 내과에서 처방해주는 다이어트 약을 복용해 한때 잠깐 효과가 있었으나 부작용만 심해지고 체중 감량의 효과는 보지 못했습니다. 이로 인한 짜증·부당한 기침, 우울증까지 생기게 되었습니다.
+          </span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 수정한의원 치료 과정</span>
+          <span class="review-qa-a">
+            <strong>[체질 검사]</strong> 맥진 검사를 통해 저의 체질을 알게 되었습니다. 체질에 유익한 음식과 해로운 음식을 알게 되었고, 체질침을 통해 다이어트에 도움이 되는 침을 맞았습니다.<br><br>
+            <strong>[한약]</strong> 한약을 복용하여 다이어트 하는 동안 기력이 소진되지 않도록 기력을 보강해주면서 다이어트에 도움이 되는 감량 한약을 복용하였습니다.<br><br>
+            <strong>[면역디톡스 프로그램]</strong> 디톡스 다이어트를 10일 동안 제품과 한약을 <strong>함께</strong> 복용하면서 이침·몸침 치료를 아침–점심–저녁 정해진 시간 동안 진행하였습니다. 처음에는 식사를 하지 않게 되어 배고픔을 자주 느꼈으나 점점 거짓 배고픔처럼 식사를 하지 않아도 배가 고프지 않은 느낌을 갖게 되었습니다. 제품에 익숙해지면서부터 몸이 가벼워지고 체형이 좋아지는 것을 느꼈습니다. 제품은 한 끼 식사 대용의 영양분과 포만감이 충분히 있었습니다.<br><br>
+            <strong>[일상 병행]</strong> 디톡스와 밥을 병행하면서 다시 정상화하였습니다. 디톡스 프로그램은 저에게 맞게 설계해주셨고, 수시로 전화와 문자로 초반에 힘든 저에게 몸의 상태 변화에 대해 자세히 설명해주시고 꼼꼼하게 디톡스 할 수 있게 도와주셨습니다.
+          </span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 실제 체중·체지방 변화 (자필 기록)</span>
           <span class="review-qa-a">
             <span class="review-weight-table">
-              <span>시작 <strong>68.8kg</strong> (체지방 29.3kg)</span>
-              <span>→ 1개월 <strong>61.4kg</strong></span>
-              <span>→ 3개월 <strong>56.4kg</strong></span>
-              <span>→ 6개월 <strong>51.5kg</strong> (체지방 11.4kg)</span>
+              <span>시작 (2020.5.10) <strong>68.8kg</strong> · 체지방 29.3kg</span>
+              <span>→ 7일 후 (5.16) <strong>67.0kg</strong> · 체지방 26.8kg</span>
+              <span>→ 10일 후 (5.23) <strong>64.0kg</strong> · 체지방 25.1kg</span>
+              <span>→ 1개월 후 (6.10) <strong>61.4kg</strong> · 체지방 22.8kg</span>
+              <span>→ 2개월 후 (7.15) <strong>58.0kg</strong> · 체지방 19.3kg</span>
+              <span>→ 3개월 후 (8.12) <strong>56.4kg</strong> · 체지방 15.7kg</span>
+              <span>→ 4개월 후 (9.11) <strong>54.2kg</strong> · 체지방 13.8kg</span>
+              <span>→ 5개월 후 (10.31) <strong>52.7kg</strong> · 체지방 12.4kg</span>
+              <span>→ 6개월 후 (11.21) <strong>51.5kg</strong> · 체지방 11.4kg</span>
               <span class="review-weight-result">6개월 총 <strong>체중 -17.3kg · 체지방 -17.9kg 감량!</strong></span>
             </span>
           </span>
         </div>
         <div class="review-qa-item">
-          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 원문 전체 내용</span>
-          <span class="review-qa-a">
-            <strong>[내원 동기]</strong> 면역디톡스 프로그램을 통해 건강하게 체중을 감량하고 유지하고 계시다는 지인의 소개를 받고 방문했습니다.<br><br>
-            <strong>[내원 당시 몸 상태]</strong> 체중이 빠르게 증가하기 시작했고 약에 내성이 생겨 효과가 없었으며, 부작용으로 배변장애·피로·불면증·갱년기 증상 등 생활의 불편함이 많았습니다.<br><br>
-            <strong>[타 병원 치료]</strong> 내과 다이어트 약을 먹었으나 부작용만 심해지고 체중 감량 효과는 없었습니다. 짜증·불안함·우울증까지 생겼습니다.<br><br>
-            <strong>[치료 과정]</strong> 디톡스 다이어트를 10일 동안 제품과 한약을 함께 복용하며 이침·몸침 치료를 받았습니다.<br><br>
-            <strong>[하고 싶은 말]</strong> 목표체중을 설정하고 1kg씩 끊임없이 관리하는 생활을 지키며 노력하게 되었습니다. 정말 감사합니다.
-          </span>
+          <span class="review-qa-q"><i class="fas fa-comment-dots"></i> 수정한의원에 하고 싶은 말</span>
+          <span class="review-qa-a">목표체중을 설정하고 1kg씩 끊임없이 관리하는 생활을 지키며 노력하게 되었습니다. 정말 감사합니다.</span>
         </div>
       </div>
       <div class="review-detail-images">
