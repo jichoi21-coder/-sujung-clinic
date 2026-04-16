@@ -50,8 +50,8 @@ app.get('/clinic/spine', (c) => c.html(clinic_spinePage))
 app.get('/clinic/women', (c) => c.html(clinic_womenPage))
 
 // ── 블로그 리다이렉트 (인블로그 외부 연결) ─────────────────────
-app.get('/blog', (c) => c.redirect('https://8chejil-sujeong.com/blog', 302))
-app.get('/blog/*', (c) => c.redirect('https://8chejil-sujeong.com' + c.req.path, 302))
+app.get('/blog', (c) => c.redirect('https://sujeong.inblog.io', 302))
+app.get('/blog/*', (c) => c.redirect('https://sujeong.inblog.io', 302))
 
 // ── 치료후기 (로그인 게이트) ────────────────────────────────────
 app.get('/reviews', (c) => {
