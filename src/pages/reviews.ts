@@ -922,7 +922,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <img id="dm04-main" src="/static/reviews/review-04-parksangim-p1.jpg" alt="대상포진후신경통 자필후기 1페이지" class="review-detail-img-main" onclick="openImgFull(this.src)">
           <div class="review-detail-thumbs">
             <img src="/static/reviews/review-04-parksangim-p1.jpg" alt="1페이지" class="review-detail-thumb active" onclick="switchDetailImg('dm04-main',this)">
-            <img src="/static/reviews/review-04-parksangim-p2.jpg" alt="2페이지" class="review-detail-thumb" onclick="switchDetailImg('dm04-main',this)">
+            <img src="/static/reviews/review-04-parksangim-p2v2.jpg" alt="2페이지" class="review-detail-thumb" onclick="switchDetailImg('dm04-main',this)">
             <img src="/static/reviews/review-04-parksangim-p3.jpg" alt="3페이지" class="review-detail-thumb" onclick="switchDetailImg('dm04-main',this)">
           </div>
         </div>
