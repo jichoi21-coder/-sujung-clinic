@@ -817,7 +817,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-        <!-- ===== 자필후기 카드 #14 — 이인순 (무릅관절염·디스크·척추) ===== -->
+        <!-- ===== 자필후기 카드 #14 — 이☌순 (무릅관절염·디스크·척추) ===== -->
         <div id="reviewCard14" class="review-card review-card-handwritten" data-cat="디스크" onclick="openReviewModal('detailModal14')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">무릅관절염·디스크</span>
@@ -825,13 +825,13 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2021.02</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">무릅이 아파서 걷지도 못하고 잠도 못 쉌어요 — 메선 치료 후 다리에 힘이 생기고 계단도 잘 오르내릴 수 있어요</h3>
+          <h3 class="review-card-title">무릅이 아파서 걷지도 못하고 잠도 못 잤어요 — 메선 치료 후 다리에 힘이 생기고 계단도 잘 오르내릴 수 있어요</h3>
           <p class="review-story">
             3년동안 무릅 통증으로 벽을 잡고 일어나고, 잘 때도 통증이 계속되었습니다.
             메선 치료 후 다리에 힘이 생기고 계단도 편하게 오르내릴 수 있게 되었습니다.
           </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 이인순 (만 73세, 여)</span>
+            <span class="review-author"><i class="fas fa-user"></i> 이*순 (만 73세, 여)</span>
             <div class="review-stars">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
@@ -1305,7 +1305,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2021.02</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">무릅이 아파서 걷지도 못하고 잠도 못 쉌어요 — 메선 치료 후 다리에 힘이 생기고 계단도 잘 오르내릴 수 있어요</h3>
+      <h3 class="review-detail-title">무릅이 아파서 걷지도 못하고 잠도 못 잤어요 — 메선 치료 후 다리에 힘이 생기고 계단도 잘 오르내릴 수 있어요</h3>
       <p class="review-story" style="margin-bottom:18px;">
         3년동안 무릅 통증으로 벽을 잡고 일어나고, 잠자면서도 통증이 계속되어 힘들었습니다.
         메선 치료 후 다리에 힘이 생기고 밤에 통증 없이 화장실을 다녀올 수 있게 되었습니다.
@@ -1313,11 +1313,11 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-qa-wrap">
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 본인 소개 및 증상</span>
-          <span class="review-qa-a">노원구 창동 73 이인순입니다. 3년 전부터 무릅이 아파서 정형외과와 한의원에서 컴도 맞고 했는데 계속 아파서 수정한의원에서 치료를 받기 시작했습니다. 치료 전에는 너무 많이 아파서 벽을 잡고 일어나고 했는데 잠자면서도 통증이 계속 있었습니다.</span>
+          <span class="review-qa-a">노원구 창동 73 이*순입니다. 3년 전부터 무릅이 아파서 정형외과와 한의원에서 컴도 맞고 했는데 계속 아파서 수정한의원에서 치료를 받기 시작했습니다. 치료 전에는 너무 많이 아파서 벽을 잡고 일어나고 했는데 잠자면서도 통증이 계속 있었습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 내원 및 치료 경과</span>
-          <span class="review-qa-a">친정 오빠 소개로 수정한의원에 다녕 게 되었습니다. 원장님의 체질쿨을 먹으면서 메선 치료를 했는데 바로 낙는다고 해서 했습니다. 메선 치료를 한 다음부터는 다리에 힘이 생기고 잠잤 때도 통증이 조금씩 없어졌습니다.</span>
+          <span class="review-qa-a">친정 오빠 소개로 수정한의원에 다녕 게 되었습니다. 원장님의 체질침을 맞으면서 메선 치료를 했는데 바로 낙는다고 해서 했습니다. 메선 치료를 한 다음부터는 다리에 힘이 생기고 잠잤 때도 통증이 조금씩 없어졌습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 지금 상태</span>
@@ -1334,7 +1334,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
-        <span class="review-author"><i class="fas fa-user"></i> 이인순 (만 73세, 여)</span>
+        <span class="review-author"><i class="fas fa-user"></i> 이*순 (만 73세, 여)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
       </div>
     </div>
