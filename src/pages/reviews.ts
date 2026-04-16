@@ -817,6 +817,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- ===== 자필후기 카드 #14 — 이인순 (무릅관절염·디스크·척추) ===== -->
+        <div id="reviewCard14" class="review-card review-card-handwritten" data-cat="디스크" onclick="openReviewModal('detailModal14')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릅관절염·디스크</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.02</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">무릅이 아파서 걷지도 못하고 잠도 못 쉌어요 — 메선 치료 후 다리에 힘이 생기고 계단도 잘 오르내릴 수 있어요</h3>
+          <p class="review-story">
+            3년동안 무릅 통증으로 벽을 잡고 일어나고, 잘 때도 통증이 계속되었습니다.
+            메선 치료 후 다리에 힘이 생기고 계단도 편하게 오르내릴 수 있게 되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이인순 (만 73세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1273,6 +1295,51 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     </div>
   </div>
 
+  <!-- 상세 모달 #14 -->
+  <div id="detailModal14" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal14')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">무릅관절염·디스크</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.02</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">무릅이 아파서 걷지도 못하고 잠도 못 쉌어요 — 메선 치료 후 다리에 힘이 생기고 계단도 잘 오르내릴 수 있어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        3년동안 무릅 통증으로 벽을 잡고 일어나고, 잠자면서도 통증이 계속되어 힘들었습니다.
+        메선 치료 후 다리에 힘이 생기고 밤에 통증 없이 화장실을 다녀올 수 있게 되었습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 본인 소개 및 증상</span>
+          <span class="review-qa-a">노원구 창동 73 이인순입니다. 3년 전부터 무릅이 아파서 정형외과와 한의원에서 컴도 맞고 했는데 계속 아파서 수정한의원에서 치료를 받기 시작했습니다. 치료 전에는 너무 많이 아파서 벽을 잡고 일어나고 했는데 잠자면서도 통증이 계속 있었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 내원 및 치료 경과</span>
+          <span class="review-qa-a">친정 오빠 소개로 수정한의원에 다녕 게 되었습니다. 원장님의 체질쿨을 먹으면서 메선 치료를 했는데 바로 낙는다고 해서 했습니다. 메선 치료를 한 다음부터는 다리에 힘이 생기고 잠잤 때도 통증이 조금씩 없어졌습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 지금 상태</span>
+          <span class="review-qa-a">어느 날 자다가 화장실을 가는데 끝없이 통증이 하나도 없어졌습니다. 12월 달은 너무 행복하게 살 수 있었습니다. 지금은 조금은 아프지만 2년도 러이 나은 상태입니다. 걷기도 편하고 계단도 잘 오르내릴 수 있습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
+          <span class="review-qa-a">원장님이 잘해 주셔서 열심히 잘 받으려고 노력합니다. 감사합니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-14-leeinsu-p1.jpg" alt="무릅관절염 자필후기 1페이지" class="review-detail-img" onclick="openImgFull(this.src)">
+        <img src="/static/reviews/review-14-leeinsu-p2.jpg" alt="무릅관절염 자필후기 2페이지" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 이인순 (만 73세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #13 -->
   <div id="detailModal13" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
@@ -1540,7 +1607,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard10'), cat: '자율신경' },
       { el: document.getElementById('reviewCard11'), cat: '디스크' },
       { el: document.getElementById('reviewCard12'), cat: '디스크' },
-      { el: document.getElementById('reviewCard13'), cat: '자율신경' }
+      { el: document.getElementById('reviewCard13'), cat: '자율신경' },
+      { el: document.getElementById('reviewCard14'), cat: '디스크' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
