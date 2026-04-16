@@ -795,6 +795,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- ===== 자필후기 카드 #13 — 발0미 (항암후유증·자율신경) ===== -->
+        <div id="reviewCard13" class="review-card review-card-handwritten" data-cat="자율신경" onclick="openReviewModal('detailModal13')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">항암후유증·면역</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">한여름에도 난방기를 켰던 추위가 사라졌습니다 — 항암 후 면역저하와 피로가 체질 한약으로 함께 좋아졌어요</h3>
+          <p class="review-story">
+            유방암 항암·방사선 치료 후 면역지하로 뉴속까지 추워서 한여름에도 난방기를 켰을 정도였습니다.
+            체질 약침·한약 치료 후 추위가 사라지고 면역력도 회복되어잔습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 박*미 (만 47세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1251,6 +1273,54 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     </div>
   </div>
 
+  <!-- 상세 모달 #13 -->
+  <div id="detailModal13" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal13')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">항암후유증·면역</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.08</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">한여름에도 난방기를 켰던 추위가 사라졌습니다 — 항암 후 면역저하와 피로가 체질 한약으로 함께 좋아졌어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        유방암 항암·방사선 치료 후 면역지하로 뉴속까지 추워서 한여름에도 난방기를 켰을 정도였습니다.
+        체질 약침·한약 치료 후 추위가 사라지고 면역력도 회복되어위즈니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">유방암 치료(항암, 방사선) 후 면역체계가 불안정하여 추위를 심하게 느끄고 자주 피로감을 느끼었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">뉴속까지 추위를 타서 한여름에도 난방기를 사용할 정도로 일상생활에 불편함을 느꺼습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">대신 약침을 1주일에 한 번씩 맞고 체질 개선 한약을 복용한 후 추위를 느끼지 않고 있으며 매우 빠른 시기에 증상이 개선되는 것을 느껷습니다. 한약이 소화가 잘 되고 더 편안해서 잘 먹고 있습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">한여름에 에어콘 바람을 켠던 것이 매우 행저지었으며, 8체질을 알고 체질에 맞는 음식을 섭취하여 몸의 면역력과 성격도 차츠 바뀌는 것을 알게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
+          <span class="review-qa-a">정성곳 세심하게 치료해 주신 원장님과 간호사님들께 진심으로 감사드리며 하실의 축복이 함께 하시길 기도드립니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-13-parkmi-p1.jpg" alt="항암후유증 면역저하 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 박*미 (만 47세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #12 -->
   <div id="detailModal12" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
@@ -1469,7 +1539,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard09'), cat: '여성' },
       { el: document.getElementById('reviewCard10'), cat: '자율신경' },
       { el: document.getElementById('reviewCard11'), cat: '디스크' },
-      { el: document.getElementById('reviewCard12'), cat: '디스크' }
+      { el: document.getElementById('reviewCard12'), cat: '디스크' },
+      { el: document.getElementById('reviewCard13'), cat: '자율신경' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
