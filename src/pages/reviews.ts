@@ -638,7 +638,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             8체질 침과 체질한약을 꾸준히 받고, 2019년 겨울 건강검진 결과 난소 물혹이 말끔히 없어졌습니다.
           </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 이*경 (97년생, 여)</span>
+            <span class="review-author"><i class="fas fa-user"></i> 이*조경 (여)</span>
             <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           </div>
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
@@ -971,7 +971,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지 클릭하면 원본 크기로 | 썸네일로 페이지 전환</p>
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
-        <span class="review-author"><i class="fas fa-user"></i> 이*경 (97년생, 여)</span>
+        <span class="review-author"><i class="fas fa-user"></i> 이*조경 (여)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
       </div>
     </div>
