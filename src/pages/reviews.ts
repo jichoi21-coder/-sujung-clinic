@@ -459,6 +459,31 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       </div>
     </div>
 
+    <!-- 신뢰 통계 바 -->
+    <div class="review-stats-bar">
+      <div class="sec-wrap review-stats-inner">
+        <div class="review-stat-item">
+          <span class="review-stat-num">247<span class="review-stat-unit">건</span></span>
+          <span class="review-stat-label">누적 치료후기</span>
+        </div>
+        <div class="review-stat-divider"></div>
+        <div class="review-stat-item">
+          <span class="review-stat-num">4.9<span class="review-stat-unit">점</span></span>
+          <span class="review-stat-label">평균 만족도</span>
+        </div>
+        <div class="review-stat-divider"></div>
+        <div class="review-stat-item">
+          <span class="review-stat-num">30<span class="review-stat-unit">년</span></span>
+          <span class="review-stat-label">8체질 임상경험</span>
+        </div>
+        <div class="review-stat-divider"></div>
+        <div class="review-stat-item">
+          <span class="review-stat-num">12<span class="review-stat-unit">개</span></span>
+          <span class="review-stat-label">치료 전문 분야</span>
+        </div>
+      </div>
+    </div>
+
     <!-- 로그인 상태 표시 -->
     <div class="review-user-bar">
       <div class="sec-wrap review-user-inner">
@@ -477,15 +502,11 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
       <!-- 카테고리 필터 (2행: 일반진료 + 특설클리닉) -->
       <div class="review-filter-wrap">
-
-        <!-- 행1: 일반 진료 -->
         <div class="review-filter-group">
-          <span class="review-filter-label">
-            <i class="fas fa-list-ul"></i> 일반 진료
-          </span>
+          <p class="review-filter-label"><i class="fas fa-filter"></i> 일반 진료</p>
           <div class="review-filter-btns">
             <button class="review-filter-btn active" data-cat="all">전체</button>
-            <button class="review-filter-btn" data-cat="체질다이어트">체질 다이어트</button>
+            <button class="review-filter-btn" data-cat="다이어트">체질 다이어트</button>
             <button class="review-filter-btn" data-cat="디스크">디스크·척추</button>
             <button class="review-filter-btn" data-cat="피부">피부·아토피</button>
             <button class="review-filter-btn" data-cat="소화기">소화기</button>
@@ -495,306 +516,195 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <button class="review-filter-btn" data-cat="기타">기타</button>
           </div>
         </div>
-
-        <!-- 행2: 특설클리닉 -->
         <div class="review-filter-group review-filter-group-special">
-          <span class="review-filter-label review-filter-label-special">
-            <i class="fas fa-star"></i> 특설클리닉
-          </span>
+          <p class="review-filter-label review-filter-label-special"><i class="fas fa-star"></i> 특설클리닉</p>
           <div class="review-filter-btns">
             <button class="review-filter-btn review-filter-btn-special" data-cat="구안와사">구안와사·안면마비</button>
             <button class="review-filter-btn review-filter-btn-special" data-cat="편두통">만성 편두통</button>
-            <button class="review-filter-btn review-filter-btn-special" data-cat="기타">대상포진·후신경통</button>
+            <button class="review-filter-btn review-filter-btn-special" data-cat="대상포진">대상포진·후신경통</button>
             <button class="review-filter-btn review-filter-btn-special" data-cat="천식">만성천식·마이코플라즈마</button>
-            <button class="review-filter-btn review-filter-btn-special" data-cat="소화기">궤양성 대장염</button>
+            <button class="review-filter-btn review-filter-btn-special" data-cat="대장염">궤양성 대장염</button>
           </div>
         </div>
-
       </div>
-
-      <!-- ── 3열 요약 박스 그리드 스타일 ── -->
-      <style>
-        /* 항상 3열 고정 */
-        #reviewGrid {
-          display: grid !important;
-          grid-template-columns: repeat(3, 1fr) !important;
-          gap: 20px;
-          margin-bottom: 40px;
-        }
-        /* 요약 카드 컴팩트 스타일 */
-        #reviewGrid .review-card {
-          padding: 20px 18px;
-          gap: 10px;
-          cursor: pointer;
-          border: 1px solid #e8f0eb;
-          transition: transform 0.18s, box-shadow 0.18s, border-color 0.18s;
-        }
-        #reviewGrid .review-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 8px 28px rgba(27,76,50,.14);
-          border-color: var(--g3, #4a9e6b);
-        }
-        /* 본문 3줄 클램프 */
-        #reviewGrid .review-card-body {
-          display: -webkit-box !important;
-          -webkit-line-clamp: 3 !important;
-          -webkit-box-orient: vertical !important;
-          overflow: hidden !important;
-          font-size: 0.9rem;
-          line-height: 1.65;
-          color: #555;
-          flex: 1;
-        }
-        /* 더 보기 힌트 */
-        #reviewGrid .review-card::after {
-          content: '자세히 보기 →';
-          display: block;
-          font-size: 0.78rem;
-          color: var(--g2, #2d7a4f);
-          font-weight: 600;
-          margin-top: 4px;
-          opacity: 0;
-          transition: opacity 0.18s;
-        }
-        #reviewGrid .review-card:hover::after { opacity: 1; }
-
-        /* 반응형 */
-        @media (max-width: 900px) {
-          #reviewGrid { grid-template-columns: repeat(2, 1fr) !important; }
-        }
-        @media (max-width: 540px) {
-          #reviewGrid { grid-template-columns: 1fr !important; }
-        }
-
-        /* ── 상세 모달 ── */
-        #reviewModal {
-          display: none;
-          position: fixed; inset: 0; z-index: 9999;
-          background: rgba(0,0,0,.55);
-          align-items: center; justify-content: center;
-          padding: 20px;
-        }
-        #reviewModal.open { display: flex; }
-        .rmodal-box {
-          background: #fff;
-          border-radius: 16px;
-          width: 100%; max-width: 680px;
-          max-height: 88vh;
-          overflow-y: auto;
-          position: relative;
-          box-shadow: 0 24px 60px rgba(0,0,0,.22);
-          animation: rmodalIn .22s ease;
-        }
-        @keyframes rmodalIn {
-          from { opacity:0; transform: translateY(24px) scale(.97); }
-          to   { opacity:1; transform: translateY(0) scale(1); }
-        }
-        .rmodal-close {
-          position: sticky; top: 0; float: right;
-          background: rgba(255,255,255,.9);
-          border: none; cursor: pointer;
-          width: 36px; height: 36px;
-          border-radius: 50%; font-size: 1.1rem;
-          color: #444; margin: 12px 12px 0 0;
-          display: flex; align-items: center; justify-content: center;
-          z-index: 10; box-shadow: 0 2px 8px rgba(0,0,0,.12);
-          transition: background .15s;
-        }
-        .rmodal-close:hover { background: #f0f0f0; }
-        .rmodal-body { padding: 12px 32px 36px; clear: both; }
-        .rmodal-header { margin-bottom: 18px; }
-        .rmodal-cat { font-size: 0.82rem; font-weight: 700; color: var(--g2,#2d7a4f);
-          background: #e8f5ee; padding: 4px 12px; border-radius: 20px; display: inline-block; margin-bottom: 8px; }
-        .rmodal-title { font-size: 1.22rem; font-weight: 700; color: #222; line-height: 1.45; margin-bottom: 6px; }
-        .rmodal-meta { font-size: 0.84rem; color: #888; display: flex; gap: 14px; flex-wrap: wrap; }
-        .rmodal-stars { color: #f5a623; font-size: 0.9rem; }
-        .rmodal-divider { border: none; border-top: 1px solid #e8eceb; margin: 18px 0; }
-        /* Q&A 섹션 */
-        .rmodal-qa { display: flex; flex-direction: column; gap: 18px; margin-bottom: 24px; }
-        .rmodal-q { font-size: 0.88rem; font-weight: 700; color: var(--g1,#1b4c32);
-          background: #f0f7f3; border-left: 3px solid var(--g2,#2d7a4f);
-          padding: 10px 14px; border-radius: 0 8px 8px 0; margin-bottom: 6px; }
-        .rmodal-a { font-size: 0.92rem; color: #444; line-height: 1.75; padding: 0 4px; }
-        /* 자필 이미지 */
-        .rmodal-img-wrap { margin-top: 20px; }
-        .rmodal-img-label { font-size: 0.82rem; color: #888; font-weight: 600; margin-bottom: 8px;
-          display: flex; align-items: center; gap: 6px; }
-        .rmodal-img { width: 100%; border-radius: 10px; border: 1px solid #e0e0e0;
-          background: #f8f9fa; min-height: 180px;
-          display: flex; align-items: center; justify-content: center;
-          font-size: 0.85rem; color: #aaa; overflow: hidden; }
-        .rmodal-img img { width: 100%; border-radius: 10px; display: block; }
-        .rmodal-img-placeholder {
-          width: 100%; min-height: 180px; border-radius: 10px;
-          border: 2px dashed #d0d0d0; background: #fafafa;
-          display: flex; flex-direction: column; align-items: center; justify-content: center;
-          gap: 8px; color: #bbb; font-size: 0.85rem; padding: 30px;
-        }
-        .rmodal-img-placeholder i { font-size: 2.5rem; color: #d0d0d0; }
-        @media (max-width: 540px) {
-          .rmodal-body { padding: 10px 18px 28px; }
-          .rmodal-title { font-size: 1.05rem; }
-        }
-      </style>
 
       <!-- 자필후기 안내 배너 -->
       <div class="review-handwritten-banner">
         <i class="fas fa-pen-nib"></i>
-        <span>아래 자필 후기는 환자분이 직접 손으로 작성하신 원본입니다. 이미지와 함께 원문 텍스트를 제공합니다.</span>
+        <span>아래 <strong>자필 후기</strong>는 환자분이 직접 손으로 작성하신 원본입니다. 이미지와 함께 원문 텍스트를 제공합니다.</span>
       </div>
 
       <!-- 후기 카드 그리드 -->
-      <div class="review-grid" id="reviewGrid">
+      <div class="review-grid summary-mode" id="reviewGrid">
 
-        <!-- ① 체질 다이어트 -->
-        <article class="review-card" data-cat="체질다이어트" data-id="r10" role="button" tabindex="0"
-          aria-label="후기 상세 보기: 6개월 만에 17.3kg 감량">
+        <!-- ===== 자필후기 카드 #1 — 고은주 (특설클리닉·궤양성대장염) ===== -->
+        <div id="reviewCard01" class="review-card review-card-handwritten" data-cat="대장염" onclick="openReviewModal('detailModal01')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag review-cat-tag-special">궤양성 대장염</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">고질적인 병이 좋아졌습니다 — 병원에서도 못 고치던 궤양성 대장염</h3>
+          <p class="review-story">
+            궤양성 대장염을 앓고 있었고 항상 삶이 불편했으며, 수면도 잘 안 되고 힘들었습니다.
+            지인이 치료받고 많이 좋아졌다고 해서 추천받아 방문했습니다.
+            치료 후 자주 나오던 혈(피)이 사라지고 대장이 편안해졌어요. 몸도 가벼워지고 기분도, 마음도 편안해졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 고*주 (만 49세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- ===== 자필후기 카드 #2 — 김정은 (체질 다이어트, 3페이지) ===== -->
+        <div id="reviewCard02" class="review-card review-card-handwritten" data-cat="다이어트" onclick="openReviewModal('detailModal02')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">체질 다이어트</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (3장)</span>
             <span class="review-date">2020.01.21</span>
           </div>
+          <div class="review-quote-mark">"</div>
           <h3 class="review-card-title">6개월 만에 17.3kg 감량 — 내과 다이어트 약 부작용으로 포기했다가 체질로 성공</h3>
-          <p class="review-card-body">내과에서 다이어트 약을 먹었지만 부작용만 심해지고 체중은 그대로였습니다. 우울증까지 생겼어요.</p>
+          <p class="review-story">
+            내과에서 다이어트 약을 먹었지만 부작용만 심해지고 체중은 그대로였습니다. 우울증까지 생겼어요.
+            지인 소개로 수정한의원 체질 다이어트를 시작했는데, 6개월 만에 68.8kg에서 51.5kg으로 줄었습니다.
+          </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 김*은 (40대, 여)</span>
-            <div class="review-stars">★★★★★</div>
+            <span class="review-author"><i class="fas fa-user"></i> 김*은 (만 48세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
           </div>
-        </article>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
 
-        <!-- ③ 구안와사·안면마비 -->
-        <article class="review-card" data-cat="구안와사" data-id="r1" role="button" tabindex="0"
-          aria-label="후기 상세 보기: 2주 만에 눈이 완전히 감겼어요">
-          <div class="review-card-header">
-            <span class="review-cat-tag">구안와사·안면마비</span>
-            <span class="review-date">2025.03.15</span>
-          </div>
-          <h3 class="review-card-title">2주 만에 눈이 완전히 감겼어요</h3>
-          <p class="review-card-body">갑자기 입이 돌아가서 너무 무서웠는데, 원장님께서 체질 진단 후 맞춤 치료를 해주셨습니다. 2주 차부터 눈이 감기기 시작했고, 4주 후에는 거의 정상으로 돌아왔어요.</p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 김*희 (40대, 여)</span>
-            <div class="review-stars">★★★★★</div>
-          </div>
-        </article>
-
-        <!-- ② 디스크·척추 -->
-        <article class="review-card" data-cat="디스크" data-id="r2" role="button" tabindex="0"
-          aria-label="후기 상세 보기: 수술 권유받았는데 한방으로 해결했습니다">
-          <div class="review-card-header">
-            <span class="review-cat-tag">디스크·척추</span>
-            <span class="review-date">2025.02.28</span>
-          </div>
-          <h3 class="review-card-title">수술 권유받았는데 한방으로 해결했습니다</h3>
-          <p class="review-card-body">L4~L5 디스크로 수술까지 권유받았는데, 수정한의원 체질 침치료와 추나를 3개월 받은 후 MRI상 디스크가 크게 줄었다고 했습니다. 지금은 일상생활에 전혀 지장 없습니다.</p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 이*민 (50대, 남)</span>
-            <div class="review-stars">★★★★★</div>
-          </div>
-        </article>
-
-        <!-- ③ 피부·아토피 -->
-        <article class="review-card" data-cat="피부" data-id="r3" role="button" tabindex="0"
-          aria-label="후기 상세 보기: 20년 아토피가 드디어 잡혔어요">
+        <!-- ===== 자필후기 카드 #3 — 김지은 (피부·아토피) ===== -->
+        <div id="reviewCard03" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal03')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">피부·아토피</span>
-            <span class="review-date">2025.02.10</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.08</span>
           </div>
-          <h3 class="review-card-title">20년 아토피가 드디어 잡혔어요</h3>
-          <p class="review-card-body">어릴 때부터 아토피로 스테로이드를 달고 살았는데, 체질이 금양체질이라는 걸 알고 나서 음식도 조절하고 체질 한약을 먹었더니 6개월 만에 피부가 거의 깨끗해졌습니다.</p>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">어릴 때부터의 아토피가 손발가락까지 좋아졌어요 — 체질을 알고 나니 음식도 내 편이 됐습니다</h3>
+          <p class="review-story">
+            어릴 때부터 아토피가 있어서 손가락, 발가락에 빨갛게 올라오고 가려움증이 동반됐습니다.
+            꾸준히 한약을 먹고 체질 침 치료를 병행하면서 손발가락에 남아있던 아토피·흉터가 없어졌습니다.
+          </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 박*준 (30대, 남)</span>
-            <div class="review-stars">★★★★★</div>
+            <span class="review-author"><i class="fas fa-user"></i> 김*은 (만 24세, 여)</span>
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           </div>
-        </article>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
 
-        <!-- ④ 자율신경·공황 -->
-        <article class="review-card" data-cat="자율신경" data-id="r4" role="button" tabindex="0"
-          aria-label="후기 상세 보기: 공황장애 1년, 이제 지하철을 탈 수 있어요">
+        <!-- ===== 자필후기 카드 #4 — 박상임 (대상포진·후신경통) ===== -->
+        <div id="reviewCard04" class="review-card review-card-handwritten" data-cat="대상포진" onclick="openReviewModal('detailModal04')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.02</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">대상포진 한 달 넘게 진통제·주사도 안 들었는데 — 파동치료 후 처음으로 통증이 가라앉았습니다</h3>
+          <p class="review-story">
+            대상포진으로 진통제와 주사를 한 달 이상 맞았지만 극심한 통증과 수면장애가 전혀 줄지 않았습니다.
+            수정한의원 파동치료 후 처음으로 피부 느낌이 달라지고 통증이 가라앉기 시작했습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 박*임 (만 54세, 남)</span>
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- ===== 자필후기 카드 #5 — 이O경 (여성질환·난소물혹) ===== -->
+        <div id="reviewCard05" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal05')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">여성질환</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (2장)</span>
+            <span class="review-date">2020.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">난소 물혹 5~6cm → 완전히 사라졌습니다 — 8체질 침과 체질한약으로</h3>
+          <p class="review-story">
+            2018년 건강검진에서 난소 물혹이 왼쪽 5~6cm 발견됐습니다.
+            8체질 침과 체질한약을 꾸준히 받고, 2019년 겨울 건강검진 결과 난소 물혹이 말끔히 없어졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*경 (97년생, 여)</span>
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- ===== 자필후기 카드 #6 — 이O숙 (디스크·척추) ===== -->
+        <div id="reviewCard06" class="review-card review-card-handwritten" data-cat="디스크" onclick="openReviewModal('detailModal06')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">디스크·척추</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">많이 좋아졌습니다! — 척추 통증·팔 저림·밤에 시림, 치료 후 수면도 일상도 편안해졌어요</h3>
+          <p class="review-story">
+            척추와 등 통증이 심하고 팔이 너무 저려서 잠도 제대로 못 잤습니다.
+            지인 소개로 수정한의원을 방문, 치료 후 통증이 줄고 잠도 잘 오고 몸이 한결 편안해졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*숙 (만 55세, 여)</span>
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- ===== 자필후기 카드 #7 — 오O근 (자율신경·공황) ===== -->
+        <div id="reviewCard07" class="review-card review-card-handwritten" data-cat="자율신경" onclick="openReviewModal('detailModal07')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">자율신경·공황</span>
-            <span class="review-date">2025.01.22</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.09</span>
           </div>
-          <h3 class="review-card-title">공황장애 1년, 이제 지하철을 탈 수 있어요</h3>
-          <p class="review-card-body">공황장애로 지하철, 엘리베이터를 못 탔는데 체질 한약과 침치료를 받으면서 자율신경이 안정된 걸 느꼈습니다. 3개월 후부터는 혼자 지하철을 탈 수 있게 됐어요.</p>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">많이 좋아졌습니다! — 두통·소화불량·몸 무거움, 치료 후 몸도 마음도 가벼워졌어요</h3>
+          <p class="review-story">
+            머리가 무겁고 두통이 있었으며, 숨쉬기 불편하고 소화도 잘 안됐습니다.
+            혈압약을 먹어도 개선이 없어 지인 소개로 8체질 치료를 받게 되었습니다.
+            치료 후 두통이 없어지고 몸이 가벼워지며 잠도 잘 자고 활력이 생겼습니다.
+          </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 최*연 (30대, 여)</span>
-            <div class="review-stars">★★★★★</div>
+            <span class="review-author"><i class="fas fa-user"></i> 오*근 (만 54세, 남)</span>
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           </div>
-        </article>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
 
-        <!-- ⑤ 여성질환·난임 -->
-        <article class="review-card" data-cat="여성" data-id="r5" role="button" tabindex="0"
-          aria-label="후기 상세 보기: 3년 난임 끝에 임신 성공했습니다!">
+        <!-- ===== 자필후기 카드 #8 — 고O찬 (특설클리닉·궤양성대장염, 4페이지) ===== -->
+        <div id="reviewCard08" class="review-card review-card-handwritten" data-cat="대장염" onclick="openReviewModal('detailModal08')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">여성질환·난임</span>
-            <span class="review-date">2025.01.08</span>
+            <span class="review-cat-tag review-cat-tag-special">궤양성 대장염</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 치료수기 (4장)</span>
+            <span class="review-date">2016.05</span>
           </div>
-          <h3 class="review-card-title">3년 난임 끝에 임신 성공했습니다!</h3>
-          <p class="review-card-body">3번의 시험관 실패 후 수정한의원을 방문했습니다. AMH가 0.4로 매우 낮았는데, 체질 한약 복용 4개월 후 자연임신에 성공했습니다. 지금 임신 7개월입니다. 너무너무 감사해요!</p>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">10년 넘게 복용하던 궤양성대장염 약을 모두 끊었습니다 — 2015년 5월 치료 시작, 1년 만에 완전 회복</h3>
+          <p class="review-story">
+            2005년 45세에 희귀난치성 궤양성대장염을 얻어 10여 년간 대학병원 치료를 받았지만 차도가 없었습니다.
+            2015년 수정한의원 8체질 치료를 시작한 지 1년 만에 10년 이상 복용하던 모든 약물을 중단했습니다.
+          </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 정*영 (30대, 여)</span>
-            <div class="review-stars">★★★★★</div>
+            <span class="review-author"><i class="fas fa-user"></i> 고*찬 (만 55세, 남)</span>
+            <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           </div>
-        </article>
-
-        <!-- ⑥ 소화기 -->
-        <article class="review-card" data-cat="소화기" data-id="r6" role="button" tabindex="0"
-          aria-label="후기 상세 보기: 10년 역류성식도염 두 달 만에 좋아졌어요">
-          <div class="review-card-header">
-            <span class="review-cat-tag">소화기</span>
-            <span class="review-date">2024.12.30</span>
-          </div>
-          <h3 class="review-card-title">10년 역류성식도염 두 달 만에 좋아졌어요</h3>
-          <p class="review-card-body">10년간 위장약을 달고 살았는데, 체질을 알고 맞지 않는 음식을 끊고 체질 한약을 먹었더니 두 달 만에 속쓰림이 사라졌습니다. 지금은 약 없이도 잘 지냅니다.</p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 강*호 (40대, 남)</span>
-            <div class="review-stars">★★★★<span style="opacity:.4">★</span></div>
-          </div>
-        </article>
-
-        <!-- ⑦ 소아성장 -->
-        <article class="review-card" data-cat="성장" data-id="r7" role="button" tabindex="0"
-          aria-label="후기 상세 보기: 6개월 만에 8cm 성장했어요">
-          <div class="review-card-header">
-            <span class="review-cat-tag">소아성장</span>
-            <span class="review-date">2024.12.15</span>
-          </div>
-          <h3 class="review-card-title">6개월 만에 8cm 성장했어요</h3>
-          <p class="review-card-body">초등 4학년 아들 성장판 초음파 검사 후 성장 치료를 시작했습니다. 체질 맞춤 성장 한약과 성장침을 병행했더니 6개월 만에 8cm가 자랐어요. 반에서 키 순서가 많이 올랐습니다.</p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 오*진 학부모 (40대, 여)</span>
-            <div class="review-stars">★★★★★</div>
-          </div>
-        </article>
-
-        <!-- ⑧ 구안와사 #2 -->
-        <article class="review-card" data-cat="구안와사" data-id="r8" role="button" tabindex="0"
-          aria-label="후기 상세 보기: 발병 3일 만에 치료 시작해서 빠르게 회복">
-          <div class="review-card-header">
-            <span class="review-cat-tag">구안와사·안면마비</span>
-            <span class="review-date">2024.11.20</span>
-          </div>
-          <h3 class="review-card-title">발병 3일 만에 치료 시작해서 빠르게 회복</h3>
-          <p class="review-card-body">발병 직후 바로 수정한의원에 왔습니다. 골든타임 치료 덕분인지 3주 만에 90% 이상 회복되었어요. 다른 병원에서 6개월이 걸릴 수 있다고 했는데 정말 빠른 회복이었습니다.</p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 윤*서 (20대, 여)</span>
-            <div class="review-stars">★★★★★</div>
-          </div>
-        </article>
-
-        <!-- ⑨ 기타 (대상포진) -->
-        <article class="review-card" data-cat="기타" data-id="r9" role="button" tabindex="0"
-          aria-label="후기 상세 보기: 2년간 잠 못 자던 통증에서 해방됐어요">
-          <div class="review-card-header">
-            <span class="review-cat-tag">대상포진후신경통</span>
-            <span class="review-date">2024.11.05</span>
-          </div>
-          <h3 class="review-card-title">2년간 잠 못 자던 통증에서 해방됐어요</h3>
-          <p class="review-card-body">대상포진 후 2년간 전기가 통하는 듯한 통증으로 잠을 못 잤습니다. 파동요법·태반약침·한약 복합치료를 받으면서 처음엔 반신반의했는데, 3개월 후 통증이 70% 이상 줄었습니다.</p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 신*철 (60대, 남)</span>
-            <div class="review-stars">★★★★<span style="opacity:.4">★</span></div>
-          </div>
-        </article>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
 
       </div><!-- /review-grid -->
 
@@ -808,258 +718,515 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </p>
       </div>
 
-    </section>
-  </div>
 
-  <!-- ────── 상세 모달 ────── -->
-  <div id="reviewModal" role="dialog" aria-modal="true" aria-labelledby="rmodalTitle">
-    <div class="rmodal-box">
-      <button class="rmodal-close" id="rmodalClose" aria-label="닫기">
-        <i class="fas fa-times"></i>
-      </button>
-      <div class="rmodal-body" id="rmodalBody">
-        <!-- JS로 동적 삽입 -->
+  <!-- 상세 모달 #01 -->
+  <div id="detailModal01" class="review-detail-modal" onclick="closeReviewModal(event, this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="document.getElementById('detailModal01').style.display='none'">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-special">궤양성 대장염</span>
+        <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">고질적인 병이 좋아졌습니다 — 병원에서도 못 고치던 궤양성 대장염</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        궤양성 대장염을 앓고 있었고 항상 삶이 불편했으며, 수면도 잘 안 되고 힘들었습니다.
+        지인이 치료받고 많이 좋아졌다고 해서 추천받아 방문했습니다.
+        치료 후 자주 나오던 혈(피)이 사라지고 대장이 편안해졌어요. 몸도 가벼워지고 기분도, 마음도 편안해졌습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 불편하셨나요?</span>
+          <span class="review-qa-a">궤양성 대장염을 앓고 있었고 항상 삶이 불편했습니다. 수면도 잘 안 되고 힘들었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유는요?</span>
+          <span class="review-qa-a">지인이 치료를 받았는데 많이 좋아졌다고 해서 추천받아 방문하게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 개선된 점은 무엇인가요?</span>
+          <span class="review-qa-a">자주 나오던 혈(피)이 사라지고 대장이 편안해졌습니다. 잠도 편안해졌습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 삶의 질은 어떻게 달라지셨나요?</span>
+          <span class="review-qa-a">수면 향상, 개운해짐, 손발도 잘 되고, 몸이 가벼워졌습니다. 기분도 좋아지고 마음도 편안해졌습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 한의원에 하고 싶은 말은요?</span>
+          <span class="review-qa-a">고질적인 병이었는데 (병원에서도 고치지 못해) 많이 좋아져서 감사합니다. 수정한의원은 친절하고 가족같아요. 하나하나 세심하게 대해주시고, 원장님의 치료가 이 한의원의 성화를 함께 만들어 주시니 정말 감사합니다. ^^</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-01-goeunjoo.jpg" alt="고은주 자필 치료후기 원본" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 고*주 (만 49세, 여)</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- 상세 모달 #02 -->
+  <div id="detailModal02" class="review-detail-modal" onclick="closeReviewModal(event, this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="document.getElementById('detailModal02').style.display='none'">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">체질 다이어트</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (3장)</span>
+        <span class="review-date">2020.01.21</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">6개월 만에 17.3kg 감량 — 내과 다이어트 약 부작용으로 포기했다가 체질로 성공</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        내과에서 다이어트 약을 먹었지만 부작용만 심해지고 체중은 그대로였습니다. 우울증까지 생겼어요.
+        지인 소개로 수정한의원 체질 다이어트를 시작했는데, 6개월 만에 68.8kg에서 51.5kg으로 줄었습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 치료를 받으셨나요?</span>
+          <span class="review-qa-a">체질 검사로 제 체질을 알게 됐고, 체질에 맞는 음식과 해로운 음식을 알게 됐습니다. 체질침·한약·면역디톡스 프로그램을 병행했는데, 다이어트 중에도 기력이 소진되지 않아 정말 도움이 됐어요.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 실제 체중 변화 (자필 기록)</span>
+          <span class="review-qa-a">
+            <span class="review-weight-table">
+              <span>시작 <strong>68.8kg</strong> (체지방 29.3kg)</span>
+              <span>→ 1개월 <strong>61.4kg</strong></span>
+              <span>→ 3개월 <strong>56.4kg</strong></span>
+              <span>→ 6개월 <strong>51.5kg</strong> (체지방 11.4kg)</span>
+              <span class="review-weight-result">6개월 총 <strong>체중 -17.3kg · 체지방 -17.9kg 감량!</strong></span>
+            </span>
+          </span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 원문 전체 내용</span>
+          <span class="review-qa-a">
+            <strong>[내원 동기]</strong> 면역디톡스 프로그램을 통해 건강하게 체중을 감량하고 유지하고 계시다는 지인의 소개를 받고 방문했습니다.<br><br>
+            <strong>[내원 당시 몸 상태]</strong> 체중이 빠르게 증가하기 시작했고 약에 내성이 생겨 효과가 없었으며, 부작용으로 배변장애·피로·불면증·갱년기 증상 등 생활의 불편함이 많았습니다.<br><br>
+            <strong>[타 병원 치료]</strong> 내과 다이어트 약을 먹었으나 부작용만 심해지고 체중 감량 효과는 없었습니다. 짜증·불안함·우울증까지 생겼습니다.<br><br>
+            <strong>[치료 과정]</strong> 디톡스 다이어트를 10일 동안 제품과 한약을 함께 복용하며 이침·몸침 치료를 받았습니다.<br><br>
+            <strong>[하고 싶은 말]</strong> 목표체중을 설정하고 1kg씩 끊임없이 관리하는 생활을 지키며 노력하게 되었습니다. 정말 감사합니다.
+          </span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <div class="review-detail-gallery">
+          <img id="dm02-main" src="/static/reviews/review-02-kimjungeun-p1.jpg" alt="체질 다이어트 자필후기 1페이지" class="review-detail-img-main" onclick="openImgFull(this.src)">
+          <div class="review-detail-thumbs">
+            <img src="/static/reviews/review-02-kimjungeun-p1.jpg" alt="1페이지" class="review-detail-thumb active" onclick="switchDetailImg('dm02-main',this)">
+            <img src="/static/reviews/review-02-kimjungeun-p2.jpg" alt="2페이지" class="review-detail-thumb" onclick="switchDetailImg('dm02-main',this)">
+            <img src="/static/reviews/review-02-kimjungeun-p3.jpg" alt="3페이지" class="review-detail-thumb" onclick="switchDetailImg('dm02-main',this)">
+          </div>
+        </div>
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지 클릭하면 원본 크기로 | 썸네일로 페이지 전환</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 김*은 (만 48세, 여)</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #03 -->
+  <div id="detailModal03" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="document.getElementById('detailModal03').style.display='none'">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">피부·아토피</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.08</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">어릴 때부터의 아토피가 손발가락까지 좋아졌어요 — 체질을 알고 나니 음식도 내 편이 됐습니다</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        어릴 때부터 아토피가 있어서 손가락, 발가락에 빨갛게 올라오고 가려움증이 동반됐습니다.
+        꾸준히 한약을 먹고 체질 침 치료를 병행하면서 손발가락에 남아있던 아토피·흉터가 없어졌습니다.
+        무엇보다 체질을 알게 되어 식이요법을 통해 효율적으로 내 몸에 맞는 식이를 할 수 있어 정말 좋아졌습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유가 무엇인가요?</span>
+          <span class="review-qa-a">아토피를 계속 안고 가야 하나 고민이었는데 체질치료로 개선할 수 있을 것 같았습니다. 가족들도 치료를 많이 받고 있던 터라 믿음이 더 컸습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질은?</span>
+          <span class="review-qa-a">아토피로 겨울이 되면 각질이 갈라지고 떨어졌는데 많이 호전되어 신발을 신을 때도 아프지 않고, 발바닥도 깨끗해졌습니다. 시험기간이나 스트레스 받는 날에도 예전처럼 긁지 않습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 원문 전체 내용</span>
+          <span class="review-qa-a">
+            <strong>[증상]</strong> 어릴 때부터 아토피가 있어서 손가락과 발가락에 빨갛게 올라오고 가려움증이 동반됐습니다. 밤에 바닥이 자꾸 갈라져서 양말을 신으면 아팠습니다.<br><br>
+            <strong>[개선된 점]</strong> 한약을 꾸준히 먹고, 체질 침 치료도 병행하여 손가락과 발가락에 남아있던 아토피·흉터가 없어졌습니다.<br><br>
+            <strong>[하고 싶은 말]</strong> 항상 밝은 미소로 대해주시고 체질치료 하면서 궁금한 것도 많이 알려주셨습니다. 아토피가 호전되면서 같이 응원해주셔서 감사합니다. ^^
+          </span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-03-kimjieun.jpg" alt="아토피 자필후기 원본" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 김*은 (만 24세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #04 -->
+  <div id="detailModal04" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="document.getElementById('detailModal04').style.display='none'">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
+        <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.02</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">대상포진 한 달 넘게 진통제·주사도 안 들었는데 — 파동치료 후 처음으로 통증이 가라앉았습니다</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        대상포진으로 피부과 진료를 한 달 가까이 받았습니다. 진통제와 주사를 한 달 전부터 매일 맞았지만
+        심한 통증과 수면장애는 전혀 줄지 않았습니다. 수정한의원에서 파동치료를 받고 나서야 처음으로 통증이 가라앉기 시작했습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 내원 당시 상태는 어땠나요?</span>
+          <span class="review-qa-a">그 당시 몸 상태는 매우 좋지 않은 상태였고, 설 명절연휴가 있었기에 심적으로도 불안했고 체력 저하로 일상이 불가능했습니다. 타 병원에서 한 달간 진통제·주사 치료를 받았지만 전혀 차도가 없었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료 후 달라진 점은?</span>
+          <span class="review-qa-a">지금은 육체적·정신적으로 많이 안정되어 일상으로 돌아가고 있는 중입니다. 저의 가족에게 수정한의원은 어느 병원에서도 치료가 불가능한 증상도 원장님께 상담하고 진료를 받으면 반드시 고칠 수 있다는 믿음의 장소입니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 원문 전체 내용</span>
+          <span class="review-qa-a">
+            <strong>[증상 및 치료 경과]</strong> 저는 대상포진으로 피부과 진료를 한 달 가까이 받았습니다. 진통제와 주사를 한 달 전부터 매일 맞았지만 심한 통증과 수면장애는 전혀 줄지 않았습니다.<br><br>
+            <strong>[수정한의원 치료]</strong> 수정한의원에 와서 원장님의 정성스러운 치료와 간호사 선생님의 간호로 호전을 보게 되었습니다. 특히 파동치료를 받기 전에는 회복의 속도가 보일 것 같지 않았었는데, 신기할 정도로 피부가 느낄 정도의 속도로 갑자기 나아졌습니다.<br><br>
+            <strong>[하고 싶은 말]</strong> 저의 가족에게 수정한의원은 어느 병원에서도 치료가 불가능한 어떤 증상과 질병도 원장님께 상담하고 진료를 받으면 반드시 고칠 수 있다는 믿음의 장소입니다.
+          </span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <div class="review-detail-gallery">
+          <img id="dm04-main" src="/static/reviews/review-04-parksangim-p1.jpg" alt="대상포진 자필후기 1페이지" class="review-detail-img-main" onclick="openImgFull(this.src)">
+          <div class="review-detail-thumbs">
+            <img src="/static/reviews/review-04-parksangim-p1.jpg" alt="1페이지" class="review-detail-thumb active" onclick="switchDetailImg('dm04-main',this)">
+            <img src="/static/reviews/review-04-parksangim-p2.jpg" alt="2페이지" class="review-detail-thumb" onclick="switchDetailImg('dm04-main',this)">
+          </div>
+        </div>
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지 클릭하면 원본 크기로 | 썸네일로 페이지 전환</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 박*임 (만 54세, 남)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #05 -->
+  <div id="detailModal05" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="document.getElementById('detailModal05').style.display='none'">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">여성질환</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (2장)</span>
+        <span class="review-date">2020.08</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">난소 물혹 5~6cm → 완전히 사라졌습니다 — 8체질 침과 체질한약으로</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        2018년 건강검진에서 난소 물혹이 왼쪽 5~6cm, 오른쪽 2~3cm 발견됐습니다.
+        몸에 맞지 않는 음식을 멀리하고 8체질 침을 맞으며 1년에 3번씩 체질한약을 복용했습니다.
+        2019년 겨울 건강검진 결과 난소 물혹이 말끔히 없어졌다는 기쁜 소식을 들었습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떻게 치료하셨나요?</span>
+          <span class="review-qa-a">8체질 침과 체질한약을 꾸준히 받았습니다. 금음체질로 몸에 해로운 음식(고기류 등)을 철저히 멀리하고, 생선·어패류·채소·과일 위주로 식단을 바꿨습니다. 요가와 평지 산책도 꾸준히 했습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료 결과는 어떻게 되셨나요?</span>
+          <span class="review-qa-a">2019년 겨울 검진에서 난소 물혹이 완전히 없어졌다는 결과를 받았습니다. 수정한의원의 도움이 없었다면 기대할 수 없는 결과였습니다. 두 아이를 자연분만으로 낳을 만큼 건강을 유지해 온 것도 97년부터 꾸준히 다닌 덕분이라 생각합니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 한의원에 하고 싶은 말씀은요?</span>
+          <span class="review-qa-a">수정한의원을 만난 것은 저에게 행운이나 다름없습니다. 건강관리는 수정한의원과 함께 동행하는 것이 가장 좋은 친구가 아닐까요. 원장님과 간호사님들께 온 마음으로 감사드립니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <div class="review-detail-gallery">
+          <img id="dm05-main" src="/static/reviews/review-05-iohkyung-p1.jpg" alt="난소물혹 자필후기 1페이지" class="review-detail-img-main" onclick="openImgFull(this.src)">
+          <div class="review-detail-thumbs">
+            <img src="/static/reviews/review-05-iohkyung-p1.jpg" alt="1페이지" class="review-detail-thumb active" onclick="switchDetailImg('dm05-main',this)">
+            <img src="/static/reviews/review-05-iohkyung-p2.jpg" alt="2페이지" class="review-detail-thumb" onclick="switchDetailImg('dm05-main',this)">
+          </div>
+        </div>
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지 클릭하면 원본 크기로 | 썸네일로 페이지 전환</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 이*경 (97년생, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #06 -->
+  <div id="detailModal06" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="document.getElementById('detailModal06').style.display='none'">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">디스크·척추</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.08</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">많이 좋아졌습니다! — 척추 통증·팔 저림·밤에 시림, 치료 후 수면도 일상도 편안해졌어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        척추와 등 통증이 심하고 팔이 너무 저려서 잠도 제대로 못 잤습니다.
+        밤에 너무 시려서 수면이 힘들었는데, 지인 소개로 수정한의원을 방문했습니다.
+        치료 후 통증이 줄고 잠도 잘 오고, 몸이 한결 편안해졌습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 불편하셨나요?</span>
+          <span class="review-qa-a">척추는 전혀 못 쓸 정도였고, 심하게 등에 통증이 왔습니다. 팔이 너무너무 심하게 저려서 잠잘 때도 불편했고 조금만 움직여도 아팠습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 개선된 점은 무엇인가요?</span>
+          <span class="review-qa-a">얼굴과 등의 통증이 없어지고, 잠을 잘 자게 되었습니다. 몸이 한결 편안해지고 생활이 훨씬 수월해졌습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 삶의 질은 어떻게 달라지셨나요?</span>
+          <span class="review-qa-a">밤에 너무 시려서 수면이 힘들었는데, 이제는 편안하게 잠을 잘 수 있습니다. 약 없이도 잘 지내고 있습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 한의원에 하고 싶은 말씀은요?</span>
+          <span class="review-qa-a">원장 선생님, 감사드립니다. 편안하게 치료받을 수 있게 해주셔서 감사합니다. 꾸준히 치료받겠습니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-06-leesuk.jpg" alt="척추·팔저림 자필후기 원본" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 이*숙 (만 55세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #07 -->
+  <div id="detailModal07" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="document.getElementById('detailModal07').style.display='none'">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">자율신경·공황</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">많이 좋아졌습니다! — 두통·소화불량·몸 무거움, 치료 후 몸도 마음도 가벼워졌어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        머리가 무겁고 두통이 있었으며, 숨쉬기 불편하고 소화도 예전과 다르게 잘 안됐습니다.
+        혈압약을 먹어도 개선이 없어 지인 소개로 8체질 치료를 받게 되었습니다.
+        치료 후 두통이 없어지고 몸이 가벼워지며, 잠도 잘 자고 활력이 생겼습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 불편하셨나요?</span>
+          <span class="review-qa-a">머리가 무겁고 두통이 있었습니다. 가끔 몸이 축 처지고, 숨이 좀 막히는 느낌에 등 증상이 심했습니다. 소화도 예전과 다르게 잘 안됐습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유는요?</span>
+          <span class="review-qa-a">혈압약을 먹는데도 개선된 점이 없었습니다. 지인을 통해 알게 된 8체질 치료의 효과를 느껴 치료를 받기로 했습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 개선된 점은 무엇인가요?</span>
+          <span class="review-qa-a">무거웠던 머리가 많이 나아졌습니다. 두통도 없어지고 몸이 가벼워졌습니다. 잠도 잘 자고 아침에 일어날 때도 좋아졌습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 삶의 질은 어떻게 달라지셨나요?</span>
+          <span class="review-qa-a">신체적으로 건강해지니 정신·스트레스 내성이 더 강해진 느낌입니다. 직장일에 집중도도 생기고 의욕으로 일하게 됩니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 한의원에 하고 싶은 말씀은요?</span>
+          <span class="review-qa-a">평생 건강관리에 필요한 한의원 같습니다. 좋은 집에서 가까워서 자주 다닐 수 있으면 좋겠습니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-07-ohseonggeun.jpg" alt="자율신경 자필후기 원본" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 오*근 (만 54세, 남)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #08 -->
+  <div id="detailModal08" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="document.getElementById('detailModal08').style.display='none'">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-special">궤양성 대장염</span>
+        <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 치료수기 (4장)</span>
+        <span class="review-date">2016.05</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">10년 넘게 복용하던 궤양성대장염 약을 모두 끊었습니다 — 2015년 5월 치료 시작, 1년 만에 완전 회복</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        2005년 45세에 희귀난치성 질환인 궤양성대장염을 얻어 10여 년간 많은 고통과 어려움을 겪으며 병마와 싸워왔습니다.
+        대학병원에서 수개월 치료받았지만 차도가 없어 스테로이드 주사로 버텼습니다.
+        2015년 5월, 수정한의원 최원장님을 만나 8체질 치료를 시작한 지 1년 만에
+        10년 이상 복용하던 궤양성대장염 치료제·약물을 모두 중단했습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 발병 당시 상황은 어땠나요?</span>
+          <span class="review-qa-a">발병 초기에 화장실 출입이 잦아지고 배변 시 곱과 혈변이 동반되었습니다. 점차 출혈이 심해져 대학병원으로 의뢰되었고, 이후 10여 년간 스테로이드 주사로 버티며 각종 약물을 복용했습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떻게 수정한의원을 알게 되셨나요?</span>
+          <span class="review-qa-a">2015년 5월, 근무하던 보건지소와 MOU를 맺은 노원구한의사회 간담회 자리에서 수정한의원 최원장님을 처음 뵙게 되었습니다. 원장님께서 궤양성대장염도 충분히 치료 가능한 질병이라고 희망을 주셨습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료 과정은 어떠했나요?</span>
+          <span class="review-qa-a">본격적인 치료에 앞서 2주간의 디톡스 기간을 가졌습니다. 처음 2~3일은 고통스러워 포기하고 싶었지만, 이후 침치료·약물치료와 함께 면역제·유산균 등을 병행 복용했습니다. 치료 7개월째에 눈에 띄게 좋아짐을 느꼈고, 1년 후 10년 이상 복용하던 약을 모두 중단했습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료 결과는 어떻게 되셨나요?</span>
+          <span class="review-qa-a">2015년 5월 16일 치료 시작 후 꼭 1년이 넘어 궤양성대장염 치료제·양약을 모두 중단했습니다. 지금은 건강 상태에 아무 이상이 없으며, 생활하는 데도 전혀 불편함이 없습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 한의원에 하고 싶은 말씀은요?</span>
+          <span class="review-qa-a">오랜 시간 체질개선·음식섭취 등의 과정을 통해 병을 고칠 수 있도록 믿음과 확신을 갖게끔 용기와 격려를 아끼지 않으시고, 열정과 정성을 다해 세심한 배려로 치료해 주신 수정한의원 최원장님께 진심으로 감사드립니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <div class="review-detail-gallery">
+          <img id="dm08-main" src="/static/reviews/review-08-goyoungchan-p1.jpg" alt="궤양성대장염 치료수기 1페이지" class="review-detail-img-main" onclick="openImgFull(this.src)">
+          <div class="review-detail-thumbs">
+            <img src="/static/reviews/review-08-goyoungchan-p1.jpg" alt="1페이지" class="review-detail-thumb active" onclick="switchDetailImg('dm08-main',this)">
+            <img src="/static/reviews/review-08-goyoungchan-p2.jpg" alt="2페이지" class="review-detail-thumb" onclick="switchDetailImg('dm08-main',this)">
+            <img src="/static/reviews/review-08-goyoungchan-p3.jpg" alt="3페이지" class="review-detail-thumb" onclick="switchDetailImg('dm08-main',this)">
+            <img src="/static/reviews/review-08-goyoungchan-p4.jpg" alt="4페이지" class="review-detail-thumb" onclick="switchDetailImg('dm08-main',this)">
+          </div>
+        </div>
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지 클릭하면 원본 크기로 | 썸네일로 페이지 전환</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 고*찬 (만 55세, 남)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+    </section>
+  </div>
+
+  <!-- 이미지 전체보기 모달 -->
+  <div id="imgFullModal" style="display:none;" onclick="closeImgFull()">
+    <button class="img-full-close" onclick="closeImgFull()">✕</button>
+    <img id="imgFullModalImg" src="" alt="원본 이미지">
+  </div>
+
   <script>
-  // ── 후기 상세 데이터 ──────────────────────────────────────────
-  const REVIEWS = {
-    r10: {
-      cat: '체질 다이어트', date: '2020.01.21',
-      title: '6개월 만에 17.3kg 감량 — 내과 다이어트 약 부작용으로 포기했다가 체질로 성공',
-      author: '김*은 (40대, 여)', stars: 5,
-      qa: [
-        { q: '다이어트를 시도하게 된 계기와 이전 경험을 알려주세요.',
-          a: '내과에서 처방받은 다이어트 약을 6개월 복용했지만 부작용(두근거림, 불면, 우울감)만 심해지고 체중은 거의 빠지지 않았습니다. 약을 끊고 나서 요요까지 와서 시작 전보다 오히려 더 쪘어요. 다이어트 자체를 포기하려던 참이었습니다.' },
-        { q: '8체질 다이어트가 기존 방법과 어떻게 달랐나요?',
-          a: '체질 진단 결과 토양체질이었고, 제가 살을 빼겠다고 열심히 먹던 닭가슴살·계란이 오히려 토양체질에 맞지 않는 음식이었다는 걸 알게 됐습니다. 체질에 맞는 음식으로 바꾸고 체질 한약을 복용하면서 배고프지 않은데 살이 빠지기 시작했습니다.' },
-        { q: '6개월 치료 결과를 구체적으로 말씀해 주세요.',
-          a: '시작 시 몸무게가 82.3kg이었는데 6개월 후 65.0kg으로 17.3kg 감량에 성공했습니다. 식이 제한이 아닌 체질에 맞는 식이로 바꿨을 뿐인데, 몸이 가벼워지고 피부도 좋아졌습니다. 지금도 요요 없이 유지 중입니다.' }
-      ],
-      handwrittenImg: null
-    },
-    r1: {
-      cat: '구안와사·안면마비', date: '2025.03.15',
-      title: '2주 만에 눈이 완전히 감겼어요',
-      author: '김*희 (40대, 여)', stars: 5,
-      qa: [
-        { q: '내원 전 어떤 증상이 있으셨나요?',
-          a: '갑자기 아침에 일어나니 입이 돌아가고 눈이 잘 감기지 않았습니다. 거울을 보고 너무 놀랐어요. 얼굴 왼쪽이 처지고, 음식을 먹으면 흘리고, 발음도 이상해져서 일상생활이 힘들었습니다.' },
-        { q: '수정한의원에서 어떤 치료를 받으셨나요?',
-          a: '8체질 맥진 진단을 받고 금양체질이라는 걸 알게 됐어요. 체질 침치료와 골든타임 집중치료 프로그램을 받았고, 체질에 맞는 한약도 병행했습니다. 원장님이 치료 방향을 세세하게 설명해주셔서 믿음이 갔습니다.' },
-        { q: '치료 경과는 어떠했나요?',
-          a: '1주일 후부터 눈 주변 감각이 돌아오기 시작했고, 2주 차에는 눈이 완전히 감기기 시작했습니다. 4주 후에는 거의 정상으로 돌아왔어요. 다른 병원에서 최소 3~6개월이라고 했는데 정말 빠른 회복이었습니다.' },
-        { q: '수정한의원을 선택하신 이유는 무엇인가요?',
-          a: '지인이 구안와사로 치료받고 완전히 나았다는 이야기를 들었습니다. 8체질 맥진으로 정확한 체질 진단을 한다는 것과 30년 임상 경험이 신뢰를 줬습니다.' }
-      ],
-      handwrittenImg: null
-    },
-    r2: {
-      cat: '디스크·척추', date: '2025.02.28',
-      title: '수술 권유받았는데 한방으로 해결했습니다',
-      author: '이*민 (50대, 남)', stars: 5,
-      qa: [
-        { q: '처음 증상은 어떠셨나요?',
-          a: '허리 통증이 심해지더니 오른쪽 다리까지 저리고 마비 증상이 왔습니다. 정형외과에서 L4~L5 디스크 탈출증 진단을 받았고, 수술을 권유받았어요. 계단을 오르내리기도 힘든 상태였습니다.' },
-        { q: '한방 치료를 선택하신 계기는?',
-          a: '수술이 두렵기도 했고, 지인이 수정한의원에서 척추 치료 후 좋아졌다는 이야기를 들었습니다. 마지막 시도라는 생각으로 방문했는데, 체질 진단부터 치료 계획이 굉장히 체계적이었습니다.' },
-        { q: '어떤 치료를 받으셨고, 결과는?',
-          a: '8체질 침치료와 추나요법을 주 2~3회씩 3개월 받았습니다. 처음 한 달은 변화가 미미했지만, 2개월째부터 다리 저림이 줄어들었고, 3개월 후 MRI 재촬영에서 디스크가 상당히 줄었다는 결과를 받았습니다. 지금은 완전히 일상생활이 가능합니다.' }
-      ],
-      handwrittenImg: null
-    },
-    r3: {
-      cat: '피부·아토피', date: '2025.02.10',
-      title: '20년 아토피가 드디어 잡혔어요',
-      author: '박*준 (30대, 남)', stars: 5,
-      qa: [
-        { q: '아토피 증상이 얼마나 심각했나요?',
-          a: '초등학교 때부터 아토피가 시작돼 20년 넘게 스테로이드 연고를 달고 살았습니다. 팔꿈치, 무릎 뒤, 목 주변이 항상 빨갛고 각질이 일어났으며 가려움으로 잠을 못 자는 날도 많았습니다.' },
-        { q: '8체질 치료를 받으신 후 달라진 점은?',
-          a: '체질 진단 결과 금양체질이었는데, 먹지 말아야 할 음식 목록을 받고 지키기 시작했습니다. 체질 한약 3개월 복용 후 피부 자극이 확연히 줄었고, 6개월 후에는 아무것도 바르지 않아도 될 정도로 피부가 깨끗해졌습니다.' },
-        { q: '수정한의원만의 특별한 점이 있다면?',
-          a: '다른 한의원에서는 그냥 한약 처방만 받았는데, 여기서는 제 체질에 맞는 음식표와 생활 관리 방법을 구체적으로 알려주셨습니다. 치료와 함께 생활 습관을 바꾼 게 완치에 결정적이었던 것 같습니다.' }
-      ],
-      handwrittenImg: null
-    },
-    r4: {
-      cat: '자율신경·공황', date: '2025.01.22',
-      title: '공황장애 1년, 이제 지하철을 탈 수 있어요',
-      author: '최*연 (30대, 여)', stars: 5,
-      qa: [
-        { q: '공황장애 증상이 어떠셨나요?',
-          a: '갑자기 심장이 쿵쾅거리고 숨이 막히는 느낌이 들기 시작했습니다. 지하철, 엘리베이터, 밀폐 공간을 전혀 이용할 수 없었고 혼자 외출도 두려워졌습니다. 정신건강의학과 약을 복용해도 나아지지 않았어요.' },
-        { q: '치료 과정에서 어떤 변화가 있었나요?',
-          a: '체질 진단에서 목양체질로 판명되었고, 자율신경 안정에 특화된 8체질 침치료와 한약을 처방받았습니다. 한 달 후부터 수면의 질이 개선되었고, 2개월째에는 심장이 덜 두근거렸습니다. 3개월 후부터는 지하철을 혼자 탈 수 있게 됐어요.' },
-        { q: '현재 상태는 어떠신가요?',
-          a: '6개월 치료 후 약 없이도 거의 정상 생활을 하고 있습니다. 응급 상황처럼 느껴졌던 공황 발작이 이제는 거의 오지 않습니다. 정말 인생이 바뀐 것 같아서 주변에 많이 추천하고 있습니다.' }
-      ],
-      handwrittenImg: null
-    },
-    r5: {
-      cat: '여성질환·난임', date: '2025.01.08',
-      title: '3년 난임 끝에 임신 성공했습니다!',
-      author: '정*영 (30대, 여)', stars: 5,
-      qa: [
-        { q: '난임 치료를 받게 된 경위를 알려주세요.',
-          a: '결혼 후 3년간 자연임신이 되지 않아 시험관 시술을 3번 받았지만 모두 실패했습니다. AMH(난소 나이 지표)가 0.4로 매우 낮아 더 이상 시술이 어렵다는 말까지 들었습니다.' },
-        { q: '수정한의원에서 어떤 치료를 받으셨나요?',
-          a: '8체질 맥진 진단 후 수양체질로 판명되었습니다. 난소 기능 회복에 초점을 맞춘 체질 맞춤 한약을 처방받았고, 자궁 환경 개선을 위한 체질 침치료도 함께 받았습니다. 체질에 맞는 식이 지도도 철저히 따랐습니다.' },
-        { q: '임신 성공 과정을 공유해주세요.',
-          a: '한약 복용 2개월 후 생리 주기가 규칙적으로 변했고, 4개월 후 자연임신에 성공했습니다! 산부인과에서도 놀라워했습니다. 지금 임신 7개월이고 건강하게 잘 크고 있어요. 포기하지 않길 잘했습니다.' }
-      ],
-      handwrittenImg: null
-    },
-    r6: {
-      cat: '소화기', date: '2024.12.30',
-      title: '10년 역류성식도염 두 달 만에 좋아졌어요',
-      author: '강*호 (40대, 남)', stars: 4.5,
-      qa: [
-        { q: '역류성식도염 증상이 어느 정도였나요?',
-          a: '10년 전부터 속 쓰림, 명치 통증, 목에 뭔가 걸린 느낌이 항상 있었습니다. 위장약을 매일 복용해야 했고, 먹지 않으면 하루가 불편해서 사실상 약에 의존하는 생활이었습니다.' },
-        { q: '체질 치료로 어떻게 달라졌나요?',
-          a: '목음체질 진단 후, 제가 즐겨 먹던 밀가루, 돼지고기, 냉면이 목음체질에 맞지 않는 음식이라는 걸 알게 됐습니다. 식이를 바꾸고 체질 한약을 두 달 복용하니 속 쓰림이 거의 사라졌습니다.' },
-        { q: '아쉬운 점이나 추가하고 싶은 말씀이 있다면?',
-          a: '음식 관리를 꾸준히 하면 완전히 나을 수 있을 것 같습니다. 식이 조절이 쉽지는 않지만, 원장님이 대체 음식과 식단을 꼼꼼하게 안내해주셔서 도움이 많이 됐습니다. 10년 고민을 해결해 주셔서 감사합니다.' }
-      ],
-      handwrittenImg: null
-    },
-    r7: {
-      cat: '소아성장', date: '2024.12.15',
-      title: '6개월 만에 8cm 성장했어요',
-      author: '오*진 학부모 (40대, 여)', stars: 5,
-      qa: [
-        { q: '성장 치료를 시작하게 된 계기는?',
-          a: '초등 4학년인데 또래보다 키가 10cm 이상 작아서 걱정이 많았습니다. 성장판 초음파 검사를 했더니 아직 여유가 있다고 해서 적극적으로 치료를 시작하게 됐습니다.' },
-        { q: '수정한의원에서 어떤 치료를 받았나요?',
-          a: '아이의 체질을 진단하고 성장 한약과 성장침을 병행했습니다. 체질에 맞는 음식과 수면 습관도 지도받았어요. 치료 내내 아이가 힘들어하지 않고 잘 따라와 줬습니다.' },
-        { q: '치료 결과가 어떠했나요?',
-          a: '3개월 후부터 눈에 띄게 자라기 시작했고, 6개월이 지나니 총 8cm가 성장했습니다! 반에서 중간 이하였던 키 순서가 이제는 중간 이상이 됐어요. 아이도 자신감이 생겼고 저도 너무 기쁩니다.' }
-      ],
-      handwrittenImg: null
-    },
-    r8: {
-      cat: '구안와사·안면마비', date: '2024.11.20',
-      title: '발병 3일 만에 치료 시작해서 빠르게 회복',
-      author: '윤*서 (20대, 여)', stars: 5,
-      qa: [
-        { q: '구안와사 발생 직후 상황을 알려주세요.',
-          a: '아침에 눈이 잘 안 감기고 입이 한쪽으로 당기는 느낌이 들었습니다. 처음엔 일시적인 거라 생각했는데 거울을 보니 얼굴이 돌아가 있어서 너무 당황했어요. 발병 3일 만에 수정한의원을 찾았습니다.' },
-        { q: '골든타임 치료가 실제로 도움이 됐나요?',
-          a: '원장님이 구안와사는 발병 후 2주 이내 치료 시작이 회복에 결정적이라고 설명해 주셨습니다. 빨리 온 덕분에 집중 치료를 받을 수 있었고, 3주 만에 90% 이상 회복됐습니다. 친구는 치료가 늦어서 1년이 넘게 걸렸는데 저는 정말 다행이었습니다.' },
-        { q: '다른 환자분들께 전하고 싶은 말씀이 있다면?',
-          a: '구안와사는 절대 방치하면 안 됩니다! 조금이라도 이상하면 바로 치료를 시작하세요. 저는 빨리 치료한 덕에 흉터 없이 완전히 나았습니다. 수정한의원 원장님이 정말 친절하고 치료도 탁월합니다.' }
-      ],
-      handwrittenImg: null
-    },
-    r9: {
-      cat: '대상포진후신경통', date: '2024.11.05',
-      title: '2년간 잠 못 자던 통증에서 해방됐어요',
-      author: '신*철 (60대, 남)', stars: 4.5,
-      qa: [
-        { q: '대상포진후신경통이 얼마나 오래, 심하게 지속됐나요?',
-          a: '2년 전 대상포진을 앓고 나서 오른쪽 등과 옆구리에 전기가 통하는 듯한 타는 통증이 사라지지 않았습니다. 신경과, 통증의학과에서 약을 처방받았지만 통증이 50% 이상 줄지 않아 잠을 제대로 못 잤습니다.' },
-        { q: '수정한의원의 복합 치료 방법이 궁금합니다.',
-          a: '체질 맥진 후 토양체질로 진단받았고, 파동요법(양자퀀텀 치료), 태반약침, 체질 한약을 복합적으로 받았습니다. 처음 1개월은 큰 변화가 없어서 반신반의했는데, 2개월 후부터 통증 강도가 눈에 띄게 줄기 시작했습니다.' },
-        { q: '현재 상태와 전반적인 소감을 말씀해 주세요.',
-          a: '3개월 치료 후 통증이 70% 이상 감소했습니다. 이제 잠도 잘 자고, 일상적인 활동이 가능해졌습니다. 완전히 없어지진 않았지만, 관리하면서 생활할 수 있는 수준이 됐습니다. 2년을 고통받았는데 이 정도 개선이면 정말 감사합니다.' }
-      ],
-      handwrittenImg: null
-    }
-  };
-
-  // ── 별점 렌더링 ──────────────────────────────────────────────
-  function renderStars(score) {
-    let html = '';
-    for (let i = 1; i <= 5; i++) {
-      if (score >= i) html += '<i class="fas fa-star" style="color:#f5a623"></i>';
-      else if (score >= i - 0.5) html += '<i class="fas fa-star-half-alt" style="color:#f5a623"></i>';
-      else html += '<i class="far fa-star" style="color:#f5a623"></i>';
-    }
-    return html;
-  }
-
-  // ── 모달 열기 ────────────────────────────────────────────────
-  function openModal(id) {
-    const d = REVIEWS[id];
-    if (!d) return;
-    const qaHtml = d.qa.map(item =>
-      '<div class="rmodal-qa-item">' +
-        '<div class="rmodal-q"><i class="fas fa-question-circle" style="margin-right:6px;opacity:.7"></i>' + item.q + '</div>' +
-        '<div class="rmodal-a">' + item.a + '</div>' +
-      '</div>'
-    ).join('');
-
-    const imgHtml = d.handwrittenImg
-      ? '<div class="rmodal-img-wrap"><div class="rmodal-img-label"><i class="fas fa-pen-nib"></i> 자필 후기 원본</div><div class="rmodal-img"><img src="' + d.handwrittenImg + '" alt="자필 후기"></div></div>'
-      : '<div class="rmodal-img-wrap"><div class="rmodal-img-label"><i class="fas fa-pen-nib"></i> 자필 후기 원본</div><div class="rmodal-img-placeholder"><i class="fas fa-file-alt"></i><span>자필 후기 이미지 준비 중입니다</span></div></div>';
-
-    document.getElementById('rmodalBody').innerHTML =
-      '<div class="rmodal-header">' +
-        '<span class="rmodal-cat">' + d.cat + '</span>' +
-        '<h2 class="rmodal-title" id="rmodalTitle">' + d.title + '</h2>' +
-        '<div class="rmodal-meta">' +
-          '<span><i class="fas fa-user" style="margin-right:4px;opacity:.6"></i>' + d.author + '</span>' +
-          '<span><i class="fas fa-calendar-alt" style="margin-right:4px;opacity:.6"></i>' + d.date + '</span>' +
-          '<span class="rmodal-stars">' + renderStars(d.stars) + '</span>' +
-        '</div>' +
-      '</div>' +
-      '<hr class="rmodal-divider">' +
-      '<div class="rmodal-qa">' + qaHtml + '</div>' +
-      imgHtml;
-
-    const modal = document.getElementById('reviewModal');
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    document.getElementById('rmodalClose').focus();
-  }
-
-  function closeModal() {
-    document.getElementById('reviewModal').classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
-  // ── 이벤트 바인딩 ────────────────────────────────────────────
   document.addEventListener('DOMContentLoaded', function() {
 
-    // 카드 클릭 → 모달
-    document.querySelectorAll('#reviewGrid .review-card').forEach(function(card) {
-      function trigger() { openModal(card.dataset.id); }
-      card.addEventListener('click', trigger);
-      card.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); trigger(); }
-      });
-    });
+    /* ── 초기화: 항상 3열 요약 박스 모드 ── */
+    var grid = document.getElementById('reviewGrid');
+    if (grid) grid.classList.add('summary-mode');
 
-    // 모달 닫기
-    document.getElementById('rmodalClose').addEventListener('click', closeModal);
-    document.getElementById('reviewModal').addEventListener('click', function(e) {
-      if (e.target === this) closeModal();
-    });
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') closeModal();
-    });
+    /* ── 카테고리 필터 ── */
+    var CARDS = [
+      { el: document.getElementById('reviewCard01'), cat: '대장염' },
+      { el: document.getElementById('reviewCard02'), cat: '다이어트' },
+      { el: document.getElementById('reviewCard03'), cat: '피부' },
+      { el: document.getElementById('reviewCard04'), cat: '대상포진' },
+      { el: document.getElementById('reviewCard05'), cat: '여성' },
+      { el: document.getElementById('reviewCard06'), cat: '디스크' },
+      { el: document.getElementById('reviewCard07'), cat: '자율신경' },
+      { el: document.getElementById('reviewCard08'), cat: '대장염' }
+    ];
 
-    // 카테고리 필터 — data-cat 정확 매칭
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
         document.querySelectorAll('.review-filter-btn').forEach(function(b) {
           b.classList.remove('active');
         });
         this.classList.add('active');
-        var cat = this.dataset.cat;
-        document.querySelectorAll('#reviewGrid .review-card').forEach(function(card) {
-          if (cat === 'all' || card.dataset.cat === cat) {
-            card.style.display = '';
+
+        var cat = this.getAttribute('data-cat');
+
+        CARDS.forEach(function(item) {
+          if (!item.el) return;
+          if (cat === 'all' || item.cat === cat) {
+            item.el.style.display = '';
           } else {
-            card.style.display = 'none';
+            item.el.style.display = 'none';
           }
         });
       });
     });
 
+  }); // DOMContentLoaded 끝
+
+  /* ── 상세 모달 열기/닫기 ── */
+  function openReviewModal(id) {
+    const modal = document.getElementById(id);
+    if (!modal) return;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeReviewModal(event, modal) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }
+  }
+
+  /* ── 이미지 전체보기 ── */
+  function openImgFull(src) {
+    document.getElementById('imgFullModalImg').src = src;
+    document.getElementById('imgFullModal').style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeImgFull() {
+    document.getElementById('imgFullModal').style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  /* ── 갤러리 썸네일 전환 ── */
+  function switchDetailImg(mainId, thumb) {
+    const main = document.getElementById(mainId);
+    if (!main) return;
+    main.src = thumb.src;
+    const thumbs = thumb.closest('.review-detail-thumbs');
+    if (thumbs) {
+      thumbs.querySelectorAll('.review-detail-thumb').forEach(t => t.classList.remove('active'));
+    }
+    thumb.classList.add('active');
+  }
+
+  /* ── ESC 키로 모달 닫기 ── */
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.review-detail-modal').forEach(m => {
+        m.style.display = 'none';
+      });
+      const imgFull = document.getElementById('imgFullModal');
+      if (imgFull) imgFull.style.display = 'none';
+      document.body.style.overflow = '';
+    }
   });
   </script>`
 
