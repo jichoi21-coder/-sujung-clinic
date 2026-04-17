@@ -904,6 +904,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- ===== 자필후기 카드 #18 — 이*희 (뇌경색 후유증) ===== -->
+        <div id="reviewCard18" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal18')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">뇌경색 후유증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">손도 안펴지고 걷지도 못했던 내가 이제 달리기도 하고 피아노도 칠수 있어요</h3>
+          <p class="review-story">
+            14살 때 뇌경색으로 왼쪽 팔·다리·손·발에 마비가 왔습니다. 2년간 수정한의원 치료 후 달리기도 하고 피아노도 칠 수 있게 되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*희 (만 16세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1408,6 +1429,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     </div>
   </div>
 
+  <!-- 상세 모달 #18 -->
+  <div id="detailModal18" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal18')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">뇌경색 후유증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">손도 안펴지고 걷지도 못했던 내가 이제 달리기도 하고 피아노도 칠수 있어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        14살 때 뇌경색으로 왼쪽 팔·다리·손·발에 마비가 왔습니다. 2년간 수정한의원 치료 후 달리기도 하고 피아노도 칠 수 있게 되었습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">처음 중학교 1학년인 14살 후반 때 갑자기 뇌경색이라는 질병이 찾아왔습니다. 뇌경색이 불편함을 준 것은 저의 왼쪽 팔, 다리, 손, 발에 마비가 걸린 것 이었습니다. 저는 운동하고 피아노를 좋아하던 학생이었는데, 그런 것도 다 못하게 되었고, 이것 저것 하고 싶은데도 못하고, 뇌경색 초반엔 걷지도, 무엇을 잡을 수도 못했습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">처음엔 병원치료만 하다가 친척 소개로 엄마 따라 수정한의원에 왔습니다. 침 치료 효과는 처음엔 당연히 몰랐습니다. 근데 계속해서 2년간 수정한의원에 다니는 이유는 분명히 있습니다. 병원도 몇달 옮겨보고, 재활센터도 다녀봤지만 별로 도움을 주지 않았어요. 근데 한의원은 계속 꾸준히 받고, 원장님 말대로 운동해보니 지금은 그냥 모든 게 정상에 가까워지고 있습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">1번 질문에서 대답한 것처럼 왼쪽 상, 하반신 마비 였습니다. 손도 안펴지고 걷지도 못했던 제가 2년간 한의원에서 치료를 받고 나니 달리기도 가능해지고, 피아노도 조금씩 칠 수 있습니다. 손가락질과 젓가락질도 가능하고, 이건 아직도 가능합니다. 그냥 수정한의원은 저의 인생을 바꿔놓은 한의원이죠.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">2018년 14살 뇌경색 진단 이후 후유증도 크고, 스트레스가 쌓이며 좌절감이 있었음. 손도 피고 싶은데 안펴지고, 걷는 것도 잘 안되서 친구들도 안 만나고, 밖에도 자주 안나감. (현재 2021년 모습) 이젠 사람들도 잘 만나고, 친구들이랑도 자주 놀 수 있음. 손과 발은 당연히 자유롭게 행동 가능함! 학교에서도 급식 시간이 되면 빨리 먹으려고 뛰어서 감!!</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
+          <span class="review-qa-a">많이 아껴 주시고, 잘 챙겨 주셔서 감사합니다. 앞으로도 질 좋고 효과 좋은 치료를 많은 환자 분들께 해주세요! 감사합니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-18-leehui-p1.jpg" alt="뇌경색 후유증 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 이*희 (만 16세, 남)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #17 -->
   <div id="detailModal17" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
@@ -1823,7 +1891,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard14'), cat: '척추관절' },
       { el: document.getElementById('reviewCard15'), cat: '피부' },
       { el: document.getElementById('reviewCard16'), cat: '천식' },
-      { el: document.getElementById('reviewCard17'), cat: '척추관절' }
+      { el: document.getElementById('reviewCard17'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard18'), cat: '뇌신경' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
