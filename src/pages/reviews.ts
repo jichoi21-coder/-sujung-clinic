@@ -872,7 +872,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-quote-mark">"</div>
           <h3 class="review-card-title">숨이 차서 걷지가 힘들어요 — 체질 한약·침 치료 3개월 후 만성천식이 좋아지고 집까지 편하게 걷게 되었어요</h3>
           <p class="review-story">
-            체질이 금양체질이라 열심히 침과 한약을 먹으면서 3개월 후 다리도 조금만 걸어도 숙도 차서 새 삶을 애탐하지 못했는데 집까지 너끔하게 걷게 되었습니다.
+            대학병원에서 몇 년을 다녀도 낫지 않던 만성천식이 체질 한약과 추나요법 3개월 후 크게 좋아졌습니다. 다리도 조금만 걸어도 숨이 차던 것이 이제는 집까지 너끈하게 걸어 다닙니다.
           </p>
           <div class="review-card-footer">
             <span class="review-author"><i class="fas fa-user"></i> 조*희 (만 80세, 여)</span>
@@ -1352,24 +1352,24 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-quote-mark">"</div>
       <h3 class="review-detail-title">숨이 차서 걷지가 힘들어요 — 체질 한약·침 치료 3개월 후 만성천식이 좋아지고 집까지 편하게 걷게 되었어요</h3>
       <p class="review-story" style="margin-bottom:18px;">
-        상계3동 조*희입니다. 대학병원에서 몇 년을 다년도 낙지 않던 만성천식이 체질 한약·침 치료 3개월 후 크게 좋아졌습니다.
+        상계동 조*희입니다. 대학병원에서 몇 년을 다녀도 낫지 않던 만성천식이 체질 한약·침 치료 3개월 후 크게 좋아졌습니다.
       </p>
       <div class="review-qa-wrap">
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 본인 소개 및 증상</span>
-          <span class="review-qa-a">상계3동에 사는 조*희입니다. 체질이 금양체질로 만성천식이 심한 편이고 팔·다리가 아파 대학병원에서 몇 년 동안 다넴지만 약만 먹고 낙지는 않고 속이 안 좋아졌습니다.</span>
+          <span class="review-qa-a">상계동에 사는 조*희입니다. 체질이 금양체질로 만성천식이 심한 편이고 팔·다리가 아파 대학병원에서 몇 년 동안 다녔지만 약만 먹고 낫지는 않고 속이 안 좋아졌습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 내원 계기</span>
-          <span class="review-qa-a">수정한의원이 상계3동에 새로 생겼다는 소식을 듣고 8체질과 침 치료가 있는 곳이라 하여 딸과 함께 오게 되었습니다. 기존에 다니시던 분들이 원장님이 강서웸 쪽에서 20년 넘게 하셨는데 치료 잘 하시기로 소문이 난 분이라 하여 딸의 권유로 11월 초부터 다니기 시작했습니다.</span>
+          <span class="review-qa-a">수정한의원이 상계동에 새로 생겼다는 소식을 듣고 8체질과 침 치료가 있는 곳이라 하여 딸과 함께 오게 되었습니다. 기존에 다니시던 분들이 원장님이 당고개 쪽에서 20년 넘게 하셨는데 치료 잘 하시기로 소문이 난 분이라 하여 딸의 권유로 11월 초부터 다니기 시작했습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료 경과 및 개선</span>
-          <span class="review-qa-a">체질이 금양체질이라서 먼저 독소를 제거해 주는 한약을 꼽준히 먹고 쳔뉴요법을 꼽준히 받았더니 3개월 후 아주 많이 좋아졌습니다. 천식도 좋아지고 팔은 올리지도 못했는데 많이 올라갑니다.</span>
+          <span class="review-qa-a">체질이 금양체질이라서 먼저 독소를 제거해 주는 한약을 꾸준히 먹고 추나요법을 꾸준히 받았더니 3개월 후 아주 많이 좋아졌습니다. 천식도 좋아지고 팔은 올리지도 못했는데 많이 올라갑니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
-          <span class="review-qa-a">다리도 조금만 걸어도 숨도 차고 어딘 앉을 데를 찾아 다녕는데 지금은 집까지 너끔하게 걷어 다닙니다. 이제 슈쉘 여행 다니며 살아볼까 합니다. 예전에는 꼽도 못 꿼 일이네요!</span>
+          <span class="review-qa-a">다리도 조금만 걸어도 숨도 차고 어딘 앉을 데를 찾아 다녕는데 지금은 집까지 너끈하게 걸어 다닙니다. 이제 슬슬 여행 다니며 살아볼까 합니다. 예전에는 꿈도 못 꿀 일이네요!</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
