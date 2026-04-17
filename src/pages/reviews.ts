@@ -847,7 +847,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2021.03</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">차라리 아프게 낙지 가려운 건 더 못 참겠더라구요 — 3개월 반 치료로 두드러기·가려움·열감이 다 사라졌습니다</h3>
+          <h3 class="review-card-title">차라리 아픈게 낫지 가려운 건 더 못 참겠더라구요 — 3개월 반 치료로 두드러기·가려움·열감이 다 사라졌습니다</h3>
           <p class="review-story">
             세 군데 피부과에서 치료해도 반복되던 심한 두드러기와 가려움.
             체질침·면역치료 후 3개월 반 만에 두드러기·가려움·열감이 완전히 사라졌습니다.
@@ -1466,30 +1466,30 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2021.03</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">차라리 아프게 낙지 가려운 건 더 못 참겠더라구요 — 3개월 반 치료로 두드러기·가려움·열감이 다 사라졌습니다</h3>
+      <h3 class="review-detail-title">차라리 아픈게 낫지 가려운 건 더 못 참겠더라구요 — 3개월 반 치료로 두드러기·가려움·열감이 다 사라졌습니다</h3>
       <p class="review-story" style="margin-bottom:18px;">
         노원구 상계3동 전*복입니다. 세 군데 피부과에서 치료해도 반복되던 심한 두드러기와 가려움, 체질침·면역치료 3개월 반 후 완전히 사라졌습니다.
       </p>
       <div class="review-qa-wrap">
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 증상 및 내원 경위</span>
-          <span class="review-qa-a">지난해 10월쓰부터 피부에 두드러기가 돋아나기 시작해 S가정의원에서 1주일에 두세번씩 주사를 맞고 매일 약 먹고 연고 바르고 4주 정도 치료 후 다 나았다 하였는데 일주일이 지나니 또 돌아왕니다. 아리산역 앞 M피부과, 상계역 앞 K피부과에서도 치료를 이어갔지만 반복되었고, 약을 너무 오래 먹어 위가 쓰리고 안 좋아졌습니다. 노원에 사는 사초동생 추천으로 수정한의원에 오게 되었습니다.</span>
+          <span class="review-qa-a">지난해 10월 중부터 피부에 두드러기가 돋아나기 시작해 S가정의원에서 1주일에 두세번씩 주사를 맞고 매일 약 먹고 연고 바르고 4주 정도 치료 후 다 나았다 하였는데 일주일이 지나니 또 돋아오르기 시작합니다. 아차산역 앞 M피부과, 상계역 앞 K피부과에서도 치료를 이어갔지만 반복되었고, 약을 너무 오래 먹어 위가 쓰리고 안 좋아졌습니다. 노원에 사는 사초동생 추천으로 수정한의원에 오게 되었습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 한의원에 올 당시 증상</span>
-          <span class="review-qa-a">한의원에 올 당시에는 하루에 두세 번씩 가려움이 시작되면 정신을 차릴 수 없을 정도였습니다. 차라리 아프게 낙지 가려운 건 더 못 참겠더라구요. 가려움이 시작되면 온몸(배, 등, 허벽지, 어깨, 팔, 손목 등) 전체가 돌아가며 가렵고 열이 얼마나 나는지 찬 물수건을 덧어 놓으면 열이 안 식을 정도로 심했습니다.</span>
+          <span class="review-qa-a">한의원에 올 당시에는 하루에 두세 번씩 가려움이 시작되면 정신을 차릴 수 없을 정도였습니다. 차라리 아픈게 낫지 가려운 건 더 못 참겠더라구요. 가려움이 시작되면 온몸(배, 등, 허벽지, 어깨, 팔, 손목 등) 전체가 돌아가며 가렵고 열이 얼마나 나는지 찬 물수건을 덧어 놓으면 열이 안 식을 정도로 심했습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 가장 힘들었던 순간</span>
-          <span class="review-qa-a">영하 15~16도 되는 한파에도 온돌침대에 불을 한 번도 못 켜고 지냈습니다. 쿨대 바닥에 등이 닿으면 등이 가렵기 시작하고 뜨겁게 열감이 느껴지고, 어부바닥에 자면 배가 가렵기 시작하고, 옆으로 자면 어깨와 다리까지… 한 밤중에 거실로 나와 찬 물수건을 가령고 열 나는 부위에 올려 놓고 괴로운 나날을 보냈습니다.</span>
+          <span class="review-qa-a">영하 15~16도 되는 한파에도 온돌침대에 불을 한 번도 못 켜고 지냈습니다. 침대 바닥에 등이 닿으면 등이 가렵기 시작하고 뜨겁게 열감이 느껴지고, 엎드려 자면 배가 가렵기 시작하고, 옆으로 자면 옆구리와 다리까지… 한 밤중에 거실로 나와 찬 물수건을 가고 열 나는 부위에 올려 놓고 괴로운 나날을 보냈습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료 경과 및 개선</span>
-          <span class="review-qa-a">수정한의원 원장님께서 면역력이 떨어지고 장기에 열이 많아서 그러니 면역력을 올리고 열을 내리면 잘 치료될 수 있다는 말씩에 치료를 시작했습니다. 체질침·면역치료·한약을 먹으며 3개월 반 정도 치료를 받았습니다.</span>
+          <span class="review-qa-a">수정한의원 원장님께서 면역력이 떨어지고 장기에 열이 많아서 그러니 면역력을 올리고 열을 내리면 잘 치료될 수 있다는 말에 치료를 시작했습니다. 체질침·면역치료·한약을 먹으며 3개월 반 정도 치료를 받았습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
-          <span class="review-qa-a">다시는 생각하기 싫은 두드러기·가려움·열감이 다 사라지고 잠도 잘 자고 피로도 완화되었습니다. 영하의 한파에도 쿨대에서 따뜻하게 잠잤 수 있어 너무 행복합니다. 끔으로 지인도·남편·딸을 데려와 체질 검사하여 몸에 맞는 음식 먹고 모두들 건강하게 살았으면 좋겠습니다.</span>
+          <span class="review-qa-a">다시는 생각하기 싫은 두드러기·가려움·열감이 다 사라지고 잠도 잘 자고 피로도 완화되었습니다. 영하의 한파에도 침대에서 따뜻하게 잠을 수 있어 너무 행복합니다. 끝으로 지인도·남편·딸을 데려와 체질 검사하여 몸에 맞는 음식 먹고 모두들 건강하게 살았으면 좋겠습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
