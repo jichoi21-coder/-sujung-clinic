@@ -653,10 +653,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2021.08</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">많이 좋아졌습니다! — 척추 통증·팔 저림·밤에 시림, 치료 후 수면도 일상도 편안해졌어요</h3>
+          <h3 class="review-card-title">협착증으로 걷지도 못하고 얼굴에 열이 많아 화난 인상이 되고 발이 너무 시려서 감각이 없을 정도였어요 — 치료 후 통증이 줄고 몸이 한결 편안해졌어요</h3>
           <p class="review-story">
-            척추와 등 통증이 심하고 팔이 너무 저려서 잠도 제대로 못 잤습니다.
-            지인 소개로 수정한의원을 방문, 치료 후 통증이 줄고 잠도 잘 오고 몸이 한결 편안해졌습니다.
+            협착증으로 걷지도 못하고 얼굴에 열이 많아 화난 인상으로 바뀌고, 발이 너무 시려서 감각이 없을 정도였습니다.
+            지인 소개로 수정한의원에 와서 치료 후 통증이 줄고 잠도 잘 오고 몸이 한결 편안해졌습니다.
           </p>
           <div class="review-card-footer">
             <span class="review-author"><i class="fas fa-user"></i> 이*숙 (만 55세, 여)</span>
@@ -1217,16 +1217,15 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2021.08</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">많이 좋아졌습니다! — 척추 통증·팔 저림·밤에 시림, 치료 후 수면도 일상도 편안해졌어요</h3>
+      <h3 class="review-detail-title">협착증으로 걷지도 못하고 얼굴에 열이 많아 화난 인상이 되고 발이 너무 시려서 감각이 없을 정도였어요 — 치료 후 통증이 줄고 몸이 한결 편안해졌어요</h3>
       <p class="review-story" style="margin-bottom:18px;">
-        척추와 등 통증이 심하고 팔이 너무 저려서 잠도 제대로 못 잤습니다.
-        밤에 너무 시려서 수면이 힘들었는데, 지인 소개로 수정한의원을 방문했습니다.
-        치료 후 통증이 줄고 잠도 잘 오고, 몸이 한결 편안해졌습니다.
+        협착증으로 걷지도 못하고 얼굴에 열이 많아 화난 인상으로 바뀌고, 발이 너무 시려서 감각이 없을 정도였습니다.
+        지인 소개로 수정한의원에 와서 치료 후 통증이 줄고 잠도 잘 오고 몸이 한결 편안해졌습니다.
       </p>
       <div class="review-qa-wrap">
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 불편하셨나요?</span>
-          <span class="review-qa-a">척추는 전혀 못 쓸 정도였고, 심하게 등에 통증이 왔습니다. 팔이 너무너무 심하게 저려서 잠잘 때도 불편했고 조금만 움직여도 아팠습니다.</span>
+          <span class="review-qa-a">협착증으로 걷지도 못하고, 얼굴에 열이 많아 화난 인상으로 바뀌고, 발이 너무 시려서 감각이 없을 정도였습니다. 선풍기 앞에서는 뼈가 저려서 고통스러워 잠도 못 잤습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 개선된 점은 무엇인가요?</span>
