@@ -510,7 +510,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <button class="review-filter-btn" data-cat="척추관절">척추·관절</button>
             <button class="review-filter-btn" data-cat="피부">피부·아토피</button>
             <button class="review-filter-btn" data-cat="소화기">소화기</button>
-            <button class="review-filter-btn" data-cat="자율신경">자율신경·공황</button>
+            <button class="review-filter-btn" data-cat="뇌신경">자율신경·뇌신경</button>
             <button class="review-filter-btn" data-cat="여성">여성질환</button>
             <button class="review-filter-btn" data-cat="성장">소아성장</button>
             <button class="review-filter-btn" data-cat="기타">기타</button>
@@ -666,9 +666,9 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
         <!-- ===== 자필후기 카드 #7 — 오O근 (자율신경·공황) ===== -->
-        <div id="reviewCard07" class="review-card review-card-handwritten" data-cat="자율신경" onclick="openReviewModal('detailModal07')" style="cursor:pointer;">
+        <div id="reviewCard07" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal07')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">자율신경·공황</span>
+            <span class="review-cat-tag">두통·편두통</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2021.09</span>
           </div>
@@ -708,7 +708,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
         <!-- ===== 자필후기 카드 #10 — 최0종 (뇌수종·어지럼증) ===== -->
-        <div id="reviewCard10" class="review-card review-card-handwritten" data-cat="자율신경" onclick="openReviewModal('detailModal10')" style="cursor:pointer;">
+        <div id="reviewCard10" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal10')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">어지럼증</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -796,7 +796,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
         <!-- ===== 자필후기 카드 #13 — 발0미 (항암후유증·자율신경) ===== -->
-        <div id="reviewCard13" class="review-card review-card-handwritten" data-cat="자율신경" onclick="openReviewModal('detailModal13')" style="cursor:pointer;">
+        <div id="reviewCard13" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal13')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">항암후유증·면역</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -1256,7 +1256,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal07')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">자율신경·공황</span>
+        <span class="review-cat-tag">두통·편두통</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2021.09</span>
       </div>
@@ -1813,13 +1813,13 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard04'), cat: '대상포진' },
       { el: document.getElementById('reviewCard05'), cat: '여성' },
       { el: document.getElementById('reviewCard06'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard07'), cat: '자율신경' },
+      { el: document.getElementById('reviewCard07'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard08'), cat: '대장염' },
       { el: document.getElementById('reviewCard09'), cat: '여성' },
-      { el: document.getElementById('reviewCard10'), cat: '자율신경' },
+      { el: document.getElementById('reviewCard10'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard11'), cat: '척추관절' },
       { el: document.getElementById('reviewCard12'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard13'), cat: '자율신경' },
+      { el: document.getElementById('reviewCard13'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard14'), cat: '척추관절' },
       { el: document.getElementById('reviewCard15'), cat: '피부' },
       { el: document.getElementById('reviewCard16'), cat: '천식' },
