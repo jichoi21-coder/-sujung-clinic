@@ -507,7 +507,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-filter-btns">
             <button class="review-filter-btn active" data-cat="all">전체</button>
             <button class="review-filter-btn" data-cat="다이어트">체질 다이어트</button>
-            <button class="review-filter-btn" data-cat="디스크">디스크·척추</button>
+            <button class="review-filter-btn" data-cat="척추관절">척추·관절</button>
             <button class="review-filter-btn" data-cat="피부">피부·아토피</button>
             <button class="review-filter-btn" data-cat="소화기">소화기</button>
             <button class="review-filter-btn" data-cat="자율신경">자율신경·공황</button>
@@ -645,10 +645,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-        <!-- ===== 자필후기 카드 #6 — 이O숙 (디스크·척추) ===== -->
-        <div id="reviewCard06" class="review-card review-card-handwritten" data-cat="디스크" onclick="openReviewModal('detailModal06')" style="cursor:pointer;">
+        <!-- ===== 자필후기 카드 #6 — 이O숙 (척추협착증) ===== -->
+        <div id="reviewCard06" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal06')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">디스크·척추</span>
+            <span class="review-cat-tag">척추협착증</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2021.08</span>
           </div>
@@ -751,10 +751,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-        <!-- ===== 자필후기 카드 #11 — 지0숙 (디스크·관절) ===== -->
-        <div id="reviewCard11" class="review-card review-card-handwritten" data-cat="디스크" onclick="openReviewModal('detailModal11')" style="cursor:pointer;">
+        <!-- ===== 자필후기 카드 #11 — 지0숙 (디스크 협착증) ===== -->
+        <div id="reviewCard11" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal11')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">디스크·관절</span>
+            <span class="review-cat-tag">디스크 협착증</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2024.07</span>
           </div>
@@ -773,10 +773,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-        <!-- ===== 자필후기 카드 #12 — 서0영 (디스크·척추) ===== -->
-        <div id="reviewCard12" class="review-card review-card-handwritten" data-cat="디스크" onclick="openReviewModal('detailModal12')" style="cursor:pointer;">
+        <!-- ===== 자필후기 카드 #12 — 서0영 (무릎관절염) ===== -->
+        <div id="reviewCard12" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal12')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">디스크·척추</span>
+            <span class="review-cat-tag">무릎관절염</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2021.08</span>
           </div>
@@ -817,10 +817,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-        <!-- ===== 자필후기 카드 #14 — 이☌순 (무릅관절염·디스크·척추) ===== -->
-        <div id="reviewCard14" class="review-card review-card-handwritten" data-cat="디스크" onclick="openReviewModal('detailModal14')" style="cursor:pointer;">
+        <!-- ===== 자필후기 카드 #14 — 이*순 (무릎관절염) ===== -->
+        <div id="reviewCard14" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal14')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">무릅관절염·디스크</span>
+            <span class="review-cat-tag">무릎관절염</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2021.02</span>
           </div>
@@ -884,9 +884,9 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
         <!-- ===== 자필후기 카드 #17 — 남*현 (허리 협착증·디스크) ===== -->
-        <div id="reviewCard17" class="review-card review-card-handwritten" data-cat="디스크" onclick="openReviewModal('detailModal17')" style="cursor:pointer;">
+        <div id="reviewCard17" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal17')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">디스크·척추</span>
+            <span class="review-cat-tag">척추관협착증</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2021.10</span>
           </div>
@@ -1212,7 +1212,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal06')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">디스크·척추</span>
+        <span class="review-cat-tag">척추협착증</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2021.08</span>
       </div>
@@ -1414,7 +1414,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal17')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">디스크·척추</span>
+        <span class="review-cat-tag">척추관협착증</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2021.10</span>
       </div>
@@ -1513,7 +1513,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal14')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">무릅관절염·디스크</span>
+        <span class="review-cat-tag">무릎관절염</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2021.02</span>
       </div>
@@ -1542,8 +1542,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
       </div>
       <div class="review-detail-images">
-        <img src="/static/reviews/review-14-leeinsu-p1.jpg" alt="무릅관절염 자필후기 1페이지" class="review-detail-img" onclick="openImgFull(this.src)">
-        <img src="/static/reviews/review-14-leeinsu-p2.jpg" alt="무릅관절염 자필후기 2페이지" class="review-detail-img" onclick="openImgFull(this.src)">
+        <img src="/static/reviews/review-14-leeinsu-p1.jpg" alt="무릎관절염 자필후기 1페이지" class="review-detail-img" onclick="openImgFull(this.src)">
+        <img src="/static/reviews/review-14-leeinsu-p2.jpg" alt="무릎관절염 자필후기 2페이지" class="review-detail-img" onclick="openImgFull(this.src)">
         <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
@@ -1606,7 +1606,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal12')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">디스크·척추</span>
+        <span class="review-cat-tag">무릎관절염</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2021.08</span>
       </div>
@@ -1654,7 +1654,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal11')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">디스크·관절</span>
+        <span class="review-cat-tag">디스크 협착증</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2024.07</span>
       </div>
@@ -1818,13 +1818,13 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard08'), cat: '대장염' },
       { el: document.getElementById('reviewCard09'), cat: '여성' },
       { el: document.getElementById('reviewCard10'), cat: '자율신경' },
-      { el: document.getElementById('reviewCard11'), cat: '디스크' },
-      { el: document.getElementById('reviewCard12'), cat: '디스크' },
+      { el: document.getElementById('reviewCard11'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard12'), cat: '척추관절' },
       { el: document.getElementById('reviewCard13'), cat: '자율신경' },
-      { el: document.getElementById('reviewCard14'), cat: '디스크' },
+      { el: document.getElementById('reviewCard14'), cat: '척추관절' },
       { el: document.getElementById('reviewCard15'), cat: '피부' },
       { el: document.getElementById('reviewCard16'), cat: '천식' },
-      { el: document.getElementById('reviewCard17'), cat: '디스크' }
+      { el: document.getElementById('reviewCard17'), cat: '척추관절' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
