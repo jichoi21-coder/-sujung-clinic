@@ -653,7 +653,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2021.08</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">협착증으로 걷지도 못하고 얼굴에 열이 많아 화난 인상이 되고 발이 너무 시려서 감각이 없을 정도였어요 — 치료 후 통증이 줄고 몸이 한결 편안해졌어요</h3>
+          <h3 class="review-card-title">협착증으로 걷지도 못하고 발이 너무 시리고 뼈가 저리고 감각이 없어서 잠을 못자요 — 치료 후 통증이 줄고 몸이 한결 편안해졌어요</h3>
           <p class="review-story">
             협착증으로 걷지도 못하고 얼굴에 열이 많아 화난 인상으로 바뀌고, 발이 너무 시려서 감각이 없을 정도였습니다.
             지인 소개로 수정한의원에 와서 치료 후 통증이 줄고 잠도 잘 오고 몸이 한결 편안해졌습니다.
@@ -1217,7 +1217,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2021.08</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">협착증으로 걷지도 못하고 얼굴에 열이 많아 화난 인상이 되고 발이 너무 시려서 감각이 없을 정도였어요 — 치료 후 통증이 줄고 몸이 한결 편안해졌어요</h3>
+      <h3 class="review-detail-title">협착증으로 걷지도 못하고 발이 너무 시리고 뼈가 저리고 감각이 없어서 잠을 못자요 — 치료 후 통증이 줄고 몸이 한결 편안해졌어요</h3>
       <p class="review-story" style="margin-bottom:18px;">
         협착증으로 걷지도 못하고 얼굴에 열이 많아 화난 인상으로 바뀌고, 발이 너무 시려서 감각이 없을 정도였습니다.
         지인 소개로 수정한의원에 와서 치료 후 통증이 줄고 잠도 잘 오고 몸이 한결 편안해졌습니다.
