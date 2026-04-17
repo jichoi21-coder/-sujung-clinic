@@ -1813,7 +1813,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard03'), cat: '피부' },
       { el: document.getElementById('reviewCard04'), cat: '대상포진' },
       { el: document.getElementById('reviewCard05'), cat: '여성' },
-      { el: document.getElementById('reviewCard06'), cat: '디스크' },
+      { el: document.getElementById('reviewCard06'), cat: '척추관절' },
       { el: document.getElementById('reviewCard07'), cat: '자율신경' },
       { el: document.getElementById('reviewCard08'), cat: '대장염' },
       { el: document.getElementById('reviewCard09'), cat: '여성' },
