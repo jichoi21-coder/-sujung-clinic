@@ -805,7 +805,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-quote-mark">"</div>
           <h3 class="review-card-title">한여름에도 난방기를 켰던 추위가 사라졌습니다 — 항암 후 면역저하와 피로가 체질 한약으로 함께 좋아졌어요</h3>
           <p class="review-story">
-            유방암 항암·방사선 치료 후 면역지하로 뉴속까지 추워서 한여름에도 난방기를 켰을 정도였습니다.
+            유방암 항암·방사선 치료 후 면역저하로 속까지 추워서 한여름에도 난방기를 켰을 정도였습니다.
             체질 약침·한약 치료 후 추위가 사라지고 면역력도 회복되어잔습니다.
           </p>
           <div class="review-card-footer">
@@ -1564,17 +1564,17 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-quote-mark">"</div>
       <h3 class="review-detail-title">한여름에도 난방기를 켰던 추위가 사라졌습니다 — 항암 후 면역저하와 피로가 체질 한약으로 함께 좋아졌어요</h3>
       <p class="review-story" style="margin-bottom:18px;">
-        유방암 항암·방사선 치료 후 면역지하로 뉴속까지 추워서 한여름에도 난방기를 켰을 정도였습니다.
-        체질 약침·한약 치료 후 추위가 사라지고 면역력도 회복되어위즈니다.
+        유방암 항암·방사선 치료 후 면역저하로 속까지 추워서 한여름에도 난방기를 켰을 정도였습니다.
+        체질 약침·한약 치료 후 추위가 사라지고 면역력도 회복되었습니다.
       </p>
       <div class="review-qa-wrap">
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
-          <span class="review-qa-a">유방암 치료(항암, 방사선) 후 면역체계가 불안정하여 추위를 심하게 느끄고 자주 피로감을 느끼었습니다.</span>
+          <span class="review-qa-a">유방암 치료(항암, 방사선) 후 면역체계가 불안정하여 추위를 심하게 느끼고 자주 피로감을 느끼었습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
-          <span class="review-qa-a">뉴속까지 추위를 타서 한여름에도 난방기를 사용할 정도로 일상생활에 불편함을 느꺼습니다.</span>
+          <span class="review-qa-a">속까지 추위를 타서 한여름에도 난방기를 사용할 정도로 일상생활에 불편함을 느꺼습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
@@ -1582,11 +1582,11 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
-          <span class="review-qa-a">한여름에 에어콘 바람을 켠던 것이 매우 행저지었으며, 8체질을 알고 체질에 맞는 음식을 섭취하여 몸의 면역력과 성격도 차츠 바뀌는 것을 알게 되었습니다.</span>
+          <span class="review-qa-a">한여름에 에어콘 바람을 켰던 것이 매우 긍정적이었으며, 8체질을 알고 체질에 맞는 음식을 섭취하여 몸의 면역력과 성격도 차분히 바뀌는 것을 알게 되었습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
-          <span class="review-qa-a">정성곳 세심하게 치료해 주신 원장님과 간호사님들께 진심으로 감사드리며 하실의 축복이 함께 하시길 기도드립니다.</span>
+          <span class="review-qa-a">정성껏 세심하게 치료해 주신 원장님과 간호사님들께 진심으로 감사드리며 주님의 축복이 함께 하시길 기도드립니다.</span>
         </div>
       </div>
       <div class="review-detail-images">
