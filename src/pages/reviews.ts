@@ -1038,7 +1038,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2022.12</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">독감 후 굿가 잘 안 들리고 이명창 시달린데, 4일만에 들리기 시작하고 지금은 대화도 편안해졌어요</h3>
+          <h3 class="review-card-title">독감 후 귀가 잘 안 들리고 이명에 시달렸는데, 4일만에 들리기 시작하고 지금은 대화도 편안해졌어요</h3>
           <p class="review-story">
             11월 말부터 난청과 이명이 시작되어 대화도 힘들었는데, 12월 6일 치료 시작 후 4일만에 들리기 시작하고 2주 만에 대화가 편안해졌습니다.
           </p>
@@ -1565,14 +1565,14 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2022.12</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">독감 후 굿가 잘 안 들리고 이명창 시달린데, 4일만에 들리기 시작하고 지금은 대화도 편안해졌어요</h3>
+      <h3 class="review-detail-title">독감 후 귀가 잘 안 들리고 이명에 시달렸는데, 4일만에 들리기 시작하고 지금은 대화도 편안해졌어요</h3>
       <p class="review-story" style="margin-bottom:18px;">
         11월 말부터 난청과 이명이 시작되어 대화도 힘들었는데, 12월 6일 치료 시작 후 4일만에 들리기 시작하고 2주 만에 대화가 편안해졌습니다.
       </p>
       <div class="review-qa-wrap">
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
-          <span class="review-qa-a">10월 초즐 독감에 걸렸는데 규가 웅웅거리다가 11월 말경부터 규가 잘 안들렸습니다. 바로 앞에서 하는 이야기도 잘 안들려서 생활하거나 사람과 대화할 때 많이 불편했습니다. 난청과 함께 오른쪽에 이명도 조금 생겼습니다. 가래도 자꼬 있었습니다.</span>
+          <span class="review-qa-a">10월 초쯤 독감에 걸렸는데 귀가 웅웅거리다가 11월 말경부터 귀가 잘 안들렸습니다. 바로 앞에서 하는 이야기도 잘 안들려서 생활하거나 사람과 대화할 때 많이 불편했습니다. 난청과 함께 오른쪽에 이명도 조금 생겼습니다. 가래도 자꾸 있었습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
@@ -1580,11 +1580,11 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
-          <span class="review-qa-a">12월 6일부터 치료를 시작하여 4일째부터 규가 조금 들리기 시작하였고 일주일쪽 되니 상대방이 하는 소리가 조금 들리기 시작하였습니다. 2주쪽 지나니 기도할 때 상대방 소리가 들리고 목에서 끊적한 가래가 나오더니 가래도 없어졌습니다. 지금은 소리가 다 잘 들리고 상대방과 대화할 때 많이 편해졌습니다.</span>
+          <span class="review-qa-a">12월 6일부터 치료를 시작하여 4일째부터 귀가 조금 들리기 시작하였고 일주일쯤 되니 상대방이 하는 소리가 조금 들리기 시작하였습니다. 2주쯤 지나니 기도할 때 상대방 소리가 들리고 목에서 끈적한 가래가 나오더니 가래도 없어졌습니다. 지금은 소리가 다 잘 들리고 상대방과 대화할 때 많이 편해졌습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
-          <span class="review-qa-a">아이들을 돌보는 일을 해야하는데 소리가 안들리니 불편하였습니다. 기도할때도 상대방의 소리가 안들리니 불편했었는데 소리가 들리니 이제 공 안심이 됩니다.</span>
+          <span class="review-qa-a">아이들을 돌보는 일을 해야하는데 소리가 안들리니 불편하였습니다. 기도할때도 상대방의 소리가 안들리니 불편했었는데 소리가 들리니 이제 곧 안심이 됩니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
