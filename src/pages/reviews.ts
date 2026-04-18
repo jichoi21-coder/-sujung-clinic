@@ -967,6 +967,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #22 -->
+        <div id="reviewCard22" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal22')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">회전근파열</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">어깨인대가 끊어져서 팔이 안올라갔는데 수술안하고 수정한의원에서 치료받고 이제는 팔이 올라가고 통증도 없고 다 나았어요</h3>
+          <p class="review-story">
+            정형외과에서 인대가 끊어져 수술해야 한다고 했지만, 수정한의원 체질침·추나·매선·약침 치료로 팔이 올라가고 통증도 사라졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 주*순 (만 74세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1466,6 +1487,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
         <span class="review-author"><i class="fas fa-user"></i> 조*희 (만 80세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #22 -->
+  <div id="detailModal22" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal22')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">회전근파열</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.11</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">어깨인대가 끊어져서 팔이 안올라갔는데 수술안하고 수정한의원에서 치료받고 이제는 팔이 올라가고 통증도 없고 다 나았어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        정형외과에서 인대가 끊어져 수술해야 한다고 했지만, 수정한의원 체질침·추나·매선·약침 치료로 팔이 올라가고 통증도 사라졌습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">처음에는 어깨가 조금 뻐근하다가 점점 아파졌습니다. 그러다 팔이 안 올라가서 정형외과에 갔더니 인대가 끊어졌다고 하며 수술을 해야 한다고 했습니다. 정형외과에서 생각해 봤다고 하고 나서 평소에 다니던 수정한의원에 진료보러 와서 원장님과 상담했습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">불편하라도 일상생활하는데 많이 지장을 주지는 않았지만 옷 입을 때나 물건 들 때나 불편하고, 그냥 있어도 통증이 있어서 빨리 치료해야겠다는 생각이 들어서 한의원에 왔습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">원장님 침 맞으며 한약도 꾸준히 먹었습니다. 추나, 매선, 약침치료를 꾸준히 받았습니다. 약침·추나는 6번, 매선치료는 2번 받았는데 조금도 올라가지 않던 팔이 처음으로 올라가고, 올라간 팔을 버티고 있으면 팔이 떨렸는데, 지금은 팔의 떨림도 없어지고 어제 아침에는 팔을 거의 다 올릴 수 있었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">팔의 움직임이 많이 개선되고 통증이 많이 줄어서 우선 기분이 좋습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
+          <span class="review-qa-a">원장님 말씀대로 어깨수술 안하고 잘했어요. 팔이 많이 나아서 좋습니다. 감사합니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-22-jusoon-p1.jpg" alt="회전근파열 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 주*순 (만 74세, 여)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
       </div>
     </div>
@@ -2030,7 +2098,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard17'), cat: '척추관절' },
       { el: document.getElementById('reviewCard18'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard19'), cat: '소화기' },
-      { el: document.getElementById('reviewCard21'), cat: '뇌신경' }
+      { el: document.getElementById('reviewCard21'), cat: '뇌신경' },
+      { el: document.getElementById('reviewCard22'), cat: '척추관절' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
