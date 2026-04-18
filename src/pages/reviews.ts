@@ -1551,7 +1551,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-qa-wrap">
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
-          <span class="review-qa-a">① 오래기간 소화기관에 불편감이 있어, 늘 소화불량을 달고 살았던 것 같습니다. ② 면역력이 떨어져 그런지 조금만 피곤하거나 힘들면 밀자님에 열이 나거나, 소변을 원활하게 보지 못하는 현상이 있었습니다.</span>
+          <span class="review-qa-a">① 오래기간 소화기관에 불편감이 있어, 늘 소화불량을 달고 살았던 것 같습니다. ② 면역력이 떨어져 그런지 조금만 피곤하거나 힘들면 방광쪽이 약해져 붓거나, 소변을 원활하게 보지 못하는 현상이 있었습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
@@ -1563,7 +1563,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
-          <span class="review-qa-a">① 일단 컨디션이 좋아졌고, 몸이 가벼워졌다. ② 체질 치료약은 궉장히 복용하기가 편하다. 원래 한약복용을 잘 못하는데 수정한의원에서 처방된 약은 쓰지 않고 달리도 않아 부담감이 부드럽게 먹게 된다.</span>
+          <span class="review-qa-a">① 일단 컨디션이 좋아졌고, 몸이 가벼워졌다. ② 체질 치료약은 굉장히 복용하기가 편하다. 원래 한약복용을 잘 못하는데 수정한의원에서 처방된 약은 쓰지 않고 달리도 않아 부담감이 부드럽게 먹게 된다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
