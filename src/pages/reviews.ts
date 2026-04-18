@@ -946,6 +946,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #21 -->
+        <div id="reviewCard21" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal21')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두통·편두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">두통과 뒷머리 뻐근함, 수정한의원 체질침 치료로 머리가 맑아졌어요</h3>
+          <p class="review-story">
+            뒷머리가 뻐근하고 두통이 심했으며 컴퓨터 작업 후 더욱 심해졌습니다. 체질침 치료 후 두통과 목 뻐근함이 사라지고 머리가 맑아졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*성 (만 24세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1445,6 +1466,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
         <span class="review-author"><i class="fas fa-user"></i> 조*희 (만 80세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #21 -->
+  <div id="detailModal21" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal21')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">두통·편두통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">두통과 뒷머리 뻐근함, 수정한의원 체질침 치료로 머리가 맑아졌어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        뒷머리가 뻐근하고 두통이 심했으며 컴퓨터 작업 후 더욱 심해졌습니다. 체질침 치료 후 두통과 목 뻐근함이 사라지고 머리가 맑아졌습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">뒷머리가 뻐근하고 두통이 심했습니다. 컴퓨터 작업을 오래 하면 더욱 심해져 머리에 안개가 끼는 것 같은 답답함도 있었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">온라인 검색을 통해 수정한의원을 알게 되어 방문하게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">두통과 뒷머리 뻐근함이 줄어들고, 머리에 안개 끼는 느낌이 사라졌습니다. 전반적인 에너지도 개선되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">컴퓨터 작업을 오래 해도 두통 없이 집중할 수 있게 되었습니다. 업무 효율도 많이 올라갔습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
+          <span class="review-qa-a">원장님과 스탭분들 덕분에 두통에서 벗어났습니다. 정말 감사합니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-21-leeseong-p1.jpg" alt="두통·편두통 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 이*성 (만 24세, 남)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
       </div>
     </div>
@@ -1961,7 +2029,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard16'), cat: '천식' },
       { el: document.getElementById('reviewCard17'), cat: '척추관절' },
       { el: document.getElementById('reviewCard18'), cat: '뇌신경' },
-      { el: document.getElementById('reviewCard19'), cat: '소화기' }
+      { el: document.getElementById('reviewCard19'), cat: '소화기' },
+      { el: document.getElementById('reviewCard21'), cat: '뇌신경' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
