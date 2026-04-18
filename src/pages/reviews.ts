@@ -1009,6 +1009,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #24 -->
+        <div id="reviewCard24" class="review-card review-card-handwritten" data-cat="소화기" onclick="openReviewModal('detailModal24')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">소화불량</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2020.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">오래된 소화불량과 면역저하를 금음체질 한약·체질침으로 속이 편해지고 건강이 돌아왔어요</h3>
+          <p class="review-story">
+            소화기관 불편감과 면역저하로 조금만 피곤해도 열이 나고 방광 증상이 있었는데, 금음체질 진단 후 약침·체질침 치료로 속이 편해지고 컨디션도 많이 좋아졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*녀 (만 16세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1508,6 +1529,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
         <span class="review-author"><i class="fas fa-user"></i> 조*희 (만 80세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #24 -->
+  <div id="detailModal24" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal24')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">소화불량</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2020.04</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">오래된 소화불량과 면역저하를 금음체질 한약·체질침으로 속이 편해지고 건강이 돌아왔어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        소화기관 불편감과 면역저하로 조금만 피곤해도 열이 나고 방광 증상이 있었는데, 금음체질 진단 후 약침·체질침 치료로 속이 편해지고 컨디션도 많이 좋아졌습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">① 오래기간 소화기관에 불편감이 있어, 늘 소화불량을 달고 살았던 것 같습니다. ② 면역력이 떨어져 그런지 조금만 피곤하거나 힘들면 밀자님에 열이 나거나, 소변을 원활하게 보지 못하는 현상이 있었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">근본적인 원인을 생각하다 체질에 맞는 치료를 생각하게 되었고, 오래전 치료를 받아 본 사람들의 체험담을 통해 치료를 선택하게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">원장님께서 금음체질이라 하셨고, 이에 맞는 약처방과 태반약침, 침치료를 병행하면서 일주일 정도 치료를 받아서 속이 편해졌고, 방광 쪽에 불편감도 좋아진 것 같습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">① 일단 컨디션이 좋아졌고, 몸이 가벼워졌다. ② 체질 치료약은 궉장히 복용하기가 편하다. 원래 한약복용을 잘 못하는데 수정한의원에서 처방된 약은 쓰지 않고 달리도 않아 부담감이 부드럽게 먹게 된다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
+          <span class="review-qa-a">① 원장님께서 환자의 말에 귀 기울여 주시고 환자에 맞는 치료를 잘 해 주십니다. 간호사분들도 친절하게 진료받기에 편안함을 주십니다. ② 편의시설이 너무 잘 되어있어요^^ ✱ 맥을 통해 정확한 체질을 알아보고 그에 맞는 치료를 하게되면 치료가 개선되리라 믿습니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-24-kimnyeo-p1.jpg" alt="소화불량 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 김*녀 (만 16세, 여)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
       </div>
     </div>
@@ -2168,7 +2236,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard19'), cat: '소화기' },
       { el: document.getElementById('reviewCard21'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard22'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard23'), cat: '피부' }
+      { el: document.getElementById('reviewCard23'), cat: '피부' },
+      { el: document.getElementById('reviewCard24'), cat: '소화기' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
