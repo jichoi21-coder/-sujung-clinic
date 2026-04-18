@@ -988,6 +988,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #23 -->
+        <div id="reviewCard23" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal23')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">안면홍조</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">얼굴에 열이 올라 안면홍조로 고생했는데 체질 치료 후 안면홍조와 함께 불면증도 없어지고 더불어 갑상선 혹도 줄어들었어요</h3>
+          <p class="review-story">
+            피부과를 2개월 동안 다녔지만 호전이 없었고, 간의 열로 인한 안면홍조 진단 후 체질침·한약 치료로 홍조가 사라지고 갑상선 혹도 2.6cm → 1.5cm로 줄었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 현*주 (만 61세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1487,6 +1508,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
         <span class="review-author"><i class="fas fa-user"></i> 조*희 (만 80세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #23 -->
+  <div id="detailModal23" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal23')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">안면홍조</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">얼굴에 열이 올라 안면홍조로 고생했는데 체질 치료 후 안면홍조와 함께 불면증도 없어지고 더불어 갑상선 혹도 줄어들었어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        피부과를 2개월 동안 다녔지만 호전이 없었고, 간의 열로 인한 안면홍조 진단 후 체질침·한약 치료로 홍조가 사라지고 갑상선 혹도 2.6cm → 1.5cm로 줄었습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">피부과를 2개월 동안 다녔습니다. 치료약을 복용하였지만 호전이 없었습니다. 잠깐 스치는 생각에 속에 이상이 있는 것 같은 느낌이 들어 전화로 물어보고 오게 됐습니다. 저의 증세는 간에 열이 있어서 얼굴에 홍조가 생긴 거라 했습니다. 소화도 잘 되지 않고 자다가 자주 깨는 일이 잦았으며 정말 많이 힘들었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">안면홍조와 함께 갑상선 혹(갑상선 크기 2.6cm)을 줄이기 위해 7월 4일부터 갑상선 혹에 대한 파동치료를 집중 치료했습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">간의 열은 체질침과 한약(체질에 맞는)을 먹고, 얼굴의 홍조는 점점 좋아져서 지금은 정상적으로 되었습니다. 갑상선 혹은 9/8 서울대 초음파 검사 후 결과는 혹이 1.5cm로 줄어들고, 암이 아니라는 결과가 나왔습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">파동치료 한약복용 체질침 온열치료로 환자의 정성이 저를 좀 더 건강하게 만들어 준 것 같습니다. 저도 주기적으로 꼭 한의원에 다니며 면역력을 높이기 위해 최선을 다하고 있습니다. 아침에 일찍 가볍게 일어나게 되어 매우 좋습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
+          <span class="review-qa-a">오랫동안 저의 면역력과 건강을 위해 정성껏 치료해 주시는 원장선생님께 감사드립니다. 또한 간호사님들도 친절하게 정성껏 환자를 대해 주셔서 감사드립니다. 면역력 치료를 위해 앞으로 더 승승장구하는 수정한의원이 되길 바랍니다. 사람을 살리는 한의원 ~ ♡</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-23-hyunjoo-p1.jpg" alt="안면홍조 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 현*주 (만 61세, 여)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
       </div>
     </div>
@@ -2099,7 +2167,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard18'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard19'), cat: '소화기' },
       { el: document.getElementById('reviewCard21'), cat: '뇌신경' },
-      { el: document.getElementById('reviewCard22'), cat: '척추관절' }
+      { el: document.getElementById('reviewCard22'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard23'), cat: '피부' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
