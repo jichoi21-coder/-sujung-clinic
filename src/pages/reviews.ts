@@ -1030,6 +1030,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #25 -->
+        <div id="reviewCard25" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal25')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">돌발성난청·이명</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">독감 후 굿가 잘 안 들리고 이명창 시달린데, 4일만에 들리기 시작하고 지금은 대화도 편안해졌어요</h3>
+          <p class="review-story">
+            11월 말부터 난청과 이명이 시작되어 대화도 힘들었는데, 12월 6일 치료 시작 후 4일만에 들리기 시작하고 2주 만에 대화가 편안해졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 박*규 (만 80세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1529,6 +1550,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
         <span class="review-author"><i class="fas fa-user"></i> 조*희 (만 80세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #25 -->
+  <div id="detailModal25" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal25')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">돌발성난청·이명</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.12</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">독감 후 굿가 잘 안 들리고 이명창 시달린데, 4일만에 들리기 시작하고 지금은 대화도 편안해졌어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        11월 말부터 난청과 이명이 시작되어 대화도 힘들었는데, 12월 6일 치료 시작 후 4일만에 들리기 시작하고 2주 만에 대화가 편안해졌습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">10월 초즐 독감에 걸렸는데 규가 웅웅거리다가 11월 말경부터 규가 잘 안들렸습니다. 바로 앞에서 하는 이야기도 잘 안들려서 생활하거나 사람과 대화할 때 많이 불편했습니다. 난청과 함께 오른쪽에 이명도 조금 생겼습니다. 가래도 자꼬 있었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">일하는데에 지장이 많아서 알고 지내던 수정한의원 원장님께 치료를 받아야겠다고 생각했습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">12월 6일부터 치료를 시작하여 4일째부터 규가 조금 들리기 시작하였고 일주일쪽 되니 상대방이 하는 소리가 조금 들리기 시작하였습니다. 2주쪽 지나니 기도할 때 상대방 소리가 들리고 목에서 끊적한 가래가 나오더니 가래도 없어졌습니다. 지금은 소리가 다 잘 들리고 상대방과 대화할 때 많이 편해졌습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">아이들을 돌보는 일을 해야하는데 소리가 안들리니 불편하였습니다. 기도할때도 상대방의 소리가 안들리니 불편했었는데 소리가 들리니 이제 공 안심이 됩니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
+          <span class="review-qa-a">원장님께서 치료를 잘해주셔서 감사합니다. 간호사선생님들은 모두 친절하며 고맙습니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-25-pakgyu-p1.jpg" alt="돌발성난청 이명 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 박*규 (만 80세, 여)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
       </div>
     </div>
@@ -2237,7 +2305,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard21'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard22'), cat: '척추관절' },
       { el: document.getElementById('reviewCard23'), cat: '피부' },
-      { el: document.getElementById('reviewCard24'), cat: '소화기' }
+      { el: document.getElementById('reviewCard24'), cat: '소화기' },
+      { el: document.getElementById('reviewCard25'), cat: '뇌신경' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
