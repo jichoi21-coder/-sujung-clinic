@@ -1513,7 +1513,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
-          <span class="review-qa-a">불편하라도 일상생활하는데 많이 지장을 주지는 않았지만 옷 입을 때나 물건 들 때나 불편하고, 그냥 있어도 통증이 있어서 빨리 치료해야겠다는 생각이 들어서 한의원에 왔습니다.</span>
+          <span class="review-qa-a">불편하더라도 일상생활하는데 많이 지장을 주지는 않았지만 옷 입을 때나 물건 들 때나 불편하고, 그냥 있어도 통증이 있어서 빨리 치료해야겠다는 생각이 들어서 한의원에 왔습니다.</span>
         </div>
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
