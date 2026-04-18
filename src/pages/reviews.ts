@@ -925,6 +925,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- ===== 자필후기 카드 #19 — 장*혜 (소화불량·소화기) ===== -->
+        <div id="reviewCard19" class="review-card review-card-handwritten" data-cat="소화기" onclick="openReviewModal('detailModal19')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">소화불량</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2021.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">음식을 먹으면 명치가 걸려 내려가지 않아 고통스러웠어요 — 체질 한약·침 치료 후 소화가 잘 되어 건강한 생활을 하게 되었어요</h3>
+          <p class="review-story">
+            명치에 음식이 걸려 내려가지 않을 정도로 소화불량이 심했습니다. 체질 한약과 침 치료 후 소화가 잘 되어 건강한 생활을 하게 되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 장*혜 (만 59세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1429,6 +1450,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     </div>
   </div>
 
+  <!-- 상세 모달 #19 -->
+  <div id="detailModal19" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal19')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">소화불량</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2021.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">음식을 먹으면 명치가 걸려 내려가지 않아 고통스러웠어요 — 체질 한약·침 치료 후 소화가 잘 되어 건강한 생활을 하게 되었어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        명치에 음식이 걸려 내려가지 않을 정도로 소화불량이 심했습니다. 체질 한약과 침 치료 후 소화가 잘 되어 건강한 생활을 하게 되었습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">소화가 안 되는 증상이 너무 심했습니다. 음식을 먹으면 명치가 걸려 내려가지 않아 너무 고통스러웠습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">친구의 소개로 수정한의원을 알게 되었고, 2년 전에 치료를 받아 상태가 호전된 경험이 있어 다시 병원을 찾게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">원장님께서 체질을 분석해 주신 체질에 맞는 음식을 먹고, 한약과 침치료를 통해 소화가 잘 되게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">소화가 잘 되어 잘 먹게 되어 건강한 생활을 하게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
+          <span class="review-qa-a">좋은 약과 침 치료로 건강을 찾게 해주셔서 감사합니다.</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-19-janghye-p1.jpg" alt="소화불량 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 장*혜 (만 59세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #18 -->
   <div id="detailModal18" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
@@ -1892,7 +1960,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard15'), cat: '피부' },
       { el: document.getElementById('reviewCard16'), cat: '천식' },
       { el: document.getElementById('reviewCard17'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard18'), cat: '뇌신경' }
+      { el: document.getElementById('reviewCard18'), cat: '뇌신경' },
+      { el: document.getElementById('reviewCard19'), cat: '소화기' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
