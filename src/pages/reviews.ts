@@ -1051,6 +1051,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+
+        <!-- 후기 카드 #26 -->
+        <div id="reviewCard26" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal26')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">어깨통증·회전근개</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">어깨통증·일자목·비염이 모두 연관된 줄 몰랐는데, 추나요법·약침으로 어깨도 비염도 생리통도 다 좋아졌어요</h3>
+          <p class="review-story">
+            양쪽 어깨통증과 손떨림·팔저림으로 잠을 못 이루고, 일자목·비염까지 겹쳐 힘들었는데 체질침·추나·태반약침 치료 후 모두 좋아졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 원*혜 (만 31세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1550,6 +1572,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
         <span class="review-author"><i class="fas fa-user"></i> 조*희 (만 80세, 여)</span>
+        <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #26 -->
+  <div id="detailModal26" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal26')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">어깨통증·회전근개</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.04</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">어깨통증·일자목·비염이 모두 연관된 줄 몰랐는데, 추나요법·약침으로 어깨도 비염도 생리통도 다 좋아졌어요</h3>
+      <p class="review-story" style="margin-bottom:18px;">
+        양쪽 어깨통증과 손떨림·팔저림으로 잠을 못 이루고, 일자목·비염까지 겹쳐 힘들었는데 체질침·추나·태반약침 치료 후 모두 좋아졌습니다.
+      </p>
+      <div class="review-qa-wrap">
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 어떤 증상이 있었고 불편했나요?</span>
+          <span class="review-qa-a">양쪽 어깨에 통증이 점차 심해지고 손떨림, 팔저림이 너무 심해져서 잠을 자다가 깨기를 수도없이 반복했습니다. 수면의 질도 좋지 않았고 어깨결림으로 일상생활이 너무 힘들었어요. 일자목도 심하고 늘 경직되어 있어서 쉽게 피로감을 느끼고 어렸을때부터 겪고 있는 비염도 점차 심해지더라구요. 어깨통증·일자목·비염이 모든것들이 연관이 있는줄 모르고 생활해오다가 이대로는 안되겠다 싶어서 제대로 된 한의원을 찾게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-question"></i> 치료를 받게 된 이유</span>
+          <span class="review-qa-a">지인의 추천으로 알게 되었습니다. 병원방문전 리뷰나 후기도 많이 찾아보았는데 평판이 너무 좋더라구요~ 일자목과 어깨통증이 하루하루 심해졌기 때문에 더 이상의 치료를 미룰수 없었습니다. 사실 병원은 개개인이 느끼는 점이 달라서 쉽게 추천을 못하는데, 지인분이 여긴 한번 꼭 다녀오라고 신신당부를 하시더라구요. 믿고 방문하게 되었습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 치료를 통해 개선된 점</span>
+          <span class="review-qa-a">현재 추나요법·태반약침·체질침 병행하여 치료를 받고 있으며 어깨통증은 물론 비염까지도 확실히 많이 좋아졌고, 또 좋아지고 있습니다. 수면의 질이 자연스레 좋아지니 당연히 삶의 질도 높아졌지요. 면역력도 많이 좋아져서 감기 한번 걸리지 않고 생리통도 없어지니 회사생활에도 그리고 일상생활도 너무 즐겁고 활력이 생기더라구요. 진작 치료 받았으면 더 좋았을걸 생각하면서 현재도 열심히 치료받고 있습니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-circle-check"></i> 달라진 삶의 질</span>
+          <span class="review-qa-a">어깨통증으로 무거운 물건을 들지 못했었는데 추나와 약침으로 통증이 완화되어서 이제는 아무렇지않게 무거운것들도 들고, 운동도 시작했습니다. 면역력증가와 체질개선을 통해 간기능도 이전보다 훨씬 좋아졌고 아주 오랫동안 손톱 물어뜯는 버릇이 있었는데 이 부분까지 모두 개선되어 저도 이제 네일아트도 받고 일상생활 자체가 너무 활기차서 행복해요. 아직 완벽하지는 않지만 더더더~! 좋아질거라서 너무 기대중입니다.</span>
+        </div>
+        <div class="review-qa-item">
+          <span class="review-qa-q"><i class="fas fa-comment"></i> 하고 싶은 말</span>
+          <span class="review-qa-a">집이랑 거리가 멀다는게 처음엔 좀 힘들었는데 건강이 회복되는걸 느끼니 거리는 문제가 아니더군요. 친절하게 대해주시고 꼼꼼하게 또 정확하게 진료를 봐주시니 믿고 맡기면 분명 좋은 결과가 있을거예요. 더 많은 분들이 같이 느끼고 행복해졌으면 좋겠습니다. (인천에도 병원 생기면 완전 행복할거같아요.)</span>
+        </div>
+      </div>
+      <div class="review-detail-images">
+        <img src="/static/reviews/review-26-wonyunhye-p1.jpg" alt="어깨통증 회전근개 자필후기" class="review-detail-img" onclick="openImgFull(this.src)">
+        <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지를 클릭하면 원본 크기로 볼 수 있습니다</p>
+      </div>
+      <div class="review-card-footer" style="margin-top:16px;">
+        <span class="review-author"><i class="fas fa-user"></i> 원*혜 (만 31세, 여)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
       </div>
     </div>
@@ -2306,7 +2375,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard22'), cat: '척추관절' },
       { el: document.getElementById('reviewCard23'), cat: '피부' },
       { el: document.getElementById('reviewCard24'), cat: '소화기' },
-      { el: document.getElementById('reviewCard25'), cat: '뇌신경' }
+      { el: document.getElementById('reviewCard25'), cat: '뇌신경' },
+      { el: document.getElementById('reviewCard26'), cat: '척추관절' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
