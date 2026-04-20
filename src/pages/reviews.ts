@@ -1073,6 +1073,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard27" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal27')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">턱관절장애</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">20년 넘은 턱관절 소리와 1년간의 통증, 3개월 치료로 소리도 통증도 완전히 사라졌어요</h3>
+          <p class="review-story">
+            20년간 입 벌릴 때마다 턱에서 딱 소리가 났고, 1년 전부터 통증까지 생겨 잠도 못 잘 만큼 힘들었는데 추나·약침·침 치료 3개월 만에 소리와 통증이 모두 없어졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*해 (만 74세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1620,6 +1640,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-card-footer" style="margin-top:16px;">
         <span class="review-author"><i class="fas fa-user"></i> 원*혜 (만 31세, 여)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #27 -->
+  <div id="detailModal27" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal27')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">턱관절장애</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.04</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">20년 넘은 턱관절 소리와 1년간의 통증, 3개월 치료로 소리도 통증도 완전히 사라졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-27-leedonghae-p1.jpg" alt="이*해 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 이*해 (만 74세, 남)</span>
+          <span class="review-date-label">작성일: 2022년 4월 16일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>저는 20년 조금 넘게 오른쪽 아구(턱)에서 하품을 하거나 입을 크게 벌리면 딱 하고 소리가 났습니다. 통증은 없었는데 1년 전부터 아프고 통증이 생겨 고통스러웠습니다. 잠 잘 때는 더 고통이 심하며 참기가 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>다른 곳에서 치료를 받던 중 큰 차도가 없어 치료를 잘하는 한의원을 찾다 우연히 수정한의원 한약 배달하는 차량을 보고 전화번호를 알고 수정한의원에 와서 치료를 받게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>수정한의원 원장님께 뛰어난 침술과 정확한 침술 치료를 받고 추나치료와 목디스크 교정치료, 약침치료, 일반 침 치료를 3개월 정도 받았는데 오른쪽 아구(턱)에서 나던 소리가 완전히 없어지고 아픈 통증도 사라졌습니다. 너무나 기쁩니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>치료를 받는 동안 원장님께서 아픈 곳을 말할 때 자세히 잘 들어주시고 친절하고 정성껏 세밀하게 해주셔서 너무 감사하고, 또 간호사님들이 아주 친절하고 정성껏 간호를 해주셔서 마음이 편하게 치료를 잘 받아 기쁘고 아픈 곳이 많이 좋아져서 아주 고맙고 감사합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>수정한의원으로 아픈 환자들이 많이 오셔서 고통스러운 병을 치료받고 많은 사람들이 완쾌되셨으면 좋겠습니다. 치료받는 기간 동안에는 환자 자신의 노력도 꼭 필요하다고 생각합니다. 운동을 열심히 하는 것이 아주 중요합니다. 저의 경험담을 말씀드린 것입니다.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -2376,7 +2442,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard23'), cat: '피부' },
       { el: document.getElementById('reviewCard24'), cat: '소화기' },
       { el: document.getElementById('reviewCard25'), cat: '뇌신경' },
-      { el: document.getElementById('reviewCard26'), cat: '척추관절' }
+      { el: document.getElementById('reviewCard26'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard27'), cat: '척추관절' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
