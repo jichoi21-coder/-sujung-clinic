@@ -1060,7 +1060,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2022.04</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">어깨통증·일자목·비염이 모두 연관된 줄 몰랐는데, 추나요법·약침으로 어깨도 비염도 생리통도 다 좋아졌어요</h3>
+          <h3 class="review-card-title">인천에서 멀리 노원까지 찾아올 만큼 — 어깨통증·일자목·비염이 추나·약침으로 모두 좋아졌어요. 인천에도 병원 생기면 완전 행복할거같아요!</h3>
           <p class="review-story">
             양쪽 어깨통증과 손떨림·팔저림으로 잠을 못 이루고, 일자목·비염까지 겹쳐 힘들었는데 체질침·추나·태반약침 치료 후 모두 좋아졌습니다.
           </p>
@@ -1587,7 +1587,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2022.04</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">어깨통증·일자목·비염이 모두 연관된 줄 몰랐는데, 추나요법·약침으로 어깨도 비염도 생리통도 다 좋아졌어요</h3>
+      <h3 class="review-detail-title">인천에서 멀리 노원까지 찾아올 만큼 — 어깨통증·일자목·비염이 추나·약침으로 모두 좋아졌어요. 인천에도 병원 생기면 완전 행복할거같아요!</h3>
       <p class="review-story" style="margin-bottom:18px;">
         양쪽 어깨통증과 손떨림·팔저림으로 잠을 못 이루고, 일자목·비염까지 겹쳐 힘들었는데 체질침·추나·태반약침 치료 후 모두 좋아졌습니다.
       </p>
