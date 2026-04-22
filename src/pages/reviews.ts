@@ -1722,7 +1722,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-quote-mark">"</div>
       <h3 class="review-detail-title">병원마다 이상없다는데 눈이 너무 아팠어요 — 수정한의원 치료 후 안구통증이 전반적으로 호전되고 일상이 돌아왔어요</h3>
       <div class="review-detail-image-wrap">
-        <img src="/static/reviews/review-28-leeshihun-p1.jpg" alt="이*훈 자필후기" class="review-detail-image" loading="lazy">
+        <img src="/static/reviews/review-28-leeshihun-v2.jpg" alt="이*훈 자필후기" class="review-detail-image" loading="lazy">
       </div>
       <div class="review-detail-body">
         <div class="review-detail-author-bar">
