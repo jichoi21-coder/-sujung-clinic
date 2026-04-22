@@ -1294,7 +1294,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-        <div id="reviewCard42" class="review-card review-card-handwritten" data-cat="만성천식" onclick="openReviewModal('detailModal42')" style="cursor:pointer;">
+        <div id="reviewCard42" class="review-card review-card-handwritten" data-cat="천식" onclick="openReviewModal('detailModal42')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag review-cat-tag-special">바이러스성폐렴·급성폐섬유화</span>
             <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
@@ -3429,7 +3429,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
-      { el: document.getElementById('reviewCard42'), cat: '만성천식' },
+      { el: document.getElementById('reviewCard42'), cat: '천식' },
       { el: document.getElementById('reviewCard41'), cat: '척추관절' },
       { el: document.getElementById('reviewCard40'), cat: '여성' },
       { el: document.getElementById('reviewCard39'), cat: '척추관절' },
