@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard42" class="review-card review-card-handwritten" data-cat="구안와사" onclick="openReviewModal('detailModal42')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag review-cat-tag-special">바이러스성폐렴·급성폐섬유화</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">코로나 후 바이러스성 폐렴·급성 폐섬유화 위기 — 한방·양방 협진과 매일 걸음 수 늘리기로 2달 만에 완쾌</h3>
+          <p class="review-story">
+            만성 메니에르·공황장애 치료 중 코로나 후유증으로 바이러스성 폐렴·급성 폐섬유화 진단. 체질침·파동치료·한약 집중치료와 걸음 수 100보 도전으로 2달 만에 정상 폐 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*애 (여, 치료 성공 수기)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <div id="reviewCard41" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal41')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">퇴행성무릎관절염 4기</span>
@@ -2115,6 +2136,54 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #42 -->
+  <div id="detailModal42" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal42')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-special">바이러스성폐렴·급성폐섬유화</span>
+        <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.03</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">코로나 후 바이러스성 폐렴·급성 폐섬유화 위기 — 한방·양방 협진과 매일 걸음 수 늘리기로 2달 만에 완쾌</h3>
+      <div class="review-detail-image-wrap" style="display:flex; gap:8px; flex-wrap:wrap; justify-content:center;">
+        <img src="/static/reviews/review-42-leesunae-p1.jpg" alt="이*애 치료수기 1페이지" class="review-detail-image" loading="lazy" style="max-width:320px; flex:1 1 300px;">
+        <img src="/static/reviews/review-42-leesunae-p2.jpg" alt="이*애 치료수기 2페이지" class="review-detail-image" loading="lazy" style="max-width:320px; flex:1 1 300px;">
+        <img src="/static/reviews/review-42-leesunae-p3.jpg" alt="이*애 치료수기 3페이지" class="review-detail-image" loading="lazy" style="max-width:320px; flex:1 1 300px;">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 이*애 (여, 치료 성공 수기)</span>
+          <span class="review-date-label">작성일: 2023년 3월</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 경과 — 메니에르에서 폐렴까지</h4>
+          <p>2014년 어지럼증을 시작으로 이명·불면증·공황장애·소화불량이 반복되었고, 2017년 응급실 입원 후 대학병원에서 <strong>메니에르</strong> 진단을 받아 1년 반간 약물 치료를 받았습니다. 증상은 호전과 재발을 반복하며 일상이 무너졌습니다.</p>
+          <p>2022년 8월 지인 소개로 수정한의원에 방문, 8체질(토양체질) 진단 후 체질식·한약·약침·체질침 치료를 시작하였습니다. 열심히 치료하던 중 2022년 11월 18일 코로나 확진, 이주일 격리 후 무난히 회복된 듯했으나 이후 걸을 때 숨이 살짝 차기 시작했습니다.</p>
+          <p>2023년 1월 20일 동네 내과에서 폐 CT를 찍은 결과, 즉각 응급실 이송 지시와 함께 <strong>"당장 폐 섬유화가 될 수 있다"</strong>는 충격적인 진단을 받았습니다. 이후 종합병원 응급실에서 <strong>바이러스성 폐렴(코로나 후유증)</strong>으로 최종 진단되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 수정한의원 치료 과정</h4>
+          <p>원장님은 즉시 치료법을 변경하여 <strong>체질침 + 소리·빛 파동치료(45분) + 한약 2배 증량</strong>으로 집중 치료를 시작하셨습니다. 양방 스테로이드 치료(1회 8알)와 한방 치료를 병행하는 <strong>한·양방 협진</strong>이 이루어졌습니다.</p>
+          <p>원장님은 한의원 복도 걸음 수를 매일 기록하게 하셨습니다. 1월 26일부터 시작하여 처음 몇 걸음에서 차오르던 숨이 <strong>2번 → 5번 → 11번 → 22번 → 50번 → 80번 → 100번</strong>으로 늘어났고, 집 계단도 2개 → 3개 → 5개 → 9개 → 13개 → 18개 → 26개 → <strong>3층(우리집)까지 한 번에</strong> 오를 수 있게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 결과 및 삶의 변화</h4>
+          <p>2월 15일 <strong>100걸음 걸어도 숨 차지 않음</strong>을 확인, 2달이 되기도 전에 폐렴 치료가 마무리되었습니다. 토양체질에 맞지 않는 추어탕·카레가 수년간 반복 발병의 원인임을 깨달았고, 체질식을 통해 속이 편안해졌습니다. 지금은 스테로이드 부작용 치료를 받으며 건강을 회복 중입니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>"원인을 분명하게 알고 있으니 치료는 당연히 잘 될거라고, 걱정하지 말라"는 원장님의 말씀과 <strong>올바른 진단</strong>이 희망과 힘이 되었습니다. 가족처럼 대해주시는 원장님과 간호쌤들의 친절함에 감사드립니다. 수정한의원의 무궁한 발전을 기원하며 화이팅!!</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #41 -->
   <div id="detailModal41" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3360,6 +3429,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard42'), cat: '구안와사' },
       { el: document.getElementById('reviewCard41'), cat: '척추관절' },
       { el: document.getElementById('reviewCard40'), cat: '여성' },
       { el: document.getElementById('reviewCard39'), cat: '척추관절' },
