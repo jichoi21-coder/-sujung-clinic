@@ -1213,6 +1213,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard34" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal34')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">족저근막염</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">정형외과 충격파도 효과 없던 족저근막염 — 체질 치료로 근본 원인 잡고 점차 호전 중이에요</h3>
+          <p class="review-story">
+            누워도 찌릿했던 발바닥 통증, 정형외과 충격파 치료 효과 없어 한의원 방문. 체질에 맞는 치료로 염증이 점차 개선되고 있습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 최*지 (만 28세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1949,6 +1969,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   </div>
 
 
+
+
+  <!-- 상세 모달 #34 -->
+  <div id="detailModal34" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal34')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">족저근막염</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.04</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">정형외과 충격파도 효과 없던 족저근막염 — 체질 치료로 근본 원인 잡고 점차 호전 중이에요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-34-choesuji-p1.jpg" alt="최*지 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 최*지 (만 28세, 여)</span>
+          <span class="review-date-label">작성일: 2022년 4월 20일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>발바닥 족저근막염 진단을 받았고, 걸어 다닐 때, 서 있을 때, 심하면 그냥 누워 있을 때에도 찌릿한 통증과 화끈한 느낌이 있었습니다. 조금만 걷거나 오래 서 있어도 통증 때문에 평상시 생활에 너무 큰 불편함이 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>처음에는 회사 근처 정형외과에서 족저근막염 진단을 받고 충격파 치료를 꾸준히 받았지만 효과를 보지 못했습니다. 집 근처로 다시 병원을 알아보던 중, 족저근막염 치료 리뷰를 보다가 '수정한의원'을 알게 되어 방문하였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>꾸준한 충격파 치료를 통해서도 통증이 줄지 않아 한의원을 찾았는데, 제게 맞는 체질과 함께 발바닥 통증이 생긴 근본적인 원인을 치료해 주셔서 점차 호전되고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>저의 체질을 알게 되고, 내게 맞는 음식을 섭취하는 것이 얼마나 중요한지 깨달았습니다. 또한 근본적인 원인을 찾아 치료해 주시는 과정에서 염증이 점차 호전되고 있으며, 처음의 심한 통증에 비해 많이 나아져 더 좋아질 수 있다는 희망을 갖고 열심히 치료를 받고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>많은 분들이 수정한의원에 방문해서 본인의 체질을 알고 몸을 예방하는 것도 좋을 것 같습니다. 효과가 너무 좋아서 저희 어머니께도 추천드렸습니다. 늘 친절하게 대해 주셔서 감사하고, 제가 하는 질문들에도 잘 답변해 주셔서 감사합니다!</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #33 -->
   <div id="detailModal33" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -2845,6 +2912,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard34'), cat: '척추관절' },
       { el: document.getElementById('reviewCard33'), cat: '여성' },
       { el: document.getElementById('reviewCard32'), cat: '소화기' },
       { el: document.getElementById('reviewCard31'), cat: '척추관절' }
