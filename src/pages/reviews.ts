@@ -1193,6 +1193,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard33" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal33')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">방광염·여성질환</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2020.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">반복되는 방광염, 태반 약침 맞고 싹 사라졌어요 — 상계 때부터 지금까지 수정한의원만 다닌 이유</h3>
+          <p class="review-story">
+            고질적인 방광염·허리·무릎 고통을 약침으로 다스리며, 상계 시절부터 지금까지 다른 한의원은 생각도 없을 만큼 신뢰하는 곳입니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 진*순 (만 47세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1928,6 +1948,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     </div>
   </div>
 
+
+
+  <!-- 상세 모달 #33 -->
+  <div id="detailModal33" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal33')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">방광염·여성질환</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2020.04</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">반복되는 방광염, 태반 약침 맞고 싹 사라졌어요 — 상계 때부터 지금까지 수정한의원만 다닌 이유</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-33-jinheesoon-p1.jpg" alt="진*순 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 진*순 (만 47세, 여)</span>
+          <span class="review-date-label">작성일: 2020년 4월 11일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>늘 반복되는 방광염으로 일상생활 및 사회생활 하는 데 있어서 많은 고통과 불편함이 있었습니다. 번번이 재발하는 탓에 일상에서 상당한 스트레스를 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>허리·무릎 아픔으로 가끔 침을 맞으러 다니다 보니, 현재 방광염 증상이 있어 혹시 고칠 수 있는지 선생님께 여쭤보게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>적극 추천합니다. 태반 주사(약침)를 맞고 있는데 방광염의 증상이 싹 사라지는 경험을 했습니다. 지금은 선생님이 시키는 대로 이틀에 한 번씩 약침을 맞고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>나이 들면서 건강이 최고라는 말이 있듯이, 고질적인 허리·무릎·방광염을 고통 없이 잘 치료해 주시니 더할 나위 없이 감사드릴 따름입니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>저는 상계 4동 시절부터 지금 노원으로 옮기신 후에도 계속 찾아가고 있으며, 다른 한의원은 한 번도 다닌 적이 없습니다. 저에게 수정한의원은 엄마 같은 존재입니다. 아픈 고통을 가지고 계신 분들께, 선생님을 믿고 맡기시면 삶의 건강을 다시 찾을 수 있을 거라고 꼭 말씀드리고 싶습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #32 -->
   <div id="detailModal32" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -2778,6 +2845,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard33'), cat: '여성' },
       { el: document.getElementById('reviewCard32'), cat: '소화기' },
       { el: document.getElementById('reviewCard31'), cat: '척추관절' }
     ];
