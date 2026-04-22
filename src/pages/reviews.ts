@@ -796,7 +796,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
         <!-- ===== 자필후기 카드 #13 — 발0미 (항암후유증·자율신경) ===== -->
-        <div id="reviewCard13" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal13')" style="cursor:pointer;">
+        <div id="reviewCard13" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal13')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">항암후유증·면역</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -2562,7 +2562,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard10'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard11'), cat: '척추관절' },
       { el: document.getElementById('reviewCard12'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard13'), cat: '뇌신경' },
+      { el: document.getElementById('reviewCard13'), cat: '면역대사' },
       { el: document.getElementById('reviewCard14'), cat: '척추관절' },
       { el: document.getElementById('reviewCard15'), cat: '피부' },
       { el: document.getElementById('reviewCard16'), cat: '천식' },
