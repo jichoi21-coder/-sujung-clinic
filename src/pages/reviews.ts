@@ -1253,6 +1253,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard36" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal36')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">편두통·과민성대장·손떨림</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">폐암 수술 후 면역 저하·편두통·과민성대장 — 두 달 만에 가스·설사·편두통 모두 확연히 줄었어요</h3>
+          <p class="review-story">
+            2019년 폐암 수술 후 면역 저하, 매달 편두통, 과민성대장으로 고생했는데 체질 식이 조절과 한약으로 두 달 만에 크게 개선되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 최*숙 (만 64세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1991,6 +2011,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+
+  <!-- 상세 모달 #36 -->
+  <div id="detailModal36" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal36')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">편두통·과민성대장·손떨림</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.03</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">폐암 수술 후 면역 저하·편두통·과민성대장 — 두 달 만에 가스·설사·편두통 모두 확연히 줄었어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-36-choewansook-p1.jpg" alt="최*숙 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 최*숙 (만 64세, 여)</span>
+          <span class="review-date-label">작성일: 2022년 3월 14일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>성격이 예민한 편으로 잘 먹는 편인데 먹고 나면 항상 가스가 많이 차고 설사를 하기도 했습니다. 늘 묽은 변을 자주 보는 편이라 외출에 제약이 많고 불안했습니다. 2019년 폐암 초기 수술 후 약물 부작용과 면역 저하를 크게 체감했습니다. 편두통은 한 달에 2~3번 발생했고, 신경과 처방약과 안정제를 복용해도 머리와 손 떨림이 심해져 늘 신경이 곤두서는 상태였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>양방에서 본태성 진전증은 약으로 증상만 조절할 수 있다고 하여 나아지지 않을까 걱정이 앞섰습니다. 한방으로 고칠 수 있다는 것을 알고 여기저기 검색하다가 오래전 지인 소개로 남편 치료 때 다녔던 수정한의원이 생각나 원장님께 치료를 받아보고자 다시 찾게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>체질을 알고 해로운 음식을 제하고 이로운 음식만 먹게 되었습니다. 육식이 체질에 맞지 않는다는 것을 알고 식단을 조정했더니 변 상태도 아침에 한 번만 보는 경우가 많아지고 몸도 가벼워졌습니다. 한의원 다닌 두 달 동안 편두통 약을 한 번만 먹었고, 머리 흔들림도 아직 완전하지는 않지만 약간 덜해진 것을 느끼게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>거의 매일 다니다 보니 가슴까지 차던 가스가 안 차고, 변도 아침에 한 번 보고, 편두통도 괜찮아지고, 몸이 가벼워졌습니다. 꾸준히 치료하다 보면 손 떨림도 나아질 것 같습니다. 머리 떨림이 나아지지 않으면 대인관계에 불안을 느낄 텐데, 이제는 마음도 편해지고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>원장님이 정성껏 치료해 주시고 늘 웃음이 가득한 원장님과 간호사님들 덕분에 마음 편히 치료받을 수 있어 감사합니다. 몸이 더욱 좋아지면 양방에서 못 고치고 고생하는 분들에게 이곳을 소개해 주고 싶습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #35 -->
   <div id="detailModal35" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -2979,6 +3046,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard36'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard35'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard34'), cat: '척추관절' },
       { el: document.getElementById('reviewCard33'), cat: '여성' },
