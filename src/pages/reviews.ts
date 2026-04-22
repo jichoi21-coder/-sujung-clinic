@@ -1294,6 +1294,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard39" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal39')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎반월상연골파열</span>
+            <span class="review-handwritten-badge"><i class="fas fa-star"></i> 네이버 후기</span>
+            <span class="review-date">2023.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">무릎 반월상연골파열·허리협착증 — 수술 대신 체질치료·약침·매선으로 통증 없이 건강을 되찾았어요</h3>
+          <p class="review-story">
+            병원 수술 권고를 받았지만 3개월 수정한의원 치료로 체질치료·추나·약침·매선 병행, 계단 오르내림 통증 해소. 항암·방사선 치료 후 면역 저하와 허리 통증도 꾸준한 한방 치료로 완쾌되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*숙 (여, 네이버)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <div id="reviewCard38" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal38')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">역류성식도염·아토피</span>
@@ -2055,6 +2075,42 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #39 -->
+  <div id="detailModal39" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal39')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">무릎반월상연골파열·척추협착증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-star"></i> 네이버 후기</span>
+        <span class="review-date">2023.05</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">무릎 반월상연골파열·허리협착증 — 수술 대신 체질치료·약침·매선으로 통증 없이 건강을 되찾았어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-39-kimheesook-p1.jpg" alt="김*숙 네이버 후기" class="review-detail-image" loading="lazy" style="max-width:400px; margin:0 auto; display:block;">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 김*숙 (여, 네이버 리뷰)</span>
+          <span class="review-date-label">작성일: 2023년 5월 20일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <p style="line-height:1.9; font-size:1rem;">
+            무릎 반월상연골파열과 허리협착증으로 걷기도 어려웠고 병원에서는 수술을 권했지만 수술을 하지 않고 수녀님 소개로 수정한의원을 찾게 되었습니다.<br><br>
+            3개월 정도 치료하면 좋아질 거라는 원장님의 말씀을 믿고 매주 전라북도에서 올라와 치료를 받았습니다. <strong>체질치료와 추나, 약침, 매선치료를 하면서 계단을 오르내릴 때 통증이 좋아졌습니다.</strong><br><br>
+            항암과 방사선치료 후 면역력 저하와 연골파열로 걷기도 못하고 허리 통증이 심했는데, 꾸준히 치료를 해서 <strong>통증 없이 건강을 되찾게 되었습니다.</strong> 금양체질로 진단받고 체질식을 하면서 체중도 꾸준히 줄었고, 걷기가 어려웠는데 3개월 동안 매주 열심히 치료받고 이만큼 나을 수 있었습니다. 믿고 꾸준히 치료받은 것이 좋은 결과를 가져온 것 같습니다. 원장님과 선생님들의 친절함에 감사드립니다.
+          </p>
+        </div>
+        <div class="review-detail-section" style="background:#f0f7ff; border-radius:8px; padding:12px 16px; font-size:0.88rem; color:#555;">
+          <i class="fas fa-map-marker-alt" style="color:#03C75A;"></i> 네이버 지도 리뷰 · 1번째 방문 · 결제내역 확인
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #38 -->
   <div id="detailModal38" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3172,6 +3228,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard39'), cat: '척추관절' },
       { el: document.getElementById('reviewCard38'), cat: '소화기' },
       { el: document.getElementById('reviewCard37'), cat: '구안와사' },
       { el: document.getElementById('reviewCard36'), cat: '뇌신경' },
