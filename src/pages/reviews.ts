@@ -1133,6 +1133,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard30" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal30')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">전신통증·간수치·고지혈·혈당</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">머리부터 발끝까지 온몸이 아팠는데 — 3개월도 안 돼 간수치·고지혈증 정상, 통증도 거의 사라졌어요</h3>
+          <p class="review-story">
+            전신 통증에 간수치 이상·고지혈증·고혈당으로 하루 생활이 힘들었는데, 체질 치료 후 건강검진에서 간수치·고지혈증 정상, 혈당 경계선 이하로 개선됐습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 장*영 (만 60세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1817,6 +1837,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
           <p>원장님과 간호사님 모두 환자에 대해서 친절하고 치료에 최선을 다하시는 모습이 참 좋았습니다. 평생 낫지 않을 거라는 치과 선생님의 말을 듣고 힘들었는데 열심히 치료해주신 원장님께 감사드리고 다른 분들도 치료 포기하지 마시고 열심히 치료받아 보시길 바랍니다. (기다리는 동안의 찜질치료는 더욱 좋습니다)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #30 -->
+  <div id="detailModal30" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal30')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">전신통증·간수치·고지혈·혈당</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.08</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">머리부터 발끝까지 온몸이 아팠는데 — 3개월도 안 돼 간수치·고지혈증 정상, 통증도 거의 사라졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-30-jangwanyeong-p1.jpg" alt="장*영 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 장*영 (만 60세, 여)</span>
+          <span class="review-date-label">작성일: 2022년 8월 12일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>온 몸이 다 아팠어요. 머리부터 발끝까지 뼈 마디가 다 아팠어요. 간 수치도 않좋았고 고지혈증도 있었고 혈당이 높아서 항상 피곤하고 힘들었어요. 자고 일어나면 등과 온 몸이 너무 아팠어요. 몸살 기운이 자주 있었고 삭신이 다 아팠어요. 몸이 아파서 하루 종일 생활하기가 힘들었어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>며느리가 수정한의원에서 치료받고 좋아져서 저에게 소개시켜 주어서 치료받게 되었어요. 예전에 다른 곳에서 치료를 받았었는데 효과를 얻지 못했어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>얼마 전에 건강검진을 받았는데 간수치와 고지혈증이 정상이 되었고 혈당수치도 경계선 아래로 내려와서 좋아졌어요. 몸에 통증도 거의 사라지고 편해졌어요. 치료 받은 지 3개월이 안 되었는데 이제 거의 아프지 않아요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>아프지 않아서 생활하기가 편해졌어요. 잠자는 것도 편해졌어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>수정한의원에는 다 좋아요. 친절하고 특히 원장님께서 정말 정성껏 치료해 주셔서 감사해요. 치료를 고민하고 계신 분에게는 열심히 치료 받으시라고 말씀드리고 싶어요. 친절하신 간호사님들 감사합니다.</p>
         </div>
       </div>
     </div>
@@ -2577,7 +2643,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard26'), cat: '척추관절' },
       { el: document.getElementById('reviewCard27'), cat: '척추관절' },
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
-      { el: document.getElementById('reviewCard29'), cat: '척추관절' }
+      { el: document.getElementById('reviewCard29'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard30'), cat: '면역대사' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
