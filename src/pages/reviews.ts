@@ -1273,6 +1273,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard37" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal37')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">구안와사·안면마비</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">오른쪽 안면마비 — 짧은 기간에 마비감·비대칭 모두 사라지고 정상 회복되었어요</h3>
+          <p class="review-story">
+            2023년 1월 갑작스러운 우측 안면신경 마비로 눈 안 감기고 입 돌아가던 증상, 수정한의원 치료로 짧은 기간에 완전히 회복되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*태 (만 58세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -2012,6 +2032,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+
+  <!-- 상세 모달 #37 -->
+  <div id="detailModal37" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal37')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">구안와사·안면마비</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.03</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">오른쪽 안면마비 — 짧은 기간에 마비감·비대칭 모두 사라지고 정상 회복되었어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-37-kimyoungtae-p1.jpg" alt="김*태 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 김*태 (만 58세, 남)</span>
+          <span class="review-date-label">작성일: 2023년 3월 20일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>2023년 1월 27일 얼굴 오른쪽 전체 안면신경 마비 증상으로 안면 비대칭이 생겼습니다. 마비된 쪽의 눈이 잘 감기지 않았고 웃으면 입이 반대쪽으로 돌아갔으며, 위쪽을 쳐다보면 우측 이마에 주름이 잡히지 않았습니다. 칫솔질을 할 때 물이 새어 나오고 음식물을 흘리게 되며, 음식물이 볼과 잇몸 사이에 끼여 심한 경우 손으로 밀어내야 했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>2023년 1월 30일 서울 백병원(을지로)에 내원하여 진료·검사 후 7일분 약을 처방받았고, 2023년 2월 1일부터 꾸준한 진료와 완치를 위해 수정한의원에 내원하여 지속적으로 치료를 받고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>짧은 기간에 얼굴 마비감과 안면 비대칭이 모두 사라지고 정상적으로 회복되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>원장님의 세심한 진료와 간호사 선생님들의 친절함에 먼저 심리적 치료가 되는 것 같았고, 일상생활에서의 건강에 관심을 갖게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>지금과 같이 정성을 다하는 진료가 변함없이 계속되는 수정한의원이 되었으면 좋겠습니다. 믿음을 갖고 꾸준히 치료를 한다면 근본적인 증상까지 치유가 가능한 한의원으로, 시간을 갖고 진료받으시길 적극 추천 드립니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #36 -->
   <div id="detailModal36" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3046,6 +3113,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard37'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard36'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard35'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard34'), cat: '척추관절' },
