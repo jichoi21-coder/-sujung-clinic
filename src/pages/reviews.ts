@@ -1294,6 +1294,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard40" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal40')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">요실금·여성질환</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">5개월 매선치료로 요실금 완전 해결 — 패드 없이 외출하고 심적 부담도 사라졌어요</h3>
+          <p class="review-story">
+            어깨통증 치료 중 말 못할 고민이던 요실금을 상담, 매선치료 5개월 만에 완전 해소. 체질·약침·한약 병행으로 몸 전반이 좋아지고 심적 어려움도 해결되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 윤*숙 (만 59세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <div id="reviewCard39" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal39')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">무릎반월상연골파열</span>
@@ -2075,6 +2095,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #40 -->
+  <div id="detailModal40" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal40')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">요실금·여성질환</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.08</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">5개월 매선치료로 요실금 완전 해결 — 패드 없이 외출하고 심적 부담도 사라졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-40-yunoosook-p1.jpg" alt="윤*숙 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 윤*숙 (만 59세, 여)</span>
+          <span class="review-date-label">작성일: 2023년 8월 25일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p>많은 스트레스로 인하여 어깨통증이 잦아져 치료를 받던 중, 그동안 말 못할 고민이었던 요실금을 치료하고자 상담을 하였고, 5개월 전에 일주일에 두 번 정도 매선치료를 했습니다. 치료할 때 너무나 고통스럽고 아파서 멈추고 싶기도 했지만 꾸준히 치료를 했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>체질치료와 추나, 약침 등을 맞고 한약을 복용하면서 스트레스와 몸의 아픔이 치료되는 것을 감지하고, 같이 다니던 동료들의 몸도 완치되는 것을 보고 믿음과 신뢰가 생겨서 치료를 받게 되었습니다. 인내가 필요하면서 요실금 치료를 하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>5개월 전에 받은 요실금 치료로 한 번도 다시 그 문제로 힘들지 않아서 개선이 되었습니다. 항상 밖에 나갈 때면 그것 때문에 걱정이 많고 패드를 가지고 다녀야 했는데, 3개월 전보다는 지금이 더 안정이 되었다는 생각이 듭니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>체질 개선을 꾸준히 해야 하는 인식과 의식을 하면서 몸을 돌보는 것이 좋았습니다. 몸이 안 좋아지면 금방 알아차릴 수도 있게 되었고, 침을 맞으면 효과가 금방 나타나고 쉴 수 있는 시간을 갖게 됩니다. 요실금을 치료하니 심적인 어려움도 없이 변화가 생겼습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>잠깐씩 걱정하는 것이 혹시 내가 너무 이 치료(침이나 추나치료)에 의지하지는 않나 하는 걱정을 합니다. 그러나 치료를 꾸준히 인내를 가지고 하면 신뢰심도 생기고, 몸도 완쾌되는 것을 느낍니다. 항상 친절하게 치료할 수 있도록 원장님과 선생님들의 배려에 꼭 오셔서 치료받으시기를 바랍니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #39 -->
   <div id="detailModal39" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3228,6 +3294,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard40'), cat: '여성' },
       { el: document.getElementById('reviewCard39'), cat: '척추관절' },
       { el: document.getElementById('reviewCard38'), cat: '소화기' },
       { el: document.getElementById('reviewCard37'), cat: '구안와사' },
