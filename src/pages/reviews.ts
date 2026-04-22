@@ -1294,6 +1294,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard38" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal38')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">역류성식도염·아토피</span>
+            <span class="review-handwritten-badge"><i class="fas fa-star"></i> 네이버 후기</span>
+            <span class="review-date">2023.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">4년 넘은 역류성식도염, 한 달 한약·약침으로 완전히 없어지고 아토피·비염까지 함께 좋아졌어요</h3>
+          <p class="review-story">
+            4년간 양약으로도 안 낫던 역류성식도염, 수정한의원 금양체질 진단 후 한약·약침 한 달 만에 증상 완전 소실. 아토피·비염도 함께 호전되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> nemeSIS (네이버)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -2034,6 +2054,43 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+
+  <!-- 상세 모달 #38 -->
+  <div id="detailModal38" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal38')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">역류성식도염·아토피</span>
+        <span class="review-handwritten-badge"><i class="fas fa-star"></i> 네이버 후기</span>
+        <span class="review-date">2023.05</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">4년 넘은 역류성식도염, 한 달 한약·약침으로 완전히 없어지고 아토피·비염까지 함께 좋아졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-38-nemesis-p1.jpg" alt="nemeSIS 네이버 후기" class="review-detail-image" loading="lazy" style="max-width:400px; margin:0 auto; display:block;">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> nemeSIS (네이버 리뷰)</span>
+          <span class="review-date-label">작성일: 2023년 5월 20일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <p style="line-height:1.9; font-size:1rem;">
+            4년 전부터 역류성식도염으로 여러 약들을 먹었으나 낫지 않았고, 최근에는 역류성위염 진단을 받아 한 달간 약을 먹고 주의사항을 지켰지만 나아지지 않아 친구 소개로 수정한의원을 찾게 되었습니다.<br><br>
+            8체질 중에 <strong>금양체질</strong>로 진단을 받고 처방받은 한약을 꾸준히 복용했습니다. 한 달 정도 한약과 약침치료 후 증상이 상당히 호전되었고 <strong>역류성 식도염 증상은 완전히 없어졌습니다.</strong> 원래 갖고 있던 아토피와 비염 등 만성 질환들도 많이 호전되었고 몸이 많이 가벼워졌습니다.<br><br>
+            체질치료는 나의 체질을 알고 몸에 맞는 음식과 습관을 바꾸어주셨고, 체질에 따른 근본치료가 중요하다는 것을 알게 되었습니다. 원장님의 도움을 받고 짧은 기간임에도 몸이 상당히 좋아짐을 느낍니다. 앞으로 계속 한의원을 다니면서 얼마나 더 좋아질지 기대가 됩니다.
+          </p>
+        </div>
+        <div class="review-detail-section" style="background:#f0f7ff; border-radius:8px; padding:12px 16px; font-size:0.88rem; color:#555;">
+          <i class="fas fa-map-marker-alt" style="color:#03C75A;"></i> 네이버 지도 리뷰 · 1번째 방문 · 결제내역 확인
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #37 -->
   <div id="detailModal37" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3115,6 +3172,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard38'), cat: '소화기' },
       { el: document.getElementById('reviewCard37'), cat: '구안와사' },
       { el: document.getElementById('reviewCard36'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard35'), cat: '뇌신경' },
