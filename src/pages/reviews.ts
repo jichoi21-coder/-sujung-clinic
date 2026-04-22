@@ -1233,6 +1233,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard35" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal35')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">편두통·다낭성난소</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">편두통·다낭성난소증후군·만성피로 — 첫날 치료부터 정신 맑아지고 생리 규칙적으로 돌아왔어요</h3>
+          <p class="review-story">
+            머리 통증·눈 침침함·집중력 저하·만성피로에 다낭성난소까지, 약침·추나·체질 한약으로 첫날부터 개선 시작, 아침이 상쾌해졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 최*진 (만 24세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1970,6 +1990,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+
+  <!-- 상세 모달 #35 -->
+  <div id="detailModal35" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal35')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">편두통·다낭성난소</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.06</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">편두통·다낭성난소증후군·만성피로 — 첫날 치료부터 정신 맑아지고 생리 규칙적으로 돌아왔어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-35-choeyeonjin-p1.jpg" alt="최*진 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 최*진 (만 24세, 여)</span>
+          <span class="review-date-label">작성일: 2022년 6월 2일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>머리가 너무 아프고 뇌가 뭉게뭉게한 기분이 들고 가끔 눈도 어두워졌습니다. 일하거나 공부해야 할 때 집중이 너무 안 됐고, 평상시에도 굉장히 예민해져 있어서 잘 자도 피곤하고 운동을 해도 피곤한 상태였습니다. 다낭성난소증후군도 있어서 계속 생리를 안 하고, 가끔 하는 생리도 생리통이 엄청 심했습니다. 전반적으로 체력이 굉장히 약한 상태였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>일상생활 하기가 너무 힘들어서 부모님께 말씀드렸더니 수정한의원이 이사 왔다고 가보라고 하셔서 오게 되었습니다. 병원에서 머리 아프다고 해도 이유를 잘 모르겠다고 했고, 필라테스가 그나마 도움이 되었지만 너무 비싸고 본질적인 문제가 해결되지 않아 부모님 추천으로 바로 방문했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>첫날 치료를 받자마자부터 정신도 좀 맑아지고 눈이 침침한 것도 많이 나아졌습니다. 꾸준히 치료를 받다 보니 피곤하거나 음식을 가리지 않고 먹은 날을 제외하고는 몸의 컨디션도 많이 좋아졌습니다. 생리를 규칙적으로 하게 되었고, 자궁이 차다는 느낌이 많이 들었는데 배를 만져봤을 때 예전보다 많이 따뜻해졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>약침치료와 추나치료를 받았는데 일상생활의 불편함이 많이 줄었습니다. 오전에 독소 쌓인 기분으로 일어난 적도 많았는데, 체질 한약을 먹으며 식습관 관리를 하면서 빈도수가 굉장히 줄고 상쾌하게 아침에 일어나게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>처음엔 머리만 아파서 찾아갔는데 너무 친절하게 치료해 주시고, 한약을 먹어서 면역력도 더 올라간 것 같습니다. 치료하려고 한 곳 말고 다른 부분도 전반적으로 몸이 좋아져서 너무 감사합니다. 아플 때 꼭 와서 치료하면 좋은 곳입니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #34 -->
   <div id="detailModal34" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -2912,6 +2979,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard35'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard34'), cat: '척추관절' },
       { el: document.getElementById('reviewCard33'), cat: '여성' },
       { el: document.getElementById('reviewCard32'), cat: '소화기' },
