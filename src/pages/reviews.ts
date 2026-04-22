@@ -1093,6 +1093,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard28" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal28')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">난치성 안구통증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">병원마다 이상없다는데 눈이 너무 아팠어요 — 수정한의원 치료 후 안구통증이 전반적으로 호전되고 일상이 돌아왔어요</h3>
+          <p class="review-story">
+            빛에 민감하고 쑤시는 안구 통증으로 독서도 못 할 정도였는데, 안과·한의원 전전해도 차도 없다가 수정한의원 치료 후 눈 사용에 편안함과 자신감을 되찾았습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*훈 (만 28세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1685,6 +1705,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
           <p>수정한의원으로 아픈 환자들이 많이 오셔서 고통스러운 병을 치료받고 많은 사람들이 완쾌되셨으면 좋겠습니다. 치료받는 기간 동안에는 환자 자신의 노력도 꼭 필요하다고 생각합니다. 운동을 열심히 하는 것이 아주 중요합니다. 저의 경험담을 말씀드린 것입니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #28 -->
+  <div id="detailModal28" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal28')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">난치성 안구통증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.03</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">병원마다 이상없다는데 눈이 너무 아팠어요 — 수정한의원 치료 후 안구통증이 전반적으로 호전되고 일상이 돌아왔어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-28-leeshihun-p1.jpg" alt="이*훈 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 이*훈 (만 28세, 남)</span>
+          <span class="review-date-label">작성일: 2022년 3월 11일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>재작년 연말 경에 책을 보는 도중 눈이 아프기 시작했습니다. 초기에는 소량의 빛에도 안구가 민감하게 반응하여 눈이 자주 따갑고 시렸으며 눈물이 자주 나왔습니다. 눈에 이물감이 느껴지기도 했고, 책을 봐도 책의 내용이 원활하게 이해가 안 갈만큼 눈을 사용하는 부분에 어려움이 있었습니다. 그 외에도 안구 내부가 쑤시는 듯한 통증과 눈에 힘을 줘도 눈이 부릅떠지지 않기도 했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>수정한의원에 오기 전, 안과를 비롯해서 몇 군데 병원을 가서 진단을 받았으나 아무런 이상이 없다는 소견만을 접했습니다. 저는 눈 때문에 일상생활에 지장을 받는다고 느꼈기 때문에 제 눈에 이상이 없다는 소견을 신뢰할 수 없었으나, 어떻게 낫는지 알지 못해서 안약을 처방받고, 다른 한의원에 가서 침을 맞고 진료를 받았지만 만족할 수는 없었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>첫 번째 질문에서 언급했던 눈의 증상들이 전반적으로 모두 호전되었습니다. 최근에는 눈을 사용하는 다양한 활동에 전보다 편안함과 자신감을 얻었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>눈을 장시간 사용하는 데 두려움과 거부감이 현저히 줄었습니다. 수정한의원에 처음 내방했을 때 "제 눈이 좋아질 수 있을지 확신을 못 하겠다!"라고 원장님께 말할 정도로 제 안구 상태에 회의적이었는데, 지금은 호전될 수 있을 것 같다는 희망이 보이는 것 같습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>만약 저처럼 난치성, 만성적 문제를 안고 계신 분이 있다면 수정한의원에 내방하셔서 상담을 받아보셔도 좋을 것 같아요. 저는 실제로 효과를 봤고, 지금도 보고 있는 중입니다. 항상 질문에 성실하게 답해주시는 원장 선생님과 치료실 선생님, 상담 실장님께도 감사 인사를 전하고 싶습니다. 감사합니다!</p>
         </div>
       </div>
     </div>
@@ -2443,7 +2509,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard24'), cat: '소화기' },
       { el: document.getElementById('reviewCard25'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard26'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard27'), cat: '척추관절' }
+      { el: document.getElementById('reviewCard27'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard28'), cat: '뇌신경' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
