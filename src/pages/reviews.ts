@@ -506,14 +506,14 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <p class="review-filter-label"><i class="fas fa-filter"></i> 일반 진료</p>
           <div class="review-filter-btns">
             <button class="review-filter-btn active" data-cat="all">전체</button>
-            <button class="review-filter-btn" data-cat="다이어트">체질 다이어트</button>
             <button class="review-filter-btn" data-cat="척추관절">척추·관절</button>
             <button class="review-filter-btn" data-cat="피부">피부·아토피</button>
             <button class="review-filter-btn" data-cat="소화기">소화기</button>
             <button class="review-filter-btn" data-cat="뇌신경">자율신경·뇌신경</button>
+            <button class="review-filter-btn" data-cat="면역대사">면역·대사성질환</button>
             <button class="review-filter-btn" data-cat="여성">여성질환</button>
             <button class="review-filter-btn" data-cat="성장">소아성장</button>
-            <button class="review-filter-btn" data-cat="기타">기타</button>
+            <button class="review-filter-btn" data-cat="다이어트">체질 다이어트</button>
           </div>
         </div>
         <div class="review-filter-group review-filter-group-special">
