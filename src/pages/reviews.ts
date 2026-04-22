@@ -1113,6 +1113,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard29" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal29')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">턱관절장애</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">치과에서 "그냥 살아라"고 했는데 — 6~7회 약침·추나로 턱 소리가 차츰차츰 사라졌어요</h3>
+          <p class="review-story">
+            식사할 때마다 왼쪽 귀 밑에서 덜거덕 소리가 나서 음식 먹기 싫어질 정도였는데, 약침·추나·침 치료 6~7회 만에 소리가 완전히 없어졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*경 (만 56세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1751,6 +1771,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
           <p>만약 저처럼 난치성, 만성적 문제를 안고 계신 분이 있다면 수정한의원에 내방하셔서 상담을 받아보셔도 좋을 것 같아요. 저는 실제로 효과를 봤고, 지금도 보고 있는 중입니다. 항상 질문에 성실하게 답해주시는 원장 선생님과 치료실 선생님, 상담 실장님께도 감사 인사를 전하고 싶습니다. 감사합니다!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #29 -->
+  <div id="detailModal29" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal29')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">턱관절장애</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.12</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">치과에서 "그냥 살아라"고 했는데 — 6~7회 약침·추나로 턱 소리가 차츰차츰 사라졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-29-leekyung-p1.jpg" alt="이*경 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 이*경 (만 56세, 여)</span>
+          <span class="review-date-label">작성일: 2022년 12월 13일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>어느 날 갑자기 식사를 하는데 왼쪽 귀 밑에서 음식을 씹을 때마다 덜거덕 덜거덕 소리가 나면서 부드러운 음식을 먹으면 덜하고 딱딱한 음식을 먹으면 더 큰 소리가 나면서 음식을 먹는 것이 싫어지고 기분까지 우울해져서 한의원을 방문하게 됐습니다. (거의 10년 전쯤부터 수정한의원을 다니고 있음)</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>제가 다니는 병원 주치의 선생님께 갔더니 이명+어지럼증도 있으니 이비인후과 가서 이석증 검사를 하도록 권해주셨는데 이석증도 아니고, 치과에 갔더니 치과 원장님은 엑스레이를 찍어 보더니 별 이상이 없다고, 본인도 그럴 때가 있다며 노화현상인 듯 하다며 그냥 살아라 하더라구요.ㅠ</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>원장님께서 먼저 엑스레이를 보시더니 좌우균형이 맞지 않다고 약침치료와 추나요법을 하자고 하셨고, 6~7회 치료받는 동안 덜거덕 거리는 소리가 딱딱거리는 소리로 작아지고 약해지더니 소리가 차츰차츰 안 나게 되었고 기본 물리치료와 침 치료도 같이 해주셨습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>아픈 이유를 잘 설명해 주시고 어떤 과정으로 치료해 나갈 것인지를 잘 알려주시고 치료 받으러 갈 때마다 모든 직원분들이 반갑게 맞이해 주시고 치료에 정말 최선을 다하시는 원장님께 감사의 말씀 드립니다. 음식을 먹을 때마다 머리에서 소리가 난다는 것, 정말 심란했는데 지금은 편안하고 참 좋습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>원장님과 간호사님 모두 환자에 대해서 친절하고 치료에 최선을 다하시는 모습이 참 좋았습니다. 평생 낫지 않을 거라는 치과 선생님의 말을 듣고 힘들었는데 열심히 치료해주신 원장님께 감사드리고 다른 분들도 치료 포기하지 마시고 열심히 치료받아 보시길 바랍니다. (기다리는 동안의 찜질치료는 더욱 좋습니다)</p>
         </div>
       </div>
     </div>
@@ -2510,7 +2576,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard25'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard26'), cat: '척추관절' },
       { el: document.getElementById('reviewCard27'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard28'), cat: '뇌신경' }
+      { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
+      { el: document.getElementById('reviewCard29'), cat: '척추관절' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
