@@ -1153,6 +1153,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard31" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal31')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">디스크·협착증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">목욕탕에서 넘어져 기어 다닐 정도였는데 — 온열·약침·한약으로 조금씩 회복, 10년 전 무릎도 고친 믿는 한의원</h3>
+          <p class="review-story">
+            낙상 후 허리를 쓸 수 없을 만큼 다리 저림·통증이 심했는데, 온열치료·약침·한약 병행으로 서서히 회복 중입니다. 과거 무릎 연골 치료 경험으로 이번에도 수정한의원을 찾았습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 장*순 (만 68세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1883,6 +1903,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
           <p>수정한의원에는 다 좋아요. 친절하고 특히 원장님께서 정말 정성껏 치료해 주셔서 감사해요. 치료를 고민하고 계신 분에게는 열심히 치료 받으시라고 말씀드리고 싶어요. 친절하신 간호사님들 감사합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #31 -->
+  <div id="detailModal31" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal31')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">디스크·협착증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.03</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">목욕탕에서 넘어져 기어 다닐 정도였는데 — 온열·약침·한약으로 조금씩 회복, 10년 전 무릎도 고친 믿는 한의원</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-31-jangjungsoon-p1.jpg" alt="장*순 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 장*순 (만 68세, 여)</span>
+          <span class="review-date-label">작성일: 2022년 3월 20일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>미끄러운 목욕탕에서 크게 넘어져 허리를 쓸 수 없었고, 다리 저림과 통증 등 온 몸이 아파서 생활하는 데 큰 어려움을 겪었습니다. 걷기도 힘들고 처음 이틀은 기어서 화장실을 가야 할 정도로 상태가 나빴습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>오래전 무릎 연골이 찢어져 오랜 시간 고생한 적이 있습니다. 정형외과에서는 수술을 권했으나, 지인의 추천으로 수정한의원을 찾았고 침·한약 등 권해주시는 치료를 받고 나았던 경험이 생각나 이번에도 수정한의원을 찾게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>원래 가지고 있던 허리 디스크의 치료는 물론 이번에 다쳐서 아픈 부위까지 온열치료와 약침을 맞아가며 서서히 회복할 수 있었고, 한약을 먹으며 몸의 기운을 북돋아 주어서 그런지 조금씩 나아짐을 느낍니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>차로 이동해야 함에도 수정한의원을 믿고 치료를 받는 것은 원장님과 직원분들의 친절함 때문입니다. 아픈 사람은 마음도 약해지고 치료가 더디게 느껴지면 마음이 조급해지기도 합니다. 열흘 정도의 치료기간 동안 한결같이 친절한 모습으로 최선을 다해 진료해 주심에 감사드립니다. 모두의 덕입니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>내 뜻대로 몸을 움직이고, 내가 가고 싶은 곳이 있을 때 자유롭게 걸을 수 있다는 것은 참으로 감사해야 할 일인 것 같습니다. 치료 과정이 길고 힘들어도 의료진을 믿고 치료받는다면 차츰 건강을 되찾을 수 있을 거라 생각됩니다. 과거의 제가 그랬고, 지금의 제가 또다시 이곳에서 치료받고 있는 이유가 바로 그것입니다. 모두의 건강과 평화를 빕니다.</p>
         </div>
       </div>
     </div>
@@ -2644,7 +2710,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard27'), cat: '척추관절' },
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard30'), cat: '면역대사' }
+      { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard31'), cat: '척추관절' }
     ];
 
     document.querySelectorAll('.review-filter-btn').forEach(function(btn) {
