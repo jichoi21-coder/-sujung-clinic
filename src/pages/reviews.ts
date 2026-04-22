@@ -522,7 +522,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <button class="review-filter-btn review-filter-btn-special" data-cat="구안와사">구안와사·안면마비</button>
             <button class="review-filter-btn review-filter-btn-special" data-cat="편두통">만성 편두통</button>
             <button class="review-filter-btn review-filter-btn-special" data-cat="대상포진">대상포진·후신경통</button>
-            <button class="review-filter-btn review-filter-btn-special" data-cat="천식">만성천식·마이코플라즈마</button>
+            <button class="review-filter-btn review-filter-btn-special" data-cat="천식">천식·마이코플라즈마</button>
             <button class="review-filter-btn review-filter-btn-special" data-cat="대장염">궤양성 대장염</button>
           </div>
         </div>
