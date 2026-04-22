@@ -1273,9 +1273,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-        <div id="reviewCard37" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal37')" style="cursor:pointer;">
+        <div id="reviewCard37" class="review-card review-card-handwritten" data-cat="구안와사" onclick="openReviewModal('detailModal37')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">구안와사·안면마비</span>
+            <span class="review-cat-tag review-cat-tag-special">구안와사·안면마비</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2023.03</span>
           </div>
@@ -2039,7 +2040,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal37')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">구안와사·안면마비</span>
+        <span class="review-cat-tag review-cat-tag-special">구안와사·안면마비</span>
+        <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2023.03</span>
       </div>
@@ -3113,7 +3115,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
-      { el: document.getElementById('reviewCard37'), cat: '뇌신경' },
+      { el: document.getElementById('reviewCard37'), cat: '구안와사' },
       { el: document.getElementById('reviewCard36'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard35'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard34'), cat: '척추관절' },
