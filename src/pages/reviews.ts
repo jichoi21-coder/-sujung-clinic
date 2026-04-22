@@ -1294,6 +1294,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard41" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal41')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">퇴행성무릎관절염 4기</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">인공관절 수술 권유받은 퇴행성관절염 4기 — 백일 한약·매선·약침 후 성큼성큼 걷고 하루종일 서도 안 아파요</h3>
+          <p class="review-story">
+            정형외과에서 인공관절 수술 권유, 수술 거부 후 수정한의원 방문. 백일 한약·체질 침·매선·약침 8회로 계단 오르내리기 자유롭고 다리 통증 완전 소실. 너무 행복합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*숙 (만 65세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <div id="reviewCard40" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal40')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">요실금·여성질환</span>
@@ -2095,6 +2115,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #41 -->
+  <div id="detailModal41" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal41')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">퇴행성무릎관절염 4기</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.04</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">인공관절 수술 권유받은 퇴행성관절염 4기 — 백일 한약·매선·약침 후 성큼성큼 걷고 하루종일 서도 안 아파요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-41-leekyungsook-p1.jpg" alt="이*숙 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 이*숙 (만 65세, 여)</span>
+          <span class="review-date-label">작성일: 2023년 4월 19일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p>무릎이 몹시 아파서(퇴행성 관절염 4기) 걷기도 힘들고 서있기도 힘들고 계단 오르기·내리기 힘들어 계단을 뒤로 내려오곤 하였습니다. 정형외과에서는 인공관절 수술을 권유받은 상태였고, 수술을 원치 않아서 아픈 상태로 힘든 생활을 하고 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>어깨 통증이 있어서 간단하게 침이나 한번 맞아볼까 하고 수정한의원을 방문하였는데, 원장님과 상담 중에 여기저기 아픈 곳을 말씀드리다가 무릎 이야기를 드렸더니 <strong>"인공관절 수술 안 하고 걸어다니게 해주신다"</strong>고 자신 있게 말씀하시는 원장님을 믿고 치료를 시작하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>치료를 받는 과정 중간에 별로 좋아지는 것 같지 않아 포기하려고도 하였으나, 원장님께서 자신 있게 고쳐주신다고 말씀하셔서 다시금 믿고 치료를 계속 받았습니다. <strong>백일 한약을 먹고 원장님의 체질 침·매선·약침 치료 8회 정도 하고 나니 아주 좋아졌습니다.</strong></p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>다리를 질질 끌고 다녔는데 성큼성큼 잘 걷게 되었고, 계단도 잘 오르락내리락 하며 통증 없이 너무 좋아졌습니다. 하루종일 서서 일을 해도 다리가 아픈 줄 모르고 <strong>너무 행복합니다.</strong></p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>원장님을 믿고 치료하자는 대로 따르고, 가르쳐 주시는 운동법과 약을 규칙적으로 잘 하시면 좋은 결과를 저처럼 보실 것 같네요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #40 -->
   <div id="detailModal40" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3294,6 +3360,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard41'), cat: '척추관절' },
       { el: document.getElementById('reviewCard40'), cat: '여성' },
       { el: document.getElementById('reviewCard39'), cat: '척추관절' },
       { el: document.getElementById('reviewCard38'), cat: '소화기' },
