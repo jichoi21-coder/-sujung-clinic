@@ -1294,6 +1294,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard44" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal44')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">메니에르·어지럼증·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">2년간 메니에르로 매일 어지럼·새벽 두통 — 약침·한약으로 깊은 수면 되찾고 아침이 개운해졌어요</h3>
+          <p class="review-story">
+            메니에르 진단 후 양약 복용 중 간수치·혈압·당뇨 이상까지. 체질치료 후 2주부터 두통·울렁거림 잦아들고 만성변비도 해소. 활동 반경 넓어지고 대인관계·여행 계획도 다시 시작.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 최*영 (만 52세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <div id="reviewCard43" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal43')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">우울증·불면·두통</span>
@@ -2156,6 +2176,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #44 -->
+  <div id="detailModal44" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal44')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">메니에르·어지럼증·두통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.06</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">2년간 메니에르로 매일 어지럼·새벽 두통 — 약침·한약으로 깊은 수면 되찾고 아침이 개운해졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-44-choemiyang-p1.jpg" alt="최*영 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 최*영 (만 52세, 여)</span>
+          <span class="review-date-label">작성일: 2023년 6월 16일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p>2년 전 갑작스러운 어지럼증이 시작되어 병원 검사를 통해 <strong>메니에르병</strong> 진단을 받고 여러 가지 양약을 복용하고 있었습니다. 아침에 눈을 뜨면 어지러움과 메스꺼움으로 바로 일어날 수 없었고, 새벽에는 두통 때문에 타이레놀을 먹어야 다시 잠들 수 있어 늘 깊은 잠을 잘 수 없었습니다. 정상적인 일상생활이 어려웠고 약에 취해 하루 종일 활동하는 데 어려움이 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>지난 4월 지인의 업무를 도우면서 반복되는 어지럼 증세를 직접 보신 지인께서 적극 체질치료를 권하셔서 수정한의원을 방문하게 되었습니다. 또한 연초 건강검진 결과에서 간수치·혈압·당뇨 등 정상수치를 넘는 결과지를 받고, 장시간 양약 복용에 불신이 생겨 다른 치료법을 시도하고자 하였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>약침을 거의 매일 맞으면서 한약을 복용하기 시작했고, 처음 2주 정도는 심한 피로감과 함께 어지러움이 더 심할 때도 있었으나, 점차 깊이 잠을 자면서 <strong>일어날 때의 심한 두통이 사라지기 시작하고 울렁거림도 잦아들었습니다.</strong> 무엇보다 만성 변비로 평생 살아왔는데 속이 편해지면서 배변이 원활해지니 몸이 가벼워지고 일상생활에 활력이 생기기 시작했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>늘 어지러움 때문에 얼굴 표정이 밝지 못했고 피로감으로 어떤 일을 하기가 겁이 나기도 했는데, 이제는 아침에 개운하게 일어나 맑은 정신을 유지할 수 있어 하루를 즐겁게 시작할 수 있습니다. 그동안 대인관계에서도 약속이나 여행을 기피했다면, 최근에는 활동 범위가 넓어지고 미뤄왔던 계획들도 하나씩 다시 시도할 수 있게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>늘 진지하게 이야기를 들어주시고 침 하나를 놓으셔도 정성껏 환자를 보살피시는 원장님과, 항상 밝은 얼굴로 어떠한 불평도 받아주셨던 직원분들께 진심으로 감사드립니다. 체질 치료에 대한 믿음을 갖고 전반적인 안 좋은 습관까지 고쳐보겠다는 마음으로 시작하신다면 분명 좋은 결과가 있으리라 생각합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #43 -->
   <div id="detailModal43" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3495,6 +3561,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard44'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard43'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard42'), cat: '천식' },
       { el: document.getElementById('reviewCard41'), cat: '척추관절' },
