@@ -1173,6 +1173,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard32" class="review-card review-card-handwritten" data-cat="소화기" onclick="openReviewModal('detailModal32')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">신경성 소화불량</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2022.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">스트레스로 소화 안 되고 가슴 통증까지 — 뭉친 근육 풀리고 먹는 게 편해지며 일상이 돌아왔어요</h3>
+          <p class="review-story">
+            심한 스트레스로 소화 장애, 근육 뭉침, 가슴 통증이 심했는데 치료 후 소화가 개선되고 근육이 풀려 활동하기 훨씬 편해졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 조*이 (만 52세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
       </div><!-- /review-grid -->
 
       <!-- 더보기 -->
@@ -1903,6 +1923,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
           <p>수정한의원에는 다 좋아요. 친절하고 특히 원장님께서 정말 정성껏 치료해 주셔서 감사해요. 치료를 고민하고 계신 분에게는 열심히 치료 받으시라고 말씀드리고 싶어요. 친절하신 간호사님들 감사합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 상세 모달 #32 -->
+  <div id="detailModal32" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal32')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">신경성 소화불량</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2022.03</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">스트레스로 소화 안 되고 가슴 통증까지 — 뭉친 근육 풀리고 먹는 게 편해지며 일상이 돌아왔어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-32-johyunee-p1.jpg" alt="조*이 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 조*이 (만 52세, 여)</span>
+          <span class="review-date-label">작성일: 2022년 3월 17일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상</h4>
+          <p>심한 스트레스로 인하여 소화가 안 되고, 근육이 뭉쳤으며 소화기 장애로 음식 섭취가 편하지 않았습니다. 가슴 통증도 심해 생활하는 데 많이 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-question-circle"></i> 치료를 받게 된 이유</h4>
+          <p>계속적인 불편함과 그로 인해 갈비뼈 부상도 있고, 척추도 삐뚤어져 있어 치료를 받게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-chart-line"></i> 치료 후 좋아진 점</h4>
+          <p>소화가 조금씩 잘 되고, 뭉쳐 있던 근육들이 풀리면서 먹는 것에 스트레스가 줄었습니다. 다리 근육도 완화되어 활동하는 데 편해졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-smile"></i> 달라진 생활</h4>
+          <p>모든 분들이 친절했고, 신앙 안에서 무언가 따스함이 느껴지며 의사 선생님의 치료에 100% 믿음이 저의 치료에 가장 큰 도움이 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>믿고 맡길 수 있는 진실된 곳이 있고, 그곳에서의 치료는 일반 한의원과는 다른 따스함이 있다고 말해주고 싶습니다. 거짓과 상술이 아닌 치료에 진심인 곳이라고 말해주고 싶네요.</p>
         </div>
       </div>
     </div>
@@ -2711,6 +2778,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard32'), cat: '소화기' },
       { el: document.getElementById('reviewCard31'), cat: '척추관절' }
     ];
 
