@@ -1294,6 +1294,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard43" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal43')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">우울증·불면·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">차라리 죽는 게 편하다 생각했는데 — 체질치료로 살아갈 기본 힘 되찾고 손발 따뜻, 두통·불면 모두 해결됐어요</h3>
+          <p class="review-story">
+            추위에 약하고 두통·불면·우울로 생활이 힘들었던 만 30세 여성. 수정한의원 체질 진단 후 약침·체질침·체질식으로 혈액순환 개선, 수면 정상화, 두통약 거의 끊고 살 의지 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*늘 (만 30세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <div id="reviewCard42" class="review-card review-card-handwritten" data-cat="천식" onclick="openReviewModal('detailModal42')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag review-cat-tag-special">바이러스성폐렴·급성폐섬유화</span>
@@ -2136,6 +2156,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #43 -->
+  <div id="detailModal43" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal43')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">우울증·불면·두통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.05</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">차라리 죽는 게 편하다 생각했는데 — 체질치료로 살아갈 기본 힘 되찾고 손발 따뜻, 두통·불면 모두 해결됐어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-43-leehaneul-p1.jpg" alt="이*늘 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 이*늘 (만 30세, 여)</span>
+          <span class="review-date-label">작성일: 2023년 5월 8일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p>추위에 굉장히 약하여 겨울에는 외출이 힘들었고 장시간 야외 활동이 불가능했습니다. 손과 발이 차고, 두통을 자주 호소하여 심한 경우 타이레놀 두 알씩 먹어도 약이 듣질 않았습니다. 잠에서 깨는 시간이 한 시간 이상 필요했고, 깨면 심장이 두근거리며 쪼이는 느낌이었습니다. 스트레스가 심할 때는 피곤한데도 잠이 오지 않아 수면이 불규칙했고, 나름의 노력을 해보았지만 한계가 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>주변 친구의 도움으로 방문하게 되었습니다. 간호사 분들도 친절했고 의사 선생님과 상담하며 체질을 진단받았습니다. 처음 와서 인바디 등 검사를 하고 약침 치료를 받고 파스를 붙여주셨는데 굉장히 시원하고 좋은 느낌이었습니다. 치료도, 진단도 현명하게 잘해주셔서 수개월 치료를 통해 몸이 많이 회복될 수 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>몸이 허약해서 인간이 기본적으로 살아가야 할 힘조차 매우 떨어져 있었고, <strong>"차라리 죽는 것이 편하고 좋겠다"</strong>고 생각했습니다. 그런데 수정한의원 치료를 통해 기본적으로 살아갈 힘을 많이 얻게 되었고 <strong>"이제는 살만하구나"</strong>라고 생각하게 되었습니다. 두통약도 거의 먹지 않게 되었고 혈액순환도 잘 되고 손발도 따뜻해지고 수면에도 별 문제가 없어졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>나의 체질을 알 수 있어서 좋았습니다. 모든 사람에게 획일화된 정보가 아닌, 음식을 통해 실제로 느낄 수 있는 건강정보를 알게 된 점이 좋았습니다. 또한 가끔씩 몰아치던 슬픔·분노·우울감 등 감정을 보완하고 다스릴 수 있는 힘을 얻어가고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>어릴 때는 건강한 편이었는데 청소년기와 20대 때 건강 관리에 소홀하다 보니 몸이 힘들어졌습니다. 한번 힘들어 보니 건강이 최고라는 말이 굉장히 와닿습니다. 가족·친구들과 수정한의원 선생님들까지 신경 써주시지만 내 스스로가 움직이고 의지를 가지는 것이 분명히 중요한 것 같습니다. 소중한 분들 모두가 아프지 않으셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #42 -->
   <div id="detailModal42" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3429,6 +3495,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard43'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard42'), cat: '천식' },
       { el: document.getElementById('reviewCard41'), cat: '척추관절' },
       { el: document.getElementById('reviewCard40'), cat: '여성' },
