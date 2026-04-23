@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #50 -->
+        <div id="reviewCard50" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal50')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">척추전방전위증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">수술 불가·주사도 무효한 척추전방전위증 — 한 달 체질침·약침·매선·추나로 통증 소멸, 걸음걸이도 빨라졌어요</h3>
+          <p class="review-story">
+            척추뼈 밀림으로 신경 압박, 수술 불가 판정·주사 2회 효과 없음. 17년 전 완치 경험 떠올려 재방문. 한 달 매일 치료 후 통증 소멸·보행 정상화, 걸음도 빨라짐.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 우*임 (만 74세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #49 -->
         <div id="reviewCard49" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal49')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2280,6 +2301,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #50 -->
+  <div id="detailModal50" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal50')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">척추전방전위증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">수술 불가·주사도 무효한 척추전방전위증 — 한 달 체질침·약침·매선·추나로 통증 소멸, 걸음걸이도 빨라졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-50-woojungim-p1.jpg" alt="우*임 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 우*임 (만 74세, 여)</span>
+          <span class="review-date-label">작성일: 2023년 9월 14일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p><strong>허리가 아프고 서혜부가 아프고, 무릎까지 아팠습니다.</strong> 걸을 때 휘청거리고 허리를 펴지 못했습니다. 골반이 빠질 것 같고 내려앉는 것 같이 몹시 아팠습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>병원 검사를 해보니 <strong>척추뼈가 밀려서 신경이 눌린다</strong>고 하였는데 수술이 안된다고 하고, 주사를 두 번 맞았는데 효과가 별로 없었습니다. 그래서 예전에 17년 전에 허리가 아파서 수정한의원에서 잠깐 치료받고 나은 것이 기억나서 수정한의원에 오게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>수정한의원에서 <strong>체질침·약침·매선·추나 치료</strong>를 했는데 한 달 동안 매일 열심히 치료 받으러 왔습니다. 지금은 다 좋아졌고 잘 걸을 수 있게 되었습니다. 허리에 약간의 뻐근함이 남아서 다시 나빠지지 않도록 한 달 정도는 일주일에 두 번씩 치료를 받으려 합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>가장 좋은 것은 <strong>몸이 많이 나아져서 정말 좋습니다.</strong> 걷기도 편해지고 통증도 없어졌고 약간의 뻐근함만 조금 있지만 <strong>걸음걸이도 많이 빨라졌습니다.</strong></p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>잘해줘서 감사합니다. 치료를 앞두신 분들께는 원장님께서 치료를 정말 잘하시니 믿고 열심히 치료받으시길 권합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #49 -->
   <div id="detailModal49" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3895,6 +3962,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard50'), cat: '척추관절' },
       { el: document.getElementById('reviewCard49'), cat: '척추관절' },
       { el: document.getElementById('reviewCard48'), cat: '면역대사' },
       { el: document.getElementById('reviewCard47'), cat: '피부' },
