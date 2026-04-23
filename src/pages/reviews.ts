@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #49 -->
+        <div id="reviewCard49" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal49')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">협착증·다리저림·발바닥</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">주사도 소용없던 양쪽 다리저림·발바닥 둔함 — 체질침·한약·추나·약침으로 저림 소멸, 쉬지 않고 한번에 걸어와요</h3>
+          <p class="review-story">
+            양쪽 다리 저림·당김·발바닥 둔함, 통증클리닉 주사도 효과 없음. 토양체질 감별 후 체질침·한약·추나·약침 병행. 저림·당김 완전 소실, 무좀도 치유. 5번 쉬며 왔던 길을 지금은 한번에 걸어옴.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 왕*련 (만 76세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #48 -->
         <div id="reviewCard48" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal48')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2259,6 +2280,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #49 -->
+  <div id="detailModal49" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal49')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">협착증·다리저림·발바닥</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">주사도 소용없던 양쪽 다리저림·발바닥 둔함 — 체질침·한약·추나·약침으로 저림 소멸, 쉬지 않고 한번에 걸어와요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-49-wangaeryeon-p1.jpg" alt="왕*련 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 왕*련 (만 76세, 여)</span>
+          <span class="review-date-label">작성일: 2023년 9월 1일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p><strong>다리가 양쪽으로 저리고 땡기며 발바닥도 둔하고 굳은살이 배겼습니다.</strong> 수시로 통증이 심해서 통증클리닉을 다니면서 주사를 맞아도 별 효과가 없었습니다. 통증이 심하고 가고 싶은 곳을 마음대로 갈 수 없어서 생활이 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>다리가 아프고 저리고 힘들어하는 모습을 보고 지인이 수정한의원을 소개해 주어서 오게 되었습니다. 원장님께서 <strong>체질을 감별해 주시고 토양체질</strong>이라고 말씀해 주시고 좋은 음식과 안 좋은 음식을 가려서 먹을 수 있게 말씀해 주셨습니다. 체질침과 체질 한약, 추나, 약침 치료를 꾸준히 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>허리와 무릎에 좋아지는 운동도 알려주셔서 지금도 꾸준히 하고 있습니다. <strong>다리 양쪽 저림 증세가 없어지고 당기던 것도 없어지고 발바닥 둔한 것과 무좀도 말끔히 나았습니다.</strong> 처음에 올 때는 집에서 한의원까지 다섯 번 정도 쉬면서 왔는데 지금은 중간에 쉬지 않고 한번에 걸어옵니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>일단은 걸을 수 있어서 가고 싶은 곳을 마음대로 갈 수 있어서 좋습니다. 항상 통증이 있어서 우울했는데 <strong>지금은 통증이 없으니 마음 또한 편안합니다.</strong> 지금은 편안한 현 상태를 유지하여 생활하기 위해 일주일에 한 번씩은 꼭 원장님의 체질침을 맞으러 옵니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>치료 받는 동안 원장님께서 성심껏 치료를 해주셔서 정말 감사하고 간호사님들께서 너무 친절하게 대해 주셔서 정말 감사합니다. 원장님 말씀 믿고 꾸준히 치료하시면 좋은 결과를 얻을 수 있을 겁니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #48 -->
   <div id="detailModal48" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3828,6 +3895,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard49'), cat: '척추관절' },
       { el: document.getElementById('reviewCard48'), cat: '면역대사' },
       { el: document.getElementById('reviewCard47'), cat: '피부' },
       { el: document.getElementById('reviewCard46'), cat: '뇌신경' },
