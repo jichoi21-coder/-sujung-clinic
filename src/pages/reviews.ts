@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #53 -->
+        <div id="reviewCard53" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal53')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">백혈병·항생제불응폐렴</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">항생제도 안 듣는 폐렴으로 사망선고 받았는데 — 긴급 한약 이틀 만에 증상 완화, 폐사진도 좋아지는 기적이 일어났어요</h3>
+          <p class="review-story">
+            만성골수성백혈병 환자. 40도 고열·가슴통증·피가래로 성모병원 입원, 항생제 불응 폐렴으로 사망선고. 원장님 긴급 한약 이틀 후 증상 완화·폐사진 호전. 하루 10봉지 이상 복용으로 기적 같은 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*연 (만 47세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #52 -->
         <div id="reviewCard52" class="review-card review-card-handwritten" data-cat="대상포진" onclick="openReviewModal('detailModal52')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2344,6 +2365,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #53 -->
+  <div id="detailModal53" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal53')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">백혈병·항생제불응폐렴</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.12</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">항생제도 안 듣는 폐렴으로 사망선고 받았는데 — 긴급 한약 이틀 만에 증상 완화, 폐사진도 좋아지는 기적이 일어났어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-53-leesiyeon-p1.jpg" alt="이*연 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 이*연 (만 47세, 여)</span>
+          <span class="review-date-label">작성일: 2023년 12월 20일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p><strong>만성골수성백혈병 환자</strong>입니다. 11월 말쯤에 인후통이 심해져서 성모병원 응급실로 들어가 입원했는데 항생제가 듣지 않아서 심한 폐렴으로 번졌습니다. 살아날 가망성이 없다고 보호자들께 알리는 상황이었습니다. <strong>백혈구 수치도 떨어지고 40도 이상의 고열과 가슴통증, 피가래가 섞인 기침</strong>으로 잠도 못 자고 뜬눈으로 밤을 지새면서 이대로 죽는구나 라는 생각뿐이었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>백혈병 진단 후 항암 부작용 치료와 백혈병 치료를 원장님께 몇 년간 받았던 시간이 있어서, 이번에 폐렴으로 돌아가실 것 같다는 성모병원 이야기를 듣고 <strong>다급한 마음에 원장님께 연락을 드렸습니다.</strong></p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>원장님께서 지금 면역체계가 망가져 있어서 항생제가 듣지 않는 거라고 말씀하시고 <strong>긴급으로 한약을 지어주셨습니다.</strong> 마지막이다 라는 생각으로 원장님 말씀대로 한약을 먹고 나니까 <strong>이틀 후부터 증상이 완화되기 시작하면서 폐사진도 좋아지기 시작하였습니다. 기적이 일어난 거였습니다.</strong> 열이 올라가고 기침할 때마다 한약을 먹으면 신기하게도 가라앉아 하루에 10봉지 이상 먹었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>일단 원장님과 직원분들이 따뜻한 게 좋았습니다. 치료를 받고 나면 항상 몸의 컨디션이 빨리 좋아지고 <strong>백혈병 환자지만 일반인과 똑같은 사회생활을 보낼 수 있는 게 좋았습니다.</strong> 어떨 때는 제가 환자인가 라는 생각을 잊어버릴 때도 있어요~</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>항상 감사하고 최정일 원장님을 만나서 감사합니다. 체질침과 체질한약이란 것이 정말로 건강에 도움이 많이 됩니다. <strong>죽던 사람을 살리기도 하구요.</strong> 원장님 말씀대로 하시면 건강해 지실 거에요^^</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #52 -->
   <div id="detailModal52" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4098,6 +4165,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard53'), cat: '면역대사' },
       { el: document.getElementById('reviewCard52'), cat: '대상포진' },
       { el: document.getElementById('reviewCard51'), cat: '척추관절' },
       { el: document.getElementById('reviewCard50'), cat: '척추관절' },
