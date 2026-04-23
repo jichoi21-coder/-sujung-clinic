@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #54 -->
+        <div id="reviewCard54" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal54')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">성대결절</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">5개월 쉰목소리·성대결절 수술 권유 — 목양체질 진단 후 한약·약침·온열 3개월 집중치료로 수술 없이 완치됐어요</h3>
+          <p class="review-story">
+            영업직에 쉰목소리 5개월, 이비인후과 2곳서 말 금지·수술 권유. 목양체질 감별 후 한약+약침+온열 매일 출근하듯 치료. 체질식 병행 3개월 만에 수술 없이 완치.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 최*숙 (만 47세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #53 -->
         <div id="reviewCard53" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal53')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2365,6 +2386,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #54 -->
+  <div id="detailModal54" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal54')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">면역·대사성질환</span>
+        <span class="review-detail-tag">#성대결절</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023년 12월</span>
+      </div>
+      <h2 class="review-detail-title">5개월 쉰목소리·성대결절 수술 권유 — 목양체질 진단 후 한약·약침·온열 3개월 집중치료로 수술 없이 완치됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-54-choeyoungsook-p1.jpg" alt="최*숙 성대결절 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>최*숙</strong>&nbsp;(만 47세, 여성)&nbsp;·&nbsp;작성일 2023년 12월 20일
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>약 5개월간 쉰 목소리와 갈라지는 목소리가 지속됐습니다. 영업직 특성상 고객에게 목소리를 자주 지적받아 스트레스가 심했고, 말할 때마다 땀이 나고 버벅거려 일상 업무에 큰 어려움을 겪었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>이비인후과 2곳을 방문해 성대결절 진단을 받고 2주간 말 금지·물 섭취·음성 치료를 권고받았으나 효과가 없었습니다. 수술을 권유받았지만 부작용이 우려돼 지인 추천으로 수정한의원을 선택했습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>체질 검사에서 목양체질로 감별된 후 한약·약침·온열 치료를 매일 진행했습니다. 체질에 맞는 식이 요법도 병행하며 3개월 만에 수술 없이 목소리가 완전히 회복됐습니다. 치료 중 전반적인 체력도 크게 향상됐습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질 변화</h4>
+        <p>불안감이 사라지고 수면의 질이 개선됐습니다. 원장님·사모님·간호사님 모두 친절하고 꼼꼼한 관리를 해주셔서 심리적 안정에도 큰 도움이 됐습니다. 이제는 목소리 걱정 없이 활발하게 영업 활동을 이어가고 있습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>수술 없이 완치될 수 있도록 정성껏 치료해 주신 원장님과 직원분들께 진심으로 감사드립니다. 성대결절로 고민하시는 분들께 꼭 수정한의원을 추천드리고 싶습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #53 -->
   <div id="detailModal53" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4165,6 +4230,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard54'), cat: '면역대사' },
       { el: document.getElementById('reviewCard53'), cat: '면역대사' },
       { el: document.getElementById('reviewCard52'), cat: '대상포진' },
       { el: document.getElementById('reviewCard51'), cat: '척추관절' },
