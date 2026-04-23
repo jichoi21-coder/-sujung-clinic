@@ -1294,6 +1294,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <div id="reviewCard45" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal45')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎인대파열</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">무릎인대파열 수술 권유받았지만 — 체질침·태반약침·매선 한 달 만에 지팡이 없이 걷고 계단도 성큼성큼</h3>
+          <p class="review-story">
+            응급실 인대파열 진단 후 수술 거부. 수정한의원 체질침·체질한약·태반약침·매선 병행 한 달 만에 지팡이 없이 보행, 꾸준한 치료로 계단 오르내리기까지 완전 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*영 (만 60세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <div id="reviewCard44" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal44')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">메니에르·어지럼증·두통</span>
@@ -2176,6 +2196,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #45 -->
+  <div id="detailModal45" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal45')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">무릎인대파열</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">무릎인대파열 수술 권유받았지만 — 체질침·태반약침·매선 한 달 만에 지팡이 없이 걷고 계단도 성큼성큼</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-45-kimnayoung-p1.jpg" alt="김*영 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 김*영 (만 60세, 여)</span>
+          <span class="review-date-label">작성일: 2023년 9월 9일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p>출근길에 걷다가 갑자기 왼쪽 다리가 땡기면서 그 자리에 주저앉아 걷지 못해 119를 불러 을지병원 응급실로 갔는데 <strong>인대파열</strong>이라며 응급처치를 받았습니다. 이후 방문한 병원에서 수술을 권유했으나 수술하기 싫어 10일 입원 후 퇴원했습니다. 다리 통증이 심하고 지팡이를 짚지 않으면 계단을 오를 수 없을 만큼 아팠습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>지팡이 없이는 걷지도 못하고 계단을 성큼성큼 오르지도 못해 한 발씩 붙여가며 걸어 다니니, 아는 동생이 수정한의원에 가서 상담받아 보라고 권유하여 방문하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>원장님께서 "수술 없이 나을 수 있으니 걱정하지 말고 매일 치료하러 오라"고 하셔서 원장님을 믿고 꾸준히 치료받으러 왔습니다. <strong>체질침을 매일 맞고 체질한약을 먹으며 태반약침 치료와 주 1회 매선치료</strong>를 병행했습니다. 한 달을 치료하니 지팡이 없이 걸을 수 있었고, 꾸준한 치료로 계단도 한칸씩 성큼성큼 걸어 올라갈 수 있게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>수술을 해야 한다고 해서 너무 걱정스럽고 속상했는데, <strong>수술 없이도 지팡이 없이 편하게 걸을 수 있어</strong> 너무 좋습니다. 원장님 말씀을 믿고 그대로 따라 치료하니 이렇게 좋은 결과를 얻게 되어 원장님께 너무 감사합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>열심히 치료받은 덕에 다리가 좋아져서 병원 약도 안 먹고 수술도 안 하고 계단도 잘 오르내릴 수 있고 몸이 편해져서 많이 좋습니다. 다른 환자분들도 원장님 치료받아 저처럼 좋은 결과를 얻으셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #44 -->
   <div id="detailModal44" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3561,6 +3627,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard45'), cat: '척추관절' },
       { el: document.getElementById('reviewCard44'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard43'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard42'), cat: '천식' },
