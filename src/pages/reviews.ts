@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #48 -->
+        <div id="reviewCard48" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal48')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">코로나후유증·고열·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">해열제도 안 듣는 코로나 불명열 한 달 — 첫 약침 당일 열 소멸, 두 번째에 몸살기운까지 완전히 사라졌어요</h3>
+          <p class="review-story">
+            격리 해제 후에도 매일 38도 고열·몸살·두통 지속. 내과·성모병원 감염내과서도 원인불명 코로나 후유증 판정. 첫 체질침+약침 당일부터 열 소멸, 2회차에 몸살기운 완전 소실.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 오*란 (만 45세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #47 -->
         <div id="reviewCard47" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal47')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2238,6 +2259,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #48 -->
+  <div id="detailModal48" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal48')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">코로나후유증·고열·두통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.09</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">해열제도 안 듣는 코로나 불명열 한 달 — 첫 약침 당일 열 소멸, 두 번째에 몸살기운까지 완전히 사라졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-48-ohkyungran-p1.jpg" alt="오*란 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 오*란 (만 45세, 여)</span>
+          <span class="review-date-label">작성일: 2023년 9월 21일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p>코로나 확진 후 격리해제가 되었는데도 증상이 나아지지 않았습니다. 격리해제 한 달 후까지 <strong>매일 38도 정도의 열</strong>이 났으며 몸살기, 근육통, 식욕부진, 두통으로 인해 일상생활이 어려웠습니다. 일상적으로 외출을 하거나 마트에만 다녀와도 그날은 38도 이상의 고열과 몸살로 더 힘들었습니다. 해열제(타이레놀, 애드빌)도 듣지 않아 많은 고생을 했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>동네 내과에서 2주 정도 감기 치료를 받았으나 호전되지 않아 성모병원 호흡기내과에서 진료를 받았지만 나아지지 않았습니다. 감염내과를 통해 염증 및 균 검사를 했으나 <strong>원인을 알 수 없는 코로나 후유증</strong>이라 하여 한방치료를 생각하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>처음 내원해서 체질검사 및 체질침과 약침을 맞았는데 <strong>그날부터 열이 나지 않았고</strong>, 두 번째 약침 치료를 하고는 <strong>몸살기운도 완전히 사라졌습니다</strong>.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>열이 나지 않아서 머리가 멍하고 두통이 있던 증상들이 사라지면서 일상생활을 다시 적극적으로 할 수 있게 되어 너무 좋습니다. 매일 열이 나고 몸살이 나니 삶의 의욕이 떨어졌었는데 침을 맞는 시간도 오래 걸리지 않는데 많이 호전되어 <strong>매우 기쁘고 즐겁게 생활하고 있습니다</strong>.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>불명열이라는 코로나 후유증으로 해열제를 먹어도 떨어지지 않았던 열이 이렇게 한번에 잡혀서 너무 감사합니다. 다른 곳에서는 체력이 많이 떨어져서 침을 놓을 수 없다고 했는데 이곳에서는 한 번의 치료만으로도 많이 나았습니다. <strong>코로나 후유증 치료에도 약침이 효과 있다는 것</strong>을 저처럼 고생하시는 분들께 알려드리고 싶습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #47 -->
   <div id="detailModal47" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3761,6 +3828,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard48'), cat: '면역대사' },
       { el: document.getElementById('reviewCard47'), cat: '피부' },
       { el: document.getElementById('reviewCard46'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard45'), cat: '척추관절' },
