@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #51 -->
+        <div id="reviewCard51" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal51')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">후관절증후군·안검하수</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">주사 맞아도 반복되던 후관절 허리통증·처진 눈썹 — 한약·추나·매선·약침으로 통증 소멸, 눈곱·진물도 완전히 사라졌어요</h3>
+          <p class="review-story">
+            2년간 반복 허리 주사·안약도 차도 없는 눈썹 처짐. 체질침+추나+한약으로 허리 통증 소멸, 눈썹 매선+약침으로 혈액순환 개선 → 눈곱·진물 소실, 내성발톱까지 개선.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*순 (만 72세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #50 -->
         <div id="reviewCard50" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal50')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2301,6 +2322,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #51 -->
+  <div id="detailModal51" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal51')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">후관절증후군·안검하수</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.11</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">주사 맞아도 반복되던 후관절 허리통증·처진 눈썹 — 한약·추나·매선·약침으로 통증 소멸, 눈곱·진물도 완전히 사라졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-51-leekyungsoon-p1.jpg" alt="이*순 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 이*순 (만 72세, 여)</span>
+          <span class="review-date-label">작성일: 2023년 11월 18일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p>2년 전 왼쪽 허리가 아프고 오른쪽 다리에 힘이 없어 걸음이 안 걸려서 일어나지도 못해 정형외과에 갔더니 <strong>후관절증후군</strong>이라고 해서 주사를 맞았습니다. 시간이 지나니까 또 아파서 올 봄에 주사를 다시 맞았습니다. 또 오른쪽 눈썹이 쳐져 눈에 눈곱이 끼고 진물이 나서 안과에 여러 번 갔는데 안약과 약을 먹어도 차도가 없고 약만 쌓였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>반복되는 허리 통증으로 고생하고 있는데 <strong>아는 지인분이 수정한의원이 잘한다</strong>고 말씀해 주셔서 함께 치료 받으러 오게 됐습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>허리는 한약을 먹으면서 <strong>침치료와 추나치료를 함께 병행</strong>해서 지금은 통증도 없고 걸을 때 멈칫하지 않고 편해졌습니다. 눈썹도 원장님께서 매선치료를 해주셔서 쳐진 눈의 근육에 힘이 생기게 해주어 처진 근육이 올라가고, 약침치료로 혈액순환도 도와주어 <strong>이제는 눈곱도 안 끼고 진물도 안 나서</strong> 얼굴이 깔끔해져 좋습니다. 눈꼬리가 빨갛고 쓰린 것도 없어졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>우선 아프지 않고 편하게 지낼 수 있어서 좋고, 항상 수건을 들고 눈을 닦느라 불편했는데 그런 것이 없으니 좋습니다. 체질을 알게 되어 음식 관리도 할 수 있고, <strong>침을 꾸준히 맞으면서 내성 발톱도 많이 좋아져서 신발 신는 것도 편해졌습니다.</strong></p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>허리가 좋아지고 눈도 좋아져서 그걸 유지하게 자주 와서 꾸준히 침 맞으며 관리하려 합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #50 -->
   <div id="detailModal50" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3962,6 +4029,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard51'), cat: '척추관절' },
       { el: document.getElementById('reviewCard50'), cat: '척추관절' },
       { el: document.getElementById('reviewCard49'), cat: '척추관절' },
       { el: document.getElementById('reviewCard48'), cat: '면역대사' },
