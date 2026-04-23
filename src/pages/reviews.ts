@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #52 -->
+        <div id="reviewCard52" class="review-card review-card-handwritten" data-cat="특설클리닉" onclick="openReviewModal('detailModal52')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">대상포진·신경통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.10</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">병원 입원·주사도 안 듣던 대상포진 신경통 — 한 달 체질한약·약침으로 통증 소멸, 생활이 너무 좋아졌어요</h3>
+          <p class="review-story">
+            운동 과부하로 대상포진 발병, 가슴·어깨 찌르는 통증으로 밥도 못 먹을 지경. 입원·주사 효과 없음. 체질한약+약침+수두바이러스 억제 치료 10일부터 통증 감소, 한 달 후 완쾌.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*수 (만 46세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #51 -->
         <div id="reviewCard51" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal51')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2322,6 +2343,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #52 -->
+  <div id="detailModal52" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal52')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">대상포진·신경통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.10</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">병원 입원·주사도 안 듣던 대상포진 신경통 — 한 달 체질한약·약침으로 통증 소멸, 생활이 너무 좋아졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-52-leeinsoo-p1.jpg" alt="이*수 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 이*수 (만 46세, 남)</span>
+          <span class="review-date-label">작성일: 2023년 10월</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p>많은 운동으로 인해 만성 피로가 누적되어 <strong>대상포진</strong>이 왔습니다. 가슴과 어깨 쪽으로 찌르는 통증을 느껴 밥 먹기까지 설칠 정도로 심하게 힘들었습니다. 동네 병원을 찾아가 입원 후 약물치료와 주사를 맞았지만 아무런 효과가 없었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>반복되는 통증에 고생하고 있는데 아는 지인의 소개로 수정한의원을 찾았습니다. 원장님의 치료 계획에 따라 <strong>체질 한약과 약침치료, 수두바이러스를 줄이는 과학치료</strong>를 받았습니다. 가슴과 등의 통증 강도가 덜해지고 얼굴로 퍼지는 느낌이 들었는데 치료 결과 10일 정도 지나니 하루 종일 아팠던 통증이 덜해졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>힘들었던 나날이 있었습니다. 치료한 지 <strong>한 달이 되니 통증이 없어 생활하기가 너무 좋았습니다.</strong> 원장 선생님의 침 놓는 방법과 특혈치료에 정말 기뻤습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p><strong>대상포진이 오래되어 고통으로 못했던 것들을 잘 살게 해주신</strong> 수정한의원 원장님과 간호사 선생님들께 감사를 드립니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>고맙습니다. 병원에서 고민하는 모든 이에게 사랑이 가득한 가족 같은 곳이라고 부르고 싶습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #51 -->
   <div id="detailModal51" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4029,6 +4096,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard52'), cat: '특설클리닉' },
       { el: document.getElementById('reviewCard51'), cat: '척추관절' },
       { el: document.getElementById('reviewCard50'), cat: '척추관절' },
       { el: document.getElementById('reviewCard49'), cat: '척추관절' },
