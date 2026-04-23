@@ -1302,7 +1302,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2023.11</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">5개월째 이틀에 한 번 두드러기 — 한약 꾸준히 먹으니 양약 끊고 거의 안 나고, 여드름도 좋아졌어요</h3>
+          <h3 class="review-card-title">두드러기로 너무 가려워서 잠도 못자고 스트레스를 많이 받았어요 — 한약 꾸준히 먹으니 양약도 끊고 거의 안 나요, 여드름도 좋아졌어요</h3>
           <p class="review-story">
             운동 후·취침 전 두드러기, 알러지 검사 정상, 양약 복용 중. 수정한의원 체질 한약 후 빈도 급감, 양약 중단. 여드름도 개선. 두드러기 스트레스에서 해방돼 매우 기쁨.
           </p>
@@ -2249,7 +2249,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-date">2023.11</span>
       </div>
       <div class="review-quote-mark">"</div>
-      <h3 class="review-detail-title">5개월째 이틀에 한 번 두드러기 — 한약 꾸준히 먹으니 양약 끊고 거의 안 나고, 여드름도 좋아졌어요</h3>
+      <h3 class="review-detail-title">두드러기로 너무 가려워서 잠도 못자고 스트레스를 많이 받았어요 — 한약 꾸준히 먹으니 양약도 끊고 거의 안 나요, 여드름도 좋아졌어요</h3>
       <div class="review-detail-image-wrap">
         <img src="/static/reviews/review-47-kimyeonjun-p1.jpg" alt="김*준 자필후기" class="review-detail-image" loading="lazy">
       </div>
