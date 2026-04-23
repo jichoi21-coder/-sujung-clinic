@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #47 -->
+        <div id="reviewCard47" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal47')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두드러기·여드름</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">5개월째 이틀에 한 번 두드러기 — 한약 꾸준히 먹으니 양약 끊고 거의 안 나고, 여드름도 좋아졌어요</h3>
+          <p class="review-story">
+            운동 후·취침 전 두드러기, 알러지 검사 정상, 양약 복용 중. 수정한의원 체질 한약 후 빈도 급감, 양약 중단. 여드름도 개선. 두드러기 스트레스에서 해방돼 매우 기쁨.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*준 (만 19세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #46 -->
         <div id="reviewCard46" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal46')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2217,6 +2238,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #47 -->
+  <div id="detailModal47" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal47')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">두드러기·여드름</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.11</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">5개월째 이틀에 한 번 두드러기 — 한약 꾸준히 먹으니 양약 끊고 거의 안 나고, 여드름도 좋아졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-47-kimyeonjun-p1.jpg" alt="김*준 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 김*준 (만 19세, 남)</span>
+          <span class="review-date-label">작성일: 2023년 11월 25일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p>올해 5월부터 <strong>운동 후나 자기 전에 두드러기 반응</strong>이 일어났습니다. 알러지 검사에서는 이상이 없었고 양약을 2일에 1번씩 복용했습니다. 여드름도 심했습니다. 이러한 증상으로 인해 몸이 너무 가려워서 잠에 잘 들지 못하고 스트레스를 많이 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>어머니께 두드러기 사실을 말씀 드렸더니 인터넷도 찾아보시고 주변 지인분들께도 물어보시면서 이곳 수정한의원을 찾게 되었습니다. <strong>체질도 찾을 수 있고</strong>, 어머님께서 아시는 분이 일하시는 곳이어서 "딱 좋겠다" 싶어서 이곳에서 치료를 받게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>처음엔 두드러기 증상이 심했지만 <strong>한약을 꾸준히 먹다 보니</strong> 이틀에 한번씩 일어나던 두드러기가 3일에 나고, 지금은 심하게 안 나서 <strong>양약을 먹지 않고 있습니다</strong>. 여드름도 많이 좋아졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>두드러기로 인해 스트레스를 많이 받고 있었는데 어느 날부터 <strong>두드러기가 심하지 않고 거의 나지 않아서 매우 기쁩니다</strong>.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>원장님께서 매우 친절하게 대해주시고 적극적으로 이곳저곳 물어봐 주시면서 진료해주셔서 정말 믿음이 가고 아주 좋고 매우 감사합니다. 그리고 간호사 선생님들께서도 매우 친절하게 대해주셔서 정말 감사합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #46 -->
   <div id="detailModal46" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3694,6 +3761,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard47'), cat: '피부' },
       { el: document.getElementById('reviewCard46'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard45'), cat: '척추관절' },
       { el: document.getElementById('reviewCard44'), cat: '뇌신경' },
