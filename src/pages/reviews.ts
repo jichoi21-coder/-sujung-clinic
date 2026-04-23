@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #46 -->
+        <div id="reviewCard46" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal46')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두통·이명·목잠김</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">잦은 출장·음주 후 두통·이명·목잠김 악화 — 한약·약침 5~6회 만에 두통 거의 소멸, 목잠김 완전히 없어졌어요</h3>
+          <p class="review-story">
+            MRI 찍어도 악화일로. 경추 1·2번 틀어짐 진단 후 한약·약침 시작. 5~6회부터 두통 거의 소멸, 목잠김 완전 소실. 인천에서 1시간 20분 거리를 즐거운 마음으로 다닌 보람을 느낌.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*기 (만 62세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <div id="reviewCard45" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal45')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">무릎인대파열</span>
@@ -2196,6 +2217,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #46 -->
+  <div id="detailModal46" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal46')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">두통·이명·목잠김</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2023.11</span>
+      </div>
+      <div class="review-quote-mark">"</div>
+      <h3 class="review-detail-title">잦은 출장·음주 후 두통·이명·목잠김 악화 — 한약·약침 5~6회 만에 두통 거의 소멸, 목잠김 완전히 없어졌어요</h3>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-46-kimsengki-p1.jpg" alt="김*기 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-body">
+        <div class="review-detail-author-bar">
+          <span class="review-author"><i class="fas fa-user"></i> 김*기 (만 62세, 남)</span>
+          <span class="review-date-label">작성일: 2023년 11월 25일</span>
+          <div class="review-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-notes-medical"></i> 증상 및 생활 불편</h4>
+          <p>최근 잦은 출장으로 피곤이 누적된 상태에서 음주를 과하게 한 후 <strong>두통이 심해짐과 이명 및 목잠김</strong>이 찾아와 많이 힘든 생활을 하고 있었습니다. 집근처 대학병원에서 MRI 촬영 등 상태를 호전시키고자 노력하였으나 오히려 상태는 점점 악화되었고, 생활에 지장이 될 만큼 심한 통증이 연속되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-clinic-medical"></i> 치료를 받게 된 이유</h4>
+          <p>많이 힘들어하고 있는 차에 지인의 소개로 수정한의원을 찾게 되었고, 상담과 더불어 치료를 받게 되었습니다. 상담 결과 원장님 말씀은 <strong>경추 1·2번이 틀어졌고</strong> 머리와 목으로 연결되는 근육이 긴장되어 경추가 틀어졌고, 근육의 압박으로 두통과 이명이 동반되었고 더불어 목잠김까지 와 있는 상태라고 하셨습니다. 한약과 더불어 약침을 통하여 치료를 시작하였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-heart"></i> 치료 후 개선된 점</h4>
+          <p>상태가 호전되기 시작하였는데 <strong>한의원 방문 5~6회부터는 상태가 급격히 호전</strong>되어 두통은 거의 느끼지 못하는 수준이 되었으며 목잠김은 완전히 없어졌습니다. 이명이 약간 있는데 점차 없어져 가고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-star"></i> 삶의 질 변화</h4>
+          <p>한약은 장기능과 간기능을 호전시키는 약으로 설명을 들었는데 장·간 기능이 호전되면 근육 및 경추가 완전히 자리잡게 되어 재발이 없어지게 될 것입니다. 또 <strong>평소 가지고 있던 지루성 피부염인 두피의 비듬</strong>을 침 치료와 한의원에서 구입한 샴푸와 함께 사용한 후 완전 치료가 되어 두피 비듬이 없어져 아주 좋았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4><i class="fas fa-comment-dots"></i> 한마디</h4>
+          <p>저는 거주지가 인천인데 약 1시간 20분 정도의 거리를 치료를 위하여 오는 것이 지병을 고칠 수 있다는 마음으로 오게 되었고 먼 거리지만 즐거운 마음이었습니다. 친절하게 맞아 주시는 원장님과 간호원님들께 감사드립니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #45 -->
   <div id="detailModal45" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -3627,6 +3694,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard46'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard45'), cat: '척추관절' },
       { el: document.getElementById('reviewCard44'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard43'), cat: '뇌신경' },
