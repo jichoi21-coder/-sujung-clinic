@@ -1295,9 +1295,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
         <!-- 후기 카드 #52 -->
-        <div id="reviewCard52" class="review-card review-card-handwritten" data-cat="특설클리닉" onclick="openReviewModal('detailModal52')" style="cursor:pointer;">
+        <div id="reviewCard52" class="review-card review-card-handwritten" data-cat="대상포진" onclick="openReviewModal('detailModal52')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">대상포진·후신경통</span>
+            <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2023.10</span>
           </div>
@@ -2349,7 +2350,8 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal52')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">대상포진·후신경통</span>
+        <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
+        <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2023.10</span>
       </div>
@@ -4096,7 +4098,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
-      { el: document.getElementById('reviewCard52'), cat: '특설클리닉' },
+      { el: document.getElementById('reviewCard52'), cat: '대상포진' },
       { el: document.getElementById('reviewCard51'), cat: '척추관절' },
       { el: document.getElementById('reviewCard50'), cat: '척추관절' },
       { el: document.getElementById('reviewCard49'), cat: '척추관절' },
