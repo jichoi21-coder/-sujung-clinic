@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #57 -->
+        <div id="reviewCard57" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal57')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">난청·턴관절</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">혁압 150·난청·턴관절통증 한번에 — 3개월 체질한약·매선·약침·추나로 혁압 130대, 안들리던 핸드폰 소리까지 들려요</h3>
+          <p class="review-story">
+            혁압 150에 만성대장증후군·턴관절통증으로 가시방석 생활. 엘스레이하니 경쳐 1~2번 문제로 청력 이상 진단. 3개월 집중 치료로 혁압 130대, 청력 회복, 금양체질 식단으로 삶의 질 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 수*이 (여, 네이버)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #56 -->
         <div id="reviewCard56" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal56')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2428,6 +2449,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #57 -->
+  <div id="detailModal57" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal57')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#난청 #턴관절</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 7월</span>
+      </div>
+      <h2 class="review-detail-title">혁압 150·난청·턴관절통증 한번에 — 3개월 체질한약·매선·약침·추나로 혁압 130대, 안들리던 핸드폰 소리까지 들려요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-57-sumi245-p1.jpg" alt="수*이 난청·턴관절 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>수*이</strong>&nbsp;(여성)&nbsp;·&nbsp;작성일 2024년 7월 3일 &nbsp;·&nbsp;네이버 예약 이용후기
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>난청과 만성대장증후군·턴관절통증으로 고생하던 중 혁압이 150을 넘으면서 하루하루가 가시방석에 앜아있는 듯 했습니다. 중이염으로 인한 난청으로만 알고 있었는데, 엘스레이를 찍어보니 경쳐 5~6번 디스크에 철충만과 골반 비틀림이 나타났고, 경쳐 1~2번이 바로 있지 않아 청력 문제가 생겼다는 진단에 놀라움을 금치 못했습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>친구가 수정한의원을 소개해 난청 치료의 기대와 희망으로 내원했습니다. 충남 예산에서 주 1회 고속버스를 타고 다닐 정도로 치료에 적극적으로 임했습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>3개월간 체질한약·매선·약침·추나 치료로 혁압이 130대로 낮아졌고, 안들리던 핸드폰 소리도 들리고 청력도 좋아졌습니다. 금양체질에 맞는 생녹두 섭취로 더위도 덜 느끼고 있습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질 변화</h4>
+        <p>치료의 효과를 보게 되어 작년보다 뎨 삶의 자신감이 생겼습니다. 친구에게 감사하고 원장님과 간호선생님들의 친절에 감사합니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>친구에게 감사하고, 원장님과 간호선생님들의 친절에 감사드립니다. 수정한의원을 고민하시는 분들께 적극 추천드립니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #56 -->
   <div id="detailModal56" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4360,6 +4425,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard57'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard56'), cat: '피부' },
       { el: document.getElementById('reviewCard55'), cat: '척추관절' },
       { el: document.getElementById('reviewCard54'), cat: '면역대사' },
