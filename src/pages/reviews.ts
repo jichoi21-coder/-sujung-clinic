@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #56 -->
+        <div id="reviewCard56" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal56')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">아토피</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">몇 년째 피부과 다녀도 변화 없던 아토피 — 한약으로 눈에 보이는 피부 개선, 발작 범위·빈도가 확 줄었어요</h3>
+          <p class="review-story">
+            피부과 몇 년, 붉은 발작·가려움·다리 통증으로 일상 지장. 어머니 권유로 한약 시작 후 눈에 띄는 피부 개선, 발작 줄고 체질식교육으로 생활 습관까지 교정.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*상 (만 27세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #55 -->
         <div id="reviewCard55" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal55')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2407,6 +2428,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #56 -->
+  <div id="detailModal56" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal56')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">피부·아토피</span>
+        <span class="review-detail-tag">#아토피</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 7월</span>
+      </div>
+      <h2 class="review-detail-title">몇 년째 피부과 다녀도 변화 없던 아토피 — 한약으로 눈에 보이는 피부 개선, 발작 범위·빈도가 확 줄었어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-56-kimgichan-p1.jpg" alt="김*상 아토피 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>김*상</strong>&nbsp;(만 27세, 남성)&nbsp;·&nbsp;작성일 2024년 7월 26일
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>피부가 붉게 올라와 가렵고 꺁으면 더 상태가 안좋아지며 붉은 범위가 넓어졌습니다. 자다가 무의식적으로 피부를 꺁으면 많이 부어 있었고, 다리 부분은 걸으면 피부가 아플 정도로 심했습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>피부과 병원을 몇 년째 다녀도 처으로 와나하지 않아 어머니의 권유로 한약을 먹어보자 해서 내원했습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>피부가 붉게 발작되는 증상이 많이 호전되었습니다. 피부 때문에 일상생활이 지장이 있었는데 지금은 일상에 지장은 없을 정도로 발작 범위가 줄고 빈도도 줄어들었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질 변화</h4>
+        <p>피부과에서 몇 년째 다녀도 그렇게 증상 완화가 없다는 생각을 못 받았는데, 한의원에서 치료를 받으니까 눈에 보이는 피부 개선 상태가 있어 상당히 만족스럽습니다. 내 몸에 맞는 식단과 좋은 생활 습관을 알수 있어서 더욱 좋았습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>피부 질환은 치료를 받으면서 식단이나 스트레스 관리를 잘 하는 게 중요합니다. 식단 관리와 한약을 꾸준히 먹다 보면 피부 질환 개선에 큰 도움이 될 것 같습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #55 -->
   <div id="detailModal55" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4295,6 +4360,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard56'), cat: '피부' },
       { el: document.getElementById('reviewCard55'), cat: '척추관절' },
       { el: document.getElementById('reviewCard54'), cat: '면역대사' },
       { el: document.getElementById('reviewCard53'), cat: '면역대사' },
