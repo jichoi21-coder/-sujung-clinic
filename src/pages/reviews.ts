@@ -538,9 +538,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-grid summary-mode" id="reviewGrid">
 
         <!-- 후기 카드 #71 -->
-        <div id="reviewCard71" class="review-card review-card-handwritten" data-cat="특설클리닉" onclick="openReviewModal('detailModal71')" style="cursor:pointer;">
+        <div id="reviewCard71" class="review-card review-card-handwritten" data-cat="천식" onclick="openReviewModal('detailModal71')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">기관지천식</span>
+            <span class="review-cat-tag">천식·마이코플라즈마</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2024.08</span>
           </div>
@@ -2749,8 +2750,9 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal71')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">특설클리닉</span>
-        <span class="review-detail-tag">#기관지천식 #마이코플라즈마</span>
+        <span class="review-cat-tag">천식·마이코플라즈마</span>
+        <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+        <span class="review-detail-tag">#기관지천식</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2024년 8월</span>
       </div>
@@ -5299,7 +5301,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
-      { el: document.getElementById('reviewCard71'), cat: '특설클리닉' },
+      { el: document.getElementById('reviewCard71'), cat: '천식' },
       { el: document.getElementById('reviewCard70'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard69'), cat: '척추관절' },
       { el: document.getElementById('reviewCard68'), cat: '뇌신경' },
