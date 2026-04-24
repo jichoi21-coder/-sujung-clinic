@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #71 -->
+        <div id="reviewCard71" class="review-card review-card-handwritten" data-cat="특설클리닉" onclick="openReviewModal('detailModal71')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">기관지천식</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">30년 고질 기관지천식 — 한약·약침·체질침·온열치료로 어떤 자극에도 기침 없이 완전히 좋아졌어요</h3>
+          <p class="review-story">
+            30년 전 수영장 후 천식 진단, 반년간 약·주사·흡입기도 실패. 찬바람·온도차마다 기침 지속. 수정한의원 한약·태반약침·체질침·온열치료 병행 후 새벽 발작성 기침 소멸, 완치. "어떠한 자극에도 기침 안해요."
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 안*남 (만 63세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #70 -->
         <div id="reviewCard70" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal70')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2722,6 +2743,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #71 -->
+  <div id="detailModal71" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal71')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">특설클리닉</span>
+        <span class="review-detail-tag">#기관지천식 #마이코플라즈마</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 8월</span>
+      </div>
+      <h2 class="review-detail-title">30년 고질 기관지천식 — 한약·약침·체질침·온열치료로 어떤 자극에도 기침 없이 완전히 좋아졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-71-anoknam-p1.jpg" alt="안*남 기관지천식 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>안*남</strong>&nbsp;(만 63세, 여성)&nbsp;·&nbsp;작성일 2024년 8월 7일 &nbsp;·&nbsp;자필후기
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>30년 전 유치원 아이들과 수영장에 다녀온 후 며칠 동안 아팠는데 기침이 멈추지 않아 대학병원 검사 결과 '먼지 알러지 기관지 천식'이라 했습니다. 반년 동안 약과 주사 흡입기까지 사용했지만 고쳐지지 않아 한의원에서 좋아졌고, 지금까지 감기 걸리면 천식으로 한약을 일 년에 두 번은 먹어야 하는 불편함이 있었습니다. 늘 찬바람, 급격한 온도차, 먼지 있는 곳이 두려웠습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>넘어져서 정형외과 다니는 중 "수정한의원 온열치료실 운영"이라는 문구가 눈에 들어왔고, 봄에 다시 천식 기침이 심해져서 온열치료를 병행하면 좋아질 것 같아서 찾아오게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>기관지 깊숙한 곳에서 올라오는 기침은 참을 수 없는 고통으로 눈물 콧물 흘려가며 얼굴이 빨개지고 배가 아플 만큼 심하게 기침을 해야 했고, 새벽이면 증상이 더 심하여 잠을 잘 수가 없었는데 한약, 약침, 체질침을 함께 병행하고 온열치료실을 열심히 이용하여 몸을 따뜻이 하면서 지금은 기침을 하지 않습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질적인 변화</h4>
+        <p>지금은 너무 행복합니다. 원장선생님께서 저의 주치의 선생님이 되신 것 같이 정성껏 치료해 주시니 믿음이 가고, 저도 원장님이 하라는 대로 한약, 태반약침, 체질침 등을 열심히 되도록 자주 치료하면서 지금은 완전히 좋아졌고, 어떠한 자극에도 기침 안 하고 있습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>저와 같이 천식은 고질병이라 생각하시는 분들 망설이지 마시고 수정한의원 원장님께 꼭 8체질 검사 받으시고 치료하셔서 행복한 삶을 사셨으면 좋겠습니다. 망설이지 마십시요! 원장님과 친절하신 선생님들 찐 감사드립니다. 복 많이 받으십시오. 사랑합니다~♡♡♡</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #70 -->
   <div id="detailModal70" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5234,6 +5299,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard71'), cat: '특설클리닉' },
       { el: document.getElementById('reviewCard70'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard69'), cat: '척추관절' },
       { el: document.getElementById('reviewCard68'), cat: '뇌신경' },
