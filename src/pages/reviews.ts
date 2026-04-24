@@ -1553,7 +1553,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <!-- ===== 자필후기 카드 #16 — 조☌희 (만성천식·마이코플라즈마) ===== -->
         <div id="reviewCard16" class="review-card review-card-handwritten" data-cat="천식" onclick="openReviewModal('detailModal16')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">만성천식·마이코플라즈마</span>
+            <span class="review-cat-tag">만성천식</span>
             <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2021.07</span>
@@ -2463,7 +2463,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal16')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">만성천식·마이코플라즈마</span>
+        <span class="review-cat-tag">만성천식</span>
         <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2021.07</span>
