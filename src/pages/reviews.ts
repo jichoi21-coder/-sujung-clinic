@@ -1294,6 +1294,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #55 -->
+        <div id="reviewCard55" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal55')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎인대파열</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">전동차에 치여 주저앉아 걷지도 못하던 무릎인대파열 — 체질침·약침·매선으로 어지럼증까지 함께 낫고 혼자 걸어다녀요</h3>
+          <p class="review-story">
+            건널목에서 장애인 전동차에 무릎을 치여 그 자리에 주저앉아 이동 불가. 어지럼증 치료 중 내원해 바로 침 시술. 꾸준한 체질침·약침·매선으로 어지럼증·무릎인대 동시 회복, 혼자 걸어다닐 수 있게 됨.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 권*자 (만 79세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #54 -->
         <div id="reviewCard54" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal54')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2386,6 +2407,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #55 -->
+  <div id="detailModal55" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal55')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">척추관절</span>
+        <span class="review-detail-tag">#무릎인대파열</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 3월</span>
+      </div>
+      <h2 class="review-detail-title">전동차에 치여 주저앉아 걷지도 못하던 무릎인대파열 — 체질침·약침·매선으로 어지럼증까지 함께 낫고 혼자 걸어다녀요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-55-kwonhyukja-p1.jpg" alt="권*자 무릎인대파열 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>권*자</strong>&nbsp;(만 79세, 여성)&nbsp;·&nbsp;작성일 2024년 3월 25일
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>건널목에서 장애인 전동차가 뒤에서 달려오며 무릎 옆을 치고 가버렸습니다. 그 자리에 주저앉아 움직이지 못하였고, 처음엔 걷지도 못해 택시를 타고 다녔습니다. 당시 어지럼증으로 수정한의원에 다니던 중이라 간신히 올라와 침을 바로 맞아 조금 나아졌습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>한의원에서 침을 맞았을 때 시원한 느낌이 있어 꾸준히 치료를 받았습니다. 2014년 무릎연골이 끊어졌었는데 병원에서 빠른 조치 없이 방치되다 2015년 1월 시술을 받았으나 나아지지 않았습니다. 지인의 소개로 수정한의원에서 치료를 결심하고 다니게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>어지럼증으로 치료하던 중 다리를 다쳤는데, 매선과 약침 치료를 병행하며 어지럼증도 많이 좋아지고 다쳤던 왼쪽 다리도 함께 많이 회복되었습니다. 꾸준한 치료 끝에 혼자 걸을 수 있을 정도로 좋아졌습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질 변화</h4>
+        <p>병원에서는 증상이 없다고 치료를 해주지 않았는데, 수정한의원에서 치료를 받고 아주 좋아졌습니다. 내 스스로 걸어다닐 수 있다는 것이 너무 감사합니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>주변에 다른 아픈 사람들과 가족이 여기서 꼭 치료를 받았으면 좋겠습니다. 소개를 많이 하고 있습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #54 -->
   <div id="detailModal54" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4230,6 +4295,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard55'), cat: '척추관절' },
       { el: document.getElementById('reviewCard54'), cat: '면역대사' },
       { el: document.getElementById('reviewCard53'), cat: '면역대사' },
       { el: document.getElementById('reviewCard52'), cat: '대상포진' },
