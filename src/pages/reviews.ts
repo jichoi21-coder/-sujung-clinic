@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #63 -->
+        <div id="reviewCard63" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal63')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">협착증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">6년 병원·운동도 못 고친 협착증 — 한 달 체질한약·추나·약침으로 통증 싹 사라지고 혈압 180→안정, 잠 7시간 자요</h3>
+          <p class="review-story">
+            협착증으로 다리 저림·2시간 수면·식은땀·갱년기·장염·혈압 180. 6년 병원·운동도 효과 없음. 인천에서 먼 길 내원, 한 달 체질한약·추나·약침으로 협착증 통증 소실, 땀 없어지고 7시간 숙면, 혈압약도 줄었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> khs**** (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #62 -->
         <div id="reviewCard62" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal62')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2554,6 +2575,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #63 -->
+  <div id="detailModal63" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal63')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">척추관절</span>
+        <span class="review-detail-tag">#협착증 #혈압 #식은땀</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 7월</span>
+      </div>
+      <h2 class="review-detail-title">6년 병원·운동도 못 고친 협착증 — 한 달 체질한약·추나·약침으로 통증 싹 사라지고 혈압 180→안정, 잠 7시간 자요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-63-khs-p1.jpg" alt="khs**** 협착증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>khs****</strong>&nbsp;(여성)&nbsp;·&nbsp;작성일 2024년 7월 3일 &nbsp;·&nbsp;네이버 예약 이용후기 · 1번째 방문
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>협착증으로 허벅지·다리가 저려서 안고 서는 것조차 힘들었고, 잠은 하루에 2시간밖에 못 잤습니다. 밥 먹을 때와 잘 때 식은땀을 너무 많이 흘리고, 갱년기 증상과 장염·방광염으로 고생을 하면서 혈압도 180까지 올랐습니다. 병원을 다녀도 치료도 잘 안 되고 몸이 많이 망가져 고통받고 있었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>간경화로 수정한의원에서 치료받고 나은 지인의 소개로 멀리 인천에서 치료를 받으러 왔습니다. 6년 동안 병원도 다니고 운동도 했지만 진전이 없었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>한 달 동안 체질한약과 추나·약침 치료를 하고 나서 협착증 통증이 싹 사라졌습니다. 땀도 안 나고 잠도 7시간 정도 잘 자고, 혈압약도 줄이고 많이 안정이 됐습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 한의원에 전하고 싶은 말</h4>
+        <p>치료도 잘해주시고 너무 친절하게 대해주셔서 내 집 같이 편하게 치료받아서 제일 좋았습니다. 시간을 투자하시면 반드시 좋아집니다!</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #62 -->
   <div id="detailModal62" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4734,6 +4795,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard63'), cat: '척추관절' },
       { el: document.getElementById('reviewCard62'), cat: '면역대사' },
       { el: document.getElementById('reviewCard61'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard60'), cat: '피부' },
