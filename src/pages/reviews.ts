@@ -550,7 +550,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             피부과 몇 년, 붉은 발작·가려움·다리 통증으로 일상 지장. 어머니 권유로 한약 시작 후 눈에 띄는 피부 개선, 발작 줄고 체질식교육으로 생활 습관까지 교정.
           </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 김*상 (만 27세, 남)</span>
+            <span class="review-author"><i class="fas fa-user"></i> 김*찬 (만 27세, 남)</span>
             <div class="review-stars">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
@@ -2441,11 +2441,11 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       </div>
       <h2 class="review-detail-title">몇 년째 피부과 다녀도 변화 없던 아토피 — 한약으로 눈에 보이는 피부 개선, 발작 범위·빈도가 확 줄었어요</h2>
       <div class="review-detail-image-wrap">
-        <img src="/static/reviews/review-56-kimgichan-p1.jpg" alt="김*상 아토피 자필후기" class="review-detail-image" loading="lazy">
+        <img src="/static/reviews/review-56-kimgichan-p1.jpg" alt="김*찬 아토피 자필후기" class="review-detail-image" loading="lazy">
       </div>
       <div class="review-detail-author">
         <i class="fas fa-user-circle"></i>
-        <strong>김*상</strong>&nbsp;(만 27세, 남성)&nbsp;·&nbsp;작성일 2024년 7월 26일
+        <strong>김*찬</strong>&nbsp;(만 27세, 남성)&nbsp;·&nbsp;작성일 2024년 7월 26일
         <div class="review-stars" style="margin-top:6px;">
           <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
