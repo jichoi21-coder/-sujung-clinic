@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #62 -->
+        <div id="reviewCard62" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal62')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">난치성 도한</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">25년 전국·중국 치료 모두 실패한 도한·전신통·설사 — 토양체질 치료로 이불 흠뻑 식은땀 사라지고 주위가 기적이라 해요</h3>
+          <p class="review-story">
+            잘 때 이불 흠뻑, 하루 옷 20번 교체, 전신 뼈 통증, 바람만 스쳐도 설사. 25년 전국 한의원·중국 3년도 무효. 수정한의원 토양체질 진단 후 체질한약·침·추나·약침·매선으로 땀·통증·설사 모두 소실, 한여름 내복 2벌에서 완전 해방.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> kts**** (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #61 -->
         <div id="reviewCard61" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal61')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2533,6 +2554,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #62 -->
+  <div id="detailModal62" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal62')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">면역·대사성질환</span>
+        <span class="review-detail-tag">#도한 #전신통 #설사</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 11월</span>
+      </div>
+      <h2 class="review-detail-title">25년 전국·중국 치료 모두 실패한 도한·전신통·설사 — 토양체질 치료로 이불 흠뻑 식은땀 사라지고 주위가 기적이라 해요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-62-kts-p1.jpg" alt="kts**** 난치성 도한·전신통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>kts****</strong>&nbsp;(여성)&nbsp;·&nbsp;작성일 2024년 11월 21일 &nbsp;·&nbsp;네이버 예약 이용후기 · 1번째 방문
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>몸은 추운데 땀이 너무 많이 나서 잘 때 이불이 흠뻑 젖어 잠을 못 자고, 하루에도 옷을 20번 이상 갈아입어야 했습니다. 배에 바람이 들면 설사를 쫙쫙 하고 열흘은 지나야 멈췄습니다. 바람만 스쳐도 몸이 붓고 떨리고 전신의 뼈가 다 아파서 일상생활을 할 수 없을 정도로 고통이 심했습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>병원에서는 병명이 없어서 치료를 못 한다고 했고, 전국에 용하다는 한의원에서 25년 동안 약을 먹어도 아무 소용이 없었습니다. 중국에 가서 3년간 치료해도 효과가 없었습니다. 조카의 소개로 수정한의원에 왔는데, 토양체질로 심장의 열 때문이라고 열을 쳐야 한다고 하셨습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>체질한약과 체질침·추나·약침·매선치료를 하면서 한여름에도 내복을 2벌씩 입었는데 내복도 다 벗고 추위도 안 타고, 온몸에 통증도 없어졌습니다. 땀도 안 나서 이불이 젖지 않아 잠을 푹 잘 수 있고, 대변 실수도 없어졌습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질 변화</h4>
+        <p>주위 사람들이 모두 기적이라고 말합니다. 25년 넘게 전국과 중국을 다니며 해결하지 못했던 고통에서 벗어나 이제는 정상적인 일상생활을 할 수 있게 되었습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #61 -->
   <div id="detailModal61" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4673,6 +4734,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard62'), cat: '면역대사' },
       { el: document.getElementById('reviewCard61'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard60'), cat: '피부' },
       { el: document.getElementById('reviewCard59'), cat: '척추관절' },
