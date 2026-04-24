@@ -542,27 +542,6 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-header">
             <span class="review-cat-tag">폐쇄공포증·불면증·두통</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
-            <span class="review-date">2024.04</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">25년 겨울도 맨발·손발 열감·불면증·폐쇄공포증 — 한약으로 평생 못 고칠 줄 알았던 모든 증상이 편해졌어요</h3>
-          <p class="review-story">
-            25년 겨울도 맨발, 손발 끝·발바닥 열감·가려움, 불면, 두통, 어깨통증, 위식도염. 심장·위장 열 과다·신장 진액 부족 진단. 한약 복용 후 손발 열감 소실, 수면 개선, 모든 증상 호전. 눈물 날 만큼 감사합니다.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> unk**** (여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #70 -->
-        <div id="reviewCard70" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal70')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">폐쇄공포증·불면증·두통</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
             <span class="review-date">2024.11</span>
           </div>
           <div class="review-quote-mark">"</div>
