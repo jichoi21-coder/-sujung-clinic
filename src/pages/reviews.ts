@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #65 -->
+        <div id="reviewCard65" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal65')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두통·팔저림·목잠김</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.02</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">진통제 없이 잠 못 자던 갑작스런 두통·팔저림·목잠김 — 치료 후 혈압↓·진통제 끊고 삶의 질 높아졌어요</h3>
+          <p class="review-story">
+            갑작스런 심한 두통으로 진통제 없이 수면 불가, 오른쪽 팔 저림, 목소리 잠김. 지인 소개로 내원 후 혈압 낮아지고 진통제 끊었으며, 목·어깨 통증 완화, 손 저림도 호전. 집 같은 편안한 환경과 심리적 안정이 치료에 큰 도움이 됐습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 방*희 (만 57세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #64 -->
         <div id="reviewCard64" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal64')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2596,6 +2617,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #65 -->
+  <div id="detailModal65" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal65')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#두통 #팔저림 #목잠김</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 2월</span>
+      </div>
+      <h2 class="review-detail-title">진통제 없이 잠 못 자던 갑작스런 두통·팔저림·목잠김 — 치료 후 혈압↓·진통제 끊고 삶의 질 높아졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-65-bangjeonghui-p1.jpg" alt="방*희 두통·팔저림·목잠김 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>방*희</strong>&nbsp;(만 57세, 여성)&nbsp;·&nbsp;작성일 2024년 2월 1일
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>갑작스러운 심한 두통으로 일상생활이 어려웠고, 밤에도 진통제 없이 잠을 자기가 어려웠습니다. 오른쪽 팔에 저림 증상이 있었고, 소리가 잘 나오지 않았습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>지인의 소개로 수정한의원을 찾게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>높았던 혈압이 낮아지고, 한의원을 다니면서부터 진통제를 먹지 않게 되었습니다. 목과 어깨 통증도 완화되고, 손의 저림도 완화되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질 변화</h4>
+        <p>두통이 완화되어 삶의 질이 높아지고, 통증이 없어지니 몸도 가벼워졌습니다. 가장 좋았다고 느껴지는 것은 환자들이 심리적인 안정을 느낄 수 있는 환경입니다. 집 같은 편안함이 치료에 한몫을 한다고 생각합니다. 원장님의 지도로 몸의 치료와 함께 운동의 중요성도 깨닫게 해주셨습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>수정한의원만이 주는 편안함은 가장 큰 장점인 듯합니다. 심리적인 안정이 치료에 많은 도움을 줍니다. 원장님에 대한 믿음도 절로 생기고 직원들의 친절함도 그대로 계속 이어가 주세요. 치료는 미루지 말고 즉시, 원장님을 믿고 따라가시면 좋은 효과를 볼 수 있습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #64 -->
   <div id="detailModal64" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4856,6 +4921,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard65'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard64'), cat: '척추관절' },
       { el: document.getElementById('reviewCard63'), cat: '척추관절' },
       { el: document.getElementById('reviewCard62'), cat: '면역대사' },
