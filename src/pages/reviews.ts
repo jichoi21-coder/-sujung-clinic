@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #69 -->
+        <div id="reviewCard69" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal69')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">척추분리증·류마티스</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">8년 허리시술·류마티스 입원도 소용없던 척추분리증 — 추나·약침·매선 7~3회로 굽은 허리 펴지고 만성 기침도 좋아졌어요</h3>
+          <p class="review-story">
+            류마티스 입원·척추분리증 시술 8년, 허리 구부러져 펼 수 없고 감기 기침 안 낫는 자가면역질환. 토양체질 한약·약침·추나 7회·매선 3회 후 허리 펴지고 기침 호전. 반듯이 걸으니 희망이 생겼습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> boo**** (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #68 -->
         <div id="reviewCard68" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal68')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2680,6 +2701,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #69 -->
+  <div id="detailModal69" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal69')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">척추관절</span>
+        <span class="review-detail-tag">#척추분리증 #류마티스 #기침</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 5월</span>
+      </div>
+      <h2 class="review-detail-title">8년 허리시술·류마티스 입원도 소용없던 척추분리증 — 추나·약침·매선 7~3회로 굽은 허리 펴지고 만성 기침도 좋아졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-69-boo-p1.jpg" alt="boo**** 척추분리증·류마티스 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>boo****</strong>&nbsp;(여성)&nbsp;·&nbsp;작성일 2024년 5월 29일 &nbsp;·&nbsp;네이버 예약 이용후기 · 1번째 방문
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>류마티스관절염으로 염증치료 때문에 병원에 입원도 하고, 척추분리증으로 허리시술도 하며 8년 이상 일상생활을 할 수 없었습니다. 자가면역질환이라 감기로 인한 기침이 낫질 않아 두려움과 괴로움에 고생을 했습니다. 할머니처럼 허리가 굽어 펴지지 못하는 상태였습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>단전수련을 하는 지인이 8체질 치료를 한다고 해서, 생각지도 않던 한방치료를 시작했습니다. 처음엔 기침도 심해서 치료될까 하는 마음이었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>토양체질 한약과 약침·추나치료 7번, 매선치료 3번을 했는데, 굽었던 허리가 펴지고 심했던 기침도 많이 좋아졌습니다. 허리도 펴지고 기침도 좋아졌고, 반듯이 걸으니 용기가 나고 나을 수 있다는 희망이 생겼습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 한의원에 전하고 싶은 말</h4>
+        <p>원장님께 감사한 마음으로 열심히 치료 받고 있습니다. 친절한 간호사님께도 고맙습니다. 원장님 믿고 열심히 치료받으시면 삶의 질이 달라질 거라 확신합니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #68 -->
   <div id="detailModal68" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5112,6 +5173,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard69'), cat: '척추관절' },
       { el: document.getElementById('reviewCard68'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard67'), cat: '다이어트' },
       { el: document.getElementById('reviewCard66'), cat: '뇌신경' },
