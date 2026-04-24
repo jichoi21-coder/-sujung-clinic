@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #59 -->
+        <div id="reviewCard59" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal59')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎·고관절</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">6개월 주사치료도 못 고친 무릎·고관절 — 토양체질 한약·추나·약침·매선으로 계단 오르내리고 5년 수면장애까지 해결됐어요</h3>
+          <p class="review-story">
+            23년 12월 바닥에 주저앉아 무릎·고관절 통증 발생. 정형외과 주사 6개월에도 계단조차 못 올랐는데, 수정한의원 토양체질 치료 후 계단·양반다리 가능. 5년 수면장애도 6시간 숙면으로 회복, 삶의 활력 되찾았어요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> zza**** (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #58 -->
         <div id="reviewCard58" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal58')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2470,6 +2491,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #59 -->
+  <div id="detailModal59" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal59')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">척추관절</span>
+        <span class="review-detail-tag">#무릎 #고관절</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 11월</span>
+      </div>
+      <h2 class="review-detail-title">6개월 주사치료도 못 고친 무릎·고관절 — 토양체질 한약·추나·약침·매선으로 계단 오르내리고 5년 수면장애까지 해결됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-59-zza-p1.jpg" alt="zza**** 무릎·고관절 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>zza****</strong>&nbsp;(여성)&nbsp;·&nbsp;작성일 2024년 11월 28일 &nbsp;·&nbsp;네이버 예약 이용후기
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>23년 12월 31일 바닥에 주저앉아 무릎과 고관절이 심하게 아펐습니다. 정형외과에서 원인은 허리라고 주사를 6개월간 맞았으나 계속 치료해도 무릎과 고관절이 여전히 아프고 계단을 오르내리지도 못했습니다. 또한 5년 동안 정신과에서 수면제를 먹어도 4시간 이상 잠을 못 자서 항상 몸이 무겁고 머리가 멍해서 생활에 활력이 없었고, 누가 물어보면 내 소원이 4시간 이상 잠을 자는 게 소원이라고 말할 정도였습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>10월 8일 노원역 주변에 한의원을 알아보던 중 수정한의원이 눈에 딱 들어왔습니다. 한의원에서 토양체질 한약과 추나·약침·매선치료 및 온열치료를 받았습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>지금은 계단을 편하게 오르내리고, 전혀 안 되던 양반다리도 됩니다. 그리고 또 하나 좋아진 게 있습니다. 5년 동안 수면제를 먹어도 4시간을 못 자던 수면 문제가, 지금은 6시간 이상 잠을 푹 자게 되어 살 것 같습니다. 통증도 많이 없어지고 몸도 가벼워졌습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질 변화</h4>
+        <p>기분도 좋고 생활에 활력소가 생겼습니다. 수면이 해결되니 머리가 맑아지고 매사 의욕이 넘칩니다. 토양체질에 맞는 생활 지도가 전반적인 건강 회복에 큰 도움이 되었습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #58 -->
   <div id="detailModal58" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4490,6 +4551,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard59'), cat: '척추관절' },
       { el: document.getElementById('reviewCard58'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard57'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard56'), cat: '피부' },
