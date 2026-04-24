@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #67 -->
+        <div id="reviewCard67" class="review-card review-card-handwritten" data-cat="다이어트" onclick="openReviewModal('detailModal67')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">체질다이어트·편두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">새벽마다 비명 지르던 편두통·비만 — 체질 맞춤치료로 두통 소실, 16kg 감량·기초대사량 모두 표준 달성</h3>
+          <p class="review-story">
+            코골이·새벽 두통 비명, 신경외과·혈관내과 무효. 운동해도 체중 계속 증가, 맞는 옷 없음. 경추 교정+체질개선 2~3개월 후 두통 소실, 16kg 감량 성공, 체지방·기초대사량 모두 표준. 주변에서 부러워합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 변*진 (만 44세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #66 -->
         <div id="reviewCard66" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal66')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2638,6 +2659,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #67 -->
+  <div id="detailModal67" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal67')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">체질다이어트</span>
+        <span class="review-detail-tag">#체질다이어트 #편두통 #16kg감량</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 11월</span>
+      </div>
+      <h2 class="review-detail-title">새벽마다 비명 지르던 편두통·비만 — 체질 맞춤치료로 두통 소실, 16kg 감량·기초대사량 모두 표준 달성</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-67-byunyeojin2-p1.jpg" alt="변*진 체질다이어트·편두통 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>변*진</strong>&nbsp;(만 44세, 여성)&nbsp;·&nbsp;작성일 2024년 11월 16일
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>예전에 없었던 코골기가 시작되고, 뒷목을 타고 머리 혈관이 꽉 막히는 듯 아파오기 시작했습니다. 며칠 후 새벽에 "악!" 하는 비명을 지르면서 큰 고통에 잠이 깨었습니다. 신경외과·혈관내과 등 병원을 다녀도 잡지를 못해서 업무에 집중할 수 없었고 계속 통증이 있었습니다. 더불어 운동을 꾸준히 하고 있었지만 체중이 계속 증가해 몸이 붓고 무기력하며, 맞는 옷이 없고 일상생활에 많은 불편이 있었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>여러 병원을 다녀봐도 차도가 없자 한의원을 찾던 중 환자들의 후기를 꼼꼼히 읽게 되었고 내원했습니다. 첫 진료 때 꼼꼼히 봐주시고 원인을 잘 찾아 주셨으며, 환자의 몸과 체질에 맞게 치료와 처방을 해주셔서 신뢰가 생겼고 꾸준히 치료를 받게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>첫 번째로 경추가 틀어져 눌린 신경 쪽에 많은 고통이 있었는데 2~3개월간 매일 치료를 받으면서 아주 좋아졌습니다. 지금은 통증이 없는 상태입니다. 두 번째로 체중이 증가해 비만이었는데 지금은 체질개선으로 표준 상태이며 16kg 감량에 성공했습니다. 기초대사량·체지방 모두 표준이 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질 변화</h4>
+        <p>환자 개개인의 체질에 맞는 음식을 알려주시고, 적절한 치료와 관리로 건강이 좋아졌습니다. 굶는 다이어트가 아닌 잘 먹고 운동하는 과정을 통해 성공적인 다이어트로 이어졌습니다. 지금은 스스로 운동·식단·자기조절을 잘하고 있으며, 주변 사람들이 놀라고 부러워합니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>수정한의원에서는 공통의 치료가 아닌 개인의 컨디션·체질에 맞게 치료를 받을 수 있어 주변에도 추천하는 병원입니다. 내 몸에 맞는 음식을 알아내시고 나쁜 음식을 먹지 않게 알려주시니, 여러분들도 꼭 한번 들어보시기 바랍니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #66 -->
   <div id="detailModal66" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4986,6 +5051,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard67'), cat: '다이어트' },
       { el: document.getElementById('reviewCard66'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard65'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard64'), cat: '척추관절' },
