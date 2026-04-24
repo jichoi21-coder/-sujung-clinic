@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #66 -->
+        <div id="reviewCard66" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal66')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">편두통·복통·설사</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">새벽 혈관 막힘·편두통·과민성대장 — 3주 체질 맞춤치료로 혈압 140→정상, 복통·설사·편두통 거의 소실</h3>
+          <p class="review-story">
+            새벽 두통·뒷목 뻣뻣함, 혈관내과·신경외과 약도 무효. 하루 4~5회 화장실, 장거리 이동 시 물도 못 마심. 3주 체질침·한약·식단관리로 혈압 140→정상, 편두통 거의 소실, 복통·설사 개선, 지방↓ 근육량↑.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 변*진 (만 45세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #65 -->
         <div id="reviewCard65" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal65')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2617,6 +2638,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #66 -->
+  <div id="detailModal66" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal66')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#편두통 #복통 #설사</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 6월</span>
+      </div>
+      <h2 class="review-detail-title">새벽 혈관 막힘·편두통·과민성대장 — 3주 체질 맞춤치료로 혈압 140→정상, 복통·설사·편두통 거의 소실</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-66-byunyeojin-p1.jpg" alt="변*진 편두통·복통·설사 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>변*진</strong>&nbsp;(만 45세, 여성)&nbsp;·&nbsp;작성일 2024년 6월 28일
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>평소에 심한 피로감으로 잠에 들었다가 새벽에 머리 뒤쪽 혈관이 꽉 막히는 느낌과 함께 엄청난 두통이 발생했습니다. 이후 혈관내과·신경외과를 다니며 처방받고 약을 먹었지만 효과가 없었고, 소화불량에 대장이 예민하여 복통과 설사가 잦았습니다. 하루에도 화장실을 4~5번씩 다니고 대중교통을 이용할 때 갑자기 배가 아픈 경우가 많아 장거리 이동 시 물조차 마시지 못했습니다. 여기에 식사량이 많지 않은데도 살이 찌고 몸이 늘 부어올라 힘들었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>새벽에 엄청난 두통, 머리가 꽉 막힌 느낌, 뒷목이 뻣뻣해지고 고개 돌리는 것도 힘들어서 급히 수정한의원에 내방하게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>약 3주 정도 치료를 받고 있는데 정확한 체질 진단과 환자에게 맞는 치료(침·약물·한약·식단관리)를 전반적으로 해주셔서 140이 넘던 혈압이 정상 수치가 되었고, 뒷목과 편두통이 거의 느끼지 못할 정도로 개선되었습니다. 동반으로 아팠던 허리도 좋아졌고, 몸의 구성 성분도 좋아졌는데 지방이 많이 빠지고 근육량이 증가했습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질 변화</h4>
+        <p>① 환자 개인의 상태·원인을 정확히 파악하여 치료와 처방을 하신다는 점 ② 환자의 증상을 아주 자세히 들으시고, 매일 증세를 확인하여 치료해주신다는 점 ③ 나빠진 체질을 정상화시키기 위해 식단 관리를 해주시는 점 ④ 혈압·편두통 증세가 거의 사라지고 깊은 잠을 자게 된 점 ⑤ 만성소화불량으로 인한 과민성대장증후군으로 복통·설사가 잦았는데 개선된 점.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>빠르게 나를 자세히 관심 있게 분석하고 원인을 찾고 치료할 수 있는 병원입니다. 매일 환자의 증상을 확인하여 맞춤 치료를 해주시고 친절하십니다. 저의 경우는 3주 만에 많은 효과가 있었습니다. 아픈 것을 감추지 마시고 꼭 수정한의원에 가시기 바랍니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #65 -->
   <div id="detailModal65" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4921,6 +4986,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard66'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard65'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard64'), cat: '척추관절' },
       { el: document.getElementById('reviewCard63'), cat: '척추관절' },
