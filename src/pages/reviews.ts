@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #61 -->
+        <div id="reviewCard61" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal61')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">돌발성난청·이명·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">MRI 정상인데 소리 안 들리던 돌발성난청·1년 두통·이명 — 경추 추나·약침·체질한약 3주로 먹먹함 사라지고 잘 들려요</h3>
+          <p class="review-story">
+            6월 14일 기상 후 왼쪽 귀 먹먹·난청, 이비인후과 스테로이드도 효과 없음. 수정한의원서 경추 1-2번 원인 진단, 추나·약침·체질한약 3주 후 먹먹함 소실, 1년 된 두통·이명도 거의 사라졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> BBNE2 (남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #60 -->
         <div id="reviewCard60" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal60')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2512,6 +2533,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #61 -->
+  <div id="detailModal61" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal61')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#돌발성난청 #이명 #두통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 7월</span>
+      </div>
+      <h2 class="review-detail-title">MRI 정상인데 소리 안 들리던 돌발성난청·1년 두통·이명 — 경추 추나·약침·체질한약 3주로 먹먹함 사라지고 잘 들려요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-61-bbne2-p1.jpg" alt="BBNE2 돌발성난청·이명·두통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>BBNE2</strong>&nbsp;(남성)&nbsp;·&nbsp;작성일 2024년 7월 12일 &nbsp;·&nbsp;네이버 예약 이용후기 · 1번째 방문
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>6월 14일 아침에 일어났는데 두통과 함께 왼쪽 귀가 먹먹하고 소리가 안 들렸습니다. 괜찮아지겠지 하다가 6월 17일 이비인후과에 가니 돌발성난청이라고 스테로이드를 먹기 시작했습니다. 약을 먹어도 낫지 않고 MRI에는 이상이 없는데 소리는 들리지 않고, 장애로 남게 될 것 같아 너무 두려웠습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>돌발성난청을 검색하다가 수정한의원을 찾게 되었습니다. 돌발성난청이 왜 생겨났는지 자세히 설명해주시고, 통증이 있는 부위만 치료하는 것이 아니라 발병의 원인부터 치료해주시니 좋았습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>X-RAY를 보시고 경추 1-2번 추나치료와 약침·체질한약을 3주간 복용하고, 먹먹했던 증상이 사라지고 잘 들립니다. 1년 정도 고생했던 송곳으로 찌르는 듯 쓰라린 두통과 이명도 거의 사라졌습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 한의원에 전하고 싶은 말</h4>
+        <p>한의원은 처음인데 수정한의원에서 치료받은 후 한의원에 대한 신뢰가 생겼습니다. 발병 원인부터 찾아 근본 치료를 해주시는 점이 인상적이었습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #60 -->
   <div id="detailModal60" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4612,6 +4673,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard61'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard60'), cat: '피부' },
       { el: document.getElementById('reviewCard59'), cat: '척추관절' },
       { el: document.getElementById('reviewCard58'), cat: '뇌신경' },
