@@ -537,6 +537,379 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #56 -->
+        <div id="reviewCard56" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal56')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">아토피</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">몇 년째 피부과 다녀도 변화 없던 아토피 — 한약으로 눈에 보이는 피부 개선, 발작 범위·빈도가 확 줄었어요</h3>
+          <p class="review-story">
+            피부과 몇 년, 붉은 발작·가려움·다리 통증으로 일상 지장. 어머니 권유로 한약 시작 후 눈에 띄는 피부 개선, 발작 줄고 체질식교육으로 생활 습관까지 교정.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*상 (만 27세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #55 -->
+        <div id="reviewCard55" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal55')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎인대파열</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">전동차에 치여 주저앉아 걷지도 못하던 무릎인대파열 — 체질침·약침·매선으로 어지럼증까지 함께 낫고 혼자 걸어다녀요</h3>
+          <p class="review-story">
+            건널목에서 장애인 전동차에 무릎을 치여 그 자리에 주저앉아 이동 불가. 어지럼증 치료 중 내원해 바로 침 시술. 꾸준한 체질침·약침·매선으로 어지럼증·무릎인대 동시 회복, 혼자 걸어다닐 수 있게 됨.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 권*자 (만 79세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #54 -->
+        <div id="reviewCard54" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal54')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">성대결절</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">5개월 쉰목소리·성대결절 수술 권유 — 목양체질 진단 후 한약·약침·온열 3개월 집중치료로 수술 없이 완치됐어요</h3>
+          <p class="review-story">
+            영업직에 쉰목소리 5개월, 이비인후과 2곳서 말 금지·수술 권유. 목양체질 감별 후 한약+약침+온열 매일 출근하듯 치료. 체질식 병행 3개월 만에 수술 없이 완치.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 최*숙 (만 47세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #53 -->
+        <div id="reviewCard53" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal53')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">백혈병·항생제불응폐렴</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">항생제도 안 듣는 폐렴으로 사망선고 받았는데 — 긴급 한약 이틀 만에 증상 완화, 폐사진도 좋아지는 기적이 일어났어요</h3>
+          <p class="review-story">
+            만성골수성백혈병 환자. 40도 고열·가슴통증·피가래로 성모병원 입원, 항생제 불응 폐렴으로 사망선고. 원장님 긴급 한약 이틀 후 증상 완화·폐사진 호전. 하루 10봉지 이상 복용으로 기적 같은 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*연 (만 47세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #52 -->
+        <div id="reviewCard52" class="review-card review-card-handwritten" data-cat="대상포진" onclick="openReviewModal('detailModal52')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.10</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">동네 병원 약도 안 듣던 대상포진 — 체질한약·약침·파동치료 10일 만에 통증 줄고, 한 달 만에 완치됐어요</h3>
+          <p class="review-story">
+            운동 과부하로 면역 저하 → 대상포진 발병. 가슴·어깨 찌르는 통증에 밤잠 설침. 동네 병원 약 효과 없음. 체질한약+약침+파동치료 10일부터 통증 감소, 한 달 후 완치.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*순 (만 64세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #51 -->
+        <div id="reviewCard51" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal51')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">후관절증후군·안검하수</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">주사 맞아도 반복되던 후관절 허리통증·처진 눈썹 — 한약·추나·매선·약침으로 통증 소멸, 눈곱·진물도 완전히 사라졌어요</h3>
+          <p class="review-story">
+            2년간 반복 허리 주사·안약도 차도 없는 눈썹 처짐. 체질침+추나+한약으로 허리 통증 소멸, 눈썹 매선+약침으로 혈액순환 개선 → 눈곱·진물 소실, 내성발톱까지 개선.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*순 (만 72세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #50 -->
+        <div id="reviewCard50" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal50')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">척추전방전위증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">수술 불가·주사도 무효한 척추전방전위증 — 한 달 체질침·약침·매선·추나로 통증 소멸, 걸음걸이도 빨라졌어요</h3>
+          <p class="review-story">
+            척추뼈 밀림으로 신경 압박, 수술 불가 판정·주사 2회 효과 없음. 17년 전 완치 경험 떠올려 재방문. 한 달 매일 치료 후 통증 소멸·보행 정상화, 걸음도 빨라짐.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 우*임 (만 74세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #49 -->
+        <div id="reviewCard49" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal49')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">협착증·다리저림·발바닥</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">주사도 소용없던 양쪽 다리저림·발바닥 둔함 — 체질침·한약·추나·약침으로 저림 소멸, 쉬지 않고 한번에 걸어와요</h3>
+          <p class="review-story">
+            양쪽 다리 저림·당김·발바닥 둔함, 통증클리닉 주사도 효과 없음. 토양체질 감별 후 체질침·한약·추나·약침 병행. 저림·당김 완전 소실, 무좀도 치유. 5번 쉬며 왔던 길을 지금은 한번에 걸어옴.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 왕*련 (만 76세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #48 -->
+        <div id="reviewCard48" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal48')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">코로나후유증·고열·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">해열제도 안 듣는 코로나 불명열 한 달 — 첫 약침 당일 열 소멸, 두 번째에 몸살기운까지 완전히 사라졌어요</h3>
+          <p class="review-story">
+            격리 해제 후에도 매일 38도 고열·몸살·두통 지속. 내과·성모병원 감염내과서도 원인불명 코로나 후유증 판정. 첫 체질침+약침 당일부터 열 소멸, 2회차에 몸살기운 완전 소실.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 오*란 (만 45세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #47 -->
+        <div id="reviewCard47" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal47')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두드러기·여드름</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">두드러기로 너무 가려워서 잠도 못자고 스트레스를 많이 받았어요 — 한약 꾸준히 먹으니 양약도 끊고 거의 안 나요, 여드름도 좋아졌어요</h3>
+          <p class="review-story">
+            운동 후·취침 전 두드러기, 알러지 검사 정상, 양약 복용 중. 수정한의원 체질 한약 후 빈도 급감, 양약 중단. 여드름도 개선. 두드러기 스트레스에서 해방돼 매우 기쁨.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*준 (만 19세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #46 -->
+        <div id="reviewCard46" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal46')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두통·이명·목잠김</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">잦은 출장·음주 후 두통·이명·목잠김 악화 — 한약·약침 5~6회 만에 두통 거의 소멸, 목잠김 완전히 없어졌어요</h3>
+          <p class="review-story">
+            MRI 찍어도 악화일로. 경추 1·2번 틀어짐 진단 후 한약·약침 시작. 5~6회부터 두통 거의 소멸, 목잠김 완전 소실. 인천에서 1시간 20분 거리를 즐거운 마음으로 다닌 보람을 느낌.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*기 (만 62세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <div id="reviewCard45" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal45')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎인대파열</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">무릎인대파열 수술 권유받았지만 — 체질침·태반약침·매선 한 달 만에 지팡이 없이 걷고 계단도 성큼성큼</h3>
+          <p class="review-story">
+            응급실 인대파열 진단 후 수술 거부. 수정한의원 체질침·체질한약·태반약침·매선 병행 한 달 만에 지팡이 없이 보행, 꾸준한 치료로 계단 오르내리기까지 완전 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*영 (만 60세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <div id="reviewCard44" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal44')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">메니에르·어지럼증·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">2년간 메니에르로 매일 어지럼·새벽 두통 — 약침·한약으로 깊은 수면 되찾고 아침이 개운해졌어요</h3>
+          <p class="review-story">
+            메니에르 진단 후 양약 복용 중 간수치·혈압·당뇨 이상까지. 체질치료 후 2주부터 두통·울렁거림 잦아들고 만성변비도 해소. 활동 반경 넓어지고 대인관계·여행 계획도 다시 시작.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 최*영 (만 52세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <div id="reviewCard43" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal43')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">우울증·불면·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">차라리 죽는 게 편하다 생각했는데 — 체질치료로 살아갈 기본 힘 되찾고 손발 따뜻, 두통·불면 모두 해결됐어요</h3>
+          <p class="review-story">
+            추위에 약하고 두통·불면·우울로 생활이 힘들었던 만 30세 여성. 수정한의원 체질 진단 후 약침·체질침·체질식으로 혈액순환 개선, 수면 정상화, 두통약 거의 끊고 살 의지 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*늘 (만 30세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <div id="reviewCard42" class="review-card review-card-handwritten" data-cat="천식" onclick="openReviewModal('detailModal42')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag review-cat-tag-special">바이러스성폐렴·급성폐섬유화</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">코로나 후 바이러스성 폐렴·급성 폐섬유화 위기 — 한방·양방 협진과 매일 걸음 수 늘리기로 2달 만에 완쾌</h3>
+          <p class="review-story">
+            만성 메니에르·공황장애 치료 중 코로나 후유증으로 바이러스성 폐렴·급성 폐섬유화 진단. 체질침·파동치료·한약 집중치료와 걸음 수 100보 도전으로 2달 만에 정상 폐 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*애 (여, 치료 성공 수기)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <div id="reviewCard41" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal41')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">퇴행성무릎관절염 4기</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">인공관절 수술 권유받은 퇴행성관절염 4기 — 백일 한약·매선·약침 후 성큼성큼 걷고 하루종일 서도 안 아파요</h3>
+          <p class="review-story">
+            정형외과에서 인공관절 수술 권유, 수술 거부 후 수정한의원 방문. 백일 한약·체질 침·매선·약침 8회로 계단 오르내리기 자유롭고 다리 통증 완전 소실. 너무 행복합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*숙 (만 65세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <div id="reviewCard40" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal40')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">요실금·여성질환</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2023.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">5개월 매선치료로 요실금 완전 해결 — 패드 없이 외출하고 심적 부담도 사라졌어요</h3>
+          <p class="review-story">
+            어깨통증 치료 중 말 못할 고민이던 요실금을 상담, 매선치료 5개월 만에 완전 해소. 체질·약침·한약 병행으로 몸 전반이 좋아지고 심적 어려움도 해결되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 윤*숙 (만 59세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <div id="reviewCard39" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal39')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎반월상연골파열</span>
+            <span class="review-handwritten-badge"><i class="fas fa-star"></i> 네이버 후기</span>
+            <span class="review-date">2023.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">무릎 반월상연골파열·허리협착증 — 수술 대신 체질치료·약침·매선으로 통증 없이 건강을 되찾았어요</h3>
+          <p class="review-story">
+            병원 수술 권고를 받았지만 3개월 수정한의원 치료로 체질치료·추나·약침·매선 병행, 계단 오르내림 통증 해소. 항암·방사선 치료 후 면역 저하와 허리 통증도 꾸준한 한방 치료로 완쾌되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*숙 (여, 네이버)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- ===== 자필후기 카드 #1 — 고은주 (특설클리닉·궤양성대장염) ===== -->
         <div id="reviewCard01" class="review-card review-card-handwritten" data-cat="대장염" onclick="openReviewModal('detailModal01')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -1287,379 +1660,6 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           </p>
           <div class="review-card-footer">
             <span class="review-author"><i class="fas fa-user"></i> 김*태 (만 58세, 남)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #56 -->
-        <div id="reviewCard56" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal56')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">아토피</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2024.07</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">몇 년째 피부과 다녀도 변화 없던 아토피 — 한약으로 눈에 보이는 피부 개선, 발작 범위·빈도가 확 줄었어요</h3>
-          <p class="review-story">
-            피부과 몇 년, 붉은 발작·가려움·다리 통증으로 일상 지장. 어머니 권유로 한약 시작 후 눈에 띄는 피부 개선, 발작 줄고 체질식교육으로 생활 습관까지 교정.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 김*상 (만 27세, 남)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #55 -->
-        <div id="reviewCard55" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal55')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">무릎인대파열</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2024.03</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">전동차에 치여 주저앉아 걷지도 못하던 무릎인대파열 — 체질침·약침·매선으로 어지럼증까지 함께 낫고 혼자 걸어다녀요</h3>
-          <p class="review-story">
-            건널목에서 장애인 전동차에 무릎을 치여 그 자리에 주저앉아 이동 불가. 어지럼증 치료 중 내원해 바로 침 시술. 꾸준한 체질침·약침·매선으로 어지럼증·무릎인대 동시 회복, 혼자 걸어다닐 수 있게 됨.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 권*자 (만 79세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #54 -->
-        <div id="reviewCard54" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal54')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">성대결절</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.12</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">5개월 쉰목소리·성대결절 수술 권유 — 목양체질 진단 후 한약·약침·온열 3개월 집중치료로 수술 없이 완치됐어요</h3>
-          <p class="review-story">
-            영업직에 쉰목소리 5개월, 이비인후과 2곳서 말 금지·수술 권유. 목양체질 감별 후 한약+약침+온열 매일 출근하듯 치료. 체질식 병행 3개월 만에 수술 없이 완치.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 최*숙 (만 47세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #53 -->
-        <div id="reviewCard53" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal53')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">백혈병·항생제불응폐렴</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.12</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">항생제도 안 듣는 폐렴으로 사망선고 받았는데 — 긴급 한약 이틀 만에 증상 완화, 폐사진도 좋아지는 기적이 일어났어요</h3>
-          <p class="review-story">
-            만성골수성백혈병 환자. 40도 고열·가슴통증·피가래로 성모병원 입원, 항생제 불응 폐렴으로 사망선고. 원장님 긴급 한약 이틀 후 증상 완화·폐사진 호전. 하루 10봉지 이상 복용으로 기적 같은 회복.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 이*연 (만 47세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #52 -->
-        <div id="reviewCard52" class="review-card review-card-handwritten" data-cat="대상포진" onclick="openReviewModal('detailModal52')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
-            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.10</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">동네 병원 약도 안 듣던 대상포진 — 체질한약·약침·파동치료 10일 만에 통증 줄고, 한 달 만에 완치됐어요</h3>
-          <p class="review-story">
-            운동 과부하로 면역 저하 → 대상포진 발병. 가슴·어깨 찌르는 통증에 밤잠 설침. 동네 병원 약 효과 없음. 체질한약+약침+파동치료 10일부터 통증 감소, 한 달 후 완치.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 이*순 (만 64세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #51 -->
-        <div id="reviewCard51" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal51')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">후관절증후군·안검하수</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.11</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">주사 맞아도 반복되던 후관절 허리통증·처진 눈썹 — 한약·추나·매선·약침으로 통증 소멸, 눈곱·진물도 완전히 사라졌어요</h3>
-          <p class="review-story">
-            2년간 반복 허리 주사·안약도 차도 없는 눈썹 처짐. 체질침+추나+한약으로 허리 통증 소멸, 눈썹 매선+약침으로 혈액순환 개선 → 눈곱·진물 소실, 내성발톱까지 개선.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 이*순 (만 72세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #50 -->
-        <div id="reviewCard50" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal50')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">척추전방전위증</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.09</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">수술 불가·주사도 무효한 척추전방전위증 — 한 달 체질침·약침·매선·추나로 통증 소멸, 걸음걸이도 빨라졌어요</h3>
-          <p class="review-story">
-            척추뼈 밀림으로 신경 압박, 수술 불가 판정·주사 2회 효과 없음. 17년 전 완치 경험 떠올려 재방문. 한 달 매일 치료 후 통증 소멸·보행 정상화, 걸음도 빨라짐.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 우*임 (만 74세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #49 -->
-        <div id="reviewCard49" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal49')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">협착증·다리저림·발바닥</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.09</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">주사도 소용없던 양쪽 다리저림·발바닥 둔함 — 체질침·한약·추나·약침으로 저림 소멸, 쉬지 않고 한번에 걸어와요</h3>
-          <p class="review-story">
-            양쪽 다리 저림·당김·발바닥 둔함, 통증클리닉 주사도 효과 없음. 토양체질 감별 후 체질침·한약·추나·약침 병행. 저림·당김 완전 소실, 무좀도 치유. 5번 쉬며 왔던 길을 지금은 한번에 걸어옴.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 왕*련 (만 76세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #48 -->
-        <div id="reviewCard48" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal48')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">코로나후유증·고열·두통</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.09</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">해열제도 안 듣는 코로나 불명열 한 달 — 첫 약침 당일 열 소멸, 두 번째에 몸살기운까지 완전히 사라졌어요</h3>
-          <p class="review-story">
-            격리 해제 후에도 매일 38도 고열·몸살·두통 지속. 내과·성모병원 감염내과서도 원인불명 코로나 후유증 판정. 첫 체질침+약침 당일부터 열 소멸, 2회차에 몸살기운 완전 소실.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 오*란 (만 45세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #47 -->
-        <div id="reviewCard47" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal47')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">두드러기·여드름</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.11</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">두드러기로 너무 가려워서 잠도 못자고 스트레스를 많이 받았어요 — 한약 꾸준히 먹으니 양약도 끊고 거의 안 나요, 여드름도 좋아졌어요</h3>
-          <p class="review-story">
-            운동 후·취침 전 두드러기, 알러지 검사 정상, 양약 복용 중. 수정한의원 체질 한약 후 빈도 급감, 양약 중단. 여드름도 개선. 두드러기 스트레스에서 해방돼 매우 기쁨.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 김*준 (만 19세, 남)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <!-- 후기 카드 #46 -->
-        <div id="reviewCard46" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal46')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">두통·이명·목잠김</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.11</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">잦은 출장·음주 후 두통·이명·목잠김 악화 — 한약·약침 5~6회 만에 두통 거의 소멸, 목잠김 완전히 없어졌어요</h3>
-          <p class="review-story">
-            MRI 찍어도 악화일로. 경추 1·2번 틀어짐 진단 후 한약·약침 시작. 5~6회부터 두통 거의 소멸, 목잠김 완전 소실. 인천에서 1시간 20분 거리를 즐거운 마음으로 다닌 보람을 느낌.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 김*기 (만 62세, 남)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <div id="reviewCard45" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal45')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">무릎인대파열</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.09</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">무릎인대파열 수술 권유받았지만 — 체질침·태반약침·매선 한 달 만에 지팡이 없이 걷고 계단도 성큼성큼</h3>
-          <p class="review-story">
-            응급실 인대파열 진단 후 수술 거부. 수정한의원 체질침·체질한약·태반약침·매선 병행 한 달 만에 지팡이 없이 보행, 꾸준한 치료로 계단 오르내리기까지 완전 회복.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 김*영 (만 60세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <div id="reviewCard44" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal44')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">메니에르·어지럼증·두통</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.06</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">2년간 메니에르로 매일 어지럼·새벽 두통 — 약침·한약으로 깊은 수면 되찾고 아침이 개운해졌어요</h3>
-          <p class="review-story">
-            메니에르 진단 후 양약 복용 중 간수치·혈압·당뇨 이상까지. 체질치료 후 2주부터 두통·울렁거림 잦아들고 만성변비도 해소. 활동 반경 넓어지고 대인관계·여행 계획도 다시 시작.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 최*영 (만 52세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <div id="reviewCard43" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal43')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">우울증·불면·두통</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.05</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">차라리 죽는 게 편하다 생각했는데 — 체질치료로 살아갈 기본 힘 되찾고 손발 따뜻, 두통·불면 모두 해결됐어요</h3>
-          <p class="review-story">
-            추위에 약하고 두통·불면·우울로 생활이 힘들었던 만 30세 여성. 수정한의원 체질 진단 후 약침·체질침·체질식으로 혈액순환 개선, 수면 정상화, 두통약 거의 끊고 살 의지 회복.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 이*늘 (만 30세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <div id="reviewCard42" class="review-card review-card-handwritten" data-cat="천식" onclick="openReviewModal('detailModal42')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag review-cat-tag-special">바이러스성폐렴·급성폐섬유화</span>
-            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.03</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">코로나 후 바이러스성 폐렴·급성 폐섬유화 위기 — 한방·양방 협진과 매일 걸음 수 늘리기로 2달 만에 완쾌</h3>
-          <p class="review-story">
-            만성 메니에르·공황장애 치료 중 코로나 후유증으로 바이러스성 폐렴·급성 폐섬유화 진단. 체질침·파동치료·한약 집중치료와 걸음 수 100보 도전으로 2달 만에 정상 폐 회복.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 이*애 (여, 치료 성공 수기)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <div id="reviewCard41" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal41')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">퇴행성무릎관절염 4기</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.04</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">인공관절 수술 권유받은 퇴행성관절염 4기 — 백일 한약·매선·약침 후 성큼성큼 걷고 하루종일 서도 안 아파요</h3>
-          <p class="review-story">
-            정형외과에서 인공관절 수술 권유, 수술 거부 후 수정한의원 방문. 백일 한약·체질 침·매선·약침 8회로 계단 오르내리기 자유롭고 다리 통증 완전 소실. 너무 행복합니다.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 이*숙 (만 65세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <div id="reviewCard40" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal40')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">요실금·여성질환</span>
-            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2023.08</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">5개월 매선치료로 요실금 완전 해결 — 패드 없이 외출하고 심적 부담도 사라졌어요</h3>
-          <p class="review-story">
-            어깨통증 치료 중 말 못할 고민이던 요실금을 상담, 매선치료 5개월 만에 완전 해소. 체질·약침·한약 병행으로 몸 전반이 좋아지고 심적 어려움도 해결되었습니다.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 윤*숙 (만 59세, 여)</span>
-            <div class="review-stars">
-              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-            </div>
-          </div>
-          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
-        </div>
-
-        <div id="reviewCard39" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal39')" style="cursor:pointer;">
-          <div class="review-card-header">
-            <span class="review-cat-tag">무릎반월상연골파열</span>
-            <span class="review-handwritten-badge"><i class="fas fa-star"></i> 네이버 후기</span>
-            <span class="review-date">2023.05</span>
-          </div>
-          <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">무릎 반월상연골파열·허리협착증 — 수술 대신 체질치료·약침·매선으로 통증 없이 건강을 되찾았어요</h3>
-          <p class="review-story">
-            병원 수술 권고를 받았지만 3개월 수정한의원 치료로 체질치료·추나·약침·매선 병행, 계단 오르내림 통증 해소. 항암·방사선 치료 후 면역 저하와 허리 통증도 꾸준한 한방 치료로 완쾌되었습니다.
-          </p>
-          <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 김*숙 (여, 네이버)</span>
             <div class="review-stars">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
