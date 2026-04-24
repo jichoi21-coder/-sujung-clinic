@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #58 -->
+        <div id="reviewCard58" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal58')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">돌발성난청·이명</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">병원 3곳 전전해도 대답 없던 돌발성난청·이명 — 한약·체질침으로 이명 소리 사라지고 조금씩 좋아지고 있어요</h3>
+          <p class="review-story">
+            요양병원 퇴원 후 돌발성 난청·이명 발생. 이비인후과·신경과 3곳 헤도 호전 없음. 목발 짚고 횡단보도 앞에서 수정한의원 내원. 한약과 체질침으로 이명 소리 사라지고 조금씩 회복 중.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*애 (만 67세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #57 -->
         <div id="reviewCard57" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal57')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2449,6 +2470,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #58 -->
+  <div id="detailModal58" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal58')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#돌발성난청 #이명</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 7월</span>
+      </div>
+      <h2 class="review-detail-title">병원 3곳 전전해도 대답 없던 돌발성난청·이명 — 한약·체질침으로 이명 소리 사라지고 조금씩 좋아지고 있어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-58-kimyoungae-p1.jpg" alt="김*애 돌발성난청·이명 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>김*애</strong>&nbsp;(만 67세, 여성)&nbsp;·&nbsp;작성일 2024년 7월 6일
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>2023년 5월 화장실에서 미끄러져 대퇴부(좌측) 골절과 허리 3·4번 골절로 수술 후 1년간 요양병원 생활을 했습니다. 2024년 3월 퇴원 후 어느 날 귀에서 환풍기 도는 소리가 나기 시작했습니다. 이비인후과 3곳, 신경과(운정·파주)를 방문했으나 호전이 없어 죽을 것만 같은 답답함이 이어졌습니다. 돌발성 난청으로 주파수에 민감해져 전화통화·네비게이션소리·후드소리만 들어도 귀가 아팠으며, 면역 저하로 시력까지 떨어져 안경을 쓰게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>목발을 짚고 어슬대다 횡단보도 앞에서 수정한의원을 우연히 내원하게 되었습니다. 극심한 구타비음으로 수면제 없이는 잠을 못 잘 정도로 심한 불면증도 있었습니다. 원장님께서 처방해주신 한약 복용과 침으로 이명소리는 없어지고, 꾸준한 침치료에 귀아픔도 없어질 것이라 믿고 있습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>신경쇠약·이명 치료로 증상들이 호전되었습니다. 원장님의 체질치료와 자세한 상담으로 조금씩 조금씩 좋아지고 있음을 느낍니다. 면역이 떨어져 몸의 근력이 다 떨어졌던 상태도 차츰 회복되고 있습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질 변화</h4>
+        <p>체질을 알 수 있어서 좋았고, 음식에서 좋은 것과 나쁜 것을 알 수 있어 더욱 좋았습니다. 돔봉과 온열치료로 치료 효과가 훌륭하며, 겨울에는 침 효과가 더욱 높을 것으로 믿습니다. 지인들에게 많이 권유하고 있습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>음악소리에 민감하여 치료 중 음악 멜로디를 조용한 것으로 바꾸는 것도 좋지 않을까 생각합니다. 요즈음 이명으로 고통받는 분들이 많습니다. 저는 수정한의원에서 치료하실 것을 권유하고 있습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #57 -->
   <div id="detailModal57" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4425,6 +4490,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard58'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard57'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard56'), cat: '피부' },
       { el: document.getElementById('reviewCard55'), cat: '척추관절' },
