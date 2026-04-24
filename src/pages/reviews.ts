@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #64 -->
+        <div id="reviewCard64" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal64')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">협착증·수술후유증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">8년간 복대 없이 못 걷던 허리수술 후유증 — 매선 9회로 통증 50% 이상 감소, 8년 만에 처음 복대 없이 걸어요</h3>
+          <p class="review-story">
+            허리수술 후 복대 없이 보행 불가, 수술 3년 후 낙상 골절로 더 악화. 8년간 하루도 복대 못 뗐음. 체질침·체질한약·약침·매선 9회 후 허리 힘 생기고 통증 50%↓, 8년 만에 처음 복대 없이 걷습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> nam**** (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #63 -->
         <div id="reviewCard63" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal63')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2575,6 +2596,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #64 -->
+  <div id="detailModal64" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal64')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">척추관절</span>
+        <span class="review-detail-tag">#협착증 #수술후유증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 8월</span>
+      </div>
+      <h2 class="review-detail-title">8년간 복대 없이 못 걷던 허리수술 후유증 — 매선 9회로 통증 50% 이상 감소, 8년 만에 처음 복대 없이 걸어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-64-nam-p1.jpg" alt="nam**** 협착증·수술후유증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>nam****</strong>&nbsp;(여성)&nbsp;·&nbsp;작성일 2024년 8월 13일 &nbsp;·&nbsp;네이버 예약 이용후기 · 1번째 방문
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>8년 전 허리수술을 하고 그 후로 복대를 안 하면 걸을 수 없었어요. 허리 수술 후 3년이 지나 층계에서 넘어져 허리가 골절돼 병원에서 쇠를 박고 대소변을 받아내고 허리가 더 나빠져서, 지금까지 하루도 복대 없이는 움직일 수가 없었어요.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>친구 소개로 난생 처음 한의원을 오게 되었어요. 체질을 알고 체질식도 하고, 체질침과 체질한약도 먹고, 약침과 매선치료를 받았어요.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>매선치료를 9번째 받고 허리에 힘이 들어가고 통증도 50% 이상 좋아졌어요. 8년 만에 처음으로 복대 없이 걸어요. 복대를 안 해서 편하고 좋아요. 이 정도로 안 아프고 평생 살았으면 좋겠어요.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 한의원에 전하고 싶은 말</h4>
+        <p>허리를 고칠 수 있을 거라 생각도 못했는데 좋아지는 걸 느끼니까, 수술하기 전에 와볼 걸 하는 생각이 들어요. 다른 분들은 무조건 수술하지 말고 한의원 치료를 먼저 받아보고 결정하셨으면 좋겠어요.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #63 -->
   <div id="detailModal63" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4795,6 +4856,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard64'), cat: '척추관절' },
       { el: document.getElementById('reviewCard63'), cat: '척추관절' },
       { el: document.getElementById('reviewCard62'), cat: '면역대사' },
       { el: document.getElementById('reviewCard61'), cat: '뇌신경' },
