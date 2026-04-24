@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #68 -->
+        <div id="reviewCard68" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal68')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">이명·난청</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">이비인후과도 답 없던 이명·난청·고막 먹먹함 — 약침 3회로 완치, 시기를 놓치지 않은 게 정말 다행이에요</h3>
+          <p class="review-story">
+            금식기도 후 체력 저하로 귀 먹먹함·이명 발생. 이비인후과 별다른 치료법 없음. 수정한의원 간판 보고 내원, 약침 3회 치료 후 증상 거의 소실, 완치. 이명·난청은 시기가 중요하다고 강조합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 서*남 (만 56세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #67 -->
         <div id="reviewCard67" class="review-card review-card-handwritten" data-cat="다이어트" onclick="openReviewModal('detailModal67')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2659,6 +2680,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #68 -->
+  <div id="detailModal68" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal68')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#이명 #난청</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 6월</span>
+      </div>
+      <h2 class="review-detail-title">이비인후과도 답 없던 이명·난청·고막 먹먹함 — 약침 3회로 완치, 시기를 놓치지 않은 게 정말 다행이에요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-68-seoginam-p1.jpg" alt="서*남 이명·난청 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>서*남</strong>&nbsp;(만 56세, 여성)&nbsp;·&nbsp;작성일 2024년 6월 3일
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>체력적으로 금식기도로 인하여 많이 떨어져 있는 상황에서 귀에 먹먹한 불편함을 느꼈습니다. 전에 난청 치료도 받았던 터라 걱정이 많이 되었습니다. 집 가까이 수정한의원에서 이명 치료를 한다는 것을 간판을 통해 보고 치료받게 되었는데, 당시 먹먹함과 산 높은 곳에 갔을 때 막힘 증상처럼 고막이 막혔다 뚫렸다 해서 마음으로 걱정이 많이 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>위와 같은 증상으로 치료를 받게 되었습니다. 약침 치료를 3번 받았습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>약침 치료 후 많이 호전되었고, 개인적으로도 체력보강을 위해 잘 먹고 잠을 푹 자려고 병행하여 노력하였습니다. 치료 후 불편한 증상은 거의 없어졌고 정상에 가깝습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>이명치료나 난청치료는 시기가 중요하다고 합니다. 이비인후과에서는 별다른 치료법이 없어서 고민하고 걱정했는데, 약침 한방치료로 완치되었다는 게 너무도 감사한 일입니다. 4개월 전에도 난청으로 힘들었는데 그때도 약침치료로 나았어요. 체력적으로 떨어지지 않게 꾸준히 관리해야겠습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #67 -->
   <div id="detailModal67" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5051,6 +5112,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard68'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard67'), cat: '다이어트' },
       { el: document.getElementById('reviewCard66'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard65'), cat: '뇌신경' },
