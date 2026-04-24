@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #60 -->
+        <div id="reviewCard60" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal60')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">아토피</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">피부과 전전해도 재발하던 고질 아토피 — 금양체질 한약·약침으로 사라지고 1년 넘게 재발 없어요</h3>
+          <p class="review-story">
+            어릴 때부터 팔다리 접히는 부위 아토피, 여름엔 엉덩이 진물·갈라짐. 피부과는 일시 효과뿐 계속 재발. 금양체질 한약·약침으로 아토피 소실, 1년 이상 재발 없음. 체질 음식·생활습관 교정으로 근본적 재발 예방.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> nemeSIS (남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #59 -->
         <div id="reviewCard59" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal59')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2491,6 +2512,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #60 -->
+  <div id="detailModal60" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal60')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">피부·아토피</span>
+        <span class="review-detail-tag">#아토피</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 7월</span>
+      </div>
+      <h2 class="review-detail-title">피부과 전전해도 재발하던 고질 아토피 — 금양체질 한약·약침으로 사라지고 1년 넘게 재발 없어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-60-nemesis-p1.jpg" alt="nemeSIS 아토피 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>nemeSIS</strong>&nbsp;(남성)&nbsp;·&nbsp;작성일 2024년 7월 11일 &nbsp;·&nbsp;네이버 예약 이용후기 · 2번째 방문
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>어릴 때부터 팔다리 접히는 부위에 아토피가 심했고 여름에는 특히 엉덩이에 진물이 나고 가렵고 갈라져서 통증이 심했습니다. 아토피 때문에 피부과를 자주 다녀도 일시적 효과는 있지만 얼마 지나지 않아 재발하여 수정한의원을 찾았습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>금양체질 한약과 약침치료로 아토피가 사라졌고, 1년이 더 넘은 지금도 다시 생기지 않고 있습니다. 최근에 뒷목이 아프고 발가락 부위에 아토피가 생겨서 현재 치료 중입니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 수정한의원의 장점</h4>
+        <p>수정한의원의 가장 큰 장점은 정확한 체질진단을 통해서 지은 한약이라 그런지 피부가 안 좋을 때 하루에 5~6번 먹어도 편한 것입니다. 또한 치료가 끝나도 체질에 맞는 음식을 먹고 생활습관을 고치게 해서 재발이 안 되는 것 같습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>단점은 6개월 이상 오랜 기간 인내심을 갖고 치료를 해야 한다는 점입니다. 그래도 고질병인 아토피를 낫게 해 줘서 감사합니다!</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #59 -->
   <div id="detailModal59" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -4551,6 +4612,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard60'), cat: '피부' },
       { el: document.getElementById('reviewCard59'), cat: '척추관절' },
       { el: document.getElementById('reviewCard58'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard57'), cat: '뇌신경' },
