@@ -540,13 +540,13 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <!-- 후기 카드 #71 -->
         <div id="reviewCard71" class="review-card review-card-handwritten" data-cat="천식" onclick="openReviewModal('detailModal71')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">천식·마이코플라즈마</span>
+            <span class="review-cat-tag">기관지천식</span>
             <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2024.08</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">30년 고질 기관지천식 — 한약·약침·체질침·온열치료로 어떤 자극에도 기침 없이 완전히 좋아졌어요</h3>
+          <h3 class="review-card-title">30년된 고질 기관지천식 — 한약·약침·체질침·온열치료로 어떤 자극에도 기침 없이 완전히 좋아졌어요</h3>
           <p class="review-story">
             30년 전 수영장 후 천식 진단, 반년간 약·주사·흡입기도 실패. 찬바람·온도차마다 기침 지속. 수정한의원 한약·태반약침·체질침·온열치료 병행 후 새벽 발작성 기침 소멸, 완치. "어떠한 자극에도 기침 안해요."
           </p>
@@ -2750,13 +2750,13 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal71')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">천식·마이코플라즈마</span>
+        <span class="review-cat-tag">기관지천식</span>
         <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
         <span class="review-detail-tag">#기관지천식</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2024년 8월</span>
       </div>
-      <h2 class="review-detail-title">30년 고질 기관지천식 — 한약·약침·체질침·온열치료로 어떤 자극에도 기침 없이 완전히 좋아졌어요</h2>
+      <h2 class="review-detail-title">30년된 고질 기관지천식 — 한약·약침·체질침·온열치료로 어떤 자극에도 기침 없이 완전히 좋아졌어요</h2>
       <div class="review-detail-image-wrap">
         <img src="/static/reviews/review-71-anoknam-p1.jpg" alt="안*남 기관지천식 자필후기" class="review-detail-image" loading="lazy">
       </div>
