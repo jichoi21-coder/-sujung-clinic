@@ -86,18 +86,9 @@ app.get('/blog/:slug', async (c) => {
 
 // ── 치료후기 (로그인 게이트) ────────────────────────────────────
 app.get('/reviews', (c) => {
-  const cookie = c.req.header('cookie') || ''
-  const sessionMatch = cookie.match(/review_session=([^;]+)/)
-  let isLoggedIn = false
-  let user: { name: string; provider: string } | undefined
-
-  if (sessionMatch) {
-    const parsed = decodeSession(sessionMatch[1])
-    if (parsed?.name && parsed?.provider) {
-      isLoggedIn = true
-      user = parsed
-    }
-  }
+  // 임시: 로그인 없이 후기 목록 바로 표시 (작업 완료 후 원복 예정)
+  const isLoggedIn = true
+  const user = { name: '방문자', provider: 'guest' }
   return c.html(reviewsPage(isLoggedIn, user))
 })
 
