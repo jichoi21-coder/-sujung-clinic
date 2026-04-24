@@ -537,6 +537,48 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #70 -->
+        <div id="reviewCard70" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal70')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">폐쇄공포증·불면증·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">25년 겨울도 맨발·손발 열감·불면증·폐쇄공포증 — 한약으로 평생 못 고칠 줄 알았던 모든 증상이 편해졌어요</h3>
+          <p class="review-story">
+            25년 겨울도 맨발, 손발 끝·발바닥 열감·가려움, 불면, 두통, 어깨통증, 위식도염. 심장·위장 열 과다·신장 진액 부족 진단. 한약 복용 후 손발 열감 소실, 수면 개선, 모든 증상 호전. 눈물 날 만큼 감사합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> unk**** (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #70 -->
+        <div id="reviewCard70" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal70')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">폐쇄공포증·불면증·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">25년간 발바닥 열·손발 가려움 — 한약 치료 후 폐쇄공포·불면·위식도염까지 모든 게 편해졌어요</h3>
+          <p class="review-story">
+            25년째 겨울도 맨발, 손발 끝 열·가려움·발바닥 열로 잠 못 잠. 폐쇄공포증·두통·어깨통증·위식도염까지. 한약 치료 후 모든 증상 해소, 편안한 일상 회복. "평생 못 고칠 병이라 생각했는데 원장님 말씀이 정답이었어요."
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> unk**** (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #69 -->
         <div id="reviewCard69" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal69')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2701,6 +2743,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #70 -->
+  <div id="detailModal70" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal70')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#폐쇄공포증 #불면증 #두통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 11월</span>
+      </div>
+      <h2 class="review-detail-title">25년간 발바닥 열·손발 가려움 — 한약 치료 후 폐쇄공포·불면·위식도염까지 모든 게 편해졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-70-unk-p1.jpg" alt="unk**** 폐쇄공포증·불면증·두통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>unk****</strong>&nbsp;(여성)&nbsp;·&nbsp;2024년 11월 &nbsp;·&nbsp;네이버 예약 이용후기
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>폐쇄공포증과 불면증, 두통, 어깨통증으로 고생하고 손발 끝에 열나고 가렵고 발바닥에 열나서 답답해서 잠도 못 잤습니다. 25년째 겨울에도 맨발로 다녔습니다. 위식도염으로 소화도 안 되고 가스도 많아 속이 따갑고 목에 가래가 걸려 힘들었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>원장님께서 심장과 위장에 열이 많고 신장의 진액이 부족하니 한약을 먹으면 좋아진다고 하셨습니다. 처음에는 반신반의했지만, 지금은 감사하기만 합니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>이제는 모든 게 편해졌습니다. 특히 손발 끝이 열나고 가렵고 발바닥에 열나는 것은 평생 못 고칠 병으로 생각했는데, 원장님 말씀이 정답이었습니다. 감사하고 고마워서 눈물이 납니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 한의원에 전하고 싶은 말</h4>
+        <p>수정한의원은 쾌적하고 원장님의 친절한 치료와 간호사님들의 친절은 다른 병원과 비교될 정도로 친절하십니다. 무조건 선생님의 말씀대로 하시면 확실히 치료된다고 생각합니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #69 -->
   <div id="detailModal69" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5173,6 +5255,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard70'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard69'), cat: '척추관절' },
       { el: document.getElementById('reviewCard68'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard67'), cat: '다이어트' },
