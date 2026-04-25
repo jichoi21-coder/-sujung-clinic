@@ -1303,12 +1303,12 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-quote-mark">"</div>
           <h3 class="review-card-title">대상포진 후 신경통 — 대학병원·피부과 한 달 넘게 진통제·주사도 소용없었는데 면역침·파동치료로 회복했습니다</h3>
           <p class="review-story">
-            유방 절명 후 대상포진이 생겨 피부과·대학병원에서 한 달 넘게 진통제와 주사를 맞았지만
+            유방 촬영 후 대상포진이 생겨 피부과·대학병원에서 한 달 넘게 진통제와 주사를 맞았지만
             <strong>트럭 바퀴에 깔리는 듯한 압박·망치로 두드리는 통증·화상처럼 화끈거리는 느낌</strong>이 전혀 줄지 않아 결국 입원까지 했습니다.
             수정한의원 면역침·약침·파동치료 후 처음으로 통증이 피부로 느낄 만큼 줄어들어 일상으로 돌아왔습니다.
           </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 박*임 (만 54세, 남)</span>
+            <span class="review-author"><i class="fas fa-user"></i> 박*임 (만 54세, 여)</span>
             <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           </div>
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
@@ -2209,7 +2209,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-quote-mark">"</div>
       <h3 class="review-detail-title">대상포진 후 신경통 — 대학병원·피부과 한 달 넘게 진통제·주사도 소용없었는데 면역침·파동치료로 회복했습니다</h3>
       <p class="review-story" style="margin-bottom:18px;">
-        유방 절명 후 대상포진이 발생해 피부과·대학병원에서 마약성 진통제·주사를 한 달 넘게 맞았지만
+        유방 촬영 후 대상포진이 발생해 피부과·대학병원에서 마약성 진통제·주사를 한 달 넘게 맞았지만
         극심한 통증과 23일간의 수면장애가 전혀 줄지 않아 결국 대학병원에 입원했습니다.
         지인 소개로 수정한의원에서 면역침·약침·파동치료를 시작한 후 처음으로 통증이 줄기 시작했고,
         육체적·정신적으로 안정을 되찾아 일상으로 돌아오게 됐습니다.
@@ -2232,7 +2232,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-qa-item">
           <span class="review-qa-q"><i class="fas fa-circle-question"></i> 원문 전체 내용</span>
           <span class="review-qa-a">
-            <strong>[발병 및 타 병원 경과]</strong> 유방 절명 후 2021년 1월 12일부터 약국에서 소염·진통제를 복용했습니다. 3일째 통증이 너무 심해 정형외과에서 진통제 주사와 물리치료를 받았고, 1월 20일 가슴 밑에 빨간 반점이 여러 선으로 나타났습니다. 피부과에서 대상포진 진단 후 마약성 진통제를 처방받았지만 통증이 가라앉지 않았고, 대학병원에서 치료를 받으라는 말씀과 신경차단 수술 안내까지 매우 미우라하셨습니다.<br><br>
+            <strong>[발병 및 타 병원 경과]</strong> 유방 촬영 후 2021년 1월 12일부터 약국에서 소염·진통제를 복용했습니다. 3일째 통증이 너무 심해 정형외과에서 진통제 주사와 물리치료를 받았고, 1월 20일 가슴 밑에 빨간 반점이 여러 선으로 나타났습니다. 피부과에서 대상포진 진단 후 마약성 진통제를 처방받았지만 통증이 가라앉지 않았고, 대학병원에서 치료를 받으라는 말씀과 신경차단 수술 안내까지 매우 미우라하셨습니다.<br><br>
             <strong>[대학병원 입원]</strong> 대학병원에서 처방받은 후 10일째 되던 날 결국 입원하여 집중 치료를 받게 됐습니다. 통증은 가라앉지 않았고, 23일 동안 수면장애로 체력이 점점 나빠졌습니다. 입원 3일째 되던 날 오전 6시부터 맞게 된 링거주사가 가슴 통증과 호흡곤란을 일으켜 9시 30분경에 주사를 멈추고 퇴원하게 됐습니다. 2월 5일 지인의 소개로 피부과에 가서 대상포진 치료를 위해 7일분의 약을 처방받고 주사를 맞았습니다. 2월 6일은 피부과 휴진이어서 주사를 맞지 못했지만 토요일은 진통 없이 잘 지나갔고, 일요일에는 진통이 왔지만 참을 수 있을 만큼 아팠습니다. 조금씩 통증의 수치가 낮아지기 시작한 것입니다. 2월 8일 오전에 피부과에 가서 주사를 맞았고, 진통이 조금 줄었다는 느낌을 받았습니다.<br><br>
             <strong>[수정한의원 치료]</strong> 2월 8일 오후 수정한의원에 와서 원장님의 상담과 치료가 시작됐습니다. 면역침과 한약을 처방해 주셔서 희망을 갖고 하루(2/8), 이틀(2/9), 사흘(2/10) 면역침·약침·파동치료가 진행됐습니다.<br>
             <span style="background:#fff3cd; padding:4px 8px; border-radius:4px; display:inline-block; margin:4px 0;"><strong>🚛 트럭 바퀴에 깔리는 듯한 압박, 🔨 망치로 두드리는 듯한 통증, 🔥 화상처럼 화끈거리는 느낌</strong> — 이 세 가지 극심한 통증이 피부로 느낄 만큼 줄어들기 시작했습니다.</span><br><br>
@@ -2253,7 +2253,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지 클릭하면 원본 크기로 | 썸네일로 페이지 전환</p>
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
-        <span class="review-author"><i class="fas fa-user"></i> 박*임 (만 54세, 남)</span>
+        <span class="review-author"><i class="fas fa-user"></i> 박*임 (만 54세, 여)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
       </div>
     </div>
