@@ -940,7 +940,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <!-- 후기 카드 #52 -->
         <div id="reviewCard52" class="review-card review-card-handwritten" data-cat="대상포진" onclick="openReviewModal('detailModal52')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
+            <span class="review-cat-tag review-cat-tag-special">대상포진·신경통</span>
             <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2023.10</span>
@@ -1292,10 +1292,10 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-        <!-- ===== 자필후기 카드 #4 — 박상임 (대상포진·후신경통) ===== -->
+        <!-- ===== 자필후기 카드 #4 — 박상임 (대상포진·신경통) ===== -->
         <div id="reviewCard04" class="review-card review-card-handwritten" data-cat="대상포진" onclick="openReviewModal('detailModal04')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
+            <span class="review-cat-tag review-cat-tag-special">대상포진·신경통</span>
             <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (3장)</span>
             <span class="review-date">2021.02</span>
@@ -2201,7 +2201,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal04')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
+        <span class="review-cat-tag review-cat-tag-special">대상포진·신경통</span>
         <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2021.02</span>
@@ -3553,7 +3553,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal52')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag review-cat-tag-special">대상포진·후신경통</span>
+        <span class="review-cat-tag review-cat-tag-special">대상포진·신경통</span>
         <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2023.10</span>
