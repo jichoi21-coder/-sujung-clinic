@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #76 -->
+        <div id="reviewCard76" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal76')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎퇴행성관절염</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">병원에서 수술 권유받은 무릎 — 매선·약침으로 통증 완전히 없어지고 나도 모르게 편안하게 걷고 있어요</h3>
+          <p class="review-story">
+            뇌경색으로 혈액순환 불량, 무릎 통증·쓰라림으로 보행 불편. 병원은 수술 권유. 신뢰하는 원장님 권유로 매선·약침 한방 치료 시작. 통증 완전 소멸, 이제 모르게 편하게 걸어다님.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> hap****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #75 -->
         <div id="reviewCard75" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal75')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2829,6 +2850,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #76 -->
+  <div id="detailModal76" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal76')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">척추관절</span>
+        <span class="review-detail-tag">#무릎퇴행성관절염</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 3월</span>
+      </div>
+      <h2 class="review-detail-title">병원에서 수술 권유받은 무릎 — 매선·약침으로 통증 완전히 없어지고 나도 모르게 편안하게 걷고 있어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-76-hap-p1.jpg" alt="hap**** 무릎퇴행성관절염 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>hap****</strong>&nbsp;·&nbsp;작성일 2024년 3월 2일 &nbsp;·&nbsp;네이버 예약 이용후기 · 1번째 방문
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>뇌경색이 있어서 혈액순환이 잘 안 돼서 한번씩 침을 맞으러 다니다가 원장님께 무릎 아픈 것을 얘기했더니 치료 한다고 해서, 병원에서 수술해야 하는 것을 침으로 치료가 된다고 해서 믿지 않았습니다. 무릎이 아파서 걸을 때 아프고 쓰라리고 불편했습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>원장님을 많이 신뢰하고 있었기 때문에 수술 없이 한방치료를 해보고 싶은 마음이 들었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>매선, 약침을 하고 쓰라리던 무릎이 조금씩 가라앉았습니다. 지금은 통증이 완전히 없어졌습니다. 나도 모르게 걷다가 생각해 보면 편안하게 걸음을 잘 걷고 즐겁게 생활할 수 있어서 참 좋습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 한의원에 전하고 싶은 말</h4>
+        <p>한의원에 오면 직원들께서 친절하게 대해 주셔서 마음이 편합니다. 믿을 수 있는 원장님께 치료를 받아서 참 좋습니다. 앞으로도 꾸준히 잘 치료해주시면 좋겠습니다. 저처럼 아프신 분들도 꼭 수정한의원에서 치료받으시라고 권하고 싶습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #75 -->
   <div id="detailModal75" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5551,6 +5612,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard76'), cat: '척추관절' },
       { el: document.getElementById('reviewCard75'), cat: '피부' },
       { el: document.getElementById('reviewCard74'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard73'), cat: '피부' },
