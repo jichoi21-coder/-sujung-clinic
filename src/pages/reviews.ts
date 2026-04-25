@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #75 -->
+        <div id="reviewCard75" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal75')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두드러기·한포진</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.10</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">피부과 스테로이드도 못 잡은 두드러기·한포진 — 금양체질 한약·약침·파동치료 2개월로 깨끗이 사라졌어요</h3>
+          <p class="review-story">
+            겨울부터 전신 두드러기·얼굴 발진, 손발 수포(한포진). 피부과 스테로이드·한의원 처방도 근본치료 실패. 금양체질 진단 후 한약·약침·파동치료·체질식 2개월로 두드러기·한포진 소멸. 발바닥 진물도 깨끗이 사라져.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 윤*나 (만 34세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #74 -->
         <div id="reviewCard74" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal74')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2808,6 +2829,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #75 -->
+  <div id="detailModal75" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal75')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">피부·아토피</span>
+        <span class="review-detail-tag">#두드러기 #한포진</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 10월</span>
+      </div>
+      <h2 class="review-detail-title">피부과 스테로이드도 못 잡은 두드러기·한포진 — 금양체질 한약·약침·파동치료 2개월로 깨끗이 사라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-75-yunbitna-p1.jpg" alt="윤*나 두드러기·한포진 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>윤*나</strong>&nbsp;(만 34세, 여성)&nbsp;·&nbsp;작성일 2024년 10월 31일 &nbsp;·&nbsp;자필후기
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>작년 겨울 갑자기 온몸에 두드러기가 나고 얼굴까지 발진이 있어서 너무 괴로운 시간을 보냈습니다. 또 시간이 지나자 손·발에 수포가 생겨서 한포진이라는 질환도 생겼습니다. 피부과에서 스테로이드를 복용하기도 했지만 그때뿐이었고 근본적 치료는 되지 않았습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>피부과에서는 한포진·급성 두드러기이고, 원인은 딱히 없으며 스트레스·수면부족 등을 이유라고 말하며 스테로이드 처방만 해주었습니다. 일반 한의원에서는 심장에 열이 많고 화가 많아 생긴 병이라고 심부열을 낮추는 한약을 처방했지만 1달 복용 후 두드러기는 조금 사라졌어도 한포진이 계속 괴롭혔습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>이곳에 와서 금양체질로 진단받고 간이 제일 연약한 체질이라 피부에 문제가 잘 생길 수 있음을 알았습니다. 한약 복용과 약침, 파동치료를 병행했습니다. 현재 약 3개월 경과했으며, 체질식을 철저히 지키며 한약치료를 했더니 약 2개월 만에 두드러기와 한포진이 사라져 갔습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질적인 변화</h4>
+        <p>첫째로 밤마다 간지러워서 잠을 이루지 못했던 날들이 사라졌습니다. 한포진으로 손가락을 마음대로 쓸 수 없어서 너무 괴로웠는데 점차 괜찮아졌고 현재는 모두 들어갔습니다. 발바닥과 발가락도 진물이 너무 나와서 정말 괴로웠는데 지금은 깨끗이 사라졌습니다. 체질 식단을 철저히 하면서 치료를 병행해야 좋은 결과를 마주할 수 있다는 것을 경험했습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>나의 질환들은 병원에서 검사해서 발견하는 질환과는 다른 것 같습니다. 체질을 정확히 알고 몸을 다스려야 나아지는 증상들입니다. 꾸준히 식단과 좋은 생활습관, 그리고 적절한 치료가 조화롭게 이루어지면 다시 건강한 생활을 할 수 있을 것 같습니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #74 -->
   <div id="detailModal74" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5486,6 +5551,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard75'), cat: '피부' },
       { el: document.getElementById('reviewCard74'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard73'), cat: '피부' },
       { el: document.getElementById('reviewCard72'), cat: '대상포진' },
