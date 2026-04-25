@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #74 -->
+        <div id="reviewCard74" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal74')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">편두통·어지럼증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">20년 넘은 편두통·어지럼증 — 추나·체질침·한약 몇 시간 만에 진통제 없이 편두통 가라앉고 뒷목·어깨도 부드러워졌어요</h3>
+          <p class="review-story">
+            20년 이상 편두통으로 응급실까지. 주 1~3회 진통제 복용, 생리기간엔 더 심해. 어지럼증·속 불편 동반. 체질침·추나·한약 후 진통제 없이 몇 시간 만에 가라앉음. 식이요법의 중요성도 깨달아.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 윤*라 (만 46세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #73 -->
         <div id="reviewCard73" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal73')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2787,6 +2808,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #74 -->
+  <div id="detailModal74" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal74')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#편두통 #어지럼증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 4월</span>
+      </div>
+      <h2 class="review-detail-title">20년 넘은 편두통·어지럼증 — 추나·체질침·한약 몇 시간 만에 진통제 없이 편두통 가라앉고 뒷목·어깨도 부드러워졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-74-yunbora-p1.jpg" alt="윤*라 편두통·어지럼증 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>윤*라</strong>&nbsp;(만 46세, 여성)&nbsp;·&nbsp;작성일 2024년 4월 30일 &nbsp;·&nbsp;자필후기
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>저는 20년 이상 편두통 때문에 힘들었습니다. 응급실에 간 적도 있고, 신경과에서 처방받은 약으로 호전되었어도 일주일에 한 번 정도는 진통제를 먹어야 했으며 생리기간에는 일주일에 두세 번 진통제를 먹기도 했습니다. 심할 때는 하루에 진통제를 두 번 먹은 적도 있습니다. 편두통이 심하면 어지럼증과 속도 많이 불편하여 일상생활 하기가 힘들었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>우연히 알게 된 수정한의원에서 체질을 알게 되면서 체질에 따라 식이요법이 다름을 알게 되고 추나치료, 체질침, 한약을 먹게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>추나치료, 체질침, 한약을 먹고 몇 시간 만에 진통제 없이 편두통이 가라앉았으며 불편하던 속도 편해졌으며 뻣뻣하던 뒷목과 어깨가 많이 부드러워지며 통증이 없어짐을 느낄 수 있었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질적인 변화</h4>
+        <p>편두통이 심해지면 몸이 너무 힘들어져서 항상 심적으로 편두통에 대한 불안감을 갖고 있습니다. 진통제 없이 차도를 볼 수 있다는 것이 신기했으며 몸과 마음의 편안함을 누릴 수 있을 것 같아 기쁩니다. 먹는 음식이 치료에 얼마나 중요한지도 알게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>원장님과 선생님들의 친절함과 따뜻함이 치료효과의 배가 되는 것 같습니다. 항상 감사드립니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #73 -->
   <div id="detailModal73" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5421,6 +5486,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard74'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard73'), cat: '피부' },
       { el: document.getElementById('reviewCard72'), cat: '대상포진' },
       { el: document.getElementById('reviewCard71'), cat: '천식' },
