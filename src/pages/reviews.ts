@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #73 -->
+        <div id="reviewCard73" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal73')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두드러기·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">대상포진 후 밤새 두드러기·두통·어깨결림 — 3개월 체질한약·추나·약침으로 두드러기 소멸, 몸에 활력이 생겼어요</h3>
+          <p class="review-story">
+            대상포진 후 면역 저하로 저녁마다 두드러기, 두통·어깨결림·허리통증·변비 지속. 3개월 체질한약·추나·약침 후 두드러기 소멸, 통증 거의 소실, 변비 사라짐. "힘들 때마다 떠올릴 수 있는 곳."
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 논지 27</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #72 -->
         <div id="reviewCard72" class="review-card review-card-handwritten" data-cat="대상포진" onclick="openReviewModal('detailModal72')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2766,6 +2787,42 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #73 -->
+  <div id="detailModal73" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal73')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">피부·아토피</span>
+        <span class="review-detail-tag">#두드러기 #두통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 6월</span>
+      </div>
+      <h2 class="review-detail-title">대상포진 후 밤새 두드러기·두통·어깨결림 — 3개월 체질한약·추나·약침으로 두드러기 소멸, 몸에 활력이 생겼어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-73-nonji27-p1.jpg" alt="논지27 두드러기·두통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>논지 27</strong>&nbsp;·&nbsp;작성일 2024년 6월 18일 &nbsp;·&nbsp;네이버 예약 이용후기 · 1번째 방문
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>대상포진을 심하게 겪은 후 몸이 계속 아프고 의욕이 없이 힘이 들었습니다. 두통, 어깨결림, 허리통증도 잦았고 특히 저녁만 되면 두드러기로 가려워서 힘들었습니다. 면역이 떨어진 것 같아 수정한의원을 찾았습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>3개월간 체질한약과 추나, 약침치료를 하고 밤새 괴롭히던 두드러기가 없어지고 두통, 어깨결림, 허리통증도 거의 나았습니다. 변비도 사라졌습니다. 몸에 활력이 생기니 움직이고 싶어지고, 초진 때 말씀하셨던 대로 이제는 뭔가 하고 싶은 마음이 듭니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 한의원에 전하고 싶은 말</h4>
+        <p>누군가가 나를 걱정해 주고 애써주시니 나도 함께 힘을 내야겠다고 다짐하고 행동하게 되었습니다. 수정한의원은 오래전부터 힘이 들 때면 찾았던 곳입니다. 올 때마다 항상 좋은 무언가를 얻고 갑니다. 믿고 오는 곳, 힘들 때마다 "아~ 그곳이 있지~" 떠올릴 수 있고 기댈 수 있는 이곳이 있어서 참 좋습니다. 감사합니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #72 -->
   <div id="detailModal72" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5364,6 +5421,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard73'), cat: '피부' },
       { el: document.getElementById('reviewCard72'), cat: '대상포진' },
       { el: document.getElementById('reviewCard71'), cat: '천식' },
       { el: document.getElementById('reviewCard70'), cat: '뇌신경' },
