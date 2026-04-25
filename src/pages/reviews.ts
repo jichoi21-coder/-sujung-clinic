@@ -537,6 +537,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #72 -->
+        <div id="reviewCard72" class="review-card review-card-handwritten" data-cat="대상포진" onclick="openReviewModal('detailModal72')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">대상포진·신경통</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">백신 맞았어도 걸린 대상포진 — 체질한약·약침·파동치료 2달로 모든 통증 사라지고 신경통도 잘 낫는다는 걸 알았어요</h3>
+          <p class="review-story">
+            좌측복부 통증을 근육통으로 착각, 내과에서 대상포진 진단. 소염진통제만으론 한계. 수정한의원에서 체질한약·약침·바이러스 파동치료 2달 후 모든 통증 소멸. 2010년부터 토양체질 관리 중.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 식송정</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #71 -->
         <div id="reviewCard71" class="review-card review-card-handwritten" data-cat="천식" onclick="openReviewModal('detailModal71')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2744,6 +2766,47 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #72 -->
+  <div id="detailModal72" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal72')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">대상포진·신경통</span>
+        <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+        <span class="review-detail-tag">#대상포진 #신경통 #파동치료</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 8월</span>
+      </div>
+      <h2 class="review-detail-title">백신 맞았어도 걸린 대상포진 — 체질한약·약침·파동치료 2달로 모든 통증 사라지고 신경통도 잘 낫는다는 걸 알았어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-72-siksongjeong-p1.jpg" alt="식송정 대상포진·신경통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>식송정</strong>&nbsp;·&nbsp;작성일 2024년 8월 19일 &nbsp;·&nbsp;네이버 예약 이용후기 · 1번째 방문
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>대상포진을 심하게 앓았습니다. 좌측복부에 통증이 있어서 단순 근육통으로 생각하고 파스만 붙였는데 점점 더 심해져서 내과를 갔더니 대상포진 진단을 받았습니다. 백신접종을 해서 대상포진이 걸릴 거란 생각도 못 했습니다. 내과에서 처방한 1주일치 약을 먹고 약간 호전은 되었으나 통증이 심해서 소염진통제만 복용했습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>평소 다니던 수정한의원 최원장님께 문의하니 잘 낫는다고 하셔서 내원하게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>체질한약과 약침, 바이러스에 대한 파동치료를 2달 정도 받은 후 모든 통증이 다 사라졌습니다. 대상포진 신경통은 잘 안 낫는다고 해서 걱정했는데 감사합니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 한의원에 전하고 싶은 말</h4>
+        <p>2010년부터 토양체질에 맞는 한약과 체질침, 식이조절을 하면서 건강관리를 하고 있습니다. 앞으로도 훌륭한 의술로 난치환자들에게 훌륭한 업적 이루시길 바랍니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #71 -->
   <div id="detailModal71" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5301,6 +5364,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard72'), cat: '대상포진' },
       { el: document.getElementById('reviewCard71'), cat: '천식' },
       { el: document.getElementById('reviewCard70'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard69'), cat: '척추관절' },
