@@ -537,6 +537,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #85 -->
+        <div id="reviewCard85" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal85')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">위장병·변비</span>
+            <span class="review-date">2024.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">면도날로 긁는 듯한 위장통증·심한 트림·고통스러운 변비 — 한약 한 번 먹고 나서부터 위장도 편해지고 허리까지 좋아졌어요</h3>
+          <p class="review-story">
+            매운 음식마다 위에서 장까지 면도날로 긁는 듯한 통증·트림, 변비로 매일 고통. 집이 진접임에도 전국 환자들의 후기를 듣고 결심. 한약 복용 후 위장 편안, 변비 해소, 허리 통증까지 함께 개선.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> jjs****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #84 -->
         <div id="reviewCard84" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal84')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3018,6 +3038,36 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #85 -->
+  <div id="detailModal85" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal85')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-digest">소화기</span>
+        <span class="review-detail-tag">#위장병 #변비</span>
+        <span class="review-date">2024년 6월</span>
+      </div>
+      <h2 class="review-detail-title">면도날로 긁는 듯한 위장통증·심한 트림·고통스러운 변비 — 한약 한 번 먹고 나서부터 위장도 편해지고 허리까지 좋아졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-85-jjs-p1.jpg" alt="jjs**** 위장병·변비 네이버 후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> jjs****</span>
+        <span><i class="fas fa-calendar"></i> 2024년 6월 12일 · 네이버 예약 후기</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <p>위장병과 허리·무릎 통증으로 고생을 했습니다. 매운 음식을 먹었을 때 위에서 장까지 면도날로 긁고 가는 것처럼 쓰리고 아팠고 트림을 심하게 했습니다. 집이 진접이라서 다니는 게 힘들 것 같았지만 나보다 더 멀리서 다니는 사람들이 많고 전국에서도 온다고 하여 굳은 결심을 하고 다녔습니다.</p>
+          <p>변비로 인해서 변을 볼 때마다 너무 힘들고 고통스러웠는데 한약 한 번 먹고 난 후 두 번째 약 먹기 시작부터는 위장도 더 편해졌고 변비도 하루 한 번씩 시원하게 보면서 아팠던 허리까지 좋아졌습니다.</p>
+          <p>선생님들도 친절하시고 원장님께서도 좋은 말씀과 위안으로 기다리면서 치료받으면 더 좋아질 거라는 믿음을 주셔서 안정된 마음으로 병원을 왔습니다. 온열치료실도 너무너무 좋고 진척 있는 치료 효과로 병원 올 때 즐거운 발걸음으로 오게 되는 것 같습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #84 -->
   <div id="detailModal84" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -6144,6 +6194,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard85'), cat: '소화기' },
       { el: document.getElementById('reviewCard84'), cat: '면역대사' },
       { el: document.getElementById('reviewCard83'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard82'), cat: '대상포진' },
