@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #87 -->
+        <div id="reviewCard87" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal87')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">우울증·불안·불면</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">우울증·불안·불면에 손발 땀·위장장애까지 — 팔체질 한약·식이요법으로 우울증 증세 완전히 사라지고 인스턴트와 결별했어요</h3>
+          <p class="review-story">
+            우울증으로 인한 불안·가슴 두근거림·손발 땀·변비·위장장애. 지인 수녀님 소개로 방문. 팔체질 식이요법·한약 치료 후 우울증 증세 전혀 없어짐, 손발 뽀송뽀송, 인스턴트와 자연스럽게 결별.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 함*리 (만 68세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #86 -->
         <div id="reviewCard86" class="review-card review-card-handwritten" data-cat="소화기" onclick="openReviewModal('detailModal86')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3059,6 +3080,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #87 -->
+  <div id="detailModal87" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal87')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#우울증 #불안 #불면</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 4월</span>
+      </div>
+      <h2 class="review-detail-title">우울증·불안·불면에 손발 땀·위장장애까지 — 팔체질 한약·식이요법으로 우울증 증세 완전히 사라지고 인스턴트와 결별했어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-87-hamaeri-p1.jpg" alt="함*리 우울증·불안·불면 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 함*리 (만 68세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 4월 1일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>우울증으로 인해 자주 불안하고 불면증도 있었고, 입안이 매워 김치 등 매운 음식이 어려웠습니다. 소화도 잘 안 되고 급성 변비와 설사 등으로 많은 어려움을 동반하고 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>지인 수녀님이 수정한의원의 팔체질 치료와 식이요법으로 좋아졌다는 소식을 듣고 방문하게 되었습니다. 내가 현재 먹는 음식들이 나의 몸과 마음에 맞는 음식인지 알고 싶은 희망에서 팔체질 검사를 받아보고 싶었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>우울증으로 인한 불안감, 가슴 두근거림, 떨림, 손발에 땀, 변비, 위장장애 등이 다 좋아졌습니다. 특별히 우울증 증세가 현재에는 전혀 없습니다. 손발에 땀이 나서 무척 불편했는데 이제는 뽀송뽀송해서 기분이 좋습니다. 나에게 불필요했던 매운 음식들을 섭취 안 하므로 편안하게 식사를 하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>원장 선생님을 비롯한 모든 간호사님들의 환대를 받고 친절함 안에서 치료를 받는 것이 기분이 좋았습니다. 팔체질을 통해 식이요법을 하면서 식사에 대한 생각들이 바뀌고, 절제해야 하는 음식들을 조절하게 되어 좋았습니다. 덕분에 인스턴트 식품들과는 자연스럽게 결별하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>환자들을 대하는 직원분들의 편안한 마음이 계속 유지되기를 바라며, 청결한 한의원, 온열치료실이 있는 한의원 아주 좋습니다. 편안히 쉬어갈 수 있는 곳이어서 좋았습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #86 -->
   <div id="detailModal86" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -6257,6 +6324,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard87'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard86'), cat: '소화기' },
       { el: document.getElementById('reviewCard85'), cat: '소화기' },
       { el: document.getElementById('reviewCard84'), cat: '면역대사' },
