@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #84 -->
+        <div id="reviewCard84" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal84')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">성대낭종·턱관절·위장장애</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.02</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">수술 권유받은 성대낭종·악관절·위장장애 — 약침 4~5회 만에 목소리 돌아오고 신물·속쓰림도 사라졌어요</h3>
+          <p class="review-story">
+            성대낭종으로 목소리 거의 안 나와 수술 권유받았으나 악관절 문제로 수술 불가. 약침 4~5회 후 목소리 회복·악관절 정상 범위 복귀, 위장장애·역류 개선, 얼굴도 맑아졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 정*영 (만 47세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #83 -->
         <div id="reviewCard83" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal83')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2997,6 +3018,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #84 -->
+  <div id="detailModal84" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal84')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역·대사성질환</span>
+        <span class="review-detail-tag">#성대낭종 #턱관절 #위장장애</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 2월</span>
+      </div>
+      <h2 class="review-detail-title">수술 권유받은 성대낭종·악관절·위장장애 — 약침 4~5회 만에 목소리 돌아오고 신물·속쓰림도 사라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-84-jeongmiyoung-p1.jpg" alt="정*영 성대낭종·턱관절·위장장애 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 정*영 (만 47세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 2월 1일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>성대낭종과 악관절 이상, 위염·식도염·위장장애가 있어서 음식물을 씹어 삼키는 것, 소화, 목소리 내는 데 장애가 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>성대낭종이 심해져 목소리가 거의 나오지 않았고 병원에서는 혹 제거 수술을 해야 한다는 진단을 받았습니다. 그러나 악관절 이상으로 입을 벌리기 어려워 수술이 불가능했습니다. 비수술 요법으로 치료하는 것이 좋을 것 같아 지인의 소개로 오게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>① 목소리가 잘 나옵니다. 수술 없이도. 찬바람에 목이 잘 쉬곤 했던 증상도 사라졌고, 약침을 4~5회 맞은 이후부터 확연히 좋아졌습니다. 악관절도 완화되어 입을 벌리는 크기가 거의 정상 범위로 돌아왔습니다.<br>② 위장장애가 개선되면서 신물이 올라오는 것이 멈추고 얼굴도 맑아졌습니다.<br>③ 한약과 식이요법을 병행하면서 몸도 가벼워지고 편안해졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>① 목소리가 잘 나오니 대화할 때 주저하지 않게 되었습니다.<br>② 위가 편안해지니 음식을 섭취하기도 편안하고, 식도염 증상도 완화되어 속쓰림·통증이 사라지고 일상이 편안해졌습니다.<br>③ 온열치료실이 있어서 치료 전후에 쉼의 시간이 생겨 치료 효과를 조금 더 높여주는 것 같습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>3개월간 한약을 섭취하면서 제 체질에 맞는 음식을 먹고 맞지 않는 음식을 가리는 것이 어느 정도 익숙해졌고, 일상 생활의 습관이 가져오는 질병의 순환고리를 끊어주는 것 같았습니다. 침치료와 함께 한약의 도움도 꼭 받으시길 바랍니다. 선생님들의 환대와 친절한 봉사에 감사드립니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #83 -->
   <div id="detailModal83" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -6077,6 +6144,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard84'), cat: '면역대사' },
       { el: document.getElementById('reviewCard83'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard82'), cat: '대상포진' },
       { el: document.getElementById('reviewCard81'), cat: '여성질환' },
