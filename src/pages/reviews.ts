@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #82 -->
+        <div id="reviewCard82" class="review-card review-card-handwritten" data-cat="대상포진" onclick="openReviewModal('detailModal82')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag review-cat-tag-special">대상포진·두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">머리·어깨 대상포진 두통 — 약침·추나·파동·한약으로 4일 만에 완전히 나은 것처럼 아무렇지 않았어요</h3>
+          <p class="review-story">
+            어깨에서 머리 쪽으로 찌릿한 통증·두통으로 잠 못 자다 대상포진 확진. 20년 단골 수정한의원에서 약침·추나·파동·한약 집중치료로 4일 만에 완치, 신경통도 소멸.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 장*민 (만 49세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #81 -->
         <div id="reviewCard81" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal81')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2955,6 +2976,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #82 -->
+  <div id="detailModal82" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal82')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-special">특설클리닉</span>
+        <span class="review-detail-tag">#대상포진 #두통 #신경통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 8월</span>
+      </div>
+      <h2 class="review-detail-title">머리·어깨 대상포진 두통 — 약침·추나·파동·한약으로 4일 만에 완전히 나은 것처럼 아무렇지 않았어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-82-janghyeonmin-p1.jpg" alt="장*민 대상포진 두통 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 장*민 (만 49세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 8월 14일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>갑자기 어깨에서 머리 쪽으로 찌릿한 통증이 있었고 밤에 잠을 못 잘 정도로 찌릿한 통증이 계속되었습니다. 처음에는 근육통이라 생각했는데, 머리 쪽 지끈한 통증과 머리카락 부위까지 아픈 증상이 있어 대상포진이 의심되었고, 어깨에 수포가 올라오면서 대상포진을 확신하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>수정한의원을 다닌 지 20년 가량이 됩니다. 아플 때마다 찾아오는 곳이기도 하고, 대상포진은 면역력과 관련된 질병이어서 바로 수정한의원에 가야겠다고 생각했습니다. 병원에서 항바이러스제를 받아 복용하면서 한의원 치료를 중심으로 생활하여 증상을 회복하였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>증상이 생긴 이틀째부터 매일 수정한의원에서 약침·추나·파동·한약 치료를 받았습니다. 치료 첫날에는 낮에 두통이 없다가 밤에 생겼고, 둘째 날에는 아주 약하게, 셋째 날부터는 두통이 완전히 사라져 푹 잘 수 있었습니다. 침·파동치료와 집에서 충분한 휴식, 한약을 챙겨 먹었더니 4일여 만에 완전히 나은 것처럼 아무렇지 않았습니다. 추나를 함께 받은 이유는 두통이 한쪽으로 지속되고, 평소 부정맥도 있어 함께 교정받기 위해서였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>폐경기를 앞두고 귀 쪽 신경통이 자주 생겨 걱정하던 중, 대상포진 발병률이 높고 예후가 좋지 않다는 것을 알고 두려움이 있었습니다. 특히 머리 쪽 대상포진은 입원이 필요할 정도로 위험하다는데, 수정한의원에서 일주일 가량 치료를 받고 건강하게 되어 정말 다행이고, 최정일 원장님의 의술에 다시 한번 감사하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>수정한의원을 20여 년간 다니면서 가족 모두 원장님의 의술에 의지하며 열심히 살고 있습니다. 주위 분들에게도 많이 권하고 있습니다. 따뜻하고 인자하신 선생님을 믿고 열심히 치료받으시길 바랍니다. 면역력을 높여 질병을 치료함으로 더욱 건강해지실 수 있을 테니 꼭 치료받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #81 -->
   <div id="detailModal81" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5943,6 +6010,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard82'), cat: '대상포진' },
       { el: document.getElementById('reviewCard81'), cat: '여성질환' },
       { el: document.getElementById('reviewCard80'), cat: '피부' },
       { el: document.getElementById('reviewCard79'), cat: '뇌신경' },
