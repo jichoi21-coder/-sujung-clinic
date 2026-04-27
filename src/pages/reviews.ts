@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #77 -->
+        <div id="reviewCard77" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal77')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">디스크파열·통증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">목·허리디스크 파열로 위장까지 멈춰 죽을 것 같던 나 — 추나·한약으로 위장 회복, 통증 개선, 수영까지 하게 됐어요</h3>
+          <p class="review-story">
+            목·허리디스크 파열로 호흡곤란·위장 마비·전신 기능 저하. 신경외과·한의원·자연치유 모두 실패. 수정한의원 추나·체질침·한약으로 위장 정상화, 통증 감소, 숙면·수영 가능. 몸의 균형 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*미 (만 52세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #76 -->
         <div id="reviewCard76" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal76')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2850,6 +2871,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #77 -->
+  <div id="detailModal77" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal77')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">척추관절</span>
+        <span class="review-detail-tag">#디스크파열 #통증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 5월</span>
+      </div>
+      <h2 class="review-detail-title">목·허리디스크 파열로 위장까지 멈춰 죽을 것 같던 나 — 추나·한약으로 위장 회복, 통증 개선, 수영까지 하게 됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-77-iseonmi-p1.jpg" alt="이*미 디스크파열·통증 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>이*미</strong>&nbsp;(만 52세, 여성)&nbsp;·&nbsp;작성일 2024년 5월 29일 &nbsp;·&nbsp;자필후기
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>목디스크와 허리디스크 파열로 인해 시작된 통증으로 치료를 받던 중 호흡곤란과 몸의 모든 기능이 떨어지고 일상생활도 힘든 지경이었습니다. 위장의 기능도 떨어져서 위장이 멈추어버린 상태에 내가 자각하기로 이러다 죽을 수도 있겠다는 생각이 들 정도로 몸의 모든 기능이 멈추어버렸습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>신경외과, 다른 한의원, 자연치유 등 모든 것을 해보다가 수정한의원을 소개받게 되었고, 이곳에서 치유받을 수 있다는 확신이 들어서 치료받게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>처음으로 멈추어버린 위장이 운동을 시작하면서 먹고 배설하는 것이 가능해지기 시작했고, 목과 허리 통증이 추나치료를 시작하며 많이 개선되었습니다. 이제는 일상생활을 하는 데에 많은 개선이 되었고 삶의 활기도 얻게 되었으며 수영도 시작하면서 건강 상태가 매우 호전되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질적인 변화</h4>
+        <p>추나를 하며 몸의 균형을 찾게 되었고 목과 허리디스크로 인한 통증이 줄어들며 삶의 질이 좋아졌습니다. 날마다 통증으로 인해 잠도 못 자던 내가 이제는 숙면도 취하고 수영도 하게 된 점이 매우 좋습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>최정일 원장님의 환자를 위한 고민과 치료에 최선을 다하시는 열정에 감사드리고, 한의원에 근무하시는 선생님들의 친절함에도 감사드립니다. 치료를 염두하시는 분들에게 고민하시지 말고 이곳에 꼭 오셔서 치료받으시길 적극 권해드립니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #76 -->
   <div id="detailModal76" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5612,6 +5677,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard77'), cat: '척추관절' },
       { el: document.getElementById('reviewCard76'), cat: '척추관절' },
       { el: document.getElementById('reviewCard75'), cat: '피부' },
       { el: document.getElementById('reviewCard74'), cat: '뇌신경' },
