@@ -538,7 +538,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-grid summary-mode" id="reviewGrid">
 
         <!-- 후기 카드 #81 -->
-        <div id="reviewCard81" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal81')" style="cursor:pointer;">
+        <div id="reviewCard81" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal81')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">다낭성난소증후군·생리통</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -5943,7 +5943,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
-      { el: document.getElementById('reviewCard81'), cat: '여성질환' },
+      { el: document.getElementById('reviewCard81'), cat: '여성' },
       { el: document.getElementById('reviewCard80'), cat: '피부' },
       { el: document.getElementById('reviewCard79'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard78'), cat: '척추관절' },
