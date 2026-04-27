@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #78 -->
+        <div id="reviewCard78" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal78')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎관절염</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">인공무릎 수술 후에도 계속된 통증·부종 — 8체질 매선·약침으로 물 안 빼도 되고 소염진통제 없이 생활해요</h3>
+          <p class="review-story">
+            인공무릎 수술 후에도 반대쪽 무릎 부종·통증 지속. 소염진통제 1년 이상 복용으로 간수치 185. 수정한의원 8체질 치료·매선·약침으로 붓기 소멸, 정형외과에서 물 뺄 필요 없다고. 재수술 걱정 해소.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*자 (만 74세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #77 -->
         <div id="reviewCard77" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal77')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2871,6 +2892,50 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #78 -->
+  <div id="detailModal78" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal78')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag">척추관절</span>
+        <span class="review-detail-tag">#무릎관절염 #인공관절수술</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 4월</span>
+      </div>
+      <h2 class="review-detail-title">인공무릎 수술 후에도 계속된 통증·부종 — 8체질 매선·약침으로 물 안 빼도 되고 소염진통제 없이 생활해요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-78-iyoungja-p1.jpg" alt="이*자 무릎관절염 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <i class="fas fa-user-circle"></i>
+        <strong>이*자</strong>&nbsp;(만 74세, 여성)&nbsp;·&nbsp;작성일 2024년 4월 12일 &nbsp;·&nbsp;자필후기
+        <div class="review-stars" style="margin-top:6px;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-notes-medical"></i> 증상 및 불편 사항</h4>
+        <p>2022년에 무릎통증이 심하고 걷지를 못해 한쪽 무릎 인공수술을 받았습니다. 수술 후에도 통증이 계속되고 수술 안 한 다리 무릎에 물이 차고 붓기가 지속되었습니다. 1년 이상 소염진통제를 먹다 보니 간수치가 정상(30)인데 185까지 올라갔습니다. 내과에서 두 달간 모든 약을 중지시키고 끊다 보니 간수치가 정상으로 돌아왔습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-question-circle"></i> 수정한의원을 찾게 된 이유</h4>
+        <p>수술한 다리뿐 아니라 수술 안 한 무릎도 증상이 나타나는 조짐이 보였습니다. 무릎이 붓고 물이 차서 병원 가면 3개월마다 물을 빼게 되고 소염진통제 복용도 두렵고, 또 수술하게 되는 두려움이 있어서 수정한의원을 다니게 되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-chart-line"></i> 치료 후 개선된 점</h4>
+        <p>무릎의 붓기가 빠지면서 뻐근함이 덜하고, 정형외과에서 물을 안 빼도 된다고 하였습니다. 통증도 많이 완화되었습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-heart"></i> 삶의 질적인 변화</h4>
+        <p>수술하지 않고서도 무릎 상태가 좋아져 삶의 생기가 돌고 희망이 생겼습니다. 8체질 치료하는 한의원이 그리 많지 않습니다. 요즘은 소염진통제를 복용하지 않고 수정한의원에서 5일 간격으로 치료받고 있습니다.</p>
+      </div>
+      <div class="review-detail-section">
+        <h4><i class="fas fa-comment-dots"></i> 한의원에 전하고 싶은 말</h4>
+        <p>대학병원에 가면 수술을 권하고 있는데 수술한다고 나비처럼 가볍게 되는 줄 기대하였지만 기대에 못 미쳤습니다. 수술은 마지막 생각할 문제이고, 한방치료 즉 8체질 치료법과 매선치료, 약침치료, 체질침을 일단 치료받아보심을 말씀드려 봅니다.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #77 -->
   <div id="detailModal77" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5677,6 +5742,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard78'), cat: '척추관절' },
       { el: document.getElementById('reviewCard77'), cat: '척추관절' },
       { el: document.getElementById('reviewCard76'), cat: '척추관절' },
       { el: document.getElementById('reviewCard75'), cat: '피부' },
