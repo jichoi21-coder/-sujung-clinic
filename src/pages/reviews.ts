@@ -1399,7 +1399,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
         <div id="reviewCard40" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal40')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">요실금·여성질환</span>
+            <span class="review-cat-tag">요실금</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2023.08</span>
           </div>
@@ -1528,7 +1528,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <!-- ===== 자필후기 카드 #5 — 이O경 (여성질환·난소물혹) ===== -->
         <div id="reviewCard05" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal05')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">여성질환</span>
+            <span class="review-cat-tag">난소물혹(난소낭종)</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (2장)</span>
             <span class="review-date">2020.08</span>
           </div>
@@ -1539,7 +1539,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             8체질 침과 체질한약을 꾸준히 받고, 2019년 겨울 건강검진 결과 난소 물혹이 말끔히 없어졌습니다.
           </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 이*조경 (여)</span>
+            <span class="review-author"><i class="fas fa-user"></i> 이*경 (여)</span>
             <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
           </div>
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
@@ -2095,7 +2095,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
         <div id="reviewCard33" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal33')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">방광염·여성질환</span>
+            <span class="review-cat-tag">방광염</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2020.04</span>
           </div>
@@ -2475,7 +2475,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal05')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">여성질환</span>
+        <span class="review-cat-tag">난소물혹(난소낭종)</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (2장)</span>
         <span class="review-date">2020.08</span>
       </div>
@@ -2511,7 +2511,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <p class="review-img-caption"><i class="fas fa-search-plus"></i> 이미지 클릭하면 원본 크기로 | 썸네일로 페이지 전환</p>
       </div>
       <div class="review-card-footer" style="margin-top:16px;">
-        <span class="review-author"><i class="fas fa-user"></i> 이*조경 (여)</span>
+        <span class="review-author"><i class="fas fa-user"></i> 이*경 (여)</span>
         <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
       </div>
     </div>
@@ -4750,7 +4750,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal40')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">요실금·여성질환</span>
+        <span class="review-cat-tag">요실금</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2023.08</span>
       </div>
@@ -5053,7 +5053,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal33')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag">방광염·여성질환</span>
+        <span class="review-cat-tag">방광염</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2020.04</span>
       </div>
