@@ -511,7 +511,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <button class="review-filter-btn" data-cat="소화기">소화기</button>
             <button class="review-filter-btn" data-cat="뇌신경">자율신경·뇌신경</button>
             <button class="review-filter-btn" data-cat="면역대사">면역·대사성질환</button>
-            <button class="review-filter-btn" data-cat="여성">여성질환</button>
+            <button class="review-filter-btn" data-cat="여성질환">여성질환</button>
             <button class="review-filter-btn" data-cat="성장">소아성장</button>
             <button class="review-filter-btn" data-cat="다이어트">체질 다이어트</button>
           </div>
@@ -538,7 +538,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-grid summary-mode" id="reviewGrid">
 
         <!-- 후기 카드 #81 -->
-        <div id="reviewCard81" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal81')" style="cursor:pointer;">
+        <div id="reviewCard81" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal81')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">다낭성난소증후군·생리통</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -1397,7 +1397,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-        <div id="reviewCard40" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal40')" style="cursor:pointer;">
+        <div id="reviewCard40" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal40')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">요실금·여성질환</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -1526,7 +1526,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
         <!-- ===== 자필후기 카드 #5 — 이O경 (여성질환·난소물혹) ===== -->
-        <div id="reviewCard05" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal05')" style="cursor:pointer;">
+        <div id="reviewCard05" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal05')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">여성질환</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기 (2장)</span>
@@ -1630,7 +1630,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
         <!-- ===== 자필후기 카드 #9 — 홍0임 (갱년기·불면·족저근막염) ===== -->
-        <div id="reviewCard09" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal09')" style="cursor:pointer;">
+        <div id="reviewCard09" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal09')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">갱년기·불면</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -2093,7 +2093,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-        <div id="reviewCard33" class="review-card review-card-handwritten" data-cat="여성" onclick="openReviewModal('detailModal33')" style="cursor:pointer;">
+        <div id="reviewCard33" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal33')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">방광염·여성질환</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
@@ -5918,11 +5918,11 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard02'), cat: '다이어트' },
       { el: document.getElementById('reviewCard03'), cat: '피부' },
       { el: document.getElementById('reviewCard04'), cat: '대상포진' },
-      { el: document.getElementById('reviewCard05'), cat: '여성' },
+      { el: document.getElementById('reviewCard05'), cat: '여성질환' },
       { el: document.getElementById('reviewCard06'), cat: '척추관절' },
       { el: document.getElementById('reviewCard07'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard08'), cat: '대장염' },
-      { el: document.getElementById('reviewCard09'), cat: '여성' },
+      { el: document.getElementById('reviewCard09'), cat: '여성질환' },
       { el: document.getElementById('reviewCard10'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard11'), cat: '척추관절' },
       { el: document.getElementById('reviewCard12'), cat: '척추관절' },
@@ -5943,7 +5943,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
-      { el: document.getElementById('reviewCard81'), cat: '여성' },
+      { el: document.getElementById('reviewCard81'), cat: '여성질환' },
       { el: document.getElementById('reviewCard80'), cat: '피부' },
       { el: document.getElementById('reviewCard79'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard78'), cat: '척추관절' },
@@ -5984,14 +5984,14 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard43'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard42'), cat: '천식' },
       { el: document.getElementById('reviewCard41'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard40'), cat: '여성' },
+      { el: document.getElementById('reviewCard40'), cat: '여성질환' },
       { el: document.getElementById('reviewCard39'), cat: '척추관절' },
       { el: document.getElementById('reviewCard38'), cat: '소화기' },
       { el: document.getElementById('reviewCard37'), cat: '구안와사' },
       { el: document.getElementById('reviewCard36'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard35'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard34'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard33'), cat: '여성' },
+      { el: document.getElementById('reviewCard33'), cat: '여성질환' },
       { el: document.getElementById('reviewCard32'), cat: '소화기' },
       { el: document.getElementById('reviewCard31'), cat: '척추관절' }
     ];
