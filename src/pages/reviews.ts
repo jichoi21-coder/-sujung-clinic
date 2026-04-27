@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #80 -->
+        <div id="reviewCard80" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal80')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두드러기</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">교통사고 후 스트레스성 두드러기·우울감 — 체질한약·침으로 두드러기 멈추고 삶의 질이 개선됐어요</h3>
+          <p class="review-story">
+            교통사고 후 스트레스로 심한 두드러기·우울감. 타 한의원은 원인 모르겠다며 후유증만 치료. 수정한의원에서 심장 열 체질 문제 진단 후 한약·침으로 두드러기 점차 소멸, 삶의 질 개선.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 임*연 (만 56세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #79 -->
         <div id="reviewCard79" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal79')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2913,6 +2934,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #80 -->
+  <div id="detailModal80" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal80')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-skin">피부·아토피</span>
+        <span class="review-detail-tag">#두드러기</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 7월</span>
+      </div>
+      <h2 class="review-detail-title">교통사고 후 스트레스성 두드러기·우울감 — 체질한약·침으로 두드러기 멈추고 삶의 질이 개선됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-80-imjiyeon-p1.jpg" alt="임*연 두드러기 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 임*연 (만 56세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 7월 16일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>교통사고 후 3~4일 지나 한의원 치료를 받고 있는데 스트레스 때문인지 몸에 두드러기가 나타나 심한 우울감이 있었다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>타 한의원에서 두드러기 증상을 호소했으나 원인을 모르겠다고만 하고 교통사고 후유증만 치료해 주었다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>원장 선생님께서 체질의 문제로 심장에 열이 많아 그렇다고 한약과 침치료를 해주어 점차 좋아졌다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>원장님과 직원들이 친절하게 상담해 주어 안정감이 있고, 우선 두드러기가 멈추어 삶의 질이 개선되어 원장님께 감사드립니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>오랜 경험으로 환자를 돌보시는 것 같아 내 몸을 원장님께서 치료해 주시는 대로 믿고 맡길 수 있어 좋았다. 치료를 꾸준히 받으면 좋아지는 걸 느낄 수 있으니 원장님을 믿고 치료 받아 완치하는 기쁨을 누리시길 바랍니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #79 -->
   <div id="detailModal79" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5809,6 +5876,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard80'), cat: '피부' },
       { el: document.getElementById('reviewCard79'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard78'), cat: '척추관절' },
       { el: document.getElementById('reviewCard77'), cat: '척추관절' },
