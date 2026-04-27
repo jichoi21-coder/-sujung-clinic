@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #81 -->
+        <div id="reviewCard81" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal81')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">다낭성난소증후군·생리통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.02</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">8년간 진통제 2~3알씩 버텨온 다낭성난소증후군 생리통 — 토양체질 한약 한 달 만에 완전히 사라졌어요</h3>
+          <p class="review-story">
+            8년간 생리 때마다 진통제 2~3알, 조퇴까지 했던 다낭성난소증후군 생리통. 토양체질 한약 한 달 만에 생리통 소멸, 변비·식탐도 감소. "여긴 리얼입니다."
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 장*임 (만 25세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #80 -->
         <div id="reviewCard80" class="review-card review-card-handwritten" data-cat="피부" onclick="openReviewModal('detailModal80')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2934,6 +2955,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #81 -->
+  <div id="detailModal81" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal81')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-women">여성질환</span>
+        <span class="review-detail-tag">#다낭성난소증후군 #생리통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 2월</span>
+      </div>
+      <h2 class="review-detail-title">8년간 진통제 2~3알씩 버텨온 다낭성난소증후군 생리통 — 토양체질 한약 한 달 만에 완전히 사라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-81-jangjeonglim-p1.jpg" alt="장*임 다낭성난소증후군 생리통 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 장*임 (만 25세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 2월 28일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>다낭성난소증후군이 있어 고등학교 때부터 대략 8년간 생리할 때만 되면 하루에 진통제를 2~3개쯤 복용해야 생리통을 견딜 수 있었습니다. 생리 전 2~3일 정도는 폭식을 했고 생리할 때는 근무 중 아파서 조퇴를 권유받을 만큼 힘들어했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>평소 양방치료만 받았고 한방치료는 생각해 본 적도 없었는데, 같이 근무하는 분께서 수정한의원에서 치료를 받고 체질개선이 되어 증상이 아예 보이지 않을 정도로 호전되었다는 이야기를 듣고 내원하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>무려 한 달 만에 생리통이 사라졌습니다. 주변 사람들이 보고 신기해할 정도로 아예 아파하지 않게 됐습니다. 원장님께서 토양체질이라 심장의 열을 빼줘야 한다고 하셨는데 한약을 먹은 후 생리통이 사라진 것은 물론 변비도 사라지고 식탐도 조금 줄었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>수정한의원은 치료도 좋지만 직원분들이 무척 다정하고 친절하십니다. 올 때마다 제 몸 상태를 신경써주시고 항상 기분 좋게 미소지어 주십니다. 여러 병원을 다녀봤지만 이렇게 환자를 많이 신경써주시는 곳은 처음입니다. 생리통이 없어진 것만 해도 삶의 질이 두 배는 상승했어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>고민하고 계신 분들은 일단 생리통 때문에 고민이시면 그냥 받아보세요. 여긴 리얼입니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #80 -->
   <div id="detailModal80" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5876,6 +5943,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard81'), cat: '여성질환' },
       { el: document.getElementById('reviewCard80'), cat: '피부' },
       { el: document.getElementById('reviewCard79'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard78'), cat: '척추관절' },
