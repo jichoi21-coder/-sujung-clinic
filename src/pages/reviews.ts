@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #79 -->
+        <div id="reviewCard79" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal79')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">수족다한증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">20년 수족다한증 — 한약·추나·약침·식이요법으로 손발 땀이 절반으로 줄어 삶의 만족도가 올라갔어요</h3>
+          <p class="review-story">
+            20년간 손·발 과도한 땀으로 글쓰기·미술 등 일상 방해. 한약·추나·약침과 커피·매운음식 중단 식이요법으로 땀 빈도·시간 치료 전 10 → 현재 절반 수준으로 감소.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*진 (만 30세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #78 -->
         <div id="reviewCard78" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal78')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -2892,6 +2913,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #79 -->
+  <div id="detailModal79" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal79')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#수족다한증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 7월</span>
+      </div>
+      <h2 class="review-detail-title">20년 수족다한증 — 한약·추나·약침·식이요법으로 손발 땀이 절반으로 줄어 삶의 만족도가 올라갔어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-79-ihyejin-p1.jpg" alt="이*진 수족다한증 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 이*진 (만 30세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 7월 22일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>손과 발에 땀이 많이, 자주 나서 일상생활이 불편할 정도였습니다. 약 20여 년간 증상이 지속되었고 글쓰기, 미술 활동 등 손을 써야 하는 활동들을 할 때마다 방해가 되어 불편함을 느꼈습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>다한증 치료를 위해 여러 한의원, 병원을 다니다가 최근에 수정한의원을 알게 되어 오게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>한약, 추나 치료, 약침 등을 진행하였습니다. 커피·매운음식 끊기 등 식이요법도 알려주셔서 그대로 하였더니 땀이 나는 빈도와 시간이 크게 줄어들었습니다. (치료 전 10이었다면 지금은 절반 정도로 줄었음)</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>어렸을 때부터 손발에 땀이 안 난 적이 거의 없었는데 이제는 그렇지 않아서 삶의 만족도가 많이 올라갔습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>원장님을 비롯하여 병원 간호사 선생님들 모두 친절하시고 좋습니다. 감사합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #78 -->
   <div id="detailModal78" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -5742,6 +5809,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard79'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard78'), cat: '척추관절' },
       { el: document.getElementById('reviewCard77'), cat: '척추관절' },
       { el: document.getElementById('reviewCard76'), cat: '척추관절' },
