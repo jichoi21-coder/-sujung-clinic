@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #86 -->
+        <div id="reviewCard86" class="review-card review-card-handwritten" data-cat="소화기" onclick="openReviewModal('detailModal86')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">변비·옆구리통증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2024.01</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">주 1회 변비·옆구리 통증에 지팡이 짚던 허리 — 한약 3일 만에 변비 해소, 약침·추나로 옆구리 통증도 좋아졌어요</h3>
+          <p class="review-story">
+            오른쪽 옆구리 통증과 주 1회 변비, 앞으로 굽어 지팡이 없이 못 걷던 76세 환자. 한약 복용 3일 만에 대변, 이후 2일에 1번 규칙적으로 해소. 약침·체질침·추나로 옆구리 통증·허리도 개선.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 최*애 (만 76세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #85 -->
         <div id="reviewCard85" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal85')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3038,6 +3059,48 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #86 -->
+  <div id="detailModal86" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal86')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-digest">소화기</span>
+        <span class="review-detail-tag">#변비 #옆구리통증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2024년 1월</span>
+      </div>
+      <h2 class="review-detail-title">주 1회 변비·옆구리 통증에 지팡이 짚던 허리 — 한약 3일 만에 변비 해소, 약침·추나로 옆구리 통증도 좋아졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-86-choisunae-p1.jpg" alt="최*애 변비·옆구리통증 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 최*애 (만 76세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 1월 24일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>오른쪽 옆구리 통증이 심했고 허리가 앞으로 구부러져서 지팡이를 짚지 않으면 못 걸었어요. 그리고 변은 주 1회 밖에 보지 못했어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>제 동생 루시아 수녀님이 꼭 가서 진찰을 받아보고 약을 먹으라고 권해주셔서 오게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>2024년 1월 15일에 처음 와서 진찰받고 한약을 지었고 17일부터 복용을 했는데 결과가 좋았어요. 하루에 4봉지씩 먹었는데 3일 만에 대변을 보았어요. 그래서 1봉지를 더 먹었더니 또 3일 만에 대변을 보았고, 그 후 2일에 1번씩 변을 잘 보았어요. 정말 기분이 좋았어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>옆구리 통증에 정형외과 약을 하루 2번씩 먹었는데, 17일부터 한약을 먹으면서 정형외과 약을 안 먹고 한의원의 약침·체질침·추나치료를 받았더니 너무 좋아졌어요. 허리도 아주 딱 펴지지는 않았지만 치료를 계속 받으면 좋아질 것 같습니다. 숨차는 것도 조금 좋아졌어요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #85 -->
   <div id="detailModal85" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -6194,6 +6257,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard86'), cat: '소화기' },
       { el: document.getElementById('reviewCard85'), cat: '소화기' },
       { el: document.getElementById('reviewCard84'), cat: '면역대사' },
       { el: document.getElementById('reviewCard83'), cat: '뇌신경' },
