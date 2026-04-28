@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #103 -->
+        <div id="reviewCard103" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal103')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">편두통·안구통·어지럼증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2025.02</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">스트레스·긴장으로 시작된 편두통·안구통·극심한 어지럼증 — 약침·추나·한약 한 달로 어지럼증 완전 소실, 식욕·기력까지 회복됐어요</h3>
+          <p class="review-story">
+            장기간 스트레스·컴퓨터 작업으로 편두통·왼쪽 안구통·극심한 어지럼증·식욕 저하 발생. 신경과 약으로 호전 없던 중 수정한의원 방문. 약침·물리치료·추나·한약 한 달 만에 어지럼증 완전 개선, 식욕·소화·기력 회복. 8체질 진단으로 식이 관리도 병행.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 조*우 (만 47세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #102 -->
         <div id="reviewCard102" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal102')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3442,6 +3463,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #103 -->
+  <div id="detailModal103" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal103')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#편두통 #안구통 #어지럼증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2025년 2월</span>
+      </div>
+      <h2 class="review-detail-title">스트레스·긴장으로 시작된 편두통·안구통·극심한 어지럼증 — 약침·추나·한약 한 달로 어지럼증 완전 소실, 식욕·기력까지 회복됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-103-jominwoo-p1.jpg" alt="조*우 편두통·안구통·어지럼증 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 조*우 (만 47세, 남)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 2월 19일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>장기간 스트레스와 긴장, 컴퓨터 작업 등으로 어느 순간 왼쪽 눈이 건들거리는 느낌과 눈썹이 들어간 것 같은 느낌이 들었습니다. 무시하고 생활하다가 시험 준비하면서 강한 긴장과 불면증·스트레스로 왼쪽 눈이 아프면서 편두통이 생겼는데, 이 증세도 별 대수롭지 않게 넘기다가 극심한 어지럼증이 발생했습니다. 급기야 식욕이 떨어져서 식사를 하지 못했고 억지로 먹어도 구역질이 났습니다. 건강검진 결과 위염 외에는 다른 문제는 없었지만 양약으로는 해결할 수 없는 한의학에 관심을 갖기 시작했고, 스트레스로 몸에 두드러기도 생기기 시작했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>신경과에서 한 달 정도 처방받은 약을 복용해도 별로 호전되지 않았고, 위가 더 나빠지는 기분이었으며 스트레스가 더 심해졌습니다. 노원구 집 근처에서 믿을 수 있는 한의원을 찾다가 수정한의원을 알게 되었습니다. 양약에서 치료하지 못하는 많은 질병을 한의학에서는 효과적으로 치료할 수 있다고 알고 있었고, 양약은 몸이 더 망가지는 느낌을 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>약침, 물리치료, 추나치료, 한약을 한 달간 복용하고 어지럼증은 완전히 개선되었고, 편두통과 왼쪽 눈은 완치되지는 않았지만 좋아지고 있음을 체감하게 되었습니다. 특히 식욕을 완전히 회복하여 소화불량은 없어졌습니다. 체력 고갈이 심해 운동을 하면 쉽게 지쳤는데 한약과 치료를 받고 기력이 좋아졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>8체질 중 나의 체질을 정확하게 진단해 주셔서 이로운 음식과 해로운 음식을 구분하여 먹게 되었는데, 이전까지 특정 음식을 먹었을 때 왜 탈이 났는지 이번에 알게 되었습니다. 항상 마음의 근심을 주었던 어지럼증이 없어져서 생활의 불편함이 사라졌고, 어지럼증으로 대인관계에 두려움이 있었고 피하게 되었는데 어지럼증이 개선되면서 사람들을 만나고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>몸은 아프기 전에 미세하게 신호를 보내는데 아프기 시작하면 병원을 찾아 나타나는 현상만 치료하지만, 한의학은 아프기 전에 미리 근본적인 문제점을 치료해줘서 건강관리에는 많은 도움이 되는 것 같습니다. 수정한의원의 역사가 오래된 이유는 친절하신 치료 지원으로 한의원 방문자들의 마음을 편하게 해주기 때문입니다.</p>
         </div>
       </div>
     </div>
@@ -7320,6 +7387,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard103'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard102'), cat: '척추관절' },
       { el: document.getElementById('reviewCard101'), cat: '면역대사' },
       { el: document.getElementById('reviewCard100'), cat: '척추관절' },
