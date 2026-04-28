@@ -559,20 +559,20 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
         <!-- 후기 카드 #96 -->
-        <div id="reviewCard96" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal96')" style="cursor:pointer;">
+        <div id="reviewCard96" class="review-card review-card-handwritten" data-cat="구안와사" onclick="openReviewModal('detailModal96')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-cat-tag">만성통증·천식·공황장애</span>
+            <span class="review-cat-tag">구안와사·안면마비</span>
             <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-            <span class="review-date">2025.09</span>
+            <span class="review-date">2025.06</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">스테로이드·양압기·심장약 없이 — 천식·공황장애·생리통·관절통이 한약·약침으로 1년 만에 모두 나아 육아가 행복해졌어요</h3>
+          <h3 class="review-card-title">벨마비 진단 후 한 달 — 한약·약침·전침·추나로 눈물·눈 감기기·입술 모양까지 거의 완전 회복됐어요</h3>
           <p class="review-story">
-            아네노이드 비대증·천식으로 스테로이드 장기 복용, 양압기로 수면 불편, 공황장애·체력 저하·심한 생리통까지. 어머니 척추협착·류마티스 치료 효과에 감동받아 수정한의원 방문. 체질 한약·약침으로 관절통·스테로이드 중단, 생리통 소실, 양압기 없이 숙면 성공. 저녁 늦게까지 아이를 돌볼 힘이 생겼습니다.
+            25년 5월 구안와사로 얼굴 마비, 오른쪽 눈 안 감기고 눈물 지속, 음식 흘리는 불편. 조카 권유로 수정한의원 방문. 한약·약침·전침·추나 치료 후 다음날부터 묵직한 느낌 해소, 한 달 만에 눈물·눈 감기기·입술 동그라미·음식 씹기 모두 정상 회복. 정신적 스트레스도 극복했습니다.
           </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 유*진 (만 39세, 여)</span>
+            <span class="review-author"><i class="fas fa-user"></i> 유*봉 (만 67세, 남)</span>
             <div class="review-stars">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
@@ -3326,19 +3326,19 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal96')">✕ 닫기</button>
       <div class="review-detail-header">
-        <span class="review-cat-tag review-cat-tag-immune">면역·대사성질환</span>
-        <span class="review-detail-tag">#만성통증 #천식 #공황장애 #생리통</span>
+        <span class="review-cat-tag review-cat-tag-special">구안와사·안면마비</span>
+        <span class="review-detail-tag">#구안와사 #안면마비 #벨마비</span>
         <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
-        <span class="review-date">2025년 9월</span>
+        <span class="review-date">2025년 6월</span>
       </div>
-      <h2 class="review-detail-title">스테로이드·양압기·심장약 없이 — 천식·공황장애·생리통·관절통이 한약·약침으로 1년 만에 모두 나아 육아가 행복해졌어요</h2>
+      <h2 class="review-detail-title">벨마비 진단 후 한 달 — 한약·약침·전침·추나로 눈물·눈 감기기·입술 모양까지 거의 완전 회복됐어요</h2>
       <div class="review-detail-image-wrap">
-        <img src="/static/reviews/review-96-yusujin-p1.jpg" alt="유*진 만성통증·천식·공황장애 자필후기" class="review-detail-image" loading="lazy">
+        <img src="/static/reviews/review-96-yuhakbong-p1.jpg" alt="유*봉 구안와사·안면마비 자필후기" class="review-detail-image" loading="lazy">
       </div>
       <div class="review-detail-author">
-        <span><i class="fas fa-user"></i> 유*진 (만 39세, 여)</span>
-        <span><i class="fas fa-calendar"></i> 작성일: 2025년 9월 24일</span>
+        <span><i class="fas fa-user"></i> 유*봉 (만 67세, 남)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 6월 24일</span>
       </div>
       <div class="review-detail-stars">
         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -3346,24 +3346,24 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-detail-content">
         <div class="review-detail-section">
           <h4>증상 및 불편함</h4>
-          <p>아네노이드 비대증과 천식으로 스테로이드를 오래 복용해 왔고, 약한 관절에 지속적으로 스테로이드 주사를 맞았습니다. 양압기를 사용하지 않으면 수면이 어렵고 불안·공황장애가 있어 힘들었으며, 체력 저하와 심장 통증, 심한 생리통까지 복합적인 증상으로 고통받고 있었습니다.</p>
+          <p>25년 5월 26일 구안와사로 얼굴이 마비되고 오른쪽으로 음식물이 흘러서 백병원 응급실에 방문했습니다. 피검사, 소변검사, CT, MRI를 찍고 '벨마비'라고 진단을 받았습니다. 오른쪽 눈이 안 감기고 눈물이 계속 나고, 입이 잘 벌어지지 않고 음식이 잘 씹어지지 않아 흘리게 되어 많이 불편했습니다.</p>
         </div>
         <div class="review-detail-section">
           <h4>치료를 받게 된 이유</h4>
-          <p>어머니께서 척추협착증·류마티스를 수정한의원에서 치료받으시고 눈에 띄게 좋아지시는 것을 직접 보면서, 저도 만성적으로 복용하던 심장약·스테로이드·소염제·신경과 약을 줄여보고자 방문하게 되었습니다.</p>
+          <p>조카가 강력하게 수정한의원에 가라고 해서 오게 됐습니다.</p>
         </div>
         <div class="review-detail-section">
           <h4>치료 및 개선 사항</h4>
-          <p>체질 한약과 약침 치료를 받으면서 관절 통증이 해소되어 정형외과 스테로이드 주사를 더 이상 맞지 않아도 되었습니다. 한약으로 생리통과 신경과 약 복용도 필요 없어졌고, 양압기 없이도 깊고 끊김 없는 숙면을 취하게 되어 불안감이 크게 줄었습니다.</p>
-          <p>겨울철 천식으로 힘들 때도 전반적인 건강 상태가 개선되어 삶의 질이 크게 향상되었습니다.</p>
+          <p>한약과 약침, 전침, 추나 치료를 받았습니다. 침 맞은 다음날부터 묵직한 느낌이 사라졌고, 한 달 다 되어 가는데 지금 거의 다 좋아졌습니다.</p>
+          <p>제일 불편하던 눈물 나는 것은 벌써 없어졌고, 음식 씹는 것도 괜찮고, 이마와 눈도 잘 감기고 힘이 거의 다 들어갑니다. 입술 모양도 동그라미가 잘 되고 일상생활에서 아무런 불편함이 없습니다.</p>
         </div>
         <div class="review-detail-section">
           <h4>삶의 질 변화</h4>
-          <p>체력이 회복되어 저녁 늦게까지 아이를 돌볼 수 있게 되었습니다. 밤에 느끼던 두려움이 사라지고 삶의 질이 극적으로 향상되었습니다. 체질과 식이 지도를 받으며 어떤 음식이 몸에 맞는지 알게 된 것도 큰 도움이 되었습니다.</p>
+          <p>치료받으면서 원장님이 참 편했습니다. 구안와사와 개인적인 사정으로 정신적으로도 많이 힘들었는데, 얼굴이 원래대로 돌아오면서 스트레스를 이겨내는 데 도움이 됐습니다.</p>
         </div>
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
-          <p>비슷한 고통을 겪고 계신 분들께 꼭 수정한의원에서 치료를 받아보시길 강력히 권합니다. 원장님과 간호사 선생님들께 진심으로 감사드립니다.</p>
+          <p>감사하다는 말을 드리고 싶습니다. 안면마비 환자들에게 망설이지 말고 빨리 와야 한다고 말해주고 싶습니다.</p>
         </div>
       </div>
     </div>
@@ -6924,7 +6924,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
-      { el: document.getElementById('reviewCard96'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard96'), cat: '구안와사' },
       { el: document.getElementById('reviewCard95'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard94'), cat: '구안와사' },
       { el: document.getElementById('reviewCard93'), cat: '대장염' },
