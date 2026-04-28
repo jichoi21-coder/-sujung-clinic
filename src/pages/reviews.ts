@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #97 -->
+        <div id="reviewCard97" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal97')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">만성통증·천식·공황장애·생리통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2025.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">기관지 수술만 두 번, 스테로이드·양압기·공황장애약에 의존하다 — 한약·약침·추나로 몇 년 만에 통잠 자고 삶의 질이 놀랄 만큼 달라졌어요</h3>
+          <p class="review-story">
+            아네노이드 비대증·천식·관절 약함으로 스테로이드·공황장애약·양압기에 의존하며 생리통까지. 친정어머니 척추협착·류마티스 회복을 보고 방문. 추나·약침으로 정형외과 스테로이드 완전 중단, 한약으로 생리통·신경과약 해소, 양압기 없이 몇 년 만에 통잠 성공. 11시까지 아이 공부 봐줄 체력이 생겼습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 유*진 (만 39세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #96 -->
         <div id="reviewCard96" class="review-card review-card-handwritten" data-cat="구안와사" onclick="openReviewModal('detailModal96')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3316,6 +3337,54 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #97 -->
+  <div id="detailModal97" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal97')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역·대사성질환</span>
+        <span class="review-detail-tag">#만성통증 #천식 #공황장애 #생리통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2025년 9월</span>
+      </div>
+      <h2 class="review-detail-title">기관지 수술만 두 번, 스테로이드·양압기·공황장애약에 의존하다 — 한약·약침·추나로 몇 년 만에 통잠 자고 삶의 질이 놀랄 만큼 달라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-97-yusujin-p1.jpg" alt="유*진 만성통증·천식·공황장애·생리통 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 유*진 (만 39세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 9월 24일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>어려서부터 기관지가 아파서 아네노이드 비대증, 천식을 앓고 있었습니다. 또한 선천적으로 관절이 약해서 파스랑 정형외과의 스테로이드를 지속적으로 먹었습니다. 기관지가 수술로 나아지지 않아서 수면 시 양압기라는 기계를 달고 자야 해서 불편함과 불안함으로 공황장애 약도 먹고 있었습니다. 지속된 투약으로 체력이 많이 약해져서 일상이 힘들었고, 심장이 아파서 지속된 통증도 있었습니다. 생리통도 심했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>친정 어머니께서 허리협착증, 류마티스 등으로 허리가 굽어서 걷는 것도 힘들어 하셨는데, 점점 허리를 펴시고 좋아지시는 것을 보고 오게 되었습니다. 지속적으로 심장약, 스테로이드제, 소염제, 신경과 약 등을 복용하고 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>하루종일 앉아서 만드는 직업을 가지고 있어서 관절 통증이 심했는데, 추나와 약침으로 점점 좋아져서 지금은 정형외과 스테로이드제는 아예 끊었습니다.</p>
+          <p>생리통과 신경과 약은 한약을 먹으면서 너무너무 좋아졌습니다. 특히 밤에 잘 때 기계를 끼고 자서 불안감에 매번 울고 떨고 잠자는 것이 아예 없어져서 몇 년 만에 통잠을 자요!! 잠을 잘 자고 불안감도 없어지니 일상생활이 완전히 달라졌습니다.</p>
+          <p>6시도 전부터 피곤해서 아이를 제대로 돌보지 못했는데, 지금은 11시까지 아이의 공부를 봐주고도 체력이 남아서 핸드폰 보고 놀다가 잡니다. 정말 삶의 질이 놀랄 정도로 좋아졌습니다. 언제나 추운 겨울이 너무 싫지만 (천식으로 숨 쉬는 게 힘들어서), 이젠 겨울에도 괜찮을 거라는 확신이 생겼습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>항상 통증과 함께 일어났는데, 정말 좋아져서 밤이 무섭지 않아요!! 삶의 질이 좋아진다는 게 어떤 것인지 느끼고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>제가 워낙 약해서 기관지 수술만 두 번 하고, 사는 게 통증이었거든요. 정말 좋아집니다. 진짜진짜 너무너무 많이 변할 수 있어요!!</p>
         </div>
       </div>
     </div>
@@ -6924,6 +6993,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard97'), cat: '면역대사' },
       { el: document.getElementById('reviewCard96'), cat: '구안와사' },
       { el: document.getElementById('reviewCard95'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard94'), cat: '구안와사' },
