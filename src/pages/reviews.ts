@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #92 -->
+        <div id="reviewCard92" class="review-card" data-cat="구안와사" onclick="openReviewModal('detailModal92')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">구안와사·안면마비</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">백병원 1주 입원도 효과 없던 구안와사 — 한약·약침·추나·매선으로 2달도 안 돼 90% 이상 회복됐어요</h3>
+          <p class="review-story">
+            아침 식사 중 얼굴이 돌아가 백병원 이비인후과에 1주일 입원해도 변화 없었습니다. 지인 소개로 수정한의원 방문, 한약·약침·추나 일주일 만에 좋아졌고 매선치료 다음 날 바로 눈밑이 움직이기 시작. 고혈압 200 이상도 한약 후 안정. 2달 안에 90% 이상 회복되었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> meang664</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #90 -->
         <div id="reviewCard90" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal90')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3213,6 +3234,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     </div>
   </div>
 
+  <!-- 상세 모달 #92 -->
+  <div id="detailModal92" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal92')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-special">구안와사·안면마비</span>
+        <span class="review-detail-tag">#구안와사 #안면마비 #매선치료</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2025년 3월</span>
+      </div>
+      <h2 class="review-detail-title">백병원 1주 입원도 효과 없던 구안와사 — 한약·약침·추나·매선으로 2달도 안 돼 90% 이상 회복됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-92-meang664-p1.jpg" alt="meang664 구안와사·안면마비 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> meang664</span>
+        <span><i class="fas fa-calendar"></i> 2025년 3월 15일 · 네이버 후기</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>1월 12일 아침을 먹으려는데 뭔가 주르르 흐르길래 보니 얼굴이 완전히 돌아갔어요. 백병원 이비인후과에 일주일간 입원치료해도 변화가 없었어요. 눈이 떠있는 채로 안 감기고 너무 아파서 손으로 쓸어내려야만 잠을 잤고 우울증으로 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>동네분이 전에 대상포진으로 구안와사가 심하게 왔는데 수정한의원에서 나았다고 해서 소개로 왔어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>한약과 약침, 추나를 일주일 받고 바로 좋아졌어요. 특히 매선치료를 받고 나니 이튿날 바로 눈밑이 움직이기 시작했어요. 2달이 안 됐는데 90% 이상 좋아진 것 같아요. 주변 사람들도 많이 좋아졌대요.</p>
+          <p>고혈압도 200이 넘었는데 한약을 먹고는 많이 안정됐어요. 치료가 잘 되어 만족합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>간호사들이 친절해서 안정된 마음으로 치료를 받을 수 있었어요. 원적외선 온열치료실이 있어서 정말 좋아요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>원장님 정말 감사합니다!</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- 상세 모달 #90 -->
   <div id="detailModal90" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
@@ -6580,6 +6647,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard92'), cat: '구안와사' },
       { el: document.getElementById('reviewCard91'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard90'), cat: '여성질환' },
       { el: document.getElementById('reviewCard89'), cat: '척추관절' },
