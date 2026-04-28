@@ -3328,7 +3328,13 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>치료 및 개선 사항</h4>
           <p>자율신경을 조절하고 부정맥을 치료하는 약침과 체질침을 매일 맞고 체질 한약을 하루에 5봉씩 함께 복용하면서 증상이 현저히 줄어들더니 한 달이 지난 지금은 증세가 완전히 없어졌습니다. 개원한 지 30년이나 되어서 그런지 침도 잘 놓고 한약도 잘 짓는 것 같습니다.</p>
-          <p>예전에 다른 데서 한약을 먹으면 불편했는데, 수정한의원 한약은 체질한약이라 물처럼 먹을 수 있어서 하루에 5~6봉을 먹어도 불편하지 않습니다. 지금은 예전처럼 너무 편합니다. 몸이 조금이라도 아플 때 오면 항상 기대 이상의 효험을 보는 믿을 수 있는 한의원입니다.</p>
+          <p>예전에 다른 데서 한약을 먹으면 불편했는데, 수정한의원 한약은 체질한약이라 부담 없이 복용할 수 있었습니다.</p>
+          <div style="background:#f0fdf4;border-left:4px solid #16a34a;border-radius:8px;padding:14px 18px;margin:12px 0;font-size:1.05em;line-height:1.7;">
+            <i class="fas fa-quote-left" style="color:#16a34a;margin-right:6px;font-size:0.9em;"></i>
+            <strong>수정한의원 한약은 <span style="color:#16a34a;">체질한약</span>이라 <span style="color:#16a34a;">물처럼</span> 먹을 수 있어서<br>하루에 <span style="color:#16a34a;font-size:1.1em;">5~6봉</span>을 먹어도 <span style="color:#16a34a;">전혀 불편하지 않습니다.</span></strong>
+            <i class="fas fa-quote-right" style="color:#16a34a;margin-left:6px;font-size:0.9em;"></i>
+          </div>
+          <p>지금은 예전처럼 너무 편합니다. 몸이 조금이라도 아플 때 오면 항상 기대 이상의 효험을 보는 믿을 수 있는 한의원입니다.</p>
         </div>
         <div class="review-detail-section">
           <h4>삶의 질 변화</h4>
