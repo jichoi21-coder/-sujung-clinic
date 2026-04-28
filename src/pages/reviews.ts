@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #95 -->
+        <div id="reviewCard95" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal95')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">부정맥·심장조기수축</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2025.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">자다가 심장이 철렁 — 하루 수십 번 심장 두근거림·조기수축이 한 달 만에 완전히 사라졌어요</h3>
+          <p class="review-story">
+            4월 중순 갑자기 하루 수십 번 심장이 쿵·꿀렁거리고 수면 중 철렁하는 조기수축으로 너무 놀라 평소 다니던 수정한의원 방문. 자율신경 조절 약침·체질침·체질한약 5봉 복용으로 한 달 만에 증세 완전 소멸. 체질한약은 물처럼 편하게 복용했습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 오*화 (만 51세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #94 -->
         <div id="reviewCard94" class="review-card review-card-handwritten" data-cat="구안와사" onclick="openReviewModal('detailModal94')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3273,6 +3294,49 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #95 -->
+  <div id="detailModal95" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal95')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#부정맥 #심장조기수축 #자율신경</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2025년 5월</span>
+      </div>
+      <h2 class="review-detail-title">자다가 심장이 철렁 — 하루 수십 번 심장 두근거림·조기수축이 한 달 만에 완전히 사라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-95-ojunhwa-p1.jpg" alt="오*화 부정맥·심장조기수축 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 오*화 (만 51세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 5월 10일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>한 달 전 대략 4월 15일경 갑자기 심장이 쿵 하면서 철렁하는 느낌이 하루에도 몇 차례 있었습니다. 괜찮겠지 했는데 이후에도 심장이 막히듯 꿀렁꿀렁하는 두근거림이 하루에 수십 번씩 지속되고, 잠자는 동안에 갑자기 너무나 크게 심장이 철렁하는 느낌을 받아서 이러다 자다가 죽을 수도 있겠다는 생각이 들며 너무 놀라 걱정이 되는 마음에, 평소에 불편할 때마다 다니는 수정한의원을 방문했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>자율신경을 조절하고 부정맥을 치료하는 약침과 체질침을 매일 맞고 체질 한약을 하루에 5봉씩 함께 복용하면서 증상이 현저히 줄어들더니 한 달이 지난 지금은 증세가 완전히 없어졌습니다. 개원한 지 30년이나 되어서 그런지 침도 잘 놓고 한약도 잘 짓는 것 같습니다.</p>
+          <p>예전에 다른 데서 한약을 먹으면 불편했는데, 수정한의원 한약은 체질한약이라 물처럼 먹을 수 있어서 하루에 5~6봉을 먹어도 불편하지 않습니다. 지금은 예전처럼 너무 편합니다. 몸이 조금이라도 아플 때 오면 항상 기대 이상의 효험을 보는 믿을 수 있는 한의원입니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>주위에 많은 한의원이 있지만 개원한 지 30년이나 되는 실력 있는 한의학 박사님께서 진료하는 한의원은 흔치 않습니다. 정확한 체질을 알려주고 체질식도 지도해 주니 더 좋습니다. 치료를 하면서 양자온열치료도 할 수 있어서 좋고, 온열치료실에서 치료받는 환자분을 여러 분 봤는데 난치 질환 환자들도 많이 오십니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>믿고 치료 받으러 오실만한 곳이라고 말씀드리고 싶습니다.</p>
         </div>
       </div>
     </div>
@@ -6784,6 +6848,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard95'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard94'), cat: '구안와사' },
       { el: document.getElementById('reviewCard93'), cat: '대장염' },
       { el: document.getElementById('reviewCard92'), cat: '구안와사' },
