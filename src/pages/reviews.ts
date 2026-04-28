@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #99 -->
+        <div id="reviewCard99" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal99')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">섬유근육통·우울증·공황</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2025.02</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">군대 사고 후 4년간 지옥 같던 섬유근육통 — 한의원에서 제 삶에 기적이 증아다시 돌아왔습니다</h3>
+          <p class="review-story">
+            군대 사고로 알게 된 섬유근육통으로 4년간 전신통증·소화장애·수면장애·우울증·공황. 많은 병원도 등돌리고 약 부작용만 나았던 중 어머니 소개로 수정한의원 방문. 2개월 반 만에 통증 소실, 우울증 해소, 정상적인 삶이 돌아왔습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*현 (만 23세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #98 -->
         <div id="reviewCard98" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal98')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3358,6 +3379,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #99 -->
+  <div id="detailModal99" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal99')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#섬유근육통 #우울증 #공황장애</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2025년 2월</span>
+      </div>
+      <h2 class="review-detail-title">군대 사고 후 4년간 지옥 같던 섬유근육통 — 한의원에서 제 삶에 기적이 증아다시 돌아왔습니다</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-99-leekyuhyeon-p1.jpg" alt="이*현 섬유근육통·우울증·공황 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 이*현 (만 23세, 남)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 2월 19일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>군대에서 있었던 사고로 인해 최종적으로 섬유근육통이라는 질병을 얻었습니다. 가만히 누워있어도 매순간 전신에 통증이 있었고, 소화장애·수면장애 등 많은 신체적 문제와 스트레스가 나에게 찾아왔습니다. 그 스트레스로 인해 발생하는 통증으로 끛이지 않는 악순환이 이루어졌습니다. 여러 병원을 전전하며 많은 약을 먹게 되었고, 나에게 돌아온 것은 치료가 아닌 부작용들 밖에 없었습니다. 항상 우울했고 삶의 의지가 없고 밖에도 쉽게 나가지 못하여 말 그대로 하루하루 지옥 같은 삶이었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>어느새 이 고통을 가지고 산 지 4년이 될 무렴 더 이상 이렇게 살고 싶지 않아졌고, 어머니의 소개로 수정한의원을 알게 되었습니다. 그간의 많은 병원을 다녀지만 호전이 없었기에 솔직히 불신의 마음을 겖고 있었습니다. 하지만 어머니의 안면마비를 고쳐 주셨다는 말을 들었을 때, 내 삶도 바됌 수 있지 않을까 하는 기대와 희망이 생겨났습니다. 밑져야 본전이기에 치료를 받아봐야겠다는 마음이 생겼습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>일단 많은 표현 중에 이 말이 우선인 것 같습니다. 내 삶에 기적이 찾아왔습니다. 날이 갈수록 줄어드는 통증… 통증이 줄어들었고, 우울했던 마음이 밝아지기 시작했습니다. 스트레스가 와도 그것을 긴정적으로 이겨낼 힘이 생겼고, 그로 인해 통증도 오지 않았습니다. 12월 초부터 약 2개월 반 동안 치료를 받고 있는데, 첫 제 모습으로 돌아오게 되었습니다. 나에게 있어서는 개선이라는 표현보다는 기적이 찾아왔다는 말이 맞는 것 같습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>초반에는 치료를 받으면 하루하루 몸의 상태와 체력이 초기화되는 기분이었습니다. 치료를 받을 때마다 아픈 게 감소되었습니다. 그게 좋았습니다. 하루라도 안 아플 수 있구나! 안 아픈 게 얼마만이지? 칠흑같이 어두웠던 마음에 희망의 불씨가 피어났습니다. 점점 멀리 나가려고 노력했고, 오래 걸어보려 했습니다. 전에는 상상조차 못했던 일반적인, 정상적인 삶이 내게 돌아왔습니다. 하루하루 변해가는 몸 상태를 보며 희망을 키웠고 행복했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>하고 싶은 말은 정말 많지만, 무엇보다 삶을 포기했던 저에게 새로운 삶을 선물해 주셔서 감사합니다. 고생 끝에 낙이 왓어요. 남들과 똑같은 삶, 그게 당연했던 삶, 힙들어도 이겨낼 수 있는 삶이 다시 제게 왔습니다. 진심으로 감사합니다. — 4년 동안 고통받았던 섬유근육통 환자가 —</p>
         </div>
       </div>
     </div>
@@ -7056,6 +7123,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard99'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard98'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard97'), cat: '면역대사' },
       { el: document.getElementById('reviewCard96'), cat: '구안와사' },
