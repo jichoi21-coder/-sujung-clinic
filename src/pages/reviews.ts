@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #104 -->
+        <div id="reviewCard104" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal104')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">방아쇠증후군·허리무릎통증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">방아쇠증후군 재발로 수술 권유 받았지만 — 8체질 한약·체질침·약침·추나로 손가락은 물론 허리·무릎 통증까지 다 좋아졌어요</h3>
+          <p class="review-story">
+            왼쪽 3번째 손가락 방아쇠증후군으로 정형외과 수술 권유. 2017년 오른쪽 수술 후 불편함 경험 있어 수정한의원 선택. 8체질 진단 후 한약·체질침·약침·추나로 손가락은 물론 허리·무릎 통증, 스트레스까지 해소. 자신감 회복, 운동 재개.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> hks****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #103 -->
         <div id="reviewCard103" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal103')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3463,6 +3484,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #104 -->
+  <div id="detailModal104" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal104')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#방아쇠증후군 #허리무릎통증 #8체질</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2025년 8월</span>
+      </div>
+      <h2 class="review-detail-title">방아쇠증후군 재발로 수술 권유 받았지만 — 8체질 한약·체질침·약침·추나로 손가락은 물론 허리·무릎 통증까지 다 좋아졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-104-hks-p1.jpg" alt="hks**** 방아쇠증후군·허리무릎통증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> hks****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 8월 27일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>작년 가을부터 왼쪽 3번째 손가락 관절이 아파서 정형외과에 갔더니 방아쇠 증후군으로 수술을 권했습니다. 2017년에도 오른쪽 엄지를 수술했는데 편하지 않았던 경험이 있어 수술 대신 다른 방법을 찾게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>이전 수술 후 불편함이 남았던 경험 때문에 수술보다는 한의학적 치료를 선택하고자 수정한의원에 오게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>8체질 검사를 하고 내 체질에 맞는 한약과 체질침, 약침, 추나를 통하여 손가락은 물론 허리와 무릎 통증까지 좋아졌습니다. 스트레스가 많이 사라지고 일상생활이 편해졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>가족들과도 즐겁게 지내고 있습니다. 모든 생활에 자신감이 생겼고 중단했던 운동도 다시 하게 됐습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>치료를 잘해주셔서 감사합니다. 직원분들의 친절함에 정말 감사합니다. 고민하지 마시고 상담받고 믿고 치료받아보세요. 행복해질 것입니다.</p>
         </div>
       </div>
     </div>
@@ -7387,6 +7454,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard104'), cat: '척추관절' },
       { el: document.getElementById('reviewCard103'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard102'), cat: '척추관절' },
       { el: document.getElementById('reviewCard101'), cat: '면역대사' },
