@@ -562,6 +562,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div id="reviewCard93" class="review-card review-card-handwritten" data-cat="대장염" onclick="openReviewModal('detailModal93')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">크론병</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
             <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2025.06</span>
           </div>
