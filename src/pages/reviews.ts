@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #100 -->
+        <div id="reviewCard100" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal100')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">디스크·만성요통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">4년간 허리보호대에만 의존하던 만성요통 — 토양체질 진단 후 체질침·추나·약침·매선으로 두 달 지나도 보호대 없이 생활합니다</h3>
+          <p class="review-story">
+            4년간 허리보호대 켭 착용, 정형외과 꽉리별 주사도 2주면 다시 재발, 다른 한의원의 추나·약침도 효과 없던 만성요통. 간판발견 수정한의원 방문, 토양체질 진단 후 체질침·추나·약침·매선으로 세수시·고개 숙일 때 통증 소실. 두 달 후에도 보호대 없이 정상 생활 중.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 까짱이6510</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #99 -->
         <div id="reviewCard99" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal99')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3379,6 +3400,48 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #100 -->
+  <div id="detailModal100" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal100')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">첥추·관절</span>
+        <span class="review-detail-tag">#디스크 #만성요통 #체질침</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2025년 12월</span>
+      </div>
+      <h2 class="review-detail-title">4년간 허리보호대에만 의존하던 만성요통 — 토양체질 진단 후 체질침·추나·약침·매선으로 두 달 지나도 보호대 없이 생활합니다</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-100-kkamjjik6510-p1.jpg" alt="까짱이6510 디스크·만성요통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 까짱이6510</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 12월 2일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>4년 전부터 허리가 아파서 생활조차 너무 힘들고 허리보호대 상용을 해야 일을 할 수 있을 정도였습니다. 정형외과에서 꽉리별 주사를 맞으면 2주 동안 괜찮다가 2주 지나면 다시 통증이 오고, 다른 한의원에서 추나·약침을 맞아도 다시 통증이 와서 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>지나가다가 간판을 보고 수정한의원을 오게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>토양체질 진단을 받고 체질침과 추나, 약침, 매선까지 하니까 세수나 고개 숙일 때 통증이 없어졌습니다. 다른 한의원은 치료받고 일주일 지나면 다시 아픈데, 여기서 치료받고 두 달이 지나도 세수할 때나 아침에 일어낙 때 허리가 안 아프고 일상생활에서 보호대 없이 생활하는게 너무 좋습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>원장님께서 친절하게 말새도 잘해주시고 제가 애기를 할 때 꺀기울여 주시고 잘 치료해주시고, 간호사님도 항상 웃으며 친절히 대해줘서 감사합니다.</p>
         </div>
       </div>
     </div>
@@ -7123,6 +7186,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard100'), cat: '척추관절' },
       { el: document.getElementById('reviewCard99'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard98'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard97'), cat: '면역대사' },
