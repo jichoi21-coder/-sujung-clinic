@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #101 -->
+        <div id="reviewCard101" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal101')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">식은땀·몸살·야간뇨</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.01</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">밤마다 식은땀·몸살로 잠 못 자고 야간뇨 3~4회 — 체질한약·약침 4개월로 증상 거의 소실, 공부도 다시 할 자신감이 생겼어요</h3>
+          <p class="review-story">
+            밤마다 식은땀·몸살기운으로 잠 못 자고 소변 3~4회 탈진, 병원치료도 차도 없던 중 부모님 권유로 수정한의원 방문. 체질한약·약침 4개월로 증상 거의 소실, 면역력 향상. 몸이 안 아프고 공부도 다시 할 자신감 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> wjt****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #100 -->
         <div id="reviewCard100" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal100')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3400,6 +3421,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #101 -->
+  <div id="detailModal101" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal101')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역·대사성질환</span>
+        <span class="review-detail-tag">#식은땀 #몸살 #야간뇨</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2025년 1월</span>
+      </div>
+      <h2 class="review-detail-title">밤마다 식은땀·몸살로 잠 못 자고 야간뇨 3~4회 — 체질한약·약침 4개월로 증상 거의 소실, 공부도 다시 할 자신감이 생겼어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-101-wjt-p1.jpg" alt="wjt**** 식은땀·몸살·야간뇨 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> wjt****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 1월 11일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>밤마다 식은땀과 몸살기운으로 잠을 못 자고 소변을 3~4번 가면서 탈진을 했고, 하루종일 힘들어서 공부도 못하고 일상생활을 할 수 없을 정도였습니다. 병원에서 약을 받고 치료를 했지만 도저히 차도가 없었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>부모님께서 알아보시고 한약치료를 받기 위해 노원역에 있는 수정한의원에 왔습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>체질한약과 약침을 4개월 정도 맞고 증상들이 거의 사라졌습니다. 조그마한 이상이 생겨도 몸이 아프던 것이 이제는 면역이 이겨내기 시작했습니다. 처음엔 의구심이 들었지만 몇 달 동안 꾸준히 한약과 약침치료를 하면서 많이 좋아졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>몸이 좋아지면서 앞으로 아프지 않을거란 안도감과 그동안 못했던 공부도 다시 할 수 있다는 자신감이 생겼습니다. 간호사분들과 원장님의 끝임 없는 응원과 케어가 좋았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>믿음을 갖고 꾸준히 치료하면 건강해지실겁니다. 감사합니다.</p>
         </div>
       </div>
     </div>
@@ -7186,6 +7253,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard101'), cat: '면역대사' },
       { el: document.getElementById('reviewCard100'), cat: '척추관절' },
       { el: document.getElementById('reviewCard99'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard98'), cat: '뇌신경' },
