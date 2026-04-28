@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #90 -->
+        <div id="reviewCard90" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal90')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">계류유산·난임·입덧</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2025.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">계류유산 후 난임·입덧·생리통 — 한약·약침으로 임신 성공, 입덧약 없이 18주 안정기까지 무사히 지냈어요</h3>
+          <p class="review-story">
+            결혼 후 임신이 잘 안 되고 생리통·소화불량·변비로 일상이 힘들었습니다. 어릴 때 한의원 치료로 생리통이 나은 기억을 떠올려 수정한의원 방문. 한약·약침으로 임신에 성공하고, 심한 입덧도 입덧약 없이 편안해졌으며 숙면도 가능해져 지금은 18주 안정기에 접어들었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*혜 (만 35세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #89 -->
         <div id="reviewCard89" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal89')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3123,6 +3144,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #90 -->
+  <div id="detailModal90" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal90')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-women">여성질환</span>
+        <span class="review-detail-tag">#계류유산 #난임 #입덧</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2025년 9월</span>
+      </div>
+      <h2 class="review-detail-title">계류유산 후 난임·입덧·생리통 — 한약·약침으로 임신 성공, 입덧약 없이 18주 안정기까지 무사히 지냈어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-90-kimjihye-p1.jpg" alt="김*혜 계류유산·난임·입덧 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 김*혜 (만 35세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 9월 18일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>결혼 후 임신이 잘 되지 않고, 평소에도 생리통이 심해 자궁이 약한 것 같다는 생각이 들어 내방하였습니다. 임신 준비를 위해 방문하게 되었는데, 생리통뿐만 아니라 속도 늘 불편해서 소화제나 탄산수에 의지하며 지내곤 했습니다. 변비도 심해 항상 더부룩함이 심했고, 이런 생활이 오래되다 보니 일상도 많이 힘들었던 것 같습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>어린 시절 심한 생리통으로 한의원 진료를 받았던 경험이 있습니다. 그때 치료 덕분에 생리통이 사라졌던 기억이 있어, 결혼 후 임신을 준비하면서 다시 한의원을 찾게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>저는 한약과 약침치료를 함께 받았습니다. 임신 후 심한 입덧과 속 불편함 때문에 힘들었는데, 치료를 받으면서 입덧약 없이도 편안하게 지낼 수 있을 만큼 많이 좋아졌습니다. 임신 후 속이 늘 쉽게 잠들지 못했는데, 한약과 약침을 꾸준히 병행하면서 숙면을 취할 수 있게 된 것도 큰 변화였습니다.</p>
+          <p>지금은 18주 안정기에 접어들어 무사히 잘 지내고 있습니다. 치료를 통해 몸이 한결 편안해져서 너무 좋습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>제 체질이 무엇인지 알게 되고, 체질에 맞는 음식을 알려주셔서 일상에서 실천할 수 있었어요. 먹는 것부터 잡히니까 몸이 훨씬 가벼워졌고, 생활이 한결 편해졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>인내심을 가지고 한약과 치료를 꾸준히 하면 몸이 조금씩 좋아지는 걸 느낄 수 있었습니다. 늘 친절하게 진료해 주신 원장님과 세심하게 챙겨주신 간호사 선생님들께 정말 감사합니다. ♥</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #89 -->
   <div id="detailModal89" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -6444,6 +6512,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard90'), cat: '여성질환' },
       { el: document.getElementById('reviewCard89'), cat: '척추관절' },
       { el: document.getElementById('reviewCard88'), cat: '척추관절' },
       { el: document.getElementById('reviewCard87'), cat: '뇌신경' },
