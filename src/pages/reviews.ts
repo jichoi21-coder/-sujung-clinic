@@ -566,7 +566,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2025.02</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">군대 사고 후 4년간 지옥 같던 섬유근육통 — 한의원에서 제 삶에 기적이 증아다시 돌아왔습니다</h3>
+          <h3 class="review-card-title">군대 사고 후 4년간 지옥 같던 섬유근육통 — 한의원에서 제 삶에 기적이 찾아와 다시 돌아왔습니다</h3>
           <p class="review-story">
             군대 사고로 알게 된 섬유근육통으로 4년간 전신통증·소화장애·수면장애·우울증·공황. 많은 병원도 등돌리고 약 부작용만 나았던 중 어머니 소개로 수정한의원 방문. 2개월 반 만에 통증 소실, 우울증 해소, 정상적인 삶이 돌아왔습니다.
           </p>
@@ -3394,7 +3394,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2025년 2월</span>
       </div>
-      <h2 class="review-detail-title">군대 사고 후 4년간 지옥 같던 섬유근육통 — 한의원에서 제 삶에 기적이 증아다시 돌아왔습니다</h2>
+      <h2 class="review-detail-title">군대 사고 후 4년간 지옥 같던 섬유근육통 — 한의원에서 제 삶에 기적이 찾아와 다시 돌아왔습니다</h2>
       <div class="review-detail-image-wrap">
         <img src="/static/reviews/review-99-leekyuhyeon-p1.jpg" alt="이*현 섬유근육통·우울증·공황 자필후기" class="review-detail-image" loading="lazy">
       </div>
@@ -3416,7 +3416,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
         <div class="review-detail-section">
           <h4>치료 및 개선 사항</h4>
-          <p>일단 많은 표현 중에 이 말이 우선인 것 같습니다. 내 삶에 기적이 찾아왔습니다. 날이 갈수록 줄어드는 통증… 통증이 줄어들었고, 우울했던 마음이 밝아지기 시작했습니다. 스트레스가 와도 그것을 긴정적으로 이겨낼 힘이 생겼고, 그로 인해 통증도 오지 않았습니다. 12월 초부터 약 2개월 반 동안 치료를 받고 있는데, 첫 제 모습으로 돌아오게 되었습니다. 나에게 있어서는 개선이라는 표현보다는 기적이 찾아왔다는 말이 맞는 것 같습니다.</p>
+          <p>일단 많은 표현 중에 이 말이 우선인 것 같습니다. 내 삶에 기적이 찾아왔습니다. 날이 갈수록 줄어드는 통증… 통증이 줄어들었고, 우울했던 마음이 밝아지기 시작했습니다. 스트레스가 와도 그것을 긍정적으로 이겨낼 힘이 생겼고, 그로 인해 통증도 오지 않았습니다. 12월 초부터 약 2개월 반 동안 치료를 받고 있는데, 첫 제 모습으로 돌아오게 되었습니다. 나에게 있어서는 개선이라는 표현보다는 기적이 찾아왔다는 말이 맞는 것 같습니다.</p>
         </div>
         <div class="review-detail-section">
           <h4>삶의 질 변화</h4>
