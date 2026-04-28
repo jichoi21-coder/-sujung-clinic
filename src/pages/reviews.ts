@@ -541,6 +541,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div id="reviewCard88" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal88')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">디스크</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
             <span class="review-date">2025.11</span>
           </div>
           <div class="review-quote-mark">"</div>
@@ -603,6 +604,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div id="reviewCard85" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal85')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">위장병·변비</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
             <span class="review-date">2024.06</span>
           </div>
           <div class="review-quote-mark">"</div>
