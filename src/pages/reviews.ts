@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #93 -->
+        <div id="reviewCard93" class="review-card review-card-handwritten" data-cat="대장염" onclick="openReviewModal('detailModal93')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">크론병</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2025.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">17년 크론병 — 대학병원도 못 고친 복통·설사·합병증, 한약·매선·약침·파동으로 1년 만에 일상이 돌아왔어요</h3>
+          <p class="review-story">
+            17년 전 크론병 진단 후 복통·설사·합병증으로 늘 조심하며 생활했습니다. 대학병원·한의원 등 여러 곳을 다녔지만 달라지지 않았습니다. 지인 소개로 수정한의원 방문 후 한약·매선·약침·파동 치료 1년 만에 복통·설사·원인 모를 통증·피부 트러블까지 크게 개선, 사회생활도 문제없이 잘 지내고 있습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 박*환 (만 40세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #92 -->
         <div id="reviewCard92" class="review-card" data-cat="구안와사" onclick="openReviewModal('detailModal92')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3229,6 +3250,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #93 -->
+  <div id="detailModal93" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal93')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-special">궤양성 대장염</span>
+        <span class="review-detail-tag">#크론병 #복통 #설사</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2025년 6월</span>
+      </div>
+      <h2 class="review-detail-title">17년 크론병 — 대학병원도 못 고친 복통·설사·합병증, 한약·매선·약침·파동으로 1년 만에 일상이 돌아왔어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-93-parkjuhwan-p1.jpg" alt="박*환 크론병 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 박*환 (만 40세, 남)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 6월 21일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>17년 전, 크론병을 진단받았습니다. 복통, 설사, 합병증 등 일상생활 하기에 늘 조심스럽고 힘들었습니다. 완치가 되지 않고 평생 관리하며 지내야 한다는 생각에 심적으로도 괴로움을 동반하였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>대학병원, 한의원 등 치료를 위해 여러 곳을 다녔습니다. 달라지는 점은 없었습니다. 그러던 와중 지인의 소개로 수정한의원을 다니기 시작했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>첫 방문 시, 발병 시점부터 현재 상태까지 자세히 상담을 받았습니다. 한약을 처방받고 여유시간이 생길 때마다 방문하여 매선, 약침, 파동 치료를 받았습니다. 첫 방문 후 1년 정도의 시간이 지난 지금, 복통과 설사, 원인 모를 통증, 피부 트러블 등 많은 개선이 생겼습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>과거 어느 병원을 가든 '수술이 필요할 수 있다', '완치는 불가하다'는 내용만 듣고 생활했습니다. 수시로 발생하는 복통이 사라짐으로써, 남들처럼 정상적인 생활을 할 수 있다는 자신감이 생겼습니다. 현재, 수정한의원 방문 이후 사회생활에도 문제없이 잘 지내게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>어떠한 지병이든 병원에 대한 믿음과 꾸준한 방문을 통한 치료를 했을 경우, 자기 자신도 모르게 치료되는 것 같습니다. 물론 선생님의 능력도 빠질 수 없습니다. 치료가 안될 것이라는 생각을 하는 모든 분들께 수정한의원을 권해드립니다. 선생님을 믿고 치료받으면 어느 순간 고민은 사라져 있을 겁니다.</p>
         </div>
       </div>
     </div>
@@ -6647,6 +6714,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard93'), cat: '대장염' },
       { el: document.getElementById('reviewCard92'), cat: '구안와사' },
       { el: document.getElementById('reviewCard91'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard90'), cat: '여성질환' },
