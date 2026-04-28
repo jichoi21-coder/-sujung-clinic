@@ -562,6 +562,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div id="reviewCard102" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal102')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">무릎연골파열·관절염</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
             <span class="review-date">2025.07</span>
           </div>
           <div class="review-quote-mark">"</div>
@@ -3453,6 +3454,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-detail-header">
         <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
         <span class="review-detail-tag">#무릎연골파열 #관절염</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
         <span class="review-date">2025년 7월</span>
       </div>
       <h2 class="review-detail-title">수술 후 2개월 만에 극심해진 무릎 통증 — 한약·매선·약침·전침·추나 치료로 이제 어떤 상황에서도 자유롭게 걸을 수 있어요</h2>
