@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #89 -->
+        <div id="reviewCard89" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal89')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">턱관절통증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2025.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">초등학생 때부터 20년 가까운 턱관절 통증 — 한약·약침·추나로 보름 만에 통증 감소, 수술 걱정도 사라졌어요</h3>
+          <p class="review-story">
+            대학병원·치과·턱관절전문병원·투명교정 장치도 효과 없어 검색 후 수정한의원 방문. 한약·약침·추나 치료 보름 만에 통증 확연히 줄고 입이 더 벌어졌으며, X‑ray 비교에서 턱뼈가 튼튼해져 수술 불필요 소견. 허리까지 펴지고 삶이 편해졌어요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*아 (만 19세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #88 -->
         <div id="reviewCard88" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal88')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3102,6 +3123,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #89 -->
+  <div id="detailModal89" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal89')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#턱관절통증 #추나 #약침</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2025년 8월</span>
+      </div>
+      <h2 class="review-detail-title">초등학생 때부터 20년 가까운 턱관절 통증 — 한약·약침·추나로 보름 만에 통증 감소, 수술 걱정도 사라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-89-kimeuna-p1.jpg" alt="김*아 턱관절통증 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 김*아 (만 19세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 8월 19일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>초등학생 때부터 턱에서 소리가 나고 말을 자주 하면 턱관절 통증이 심했습니다. 심한 경우 자다가 깨서 충분한 수면 시간을 갖지 못했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>대학병원, 치과, 턱관절전문 병원에서 치료받고 잠을 잘 때 착용하는 투명 교정 장치를 오랫동안 사용했습니다. 하지만 드라마틱한 효과가 없어 검색을 하다가 수정한의원에 방문하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>한약, 약침, 추나치료를 받았습니다. 한약은 초반에 받은 양만큼 다 먹고 약침이랑 추나치료를 계속 받고 있습니다. 처음 치료받고 보름 정도 지나니 턱관절 통증이 많이 줄어들었습니다. 턱을 더 벌릴 수 있게 되었고 말을 많이 해도 덜 아팠습니다.</p>
+          <p>꾸준히 치료를 받으며 이전 병원에서 찍은 X‑ray 사진을 비교해보니(치료 전/후) 턱뼈가 이전보다 튼튼해지고 좋아졌다는 소견도 받았습니다. 원래는 수술도 고려해야 할 정도였지만 수술 또한 고려하지 않아도 될 것 같다고도 말씀해 주실 만큼 좋아졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>턱관절 통증도 좋아지고 추나치료를 받으며 굽어진 허리도 펴진 것 같아 삶이 편해진 것 같습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>항상 친절하게 응대해 주셔서 감사합니다. 턱관절 통증으로 고민이신 분들은 약침 + 추나치료를 추천드립니다!</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #88 -->
   <div id="detailModal88" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -6376,6 +6444,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard89'), cat: '척추관절' },
       { el: document.getElementById('reviewCard88'), cat: '척추관절' },
       { el: document.getElementById('reviewCard87'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard86'), cat: '소화기' },
