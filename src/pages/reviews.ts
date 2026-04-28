@@ -558,6 +558,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #102 -->
+        <div id="reviewCard102" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal102')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎연골파열·관절염</span>
+            <span class="review-date">2025.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">수술 후 2개월 만에 극심해진 무릎 통증 — 한약·매선·약침·전침·추나 치료로 이제 어떤 상황에서도 자유롭게 걸을 수 있어요</h3>
+          <p class="review-story">
+            무릎 연골 파열 수술 후 재통증으로 걷기조차 힘들었으나, 지인 소개로 수정한의원 방문. 한약·매선·약침·전침·추나 치료 후 어떤 상황에서도 자유롭게 보행 가능. 원장님·간호사님의 친절에 깊이 감사.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 정*훈 (만 57세, 남)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #101 -->
         <div id="reviewCard101" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal101')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3421,6 +3441,51 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #102 -->
+  <div id="detailModal102" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal102')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#무릎연골파열 #관절염</span>
+        <span class="review-date">2025년 7월</span>
+      </div>
+      <h2 class="review-detail-title">수술 후 2개월 만에 극심해진 무릎 통증 — 한약·매선·약침·전침·추나 치료로 이제 어떤 상황에서도 자유롭게 걸을 수 있어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-102-jungjehoon-p1.jpg" alt="정*훈 무릎연골파열·관절염 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 정*훈 (만 57세, 남)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 7월 2일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>무릎 연골 파열로 수술을 받았는데, 처음에는 통증이 크지 않았습니다. 그런데 수술 후 약 2개월이 지나면서 무릎 통증이 극심해졌고, 제대로 걷기조차 힘든 상황이 되었습니다. 정형외과에서 약을 복용하고 있었지만 뚜렷한 차도가 없어 매우 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>지인의 소개로 수정한의원을 방문하게 되었습니다. 한의학적 접근으로 관절 문제를 해결한 사례를 들었고, 큰 기대와 함께 첫 진료를 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>원장님의 진단 후 한약, 매선, 약침, 전침, 추나 치료를 병행하였습니다. 치료를 받으면서 무릎 통증이 점차 완화되었고, 현재는 어떤 상황에서도 자유롭게 걸을 수 있을 만큼 회복되었습니다. 수술 후 오히려 악화되었던 통증이 한의원 치료를 통해 근본적으로 개선된 것이 너무나 감사합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>이동에 제한이 없어지면서 일상생활이 완전히 회복되었습니다. 걷는 것조차 힘들었던 시절이 믿기지 않을 만큼, 지금은 어디서든 불편함 없이 활동할 수 있습니다. 삶의 질이 크게 향상되었고 정말 행복합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>원장님께서 항상 친절하게 대해 주시고, 간호사분들도 밝게 맞아 주셔서 치료 과정 내내 편안하게 다닐 수 있었습니다. 무릎 통증으로 고생하시는 분들, 꼭 믿고 치료 받으시면 나을 수 있습니다. 수정한의원에 진심으로 감사드립니다.</p>
         </div>
       </div>
     </div>
@@ -7253,6 +7318,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard102'), cat: '척추관절' },
       { el: document.getElementById('reviewCard101'), cat: '면역대사' },
       { el: document.getElementById('reviewCard100'), cat: '척추관절' },
       { el: document.getElementById('reviewCard99'), cat: '뇌신경' },
