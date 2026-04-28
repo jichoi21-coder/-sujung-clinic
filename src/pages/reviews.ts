@@ -537,6 +537,26 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #88 -->
+        <div id="reviewCard88" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal88')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">디스크</span>
+            <span class="review-date">2025.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">허리디스크로 다리까지 저리고 아팠던 통증 100% → 20%로 — 금양체질 식이요법·체질침·추나·약침 2주 집중치료로 삶의 만족도 크게 올랐어요</h3>
+          <p class="review-story">
+            허리디스크로 다리까지 저리고 아파 활동 방해. 금양체질 진단 후 식이요법 + 체질침·추나·약침 2주 집중치료로 통증 100% → 20%로 감소. 수화 소통으로 편안한 치료 환경도 감사.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> kbh****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #87 -->
         <div id="reviewCard87" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal87')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3080,6 +3100,36 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #88 -->
+  <div id="detailModal88" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal88')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#디스크 #금양체질</span>
+        <span class="review-date">2025년 11월</span>
+      </div>
+      <h2 class="review-detail-title">허리디스크로 다리까지 저리고 아팠던 통증 100% → 20%로 — 금양체질 식이요법·체질침·추나·약침 2주 집중치료로 삶의 만족도 크게 올랐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-88-kbh-p1.jpg" alt="kbh**** 허리디스크 네이버 후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> kbh****</span>
+        <span><i class="fas fa-calendar"></i> 2025년 11월 27일 · 네이버 후기</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <p>8월부터 허리 디스크 때문에 다리까지 심하게 저리고 아팠습니다. 활동을 할 때 방해가 되어 불편함을 느꼈습니다. 한의원 치료를 위해 소개로 수정한의원을 알게 되어 오게 되었습니다.</p>
+          <p>금양체질로 진단을 하고 고기·밀가루·커피 금주·매운 음식 끊기 등 식이요법과 체질침·추나·약침을 진행하였습니다. 2주 정도 거의 매일 왔습니다. 치료 전 100%였다면 지금은 20%만 남고 통증이 많이 줄었습니다. 삶의 만족도가 많이 올라갔습니다.</p>
+          <p>원장님께서 수화를 잘 하셔서 말이 통하고 편하게 치료 받을 수 있어서 좋았습니다. 병원 간호사들도 수화를 잘해 다행이고 모두 친절하시고 좋습니다. 감사합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #87 -->
   <div id="detailModal87" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -6324,6 +6374,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard88'), cat: '척추관절' },
       { el: document.getElementById('reviewCard87'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard86'), cat: '소화기' },
       { el: document.getElementById('reviewCard85'), cat: '소화기' },
