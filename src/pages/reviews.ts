@@ -544,9 +544,9 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             <span class="review-date">2025.11</span>
           </div>
           <div class="review-quote-mark">"</div>
-          <h3 class="review-card-title">허리디스크로 다리까지 저리고 아팠던 통증 100% → 20%로 — 금양체질 식이요법·체질침·추나·약침 2주 집중치료로 삶의 만족도 크게 올랐어요</h3>
+          <h3 class="review-card-title">청각장애인도 수화로 편하게 — 허리디스크 다리 저림·통증이 2주 집중치료로 100% → 20%까지 줄었어요</h3>
           <p class="review-story">
-            허리디스크로 다리까지 저리고 아파 활동 방해. 금양체질 진단 후 식이요법 + 체질침·추나·약침 2주 집중치료로 통증 100% → 20%로 감소. 수화 소통으로 편안한 치료 환경도 감사.
+            허리디스크로 다리까지 저리고 아파 활동 방해. 금양체질 진단 후 식이요법 + 체질침·추나·약침 2주 집중치료로 통증 80% 감소. 원장님·간호사 모두 수화 가능, 청각장애인도 말이 통하고 편안하게 치료받을 수 있어 감사.
           </p>
           <div class="review-card-footer">
             <span class="review-author"><i class="fas fa-user"></i> kbh****</span>
@@ -3110,7 +3110,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-detail-tag">#디스크 #금양체질</span>
         <span class="review-date">2025년 11월</span>
       </div>
-      <h2 class="review-detail-title">허리디스크로 다리까지 저리고 아팠던 통증 100% → 20%로 — 금양체질 식이요법·체질침·추나·약침 2주 집중치료로 삶의 만족도 크게 올랐어요</h2>
+      <h2 class="review-detail-title">청각장애인도 수화로 편하게 — 허리디스크 다리 저림·통증이 2주 집중치료로 100% → 20%까지 줄었어요</h2>
       <div class="review-detail-image-wrap">
         <img src="/static/reviews/review-88-kbh-p1.jpg" alt="kbh**** 허리디스크 네이버 후기" class="review-detail-image" loading="lazy">
       </div>
@@ -3125,7 +3125,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <p>8월부터 허리 디스크 때문에 다리까지 심하게 저리고 아팠습니다. 활동을 할 때 방해가 되어 불편함을 느꼈습니다. 한의원 치료를 위해 소개로 수정한의원을 알게 되어 오게 되었습니다.</p>
           <p>금양체질로 진단을 하고 고기·밀가루·커피 금주·매운 음식 끊기 등 식이요법과 체질침·추나·약침을 진행하였습니다. 2주 정도 거의 매일 왔습니다. 치료 전 100%였다면 지금은 20%만 남고 통증이 많이 줄었습니다. 삶의 만족도가 많이 올라갔습니다.</p>
-          <p>원장님께서 수화를 잘 하셔서 말이 통하고 편하게 치료 받을 수 있어서 좋았습니다. 병원 간호사들도 수화를 잘해 다행이고 모두 친절하시고 좋습니다. 감사합니다.</p>
+          <p>원장님께서 수화를 잘 하셔서 말이 통하고 편하게 치료 받을 수 있어서 좋았습니다. 병원 간호사들도 수화를 잘해 다행이고 모두 친절하시고 좋습니다. 청각장애인도 의사소통 걱정 없이 안심하고 치료받을 수 있는 한의원입니다. 감사합니다.</p>
         </div>
       </div>
     </div>
