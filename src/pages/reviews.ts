@@ -537,6 +537,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <!-- 후기 카드 그리드 -->
       <div class="review-grid summary-mode" id="reviewGrid">
 
+        <!-- 후기 카드 #91 -->
+        <div id="reviewCard91" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal91')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두통·어지럼증·부정맥</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2025.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">두통·어지럼증·부정맥·눈피로 — 체질 한약·침으로 머리부터 발끝까지 불편함이 사라지고 밤 걷기가 행복해졌어요</h3>
+          <p class="review-story">
+            새벽 심장 두근거림·부정맥, 머리 뒤통수 통증·어지럼증, 눈피로, 위장불편, 손저림으로 25년 1월~5월 내내 힘들었습니다. 내과약은 먹을 때만 효과. 체질 한약·침 치료 후 두통·어지럼증·부정맥 모두 정상 회복, 밤 운동 시 중심도 잡혀 빨리 걷는 게 행복합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*정 (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #90 -->
         <div id="reviewCard90" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal90')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3144,6 +3165,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
 
 
+
+  <!-- 상세 모달 #91 -->
+  <div id="detailModal91" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal91')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#두통 #어지럼증 #부정맥</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2025년 6월</span>
+      </div>
+      <h2 class="review-detail-title">두통·어지럼증·부정맥·눈피로 — 체질 한약·침으로 머리부터 발끝까지 불편함이 사라지고 밤 걷기가 행복해졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-91-kimhyeonjeong-p1.jpg" alt="김*정 두통·어지럼증·부정맥 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 김*정 (여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 6월 23일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>머리가 아프고, 눈이 불편하고 길을 걸을 때 갑자기 중심을 잃고, 위와 장이 불편했습니다. 새벽에 심장이 탕탕 튕기는 느낌, 더워도 땀이 나지 않고, 아침에 일어나면 머리 뒤통수가 아프고 손이 저린 증상이 나타났습니다.</p>
+          <p>이런 증상들이 2025년 1월 29일~5월 31일까지 나타났고, 현재는 많이 좋아져서 일상생활을 하는 데 불편함이 없습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>내과에서 처방받은 약을 먹으면 먹을 땐 효과가 있다가 다시 증상이 나타나고, 온몸에 기운이 없고 머리 정수리가 묵직하고 어지러워서 치료받게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>머리 두통이 없어지고 어지럼증, 눈의 피로, 위와 장이 편해지고, 부정맥도 정상으로 회복되었습니다. 머리부터 발끝까지 불편했던 증상이 많이 좋아졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>체질에 맞게 한약과 침 치료가 좋았고, 밤에 운동(걷기)을 할 때 중심이 흐트러져 불편했는데 지금은 중심이 잘 잡혀 빨리 걸을 수 있어 행복합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 상세 모달 #90 -->
   <div id="detailModal90" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
@@ -6512,6 +6580,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard91'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard90'), cat: '여성질환' },
       { el: document.getElementById('reviewCard89'), cat: '척추관절' },
       { el: document.getElementById('reviewCard88'), cat: '척추관절' },
