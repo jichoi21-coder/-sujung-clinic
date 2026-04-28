@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #98 -->
+        <div id="reviewCard98" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal98')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">편두통·두피통증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">15년 첥추측만증·목디스크·뉔랛쉽하던 편두통·두피통증이 4개월 치료로 완전히 없어졌어요</h3>
+          <p class="review-story">
+            15년간 첥추측만증·목디스크로 정형외과 치료를 받던 중, 4개월 전 갑자기 시작된 심한 두피통과 편두통·팔저림. 지인 소개로 수정한의원 방문 후 첫날부터 통증 감소. 체질 한약·약침·추나로 4개월 만에 편두통·두피통증 완전 소실, 목·허리·무릅 통증도 크게 호전.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> sran****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #97 -->
         <div id="reviewCard97" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal97')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3337,6 +3358,48 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #98 -->
+  <div id="detailModal98" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal98')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#편두통 #두피통증 #첥추측만증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2025년 11월</span>
+      </div>
+      <h2 class="review-detail-title">15년 첥추측만증·목디스크·는립제하던 편두통·두피통증이 4개월 치료로 완전히 없어졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-98-srannayun-p1.jpg" alt="sran**** 편두통·두피통증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> sran****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 11월 11일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>약 15년 전부터 정형외과에서 첥추측만증과 목디스크로 목·허리·무릅 통증치료를 받아왔습니다. 4개월 전에 갑자기 머리 전체가 찌륿찌륿한 두피통증과 편두통, 팔저림 때문에 고통을 받다가 지인의 소개로 수정한의원을 오게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>첫날 치료 후 극심했던 통증이 많이 감소했습니다. 심장의 열을 내리는 한약과 약침·추나치료를 하면서 토양체질에 해가 되는 음식을 절제했습니다. 4개월정도 치료 후 편두통과 두피통증은 깨끗이 없어지고, 전에 아팛던 목·허리·무릅 통증도 많이 좋아졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>우선 통증이 없으니 마음이 편하고, 또 원장님과 세 분의 간호사님의 친절에 한의원에 올 때마다 기빋습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>감사드립니다. 혽시 몸이 불편하신 분들은 일단 수정한의원에 한번 오셔서 원장님의 상담 받아보시길 추천합니다.</p>
         </div>
       </div>
     </div>
@@ -6993,6 +7056,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard98'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard97'), cat: '면역대사' },
       { el: document.getElementById('reviewCard96'), cat: '구안와사' },
       { el: document.getElementById('reviewCard95'), cat: '뇌신경' },
