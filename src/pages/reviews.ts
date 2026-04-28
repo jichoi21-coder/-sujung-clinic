@@ -558,6 +558,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #94 -->
+        <div id="reviewCard94" class="review-card review-card-handwritten" data-cat="구안와사" onclick="openReviewModal('detailModal94')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">구안와사·안면마비</span>
+            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2025.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">신경과·타 한의원 치료에도 점점 악화된 구안와사 — 체질 한약·약침·매선·추나로 정상 회복, 독감도 안 걸려요</h3>
+          <p class="review-story">
+            24년 12월 갑작스런 구안와사로 입·눈 비뚤어져 식사·음주·말하기 모두 불편했습니다. 신경과·타 한의원 치료에도 악화. 동료 소개로 수정한의원 방문, 체질 진단 후 한약·약침·매선·추나 치료로 구안와사 완전 회복, 변비도 해소, 체질식이 습관화되어 독감·감기도 없이 건강합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 서*란 (만 59세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #93 -->
         <div id="reviewCard93" class="review-card review-card-handwritten" data-cat="대장염" onclick="openReviewModal('detailModal93')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3251,6 +3273,53 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #94 -->
+  <div id="detailModal94" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal94')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-special">구안와사·안면마비</span>
+        <span class="review-detail-tag">#구안와사 #안면마비 #매선치료</span>
+        <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2025년 4월</span>
+      </div>
+      <h2 class="review-detail-title">신경과·타 한의원 치료에도 점점 악화된 구안와사 — 체질 한약·약침·매선·추나로 정상 회복, 독감도 안 걸려요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-94-seohyangran-p1.jpg" alt="서*란 구안와사·안면마비 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 서*란 (만 59세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 4월 12일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>24년 12월 8일 왼쪽으로 구안와사가 갑자기 찾아와서 신경과에서 MRI 촬영 결과 뇌 쪽이 아닌 말초신경으로 왔다고 하여 치료를 받았으나 점점 안 좋아져, 입과 눈이 비뚤어져 음식 먹는 것도 불편하고 물 마시는 것도 불편해 말하는 것도 많이 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>병원 치료와 타 한의원 치료를 겸해서 침 치료를 받고 있는데, 주위 동료가 다른 한의원 가보라고 권해서 알아보고 방문했습니다. 그곳이 이곳 수정한의원으로, 소개로 와서 접수하고 검사하는데 타 한의원과는 다르게 초진 검사를 하는 것이 많이 달라 믿음이 갔어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>체질을 찾는 것이 필요하다고 하셔서 제 몸에 맞는 한약과 약침, 매선, 추나 등 치료를 받으면서 구안와사 증상들도 많이 호전되어 음식, 물, 양치질 등 이전 정상으로 다 돌아와 생활이 편해졌고, 다른 사람들이 봐도 구안와사가 있었는지 모르더라구요. 전에 변비 증상도 있었는데, 그 부분도 좋아졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>맵고 약간 짜게 먹는 자극적인 음식 습관을 고쳤습니다. 제 몸에 맞는 음식과 해로운 음식을 구분해서 먹는 습관이 생겼습니다. 체질 개선이 되면서 면역력도 높아졌는지 감기, 올겨울 유행인 독감도 걸리지 않고 잘 지내고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>수정한의원 처음 방문하고 치료를 받는데 걱정되는 부분은 솔직히 비용이 부담 되더라구요. 그러나 치료가 잘 되지 않아 후유증이 남는 것보다 깨끗이 치료가 되고 건강해진다면 그것보다 좋은 일이 있을까 싶어 믿고 치료를 받았습니다. 걱정하시는 분들도 믿고 치료받아 보세요! 좋은 결과 있을 거예요~</p>
         </div>
       </div>
     </div>
@@ -6715,6 +6784,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard94'), cat: '구안와사' },
       { el: document.getElementById('reviewCard93'), cat: '대장염' },
       { el: document.getElementById('reviewCard92'), cat: '구안와사' },
       { el: document.getElementById('reviewCard91'), cat: '뇌신경' },
