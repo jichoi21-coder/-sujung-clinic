@@ -568,7 +568,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-quote-mark">"</div>
           <h3 class="review-card-title">낙상 후 두통·목잠김·울렁거림 — 추나·약침·한약·체질침 3일 치료로 90% 이상 회복, 미국행 비행기도 거뜬히 탔어요</h3>
           <p class="review-story">
-            길에서 앞으로 넘어져 코뼈 골절 후 두통·눈 뜨기 힘듦·속 울렁거림 발생. 뇌혈관 파열 의심으로 미국행 비행기 탑승 전 불안. 원장님 신뢰로 바로 수정한의원 방문. 경추 진단 후 추나·약침·한약·체질침으로 첫날부터 호전, 3일 치료로 90% 이상 회복.
+            길에서 앞으로 넘어져 코뼈를 다친 후 두통·눈 뜨기 힘듦·속 울렁거림 발생. 뇌혈관 파열 의심으로 미국행 비행기 탑승 전 불안. 원장님 신뢰로 바로 수정한의원 방문. 경추 진단 후 추나·약침·한약·체질침으로 첫날부터 호전, 3일 치료로 90% 이상 회복.
           </p>
           <div class="review-card-footer">
             <span class="review-author"><i class="fas fa-user"></i> 서*숙 (만 60세, 여)</span>
