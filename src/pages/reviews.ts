@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #105 -->
+        <div id="reviewCard105" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal105')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">편두통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">혈액암·간경화·폐색전증에 응급실 CT도 이상 없다던 극심한 편두통 — 한약·약침·추나·파동 치료 후 "살 것 같아요"</h3>
+          <p class="review-story">
+            뇌출혈 병력에 혈액암·간경화·폐색전증 복합 질환. 진통제도 잠시뿐인 극심한 편두통으로 응급실 CT까지 찍었으나 이상 없다는 결과만. 며느리 소개로 수정한의원 방문 후 한약·약침·추나·파동 치료로 두통 완전 소실. 지금도 몸이 안 좋으면 자연스레 발길이 향하는 곳.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 김*자 (만 66세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #104 -->
         <div id="reviewCard104" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal104')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3484,6 +3505,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #105 -->
+  <div id="detailModal105" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal105')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#편두통</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2026년 3월</span>
+      </div>
+      <h2 class="review-detail-title">혈액암·간경화·폐색전증에 응급실 CT도 이상 없다던 극심한 편두통 — 한약·약침·추나·파동 치료 후 "살 것 같아요"</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-105-kimjeongja-p1.jpg" alt="김*자 편두통 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 김*자 (만 66세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2026년 3월 13일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>병원에서 혈액암, 간경화, 폐색전증, 골다공증 여러 가지가 좋지 않다는 진단을 받았습니다. 항상 피곤하고 예전에 뇌출혈로 고생한 적도 있습니다. 원인이 뭔지 몰라도 머리가 항상 아팠습니다. 집에 가면 누워서 꼼짝도 못하고, 진통제 약을 먹으면 잠깐 좋아졌다가 또 머리가 아프고, 너무 심하게 아파서 머리를 들 수가 없어 응급실에 가서 CT를 찍어도 이상이 없다고 했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>수정한의원에 오게 된 동기는 며느리가 인터넷을 보고 찾아와서 치료를 받아보니 좋다고 해서 같이 가보자고 해서 왔습니다. 침맞고 추나요법하고 약침맞고, 한약도 같이 먹으면서 치료를 하게 되었습니다. 그렇게 아팠던 머리가 안 아프니 살 것 같습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>수정한의원에서 한약을 먹으면서 약침과 추나, 파동 등 치료를 받고 저한테 다 잘 맞았는지 다 좋아졌습니다. 전에 머리가 많이 아팠던 부분들이 이제 안 아프니 살 것 같아요. 지금도 머리가 조금 아프거나 소화가 안 되면 얼른 한약을 먹고, 몸이 안 좋다 싶으면 나도 모르게 수정한의원에 와 있습니다. 내가 나았기 때문에 주위에 소개도 해드리고 누가 아프다고 하면 수정한의원 소개를 하게 됩니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>치료를 받으면서 가장 좋은 점은 일단 통증이 없어졌다는 것입니다. 경희의료원에서 한약을 먹어도 위가 쓰리고 아팠는데 여기 한약은 저한테 잘 맞습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>저를 아프지 않게 해주시고 낫게 해주셔서 감사합니다. 지금도 조금 아픈 느낌이 있으면 나도 모르게 수정한의원에 와 있게 됩니다. 고민하지 마시고 믿고 치료받아 보세요.</p>
         </div>
       </div>
     </div>
@@ -7454,6 +7521,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard105'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard104'), cat: '척추관절' },
       { el: document.getElementById('reviewCard103'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard102'), cat: '척추관절' },
