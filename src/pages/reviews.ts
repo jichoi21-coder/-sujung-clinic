@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #107 -->
+        <div id="reviewCard107" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal107')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">외상후두통·목잠김·울렁거림</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">낙상 후 두통·목잠김·울렁거림 — 추나·약침·한약·체질침 3일 치료로 90% 이상 회복, 미국행 비행기도 거뜬히 탔어요</h3>
+          <p class="review-story">
+            길에서 앞으로 넘어져 코뼈 골절 후 두통·눈 뜨기 힘듦·속 울렁거림 발생. 뇌혈관 파열 의심으로 미국행 비행기 탑승 전 불안. 원장님 신뢰로 바로 수정한의원 방문. 경추 진단 후 추나·약침·한약·체질침으로 첫날부터 호전, 3일 치료로 90% 이상 회복.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 서*숙 (만 60세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #106 -->
         <div id="reviewCard106" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal106')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3526,6 +3547,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #107 -->
+  <div id="detailModal107" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal107')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#외상후두통 #목잠김 #울렁거림</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2026년 4월</span>
+      </div>
+      <h2 class="review-detail-title">낙상 후 두통·목잠김·울렁거림 — 추나·약침·한약·체질침 3일 치료로 90% 이상 회복, 미국행 비행기도 거뜬히 탔어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-107-seojeongsuk-p1.jpg" alt="서*숙 외상후두통·목잠김·울렁거림 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 서*숙 (만 60세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2026년 4월 6일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>한의원에 오기 5일 전 길 가다가 앞으로 넘어져 코뼈를 다쳤는데, 점점 머리가 아프고 눈도 뜨기 힘들어지면서 속이 울렁거려 머리 혈관이 터졌나 의심되었습니다. 며칠 후 미국으로 가야 해서 비행기 탈 때 뇌혈관이 터질까 무서워서, 평소 진료 잘하시기로 유명하신 최정일 원장님께 진료받으러 왔습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>어려운 난치 환자를 잘 치료하시기로 이미 잘 알고 있기에, 양방 검사에서도 나타나지 않는 원인과 치료방향에 대해 잘 얘기해 주실 거란 믿음으로 수정한의원을 방문하게 되었습니다. 다른 병원 거치지 않고 바로 최정일 원장님을 찾아왔습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>경추 진단을 하시고 추나, 약침, 한약, 체질침을 놔 주셨는데, 첫날 침 맞으면서 약간 머리가 진정되는 느낌을 받았고, 그다음 날인 2일째에는 목이 붓고 머리가 무거운 증상이 많이 없어졌습니다. 3일째 연속으로 치료받고 50%였던 증상이 거의 90% 좋아져 10% 미만으로 남았습니다. 주말 지나면서는 거의 아픈 걸 못 느끼고, 이전에 불편했던 증상까지 더 좋아지는 걸 느꼈습니다. 경추가 틀어져 목과 등이 뻣뻣하던 증상도 많이 좋아졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>양방의 검진 없이도 정확한 진단과 치료가 가능한 것이 신기하고, 음식 조절을 통해 호전된 증상을 유지·개선할 수 있는 점이 매우 좋습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>앞으로 부디 원장님이 건강하셔서 오래오래 이렇게 환자들에게 좋은 치료를 해 주시기를 간절히 바랍니다.</p>
         </div>
       </div>
     </div>
@@ -7580,6 +7647,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard107'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard106'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard105'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard104'), cat: '척추관절' },
