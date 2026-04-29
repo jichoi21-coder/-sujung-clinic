@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #108 -->
+        <div id="reviewCard108" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal108')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">채머리(머리떨림)·불면증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">신경외과·백병원 MRI도 원인 불명이던 채머리(머리떨림) — 약침·추나 수개월로 주변에서 못 느낄 만큼 호전, 만성 불면증도 해결됐어요</h3>
+          <p class="review-story">
+            2023년부터 머리 떨림(채머리)으로 신경외과·백병원 MRI 검사했으나 이상 없어 뚜렷한 치료 못 받음. 자존감 저하로 힘들던 중 동료 소개로 수정한의원 방문. 약침·추나 치료로 손발 감각 1주일 내 회복, 머리 떨림 수개월 만에 현저히 호전. 만성 불면증도 해결.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 변*윤 (만 58세, 여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #107 -->
         <div id="reviewCard107" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal107')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3547,6 +3568,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #108 -->
+  <div id="detailModal108" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal108')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#채머리 #머리떨림 #불면증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2026년 4월</span>
+      </div>
+      <h2 class="review-detail-title">신경외과·백병원 MRI도 원인 불명이던 채머리(머리떨림) — 약침·추나 수개월로 주변에서 못 느낄 만큼 호전, 만성 불면증도 해결됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-108-byunseoyun-p1.jpg" alt="변*윤 채머리·불면증 자필후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 변*윤 (만 58세, 여)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2026년 4월 10일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>2023년 무렵 채머리(머리 떨림)를 흔들어 신경외과에 내원하여 뇌파검사 등을 실시하였으나 뚜렷한 병명은 없었고, 뇌전증 약을 처방받아 복용하였으나 차도가 없으면 머리를 더 심하게 흔들게 되었습니다. 손, 발가락(왼쪽)에 감각이 둔해지기도 했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>신경외과에서 약 처방, 백병원에서 MRI 촬영 등을 하였으나 뇌에는 이상이 없다 하여 뚜렷한 치료도 하지 않았습니다. 심하게 흔드는 채머리 증상으로 자존감이 떨어지는 상황에 사무실 동료가 수정한의원을 소개하여 내원하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>원장님과 면담 후 치료를 시작하여, 약침과 추나요법 등을 통한 치료로 손, 발가락의 둔한 감각은 일주일 이내에 돌아왔고, 채머리 흔드는 증상은 몇 개월 지속적인 약침과 추나요법으로 상당한 호전을 보였습니다. 주변 분들이 머리 흔드는 모습이 현저히 줄었다거나 전혀 느끼지 못한다고 말씀하시는 분이 많습니다. 약침 치료는 만성 불면증인 저를 깊은 수면을 할 수 있게 해줬습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>모든 분들에게 친절하게 대해 주시고, 장기 내원이 안 되는 분들까지 일일이 전화로 상황을 확인해 주십니다. 무엇보다 원장님의 실력이 최고입니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>망설이지 마시고 내원하여 원장님과 치료를 시작하셨으면 합니다. 제 자존감을 다시 찾게 해준 원장님께 감사드립니다. 친절하신 간호사님들께도 감사드립니다.</p>
         </div>
       </div>
     </div>
@@ -7647,6 +7714,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard108'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard107'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard106'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard105'), cat: '뇌신경' },
