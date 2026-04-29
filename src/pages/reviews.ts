@@ -58,7 +58,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <link rel="stylesheet" href="/static/style.css?v=20250415"/>
+  <link rel="stylesheet" href="/static/style.css?v=20260429"/>
 </head>
 <body>
 
@@ -562,7 +562,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div id="reviewCard110" class="review-card" data-cat="구안와사" onclick="openReviewModal('detailModal110')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">구안와사·안면마비·만성설사</span>
-            <span class="review-naver-badge"><i class="fas fa-comment-dots"></i> 네이버후기</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
             <span class="review-date">2025.02</span>
           </div>
           <div class="review-quote-mark">"</div>
@@ -583,7 +583,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div id="reviewCard109" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal109')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">만성소화불량·만성요통</span>
-            <span class="review-naver-badge"><i class="fas fa-comment-dots"></i> 네이버후기</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
             <span class="review-date">2025.04</span>
           </div>
           <div class="review-quote-mark">"</div>
@@ -3622,7 +3622,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-detail-header">
         <span class="review-cat-tag review-cat-tag-facial">구안와사·안면마비</span>
         <span class="review-detail-tag">#구안와사 #안면마비 #만성설사</span>
-        <span class="review-naver-badge"><i class="fas fa-comment-dots"></i> 네이버후기</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
         <span class="review-date">2025년 2월</span>
       </div>
       <h2 class="review-detail-title">발병 3시간 만에 CT·MRI도 소용없던 안면마비 — 체질한약·약침·추나로 완치, 3년간 대학병원도 못 잡은 설사병까지 깔끔히 나았어요</h2>
@@ -3664,7 +3664,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-detail-header">
         <span class="review-cat-tag review-cat-tag-digest">소화기</span>
         <span class="review-detail-tag">#만성소화불량 #만성요통</span>
-        <span class="review-naver-badge"><i class="fas fa-comment-dots"></i> 네이버후기</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
         <span class="review-date">2025년 4월</span>
       </div>
       <h2 class="review-detail-title">3년간 죽만 먹던 만성 소화불량·허리 통증 — 금양체질 진단 후 체질침·약침·추나로 출퇴근 버스에 앉아 다닐 수 있게 됐어요</h2>
