@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #106 -->
+        <div id="reviewCard106" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal106')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">편두통·어지럼증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">서울대병원 MRI·MRA도 이상 없다던 왼쪽 두통·안구통·어지럼증 — 한약·약침·추나·파동 10일로 일상 회복됐어요</h3>
+          <p class="review-story">
+            목·허리디스크 병력에 왼쪽 두통·안구통·심한 어지럼증 발생. 서울대병원 MRI·MRA 이상 없음 판정. 과거 원장님 의뢰서 생각나 경추 X-ray 후 수정한의원 방문. 한약·약침·추나·파동치료 10일 만에 증세 크게 개선, 일상생활 가능.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> min5****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #105 -->
         <div id="reviewCard105" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal105')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3505,6 +3526,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #106 -->
+  <div id="detailModal106" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal106')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#편두통 #어지럼증</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2025년 3월</span>
+      </div>
+      <h2 class="review-detail-title">서울대병원 MRI·MRA도 이상 없다던 왼쪽 두통·안구통·어지럼증 — 한약·약침·추나·파동 10일로 일상 회복됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-106-min5-p1.jpg" alt="min5**** 편두통·어지럼증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> min5****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 3월 28일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>목디스크, 허리디스크로 고생을 하다가 어지럽고 속이 울렁하고 왼쪽 두통과 왼쪽 눈이 빠질 듯한 통증과 어지러워서 고개를 들 수가 없고 한쪽으로 몸이 쏠려서 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>서울대병원에서 MRI, MRA를 찍었는데 진단이 머리에는 이상이 없다고 해줄 수 있는 것이 없다고 했으며, 신경과에 어지럼과 두통을 진료하는 의사에게 예약을 해줬습니다. 이럴 게 아니라 예전에 수정한의원 원장님이 입 벌리고 경추 사진을 찍으라고 주셨던 의뢰서가 생각이 나서 X-ray를 찍어서 수정한의원에 왔습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>수정한의원에서 한약, 약침, 추나, 파동치료를 10일 정도 하고 증세가 많이 개선되어 일상생활을 할 수 있을 정도가 되었습니다. 치료가 되어 감사합니다.</p>
         </div>
       </div>
     </div>
@@ -7521,6 +7580,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard106'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard105'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard104'), cat: '척추관절' },
       { el: document.getElementById('reviewCard103'), cat: '뇌신경' },
