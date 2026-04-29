@@ -559,24 +559,24 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
                 <!-- 후기 카드 #109 -->
-        <div id="reviewCard109" class="review-card review-card-naver" data-cat="소화기" onclick="openReviewModal('detailModal109')" style="cursor:pointer;">
+        <div id="reviewCard109" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal109')" style="cursor:pointer;">
           <div class="review-card-header">
-            <span class="review-source-badge naver-badge"><i class="fas fa-n"></i> 네이버후기</span>
+            <span class="review-cat-tag">만성소화불량·만성요통</span>
+            <span class="review-naver-badge"><i class="fas fa-comment-dots"></i> 네이버후기</span>
+            <span class="review-date">2025.04</span>
           </div>
-          <div class="review-card-tags">
-            <span class="review-tag">#만성소화불량</span>
-            <span class="review-tag">#만성요통</span>
-          </div>
-          <div class="review-card-date">2025.04</div>
+          <div class="review-quote-mark">"</div>
           <h3 class="review-card-title">3년간 죽만 먹던 만성 소화불량·허리 통증 — 금양체질 진단 후 체질침·약침·추나로 출퇴근 버스에 앉아 다닐 수 있게 됐어요</h3>
           <p class="review-story">
-            3년 이상 내과 검사상 이상 없음에도 죽만 먹어야 했고 여러 한방병원에서 치료해도 차도가 없었습니다. 허리 통증으로 출퇴근 전철·버스에서 항상 서 있어야 했는데, 이웃의 소개로 수정한의원을 방문했습니다. 금양체질 진단 후 체질침·약침·추나 치료를 받고 버스·지하철에 앉아 출퇴근할 수 있게 됐고, 답답한 체기가 많이 사라져 일상생활이 훨씬 편해졌습니다. 얼굴색도 활기가 돌아 주변에서 건강해 보인다고 합니다.
+            3년 이상 내과 검사상 이상 없음에도 죽만 먹어야 했고 여러 한방병원에서 치료해도 차도가 없었습니다. 허리 통증으로 출퇴근 전철·버스에서 항상 서 있어야 했는데, 이웃의 소개로 수정한의원 방문. 금양체질 진단 후 체질침·약침·추나로 앉아서 출퇴근 가능해졌고 체기·답답함 현저히 감소, 얼굴색도 활기 돌아 주변에서 건강해 보인다고 합니다.
           </p>
           <div class="review-card-footer">
-            <span class="review-author">simon*hn7 (소화기·요통 개선)</span>
-            <span class="review-rating">★★★★★</span>
+            <span class="review-author"><i class="fas fa-user"></i> simon*hn7</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
           </div>
-          <div class="review-expand-hint">탭하여 전체 후기 보기 ▼</div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
                 <!-- 후기 카드 #108 -->
@@ -3595,51 +3595,46 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   </div>
 
     <!-- 상세 모달 #109 -->
-    <div id="detailModal109" class="review-detail-modal" style="display:none;">
-      <button class="modal-close-btn" onclick="closeReviewModal('detailModal109')">✕</button>
-      <div class="modal-inner">
-        <div class="modal-header">
-          <span class="review-source-badge naver-badge"><i class="fas fa-n"></i> 네이버후기</span>
-          <div class="review-card-tags">
-            <span class="review-tag">#만성소화불량</span>
-            <span class="review-tag">#만성요통</span>
-          </div>
-        </div>
-        <div class="modal-photo">
-          <img src="/static/reviews/review-109-simonahn7-p1.jpg" alt="simonahn7 네이버 후기" style="max-width:100%;border-radius:12px;">
-        </div>
-        <div class="modal-meta">
-          <span class="review-author">simon*hn7</span>
-          <span class="review-date">2025-04-15</span>
-          <span class="review-rating">★★★★★</span>
-        </div>
-        <h3 class="modal-title">3년간 죽만 먹던 만성 소화불량·허리 통증 — 금양체질 진단 후 체질침·약침·추나로 출퇴근 버스에 앉아 다닐 수 있게 됐어요</h3>
-        <div class="modal-body">
+  <div id="detailModal109" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal109')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-digest">소화기</span>
+        <span class="review-detail-tag">#만성소화불량 #만성요통</span>
+        <span class="review-naver-badge"><i class="fas fa-comment-dots"></i> 네이버후기</span>
+        <span class="review-date">2025년 4월</span>
+      </div>
+      <h2 class="review-detail-title">3년간 죽만 먹던 만성 소화불량·허리 통증 — 금양체질 진단 후 체질침·약침·추나로 출퇴근 버스에 앉아 다닐 수 있게 됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-109-simonahn7-p1.jpg" alt="simonahn7 만성소화불량·만성요통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> simon*hn7</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 4월 15일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
           <p>소화가 오랫동안 안되었고 거의 3년 이상 일반내과에서 검사상 이상이 없음에도 죽만 먹어야만 했었고 여러 한방병원에서 치료를 받았음에도 차도가 없었습니다. 또한 허리도 아파서 출퇴근시 전철이나 버스에서 항상 서서 다녀야했습니다.</p>
-          <p>같은 동네에서 치료받고 호전된 분의 소개로 수정한의원에 오게 되었습니다. 금양체질진단을 받고 체질침·약침·추나를 받고 버스나 지하철도 앉아서 출퇴근하는데 지장이 없으며 가슴이 답답한 체기도 많이 없어서 일상생활에도 불편이 많이 없어졌습니다.</p>
-          <p>가끔 단백질 고기도 소화시키고 있습니다. 물론 연속해서 고기를 먹으면 소화가 어렵습니다만 예전에 비하면 훨씬 좋아졌습니다. 얼굴색이 활기가 돌아서 주변에서 건강해 보인다고 합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>같은 동네에서 치료받고 호전된 분의 소개로 수정한의원에 오게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>금양체질진단을 받고 체질침·약침·추나를 받고 버스나 지하철도 앉아서 출퇴근하는데 지장이 없으며 가슴이 답답한 체기도 많이 없어서 일상생활에도 불편이 많이 없어졌습니다. 가끔 단백질 고기도 소화시키고 있습니다. 물론 연속해서 고기를 먹으면 소화가 어렵습니다만 예전에 비하면 훨씬 좋아졌습니다. 얼굴색이 활기가 돌아서 주변에서 건강해 보인다고 합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>다음 분들에게 전하는 말</h4>
           <p>치료는 한두번에 그치지 말고 꾸준히 치료하는게 좋을 것 같습니다.</p>
-        </div>
-        <div class="modal-treatment">
-          <h4>받은 치료</h4>
-          <ul>
-            <li>금양체질 진단</li>
-            <li>체질침</li>
-            <li>약침</li>
-            <li>추나요법</li>
-          </ul>
-        </div>
-        <div class="modal-result">
-          <h4>치료 결과</h4>
-          <ul>
-            <li>버스·지하철 앉아서 출퇴근 가능 (허리 통증 개선)</li>
-            <li>체기·가슴 답답함 현저히 감소</li>
-            <li>단백질 식품 소화 가능 (예전 대비 훨씬 개선)</li>
-            <li>얼굴색 활기 회복, 주변 건강해 보인다는 반응</li>
-          </ul>
         </div>
       </div>
     </div>
+  </div>
 
     <!-- 상세 모달 #108 -->
   <div id="detailModal108" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
