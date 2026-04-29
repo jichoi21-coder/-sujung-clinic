@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #110 -->
+        <div id="reviewCard110" class="review-card" data-cat="구안와사" onclick="openReviewModal('detailModal110')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">구안와사·안면마비·만성설사</span>
+            <span class="review-naver-badge"><i class="fas fa-comment-dots"></i> 네이버후기</span>
+            <span class="review-date">2025.02</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">발병 3시간 만에 CT·MRI도 소용없던 안면마비 — 체질한약·약침·추나로 완치, 3년간 대학병원도 못 잡은 설사병까지 깔끔히 나았어요</h3>
+          <p class="review-story">
+            안면마비로 오른쪽 눈이 안 감기고 입도 움직이지 않아 한일병원 뇌CT·MRI 찍었으나 소용없어 수정한의원 방문. 체질한약·약침·추나 치료로 구안와사 완치. 체질에 맞춘 한약 덕분에 3년간 대학병원에서도 못 잡은 만성 설사까지 깨끗이 나았습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 공*이4580</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #109 -->
         <div id="reviewCard109" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal109')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3589,6 +3610,48 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #110 -->
+  <div id="detailModal110" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal110')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-facial">구안와사·안면마비</span>
+        <span class="review-detail-tag">#구안와사 #안면마비 #만성설사</span>
+        <span class="review-naver-badge"><i class="fas fa-comment-dots"></i> 네이버후기</span>
+        <span class="review-date">2025년 2월</span>
+      </div>
+      <h2 class="review-detail-title">발병 3시간 만에 CT·MRI도 소용없던 안면마비 — 체질한약·약침·추나로 완치, 3년간 대학병원도 못 잡은 설사병까지 깔끔히 나았어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-110-gongsil4580-p1.jpg" alt="공*이4580 구안와사·안면마비 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 공*이4580</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 2월 10일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>안면마비로 인해 오른쪽 눈이 안 감기고 광대는 올라가지 않고 입도 움직이지 않았습니다. 발병한지 3시간 만에 한일병원을 가서 뇌CT·MRI 다 찍어봐도 아무 소용 없다 하면서 스테로이드제를 처방 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>인터넷을 찾다보니 수정한의원이 나와 이름도 많이 듣고 원장님 사진보고 믿을 수 있겠다 싶어서 찾아왔습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>체질한약·약침·추나치료를 하고 지금은 다 나았습니다. 체질한약은 구안와사도 깨끗이 나았지만 제 체질에 딱 맞춰서 달인 것이라 그런지 3년 내내 대학병원에서 찾지 못하고 치료해주지 못한 설사병이 지금은 깔끔히 나았어요. 빠르게 한의원을 알았다면 3년동안 힘들지 않았을 것 같아요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>다음 분들에게 전하는 말</h4>
+          <p>지금은 뭐든지 수정한의원에서 치료하면 된다는 생각이 들어요. 아프면 참지 말고 수정한의원으로 오시와요.</p>
         </div>
       </div>
     </div>
@@ -7777,6 +7840,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard110'), cat: '구안와사' },
       { el: document.getElementById('reviewCard109'), cat: '소화기' },
       { el: document.getElementById('reviewCard108'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard107'), cat: '뇌신경' },
