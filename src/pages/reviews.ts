@@ -562,7 +562,6 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div id="reviewCard110" class="review-card" data-cat="구안와사" onclick="openReviewModal('detailModal110')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">구안와사·안면마비·만성설사</span>
-            <span class="review-special-badge"><i class="fas fa-star"></i> 특설클리닉</span>
             <span class="review-naver-badge"><i class="fas fa-comment-dots"></i> 네이버후기</span>
             <span class="review-date">2025.02</span>
           </div>
