@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #117 -->
+        <div id="reviewCard117" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal117')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">테니스엘보우·발목통증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">고질병이라 포기했던 팔꿈치·발목 통증 — 태반주사 4차 후 통증 50% 감소, 자녀들이 운동하냐고 물어볼 만큼 달라졌어요</h3>
+          <p class="review-story">
+            팔꿈치와 발목 통증으로 잠을 설치다 고질병이라 포기하던 차에 수정한의원에서 태반주사를 소개받았습니다. 1차, 2차, 4차를 맞고 나니 잠을 너무 푹 잤고, 팔을 구부리고 펴도 통증이 50% 줄어드는 걸 느꼈습니다. 자녀들이 "아프다더니 운동하냐"고 물어볼 만큼 달라졌어요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> wa****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #116 -->
         <div id="reviewCard116" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal116')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3736,6 +3757,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #117 -->
+  <div id="detailModal117" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal117')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#테니스엘보우 #발목통증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 5월</span>
+      </div>
+      <h2 class="review-detail-title">고질병이라 포기했던 팔꿈치·발목 통증 — 태반주사 4차 후 통증 50% 감소, 자녀들이 운동하냐고 물어볼 만큼 달라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-117-wa-p1.jpg" alt="wa**** 테니스엘보우·발목통증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> wa****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 5월 19일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>팔꿈치와 발목 통증으로 지난날 잠을 설치며 보내왔습니다. 병원을 전전하며 이제는 고질병이라 받아들이던 차에 수정한의원에서 태반주사를 소개받고, 뭐라도 하자는 심정으로 치료를 시작했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>1차, 2차, 4차를 맞고 나니 잠을 너무 푹 잤습니다. 혹시나 하는 마음에 팔을 구부리고 펴기를 수차례 해봤더니 통증이 50% 줄어드는 걸 느꼈습니다. 어리둥절한 마음에 다시 팔을 구부리고 펴는 모습에 자녀들이 "아프다더니 운동하냐"고 물어보더라구요. 통증이 경감하니 머리통증도 줄어들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>전체 후기</h4>
+          <p>이제야 한시름 놓고 앞으로 꾸준히 치료를 받고 싶은 소망도 생깁니다. 시간이 어서 지나길 바라며...</p>
         </div>
       </div>
     </div>
@@ -8186,6 +8245,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard117'), cat: '척추관절' },
       { el: document.getElementById('reviewCard116'), cat: '여성질환' },
       { el: document.getElementById('reviewCard115'), cat: '척추관절' },
       { el: document.getElementById('reviewCard114'), cat: '소화기' },
