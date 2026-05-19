@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #111 -->
+        <div id="reviewCard111" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal111')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">만성소화불량·척추질환</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">몇 년간의 만성 소화불량·척추 통증으로 걷기도 힘들었는데 — 6개월 치료약·척추 치료로 소화도 잘 되고 걷는 것도 한결 좋아졌어요</h3>
+          <p class="review-story">
+            심한 스트레스로 소화 기능이 약해져 먹는 것도 힘들고, 척추 문제로 제대로 걷기조차 어려웠습니다. 6개월 치료로 소화와 보행이 크게 개선됐고, 체질을 알게 되면서 건강 관리도 할 수 있게 됐습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 조데레sa72</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #110 -->
         <div id="reviewCard110" class="review-card" data-cat="구안와사" onclick="openReviewModal('detailModal110')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3610,6 +3631,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #111 -->
+  <div id="detailModal111" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal111')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-digest">소화기</span>
+        <span class="review-detail-tag">#만성소화불량 #척추질환</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 3월</span>
+      </div>
+      <h2 class="review-detail-title">몇 년간의 만성 소화불량·척추 통증으로 걷기도 힘들었는데 — 6개월 치료약·척추 치료로 소화도 잘 되고 걷는 것도 한결 좋아졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-111-jodere-p1.jpg" alt="조데레sa72 만성소화불량·척추질환 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 조데레sa72</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 3월 21일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>몇년 전부터 계속 소화가 잘 안되고 심적으로 심한 스트레스가 쌓여 모든 기능이 약해질대로 약해져 먹는것도 힘들고 척추까지 문제가 생겨 제대로 걷기 조차 어려웠습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>6개월에 걸쳐 치료약과 척추 치료로 이제는 소화도 잘 되고 걷는 것도 한결 좋아졌습니다. 오랜 질병처럼 가지고 살아왔던 병증들을 내 몸의 체질도 알게 되면서 조심하게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>한의원의 모든 분들의 친절함에 감사하고 고마움을 전합니다.</p>
         </div>
       </div>
     </div>
@@ -7840,6 +7899,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard111'), cat: '소화기' },
       { el: document.getElementById('reviewCard110'), cat: '구안와사' },
       { el: document.getElementById('reviewCard109'), cat: '소화기' },
       { el: document.getElementById('reviewCard108'), cat: '뇌신경' },
