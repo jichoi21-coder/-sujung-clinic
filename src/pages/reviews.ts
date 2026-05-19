@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #119 -->
+        <div id="reviewCard119" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal119')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">다낭성난소증후군·두통·어깨통증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">다낭성난소증후군·두통·어깨통증으로 방문 — 꾸준한 치료로 통증 거의 사라지고, 호르몬제 없이도 생리 주기 규칙적으로</h3>
+          <p class="review-story">
+            두통과 어깨 통증, 다낭성난소증후군으로 방문해 꾸준히 다니고 있습니다. 치료를 받다 보니 통증도 거의 없어졌고 생리도 밀리지 않고 잘 하고 있어서 너무 좋아요. 호르몬제 복용하면서 주기 맞췄던 때보다 더 건강하게 지내고 있습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 21t****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #118 -->
         <div id="reviewCard118" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal118')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3778,6 +3799,40 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #119 -->
+  <div id="detailModal119" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal119')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-women">여성질환</span>
+        <span class="review-detail-tag">#다낭성난소증후군 #두통 #어깨통증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 6월</span>
+      </div>
+      <h2 class="review-detail-title">다낭성난소증후군·두통·어깨통증으로 방문 — 꾸준한 치료로 통증 거의 사라지고, 호르몬제 없이도 생리 주기 규칙적으로</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-119-21t-p1.jpg" alt="21t**** 다낭성난소증후군·두통·어깨통증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 21t****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 6월 30일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>두통과 어깨 통증, 다낭성난소증후군으로 수정한의원을 방문해 꾸준히 다니고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>꾸준히 치료를 받다 보니 통증도 거의 없어졌고, 생리도 밀리지 않고 잘 하고 있어서 너무 좋아요. 호르몬제 복용하면서 주기 맞췄던 때보다 더 건강하게 지내고 있습니다.</p>
         </div>
       </div>
     </div>
@@ -8304,6 +8359,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard119'), cat: '여성질환' },
       { el: document.getElementById('reviewCard118'), cat: '척추관절' },
       { el: document.getElementById('reviewCard117'), cat: '척추관절' },
       { el: document.getElementById('reviewCard116'), cat: '여성질환' },
