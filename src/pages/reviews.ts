@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #118 -->
+        <div id="reviewCard118" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal118')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">거북목·뒷목통증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">오랜 거북목으로 인한 뒷목통증 — 추나·약침으로 빠른 효과, 체질 맞춤 한약으로 면역까지 높여 건강한 생활로</h3>
+          <p class="review-story">
+            오랜 거북목으로 인한 뒷목통증을 수정한의원에서 추나와 약침으로 빠른 효과를 보았습니다. 상세하고 친절한 진료 상담으로 안심이 됐고, 온열치료는 덤으로 받은 좋은 치료였습니다. 내 체질에 딱 맞는 한약으로 면역을 높여 큰 병 없이 건강한 생활까지 — 내 몸을 위한 날이었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 뚜여미58</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #117 -->
         <div id="reviewCard117" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal117')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3757,6 +3778,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #118 -->
+  <div id="detailModal118" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal118')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#거북목 #뒷목통증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 6월</span>
+      </div>
+      <h2 class="review-detail-title">오랜 거북목으로 인한 뒷목통증 — 추나·약침으로 빠른 효과, 체질 맞춤 한약으로 면역까지 높여 건강한 생활로</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-118-ttueo-p1.jpg" alt="뚜여미58 거북목·뒷목통증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 뚜여미58</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 6월 25일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>오랜 거북목으로 인한 뒷목통증으로 수정한의원을 방문하였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>추나와 약침으로 빠른 효과를 보았습니다. 상세하고 친절한 진료 상담으로 안심하게 해주시고, 시간적 여유가 생겨 받은 온열치료는 덤으로 받은 좋은 치료 시간이었습니다. 내 체질에 딱 맞는 한약으로 면역을 높여 큰 병 없이 건강한 생활까지 이어지고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>전체 후기</h4>
+          <p>내 몸을 위한 날이었습니다~</p>
         </div>
       </div>
     </div>
@@ -8245,6 +8304,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard118'), cat: '척추관절' },
       { el: document.getElementById('reviewCard117'), cat: '척추관절' },
       { el: document.getElementById('reviewCard116'), cat: '여성질환' },
       { el: document.getElementById('reviewCard115'), cat: '척추관절' },
