@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #116 -->
+        <div id="reviewCard116" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal116')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">방광염·혈뇨</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">한 달 방광염으로 잔뇨·통증·혈뇨까지 — 약침·태반주사로 면역력 강화 후 증상 완화, 이틀에 한 번씩 꾸준히 맞고 있어요</h3>
+          <p class="review-story">
+            한 달 방광염으로 고생하다가 약침·태반주사를 맞아보자는 선생님 설명을 듣고 시작했습니다. 면역력 강화 및 방광염으로 인한 소변 잔뇨·통증·혈뇨 증상이 완화되는 걸 느끼고, 지금은 이틀에 한 번씩 꾸준히 맞으며 방광염 고생을 끝낼 생각입니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> jinjinjin429</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #115 -->
         <div id="reviewCard115" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal115')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3715,6 +3736,40 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #116 -->
+  <div id="detailModal116" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal116')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-women">여성질환</span>
+        <span class="review-detail-tag">#방광염 #혈뇨</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 4월</span>
+      </div>
+      <h2 class="review-detail-title">한 달 방광염으로 잔뇨·통증·혈뇨까지 — 약침·태반주사로 면역력 강화 후 증상 완화, 이틀에 한 번씩 꾸준히 맞고 있어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-116-jinjin-p1.jpg" alt="jinjinjin429 방광염·혈뇨 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> jinjinjin429</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 4월 6일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>한 달 방광염으로 고생하다가 약침·태반주사를 맞아보자는 선생님 설명을 듣고 시작했습니다. 방광염으로 인한 소변 잔뇨·통증·혈뇨까지 증상이 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>면역력 강화 및 방광염 증상인 잔뇨·통증·혈뇨가 완화되는 걸 느끼고 있습니다. 지금은 이틀에 한 번씩 꾸준히 맞으면서 내 몸 건강과 항상 고민이었던 방광염 고생을 끝낼 생각입니다.</p>
         </div>
       </div>
     </div>
@@ -8131,6 +8186,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard116'), cat: '여성질환' },
       { el: document.getElementById('reviewCard115'), cat: '척추관절' },
       { el: document.getElementById('reviewCard114'), cat: '소화기' },
       { el: document.getElementById('reviewCard113'), cat: '소화기' },
