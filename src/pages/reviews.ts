@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #121 -->
+        <div id="reviewCard121" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal121')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">협착증·허리통증·다리저림</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">MRI에서 협착 심하다 진단 — 4개월 치료 후 거의 회복, 걷지 못하던 다리가 일상생활 불편 없을 만큼 나아졌어요</h3>
+          <p class="review-story">
+            손녀를 돌보다 무리해 허리가 아프고 다리가 당겨 걸을 수가 없었습니다. 지인 소개로 반신반의하며 시작했는데, MRI에서 협착이 심하다는 진단을 받은 터라 망설이지 않고 치료를 받았습니다. 선생님께 4개월 치료를 받고 지금은 전과 똑같지는 않지만 거의 회복되어 일상생활이 편합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> cho****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #120 -->
         <div id="reviewCard120" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal120')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3820,6 +3841,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #121 -->
+  <div id="detailModal121" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal121')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#협착증 #허리통증 #다리저림</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 7월</span>
+      </div>
+      <h2 class="review-detail-title">MRI에서 협착 심하다 진단 — 4개월 치료 후 거의 회복, 걷지 못하던 다리가 일상생활 불편 없을 만큼 나아졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-121-cho-p1.jpg" alt="cho**** 협착증·허리통증·다리저림 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> cho****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 7월 6일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>손녀를 돌보다가 무리를 해서인지 허리가 아프고 다리가 당겨 걸을 수가 없었습니다. 그 전에 MRI 촬영으로 협착이 심하다는 진단을 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>잘 아는 지인 소개로 수정한의원에서 협착증 치료를 받아보라는 권유를 받고, 긴가민가하였지만 치료를 받아보기로 하였습니다. MRI에서 협착이 심하다는 진단을 받은 터라 더 망설이지 않았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>선생님께 4개월 치료를 받고 지금은 전과 똑같지는 않지만 거의 회복이 되어 일상생활이 편합니다. 특히 선생님께서 정성스러운 치료를 해주셔서 너무 고맙고, 모든 스텝분들의 친절과 보조치료가 감사했습니다. 수정한의원의 치료에 다시 한번 감사드립니다.</p>
         </div>
       </div>
     </div>
@@ -8418,6 +8477,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard121'), cat: '척추관절' },
       { el: document.getElementById('reviewCard120'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard119'), cat: '여성질환' },
       { el: document.getElementById('reviewCard118'), cat: '척추관절' },
