@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #114 -->
+        <div id="reviewCard114" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal114')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">위장장애·두통·이명·만성요통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">진통제·소화제 없이도 생활 가능해져 — 위장장애·두통은 물론 침 두 번에 매일 아프던 허리통증도 사라졌어요</h3>
+          <p class="review-story">
+            이명·두통·위장장애로 지인 소개로 방문했습니다. 먹고 있던 진통제와 소화제를 더 이상 먹지 않아도 된다는 게 신기해요. 침 두 번 맞고 나서 매일 기상 때마다 아프던 허리통증도 사라져 아프지 않고 일어날 수 있었고, 이명도 조금씩 좋아지고 있습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 삶을 사랑하기 위하여</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #113 -->
         <div id="reviewCard113" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal113')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3673,6 +3694,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #114 -->
+  <div id="detailModal114" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal114')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-digest">소화기</span>
+        <span class="review-detail-tag">#위장장애 #두통이명 #만성요통</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 4월</span>
+      </div>
+      <h2 class="review-detail-title">진통제·소화제 없이도 생활 가능해져 — 위장장애·두통은 물론 침 두 번에 매일 아프던 허리통증도 사라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-114-sarang-p1.jpg" alt="삶을 사랑하기 위하여 위장장애·두통·이명·만성요통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 삶을 사랑하기 위하여</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 4월 5일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>이명·두통·위장장애와 관절, 허리통증 등으로 지인 소개로 수정한의원을 방문했습니다. 매선침 치료를 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>허리통증과 무릎 등이 나아지고 있고, 위장장애와 두통은 제가 먹고 있던 진통제와 소화제를 더 이상 먹지 않아도 된다는 게 신기해요. 허리통증도 매일 기상할 때마다 아팠는데 침 두 번 맞고 났더니 아프지 않고 일어날 수 있었어요. 이명도 조금씩 좋아지고 있고요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>전체 후기</h4>
+          <p>원장님, 간호사분들도 모두 너무너무 친절하셔서 좋았습니다.</p>
         </div>
       </div>
     </div>
@@ -8013,6 +8072,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard114'), cat: '소화기' },
       { el: document.getElementById('reviewCard113'), cat: '소화기' },
       { el: document.getElementById('reviewCard112'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard111'), cat: '소화기' },
