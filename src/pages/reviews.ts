@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #123 -->
+        <div id="reviewCard123" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal123')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">악관절(턱관절)</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">턱 소리·덜컹거림으로 매주 치료 받았더니 — 이제 턱에서 소리가 안 나서 편안하고 거의 완치라고 봐도 될 것 같아요</h3>
+          <p class="review-story">
+            이제 턱에서 소리가 안 나서 너무 편안합니다. 덜컹거리는 게 사라졌어요. 특별한 일 없으면 매주 가서 치료를 받았는데 거의 완치라고 봐도 좋을 것 같아요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> Hercule</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #122 -->
         <div id="reviewCard122" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal122')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3862,6 +3883,40 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #123 -->
+  <div id="detailModal123" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal123')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#악관절 #턱관절</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 12월</span>
+      </div>
+      <h2 class="review-detail-title">턱 소리·덜컹거림으로 매주 치료 받았더니 — 이제 턱에서 소리가 안 나서 편안하고 거의 완치라고 봐도 될 것 같아요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-123-hercule-p1.jpg" alt="Hercule 악관절 턱관절 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> Hercule</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 12월 24일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>턱에서 소리가 나고 덜컹거리는 증상으로 수정한의원에서 치료를 받았습니다. 특별한 일이 없으면 매주 방문해 치료를 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>이제 턱에서 소리가 안 나서 너무 편안합니다. 덜컹거리는 게 사라졌어요. 거의 완치라고 봐도 좋을 것 같아요.</p>
         </div>
       </div>
     </div>
@@ -8532,6 +8587,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard123'), cat: '척추관절' },
       { el: document.getElementById('reviewCard122'), cat: '척추관절' },
       { el: document.getElementById('reviewCard121'), cat: '척추관절' },
       { el: document.getElementById('reviewCard120'), cat: ['뇌신경', '편두통'] },
