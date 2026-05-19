@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #113 -->
+        <div id="reviewCard113" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal113')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">만성소화장애·만성요통·좌골신경통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">수십 년 전국 대학병원도 포기했던 만성 소화장애·허리·좌골 통증 — 한약·매선·태반약침·추나로 거의 다 좋아져 하루하루가 행복해요</h3>
+          <p class="review-story">
+            만성 소화장애·허리·고관절·좌골 통증으로 수십 년간 전국 대학병원을 다녔지만 포기 상태였습니다. 마지막이라는 심정으로 수정한의원을 찾았고, 한약·매선·태반약침·추나 치료로 지금은 거의 다 좋아졌습니다. 서비스로 받은 양자온열도 너무너무 좋아 요즘은 하루하루가 참 행복합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> lys****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #112 -->
         <div id="reviewCard112" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal112')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3652,6 +3673,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #113 -->
+  <div id="detailModal113" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal113')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-digest">소화기</span>
+        <span class="review-detail-tag">#만성소화장애 #만성요통 #좌골신경통</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 3월</span>
+      </div>
+      <h2 class="review-detail-title">수십 년 전국 대학병원도 포기했던 만성 소화장애·허리·좌골 통증 — 한약·매선·태반약침·추나로 거의 다 좋아져 하루하루가 행복해요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-113-lys-p1.jpg" alt="lys**** 만성소화장애·만성요통·좌골신경통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> lys****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 3월 31일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>저는 만성소화장애와 만성 허리통증과 고관절 좌골 골반통증으로 수 십년 동안 고생하며 대학병원 양방 한방 가리지않고 전국적으로 돌아다니며 치료를 하였지만 포기상태로 지쳐있었다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>그러던 중 어느 날 수정한의원을 알게되었고 마지막으로 한번 더 믿어보자는 심정으로 다니게 되었다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>소화장애는 한약으로 다스리고 척추 엉치 등 허리쪽은 매선·태반약침·추나로 다스리고 있다. 지금은 거의 다 좋아졌다. 그런데 서비스인 양자온열은 너무너무 좋다. 요즘은 하루 하루가 참 행복하다.</p>
         </div>
       </div>
     </div>
@@ -7954,6 +8013,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard113'), cat: '소화기' },
       { el: document.getElementById('reviewCard112'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard111'), cat: '소화기' },
       { el: document.getElementById('reviewCard110'), cat: '구안와사' },
