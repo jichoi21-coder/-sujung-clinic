@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #115 -->
+        <div id="reviewCard115" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal115')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">일자목·어깨통증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">밤마다 잠 못 자던 극심한 어깨 통증 — 태반약침·체질침·추나 치료 후 이제는 안 깨우면 일어나지 않을 만큼 숙면해요</h3>
+          <p class="review-story">
+            일자목 때문인지 어깨 통증이 심하고 온몸이 하루 종일 경직되어 일상생활이 불편했어요. 수정한의원에서 태반약침·체질침·추나치료를 받으면서 정말 많이 좋아졌습니다. 심할 때는 밤에 잠을 자지 못했을 정도였는데, 이제는 안 깨우면 일어나지 않을 만큼 숙면하고 있습니다!
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> he****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #114 -->
         <div id="reviewCard114" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal114')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3694,6 +3715,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #115 -->
+  <div id="detailModal115" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal115')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#일자목 #어깨통증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 4월</span>
+      </div>
+      <h2 class="review-detail-title">밤마다 잠 못 자던 극심한 어깨 통증 — 태반약침·체질침·추나 치료 후 이제는 안 깨우면 일어나지 않을 만큼 숙면해요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-115-he-p1.jpg" alt="he**** 일자목·어깨통증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> he****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 4월 7일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>일자목 때문인지 어깨 통증이 심하고 온몸이 하루 종일 경직되어 있어서 일상생활이 불편했어요. 어깨통증은 정말 심할 때는 밤에 잠을 자지 못했을 정도였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>수정한의원에서 태반약침·체질침·추나치료를 받으면서 정말 많이 좋아졌습니다. 이제는 안 깨우면 일어나지 않을 정도로 숙면하고 있습니다! 선생님 모두 친절하시고 원장선생님 진료는 간단명료한데 저한테 필요한 부분이 뭔지, 개선해야 할 곳이 어딘지 정확하고 꼼꼼하게 짚어주시니 믿고 맡기기만 하면 몸이 자연스레 점점 좋아지더라구요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>전체 후기</h4>
+          <p>어깨통증 겪어보신 분들은 아시겠지만 심한 날엔 엄청 고통스러운데 저처럼 신세계 경험해보셨으면 좋겠어요 진심으로...!</p>
         </div>
       </div>
     </div>
@@ -8072,6 +8131,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard115'), cat: '척추관절' },
       { el: document.getElementById('reviewCard114'), cat: '소화기' },
       { el: document.getElementById('reviewCard113'), cat: '소화기' },
       { el: document.getElementById('reviewCard112'), cat: '뇌신경' },
