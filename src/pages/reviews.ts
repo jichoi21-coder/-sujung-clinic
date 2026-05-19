@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #120 -->
+        <div id="reviewCard120" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal120')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">위장장애·두통·어지럼증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2022.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">코로나 후 더 심해진 위장장애·두통·어지럼증 — 체질 맞춤 식단·침·추나로 근본 원인 교정, 한 달 반 만에 전반적으로 호전</h3>
+          <p class="review-story">
+            코로나 이후 더욱 심해진 위장장애·두통·어지럼증으로 방문했습니다. 일반 병원에서는 각 질환을 단편적으로 다루어 근본 원인을 찾지 못했는데, 수정한의원에서 체질적으로 맞지 않는 식단과 습관을 발견하고 침·약·물리치료·추나로 내장 기관과 신체 리듬을 교정하기 시작했습니다. 한 달 반 만에 전반적으로 좋아지고 있습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> battlman77</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #119 -->
         <div id="reviewCard119" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal119')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3799,6 +3820,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #120 -->
+  <div id="detailModal120" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal120')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경뇌신경</span>
+        <span class="review-detail-tag">#위장장애 #두통 #어지럼증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2022년 7월</span>
+      </div>
+      <h2 class="review-detail-title">코로나 후 더 심해진 위장장애·두통·어지럼증 — 체질 맞춤 식단·침·추나로 근본 원인 교정, 한 달 반 만에 전반적으로 호전</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-120-battlman-p1.jpg" alt="battlman77 위장장애·두통·어지럼증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> battlman77</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2022년 7월 4일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>코로나 이전에 있던 위장장애·두통·어지럼증 등 만성 질환들이 코로나 이후에 더욱 심해져 방문하게 되었습니다. 이전까지는 일반 병원을 다니며 질환들을 각각 다루어 단편적으로 치료해 근본적인 원인을 찾지 못하는 느낌이었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>수정한의원에서 치료받으며 체질적으로 잘 안 맞는 식단과 습관을 가지고 있었다는 걸 알게 되었습니다. 침과 약으로 내장 기관과 신체의 리듬을 잡으면서 물리치료와 추나로 두통 유발 요인들을 교정하기 시작했습니다. 현재 한 달 반 정도 되었고 몸의 증세가 전반적으로 좋아지고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>전체 후기</h4>
+          <p>만성 질환에 시달리며 일반 병원에서 일시적인 치료만 받으셨던 분들께 추천합니다.</p>
         </div>
       </div>
     </div>
@@ -8359,6 +8418,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard120'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard119'), cat: '여성질환' },
       { el: document.getElementById('reviewCard118'), cat: '척추관절' },
       { el: document.getElementById('reviewCard117'), cat: '척추관절' },
