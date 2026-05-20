@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #151 -->
+        <div id="reviewCard151" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal151')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">턱관절통증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">병원도 못 잡은 턱관절 통증 — 약침·체질침 2개월로 입 벌리기 편해지고 병원약 없이 씹을 수 있게 됐어요</h3>
+          <p class="review-story">
+            작년 11월부터 턱관절 통증이 심해 병원 다녀도 나아지질 않아 한의원에 오게 됐습니다. 두 달 동안 꾸준히 약침과 체질침을 맞은 결과 입이 벌리기가 편해졌고 통증은 한결 완화됐어요. 병원약 없이 통증이 줄어들고 씹을 수 있다는 게 놀라울 따름입니다. 계속 다닐 생각입니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 단순함으로</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #150 -->
         <div id="reviewCard150" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal150')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4450,6 +4471,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #151 -->
+  <div id="detailModal151" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal151')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#턱관절통증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2025년 5월</span>
+      </div>
+      <h2 class="review-detail-title">병원도 못 잡은 턱관절 통증 — 약침·체질침 2개월로 입 벌리기 편해지고 병원약 없이 씹을 수 있게 됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-151-dansoon-p1.jpg" alt="단순함으로 턱관절통증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 단순함으로</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 5월 12일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 내원 계기</h4>
+          <p>작년 11월부터 턱관절 통증이 심해 병원 다녀도 나아지질 않아 한의원에 오게 됐습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>두 달동안 꾸준히 약침과 체질침 맞은 결과 입이 벌리기가 편해졌고 통증은 한결 완화됐어요. 다행히도 차츰 통증이 줄어드는 느낌이 듭니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>총평</h4>
+          <p>병원약 없이 통증 줄어들고 씹을 수 있다는 게 놀라울 따름입니다. 계속 다닐 생각입니다.</p>
         </div>
       </div>
     </div>
@@ -10179,6 +10238,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard151'), cat: '척추관절' },
       { el: document.getElementById('reviewCard150'), cat: '소화기' },
       { el: document.getElementById('reviewCard149'), cat: '척추관절' },
       { el: document.getElementById('reviewCard148'), cat: '척추관절' },
