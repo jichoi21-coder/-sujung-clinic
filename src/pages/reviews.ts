@@ -558,6 +558,25 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #159 -->
+        <div id="reviewCard159" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal159')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">당뇨</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.10</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">당뇨 전단계 진단에 걱정했는데 — 맞춤 한약 처방 두 달 후 수치가 내려갔어요</h3>
+          <p class="review-story">원장님이 주의사항과 조심해야 할 음식, 도움되는 음식까지 꼼꼼히 알려주시고 그에 맞는 한약을 처방해 주셔서 잘 관리받고 있습니다.</p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 박소연티쳐</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #158 -->
         <div id="reviewCard158" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal158')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4608,6 +4627,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #159 -->
+  <div id="detailModal159" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal159')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역대사</span>
+        <span class="review-detail-tag">#당뇨</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2025.10.25 · 3번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">당뇨 전단계 진단에 걱정했는데 — 맞춤 한약 처방 두 달 후 수치가 내려갔어요</h2>
+      <img src="/static/reviews/review-159-parksoyeon-p1.jpg" alt="박소연티쳐 당뇨 후기" class="review-detail-img" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>건강검진 결과 당뇨 전단계로 나와서 걱정을 많이 했어요. 어떻게 관리해야 할지 몰라 수정한의원을 방문했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>원장님이 주의사항이나 조심해야 할 음식, 도움되는 음식 등을 꼼꼼히 알려주시고 그에 맞는 한약을 처방해 주셨어요. 꾸준히 복용했더니 두 달 후 수치가 좀 내려가서 잘 관리받고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>단순히 약만 처방하는 것이 아니라 생활 습관과 식이요법까지 함께 지도해 주시는 덕분에 체계적으로 관리할 수 있었어요. 감사합니다!</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 박소연티쳐</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -10626,6 +10680,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard159'), cat: '면역대사' },
       { el: document.getElementById('reviewCard158'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard157'), cat: '여성질환' },
       { el: document.getElementById('reviewCard156'), cat: '척추관절' },
