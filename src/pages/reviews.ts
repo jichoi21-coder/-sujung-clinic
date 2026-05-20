@@ -558,6 +558,25 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #161 -->
+        <div id="reviewCard161" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal161')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">만성 소화불량</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">매일 더부룩했던 만성 소화불량 — 체질검사로 원인 파악, 침치료·한약 며칠 만에 속이 편해졌어요</h3>
+          <p class="review-story">주식으로 먹던 음식들이 제 체질에 안 맞았던 거였어요. 침치료 한 번에 한약 며칠만 먹었는데도 그새 불편했던 속이 많이 편해졌어요. 추천!</p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 소라3526</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #160 -->
         <div id="reviewCard160" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal160')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4646,6 +4665,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #161 -->
+  <div id="detailModal161" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal161')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-digest">소화기</span>
+        <span class="review-detail-tag">#만성소화불량</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2025.11.19 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">매일 더부룩했던 만성 소화불량 — 체질검사로 원인 파악, 침치료·한약 며칠 만에 속이 편해졌어요</h2>
+      <img src="/static/reviews/review-161-sora3526-p1.jpg" alt="소라3526 만성 소화불량 후기" class="review-detail-img" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>친구 추천으로 체질검사를 받으러 방문했어요. 만성으로 조금만 먹어도 속이 맨날 더부룩했는데, 알고 보니 제가 매일 주식으로 챙겨 먹던 음식들이 다 저에게 좋지 않은 음식이었더라고요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>침치료 한 번 받고 한약을 며칠 먹어봤는데, 그새 불편했던 속이 많이 편해졌어요. 체질에 맞지 않는 음식을 알게 된 것만으로도 큰 도움이 됐습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>만성 소화불량으로 고생하시는 분들께 체질검사부터 받아보시길 강력 추천드려요!</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 소라3526</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -10734,6 +10788,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard161'), cat: '소화기' },
       { el: document.getElementById('reviewCard160'), cat: '척추관절' },
       { el: document.getElementById('reviewCard159'), cat: '면역대사' },
       { el: document.getElementById('reviewCard158'), cat: ['뇌신경', '편두통'] },
