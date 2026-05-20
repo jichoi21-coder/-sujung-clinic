@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #142 -->
+        <div id="reviewCard142" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal142')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">코로나</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">코로나 양성 — 체질침·한약으로 다음날 아침 근육통·관절통 싹 사라졌어요</h3>
+          <p class="review-story">
+            목이 아프고 몸살처럼 근육통·관절통이 심해 수정한의원에서 체질침·한약을 처방받았는데, 집에서 코로나 양성이 나왔습니다. 한약 9봉을 먹고 자고 일어났더니 목이 풀리고 근육통과 관절통이 언제 그랬냐는 듯 사라졌습니다. 원장님의 실력에 감탄했고 간호사분들의 친절에 감사합니다!
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 숲속작은달</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #141 -->
         <div id="reviewCard141" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal141')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4261,6 +4282,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #142 -->
+  <div id="detailModal142" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal142')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역대사</span>
+        <span class="review-detail-tag">#코로나</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 8월</span>
+      </div>
+      <h2 class="review-detail-title">코로나 양성 — 체질침·한약으로 다음날 아침 근육통·관절통 싹 사라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-142-supsok-p1.jpg" alt="숲속작은달 코로나 면역대사 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 숲속작은달</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 8월 16일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>8/14일 아침에 일어나니 목이 아프고 목소리도 안나오고 몸살처럼 근육통과 관절통이 심하게 왔습니다. 평소에 어지럼증과 편두통이 생기면 수정한의원에서 치료를 받고 나았기 때문에 이번에도 수정한의원에 와서 체질침과 체질한약을 처방받아 집에 왔습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>혹시나 해서 코로나 검사를 해봤더니 양성이 나왔습니다. 한약을 물처럼 편안하게 마실 수 있다고 해서 잠들기 전까지 9봉을 먹고 북어국을 먹고 체질식을 병행했습니다. 다음날 아침에 목이 풀렸고 근육통과 관절통이 언제 그랬냐는 듯 사라졌습니다. 코로나도 체질침과 한약으로 나을 수 있다는 게 신기했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>총평</h4>
+          <p>오늘 아침에 일어나니 약간 목이 칼칼해서 다시 침 맞고 한약을 먹으니 지금은 너무 편안합니다. 원장님의 실력에 감탄했고 간호사분들의 친절에 감사합니다.</p>
         </div>
       </div>
     </div>
@@ -9662,6 +9721,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard142'), cat: '면역대사' },
       { el: document.getElementById('reviewCard141'), cat: ['소화기', '피부아토피'] },
       { el: document.getElementById('reviewCard140'), cat: '척추관절' },
       { el: document.getElementById('reviewCard139'), cat: '뇌신경' },
