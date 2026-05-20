@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #133 -->
+        <div id="reviewCard133" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal133')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">다낭성난소증후군</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">다낭성난소증후군으로 피임약 먹으며 10년 가까이 생리통 — 원장님 처방 한약 먹고 엄청 많이 괜찮아졌어요!</h3>
+          <p class="review-story">
+            다낭성난소증후군으로 피임약을 먹으면서 생리통이 너무 심해서 10년 가까이 힘들었는데, 원장님이 처방해 주신 한약을 먹고 엄청 많이 괜찮아졌어요!! 왕왕 추천합니다!
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 나르는곰도리</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #132 -->
         <div id="reviewCard132" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal132')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4072,6 +4093,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #133 -->
+  <div id="detailModal133" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal133')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-women">여성질환</span>
+        <span class="review-detail-tag">#다낭성난소증후군 #생리통</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 3월</span>
+      </div>
+      <h2 class="review-detail-title">다낭성난소증후군으로 피임약 먹으며 10년 가까이 생리통 — 원장님 처방 한약 먹고 엄청 많이 괜찮아졌어요!</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-133-nareun-p1.jpg" alt="나르는곰도리 다낭성난소증후군·생리통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 나르는곰도리</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 3월 6일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>이용 안내</h4>
+          <p>예약 후 이용 — 대기 시간 없이 바로 입장.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>다낭성난소증후군으로 피임약을 먹으면서 생리통이 너무 심해서 10년 가까이 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>원장님이 처방해 주신 한약을 먹고 엄청 많이 괜찮아졌습니다. 왕왕 추천합니다!!</p>
         </div>
       </div>
     </div>
@@ -9118,6 +9177,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard133'), cat: '여성질환' },
       { el: document.getElementById('reviewCard132'), cat: '척추관절' },
       { el: document.getElementById('reviewCard131'), cat: '여성질환' },
       { el: document.getElementById('reviewCard130'), cat: '여성질환' },
