@@ -558,6 +558,25 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #160 -->
+        <div id="reviewCard160" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal160')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">디스크 만성통증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.11</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">목·허리 디스크 만성통증 — 꾸준한 추나로 버섯목증후군 교정되고, 이제 운동도 다시 시작할 수 있어요</h3>
+          <p class="review-story">단발성으로도 효과가 좋았고, 쉬면서 추나를 꾸준히 받아봤는데 버섯목증후군도 점점 교정되고 허리 통증도 많이 좋아졌습니다.</p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> Aria8299</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #159 -->
         <div id="reviewCard159" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal159')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4627,6 +4646,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #160 -->
+  <div id="detailModal160" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal160')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#디스크만성통증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2025.11.19 · 2번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">목·허리 디스크 만성통증 — 꾸준한 추나로 버섯목증후군 교정되고, 이제 운동도 다시 시작할 수 있어요</h2>
+      <img src="/static/reviews/review-160-aria8299-p1.jpg" alt="Aria8299 디스크 만성통증 후기" class="review-detail-img" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>일할 때는 바빠서 몇 달에 한 번 올까 말까였는데, 단발성으로도 효과가 좋았어요. 목·허리 디스크 만성통증으로 디스크 주사도 맞을 정도였습니다. 쉬는 기간에 추나를 꾸준히 받아보기로 했어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>꾸준히 추나 치료를 받아봤는데 버섯목증후군도 점점 교정되고, 허리 통증도 많이 좋아졌습니다. 단발성 방문에도 효과가 좋았었는데 꾸준히 받으니 확실히 더 개선됐어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>이제 가벼운 운동도 다시 시작하려고 합니다. 오랜 만성 통증으로 고생하시는 분들께 추나 치료를 꼭 권해드리고 싶어요!</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> Aria8299</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -10680,6 +10734,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard160'), cat: '척추관절' },
       { el: document.getElementById('reviewCard159'), cat: '면역대사' },
       { el: document.getElementById('reviewCard158'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard157'), cat: '여성질환' },
