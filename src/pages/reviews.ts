@@ -558,6 +558,48 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #127 -->
+        <div id="reviewCard127" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal127')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎인대손상</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2023</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">조깅 중 무릎 뚝 소리 후 정형외과도 효과 없어 — 매선·약침으로 몇 주 치료 후 움직임 훨씬 편해졌어요</h3>
+          <p class="review-story">
+            조깅 후 스트레칭 중 무릎에서 뚝 소리가 나며 5분간 움직이지 못했습니다. 통증의학과·정형외과를 다녔지만 효과를 보지 못했고, 마지막으로 이곳을 찾았습니다. 매선·약침 치료로 몇 주째 받고 있는데 움직임이 많이 편하고 좋아졌습니다. 인대와 근육을 잡아줘서 더 좋은 것 같아 강추합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 우주최강자</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+                <!-- 후기 카드 #127 -->
+        <div id="reviewCard127" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal127')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎인대손상</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2023.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">조깅 중 무릎 뚝 — 통증의학과·정형외과 효과 없어 마지막으로 왔는데, 매선·약침으로 몇 주 만에 움직임 편해졌어요</h3>
+          <p class="review-story">
+            조깅 후 스트레칭 중 무릎이 뚝 소리가 나면서 5분간 그 자리에서 못 움직였습니다. 이후 통증의학과·정형외과를 다녔지만 효과를 보지 못했고, 마지막으로 이곳에 오게 되었습니다. 매선·약침치료로 몇 주째 치료를 받고 있는데 움직임이 많이 편하고 좋아졌습니다. 강추합니다!
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 우주최강자</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #126 -->
         <div id="reviewCard126" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal126')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3946,6 +3988,36 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #127 -->
+  <div id="detailModal127" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal127')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#무릎인대손상</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2023</span>
+      </div>
+      <h2 class="review-detail-title">조깅 중 무릎 뚝 소리 후 정형외과도 효과 없어 — 매선·약침으로 몇 주 치료 후 움직임 훨씬 편해졌어요</h2>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 우주최강자</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>조깅 후 스트레칭 중 무릎에서 뚝 소리가 나면서 5분간 그 자리에서 움직이지 못했습니다. 그 후 통증의학과·정형외과 등으로 치료를 받으러 다녔지만 그렇게 효과를 보지 못했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>마지막으로 이곳에 오게 되었는데 매선·약침 치료로 몇 주째 치료를 받고 있습니다. 움직임이 많이 편하고 좋아졌습니다. 인대와 근육을 잡아줘서 더 좋은 것 같습니다. 강추합니다!</p>
         </div>
       </div>
     </div>
@@ -8760,6 +8832,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard127'), cat: '척추관절' },
       { el: document.getElementById('reviewCard126'), cat: '척추관절' },
       { el: document.getElementById('reviewCard125'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard124'), cat: '소화기' },
