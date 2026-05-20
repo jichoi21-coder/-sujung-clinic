@@ -558,6 +558,25 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #162 -->
+        <div id="reviewCard162" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal162')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">노로바이러스 복통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">내과 장염약도 차도 없던 노로바이러스 — 한의원 침 치료 한 번에 엄청 좋아졌어요, 정말 명의세요!</h3>
+          <p class="review-story">한밤중에 데굴데굴 굴렀는데 진료시간에 맞춰 한의원 방문했더니 침 치료 받고 엄청 좋아졌어요. 열심히 치료받으면서 여기저기 아팠던 것도 많이 좋아졌습니다.</p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 유수진78</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #161 -->
         <div id="reviewCard161" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal161')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4665,6 +4684,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #162 -->
+  <div id="detailModal162" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal162')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-digest">소화기</span>
+        <span class="review-detail-tag">#노로바이러스복통</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2025.12.24 · 2번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">내과 장염약도 차도 없던 노로바이러스 — 한의원 침 치료 한 번에 엄청 좋아졌어요, 정말 명의세요!</h2>
+      <img src="/static/reviews/review-162-yusujin-p1.jpg" alt="유수진78 노로바이러스 복통 후기" class="review-detail-img" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>여기저기 많이 아팠는데 열심히 치료받으면서 많이 좋아졌어요. 이번엔 한밤중에 노로바이러스에 걸려서 내과를 갔는데, 장염약을 먹어도 차도가 없어서 데굴데굴 굴렀습니다. 결국 한의원 진료시간을 기다려 맞춰 방문했어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>원장님께 침 치료를 받고 엄청 좋아졌어요!! 내과 장염약으로도 차도가 없던 것이 한 번의 침 치료로 확연히 나아졌습니다. 심장이랑 여기저기 아프던 것도 꾸준한 치료로 많이 좋아졌어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>정말 명의이셔요!!!!! 급성 장염·노로바이러스로 고생하실 때 한의원 침 치료를 꼭 한번 받아보세요!</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 유수진78</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -10788,6 +10842,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard162'), cat: '소화기' },
       { el: document.getElementById('reviewCard161'), cat: '소화기' },
       { el: document.getElementById('reviewCard160'), cat: '척추관절' },
       { el: document.getElementById('reviewCard159'), cat: '면역대사' },
