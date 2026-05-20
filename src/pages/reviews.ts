@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #145 -->
+        <div id="reviewCard145" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal145')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">목디스크</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">목디스크로 오른손 통증 — 한약·체질침·추나요법으로 거의 완쾌, 김장까지 하게 됐어요</h3>
+          <p class="review-story">
+            목디스크로 치료 중이에요. 한약과 체질침, 추나요법으로 거의 완쾌 단계에 있어요. 오른손이 통증으로 전혀 사용 못 했었는데 김장까지 했어요. 꼼꼼하게 물어봐 주시는 원장님과 언제나 가족처럼 살펴 주시는 실장님들께 감사드립니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 동열연우44</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #144 -->
         <div id="reviewCard144" class="review-card" data-cat="피부아토피" onclick="openReviewModal('detailModal144')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4324,6 +4345,40 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #145 -->
+  <div id="detailModal145" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal145')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#목디스크</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 12월</span>
+      </div>
+      <h2 class="review-detail-title">목디스크로 오른손 통증 — 한약·체질침·추나요법으로 거의 완쾌, 김장까지 하게 됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-145-dongyeol-p1.jpg" alt="동열연우44 목디스크 척추관절 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 동열연우44</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 12월 13일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 치료 현황</h4>
+          <p>목디스크로 치료중이에요. 한약과 체질침, 추나요법으로 거의 완쾌 단계에 있어요. 오른손이 통증으로 전혀 사용 못했었는데 김장까지 하고 ㅎ</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>총평</h4>
+          <p>꼼꼼하게 물어봐 주시는 원장님과 언제나 가족처럼 살펴 주시는 실장님들도 감사드리고 추운 겨울 온열치료실에서 따뜻하게 몸도 녹이고 치료도 받고 감사드립니다.</p>
         </div>
       </div>
     </div>
@@ -9836,6 +9891,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard145'), cat: '척추관절' },
       { el: document.getElementById('reviewCard144'), cat: '피부아토피' },
       { el: document.getElementById('reviewCard143'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard142'), cat: '면역대사' },
