@@ -558,6 +558,25 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #157 -->
+        <div id="reviewCard157" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal157')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">산후 관절통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">출산 후 손목 통증 — 태반약침 한 번에 즉각 효과, 모유수유 중에도 안전하게 치료받았어요</h3>
+          <p class="review-story">정형외과 주사는 모유수유 때문에 참고 있었는데, 태반약침은 안전하다고 하셔서 안심하고 맞았어요. 놀랄 만큼 즉각적으로 통증이 줄었습니다!</p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 또로록81</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #156 -->
         <div id="reviewCard156" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal156')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4570,6 +4589,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #157 -->
+  <div id="detailModal157" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal157')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-women">여성질환</span>
+        <span class="review-detail-tag">#산후관절통</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2025.07.23 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">출산 후 손목 통증 — 태반약침 한 번에 즉각 효과, 모유수유 중에도 안전하게 치료받았어요</h2>
+      <img src="/static/reviews/review-157-ddolorok-p1.jpg" alt="또로록81 산후 관절통 후기" class="review-detail-img" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>출산 후 체력도 부족하고 소화불량에 특히 손목이 안 좋아서 방문했어요. 손목에 약침치료를 처음 받아봤는데 놀랄 만큼 즉각적으로 통증이 줄었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>혹시 스테로이드인지 여쭤봤더니 태반약침이라고 하시더라고요! 모유수유도 안전하다고 하셔서 안심하고 맞았습니다. 정형외과에서는 주사치료를 하면 모유수유가 안 된다고 해서 마냥 아픔을 참고 있었는데, 태반약침은 효과도 너무 좋아서 정말 놀랐어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>모유수유 중인 산모에게도 안전하게 치료받을 수 있는 곳이라 정말 감사했어요. 꾸준히 치료받으러 방문하겠습니다~!</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 또로록81</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -10518,6 +10572,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard157'), cat: '여성질환' },
       { el: document.getElementById('reviewCard156'), cat: '척추관절' },
       { el: document.getElementById('reviewCard155'), cat: '척추관절' },
       { el: document.getElementById('reviewCard154'), cat: '여성질환' },
