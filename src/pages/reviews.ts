@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #143 -->
+        <div id="reviewCard143" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal143')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">긴장성두통 복통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.10</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">시험 때마다 반복된 두통·복통·속 불편 — 체질침·한약·추나로 몸이 한결 가벼워지고 오후 체력도 유지돼요</h3>
+          <p class="review-story">
+            중학교 때부터 고2까지 시험 기간만 되면 두통·복통·속 불편으로 고생했습니다. 수정한의원에서 체질을 알게 되고 한약·체질침·약침·전침·추나를 받으니, 아이가 몸이 한결 가벼워지고 오후에 급격히 떨어지던 체력도 덜해졌습니다. 원장님과 선생님들의 세심함과 친절함이 치료 효과를 배가시켜 주는 것 같아요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 퍼플7777</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #142 -->
         <div id="reviewCard142" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal142')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4282,6 +4303,45 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #143 -->
+  <div id="detailModal143" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal143')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">뇌신경</span>
+        <span class="review-cat-tag review-cat-tag-neuro">편두통</span>
+        <span class="review-detail-tag">#긴장성두통 #복통</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 10월</span>
+      </div>
+      <h2 class="review-detail-title">시험 때마다 반복된 두통·복통·속 불편 — 체질침·한약·추나로 몸이 한결 가벼워지고 오후 체력도 유지돼요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-143-purple-p1.jpg" alt="퍼플7777 긴장성두통 복통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 퍼플7777</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 10월 5일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>중학교 때부터 고2 지금까지 시험 기간때만 되면 아이가 두통과 배아프고 속이 안 좋다고 해서 수정한의원을 방문했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>진단 및 치료 방향</h4>
+          <p>아이의 체질을 알게 되고 한약과 체질침, 약침, 전침, 추나를 하였습니다. 당분간은 아이에게 안 좋은 음식은 피해야 할 듯합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>아이가 한결 몸이 가벼워짐을 느낀다고 합니다. 오후가 되면 급격하게 떨어지는 체력도 덜 하다고 합니다. 아침에 시험 보러 등교할 때도 다른 때보다 덜 힘들다고 하네요. 원장님과 선생님들의 세심함과 친절함이 치료의 효과가 배가 되는 것 같아요.</p>
         </div>
       </div>
     </div>
@@ -9721,6 +9781,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard143'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard142'), cat: '면역대사' },
       { el: document.getElementById('reviewCard141'), cat: ['소화기', '피부아토피'] },
       { el: document.getElementById('reviewCard140'), cat: '척추관절' },
