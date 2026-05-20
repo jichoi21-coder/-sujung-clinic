@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #146 -->
+        <div id="reviewCard146" class="review-card" data-cat="피부아토피" onclick="openReviewModal('detailModal146')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">얼굴 뾰루지 모낭염</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">이유 없는 얼굴 뾰루지·컨디션 저하 — 8체질침·식단관리 3개월로 뾰루지 확실히 줄고 컨디션도 가벼워졌어요</h3>
+          <p class="review-story">
+            컨디션이 안 좋고 이유 없이 얼굴에 뾰루지가 많이 나서 8체질 전문 수정한의원에 방문했습니다. 체질과 관련 있다는 얘기를 듣고 평소 생활 및 식습관과 연관되어 있음을 알게 됐습니다. 체질침과 식단관리를 시작한 지 3개월이 되었는데 뾰루지가 확실히 많이 줄었고 컨디션도 가볍고 좋아졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> strong K</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #145 -->
         <div id="reviewCard145" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal145')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4345,6 +4366,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #146 -->
+  <div id="detailModal146" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal146')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-skin">피부아토피</span>
+        <span class="review-detail-tag">#얼굴뾰루지 #모낭염</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 12월</span>
+      </div>
+      <h2 class="review-detail-title">이유 없는 얼굴 뾰루지·컨디션 저하 — 8체질침·식단관리 3개월로 뾰루지 확실히 줄고 컨디션도 가벼워졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-146-strongk-p1.jpg" alt="strong K 얼굴뾰루지 모낭염 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> strong K</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 12월 20일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>컨디션이 안 좋고 이유없이 얼굴에 뾰류지도 많이 났었어요. 개선해보고 싶은 마음에 8체질전문 수정한의원에 방문했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>진단 및 치료 방향</h4>
+          <p>그 이유가 체질하고 관련있다는 얘기를 듣고, 제가 평소에 생각했던 생활 및 식습관과 연관되있다는 것을 알게 되었습니다. 체질침과 식단관리를 시작한지 3개월이 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>요즘 얼굴에 이유모를 뾰루지도 확실하게 많이 줄었고 컨디션도 가볍고 좋아졌습니다. 앞으로도 꾸준하게 방문해서 치료받을 생각입니다.</p>
         </div>
       </div>
     </div>
@@ -9891,6 +9950,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard146'), cat: '피부아토피' },
       { el: document.getElementById('reviewCard145'), cat: '척추관절' },
       { el: document.getElementById('reviewCard144'), cat: '피부아토피' },
       { el: document.getElementById('reviewCard143'), cat: ['뇌신경', '편두통'] },
