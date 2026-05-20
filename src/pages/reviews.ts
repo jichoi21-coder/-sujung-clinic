@@ -558,6 +558,25 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #158 -->
+        <div id="reviewCard158" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal158')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">두통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">진통제를 달고 살던 두통 — 추나·약침 치료 후 머리가 맑아지고, 무거운 어깨·뻣뻣한 목도 부드러워졌어요</h3>
+          <p class="review-story">온열치료실도 이용할 수 있어서 효과가 두 배! 열로 다스리는 온열돔이 개인적으로 참 좋았어요.</p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이화진24</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #157 -->
         <div id="reviewCard157" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal157')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4589,6 +4608,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #158 -->
+  <div id="detailModal158" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal158')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">뇌신경·편두통</span>
+        <span class="review-detail-tag">#두통</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2025.08.08 · 2번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">진통제를 달고 살던 두통 — 추나·약침 치료 후 머리가 맑아지고, 무거운 어깨·뻣뻣한 목도 부드러워졌어요</h2>
+      <img src="/static/reviews/review-158-leehwajin-p1.jpg" alt="이화진24 두통 후기" class="review-detail-img" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>두통을 자주 느끼는 편이라 가끔 진통제를 먹곤 했었어요. 예약 후 방문했으며 대기 없이 바로 입장할 수 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>한의원에서 추나(교정)요법과 약침으로 관리 치료를 받은 후 머리가 한결 맑아졌고, 묵직하게 무거운 돌덩이 같던 어깨도, 뻣뻣한 목도 부드러워졌습니다. 온열치료실도 이용할 수 있어서 효과가 두 배였어요!</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>개인적으로 열로 다스리는 온열돔이 참 좋더라고요. 두통 때문에 진통제를 자주 드시는 분들께 꼭 권해드리고 싶어요!</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 이화진24</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -10572,6 +10626,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard158'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard157'), cat: '여성질환' },
       { el: document.getElementById('reviewCard156'), cat: '척추관절' },
       { el: document.getElementById('reviewCard155'), cat: '척추관절' },
