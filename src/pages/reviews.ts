@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #126 -->
+        <div id="reviewCard126" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal126')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎관절·족저근막염</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2023.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">무릎 통증에 족저근막염까지 — 전침·약침 1회에 걷게 되고 2회 후 통증 소멸, 8체질 맞춤 치료가 직방이었어요</h3>
+          <p class="review-story">
+            무릎이 아파서 방문했다가 원장님만의 특별한 전침·약침 치료에 놀랐어요. 주 3번 치료해도 효과가 직방이었습니다. 족저근막염으로 발바닥이 화끈거리고 아려 급하게 방문했는데, 한 번 치료 받고 걸을 수 있게 되었고 두 번째 방문 후 통증이 사라졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 상큼통통6</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #125 -->
         <div id="reviewCard125" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal125')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3925,6 +3946,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #126 -->
+  <div id="detailModal126" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal126')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#무릎관절 #족저근막염</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2023년 7월</span>
+      </div>
+      <h2 class="review-detail-title">무릎 통증에 족저근막염까지 — 전침·약침 1회에 걷게 되고 2회 후 통증 소멸, 8체질 맞춤 치료가 직방이었어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-126-sangkum-p1.jpg" alt="상큼통통6 무릎관절·족저근막염 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 상큼통통6</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2023년 7월 1일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>무릎이 아파서 방문했다가 원장님만의 특별한 전침·약침 치료에 놀랐어요. 일반 한의원 치료겠거니 했는데 너무 특별한 치료였습니다. 직장인이라 꾸준히 주 3번 치료를 받았는데 효과는 직방이었어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>오래 서 있는 직업 특성상 족저근막염으로 발바닥이 화끈거리고 아려 급하게 방문했는데, 한 번 치료 받고 걸을 수 있게 되었고 두 번째 방문 후 통증이 사라졌습니다. 8체질에 저는 금양인인데 체질상 식이요법이 병행되어야 하지만 지금은 시작 단계라 50% 정도 하는 중이며 빠른 시일 내에 금기음식·권장식에 적응될 것 같아요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>전체 후기</h4>
+          <p>다시 한 번 원장님 너무 감사합니다. 그리고 맘 편하게 해주시는 접수쌤, 진심으로 걱정해주시던 치료실쌤 감사합니다.</p>
         </div>
       </div>
     </div>
@@ -8701,6 +8760,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard126'), cat: '척추관절' },
       { el: document.getElementById('reviewCard125'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard124'), cat: '소화기' },
       { el: document.getElementById('reviewCard123'), cat: '척추관절' },
