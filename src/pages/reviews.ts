@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #153 -->
+        <div id="reviewCard153" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal153')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">디스크성 어깨통증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">한 달간 왼쪽 어깨·팔뚝 통증 — 첫날 물리치료·침·추나로 드라마틱한 효과를 바로 느꼈어요</h3>
+          <p class="review-story">
+            한 달 전부터 왼쪽 어깨·팔뚝이 아파서 정형외과도 다녀보고 약도 먹어봤는데 낫지 않았습니다. 우연히 수정한의원을 알게 되어 원장님 상담 후 물리치료·침치료·추나치료를 받았는데, 드라마틱하게 효과가 바로 있었습니다. 원장님 설명도 잘해주시고 직원분들도 친절하시고 감사합니다^^
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 조찬형50</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #152 -->
         <div id="reviewCard152" class="review-card" data-cat="구안와사 안면마비" onclick="openReviewModal('detailModal152')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4492,6 +4513,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #153 -->
+  <div id="detailModal153" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal153')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#디스크성어깨통증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2025년 5월</span>
+      </div>
+      <h2 class="review-detail-title">한 달간 왼쪽 어깨·팔뚝 통증 — 첫날 물리치료·침·추나로 드라마틱한 효과를 바로 느꼈어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-153-jochan-p1.jpg" alt="조찬형50 디스크성 어깨통증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 조찬형50</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 5월 28일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 내원 계기</h4>
+          <p>한 달 전부터 왼쪽어깨 팔뚝이 아파서 정형외과도 다녀보고 약도 먹어보고 했습니다. 우연히 수정한의원을 알게 되었고 오늘 원장님 상담 후 물리치료 침치료 추나치료를 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>드라마틱하게 정말 효과가 바로 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>총평</h4>
+          <p>원장님 설명도 잘해주시고 직원분들도 친절하시고 감사합니다^^굿</p>
         </div>
       </div>
     </div>
@@ -10297,6 +10356,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard153'), cat: '척추관절' },
       { el: document.getElementById('reviewCard152'), cat: '구안와사 안면마비' },
       { el: document.getElementById('reviewCard151'), cat: '척추관절' },
       { el: document.getElementById('reviewCard150'), cat: '소화기' },
