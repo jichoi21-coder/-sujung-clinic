@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #124 -->
+        <div id="reviewCard124" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal124')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">40년 만성변비</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2023.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">40년 변비로 일상 불가능했는데 — 치료 열흘 만에 약침·맞춤 한약으로 해결, 속 쓰림 없이 먹기 편한 한약이 인상적이었어요</h3>
+          <p class="review-story">
+            변비가 해결이 안 되면 일상생활이 안 될 정도로 힘들었는데, 치료를 시작한 지 열흘 만에 약침과 저를 위해 특별하게 지으신 한약으로 40년 변비를 해결했습니다. 속 쓰림 없이 먹기 편한 한약이 특별했고, 늘 따뜻하고 편안하게 치료받도록 세심하게 살펴주는 간호원님들도 인상적이었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> jai****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #123 -->
         <div id="reviewCard123" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal123')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3883,6 +3904,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #124 -->
+  <div id="detailModal124" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal124')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-digest">소화기</span>
+        <span class="review-detail-tag">#40년변비 #만성변비</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2023년 3월</span>
+      </div>
+      <h2 class="review-detail-title">40년 변비로 일상 불가능했는데 — 치료 열흘 만에 약침·맞춤 한약으로 해결, 속 쓰림 없이 먹기 편한 한약이 인상적이었어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-124-jai-p1.jpg" alt="jai**** 40년 만성변비 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> jai****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2023년 3월 30일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>변비가 해결이 안 되면 일상생활이 안 될 정도로 힘들었습니다. 40년 된 만성 변비로 오랜 세월 고생해왔습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>치료를 시작한 지 열흘 만에 약침과 저를 위해 특별하게 지으신 한약으로 40년 변비를 해결했습니다. 모든 병이 다 나은 듯합니다. 한약의 특별함은 속 쓰림 없이 먹기 편하다는 점이며, 수정한의원에 오길 잘했다는 생각이 듭니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>전체 후기</h4>
+          <p>늘 따뜻하고 편안하게 치료받도록 세심하게 살펴주는 간호원님들도 인상적이었습니다.</p>
         </div>
       </div>
     </div>
@@ -8587,6 +8646,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard124'), cat: '소화기' },
       { el: document.getElementById('reviewCard123'), cat: '척추관절' },
       { el: document.getElementById('reviewCard122'), cat: '척추관절' },
       { el: document.getElementById('reviewCard121'), cat: '척추관절' },
