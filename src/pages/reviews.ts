@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #135 -->
+        <div id="reviewCard135" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal135')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">요추염좌 요통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">허리 삐끗 후 나아지지 않아 내원 — 일주일 방문 치료로 거의 다 나았고 시설·원장님·직원 모두 친절해 또 오고 싶어요</h3>
+          <p class="review-story">
+            일상생활 중 허리를 삐끗했는데 나아지지 않아 방문했습니다. 허리 숙일 때마다 너무 아팠는데 일주일 정도 치료받다 보니 거의 다 나았습니다. 시설도 깨끗하고 원장님·직원분들도 너무 친절하셔서 좋았습니다. 또 아픈 곳이 생기면 다시 방문하게 될 것 같아요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> xx0****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #134 -->
         <div id="reviewCard134" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal134')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4114,6 +4135,48 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #135 -->
+  <div id="detailModal135" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal135')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#요추염좌 #요통</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 4월</span>
+      </div>
+      <h2 class="review-detail-title">허리 삐끗 후 나아지지 않아 내원 — 일주일 방문 치료로 거의 다 나았고 시설·원장님·직원 모두 친절해 또 오고 싶어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-135-xx0-p1.jpg" alt="xx0**** 요추염좌 요통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> xx0****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 4월 6일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>이용 안내</h4>
+          <p>예약 후 이용 — 대기 시간 없이 바로 입장.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>일상생활 중에 허리를 삐끗했는데 나아지지 않아 수정한의원에 방문했습니다. 허리 숙일 때마다 너무 아팠습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>일주일 정도 방문해서 치료를 받다 보니 거의 다 나았습니다. 한의원에 길게 다녀본 게 처음인데 큰 효과를 봤습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>병원 시설도 깨끗하고 원장님이랑 직원분들도 너무 친절하셔서 좋았습니다. 또 아픈 곳이 생기면 수정한의원에 방문하게 될 것 같습니다.</p>
         </div>
       </div>
     </div>
@@ -9236,6 +9299,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard135'), cat: '척추관절' },
       { el: document.getElementById('reviewCard134'), cat: '여성질환' },
       { el: document.getElementById('reviewCard133'), cat: '여성질환' },
       { el: document.getElementById('reviewCard132'), cat: '척추관절' },
