@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #144 -->
+        <div id="reviewCard144" class="review-card" data-cat="피부아토피" onclick="openReviewModal('detailModal144')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">아토피</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.10</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">아이 아토피 한 달 반 치료 — 한약·약침·8체질식으로 가려움 살짝 줄고 호전 중이에요</h3>
+          <p class="review-story">
+            아이 아토피로 치료 중입니다. 한 달 반쯤 됐는데 약간 호전되고 가려움도 살짝 줄었어요. 한약을 하루 3번 먹고 약침도 맞고 음식도 8체질식으로 조절 중입니다. 원장님이 친절하시고 설명도 자세히 해주시며, 직원분들도 모두 친절하시고 늘 웃으면서 응대해 주십니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> Mk2000</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #143 -->
         <div id="reviewCard143" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal143')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4303,6 +4324,40 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #144 -->
+  <div id="detailModal144" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal144')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-skin">피부아토피</span>
+        <span class="review-detail-tag">#아토피</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 10월</span>
+      </div>
+      <h2 class="review-detail-title">아이 아토피 한 달 반 치료 — 한약·약침·8체질식으로 가려움 살짝 줄고 호전 중이에요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-144-mk2000-p1.jpg" alt="Mk2000 아토피 피부아토피 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> Mk2000</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 10월 21일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 치료 현황</h4>
+          <p>아이 아토피때문에 치료중입니다. 한달반정도 됐는데 약간의 호전중이고 가려움도 살짝 줄었어요. 한약을 하루에 3번 먹고 약침도 맞고 음식도 8체질식으로 조절중입니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>총평</h4>
+          <p>원장님 친절하시고 설명도 자세히 해주십니다. 직원분들도 모두 친절하시고 늘 웃으면서 응대해주십니다.</p>
         </div>
       </div>
     </div>
@@ -9781,6 +9836,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard144'), cat: '피부아토피' },
       { el: document.getElementById('reviewCard143'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard142'), cat: '면역대사' },
       { el: document.getElementById('reviewCard141'), cat: ['소화기', '피부아토피'] },
