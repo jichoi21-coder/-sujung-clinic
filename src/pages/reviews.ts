@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #138 -->
+        <div id="reviewCard138" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal138')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">기립성빈맥 어지럼증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">기립성빈맥 어지럼증 3년 — 8체질 방송 보고 내원, 한약·약침·추나 5일 치료에 진짜 편해지고 모든 분이 친절해요</h3>
+          <p class="review-story">
+            기립성빈맥으로 인한 어지럼증으로 3년 가까이 고생했습니다. 방송에서 8체질을 보고 검색 후 내원했고, 한약·약침·추나 치료를 받으며 신뢰가 가도록 설명해 주셨습니다. 5일 치료받고 약도 먹기 시작했는데 진짜 좀 편해졌어요. 모든 분이 다 친절하십니다!
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> xbition</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #137 -->
         <div id="reviewCard137" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal137')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4177,6 +4198,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #138 -->
+  <div id="detailModal138" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal138')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">뇌신경</span>
+        <span class="review-detail-tag">#기립성빈맥 #어지럼증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 6월</span>
+      </div>
+      <h2 class="review-detail-title">기립성빈맥 어지럼증 3년 — 8체질 방송 보고 내원, 한약·약침·추나 5일 치료에 진짜 편해지고 모든 분이 친절해요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-138-xbition-p1.jpg" alt="xbition 기립성빈맥 어지럼증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> xbition</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 6월 12일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>기립성빈맥으로 인한 어지럼증으로 3년 가까이 고생 중이었습니다. 최근에는 왼발도 시리거나 저려서 고민하던 중 우연히 8체질에 대해 방송에서 보고 검색해서 후기 보고 방문했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 과정</h4>
+          <p>한약과 약침, 엑스레이 촬영 후 추나 치료 중인데 일단 신뢰가 가도록 진단이랑 설명을 해주십니다. 처음에 집중치료 받으면 많이 좋아졌다가 오르락내리락하며 좋아진다고 하셔서 믿고 다녀보려고 합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>5일 치료받고 약도 먹기 시작했는데 진짜 좀 편해졌습니다. 여기는 모든 분이 다 친절하신 듯합니다!</p>
         </div>
       </div>
     </div>
@@ -9421,6 +9480,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard138'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard137'), cat: '면역대사' },
       { el: document.getElementById('reviewCard136'), cat: '척추관절' },
       { el: document.getElementById('reviewCard135'), cat: '척추관절' },
