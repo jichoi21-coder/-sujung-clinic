@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #137 -->
+        <div id="reviewCard137" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal137')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">신부전 단백뇨</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">투석 권고받은 신부전 — 1년간 한약·침 하루도 안 빠지고 내원한 결과 신장 수치 정상, 부기·단백뇨까지 모두 사라졌어요</h3>
+          <p class="review-story">
+            소변에 거품이 많아 검사 결과 신부전으로 신장 수치가 너무 높아 입원까지 했습니다. 양약으로는 좋아지지 않는다는 의사 말에 수정한의원을 찾았고, 1년간 하루도 안 빠지고 한약·침 치료를 받았습니다. 부기·소변 거품이 사라지고 피검사 수치가 정상으로 돌아왔습니다. 원장님께 정말 감사드립니다!
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> har****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #136 -->
         <div id="reviewCard136" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal136')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4156,6 +4177,48 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #137 -->
+  <div id="detailModal137" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal137')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역대사</span>
+        <span class="review-detail-tag">#신부전 #단백뇨</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 5월</span>
+      </div>
+      <h2 class="review-detail-title">투석 권고받은 신부전 — 1년간 한약·침 하루도 안 빠지고 내원한 결과 신장 수치 정상, 부기·단백뇨까지 모두 사라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-137-har-p1.jpg" alt="har**** 신부전 단백뇨 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> har****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 5월 9일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 진단</h4>
+          <p>소변에 거품이 많아서 내과에서 검사를 했는데 심각하다고 큰 병원에 가라고 했습니다. 부천성모병원 검사 결과 암은 아니고 신부전으로 신장 수치가 너무 높아서 입원을 했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>의사 선생님께 양약을 먹으면 좋아지냐고 물어보니 절대 좋아지지는 않고 나빠질 확률이 더 많다고 했습니다. 처음에 투석해야 한다고 했을 만큼 심각한 상황이었습니다. 그래서 수정한의원에 바로 왔습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 과정</h4>
+          <p>양약 대신 한의원에서 일 년 동안 하루도 안 빠지고 한약을 먹으면서 침을 맞으러 다녔습니다. 중간에 병원에서 피검사를 하면 매번 신장내과 선생님이 고개를 갸웃거리시면서 좋아졌다고 했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 결과</h4>
+          <p>부기도 다 없어지고 소변도 깨끗해지고 피검사 결과 수치도 정상으로 나왔습니다. 처음에 병원에서 투석해야 한다고 했는데 정상이 돼서 원장님께 정말 감사합니다!</p>
         </div>
       </div>
     </div>
@@ -9358,6 +9421,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard137'), cat: '면역대사' },
       { el: document.getElementById('reviewCard136'), cat: '척추관절' },
       { el: document.getElementById('reviewCard135'), cat: '척추관절' },
       { el: document.getElementById('reviewCard134'), cat: '여성질환' },
