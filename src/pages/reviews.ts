@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #149 -->
+        <div id="reviewCard149" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal149')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">승모근통증 어깨통증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">밤새 아프던 승모근·어깨 — 8체질 치료 후 통증 사라지고 푹 잘 수 있게 됐어요</h3>
+          <p class="review-story">
+            8체질이 궁금해 알아보다 리뷰가 좋아서 내원했습니다. 승모근·어깨가 아파서 치료 중인데 효과가 좋아요. 밤새 아프던 어깨가 이제 아무렇지 않아 잘 잡니다. 원장님·간호사님 모두 친절하시고 온열치료실도 너무 좋습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 쏘잡</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #148 -->
         <div id="reviewCard148" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal148')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4408,6 +4429,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #149 -->
+  <div id="detailModal149" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal149')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#승모근통증 #어깨통증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2025년 3월</span>
+      </div>
+      <h2 class="review-detail-title">밤새 아프던 승모근·어깨 — 8체질 치료 후 통증 사라지고 푹 잘 수 있게 됐어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-149-ssojab-p1.jpg" alt="쏘잡 승모근통증 어깨통증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 쏘잡</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 3월 8일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>내원 계기</h4>
+          <p>8체질 궁금해서 알아보다 리뷰가 좋아서 내원했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>승모근 어깨가 아파서 치료중인데 효과가 좋아요. 밤새 아프던 어깨가 아팠던게 없어져서 잘 잡니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>총평</h4>
+          <p>원장님 간호사님 모두 친절하세요. 온열치료실도 너무 좋습니다.</p>
         </div>
       </div>
     </div>
@@ -10061,6 +10120,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard149'), cat: '척추관절' },
       { el: document.getElementById('reviewCard148'), cat: '척추관절' },
       { el: document.getElementById('reviewCard147'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard146'), cat: '피부아토피' },
