@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #134 -->
+        <div id="reviewCard134" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal134')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">산후풍 관절통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">출산 후 아기 케어하다 온몸 관절 통증 — 아침마다 목·허리·손목·손가락 뻐근했는데 다니면서 나아지고 체질 한약까지</h3>
+          <p class="review-story">
+            출산 후 아기를 케어하느라 온몸 관절이 아파서 찾아간 한의원입니다. 유독 아침에 눈 뜨면 목·허리·손목·손가락 관절이 뻐근했는데 여기 다니면서 나아지는 듯했습니다. 체질에 맞는 한약도 처방해 주시고 선생님들 모두 친절해서 좋아요. 감사합니다!
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> aba****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #133 -->
         <div id="reviewCard133" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal133')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4093,6 +4114,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #134 -->
+  <div id="detailModal134" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal134')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-women">여성질환</span>
+        <span class="review-detail-tag">#산후풍 #관절통</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 3월</span>
+      </div>
+      <h2 class="review-detail-title">출산 후 아기 케어하다 온몸 관절 통증 — 아침마다 목·허리·손목·손가락 뻐근했는데 다니면서 나아지고 체질 한약까지</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-134-aba-p1.jpg" alt="aba**** 산후풍 관절통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> aba****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 3월 16일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>출산 후 아기를 케어하느라 온몸의 관절이 아파서 찾아간 한의원입니다. 유독 아침에 눈을 뜨면 목·허리·손목·손가락 관절이 뻐근하니 아팠습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>여기 다니면서 나아지는 듯했습니다. 체질한의원이라 체질에 맞는 한약도 처방해 주셨습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>선생님들 모두 친절하니 좋아요. 감사합니다^^</p>
         </div>
       </div>
     </div>
@@ -9177,6 +9236,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard134'), cat: '여성질환' },
       { el: document.getElementById('reviewCard133'), cat: '여성질환' },
       { el: document.getElementById('reviewCard132'), cat: '척추관절' },
       { el: document.getElementById('reviewCard131'), cat: '여성질환' },
