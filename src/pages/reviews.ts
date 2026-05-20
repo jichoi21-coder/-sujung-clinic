@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #148 -->
+        <div id="reviewCard148" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal148')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">일자목 경추통증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.02</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">일자목 1년 고생 — 첫날 단 한 번의 치료로 효과 느껴 내일 또 치료 예정이에요</h3>
+          <p class="review-story">
+            일자목으로 1년 정도 불편하게 지내던 중 가족 소개로 내원했습니다. 소파에 앉아 TV 보거나 무거운 것 조금만 들어도 목이 불편했는데, 당일 내원 후 한 번의 치료로 효과를 느끼니 너무 좋고 내일 또 치료 예정입니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> ekmgg</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #147 -->
         <div id="reviewCard147" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal147')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4387,6 +4408,40 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #148 -->
+  <div id="detailModal148" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal148')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#일자목 #경추통증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2025년 2월</span>
+      </div>
+      <h2 class="review-detail-title">일자목 1년 고생 — 첫날 단 한 번의 치료로 효과 느껴 내일 또 치료 예정이에요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-148-ekmgg-p1.jpg" alt="ekmgg 일자목 경추통증 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> ekmgg</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2025년 2월 19일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>일자목으로 일년 정도 불편하게 지내던중에 가족의 소개로 내원하게 됐습니다. 쇼파에 앉아 티비 보고 무거운것 조금만 들어도 목이 불편했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>당일 내원 후 한번의 치료로 효과를 느끼니 너무 좋고 내일 또 치료 예정입니다.</p>
         </div>
       </div>
     </div>
@@ -10006,6 +10061,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard148'), cat: '척추관절' },
       { el: document.getElementById('reviewCard147'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard146'), cat: '피부아토피' },
       { el: document.getElementById('reviewCard145'), cat: '척추관절' },
