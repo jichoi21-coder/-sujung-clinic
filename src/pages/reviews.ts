@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #136 -->
+        <div id="reviewCard136" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal136')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">석회성건염</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">어깨 석회성건염 — 정형외과 충격파로 근원 치료 안 돼 8체질 한방 선택, 체질식·추나·약침으로 어깨가 점점 가벼워져요</h3>
+          <p class="review-story">
+            어깨 석회성건염으로 팔을 들 수 없이 아파서 정형외과 체외충격파를 받았지만 근원적 치료가 안 되는 것 같아 8체질 한방 치료를 시작했습니다. 체질에 맞는 음식 조절과 추나요법·약침으로 진료받고 있는데 어깨가 점점 가벼워지네요. 원장님 감사합니다!
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> ran****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #135 -->
         <div id="reviewCard135" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal135')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4135,6 +4156,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #136 -->
+  <div id="detailModal136" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal136')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#어깨 #석회성건염</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 4월</span>
+      </div>
+      <h2 class="review-detail-title">어깨 석회성건염 — 정형외과 충격파로 근원 치료 안 돼 8체질 한방 선택, 체질식·추나·약침으로 어깨가 점점 가벼워져요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-136-ran-p1.jpg" alt="ran**** 어깨 석회성건염 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> ran****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 4월 24일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>어깨 석회성건염으로 어깨가 너무 아프고 팔도 들 수 없이 아팠습니다. 정형외과에서 체외충격파 치료를 받았는데, 충격파 치료로는 근원적 치료가 되지 않는 것 같았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>8체질 한방체질 치료를 수정한의원에서 하게 되었습니다. 제 체질을 알고 음식을 조절하며 추나요법과 약침 등을 맞으며 진료받고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>어깨가 점점 가벼워지네요. 원장님 감사합니다!</p>
         </div>
       </div>
     </div>
@@ -9299,6 +9358,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard136'), cat: '척추관절' },
       { el: document.getElementById('reviewCard135'), cat: '척추관절' },
       { el: document.getElementById('reviewCard134'), cat: '여성질환' },
       { el: document.getElementById('reviewCard133'), cat: '여성질환' },
