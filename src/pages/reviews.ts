@@ -558,6 +558,25 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #163 -->
+        <div id="reviewCard163" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal163')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">폐암 항암후유증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.12</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">폐암 항암 중단 후 뼛속까지 통증 — 체질한약·약침·파동요법으로 한 달 만에 혈색 돌아오고 통증 거의 사라졌어요</h3>
+          <p class="review-story">발가락이 검푸르게 변하고 걷기도 힘들었는데, 면역력을 높이는 치료를 한 달 받으면서 점차 회복됐어요. 정성껏 치료해주셔서 진심으로 감사합니다.</p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> sck0****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #162 -->
         <div id="reviewCard162" class="review-card" data-cat="소화기" onclick="openReviewModal('detailModal162')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4684,6 +4703,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #163 -->
+  <div id="detailModal163" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal163')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역대사</span>
+        <span class="review-detail-tag">#폐암항암후유증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2025.12.31 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">폐암 항암 중단 후 뼛속까지 통증 — 체질한약·약침·파동요법으로 한 달 만에 혈색 돌아오고 통증 거의 사라졌어요</h2>
+      <img src="/static/reviews/review-163-sck0-p1.jpg" alt="sck0**** 폐암 항암후유증 후기" class="review-detail-img" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>2024년 12월에 폐암 말기 판정을 받고 항암치료를 시작했지만 계속 폐렴이 생겨 치료를 중단했습니다. 식욕이 떨어지고 다리가 뼛속까지 아프고 힘이 없어서 걷기도 힘들고, 발가락이 검푸르게 변하고 통증 때문에 일상생활이 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>수정한의원에서 면역력을 높이기 위해 체질한약, 체질침, 약침, 파동요법을 받았습니다. 한 달 정도 치료를 받으면서 면역력이 좋아져서 그런지 점차 혈색이 돌아오고, 뼛속까지 아프던 통증도 거의 사라지고 몸이 한결 가벼워졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>정성껏 치료해주셔서 진심으로 감사합니다. 항암 후유증이나 면역력 저하로 힘드신 분들께 꼭 권해드리고 싶은 곳입니다.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> sck0****</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -10842,6 +10896,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard163'), cat: '면역대사' },
       { el: document.getElementById('reviewCard162'), cat: '소화기' },
       { el: document.getElementById('reviewCard161'), cat: '소화기' },
       { el: document.getElementById('reviewCard160'), cat: '척추관절' },
