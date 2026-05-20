@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #140 -->
+        <div id="reviewCard140" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal140')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">경추디스크</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">자고 일어났더니 목~견갑골 등줄기 마비 — 경추 1~2번 디스크, 추나·체질침·한약 3주 치료로 허리 통증 완전히 사라졌어요</h3>
+          <p class="review-story">
+            갑자기 자고 일어났는데 목부터 오른쪽 견갑골까지 등줄기가 뻣뻣하게 아프고 몸을 움직일 수 없었습니다. 경추 1~2번 디스크 진단 후 추나·체질침·한약으로 3주째 치료 중인데 목도 많이 편해지고 허리 통증은 완전히 사라졌습니다. 온열치료실에서 땀도 빼고 몸이 가뿐해요. 곧 완치될 것 같습니다!
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 동열연우44</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #139 -->
         <div id="reviewCard139" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal139')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4219,6 +4240,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #140 -->
+  <div id="detailModal140" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal140')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#경추디스크 #디스크</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 7월</span>
+      </div>
+      <h2 class="review-detail-title">자고 일어났더니 목~견갑골 등줄기 마비 — 경추 1~2번 디스크, 추나·체질침·한약 3주 치료로 허리 통증 완전히 사라졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-140-dongyeol-p1.jpg" alt="동열연우44 경추디스크 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 동열연우44</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 7월 17일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>갑자기 자고 일어났는데 목부터 오른쪽 견갑골까지 등줄기가 뻣뻣하게 아프면서 몸을 제대로 움직일 수 없고 오른쪽 팔도 아팠습니다. 지인 소개로 수정한의원에 방문했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>진단 및 치료 방향</h4>
+          <p>방사선과에서 찍어온 사진으로 원장님께서 꼼꼼히 설명해 주시면서 목뼈 1~2번 사이에 디스크가 심해져서 온 증상이라고 하셨습니다. 추나랑 체질침으로 틀어진 뼈를 제자리에 맞추고 한약으로 면역력도 높여가면서 치료하신다고 했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>현재 3주째 치료 받고 있는데 목도 많이 편해지고 허리 아프던 증상은 완전히 사라졌습니다. 온열치료실에서 땀도 빼고 한의원 다녀온 날은 몸이 가뿐합니다. 조금만 더 치료 받으면 완치될 것 같습니다.</p>
         </div>
       </div>
     </div>
@@ -9543,6 +9602,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard140'), cat: '척추관절' },
       { el: document.getElementById('reviewCard139'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard138'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard137'), cat: '면역대사' },
