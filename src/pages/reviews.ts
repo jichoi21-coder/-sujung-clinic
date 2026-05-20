@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #131 -->
+        <div id="reviewCard131" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal131')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">생리통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2024.01</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">생리통 심해 내원 3개월 — 침치료로 증상 많이 호전, 체질 맞춤 식습관 상담에 온열치료실까지 너무 좋아요</h3>
+          <p class="review-story">
+            생리통이 심해 내원한 지 벌써 석 달이 넘어갑니다. 침치료를 통해서 증상이 많이 호전되었습니다. 방문할 때마다 체질에 맞는 식습관을 이야기해 주시니 생활습관 개선에 도움이 됩니다. 병원에 있는 온열치료실도 아주 좋습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> urs****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #130 -->
         <div id="reviewCard130" class="review-card" data-cat="여성질환" onclick="openReviewModal('detailModal130')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4030,6 +4051,44 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #131 -->
+  <div id="detailModal131" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal131')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-women">여성질환</span>
+        <span class="review-detail-tag">#생리통</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2024년 1월</span>
+      </div>
+      <h2 class="review-detail-title">생리통 심해 내원 3개월 — 침치료로 증상 많이 호전, 체질 맞춤 식습관 상담에 온열치료실까지 너무 좋아요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-131-urs-p1.jpg" alt="urs**** 생리통 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> urs****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2024년 1월 23일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>이용 안내</h4>
+          <p>예약 후 이용 — 대기 시간 없이 바로 입장.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>증상 및 치료 경과</h4>
+          <p>생리통이 심해 내원한 지 벌써 석 달이 넘어갑니다. 침치료를 통해서 증상이 많이 호전되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 특징</h4>
+          <p>방문할 때마다 체질에 맞는 식습관을 이야기해 주시니 생활습관 개선에 도움이 됩니다. 병원에 있는 온열치료실도 아주 좋습니다.</p>
         </div>
       </div>
     </div>
@@ -9000,6 +9059,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard131'), cat: '여성질환' },
       { el: document.getElementById('reviewCard130'), cat: '여성질환' },
       { el: document.getElementById('reviewCard129'), cat: '척추관절' },
       { el: document.getElementById('reviewCard128'), cat: ['뇌신경', '편두통'] },
