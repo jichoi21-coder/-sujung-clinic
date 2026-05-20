@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+                <!-- 후기 카드 #128 -->
+        <div id="reviewCard128" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal128')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">편두통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2023.10</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">머리 압박·어지럼증·구역감에 노인처럼 허리까지 — 2회 치료 후 두통 사라지고 속 편해지고 우울감도 날아갔어요</h3>
+          <p class="review-story">
+            머리가 묵직하고 압이 꽉 찬 상태에 짜증·어지럼증·어깨 결림, 고개 젖히기 힘들고 속 쓰림·구역감·허리 통증까지 이어졌습니다. 체질 맞춤 치료 소문을 듣고 내원했고, 두 번 치료 받고 머리가 가벼워지고 속도 편해지고 우울감도 날아간 듯합니다. 아픈 것이 사라진다면 하루라도 일찍 오길 권유합니다!
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> cyb****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #127 -->
         <div id="reviewCard127" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal127')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -3967,6 +3988,48 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- 상세 모달 #128 -->
+  <div id="detailModal128" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal128')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">뇌신경</span>
+        <span class="review-detail-tag">#편두통 #어지럼증 #뇌압상승</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-date">2023년 10월</span>
+      </div>
+      <h2 class="review-detail-title">머리 압박·어지럼증·구역감에 노인처럼 허리까지 — 2회 치료 후 두통 사라지고 속 편해지고 우울감도 날아갔어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-128-cyb-p1.jpg" alt="cyb**** 편두통·뇌압상승 네이버후기" class="review-detail-image" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> cyb****</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2023년 10월 21일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>머리가 묵직하고 아프고 압이 꽉 차 있는 상태에 짜증도 나고 어지럽고 어깨도 묵직하고 고개를 젖히기 힘들었습니다. 더불어 속이 쓰리고 심할 때는 토할 것 같았습니다. 허리도 아파서 걸을 때 노인처럼 펴지를 못하고 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료를 받게 된 이유</h4>
+          <p>이렇게 심하게 아픈데 일반 병원에서는 치료가 어려울 듯해서, 체질에 맞게 치료한다는 소문을 듣고 수정한의원에 오게 되었습니다. 머리에 압이 차는 것이 제일 무서웠고, 고혈압으로 인한 여러 합병증 사례를 보고 걱정되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선 사항</h4>
+          <p>머리에 압이 찬 것 같은 두통이 없어지고 속도 편하고 허리 통증도 좋아졌습니다. 치료를 연달아 두 번 받고서 머리가 가벼워지고 속이 편하고 우울감 쌓인 것도 날아간 듯합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>추천 한마디</h4>
+          <p>아픈 것이 사라진다면 하루라도 일찍 치료받으러 오길 권유합니다.</p>
         </div>
       </div>
     </div>
@@ -8815,6 +8878,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard128'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard127'), cat: '척추관절' },
       { el: document.getElementById('reviewCard126'), cat: '척추관절' },
       { el: document.getElementById('reviewCard125'), cat: ['뇌신경', '편두통'] },
