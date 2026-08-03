@@ -17,6 +17,8 @@ import { privacyPage } from './pages/privacy'
 type Bindings = {
   NAVER_CLIENT_ID: string
   NAVER_CLIENT_SECRET: string
+  KAKAO_CLIENT_ID: string
+  KAKAO_CLIENT_SECRET: string
 }
 
 const app = new Hono<{ Bindings: Bindings }>()
@@ -159,11 +161,60 @@ app.get('/auth/naver/callback', async (c) => {
   }
 })
 
-// ── 카카오/구글 (추후 연동 예정 — 현재 데모) ──────────────────
+// ── 카카오 OAuth 2.0 실제 연동 ────────────────────────────────
 app.get('/auth/kakao', (c) => {
-  const session = encodeSession({ name: '카카오회원', provider: 'kakao' })
-  c.header('Set-Cookie', `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`)
-  return c.redirect('/reviews')
+  const params = new URLSearchParams({
+    client_id: c.env.KAKAO_CLIENT_ID,
+    redirect_uri: 'https://8chejil-sujeong.com/auth/kakao/callback',
+    response_type: 'code',
+  })
+  return c.redirect(`https://kauth.kakao.com/oauth/authorize?${params}`)
+})
+
+app.get('/auth/kakao/callback', async (c) => {
+  const code = c.req.query('code')
+  const error = c.req.query('error')
+
+  if (error || !code) {
+    return c.redirect('/reviews')
+  }
+
+  try {
+    // 1. code → access_token 교환
+    const tokenRes = await fetch('https://kauth.kakao.com/oauth/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        grant_type: 'authorization_code',
+        client_id: c.env.KAKAO_CLIENT_ID,
+        redirect_uri: 'https://8chejil-sujeong.com/auth/kakao/callback',
+        code,
+      }),
+    })
+    const tokenData = await tokenRes.json() as any
+
+    if (!tokenData.access_token) {
+      return c.redirect('/reviews')
+    }
+
+    // 2. access_token → 사용자 정보 조회
+    const userRes = await fetch('https://kapi.kakao.com/v2/user/me', {
+      headers: { Authorization: `Bearer ${tokenData.access_token}` },
+    })
+    const userData = await userRes.json() as any
+
+    const name = userData?.kakao_account?.profile?.nickname
+      || userData?.properties?.nickname
+      || '카카오회원'
+
+    // 3. 세션 쿠키 발급
+    const session = encodeSession({ name, provider: 'kakao' })
+    c.header('Set-Cookie', `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`)
+    return c.redirect('/reviews')
+
+  } catch {
+    return c.redirect('/reviews')
+  }
 })
 app.get('/auth/google', (c) => {
   const session = encodeSession({ name: '구글회원', provider: 'google' })
