@@ -12,6 +12,7 @@ import { clinic_skinPage } from './pages/clinic-skin'
 import { clinic_spinePage } from './pages/clinic-spine'
 import { clinic_womenPage } from './pages/clinic-women'
 import { blogPage } from './pages/blog'
+import { privacyPage } from './pages/privacy'
 
 type Bindings = {
   NAVER_CLIENT_ID: string
@@ -54,6 +55,7 @@ app.get('/clinic/digestion', (c) => c.html(clinic_digestionPage))
 app.get('/clinic/skin', (c) => c.html(clinic_skinPage))
 app.get('/clinic/spine', (c) => c.html(clinic_spinePage))
 app.get('/clinic/women', (c) => c.html(clinic_womenPage))
+app.get('/privacy', (c) => c.html(privacyPage))
 
 // ── 블로그 (인블로그 프록시) ───────────────────────────────────
 app.get('/blog', async (c) => {
@@ -187,6 +189,7 @@ app.get('/sitemap.xml', (c) => {
     { loc: '/clinic/spine',        priority: '0.9', changefreq: 'monthly' },
     { loc: '/clinic/women',        priority: '0.9', changefreq: 'monthly' },
     { loc: '/reviews',             priority: '0.7', changefreq: 'weekly'  },
+    { loc: '/privacy',             priority: '0.3', changefreq: 'yearly'  },
   ]
   const today = new Date().toISOString().split('T')[0]
   const urls = pages.map(p =>
