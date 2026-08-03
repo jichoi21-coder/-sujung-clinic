@@ -184,47 +184,42 @@ app.get('/auth/kakao/callback', async (c) => {
     return c.redirect('/reviews')
   }
 
-  try {
-    // 1. code → access_token 교환
-    const tokenRes = await fetch('https://kauth.kakao.com/oauth/token', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams({
-        grant_type: 'authorization_code',
-        client_id: c.env.KAKAO_CLIENT_ID,
-        redirect_uri: 'https://8chejil-sujeong.com/auth/kakao/callback',
-        code,
-      }),
-    })
-    const tokenData = await tokenRes.json() as any
+  // 1. code → access_token 교환
+  const tokenRes = await fetch('https://kauth.kakao.com/oauth/token', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({
+      grant_type: 'authorization_code',
+      client_id: c.env.KAKAO_CLIENT_ID,
+      redirect_uri: 'https://8chejil-sujeong.com/auth/kakao/callback',
+      code,
+    }),
+  })
+  const tokenData = await tokenRes.json() as any
 
-    if (!tokenData.access_token) {
-      return c.redirect('/reviews')
-    }
-
-    // 2. access_token → 사용자 정보 조회
-    const userRes = await fetch('https://kapi.kakao.com/v2/user/me', {
-      headers: { Authorization: `Bearer ${tokenData.access_token}` },
-    })
-    const userData = await userRes.json() as any
-
-    const name = userData?.kakao_account?.profile?.nickname
-      || userData?.properties?.nickname
-      || '카카오회원'
-
-    // 3. 세션 쿠키 발급
-    const session = encodeSession({ name, provider: 'kakao' })
-    return new Response(null, {
-      status: 302,
-      headers: {
-        'Location': '/reviews',
-        'Set-Cookie': `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`,
-      },
-    })
-
-  } catch {
-    return c.redirect('/reviews')
+  if (!tokenData.access_token) {
+    return c.json({ step: 'token_fail', tokenData })
   }
+
+  // 2. access_token → 사용자 정보 조회
+  const userRes = await fetch('https://kapi.kakao.com/v2/user/me', {
+    headers: { Authorization: `Bearer ${tokenData.access_token}` },
+  })
+  const userData = await userRes.json() as any
+
+  const name = userData?.kakao_account?.profile?.nickname
+    || userData?.properties?.nickname
+    || '카카오회원'
+
+  // 3. 세션 쿠키 발급
+  const session = encodeSession({ name, provider: 'kakao' })
+  return new Response(null, {
+    status: 302,
+    headers: {
+      'Location': '/reviews',
+      'Set-Cookie': `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`,
+    },
+  })
 })
 app.get('/auth/google', (c) => {
   const session = encodeSession({ name: '구글회원', provider: 'google' })
