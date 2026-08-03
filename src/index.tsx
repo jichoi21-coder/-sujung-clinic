@@ -153,8 +153,13 @@ app.get('/auth/naver/callback', async (c) => {
 
     // 3. 세션 쿠키 발급
     const session = encodeSession({ name, provider: 'naver' })
-    c.header('Set-Cookie', `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`)
-    return c.redirect('/reviews')
+    return new Response(null, {
+      status: 302,
+      headers: {
+        'Location': '/reviews',
+        'Set-Cookie': `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`,
+      },
+    })
 
   } catch {
     return c.redirect('/reviews')
@@ -209,8 +214,13 @@ app.get('/auth/kakao/callback', async (c) => {
 
     // 3. 세션 쿠키 발급
     const session = encodeSession({ name, provider: 'kakao' })
-    c.header('Set-Cookie', `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`)
-    return c.redirect('/reviews')
+    return new Response(null, {
+      status: 302,
+      headers: {
+        'Location': '/reviews',
+        'Set-Cookie': `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`,
+      },
+    })
 
   } catch {
     return c.redirect('/reviews')
