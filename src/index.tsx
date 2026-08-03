@@ -13,7 +13,12 @@ import { clinic_spinePage } from './pages/clinic-spine'
 import { clinic_womenPage } from './pages/clinic-women'
 import { blogPage } from './pages/blog'
 
-const app = new Hono()
+type Bindings = {
+  NAVER_CLIENT_ID: string
+  NAVER_CLIENT_SECRET: string
+}
+
+const app = new Hono<{ Bindings: Bindings }>()
 
 // 정적 파일 서빙
 app.use('/static/*', serveStatic({ root: './' }))
@@ -94,12 +99,65 @@ app.get('/reviews', (c) => {
   return c.html(reviewsPage(isLoggedIn, user ?? undefined))
 })
 
-// ── OAuth 로그인 (데모 - 즉시 로그인 처리) ─────────────────────
+// ── 네이버 OAuth 2.0 실제 연동 ────────────────────────────────
 app.get('/auth/naver', (c) => {
-  const session = encodeSession({ name: '네이버회원', provider: 'naver' })
-  c.header('Set-Cookie', `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`)
-  return c.redirect('/reviews')
+  const state = Math.random().toString(36).substring(2, 15)
+  const params = new URLSearchParams({
+    response_type: 'code',
+    client_id: c.env.NAVER_CLIENT_ID,
+    redirect_uri: 'https://8chejil-sujeong.com/auth/naver/callback',
+    state,
+  })
+  return c.redirect(`https://nid.naver.com/oauth2.0/authorize?${params}`)
 })
+
+app.get('/auth/naver/callback', async (c) => {
+  const code = c.req.query('code')
+  const error = c.req.query('error')
+
+  // 사용자가 취소했을 경우
+  if (error || !code) {
+    return c.redirect('/reviews')
+  }
+
+  try {
+    // 1. code → access_token 교환
+    const tokenRes = await fetch('https://nid.naver.com/oauth2.0/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        grant_type: 'authorization_code',
+        client_id: c.env.NAVER_CLIENT_ID,
+        client_secret: c.env.NAVER_CLIENT_SECRET,
+        code,
+        state: c.req.query('state') || '',
+      }),
+    })
+    const tokenData = await tokenRes.json() as any
+
+    if (!tokenData.access_token) {
+      return c.redirect('/reviews')
+    }
+
+    // 2. access_token → 사용자 정보 조회
+    const userRes = await fetch('https://openapi.naver.com/v1/nid/me', {
+      headers: { Authorization: `Bearer ${tokenData.access_token}` },
+    })
+    const userData = await userRes.json() as any
+
+    const name = userData?.response?.name || '네이버회원'
+
+    // 3. 세션 쿠키 발급
+    const session = encodeSession({ name, provider: 'naver' })
+    c.header('Set-Cookie', `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`)
+    return c.redirect('/reviews')
+
+  } catch {
+    return c.redirect('/reviews')
+  }
+})
+
+// ── 카카오/구글 (추후 연동 예정 — 현재 데모) ──────────────────
 app.get('/auth/kakao', (c) => {
   const session = encodeSession({ name: '카카오회원', provider: 'kakao' })
   c.header('Set-Cookie', `review_session=${session}; Path=/; HttpOnly; SameSite=Lax; Max-Age=86400`)
