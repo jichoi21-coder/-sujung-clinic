@@ -86,10 +86,12 @@ app.get('/blog/:slug', async (c) => {
 
 // ── 치료후기 (로그인 게이트) ────────────────────────────────────
 app.get('/reviews', (c) => {
-  // 임시: 로그인 없이 후기 목록 바로 표시 (작업 완료 후 원복 예정)
-  const isLoggedIn = true
-  const user = { name: '방문자', provider: 'guest' }
-  return c.html(reviewsPage(isLoggedIn, user))
+  const cookieHeader = c.req.header('Cookie') || ''
+  const match = cookieHeader.match(/review_session=([^;]+)/)
+  const sessionStr = match ? match[1] : null
+  const user = sessionStr ? decodeSession(sessionStr) : null
+  const isLoggedIn = !!user
+  return c.html(reviewsPage(isLoggedIn, user ?? undefined))
 })
 
 // ── OAuth 로그인 (데모 - 즉시 로그인 처리) ─────────────────────
