@@ -1378,7 +1378,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
   </div>
   <div class="footer-bottom">
     <div class="footer-container">
-      <p>© 2025 수정한의원. All rights reserved. | 사업자등록번호: 문의요망</p>
+      <p>© 2025 수정한의원. All rights reserved. | 사업자등록번호: 217-96-05213</p>
       <p class="footer-bottom-right">만성통증과 난치질환 치료의 새로운 기준 | 8체질 통합의학</p>
     </div>
   </div>
