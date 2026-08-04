@@ -492,12 +492,12 @@ export const introPage = `<!DOCTYPE html>
         <div class="gal-label">양자퀀텀면역센터</div>
       </div>
       <div class="gfg-small">
-        <img src="/static/gal-yangja-onheat.jpg" alt="수정한의원 양자 온열치료실 - 체질별 맞춤 온열 요법 공간" loading="lazy"/>
-        <div class="gal-label">양자 온열치료실</div>
+        <img src="/static/gal-yangja-onheat.jpg" alt="수정한의원 양자 돔 치료실 - 첨단 양자파동 치료 장비" loading="lazy"/>
+        <div class="gal-label">양자 돔 치료실</div>
       </div>
       <div class="gfg-small">
-        <img src="/static/gal-yangja-dom.jpg" alt="수정한의원 양자 돔 치료실 - 첨단 양자파동 치료 장비" loading="lazy"/>
-        <div class="gal-label">양자 돔 치료실</div>
+        <img src="/static/gal-yangja-dom.jpg" alt="수정한의원 양자 온열 치료실 - 체질별 맞춤 온열 요법 공간" loading="lazy"/>
+        <div class="gal-label">양자 온열 치료실</div>
       </div>
       <div class="gfg-small">
         <img src="/static/gal-padong.jpg" alt="수정한의원 파동치료실 - 8체질 파동 요법 및 전기 침 치료" loading="lazy"/>

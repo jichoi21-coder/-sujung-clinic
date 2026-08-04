@@ -978,12 +978,12 @@ export const homePage = `<!DOCTYPE html>
         <div class="gal-label">대기실</div>
       </div>
       <div class="gal-item">
-        <img src="/static/gal-yangja-dom.jpg" alt="수정한의원 양자 돔 치료실 - 첨단 양자의학 치료 시설" title="수정한의원 양자 돔 치료실" loading="lazy"/>
-        <div class="gal-label">양자 돔 치료실</div>
+        <img src="/static/gal-yangja-dom.jpg" alt="수정한의원 양자 온열 치료실 - 체질별 맞춤 온열 요법" title="수정한의원 양자 온열 치료실" loading="lazy"/>
+        <div class="gal-label">양자 온열 치료실</div>
       </div>
       <div class="gal-item">
-        <img src="/static/gal-yangja-onheat.jpg" alt="수정한의원 양자 온열 치료실 - 체질별 맞춤 온열 요법" title="수정한의원 양자 온열 치료실" loading="lazy"/>
-        <div class="gal-label">양자 온열 치료실</div>
+        <img src="/static/gal-yangja-onheat.jpg" alt="수정한의원 양자 돔 치료실 - 첨단 양자의학 치료 시설" title="수정한의원 양자 돔 치료실" loading="lazy"/>
+        <div class="gal-label">양자 돔 치료실</div>
       </div>
       <div class="gal-item">
         <img src="/static/gallery-treatment.jpg" alt="수정한의원 치료실 - 8체질 침구 치료 및 추나 요법 공간" title="수정한의원 치료실" loading="lazy"/>
