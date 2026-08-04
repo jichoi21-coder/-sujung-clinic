@@ -978,19 +978,19 @@ export const homePage = `<!DOCTYPE html>
         <div class="gal-label">대기실</div>
       </div>
       <div class="gal-item">
-        <img src="https://sspark.genspark.ai/cfimages?u1=4IvE4o56SpBDn8EIgclmrX%2BxStJx%2FUSK2wdR%2FPNK5ZNbdj2i3xaG44Ydj02L0LiLRzRI2G42%2B8NYS4BlCKYTvTzhoD1jA6lRW%2FHko3f9CAegPALvLR0NztkQl1xdXu7Y9VoXfrtJMY8ZsBTVjlWSYswO%2F%2FT8TiYDIK4VVGGZzNU%3D&u2=RfMLRMAxgbshQKPJ&width=1024" alt="수정한의원 양자 돔 치료실 - 첨단 양자의학 치료 시설" title="수정한의원 양자 돔 치료실" loading="lazy"/>
+        <img src="/static/gal-yangja-dom.jpg" alt="수정한의원 양자 돔 치료실 - 첨단 양자의학 치료 시설" title="수정한의원 양자 돔 치료실" loading="lazy"/>
         <div class="gal-label">양자 돔 치료실</div>
       </div>
       <div class="gal-item">
-        <img src="https://sspark.genspark.ai/cfimages?u1=GiG8rjSv1DPjLI3UyFvRLfn%2BNQ4UqZcuIafF0xB5yDZVYPHgxIOrQ3SneyNgATkOfz15IEBin1PIbBpWJfdbFLWLa4eWaZdmBPH18jcCYICfeuuMtDPeB9xrTxdBW25YgD%2FEQTaa&u2=1GxFu6OkP6J6fj9k&width=1024" alt="수정한의원 원내 복도 - 깨끗하고 쾌적한 환경" title="수정한의원 원내 복도" loading="lazy"/>
-        <div class="gal-label">원내 복도</div>
+        <img src="/static/gal-yangja-onheat.jpg" alt="수정한의원 양자 온열 치료실 - 체질별 맞춤 온열 요법" title="수정한의원 양자 온열 치료실" loading="lazy"/>
+        <div class="gal-label">양자 온열 치료실</div>
       </div>
       <div class="gal-item">
         <img src="/static/gallery-treatment.jpg" alt="수정한의원 치료실 - 8체질 침구 치료 및 추나 요법 공간" title="수정한의원 치료실" loading="lazy"/>
         <div class="gal-label">치료실</div>
       </div>
       <div class="gal-item">
-        <img src="https://sspark.genspark.ai/cfimages?u1=9nkARLt%2Fli5BMsvaScFXYmMIyc4jrwyLUY%2BlYn0VQEuKjHIhInhzl9gi3imESBw%2FJCEBsqKUbRraBsf1OP2QYQOfF2mjMXqa1%2FuXwdPGt86hSOgIWXEBzoAniW7YLv%2Br0%2B7nvbQC&u2=DhpsB6D%2FwrtdCDiG&width=1024" alt="수정한의원 8체질 침 치료 - 체질별 맞춤 침구 요법" title="수정한의원 8체질 침 치료" loading="lazy"/>
+        <img src="/static/gal-jinryosil.jpg" alt="수정한의원 진료실 - 8체질 진단 및 맞춤 침구 요법" title="수정한의원 진료실" loading="lazy"/>
         <div class="gal-label">진료실</div>
       </div>
     </div>
