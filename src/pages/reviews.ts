@@ -187,7 +187,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </ul>
       </li>
       <li class="has-sub nav-content-item">
-        <a href="#" class="nav-content-btn"><i class="fas fa-th-large"></i> 콘텐츠 <i class="fas fa-chevron-down fa-xs"></i></a>
+        <a href="#" class="nav-content-btn"><i class="fas fa-th-large"></i> 치료후기 <i class="fas fa-chevron-down fa-xs"></i></a>
         <ul class="sub-menu">
           <li><a href="/blog"><span class="nav-icon-circle nav-icon-naver-circle"></span> 블로그</a></li>
           <li><a href="/reviews"><i class="fas fa-star"></i> 치료후기</a></li>
@@ -302,7 +302,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
     </div>
     <div class="mob-menu-item mob-has-sub mob-content-item">
       <button class="mob-menu-link mob-toggle-btn">
-        <span><i class="fas fa-th-large"></i> 콘텐츠</span>
+        <span><i class="fas fa-th-large"></i> 치료후기</span>
         <i class="fas fa-chevron-down mob-arrow"></i>
       </button>
       <div class="mob-sub">
