@@ -496,8 +496,8 @@ export const introPage = `<!DOCTYPE html>
         <div class="gal-label">양자 온열치료실</div>
       </div>
       <div class="gfg-small">
-        <img src="/static/gal-yangja-dom.jpg" alt="수정한의원 양자 돔치료실 - 첨단 양자파동 치료 장비" loading="lazy"/>
-        <div class="gal-label">양자 돔치료실</div>
+        <img src="/static/gal-yangja-dom.jpg" alt="수정한의원 양자 돔 치료실 - 첨단 양자파동 치료 장비" loading="lazy"/>
+        <div class="gal-label">양자 돔 치료실</div>
       </div>
       <div class="gfg-small">
         <img src="/static/gal-padong.jpg" alt="수정한의원 파동치료실 - 8체질 파동 요법 및 전기 침 치료" loading="lazy"/>
@@ -514,6 +514,10 @@ export const introPage = `<!DOCTYPE html>
       <div class="gfg-small">
         <img src="/static/gal-tangjeon.jpg" alt="수정한의원 탕전실 - 8체질 맞춤 한약 조제 및 탕약 제조" loading="lazy"/>
         <div class="gal-label">탕전실</div>
+      </div>
+      <div class="gfg-small">
+        <img src="/static/gal-jinryosil.jpg" alt="수정한의원 진료실 - 8체질 진단 및 맞춤 침구 요법" loading="lazy"/>
+        <div class="gal-label">진료실</div>
       </div>
     </div>
   </div>
