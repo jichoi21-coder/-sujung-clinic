@@ -357,8 +357,8 @@ export const introPage = `<!DOCTYPE html>
         </div>
 
         <div class="greeting-img-row">
-          <img src="https://sspark.genspark.ai/cfimages?u1=QTTlU1N1ApVaXNtxOugES1Vdj9Povz%2B%2BaJWLvn88njMoVcmpqN14QltMcPCDhPRBMxXKTJSkfa9C1tvMBJQ6W42%2BNBTLlNl1mhCSZ2tK%2FQ1tG6vijLopvVBhFmZkFHuozzz6Xc4Ikxi4hZldGuRUOhlq6ah541Hvs0LhiwjZbF9L6BE%3D&u2=rohgSsjAkeNGfLgg&width=1024" alt="수정한의원 원장 진료 모습 - 8체질 맥진 진단 및 상담" title="수정한의원 원장 진료 모습" loading="lazy"/>
-          <img src="https://sspark.genspark.ai/cfimages?u1=%2BeofgQ%2BzY8rH1qdSkj0wNymzHuGFj%2Fp8cmXVI%2FFWWch5ZHNi%2BTyt6hDQG6vrkxrrbiXfBBZgVW9kOEbcKj%2F3I%2FGAWJyNKd26hSYgItCjp%2FniLB4tmnokEjOw0JGpdPnl%2BNUoZTQVhxM3qTJ4oH%2FlI7dnyxMFAT4hgAt13hjhYR4JbQ%3D%3D&u2=8vVK4T43C54eQ04X&width=1024" alt="수정한의원 8체질 맞춤 한약재 - 체질별 처방 한약" title="수정한의원 8체질 맞춤 한약재" loading="lazy"/>
+          <img src="/static/doctor-maekjin.jpg" alt="수정한의원 원장 진료 모습 - 8체질 맥진 진단 및 상담" title="수정한의원 원장 진료 모습" loading="lazy"/>
+          <img src="/static/doctor-hanyak.jpg" alt="수정한의원 8체질 맞춤 한약재 - 체질별 처방 한약" title="수정한의원 8체질 맞춤 한약재" loading="lazy"/>
         </div>
 
         <div class="greeting-block">
