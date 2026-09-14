@@ -4741,7 +4741,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-detail-date">2025.04 · 2번째 방문 · 영수증</span>
       </div>
       <h2 class="review-detail-title">8년 류마티스 — 분당차병원 전문의도 놀란 옥시크로닌정 중단, 메토트렉세이트 2알로 줄이고 몸이 나아지고 있어요</h2>
-      <img src="/static/reviews/review-164-boo-p1.jpg" alt="심*옥 류마티스관절염 네이버 후기" class="review-detail-img" loading="lazy">
+      <img src="/static/reviews/review-164-boo-p1.jpg" alt="심*옥 류마티스관절염 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
       <div class="review-detail-content">
         <div class="review-detail-section">
           <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
