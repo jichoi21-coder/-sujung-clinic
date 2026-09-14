@@ -558,7 +558,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-                <!-- 후기 카드 #167 -->
+                <!-- 후기 카드 #168 -->
+        <div id="reviewCard168" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal168')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">교통사고 후유증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.02</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">교통사고 후유증 — 체질 침·약침·추나 후 하나도 아프지 않은 이유가 뭘까요? 기분좋은 치료였습니다</h3>
+          <p class="review-story">
+            교통사고로 방문했는데 입구부터 환하고 친절한 안내, 원장님의 자세한 설명, 체질 상담 후 침맞고 완전히 원했어요. 약침·추나 치료도 너무 좋았고 하나도 아프지 않았습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> khm****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #167 -->
         <div id="reviewCard167" class="review-card" data-cat="피부" onclick="openReviewModal('detailModal167')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">알러지 두드러기</span>
@@ -4793,6 +4814,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   </div>
 
     <!-- 상세 모달 #163 -->
+  <!-- 상세 모달 #168 -->
+  <div id="detailModal168" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal168')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#교통사고후유증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.02.04 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">교통사고 후유증 — 체질 침·약침·추나 후 하나도 아프지 않은 이유가 뭘까요? 기분좋은 치료였습니다</h2>
+      <img src="/static/reviews/review-168-khm-naver.jpg" alt="khm**** 교통사고 후유증 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>교통사고로 방문하게 되었는데 입구부터 환하고 안내해주시는 분이 너무 친절하네요. 원장님도 자세히 설명해주시고 체질 상담 후 침 맞고 완전히 원했어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>약침이랑 추나 치료도 받았는데 너무 좋았어요. 하나도 아프지 않은 이유가 뭘까요? 아무튼 기분 좋은 치료 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>추천하고 싶은 한의원입니다.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> khm****</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #167 -->
   <div id="detailModal167" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
