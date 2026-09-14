@@ -600,6 +600,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #170 -->
+        <div id="reviewCard170" class="review-card" data-cat="자율신경" onclick="openReviewModal('detailModal170')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">불면증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">불면증 — 2시간 수면에서 벗어나 수면 패턴 회복, 다음 날 컨디션도 좋아져서 사회생활 가능해졌어요</h3>
+          <p class="review-story">
+            밤에 2시간 자고 나면 계속 깨고 5~6시에 겨우 1~2시간 자는 상태였는데, 뇌파검사 경고 후 한의원서 약침·한약·추나 치료 병행해 중간에 깨는 횟수가 줄고 다시 잠드는 게 수월해졌어요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> sgl****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #167 -->
         <div id="reviewCard167" class="review-card" data-cat="피부" onclick="openReviewModal('detailModal167')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4836,6 +4857,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
     <!-- 상세 모달 #163 -->
   <!-- 상세 모달 #168 -->
+  <!-- 상세 모달 #170 -->
+  <div id="detailModal170" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal170')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#불면증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.03.25 · 2번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">불면증 — 2시간 수면에서 벗어나 수면 패턴 회복, 다음 날 컨디션도 좋아져서 사회생활 가능해졌어요</h2>
+      <img src="/static/reviews/review-170-sgl-naver.jpg" alt="sgl**** 불면증 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>불면증으로 방문했으요. 밤에 2시간 정도 자고 나면 계속 깨고, 그다음에 잠을 못 이루다가 5~6시에 겨우 1~2시간 잔게 일주일째 계속 되어 왔어요. 뇌파검사에서 경고가 나와 한의원에서 치료를 시작했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>약침치료랑 한약치료, 추나치료를 하고 조금 나아지고 있어요. 아직 중간에 깨긴 하는데 다시 잠드는 게 수월해졌어요. 다음 날 컨디션도 나아져서 사회생활도 가능합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>불면증을 잘 이겨냈으면 좋겠어요.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> sgl****</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #169 -->
   <div id="detailModal169" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
