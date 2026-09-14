@@ -643,7 +643,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
         <!-- 후기 카드 #170 -->
-        <div id="reviewCard170" class="review-card" data-cat="자율신경" onclick="openReviewModal('detailModal170')" style="cursor:pointer;">
+        <div id="reviewCard170" class="review-card" data-cat="뇌신경" onclick="openReviewModal('detailModal170')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">불면증</span>
             <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
@@ -959,7 +959,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
                 <!-- 후기 카드 #152 -->
-        <div id="reviewCard152" class="review-card" data-cat="구안와사 안면마비" onclick="openReviewModal('detailModal152')" style="cursor:pointer;">
+        <div id="reviewCard152" class="review-card" data-cat="구안와사" onclick="openReviewModal('detailModal152')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">구안와사 안면마비</span>
             <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
@@ -1085,7 +1085,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
                 <!-- 후기 카드 #146 -->
-        <div id="reviewCard146" class="review-card" data-cat="피부아토피" onclick="openReviewModal('detailModal146')" style="cursor:pointer;">
+        <div id="reviewCard146" class="review-card" data-cat="피부" onclick="openReviewModal('detailModal146')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">얼굴 뾰루지 모낭염</span>
             <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
@@ -1127,7 +1127,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         </div>
 
                 <!-- 후기 카드 #144 -->
-        <div id="reviewCard144" class="review-card" data-cat="피부아토피" onclick="openReviewModal('detailModal144')" style="cursor:pointer;">
+        <div id="reviewCard144" class="review-card" data-cat="피부" onclick="openReviewModal('detailModal144')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">아토피</span>
             <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
@@ -11400,6 +11400,15 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard172'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard171'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard170'), cat: '뇌신경' },
+      { el: document.getElementById('reviewCard169'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard168'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard167'), cat: '피부' },
+      { el: document.getElementById('reviewCard166'), cat: '척추관절' },
+      { el: document.getElementById('reviewCard165'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard164'), cat: '면역대사' },
       { el: document.getElementById('reviewCard163'), cat: '면역대사' },
       { el: document.getElementById('reviewCard162'), cat: '소화기' },
       { el: document.getElementById('reviewCard161'), cat: '소화기' },
@@ -11411,18 +11420,18 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard155'), cat: '척추관절' },
       { el: document.getElementById('reviewCard154'), cat: '여성질환' },
       { el: document.getElementById('reviewCard153'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard152'), cat: '구안와사 안면마비' },
+      { el: document.getElementById('reviewCard152'), cat: '구안와사' },
       { el: document.getElementById('reviewCard151'), cat: '척추관절' },
       { el: document.getElementById('reviewCard150'), cat: '소화기' },
       { el: document.getElementById('reviewCard149'), cat: '척추관절' },
       { el: document.getElementById('reviewCard148'), cat: '척추관절' },
       { el: document.getElementById('reviewCard147'), cat: ['뇌신경', '편두통'] },
-      { el: document.getElementById('reviewCard146'), cat: '피부아토피' },
+      { el: document.getElementById('reviewCard146'), cat: '피부' },
       { el: document.getElementById('reviewCard145'), cat: '척추관절' },
-      { el: document.getElementById('reviewCard144'), cat: '피부아토피' },
+      { el: document.getElementById('reviewCard144'), cat: '피부' },
       { el: document.getElementById('reviewCard143'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard142'), cat: '면역대사' },
-      { el: document.getElementById('reviewCard141'), cat: ['소화기', '피부아토피'] },
+      { el: document.getElementById('reviewCard141'), cat: ['소화기', '피부'] },
       { el: document.getElementById('reviewCard140'), cat: '척추관절' },
       { el: document.getElementById('reviewCard139'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard138'), cat: '뇌신경' },
