@@ -558,7 +558,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-                <!-- 후기 카드 #163 -->
+                <!-- 후기 카드 #164 -->
+        <div id="reviewCard164" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal164')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">류마티스관절염</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2025.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">8년 류마티스 — 분당차병원 전문의도 놀란 옥시크로닌정 중단, 메토트렉세이트 2알로 줄이고 몸이 나아지고 있어요</h3>
+          <p class="review-story">
+            8년간 분당차병원 류마티스내과 다니며 항염제를 복용해왔는데, 수정한의원 체질한약·약침 치료 후 전문의가 놀랄 만큼 약을 줄였습니다. 불안하고 두려웠던 일상에 희망이 생겼습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 심*옥 (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #163 -->
         <div id="reviewCard163" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal163')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">폐암 항암후유증</span>
@@ -4709,6 +4730,40 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   </div>
 
     <!-- 상세 모달 #163 -->
+  <!-- 상세 모달 #164 -->
+  <div id="detailModal164" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal164')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역대사</span>
+        <span class="review-detail-tag">#류마티스관절염</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2025.04 · 2번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">8년 류마티스 — 분당차병원 전문의도 놀란 옥시크로닌정 중단, 메토트렉세이트 2알로 줄이고 몸이 나아지고 있어요</h2>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>저는 류마티스관절염으로 수정한의원을 꾸준히 다니며 면역치료를 받아왔습니다. 이번에 8년 동안 다니던 분당차병원 류마티스내과에서 선생님께서 많이 좋아졌다며, 류마티스관절염약인 옥시크로닌정을 빼주고 1주일에 1번 먹던 메토트렉세이트를 2알 줄여주셨습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>솔직히 약을 줄인다는 건 상상도 못했던 일이라 너무 놀랐고 감사했습니다. 2024년 4월부터 수정한의원에서 체질한약과 약침, 체질침을 꾸준히 맞아왔는데 이런 노력이 좋은 결과로 이어진 것 같습니다. 너무나 기쁘고 감사합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>몸이 조금씩 나아지고 있다는 확신이 생기니 그동안 불안하고 두려웠던 일상에 희망이 생겼습니다. 앞으로도 수정한의원에서 꾸준히 면역치료를 해서 더 건강한 삶을 살고 싶습니다. 잘 치료해주신 원장님과 친절한 간호사님께 감사합니다.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 심*옥 (여) · boo****</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="detailModal163" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
       <button class="review-detail-close" onclick="closeModalById('detailModal163')">✕ 닫기</button>
