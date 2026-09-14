@@ -600,6 +600,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #171 -->
+        <div id="reviewCard171" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal171')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">다리 부종·저림·하지불안증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">3년째 다리 저림·부종 — 추나·약침 일주일 만에 저린 것 사라지고 잠도 잘 자요, 어깨도 침 한 번에 신기하게 풀렸어요</h3>
+          <p class="review-story">
+            다리가 저리고 붓고 쥐나는 게 3년이 지난 어느 날 수정한의원 방문. 추나·약침 일주일 열심히 받고 나서 저린 것이 서서히 없어지고 잠도 잘 잤어요. 어깨도 아파서 원장님께서 같이 침을 놔주셨더니 다음 날 아침에 일어나 하나도 안 아파서 기분이 상쾌하고 신기했어요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 100****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #170 -->
         <div id="reviewCard170" class="review-card" data-cat="자율신경" onclick="openReviewModal('detailModal170')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4857,6 +4878,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
     <!-- 상세 모달 #163 -->
   <!-- 상세 모달 #168 -->
+  <!-- 상세 모달 #171 -->
+  <div id="detailModal171" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal171')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#다리저림 #하지불안증 #부종</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.04.03 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">3년째 다리 저림·부종 — 추나·약침 일주일 만에 저린 것 사라지고 잠도 잘 자요, 어깨도 침 한 번에 신기하게 풀렸어요</h2>
+      <img src="/static/reviews/review-171-100-naver.jpg" alt="100**** 다리 저림 하지불안증 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>다리가 저리고 붓고 쥐나는 게 3년이 지난 어느 날 수정한의원이 진료를 잘 본다는 소문을 듣고 와서 치료를 받게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>추나·약침치료를 일주일 동안 열심히 받고 난 후 저린 것이 서서히 없어지고 잠도 잘 잤어요!! 어깨도 너무 아파서 원장님께서 같이 침을 놔주셨더니 다음 날 아침에 일어나 하나도 안 아파서 기분이 상쾌하고 신기하고 너무 좋았어요^^</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>앞으로도 아픈 곳을 하나하나씩 치료 받을거에요 원장님 감사합니다~</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 100****</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #170 -->
   <div id="detailModal170" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
