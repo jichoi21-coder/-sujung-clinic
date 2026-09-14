@@ -558,7 +558,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-                <!-- 후기 카드 #164 -->
+                <!-- 후기 카드 #165 -->
+        <div id="reviewCard165" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal165')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">녹내장</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.03</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">안압 높고 시야 흐림·두통 — 체질침·추나·태반약침 후 시야가 확 트이고 눈이 확연히 맑아짐을 직접 체감했어요</h3>
+          <p class="review-story">
+            안과에서 심각하다던 안압·시력저하·두통, MRI까지 찍었습니다. 체질약침·추나·도침 꾸준히 받고 치료 마치고 나왔을 때 시야가 확 트이고 눈이 맑아짐을 확실히 느꼈습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 정*순 (여, 60대)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #164 -->
         <div id="reviewCard164" class="review-card" data-cat="면역대사" onclick="openReviewModal('detailModal164')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">류마티스관절염</span>
@@ -4730,6 +4751,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   </div>
 
     <!-- 상세 모달 #163 -->
+  <!-- 상세 모달 #165 -->
+  <div id="detailModal165" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal165')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역대사</span>
+        <span class="review-detail-tag">#녹내장</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.03.25 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">안압 높고 시야 흐림·두통 — 체질침·추나·태반약침 후 시야가 확 트이고 눈이 확연히 맑아짐을 직접 체감했어요</h2>
+      <img src="/static/reviews/review-165-santokkiy27-naver.jpg" alt="정*순 녹내장 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>안압이 높아져서 시야가 흐리고 시력저하, 두통이 심한 상태에서 치료를 시작했습니다. 안과에서 심각하다고 했고, 뇌 이상있나 MRI도 찍었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>체질약과 추나요법, 체질침, 태반 약침을 꾸준히 맞았고, 어제 오늘은 도침이라는 침도 맞았습니다. 치료를 마치고 나왔을 때 시야가 확 트이고 눈이 확연히 맑아짐을 확실히 체감했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>눈만 치료한다고 되는 건 아니라는 걸 알았습니다. 내 체질에 맞는 식이요법과 종합적인 치료가 필요한 거다. 앞으로도 꾸준히 치료하려고 마음 먹었습니다.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 정*순 (여, 60대) · 산토끼27</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #164 -->
   <div id="detailModal164" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
