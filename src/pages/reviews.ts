@@ -600,6 +600,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #172 -->
+        <div id="reviewCard172" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal172')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">테니스 엘보우</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">엘보우 펴고 구부리기도 힘든 통증 — 맥선·추나·약침·한약 병행 후 통증 거의 없어지고 생활에 불편함 없이 잘 지내요</h3>
+          <p class="review-story">
+            엘보우를 펴고 구부리고 하기에는 통증이 심해서 방문했습니다. 맥선 추나 약침 한약을 병행하며 치료를 받으니 이제는 통증이 거의 없어지고 생활에 불편함 없이 잘 지내고 있습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> nam****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #171 -->
         <div id="reviewCard171" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal171')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4878,6 +4899,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
 
     <!-- 상세 모달 #163 -->
   <!-- 상세 모달 #168 -->
+  <!-- 상세 모달 #172 -->
+  <div id="detailModal172" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal172')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#테니스엘보우</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.04.04 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">엘보우 펴고 구부리기도 힘든 통증 — 맥선·추나·약침·한약 병행 후 통증 거의 없어지고 생활에 불편함 없이 잘 지내요</h2>
+      <img src="/static/reviews/review-172-nam-naver.jpg" alt="nam**** 테니스 엘보우 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>엘보우를 펴고 구부리고 하기에는 통증이 심해서 수정한의원을 방문했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>엘보 때문에 고생했는데 맥선 추나 약침 한약을 병행하며 치료를 받으니 이제는 통증이 거의 없어지고 생활에 불편함 없이 잘 지내고 있습니다^^</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>앞으로 100% 좋아질 때까지 다닐거에요~!!!!</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> nam****</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #171 -->
   <div id="detailModal171" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
