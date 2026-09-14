@@ -558,7 +558,28 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
-                <!-- 후기 카드 #166 -->
+                <!-- 후기 카드 #167 -->
+        <div id="reviewCard167" class="review-card" data-cat="피부" onclick="openReviewModal('detailModal167')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">알러지 두드러기</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.01</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">3년째 단골 — 알러지 두드러기·생리통·부종·비염, 항생제로 안 되던 것들이 금방 나아지고 침질치료실도 깔끔해서 너무 좋아요</h3>
+          <p class="review-story">
+            알러지 두드러기로 내원했는데 생리통, 부종, 방광염, 비염 등 항생제 치료로 안 되던 것들이 금방 나아졌어요. 3년째 다니고 있습니다. 원장님·간호사분들 친절하고 시설도 깨끗해요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> ROUZ (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
+        <!-- 후기 카드 #166 -->
         <div id="reviewCard166" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal166')" style="cursor:pointer;">
           <div class="review-card-header">
             <span class="review-cat-tag">척추측만증</span>
@@ -4772,6 +4793,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
   </div>
 
     <!-- 상세 모달 #163 -->
+  <!-- 상세 모달 #167 -->
+  <div id="detailModal167" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal167')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-skin">피부·아토피</span>
+        <span class="review-detail-tag">#알러지두드러기</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.01.19 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">3년째 단골 — 알러지 두드러기·생리통·부종·비염, 항생제로 안 되던 것들이 금방 나아지고 침질치료실도 깔끔해서 너무 좋아요</h2>
+      <img src="/static/reviews/review-167-rouz-naver.jpg" alt="ROUZ 알러지 두드러기 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>3년째 다니고 있어요. 원장님, 간호사분들 친절하시구요~ 알러지 두드러기 때문에 내원했는데 생리통, 부종, 방광염, 비염 등 항생제 치료 하다하다 안 되서 오면 금방 나아서 아플때마다 와요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>겨울에 몸 순환 안 될 때는 한의원 왔다가 침질치료실이 깨끗하고 기계들이 넘 좋아서 찜질까지 하고 가요. 너무 좋아요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>3년째 꾸준히 찾는 단골입니다. 원장님부터 간호사 선생님들까지 친절하시고, 시설도 깨끗해서 매번 만족스럽습니다.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> ROUZ (여)</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- 상세 모달 #166 -->
   <div id="detailModal166" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
     <div class="review-detail-inner">
