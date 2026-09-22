@@ -11534,7 +11534,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
-      { el: document.getElementById('reviewCard174'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard174'), cat: ['면역대사', '천식'] },
       { el: document.getElementById('reviewCard173'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard172'), cat: '척추관절' },
       { el: document.getElementById('reviewCard171'), cat: '척추관절' },
