@@ -579,6 +579,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #174 (자필후기) -->
+        <div id="reviewCard174" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal174')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">천식·마이코플라즈마·비염·빈맥</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">4살부터 이어진 천식·비염, 대학병원 치료도 포기했는데 — 양약 완전히 끊고 일상생활 불편함 못 느껴요</h3>
+          <p class="review-story">
+            4살 때 폐렴을 앓은 후 천식·비염으로 대학병원까지 다녔고 360일 콧물이 필수였습니다. 코로나 후 재발해 흡입기도 소용없었는데, 수정한의원 치료 후 쌕쌕거리는 소리 사라지고 양약도 끊고 지금은 일상이 편안합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 박*민 (여, 23세)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #168 -->
         <div id="reviewCard168" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal168')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4959,6 +4980,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>원장님과 치료에 도움을 주신 수정한의원 분들께 정말 감사하고, 건강이 안 좋거나 치료가 힘든 분들도 희망을 갖고 꾸준히 치료해보시길 권하고 싶다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #174 (자필후기) -->
+  <div id="detailModal174" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal174')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역·대사</span>
+        <span class="review-detail-tag">#천식 #마이코플라즈마 #비염 #빈맥</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2026년 5월 1일</span>
+      </div>
+      <h2 class="review-detail-title">4살부터 이어진 천식·비염, 대학병원도 포기했는데 — 양약 완전히 끊고 일상생활 불편함 못 느껴요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-174-parkjeongmin-handwritten.jpg" alt="박*민 천식·비염 자필후기" class="review-detail-image" onclick="openImgFull(this.src)" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 박*민 (여, 만 22세)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2026년 5월 1일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>4살 때 폐렴을 앓으며 천식과 비염이 생겨 입원하는 일이 잦았습니다. 중학교때까지도 대학병원에서 면역력 치료를 받았고, 항상 찬바람을 막아주는 마스크와 360일 흐르는 콧물 때문에 휴지는 필수로 챙겨 다녀야만 했습니다. 고등학교 입학 후에는 증상이 호전되어 가끔 정기검진만 가는 정도였으나, 코로나에 한번 걸리고 난 뒤 다시 천식 증상이 심해져 대학병원에 다시 다니며 양약을 복용했지만 호전이 없고 기침·가래·숨 차는 증상이 심해 일상생활이 불편할 정도였습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 내원 전 다른 병원 치료</h4>
+          <p>대학병원에서 처방받은 양약과 흡입기를 사용해도 호전되지 않고 증상이 더욱 심해져 지인 소개로 수정한의원에 내원하였습니다. 상계백병원에서 중학생 때 면역력 치료를 받았고, 어렸을 때부터 꾸준히 양약을 복용했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 치료 및 개선</h4>
+          <p>수정한의원에서는 약침과 한약 치료를 시작하자 기침·가래가 눈에 띄게 줄었고 비염은 거의 사라져 외출할 때 휴지를 챙겨 다니지 않게 되었습니다. 숨 쉴 때 쌕쌕거리는 소리도 줄었고 깊은 숨도 쉬기 편해졌습니다. 호전이 되다가 겨울에 찬 공기를 맞으면서 10분만 걸어도 숨이 차고 숨쉬기가 힘들어져 한의원에 자주 내원하고 파동치료를 꾸준히 받아 증상이 거의 사라졌습니다. 지금은 양약도 끊었고 일상생활에서 불편함을 못 느끼고 있습니다. 대학병원에서 온갖 검사를 받았지만 원인을 알 수 없다는 빈맥도 사라졌고, 매년 3~4번씩 걸리던 감기도 이젠 한번 걸릴까 말까 하는 수준입니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>내 체질에 맞는 치료를 받다 보니 천식·비염뿐만 아니라 생활습관·식습관도 같이 건강해지고 면역력이 좋아진 걸 알 수 있었고, 친구들과 만날 때 숨이 찰까 걱정되는 게 사라졌습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>항상 환자의 목소리에 귀 기울여 주시고 저보다도 저의 질환에 대해 걱정해주시는 원장님과 항상 친절하게 맞이해주시는 간호사선생님들께 감사드립니다. 원장님을 믿고 꾸준히 치료받으면 몸이 건강해지는 게 느껴지실겁니다.</p>
         </div>
       </div>
     </div>
@@ -11467,6 +11534,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard174'), cat: '면역대사' },
       { el: document.getElementById('reviewCard173'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard172'), cat: '척추관절' },
       { el: document.getElementById('reviewCard171'), cat: '척추관절' },
