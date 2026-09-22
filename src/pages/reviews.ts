@@ -558,6 +558,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #173 (자필후기) -->
+        <div id="reviewCard173" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal173')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">급성폐쇄각 녹내장·두통·안압</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">절망적이던 급성폐쇄각 녹내장 — 추나·약침·체질한약으로 안압 정상 회복, 눈이 맑아지니 세상이 환해졌어요</h3>
+          <p class="review-story">
+            두통이 심하고 눈이 흐릿하여 컴퓨터 작업이 힘들었고, 상계백병원에서 급성폐쇄각 녹내장 진단 후 시신경 손상·고안압으로 매우 심각한 상황이라 했습니다. 추나·약침·전기침·체질한약으로 한 달 후 안압이 정상범위로 돌아오고 눈이 편해졌어요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 정*순 (여, 60세)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #168 -->
         <div id="reviewCard168" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal168')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -4892,6 +4913,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>친절하신 선생님들께 치료 잘해주셔서 감사합니다. 저는 한의원에서 처음 치료를 받아보았고 나을 수 있을지 의심도 했습니다. 하지만 지금은 생각이 바뀌었고, 고민하지 말고 원장님 믿고 치료 열심히 받으세요.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #173 (자필후기) -->
+  <div id="detailModal173" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal173')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#급성폐쇄각녹내장 #두통 #고안압</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2026년 4월 24일</span>
+      </div>
+      <h2 class="review-detail-title">절망적이던 급성폐쇄각 녹내장 — 추나·약침·체질한약으로 안압 정상 회복, 눈이 맑아지니 세상이 환해졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-173-jungsoon-handwritten.jpg" alt="정*순 급성폐쇄각 녹내장 자필후기" class="review-detail-image" onclick="openImgFull(this.src)" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 정*순 (여, 만 60세)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2026년 4월 24일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>두통이 심하고 눈이 흐릿하여 컴퓨터 작업이 힘들고 하다가 눈을 감고 쉬기를 반복하였다. 눈에 염증도 생기고 해서 안과 검진을 받았는데 급성 폐쇄각 녹내장이라고 했다. 뇌에 이상일 수도 있다고 하여 MRI 검사도 했다. 별다른 치료법이 없이 현상은 더 나빠지고 안압이 계속 높다고 하여 수정한의원에서 치료했다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 내원 전 다른 병원 치료</h4>
+          <p>상계백병원과 그 이전 지역 안과 2곳을 다니며 검진을 받았다. 상계백병원에서 뇌 MRI를 시작으로 안과 관련 수십 가지 검사를 받았고 결국 급성폐쇄각 녹내장으로 매우 심각한 상황이라고 했다. 시신경 손상이 심하고 안압이 높았다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 치료 및 개선</h4>
+          <p>수정한의원에서 먼저 추나요법으로 경추와 뇌 부분, 시신경으로 가는 신체 자세를 바로잡아 시신경을 살려내야 하는 치료를 했다. 그리고 약침과 전기침, 체질한약을 먹기 시작했다. 엔오라는 안약도 수시로 넣었다. 가장 먼저 두통이 완화되기 시작했다. 머리가 안 아프고 눈이 흐려지는 현상이 줄어들기 시작했다. 꾸준히 일주일 2~3회 치료한 효과가 한 달 후부터 확실히 나타났다. 안압도 낮아져서 정상범위가 되었고 눈이 아주 편해졌다. 앞으로 더 지속적으로 치료할 계획이다. 눈이 맑아지니 세상이 환해졌다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>처음에 절망적인 상태로 왔는데 원장님이 치료할 수 있고 좋아진다고 했는데 실제 그렇게 되니 희망이 생기고 의욕이 살아났다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>원장님과 치료에 도움을 주신 수정한의원 분들께 정말 감사하고, 건강이 안 좋거나 치료가 힘든 분들도 희망을 갖고 꾸준히 치료해보시길 권하고 싶다.</p>
         </div>
       </div>
     </div>
@@ -11400,6 +11467,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard173'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard172'), cat: '척추관절' },
       { el: document.getElementById('reviewCard171'), cat: '척추관절' },
       { el: document.getElementById('reviewCard170'), cat: '뇌신경' },
