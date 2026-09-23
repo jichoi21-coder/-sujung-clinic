@@ -726,6 +726,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #181 (네이버후기) -->
+        <div id="reviewCard181" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal181')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">허리디스크·오십견·골반불균형</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">정형외과도 못 고친 허리디스크·오십견 — 추나·약침 치료 후 허리 수술한 것처럼 신기하게 나아졌어요</h3>
+          <p class="review-story">
+            허리디스크·골반 틀어짐·오십견으로 정형외과를 많이 다녀봤지만 그닥 효과가 없었어요. 친언니 소개로 수정한의원에서 추나·약침 치료를 받았더니 눈이 번쩍 뜨일 만큼 좋아졌습니다. 허리 수술한 것처럼 신기하고 벌써 다 나은 듯해서 당분간 수정한의원에 정착하려 합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 농부아가씨28 (여)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #168 -->
         <div id="reviewCard168" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal168')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5419,6 +5440,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #181 (네이버후기) -->
+  <div id="detailModal181" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal181')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#허리디스크 #오십견 #골반불균형 #추나 #약침</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.04.17 · 1번째 방문</span>
+      </div>
+      <h2 class="review-detail-title">정형외과도 못 고친 허리디스크·오십견 — 추나·약침 치료 후 허리 수술한 것처럼 신기하게 나아졌어요</h2>
+      <img src="/static/reviews/review-181-nongbooagassi-naver.jpg" alt="농부아가씨28 허리디스크·오십견 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>허리디스크와 골반이 틀어지고 오십견으로 고생을 하고 있었다. 정형외과도 많이 다녀봤지만 그닥 효과는 흠… 친언니의 소개로 수정한의원에서 치료를 받아보기로 했다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>와우 수정한의원 대박이다 눈이 번쩍뜨인다! 허리 수술 한 것처럼 신기하다. 벌써 다 나은 듯 추나치료가 이런 건가, 약침도 대박일세~</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 총평</h4>
+          <p>당분간 수정한의원에 정착하련다.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 농부아가씨28 (여)</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -11927,6 +11983,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard181'), cat: '척추관절' },
       { el: document.getElementById('reviewCard180'), cat: '여성질환' },
       { el: document.getElementById('reviewCard179'), cat: '척추관절' },
       { el: document.getElementById('reviewCard178'), cat: '척추관절' },
