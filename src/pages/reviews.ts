@@ -600,6 +600,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #175 (자필후기) -->
+        <div id="reviewCard175" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal175')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎연골파열·무릎인대파열</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">무릎 반달연골 파열·후방인대파열 — 매선·약침·추나로 힘 주는 것 점점 가능해지고 몸과 맘이 건강해짐을 느낍니다</h3>
+          <p class="review-story">
+            양방 치료로 별 진전 없이 뻣뻣해지고 소화장애까지 생겼는데, 매선을 하고 나서 찢어짐 부위 통증이 가라앉고 무릎 구부리기가 편안해졌습니다. 운동 병행으로 거의 자연스럽게 걷게 되고 양방 때와 차별되는 빠른 회복이 느껴집니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 연*흠 (여, 57세)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #168 -->
         <div id="reviewCard168" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal168')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5026,6 +5047,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>항상 환자의 목소리에 귀 기울여 주시고 저보다도 저의 질환에 대해 걱정해주시는 원장님과 항상 친절하게 맞이해주시는 간호사선생님들께 감사드립니다. 원장님을 믿고 꾸준히 치료받으면 몸이 건강해지는 게 느껴지실겁니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #175 (자필후기) -->
+  <div id="detailModal175" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal175')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#무릎연골파열 #무릎인대파열 #매선치료</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2026년 6월 27일</span>
+      </div>
+      <h2 class="review-detail-title">무릎 반달연골 파열·후방인대파열 — 매선·약침·추나로 힘 주는 것 점점 가능해지고 몸과 맘이 건강해짐을 느낍니다</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-175-yeonhyunheum-handwritten.jpg" alt="연*흠 무릎연골파열 자필후기" class="review-detail-image" onclick="openImgFull(this.src)" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 연*흠 (여, 만 57세)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2026년 6월 27일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>무릎 반달연골이 찢어지고 후방인대파열로 양방에서 초기 치료를 받았으나 별다른 진전이 없는 채로 극심한 어지럼증이 갑자기 동반하게 되어 급히 한의원을 찾았습니다. 처음 인대파열로 걷기 어려웠던 상태에서 어느 정도 걷게 된 상태까지 약 30일이 경과한 후였는데, 잘 걷지 못한 상태에서 뻣뻣해져감을 느끼고 앉은 상태에서는 편안히 무릎을 사용할 수 없는 상태였으며, 소화기 장애도 느끼기 시작했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 내원 전 다른 병원 치료</h4>
+          <p>후방인대파열 치료 중 양약의 부작용과 별다른 치료 효과 없이 무릎에 주사를 계속 맞고 있었는데, 뻣뻣해지고 힘을 줄 수 없는 상태의 불편함과 장기화되는 불안함이 한의원을 찾게 만들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 치료 및 개선</h4>
+          <p>약침과 추나, 매선을 치료 받았는데 점차 무릎 움직임과 다리 근육 전반이 편안해짐을 느꼈습니다. 특히 매선을 하고 나서는 '찢어짐'이 느껴지는 부위의 통증이 점차 가라앉았고, 무릎을 구부리는 자세가 편안히 가능해지면서 힘을 주는 것이 점점 가능해졌습니다. 더불어 안내해주신 무릎 운동도 병행하니 걷는 것 자체는 거의 자연스러워졌습니다. 치료와 운동이 병행되니 회복 속도도 양방 치료 때와는 차별되게 빠름이 느껴지고, 무엇보다 위장 장애나 다른 체질상의 어려움까지 편안하게 회복되고 있음을 느낍니다. 전침과 더불어 받은 부항 등도 몸의 전체적인 회복으로 이끌어주는 데 많은 도움이 되었습니다. 특히 치료 전후로 양자치료실에서 쉼과 회복의 효과를 더할 수 있었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>친절하고 편안하게 효과도 아주 눈에 띄게 느껴지니 몸의 회복뿐만 아니라 신뢰감이 커지면서, 일시적인 통증 완화가 아닌 본인의 체력을 되찾게 해 주어서 몸과 맘이 건강해짐을 느낍니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>체질에 맞게 최선의 치료를 성심껏 해주시고 늘 정말 친절히 대해주어서 감사합니다. 치료는 의료진과의 신뢰에서부터 시작되는 부분이 큰데, 편안히 믿으면서 치료받으면 좋은 효과 확신합니다.</p>
         </div>
       </div>
     </div>
@@ -11534,6 +11601,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard175'), cat: '척추관절' },
       { el: document.getElementById('reviewCard174'), cat: ['면역대사', '천식'] },
       { el: document.getElementById('reviewCard173'), cat: ['뇌신경', '편두통'] },
       { el: document.getElementById('reviewCard172'), cat: '척추관절' },
