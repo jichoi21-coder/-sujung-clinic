@@ -684,6 +684,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #179 (자필후기) -->
+        <div id="reviewCard179" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal179')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">발목염좌·만성통증·무릎관절염</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">6년 묵은 발목염좌·무릎관절염 — 매선치료로 근육 생기고 튼튼해져 7개월 못 하던 운동 이제 할 수 있어 기뻐요</h3>
+          <p class="review-story">
+            6년 전 해외여행 중 발목을 삐어 만성통증이 됐고 양쪽 무릎까지 아파 여러 병원을 전전했습니다. 매선치료로 발목 근육이 만들어지며 흐느적거리던 발목이 단단해지고, 10회 이상 치료 후 지금은 아프지 않습니다. 왼쪽 무릎은 완치, 오른쪽도 운동 시작할 수 있을 정도로 좋아졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 박*영 (여, 51세)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #168 -->
         <div id="reviewCard168" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal168')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5285,6 +5306,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>치료는 물론이고 먹으면 좋은 음식, 먹어서는 안 되는 음식 등 나아지기 위한 체질 개선 면에서 적극적 도움을 주셨기에 감사하는 마음으로 방문을 추천드립니다. 이외에도 데스크에서 방문 일자 예약 관리해주시는 선생님, 물리치료해주시는 선생님께서도 차도가 있는지 너무나 친절하게 세심하게 챙겨주시어 감동이었습니다. 정말 감사드립니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #179 (자필후기) -->
+  <div id="detailModal179" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal179')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#발목염좌 #만성통증 #무릎관절염 #매선치료</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2026년 8월 7일</span>
+      </div>
+      <h2 class="review-detail-title">6년 묵은 발목염좌·무릎관절염 — 매선치료로 근육 생기고 튼튼해져 7개월 못 하던 운동 이제 할 수 있어 기뻐요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-179-parkeullyoung-handwritten.jpg" alt="박*영 발목염좌·무릎관절염 자필후기" class="review-detail-image" onclick="openImgFull(this.src)" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 박*영 (여, 만 50세)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2026년 8월 7일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>6년 전 해외여행 때 발목을 삐었는데 다른 한의원에서 치료를 받고 코로나로 제대로 치료를 못 받아서 2년 전부터 아픈 정도가 심해져 계속 약침·뜸·은침 등 갖가지 치료를 해보고 대학병원에서 검사도 했습니다. 발목이 너무 아파 끌고 다니는 느낌이 들었고 지속되니 양쪽 무릎까지 아파서 여러 병원을 쫒아 다녔지만 MRI 찍으라는 말밖에 특별한 병명도 없이 통증으로 전전긍긍했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 내원 계기</h4>
+          <p>아시는 분의 소개로 오게 되었는데, 침도 잘 놓으시고 한약도 잘 지으신다는 말씀을 듣고 찾아왔습니다. 체질침과 한약을 먹었고 발목과 무릎은 약침과 매선치료를 받았습니다. 발목에 매선치료는 지금까지 어떤 치료보다 잘 맞았고, 한약도 갱년기에 몸이 극도로 안 좋아졌는데 간 보호와 여러 부분에 도움이 되는 것 같았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 치료 및 개선</h4>
+          <p>발목 치료에 매선치료는 기존 침과 약침보다 발목에 근육을 만들어줘서 힘도 생기고, 삔 곳에 아픈 곳이 돌아가며 다 아팠는데 통증도 줄어들고 흐느적거리던 발목이 점점 튼튼해지고 단단해지는 느낌이 들어 10회 이상 치료하니 지금은 아프지도 않고 잘 버텨주고 있습니다. 발목 때문에 무릎에 힘이 많이 가해져서인지 계단 내려가기가 힘들 정도로 아팠는데, 발목처럼 매선치료를 했더니 무릎도 힘이 생기고 통증도 줄어 지금 왼쪽은 완치되었고 오른쪽도 운동을 시작해서 할 수 있을 정도로 좋아졌습니다. 7개월 운동을 못 할 정도로 안 좋았는데 이젠 운동도 할 수 있어 기쁩니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>몇 년 동안 고치지 못했던 발목 통증을 고쳐주셔서 고질병이 될까 걱정했는데 해결해 주셔서 너무 감사드립니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>수정한의원 원장선생님, 매선치료 잘하시고 치료뿐 아니라 한약도 잘 지어주시고 체질침과 좋은 음식·운동법 등 환자들의 고충을 잘 아시고 해결해주시는 최고의 선생님이십니다. 치료 잘해주셔서 감사합니다.</p>
         </div>
       </div>
     </div>
@@ -11793,6 +11860,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard179'), cat: '척추관절' },
       { el: document.getElementById('reviewCard178'), cat: '척추관절' },
       { el: document.getElementById('reviewCard177'), cat: '척추관절' },
       { el: document.getElementById('reviewCard176'), cat: ['면역대사', '척추관절'] },
