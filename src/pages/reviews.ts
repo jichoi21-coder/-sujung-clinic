@@ -705,6 +705,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #180 (자필후기) -->
+        <div id="reviewCard180" class="review-card review-card-handwritten" data-cat="여성질환" onclick="openReviewModal('detailModal180')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">다낭성난소·부정출혈·생리불순</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">3~4일 만에 부정출혈 멈추고 주기 맞춰져 — 피임약도 안 됐던 생리불순, 한약·약침으로 수험생 컨디션까지 잡았어요</h3>
+          <p class="review-story">
+            생리를 시작하고부터 주기가 안 맞고 한 번 하면 일주일 이상 지속되고 끝나도 부정출혈이 나와 너무 힘들었습니다. 산부인과 피임약을 먹어도 그때만 맞춰졌다가 반복됐는데, 수정한의원 약침·한약 치료 시작 3~4일 뒤 부정출혈이 바로 멈추고, 다음 생리부터 주기가 맞춰져 생리통도 사라졌습니다. 수험생인데 아프지 않아 공부에 집중할 수 있어 너무 좋습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 장*서 (여, 21세)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #168 -->
         <div id="reviewCard168" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal168')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5352,6 +5373,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>수정한의원 원장선생님, 매선치료 잘하시고 치료뿐 아니라 한약도 잘 지어주시고 체질침과 좋은 음식·운동법 등 환자들의 고충을 잘 아시고 해결해주시는 최고의 선생님이십니다. 치료 잘해주셔서 감사합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #180 (자필후기) -->
+  <div id="detailModal180" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal180')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-women">여성질환</span>
+        <span class="review-detail-tag">#다낭성난소 #부정출혈 #생리불순</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2026년 8월 14일</span>
+      </div>
+      <h2 class="review-detail-title">3~4일 만에 부정출혈 멈추고 주기 맞춰져 — 피임약도 안 됐던 생리불순, 한약·약침으로 수험생 컨디션까지 잡았어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-180-jangeunser-handwritten.jpg" alt="장*서 다낭성난소·부정출혈·생리불순 자필후기" class="review-detail-image" onclick="openImgFull(this.src)" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 장*서 (여, 만 20세)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2026년 8월 14일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>생리를 시작하고부터 주기가 안 맞고 한 번 해도 일주일이 넘게 했습니다. 불규칙해서 항상 생리대를 갖고 다녔고 기간도 길어서 생리대를 오래 찼습니다. 끝나도 부정출혈이 나와서 너무 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 내원 계기</h4>
+          <p>생리 불규칙과 부정출혈 때문에 산부인과에 다니면서 피임약을 먹었는데도 그때만 잠깐 주기가 맞춰졌고 다시 반복되었습니다. 그러던 중에 아는 지인한테 수정한의원 원장님이 여성관련 진료도 보신다고 해서 오게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 치료 및 개선</h4>
+          <p>주기적으로 약침을 맞고 매일 한약을 먹고 있습니다. 처음 침과 한약을 먹기 시작했을 때 생리를 오래하고 부정출혈이 있는 상황이었는데 3~4일 뒤쯤 바로 멈췄습니다. 약을 먹어도 안 맞던 주기가 다음 생리 때부터 맞춰졌습니다. 꾸준한 약침과 한약으로 불규칙했던 생리 주기가 맞춰져서 편하고, 무엇보다 피임약을 먹고 생리를 하면 생리통이 심했는데 이제는 안 그러기 때문에 너무 좋습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>몸이 침과 한약에 적응해서 치료 받은 후엔 가벼운 느낌이 들고 편합니다. 더 건강해진 것 같고요. 무엇보다 제가 수험생인데 요즘은 잘 아프지도 않아서 공부에 더 집중할 수 있는 컨디션을 항상 유지하고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
         </div>
       </div>
     </div>
@@ -11860,6 +11927,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard180'), cat: '여성질환' },
       { el: document.getElementById('reviewCard179'), cat: '척추관절' },
       { el: document.getElementById('reviewCard178'), cat: '척추관절' },
       { el: document.getElementById('reviewCard177'), cat: '척추관절' },
