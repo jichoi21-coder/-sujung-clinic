@@ -726,6 +726,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #182 (네이버후기) -->
+        <div id="reviewCard182" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal182')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">허리디스크</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.04</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">허리디스크 — 약침·추나·물리치료로 금방 치료된 것 같아요, 허리 안 좋으신 분 꼭 내원해보세요</h3>
+          <p class="review-story">
+            허리디스크로 내원했는데 진료와 치료를 잘해주셔서 금방 치료가 된 것 같아요. 약침·물리치료·추나로 받았습니다. 허리 안 좋으신 분 내원하셔서 치료 받아보세요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 소르기이 경기의정부</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #181 (네이버후기) -->
         <div id="reviewCard181" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal181')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5440,6 +5461,37 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #182 (네이버후기) -->
+  <div id="detailModal182" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal182')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#허리디스크 #약침 #추나 #물리치료</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.04.27 · 2번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">허리디스크 — 약침·추나·물리치료로 금방 치료된 것 같아요, 허리 안 좋으신 분 꼭 내원해보세요</h2>
+      <img src="/static/reviews/review-182-soreugii-naver.jpg" alt="소르기이 경기의정부 허리디스크 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>허리 디스크 때문에 내원했는데 진료와 치료를 잘해주셔서 금방 치료가 된 것 같아요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>치료는 약침과 물리치료 추나로 받았습니다. 허리 안좋으신 분 내원하셔서 치료 받아보세요ㅎ</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 소르기이 경기의정부</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -11983,6 +12035,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard182'), cat: '척추관절' },
       { el: document.getElementById('reviewCard181'), cat: '척추관절' },
       { el: document.getElementById('reviewCard180'), cat: '여성질환' },
       { el: document.getElementById('reviewCard179'), cat: '척추관절' },
