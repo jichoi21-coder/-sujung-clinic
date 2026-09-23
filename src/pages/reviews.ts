@@ -621,6 +621,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #176 (자필후기) -->
+        <div id="reviewCard176" class="review-card review-card-handwritten" data-cat="면역대사" onclick="openReviewModal('detailModal176')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">목디스크·수족냉증</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.06</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">목디스크·수족냉증 — 2주 만에 손에 땀이 날 정도로 따뜻해지고 겨울을 반갑게 맞을 수 있을 것 같아요</h3>
+          <p class="review-story">
+            겨울이 무서울 정도로 추위를 탔고 목이 잘 안 돌아갔는데, 한약·약침 1주일 후부터 손이 점점 따뜻해지더니 이제는 손에 땀이 납니다. 목 통증도 많이 없어지고 부드럽게 돌아갑니다. 2주라는 짧은 기간이 마냥 신기합니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 장*숙 (여, 60세)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #168 -->
         <div id="reviewCard168" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal168')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5093,6 +5114,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>체질에 맞게 최선의 치료를 성심껏 해주시고 늘 정말 친절히 대해주어서 감사합니다. 치료는 의료진과의 신뢰에서부터 시작되는 부분이 큰데, 편안히 믿으면서 치료받으면 좋은 효과 확신합니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #176 (자필후기) -->
+  <div id="detailModal176" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal176')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-immune">면역·대사</span>
+        <span class="review-detail-tag">#목디스크 #수족냉증 #간열</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2026년 6월 26일</span>
+      </div>
+      <h2 class="review-detail-title">목디스크·수족냉증 — 2주 만에 손에 땀이 날 정도로 따뜻해지고 겨울을 반갑게 맞을 수 있을 것 같아요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-176-jangmyungsook-handwritten.jpg" alt="장*숙 목디스크·수족냉증 자필후기" class="review-detail-image" onclick="openImgFull(this.src)" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 장*숙 (여, 만 59세)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2026년 6월 26일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>목 디스크로 인해 목과 어깨가 많이 뻐근하고 목이 잘 돌아가지 않으며, 오른쪽 약지와 새끼손가락이 가끔씩 저렸습니다. 간의 열로 인해 그 열이 얼굴로 올라와 입술이 무척 건조하고 각질이 심했으며, 수족냉증으로 손발이 엄청 차가워서 겨울이 무서울 정도로 추위를 많이 탔습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 내원 전 다른 병원 치료</h4>
+          <p>친구의 권유로 오게 되었고, 손발 냉증에 좋다는 약쑥 같은 민간요법과 손발이 따뜻해지는 한약도 여러 번 복용했지만 별 효과가 없었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 치료 및 개선</h4>
+          <p>간에 열이 나서 그 열이 얼굴로 올라와 입술이 마르는 것이기 때문에 열을 내리기 위해 몸이 차가워지는 한약과 약침을 맞았고, 목 디스크는 추나 요법과 약침을 시작했습니다. 일주일 후부터 손이 점점 따뜻해지고, 그 주가 지난 지금은 손에 땀이 나기 시작했고 손바닥이 너무 뜨거워 열을 식히기 위해 차가운 것을 만질 정도입니다. 몸속이 목 아래부터 따뜻해지기 시작해서 지금은 배꼽 주변까지 따끈따끈한 기운이 느껴집니다. 낙엽처럼 바싹 마르던 입술도 이제는 많이 촉촉해져 립밤을 바르지 않아도 되고, 목의 통증도 많이 없어지고 부드럽게 돌아갑니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>수족냉증으로 삼복더위를 제외하고는 손발이 많이 시려웠고 겨울이 무섭기까지 했는데, 이제는 겨울을 반갑게 맞을 수 있을 것 같습니다. 신체 언어에 굉장히 둔한 사람인데도 2주라는 짧은 기간에도 불구하고 이렇게 좋아질 수 있다는 게 마냥 신기합니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>수족냉증으로 고생하시는 분들은 하루속히 치료를 받으시길 바랍니다.</p>
         </div>
       </div>
     </div>
@@ -11601,6 +11668,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard176'), cat: ['면역대사', '척추관절'] },
       { el: document.getElementById('reviewCard175'), cat: '척추관절' },
       { el: document.getElementById('reviewCard174'), cat: ['면역대사', '천식'] },
       { el: document.getElementById('reviewCard173'), cat: ['뇌신경', '편두통'] },
