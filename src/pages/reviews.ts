@@ -663,6 +663,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #178 (자필후기) -->
+        <div id="reviewCard178" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal178')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">교통사고 후유증·요통</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">후방추돌 요통 — 손 씻으려 허리 굽히기도 힘들었는데 2달 치료 후 말끔히 해결, 자세도 훨씬 수월해졌어요</h3>
+          <p class="review-story">
+            신호 정차 중 후방추돌로 찌릿한 통증을 동반한 뻐근함이 심해 허리를 조금만 굽혀도 힘들었습니다. 전침·약침·추나·파동치료를 2달간 받으며 환부가 많이 나아지고 골반 틀어짐도 교정되어 앉거나 걷는 자세가 더 수월해졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이*정 (여, 30세)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #168 -->
         <div id="reviewCard168" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal168')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5219,6 +5240,52 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       <div class="review-detail-footer">
         <span class="review-author"><i class="fas fa-user"></i> Ggaemi (남, 31세)</span>
         <div class="review-stars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #178 (자필후기) -->
+  <div id="detailModal178" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal178')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#교통사고 #후방추돌 #요통 #골반교정</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-date">2026년 7월 22일</span>
+      </div>
+      <h2 class="review-detail-title">후방추돌 요통 — 손 씻으려 허리 굽히기도 힘들었는데 2달 치료 후 말끔히 해결, 자세도 훨씬 수월해졌어요</h2>
+      <div class="review-detail-image-wrap">
+        <img src="/static/reviews/review-178-leejung-handwritten.jpg" alt="이*정 교통사고 후유증 자필후기" class="review-detail-image" onclick="openImgFull(this.src)" loading="lazy">
+      </div>
+      <div class="review-detail-author">
+        <span><i class="fas fa-user"></i> 이*정 (여, 만 30세)</span>
+        <span><i class="fas fa-calendar"></i> 작성일: 2026년 7월 22일</span>
+      </div>
+      <div class="review-detail-stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>증상 및 불편함</h4>
+          <p>신호 정차 중 후방추돌을 당해 약 2달간 한의원 치료를 주 3~5회 받아야 할 만큼 허리에 큰 무리를 느꼈습니다. 허리 아래로 방사통은 없었지만 진단 결과 신경이 좀 눌리고 있다고 해주신 만큼 찌릿한 통증을 동반한 뻐근함이 커, 손을 씻기 위해 잠시 허리를 굽히는 것조차 아프고 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 내원 계기</h4>
+          <p>위의 고통을 느낀 직후 가족·친지에게 추천받아 근처 한의원을 검색하여 찾아보았는데, 수정한의원 후기가 압도적으로 좋았으며 특히 저와 같은 케이스로 교통사고 후유증 및 체질 개선에 탁월함을 체감했다는 평이 많아 선택하게 되었습니다. 그렇게 처음부터 마지막까지 쭉 수정한의원에서 약 2달간 치료를 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 치료 및 개선</h4>
+          <p>물리치료·전침·추나·약침 모두 받은 직후에는 파동치료실에서 30분~1시간 정도 꼭 추가적인 치료를 받곤 했습니다. 전침과 약침을 받으면서 특히 환부가 많이 나아져 차도가 있음을 경험했고, 예를 들어 재채기를 하던 중 갑자기 허리가 꺾여 다시 이전처럼 극심한 고통을 느끼던 차에 전침과 약침 치료 덕분에 금방 가라앉았습니다. 추나 덕분에 허리가 편안해지고 골반의 들뜸·틀어짐이 교정되며 앉거나 걷는 등의 자세가 더 수월해지기도 했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>삶의 질 변화</h4>
+          <p>이전에는 손을 씻고 빨래를 개는 등 허리가 조금씩이라도 쓰이는 일을 할 때마다 통증이 커 어쩔 수 없이 무릎을 굽히고 허리는 빳빳이 세워야 하는 불편함이 있었는데 말끔히 해결되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>치료는 물론이고 먹으면 좋은 음식, 먹어서는 안 되는 음식 등 나아지기 위한 체질 개선 면에서 적극적 도움을 주셨기에 감사하는 마음으로 방문을 추천드립니다. 이외에도 데스크에서 방문 일자 예약 관리해주시는 선생님, 물리치료해주시는 선생님께서도 차도가 있는지 너무나 친절하게 세심하게 챙겨주시어 감동이었습니다. 정말 감사드립니다.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -11726,6 +11793,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard178'), cat: '척추관절' },
       { el: document.getElementById('reviewCard177'), cat: '척추관절' },
       { el: document.getElementById('reviewCard176'), cat: ['면역대사', '척추관절'] },
       { el: document.getElementById('reviewCard175'), cat: '척추관절' },
