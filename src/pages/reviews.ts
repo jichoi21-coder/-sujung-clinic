@@ -642,6 +642,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #177 (네이버후기) -->
+        <div id="reviewCard177" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal177')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">교통사고 골절 후 통증</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.07</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">오토바이 사고 발뼈 골절 후 — 한약·약침·추나 꾸준히 받고 보조기 없이 걷고 절뚝거리지 않게 됐습니다</h3>
+          <p class="review-story">
+            발뼈 골절·무릎봉합수술로 계단을 오르내리기 힘들었는데, 치료 후 보조기 없이 걷고 발 힘이 전보다 더 좋아졌습니다. 같은 부위를 또 다쳐 정상적인 삶을 포기했지만 꾸준한 치료 덕에 혼자 등산도 하고 축구도 할 수 있습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> Ggaemi (남, 31세)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
                 <!-- 후기 카드 #168 -->
         <div id="reviewCard168" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal168')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5161,6 +5182,43 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <h4>수정한의원에 전하는 말</h4>
           <p>수족냉증으로 고생하시는 분들은 하루속히 치료를 받으시길 바랍니다.</p>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #177 (네이버후기) -->
+  <div id="detailModal177" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal177')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#교통사고골절 #발뼈골절 #무릎봉합수술</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.07.18 · 2번째 방문 · 결제내역</span>
+      </div>
+      <h2 class="review-detail-title">오토바이 사고 발뼈 골절 후 — 한약·약침·추나 꾸준히 받고 보조기 없이 걷고 절뚝거리지 않게 됐습니다</h2>
+      <img src="/static/reviews/review-177-kimmin-naver.jpg" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4>사고 및 증상</h4>
+          <p>오토바이 사고로 왼쪽 발등 뼈가 부러져 김스를 4주 하고, 무릎봉합수술로 간단한 뜀틀·계단 오르내리기를 할 수 없었으며 30분 이상 걷는 것이 힘들었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원 내원 계기</h4>
+          <p>김스를 풀고 정형외과에서 도수재활치료를 주 1회 받았고, 중간에 체외충격파 치료도 받았으나 호전이 되지 않아 치료 후기가 좋은 리뷰를 보고 수정한의원에 오게 됐습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>치료 및 개선</h4>
+          <p>한약·약침·추나를 꾸준히 받고 보조기 없이 걷고 절뚝거리지 않게 됐습니다. 중간에 침을 맞을 때 고통이 있던 다음날에는 통증이 정말 많이 좋아졌고, 덕분에 발 힘이 전보다 더 좋아졌습니다. 사실 치료받는 중에 같은 부위를 또 다쳐 이제는 정상적인 삶을 살기 힘들겠구나 낙담을 했었는데, 꾸준한 치료 덕분에 혼자서 등산도 하고 축구도 할 수 있는 더 건강한 삶을 살고 있습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4>수정한의원에 전하는 말</h4>
+          <p>실력있는 원장님, 친절한 간호사님 감사합니다.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> Ggaemi (남, 31세)</span>
+        <div class="review-stars">★★★★★</div>
       </div>
     </div>
   </div>
@@ -11668,6 +11726,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard177'), cat: '척추관절' },
       { el: document.getElementById('reviewCard176'), cat: ['면역대사', '척추관절'] },
       { el: document.getElementById('reviewCard175'), cat: '척추관절' },
       { el: document.getElementById('reviewCard174'), cat: ['면역대사', '천식'] },
