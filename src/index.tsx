@@ -233,32 +233,111 @@ app.get('/auth/logout', (c) => {
 
 // ── sitemap.xml ────────────────────────────────────────────────
 app.get('/sitemap.xml', (c) => {
+  // 페이지별 실제 최종 수정일 (lastmod 정직성 — A3 개선)
   const pages = [
-    { loc: '/',                    priority: '1.0', changefreq: 'weekly'  },
-    { loc: '/introduction',        priority: '0.8', changefreq: 'monthly' },
-    { loc: '/special',             priority: '0.8', changefreq: 'monthly' },
-    { loc: '/eight-constitution',  priority: '0.8', changefreq: 'monthly' },
-    { loc: '/clinic/special',      priority: '0.9', changefreq: 'monthly' },
-    { loc: '/clinic/autonomic',    priority: '0.9', changefreq: 'monthly' },
-    { loc: '/clinic/digestion',    priority: '0.9', changefreq: 'monthly' },
-    { loc: '/clinic/skin',         priority: '0.9', changefreq: 'monthly' },
-    { loc: '/clinic/spine',        priority: '0.9', changefreq: 'monthly' },
-    { loc: '/clinic/women',        priority: '0.9', changefreq: 'monthly' },
-    { loc: '/reviews',             priority: '0.7', changefreq: 'weekly'  },
-    { loc: '/privacy',             priority: '0.3', changefreq: 'yearly'  },
+    { loc: '/',                    priority: '1.0', changefreq: 'weekly',  lastmod: '2026-10-16' },
+    { loc: '/introduction',        priority: '0.8', changefreq: 'monthly', lastmod: '2025-06-01' },
+    { loc: '/special',             priority: '0.8', changefreq: 'monthly', lastmod: '2025-06-01' },
+    { loc: '/eight-constitution',  priority: '0.8', changefreq: 'monthly', lastmod: '2025-06-01' },
+    { loc: '/clinic/special',      priority: '0.9', changefreq: 'monthly', lastmod: '2025-09-01' },
+    { loc: '/clinic/autonomic',    priority: '0.9', changefreq: 'monthly', lastmod: '2025-09-01' },
+    { loc: '/clinic/digestion',    priority: '0.9', changefreq: 'monthly', lastmod: '2025-09-01' },
+    { loc: '/clinic/skin',         priority: '0.9', changefreq: 'monthly', lastmod: '2025-09-01' },
+    { loc: '/clinic/spine',        priority: '0.9', changefreq: 'monthly', lastmod: '2025-09-01' },
+    { loc: '/clinic/women',        priority: '0.9', changefreq: 'monthly', lastmod: '2025-09-01' },
+    { loc: '/reviews',             priority: '0.7', changefreq: 'weekly',  lastmod: '2026-10-16' },
+    { loc: '/privacy',             priority: '0.3', changefreq: 'yearly',  lastmod: '2025-03-01' },
   ]
-  const today = new Date().toISOString().split('T')[0]
   const urls = pages.map(p =>
-    `  <url>\n    <loc>https://www.8chejil-sujeong.com${p.loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${p.changefreq}</changefreq>\n    <priority>${p.priority}</priority>\n  </url>`
+    `  <url>\n    <loc>https://www.8chejil-sujeong.com${p.loc}</loc>\n    <lastmod>${p.lastmod}</lastmod>\n    <changefreq>${p.changefreq}</changefreq>\n    <priority>${p.priority}</priority>\n  </url>`
   ).join('\n')
   c.header('Content-Type', 'application/xml; charset=utf-8')
   return c.body(`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>`)
 })
 
 // ── robots.txt ─────────────────────────────────────────────────
+// AI 크롤러 명시적 허용 추가 (GPTBot, ClaudeBot, PerplexityBot 등 — A1 개선)
 app.get('/robots.txt', (c) => {
   c.header('Content-Type', 'text/plain; charset=utf-8')
-  return c.body(`User-agent: *\nAllow: /\n\nSitemap: https://www.8chejil-sujeong.com/sitemap.xml\n`)
+  return c.body([
+    '# 일반 검색엔진',
+    'User-agent: *',
+    'Allow: /',
+    '',
+    '# AI 크롤러 — 명시적 허용',
+    'User-agent: GPTBot',
+    'Allow: /',
+    '',
+    'User-agent: ChatGPT-User',
+    'Allow: /',
+    '',
+    'User-agent: ClaudeBot',
+    'Allow: /',
+    '',
+    'User-agent: Claude-Web',
+    'Allow: /',
+    '',
+    'User-agent: PerplexityBot',
+    'Allow: /',
+    '',
+    'User-agent: Applebot-Extended',
+    'Allow: /',
+    '',
+    'User-agent: Googlebot',
+    'Allow: /',
+    '',
+    'User-agent: Bingbot',
+    'Allow: /',
+    '',
+    'Sitemap: https://www.8chejil-sujeong.com/sitemap.xml',
+    '',
+  ].join('\n'))
+})
+
+// ── llms.txt ───────────────────────────────────────────────────
+// AI 크롤러용 사이트 구조 안내 파일 (A1 개선)
+app.get('/llms.txt', (c) => {
+  c.header('Content-Type', 'text/plain; charset=utf-8')
+  return c.body([
+    '# 수정한의원 (Sujeong Korean Medicine Clinic)',
+    '',
+    '> 서울 노원구 노원역 5번출구 위치. 1995년 개원 30년 임상.',
+    '> 한의학박사(침구학 전공) 원장 직접 진료. 8체질의학 기반 통합 한방 클리닉.',
+    '> 구안와사·아토피·허리디스크·공황장애·난임 등 만성·난치 질환 근본치료.',
+    '',
+    '## 주요 진료 클리닉',
+    '',
+    '- [특설 클리닉](https://www.8chejil-sujeong.com/clinic/special): 구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염, 소아성장',
+    '- [자율신경·뇌신경 클리닉](https://www.8chejil-sujeong.com/clinic/autonomic): 두통·편두통, 어지럼증·이명·난청, 불면증·만성피로, 우울증·공황장애',
+    '- [소화기 클리닉](https://www.8chejil-sujeong.com/clinic/digestion): 만성소화불량, 역류성식도염, 과민성대장증후군, 만성변비·설사·췌장염',
+    '- [피부·호흡기 클리닉](https://www.8chejil-sujeong.com/clinic/skin): 아토피 피부염, 지루성피부염, 두드러기·건선, 비염·축농증, COPD·기관지확장증',
+    '- [척추·관절 클리닉](https://www.8chejil-sujeong.com/clinic/spine): 허리디스크, 척추관협착증, 무릎관절염, 오십견·회전근개 손상',
+    '- [여성질환 클리닉](https://www.8chejil-sujeong.com/clinic/women): 생리통·생리불순, 난임·계류유산, 산후조리, 갱년기증후군',
+    '',
+    '## 병원 소개',
+    '',
+    '- [병원 소개·오시는길](https://www.8chejil-sujeong.com/introduction): 위치, 진료시간, 원장 약력',
+    '- [수정한의원의 특별함](https://www.8chejil-sujeong.com/special): 8체질 진단 장비(OMNIFIT·DITI·초음파·InBody)',
+    '- [8체질의학이란?](https://www.8chejil-sujeong.com/eight-constitution): 8체질 개념·체질별 음식·진단 방법',
+    '',
+    '## 치료 후기',
+    '',
+    '- [치료후기](https://www.8chejil-sujeong.com/reviews): 실제 환자 자필 후기 및 네이버 후기 183건+',
+    '',
+    '## 병원 기본 정보',
+    '',
+    '- **주소**: 서울특별시 노원구 노원로 340 (상계동), 우주빌딩 2층',
+    '- **전화**: 02-932-3815',
+    '- **진료시간**: 월·화·금 09:00–18:30, 수·목 09:00–19:30, 토 09:00–14:00 (일·공휴일 휴진)',
+    '- **점심시간**: 13:00–14:00',
+    '- **오시는길**: 노원역 5번출구 도보 1분',
+    '- **개원**: 1995년 (30년 임상)',
+    '',
+    '## Optional',
+    '',
+    '- [개인정보처리방침](https://www.8chejil-sujeong.com/privacy)',
+    '- [sitemap.xml](https://www.8chejil-sujeong.com/sitemap.xml)',
+  ].join('\n'))
 })
 
 export default app
