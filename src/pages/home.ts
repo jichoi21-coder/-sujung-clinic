@@ -418,8 +418,8 @@ export const homePage = `<!DOCTYPE html>
           <div class="pos-point">
             <div class="pp-icon green"><i class="fas fa-check"></i></div>
             <div>
-              <strong>다른 병원에서 해결 못한 병</strong>
-              <p>수술·약물로도 낫지 않는 만성·난치질환을 8체질 통합의학으로 접근합니다. 원인을 모른 채 증상만 억누르는 치료에서 벗어나, 체질적 원인을 찾아 근본부터 해결합니다.</p>
+              <strong>수술·약물 후에도 재발한 환자 중 다수가 회복</strong>
+              <p>수술·스테로이드·진통제로도 낫지 않는 만성·난치질환을 8체질 통합의학으로 접근합니다. 증상이 아닌 체질적 원인을 찾아, 재발 없는 근본치료를 실천합니다.</p>
             </div>
           </div>
           <div class="pos-point">
@@ -432,8 +432,8 @@ export const homePage = `<!DOCTYPE html>
           <div class="pos-point">
             <div class="pp-icon green"><i class="fas fa-check"></i></div>
             <div>
-              <strong>만성통증과 난치질환 치료의 새 기준</strong>
-              <p>8체질 통합의학으로 전국적 표준이 되는 치료 방식을 제시합니다. 구안와사·허리디스크·아토피·공황장애 등 다양한 질환에서 체질 중심 치료의 효과를 임상으로 증명해 왔습니다.</p>
+              <strong>구안와사·디스크·아토피·공황장애 — 21,560건 임상 데이터</strong>
+              <p>1995년 개원 이래 30년간 쌓은 21,560건 이상의 체질 진단 임상 데이터를 바탕으로, 구안와사·허리디스크·아토피·공황장애 등 각 질환별 체질 치료 효과를 검증해 왔습니다.</p>
             </div>
           </div>
         </div>
