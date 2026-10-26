@@ -726,6 +726,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #185 (네이버후기) -->
+        <div id="reviewCard185" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal185')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">골절후유증·목디스크</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">발등 골절 통증, 약침 맞고 걸음이 가벼워져 — 목디스크 추나·원적외선 찜질까지, 꼭 들러보세요</h3>
+          <p class="review-story">
+            발등이 골절되어서 통증이 있었는데 약침을 맞고 걸음이 조금 가벼워졌어요. 목디스크 추나치료도 받고 원적외선 찜질도 받고 갑니다. 이런 휴식공간이 있어서 너무 감사합니다. 꼭 한번 들러주시면 대 만족하실겁니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 장금이빛나라</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #184 (네이버후기) -->
         <div id="reviewCard184" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal184')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5503,6 +5524,37 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #185 (네이버후기) -->
+  <div id="detailModal185" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal185')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#골절후유증 #약침 #목디스크 #추나 #원적외선찜질</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.05.07 · 39번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">발등 골절 통증, 약침 맞고 걸음이 가벼워져 — 목디스크 추나·원적외선 찜질까지, 꼭 들러보세요</h2>
+      <img src="/static/reviews/review-185-janggeumbitnarara-naver.jpg" alt="장금이빛나라 발등골절 목디스크 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>발등이 골절되어서 통증이 있었는데 약침을 맞고 걸음이 조금 가벼워졌어요. 목디스크 추나치료도 받고 원적외선 찜질도 받고 갑니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>이런 휴식공간이 있어서 너무 감사합니다. 꼭 한번 들러주시면 대 만족하실겁니다.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 장금이빛나라</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -12139,6 +12191,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard185'), cat: '척추관절' },
       { el: document.getElementById('reviewCard184'), cat: '척추관절' },
       { el: document.getElementById('reviewCard183'), cat: '척추관절' },
       { el: document.getElementById('reviewCard182'), cat: '척추관절' },
