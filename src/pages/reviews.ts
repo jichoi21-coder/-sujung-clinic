@@ -726,6 +726,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #186 (네이버후기) -->
+        <div id="reviewCard186" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal186')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">퇴행성무릎관절염</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">연골주사도 안 됐던 무릎 통증 — 팔침·물리치료 후 통영 장거리 여행까지 아프지 않고 다녀왔습니다</h3>
+          <p class="review-story">
+            허리·무릎관절 통증이 심해 연골 주사도 맞아봤는데 통증이 가시지 않아 지인 소개로 수정한의원에 왔어요. 팔침을 맞고 물리치료와 병행했는데, 전에는 버스 타고 장거리 가면 무릎 구부리고 있어서 아팠는데 침 맞고 통영여행까지 아프지 않고 다녀왔습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> jin****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #185 (네이버후기) -->
         <div id="reviewCard185" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal185')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5524,6 +5545,37 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #186 (네이버후기) -->
+  <div id="detailModal186" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal186')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#퇴행성무릎관절염 #팔침 #물리치료 #허리</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.05.08 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">연골주사도 안 됐던 무릎 통증 — 팔침·물리치료 후 통영 장거리 여행까지 아프지 않고 다녀왔습니다</h2>
+      <img src="/static/reviews/review-186-jin-naver.jpg" alt="jin 퇴행성무릎관절염 팔침 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>나이가 들면서 허리·무릎관절 통증이 심해 연골 주사도 맞아봤는데 그래도 통증이 가시지 않아 지인의 소개로 수정한의원에 왔습니다. 원장님으로부터 팔침을 맞고 물리치료와 병행했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>전에는 버스를 타고 장거리를 가면 무릎을 구부리고 있어야 해서 좀 아팠는데, 침을 맞고 남쪽 통영여행까지 아프지 않고 다녀왔습니다. 팔침을 맞은 효과가 있었습니다 ♡♡</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> jin****</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -12191,6 +12243,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard186'), cat: '척추관절' },
       { el: document.getElementById('reviewCard185'), cat: '척추관절' },
       { el: document.getElementById('reviewCard184'), cat: '척추관절' },
       { el: document.getElementById('reviewCard183'), cat: '척추관절' },
