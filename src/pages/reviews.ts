@@ -726,6 +726,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #188 (네이버후기) -->
+        <div id="reviewCard188" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal188')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">무릎관절염</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.08</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">정형외과에서 수술 권유받았던 무릎 — 약침 맞은 다음 날 아침, 새 무릎으로 바꾼 듯 가볍고 통증이 없었습니다</h3>
+          <p class="review-story">
+            무릎이 아파서 한의원을 검색하다 수정한의원을 방문했어요. 일반 한의원과 다르다 생각했는데 진료 받기 전 검사와 설문조사까지 진짜 오랜만에 진정한 한의원을 발견했어요. 약침 맞은 당일엔 아프고 땡기는 증상이 있었지만, 자려고 누울 때도 오금이 땡겨서 걱정했는데 다음 날 아침 새 무릎으로 바꾼 듯 통증이 없었습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 사랑8621</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #187 (네이버후기) -->
         <div id="reviewCard187" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal187')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5566,6 +5587,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #188 (네이버후기) -->
+  <div id="detailModal188" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal188')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#무릎관절염 #약침 #8체질검사 #위장염증</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.08.01 · 1번째 방문 · 결제내역</span>
+      </div>
+      <h2 class="review-detail-title">정형외과에서 수술 권유받았던 무릎 — 약침 맞은 다음 날 아침, 새 무릎으로 바꾼 듯 가볍고 통증이 없었습니다</h2>
+      <img src="/static/reviews/review-188-sang8621-naver.jpg" alt="사랑8621 무릎관절염 약침 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>무릎이 아파서 한의원을 검색하다 수정한의원을 방문하게 됐어요. 일반 한의원과 다르다 생각했는데, 진료 받기 전 검사를 받고 설문조사까지 — 진짜 오랜만에 진정한 한의원을 발견했어요. 우와~~ 진짜 신기해요. 그동안 정형외과만 다니면서 고생 많았거든요. 수술하라는 말도 들었어요.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>약침을 맞은 당일엔 아픔이 덜하긴 했는데 땡기는 증상이 있었거든요. 자려고 누울 때도 오금이 땡겨서 출근 걱정하면서 잤는데, 다음 날 아침에 깨보니 새 무릎으로 바꾼 듯해요. 완전 가볍고 통증도 없고 ^^. 어제 침 맞고 오늘 새 다리를 얻은 것 같아서 좋아요~^^</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heart"></i> 가족 치료</h4>
+          <p>저희 딸도 8체질 검사 받고 약침 맞고 위장 염증이 없어졌어요.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 사랑8621</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -12295,6 +12351,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard188'), cat: '척추관절' },
       { el: document.getElementById('reviewCard187'), cat: '척추관절' },
       { el: document.getElementById('reviewCard186'), cat: '척추관절' },
       { el: document.getElementById('reviewCard185'), cat: '척추관절' },
