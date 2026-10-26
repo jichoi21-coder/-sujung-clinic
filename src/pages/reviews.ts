@@ -726,6 +726,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #187 (네이버후기) -->
+        <div id="reviewCard187" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal187')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">허리디스크</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.05</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">발목인 줄 알았던 통증 — 알고 보니 허리디스크, 지인 소개로 방문 후 잠잘 때 다리 절임 싹 사라졌습니다</h3>
+          <p class="review-story">
+            오래 걸어서 발목이 아픈 줄만 알았는데, 걷기가 점점 불편하고 잠잘 때 다리가 절여서 쿠션 위에 올려놓고 잘 정도였어요. 알고 보니 허리디스크 증상이었고, 지인 소개로 수정한의원을 방문해 생각보다 훨씬 빠른 속도로 좋아졌습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> syl****</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #186 (네이버후기) -->
         <div id="reviewCard186" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal186')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5545,6 +5566,37 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #187 (네이버후기) -->
+  <div id="detailModal187" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal187')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-detail-tag">#허리디스크 #다리저림 #한의원</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.05.08 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">발목인 줄 알았던 통증 — 알고 보니 허리디스크, 지인 소개로 방문 후 잠잘 때 다리 절임 싹 사라졌습니다</h2>
+      <img src="/static/reviews/review-187-syl-naver.jpg" alt="syl 허리디스크 다리저림 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>오랫만에 오래 걷기를 해서 발목이 아파서 단순하게 생각했는데 점점 걷기가 불편하고 잠잘 때 다리가 절여서 쿠션 위에 올려놓고 자기도 했습니다. 알고 보니 허리에 디스크 증상이 있었던 거였어요. 지인 소개로 수정한의원을 방문했습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>생각보다 훨씬 빠른 속도로 좋아지고 걷기도 편하고, 특히 잠잘 때 절임 증상이 없어서 좋습니다. 한의사 선생님, 간호원 선생님들 진짜 친절하고 주변에 소개하고 싶어요. 수정한의원 감사해요~~~♡</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> syl****</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -12243,6 +12295,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard187'), cat: '척추관절' },
       { el: document.getElementById('reviewCard186'), cat: '척추관절' },
       { el: document.getElementById('reviewCard185'), cat: '척추관절' },
       { el: document.getElementById('reviewCard184'), cat: '척추관절' },
