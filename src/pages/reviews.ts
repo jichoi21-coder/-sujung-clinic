@@ -739,7 +739,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
             발목 인대가 파열되어 뼈가 잘 안 보일 정도로 부었고, 단차가 조금만 있어도 발목이 쉽게 젖혀졌습니다. 정형외과에서 수술을 권했지만 매선치료를 시작한 후 발목이 쉽게 안 젖혀지고 이제는 힘이 충분히 들어가는 게 느껴져 매우 만족하고 있습니다.
           </p>
           <div class="review-card-footer">
-            <span class="review-author"><i class="fas fa-user"></i> 조채훈 (남, 31세)</span>
+            <span class="review-author"><i class="fas fa-user"></i> 조0훈 (남, 31세)</span>
             <div class="review-stars">
               <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
             </div>
@@ -5666,7 +5666,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span class="review-detail-date">2026.10.15 · 남 · 31세</span>
       </div>
       <h2 class="review-detail-title">정형외과 수술 권유받은 발목인대파열 — 매선치료 후 발목이 쉽게 안 젖혀지고 힘이 충분히 들어와 매우 만족합니다</h2>
-      <img src="/static/reviews/review-191-chohyuncho-handwritten.jpg" alt="조채훈 발목인대파열 매선치료 자필 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <img src="/static/reviews/review-191-chohyuncho-handwritten.jpg" alt="조0훈 발목인대파열 매선치료 자필 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
       <div class="review-detail-content">
         <div class="review-detail-section">
           <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
