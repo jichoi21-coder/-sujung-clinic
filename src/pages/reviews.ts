@@ -726,6 +726,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #190 (자필후기) -->
+        <div id="reviewCard190" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal190')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">뇌산소부족·하품·자율신경</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.10</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">하루 수십 번 눈물 흘리며 하품하던 74세 — 약침·추나·한약으로 증상 사라지고 일상 질이 높아져 행복합니다</h3>
+          <p class="review-story">
+            사람 많은 장소나 지하철·버스를 타면 하루에도 수십 번씩 눈물 흘리며 하품하고 얼굴에 땀이 비 오듯 났습니다. 수정한의원에서 원장님의 정성과 약침·추나·한약·물리치료 결과 그런 증상이 없어지고 일상생활의 질이 높아져 너무나 행복하고 즐겁습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 이0자 (여, 74세)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #189 (네이버후기) -->
         <div id="reviewCard189" class="review-card" data-cat="다이어트" onclick="openReviewModal('detailModal189')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5608,6 +5629,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #190 (자필후기) -->
+  <div id="detailModal190" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal190')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-neuro">자율신경·뇌신경</span>
+        <span class="review-detail-tag">#뇌산소부족 #하품 #자율신경 #약침 #추나 #한약</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-detail-date">2026.10.20 · 여 · 74세</span>
+      </div>
+      <h2 class="review-detail-title">하루 수십 번 눈물 흘리며 하품하던 74세 — 약침·추나·한약으로 증상 사라지고 일상 질이 높아져 행복합니다</h2>
+      <img src="/static/reviews/review-190-leemyungja-handwritten.jpg" alt="이0자 뇌산소부족 하품 자율신경 자필 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>구로에 사는 74세입니다. 지인의 소개로 원장님이 한방 치료를 잘하신다는 말씀을 듣고 수정한의원에 오게 되었습니다. 집에 혼자 있을 때는 괜찮지만 사람이 많이 모인 장소나 지하철·버스를 타면 하루에도 수십 번씩 하품을 하는데, 머리에 산소 공급 부족으로 얼굴에 땀도 비 오듯 많이 났습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>수정한의원에서 원장님의 정성과 기술적인 치료 — <strong>약침·추나·한약·물리치료</strong>의 결과, 요즘은 너무 좋아지고 일상생활에서 질을 높이니 너무나 행복하고 즐겁습니다. 하루에도 수십 번씩 앉으면 눈물 흘리면서까지 하품하던 것이 <strong>지금은 그런 증상이 없으니</strong> 정말 즐겁습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-bullhorn"></i> 다른 분들께</h4>
+          <p>많은 질병과 나와 유사한 병을 가지고 있는 분들은 하루도 지체 말고, 우리의 질적인 삶을 위하여 꼭 와서 치료받으세요.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> 이0자 (여, 74세)</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -12407,6 +12463,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard190'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard189'), cat: '다이어트' },
       { el: document.getElementById('reviewCard188'), cat: '척추관절' },
       { el: document.getElementById('reviewCard187'), cat: '척추관절' },
