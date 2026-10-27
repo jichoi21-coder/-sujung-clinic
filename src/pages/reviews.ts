@@ -726,6 +726,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #191 (자필후기) -->
+        <div id="reviewCard191" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal191')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">발목인대파열</span>
+            <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+            <span class="review-date">2026.10</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">정형외과 수술 권유받은 발목인대파열 — 매선치료 후 발목이 쉽게 안 젖혀지고 힘이 충분히 들어와 매우 만족합니다</h3>
+          <p class="review-story">
+            발목 인대가 파열되어 뼈가 잘 안 보일 정도로 부었고, 단차가 조금만 있어도 발목이 쉽게 젖혀졌습니다. 정형외과에서 수술을 권했지만 매선치료를 시작한 후 발목이 쉽게 안 젖혀지고 이제는 힘이 충분히 들어가는 게 느껴져 매우 만족하고 있습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> 조채훈 (남, 31세)</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #190 (자필후기) -->
         <div id="reviewCard190" class="review-card review-card-handwritten" data-cat="뇌신경" onclick="openReviewModal('detailModal190')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5629,6 +5650,35 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #191 (자필후기) -->
+  <div id="detailModal191" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal191')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추관절</span>
+        <span class="review-detail-tag">#발목인대파열 #매선치료 #전침 #체질개선</span>
+        <span class="review-handwritten-badge"><i class="fas fa-pen-nib"></i> 자필후기</span>
+        <span class="review-detail-date">2026.10.15 · 남 · 31세</span>
+      </div>
+      <h2 class="review-detail-title">정형외과 수술 권유받은 발목인대파열 — 매선치료 후 발목이 쉽게 안 젖혀지고 힘이 충분히 들어와 매우 만족합니다</h2>
+      <img src="/static/reviews/review-191-chohyuncho-handwritten.jpg" alt="조채훈 발목인대파열 매선치료 자필 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>발목 인대가 파열이 되서 뼈가 잘 안 보일 정도로 부어 있었고, 인대가 지탱을 못 해줘서 단차가 조금이라도 있으면 발목이 쉽게 젖혀졌습니다. 정형외과에서 4번 정도 인대 재생주사를 맞았었는데 그 이후에도 발목이 휙 젖혀져서, 이 붓기만이라도 빼자 생각하고 인터넷 검색으로 한의원을 찾게 되었습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선 과정</h4>
+          <p>한의원에서 침만 맞을 생각으로 왔는데 매선치료에 대해 알려주셨습니다. 정형외과에서는 수술을 권했기 때문에 그보다는 치료라고 하기에 그 점에 마음이 이끌려 치료를 시작하였습니다. 처음 치료를 시작하였을 때는 기존에 하던 치료와 다를 바 없이 차도가 잘 안 느껴져서 다시 수술을 고민해야 하나 싶었는데, 몇 번 더 받아보니 발목이 쉽게 안 젖혀지고 이제는 발목에 힘이 충분히 들어가는 게 느껴집니다. 때문에 더는 발목이 문제를 일으킬 거라는 생각이 안 들어서 매우 만족하고 있습니다. 전침 이후에 원장님이 해주시는 체질 개선으로 하는 침이 몸이 조금씩 좋아지는 것 같아서 좋았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-hands-helping"></i> 다른 분들께</h4>
+          <p>저처럼 수술을 고민하시는 분은 매선 치료라는 다른 길이 있으니 이쪽을 선택하시면 좋을 것 같습니다.</p>
         </div>
       </div>
     </div>
@@ -12463,6 +12513,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard191'), cat: '척추관절' },
       { el: document.getElementById('reviewCard190'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard189'), cat: '다이어트' },
       { el: document.getElementById('reviewCard188'), cat: '척추관절' },
