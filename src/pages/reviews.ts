@@ -726,6 +726,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #189 (네이버후기) -->
+        <div id="reviewCard189" class="review-card" data-cat="다이어트" onclick="openReviewModal('detailModal189')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">체질다이어트·갱년기</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.10</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">다이어트 병원·한의원 전전하다 — 체질 맞춤 관리로 7.5kg 감량, 체지방만 쏙 빠지고 활력까지 되찾았습니다</h3>
+          <p class="review-story">
+            결혼·출산 후 인생 최대 몸무게가 됐어요. 다이어트 병원·한의원을 2곳이나 다녔지만 큰 기대를 안 했는데, 7.5kg 감량에 체지방만 빠진 게 경이로웠어요. 퇴근 후 운동 의욕, 주말 청소 의욕까지 생기고 — 무기력함이 갱년기 때문만이 아니었다는 걸 깨달았습니다.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> kidkim555</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #188 (네이버후기) -->
         <div id="reviewCard188" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal188')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5587,6 +5608,41 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #189 (네이버후기) -->
+  <div id="detailModal189" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal189')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-diet">체질다이어트</span>
+        <span class="review-detail-tag">#다이어트 #갱년기 #체지방감량 #양자온열 #8체질</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.10.02 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">다이어트 병원·한의원 전전하다 — 체질 맞춤 관리로 7.5kg 감량, 체지방만 쏙 빠지고 활력까지 되찾았습니다</h2>
+      <img src="/static/reviews/review-189-kidkim555-naver.jpg" alt="kidkim555 체질다이어트 갱년기 7.5kg 감량 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>결혼·출산 후 계속 몸무게가 늘어나다 인생 최대 몸무게가 됐습니다. 몸이 둔하고 열이 오르고 피로해서 살을 빼야겠다는 생각으로 수정한의원에 오게 됐습니다. 그동안 다이어트 병원과 한의원도 2곳이나 다녔던 터라 큰 기대를 하지 않았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>처음엔 살이 빠지다 요요로 1~2kg 더 찌는 경험도 했기에 여기 한의원은 체력이 좋아지고 몸에 활력이 생기면서 살이 빠졌어요. 퇴근 후 운동을 할 힘도 생기고, 주말에 무기력했는데 밀린 집안일을 할 의지가 생겼어요. <strong>7.5kg 체중감량이 모두 체지방만 빠진 것</strong>이 경이로웠고 양자온열치료도 좋았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-star"></i> 가장 좋았던 점</h4>
+          <p>기존 다이어트와는 다르게 <strong>체질에 맞게 힘들지 않은 다이어트</strong>라는 점이 가장 매력적입니다. 무기력함이 갱년기 때문만이 아니었다는 것도 깨달았어요. 계속 유지 관리해야겠어요. 아직 늦지 않았으니 지금 시작하세요 😀</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> kidkim555</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -12351,6 +12407,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard189'), cat: '다이어트' },
       { el: document.getElementById('reviewCard188'), cat: '척추관절' },
       { el: document.getElementById('reviewCard187'), cat: '척추관절' },
       { el: document.getElementById('reviewCard186'), cat: '척추관절' },
