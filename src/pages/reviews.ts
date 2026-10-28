@@ -726,6 +726,27 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
           <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
         </div>
 
+        <!-- 후기 카드 #192 (네이버후기) -->
+        <div id="reviewCard192" class="review-card" data-cat="척추관절" onclick="openReviewModal('detailModal192')" style="cursor:pointer;">
+          <div class="review-card-header">
+            <span class="review-cat-tag">목디스크·편두통</span>
+            <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+            <span class="review-date">2026.09</span>
+          </div>
+          <div class="review-quote-mark">"</div>
+          <h3 class="review-card-title">목디스크 통증에 두통까지 심해 방문 — 약침·추나 치료 후 두통이 사라지고 눈도 맑아졌어요</h3>
+          <p class="review-story">
+            목디스크 통증이 너무 심해서 동생 추천으로 방문했어요. 오기 전에 두통도 심하고 양팔을 들고 고개 돌리는 것도 힘들었는데, 약침치료와 추나치료를 받고 확실히 두통도 사라지고 눈도 맑아졌어요. 치료 열심히 받을 것 같아요.
+          </p>
+          <div class="review-card-footer">
+            <span class="review-author"><i class="fas fa-user"></i> yunbbak</span>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="review-card-click-hint"><i class="fas fa-expand-alt"></i> 클릭하여 자세히 보기</div>
+        </div>
+
         <!-- 후기 카드 #191 (자필후기) -->
         <div id="reviewCard191" class="review-card review-card-handwritten" data-cat="척추관절" onclick="openReviewModal('detailModal191')" style="cursor:pointer;">
           <div class="review-card-header">
@@ -5650,6 +5671,38 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <div class="review-detail-section">
           <h4>수정한의원에 전하는 말</h4>
           <p>약침을 맞기 전 한의원을 다니기 전에 제 상황이 변할 거라고 생각 못했었는데 변화할 수 있었고 한의원에 너무 감사합니다. 저와 같은 상황을 겪고 계신 분들이 꼭 치료받아 보셨으면 좋겠습니다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 상세 모달 #192 (네이버후기) -->
+  <div id="detailModal192" class="review-detail-modal" onclick="closeReviewModal(event,this)" style="display:none;">
+    <div class="review-detail-inner">
+      <button class="review-detail-close" onclick="closeModalById('detailModal192')">✕ 닫기</button>
+      <div class="review-detail-header">
+        <span class="review-cat-tag review-cat-tag-spine">척추·관절</span>
+        <span class="review-cat-tag review-cat-tag-special">만성 편두통</span>
+        <span class="review-detail-tag">#목디스크 #편두통 #약침 #추나</span>
+        <span class="review-naver-badge"><i class="fas fa-pen-nib"></i> 네이버후기</span>
+        <span class="review-detail-date">2026.09.18 · 1번째 방문 · 영수증</span>
+      </div>
+      <h2 class="review-detail-title">목디스크 통증에 두통까지 심해 방문 — 약침·추나 치료 후 두통이 사라지고 눈도 맑아졌어요</h2>
+      <img src="/static/reviews/review-192-yunbbak-naver.jpg" alt="yunbbak 목디스크 편두통 약침 추나 네이버 후기" class="review-detail-img" onclick="openImgFull(this.src)" loading="lazy">
+      <div class="review-detail-content">
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-door-open"></i> 내원 계기</h4>
+          <p>오늘 목디스크 통증이 너무 심해서 동생 추천으로 방문했어요. 오기 전에 두통도 심하고, 양팔을 들고 고개를 돌리는 것도 힘들었는데 예약 후 대기 없이 바로 입장해서 진료를 받았습니다.</p>
+        </div>
+        <div class="review-detail-section">
+          <h4 class="review-detail-section-title"><i class="fas fa-heartbeat"></i> 치료 &amp; 개선</h4>
+          <p>약침치료, 추나치료를 받고 확실히 두통도 사라지고 눈도 맑아졌어요. 치료 열심히 받을 것 같아요.</p>
+        </div>
+      </div>
+      <div class="review-detail-footer">
+        <span class="review-author"><i class="fas fa-user"></i> yunbbak</span>
+        <div class="review-stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
         </div>
       </div>
     </div>
@@ -12513,6 +12566,7 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
       { el: document.getElementById('reviewCard28'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard29'), cat: '척추관절' },
       { el: document.getElementById('reviewCard30'), cat: '면역대사' },
+      { el: document.getElementById('reviewCard192'), cat: ['척추관절', '편두통'] },
       { el: document.getElementById('reviewCard191'), cat: '척추관절' },
       { el: document.getElementById('reviewCard190'), cat: '뇌신경' },
       { el: document.getElementById('reviewCard189'), cat: '다이어트' },
