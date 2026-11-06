@@ -1,8 +1,8 @@
 export function layout(content: string, pageTitle?: string, pageDesc?: string, reqUrl?: string, extraSchema?: object): string {
   const title = pageTitle || '수정한의원 | 노원구 8체질 한의원 – 구안와사·아토피·디스크·공황장애·난임 근본치료'
   const desc = pageDesc || '서울 노원구 노원역 5번출구. 1995년 개원 30년 임상. 한의학박사가 직접 8체질 진단. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추협착증, 공황장애·불면증, 난임·생리통, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료. ☎ 02-932-3815'
-  const siteOrigin = reqUrl ? new URL(reqUrl).origin : 'https://8chejil-sujeong.com'
-  const CANONICAL_ORIGIN = 'https://8chejil-sujeong.com'
+  const siteOrigin = reqUrl ? new URL(reqUrl).origin : 'https://www.8chejil-sujeong.com'
+  const CANONICAL_ORIGIN = 'https://www.8chejil-sujeong.com'
   const ogImage = `${CANONICAL_ORIGIN}/static/og-image.jpg`
   const ogUrl = reqUrl || siteOrigin
 
@@ -13,9 +13,9 @@ export function layout(content: string, pageTitle?: string, pageDesc?: string, r
     "name": "수정한의원",
     "alternateName": ["8체질 수정한의원", "Sujeong Korean Medical Center", "노원역한의원", "노원구한의원"],
     "description": "1995년 개원, 30년 8체질 임상경험. 한의학박사(침구학 전공)가 직접 체질진단을 시행합니다. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추관협착증, 공황장애·불면증·이명, 난임·갱년기, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료 클리닉.",
-    "url": "https://8chejil-sujeong.com",
-    "logo": "https://8chejil-sujeong.com/static/logo.png",
-    "image": "https://8chejil-sujeong.com/static/og-image.jpg",
+    "url": "https://www.8chejil-sujeong.com",
+    "logo": "https://www.8chejil-sujeong.com/static/logo.png",
+    "image": "https://www.8chejil-sujeong.com/static/og-image.jpg",
     "telephone": "02-932-3815",
     "foundingDate": "1995",
     "address": {
@@ -87,7 +87,7 @@ export function layout(content: string, pageTitle?: string, pageDesc?: string, r
       "hasCredential": ["한의학박사", "침구학 전공", "대한한의학회 정회원", "암한의학회 정회원"]
     },
     "sameAs": [
-      "https://8chejil-sujeong.com"
+      "https://www.8chejil-sujeong.com"
     ]
   })
 

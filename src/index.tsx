@@ -23,6 +23,18 @@ type Bindings = {
 
 const app = new Hono<{ Bindings: Bindings }>()
 
+// non-www → www 301 (주소 이원화로 인한 신호 분산 방지)
+app.use('*', async (c, next) => {
+  const u = new URL(c.req.url)
+  if (u.hostname === '8chejil-sujeong.com') {
+    u.hostname = 'www.8chejil-sujeong.com'
+    u.protocol = 'https:'
+    u.port = ''
+    return c.redirect(u.toString(), 301)
+  }
+  await next()
+})
+
 // 정적 파일 서빙
 app.use('/static/*', serveStatic({ root: './' }))
 app.use('/favicon.ico', serveStatic({ root: './', path: '/favicon.ico' }))
@@ -109,7 +121,7 @@ app.get('/auth/naver', (c) => {
   const params = new URLSearchParams({
     response_type: 'code',
     client_id: c.env.NAVER_CLIENT_ID,
-    redirect_uri: 'https://8chejil-sujeong.com/auth/naver/callback',
+    redirect_uri: 'https://www.8chejil-sujeong.com/auth/naver/callback',
     state,
   })
   return c.redirect(`https://nid.naver.com/oauth2.0/authorize?${params}`)
@@ -170,7 +182,7 @@ app.get('/auth/naver/callback', async (c) => {
 app.get('/auth/kakao', (c) => {
   const params = new URLSearchParams({
     client_id: c.env.KAKAO_CLIENT_ID,
-    redirect_uri: 'https://8chejil-sujeong.com/auth/kakao/callback',
+    redirect_uri: 'https://www.8chejil-sujeong.com/auth/kakao/callback',
     response_type: 'code',
   })
   return c.redirect(`https://kauth.kakao.com/oauth/authorize?${params}`)
@@ -191,7 +203,7 @@ app.get('/auth/kakao/callback', async (c) => {
     body: new URLSearchParams({
       grant_type: 'authorization_code',
       client_id: c.env.KAKAO_CLIENT_ID,
-      redirect_uri: 'https://8chejil-sujeong.com/auth/kakao/callback',
+      redirect_uri: 'https://www.8chejil-sujeong.com/auth/kakao/callback',
       code,
     }),
   })
@@ -235,7 +247,7 @@ app.get('/auth/logout', (c) => {
 app.get('/sitemap.xml', (c) => {
   // 페이지별 실제 최종 수정일 (lastmod 정직성 — A3 개선)
   const pages = [
-    { loc: '/',                    priority: '1.0', changefreq: 'weekly',  lastmod: '2026-10-16' },
+    { loc: '/',                    priority: '1.0', changefreq: 'weekly',  lastmod: '2026-11-06' },
     { loc: '/introduction',        priority: '0.8', changefreq: 'monthly', lastmod: '2025-06-01' },
     { loc: '/special',             priority: '0.8', changefreq: 'monthly', lastmod: '2025-06-01' },
     { loc: '/eight-constitution',  priority: '0.8', changefreq: 'monthly', lastmod: '2025-06-01' },
@@ -245,7 +257,7 @@ app.get('/sitemap.xml', (c) => {
     { loc: '/clinic/skin',         priority: '0.9', changefreq: 'monthly', lastmod: '2025-09-01' },
     { loc: '/clinic/spine',        priority: '0.9', changefreq: 'monthly', lastmod: '2025-09-01' },
     { loc: '/clinic/women',        priority: '0.9', changefreq: 'monthly', lastmod: '2025-09-01' },
-    { loc: '/reviews',             priority: '0.7', changefreq: 'weekly',  lastmod: '2026-10-16' },
+    { loc: '/reviews',             priority: '0.7', changefreq: 'weekly',  lastmod: '2026-11-06' },
     { loc: '/privacy',             priority: '0.3', changefreq: 'yearly',  lastmod: '2025-03-01' },
   ]
   const urls = pages.map(p =>
@@ -280,7 +292,28 @@ app.get('/robots.txt', (c) => {
     'User-agent: PerplexityBot',
     'Allow: /',
     '',
+    'User-agent: OAI-SearchBot',
+    'Allow: /',
+    '',
+    'User-agent: Google-Extended',
+    'Allow: /',
+    '',
+    'User-agent: anthropic-ai',
+    'Allow: /',
+    '',
     'User-agent: Applebot-Extended',
+    'Allow: /',
+    '',
+    'User-agent: Bytespider',
+    'Allow: /',
+    '',
+    'User-agent: Naverbot',
+    'Allow: /',
+    '',
+    'User-agent: Yeti',
+    'Allow: /',
+    '',
+    'User-agent: Daumoa',
     'Allow: /',
     '',
     'User-agent: Googlebot',
@@ -322,15 +355,19 @@ app.get('/llms.txt', (c) => {
     '',
     '## 치료 후기',
     '',
-    '- [치료후기](https://www.8chejil-sujeong.com/reviews): 실제 환자 자필 후기 및 네이버 후기 183건+',
+    '- [치료후기](https://www.8chejil-sujeong.com/reviews): 실제 환자 자필 후기 및 네이버 후기 190건+ (척추·관절, 다이어트, 뇌신경, 면역·대사, 여성질환, 만성 편두통, 천식, 피부, 구안와사 분류)',
+    '',
+    '## 자주 묻는 질문',
+    '',
+    '- [수정한의원 자주 묻는 질문](https://www.8chejil-sujeong.com/#home-faq): 위치, 진료시간, 8체질 진단, 진료 질환, 원장 약력, 예약 방법',
     '',
     '## 병원 기본 정보',
     '',
-    '- **주소**: 서울특별시 노원구 노원로 340 (상계동), 우주빌딩 2층',
+    '- **주소**: 서울특별시 노원구 동일로 1374 미산빌딩 6층 (우리은행 사거리, 투썸플레이스 건물 6층)',
     '- **전화**: 02-932-3815',
-    '- **진료시간**: 월·화·금 09:00–18:30, 수·목 09:00–19:30, 토 09:00–14:00 (일·공휴일 휴진)',
+    '- **진료시간**: 월·화·금 09:00–19:00, 수 09:00–20:00(야간진료), 목 09:00–13:00, 토 09:00–16:00 (일·공휴일 휴진)',
     '- **점심시간**: 13:00–14:00',
-    '- **오시는길**: 노원역 5번출구 도보 1분',
+    '- **오시는길**: 7호선 노원역 5번 출구에서 백병원 방향 300m',
     '- **개원**: 1995년 (30년 임상)',
     '',
     '## Optional',
