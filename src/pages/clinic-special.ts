@@ -3,8 +3,8 @@ export const clinic_specialPage = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식·소아성장 – 수정한의원</title>
-  <meta name="description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염, 소아성장 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
+  <title>특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식 – 수정한의원</title>
+  <meta name="description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
 
   <!-- Google Search Console 소유권 확인 -->
   <meta name="google-site-verification" content="M8jXlZzYhHDmLfmeZp3Bz0Nx8U-A1rqtZGQVAwC1zTw" />
@@ -21,15 +21,15 @@ export const clinic_specialPage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 노원대상포진후신경통, 노원소아성장치료, 노원마이코플라즈마, 상계동대상포진, 중계동소아성장, 노원특수클리닉, 노원면역질환, 8체질특수치료, 노원난치병한의원"/>
+  <meta name="keywords" content="수정한의원, 노원대상포진후신경통, 노원마이코플라즈마, 상계동대상포진, 노원특수클리닉, 노원면역질환, 8체질특수치료, 노원난치병한의원"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>
   <link rel="canonical" href="https://www.8chejil-sujeong.com/clinic/special"/>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식·소아성장 – 수정한의원"/>
-  <meta property="og:description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염, 소아성장 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
+  <meta property="og:title" content="특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식 – 수정한의원"/>
+  <meta property="og:description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://www.8chejil-sujeong.com/static/og-image.jpg"/>
   <meta property="og:image:width" content="1200"/>
@@ -41,13 +41,13 @@ export const clinic_specialPage = `<!DOCTYPE html>
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식·소아성장 – 수정한의원"/>
-  <meta name="twitter:description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염, 소아성장 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
+  <meta name="twitter:title" content="특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식 – 수정한의원"/>
+  <meta name="twitter:description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
   <meta name="twitter:image" content="https://www.8chejil-sujeong.com/static/og-image.jpg"/>
 
   <!-- Schema.org 구조화 데이터 (AI 검색 최적화) -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalClinic","name":"수정한의원","alternateName":["8체질 수정한의원","Sujeong Korean Medical Center","노원역한의원","노원구한의원"],"description":"1995년 개원, 30년 8체질 임상경험. 한의학박사(침구학 전공)가 직접 체질진단을 시행합니다. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추관협착증, 공황장애·불면증·이명, 난임·갱년기, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료 클리닉.","url":"https://www.8chejil-sujeong.com","logo":"https://www.8chejil-sujeong.com/static/logo.png","image":"https://www.8chejil-sujeong.com/static/og-image.jpg","telephone":"02-932-3815","foundingDate":"1995","address":{"@type":"PostalAddress","streetAddress":"동일로 1374 미산빌딩 6층","addressLocality":"노원구","addressRegion":"서울특별시","postalCode":"01769","addressCountry":"KR"},"geo":{"@type":"GeoCoordinates","latitude":"37.6554","longitude":"127.0567"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Friday"],"opens":"09:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday"],"opens":"09:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"16:00"}],"medicalSpecialty":["8체질의학","한방내과","침구과","추나의학","한방부인과","사상체질과"],"availableService":[{"@type":"MedicalTherapy","name":"8체질 맥진 진단","description":"30년 임상의 정확한 8체질 맥진 진단"},{"@type":"MedicalTherapy","name":"8체질 침치료"},{"@type":"MedicalTherapy","name":"체질 맞춤 1:1 한약 처방"},{"@type":"MedicalTherapy","name":"추나치료"},{"@type":"MedicalTherapy","name":"양자퀀텀 면역치료"},{"@type":"MedicalTherapy","name":"구안와사·안면마비 치료"},{"@type":"MedicalTherapy","name":"만성 편두통 치료"},{"@type":"MedicalTherapy","name":"대상포진후 신경통 치료"},{"@type":"MedicalTherapy","name":"천식·마이코플라즈마 치료"},{"@type":"MedicalTherapy","name":"궤양성대장염 치료"},{"@type":"MedicalTherapy","name":"소아성장 클리닉"},{"@type":"MedicalTherapy","name":"두통·어지럼증 치료"},{"@type":"MedicalTherapy","name":"이명·난청 치료"},{"@type":"MedicalTherapy","name":"불면증·만성피로 치료"},{"@type":"MedicalTherapy","name":"공황장애·우울증 치료"},{"@type":"MedicalTherapy","name":"자율신경실조 치료"},{"@type":"MedicalTherapy","name":"만성소화불량 치료"},{"@type":"MedicalTherapy","name":"역류성식도염 치료"},{"@type":"MedicalTherapy","name":"과민성대장증후군 치료"},{"@type":"MedicalTherapy","name":"만성변비·설사 치료"},{"@type":"MedicalTherapy","name":"췌장염 치료"},{"@type":"MedicalTherapy","name":"아토피 피부염 치료"},{"@type":"MedicalTherapy","name":"지루성피부염 치료"},{"@type":"MedicalTherapy","name":"두드러기·건선 치료"},{"@type":"MedicalTherapy","name":"비염·축농증 치료"},{"@type":"MedicalTherapy","name":"COPD·기관지확장증 치료"},{"@type":"MedicalTherapy","name":"허리디스크(추간판탈출증) 치료"},{"@type":"MedicalTherapy","name":"척추관협착증 치료"},{"@type":"MedicalTherapy","name":"무릎관절염 치료"},{"@type":"MedicalTherapy","name":"오십견·회전근개 치료"},{"@type":"MedicalTherapy","name":"생리통·생리불순 치료"},{"@type":"MedicalTherapy","name":"난임·계류유산 치료"},{"@type":"MedicalTherapy","name":"산후조리·산후보약"},{"@type":"MedicalTherapy","name":"갱년기증후군 치료"}],"hasMap":"https://map.naver.com","publicAccess":true,"priceRange":"$$","currenciesAccepted":"KRW","paymentAccepted":"현금, 카드, 의료보험","employee":{"@type":"Physician","name":"수정한의원 원장","jobTitle":"한의학박사 침구학 전공","description":"30년 8체질 임상경험, 한의학박사(침구학 전공), 대한 한의학회·암한의학회 정회원","hasCredential":["한의학박사","침구학 전공","대한한의학회 정회원","암한의학회 정회원"]},"sameAs":["https://www.8chejil-sujeong.com"]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"수정한의원","item":"https://www.8chejil-sujeong.com"},{"@type":"ListItem","position":2,"name":"특설클리닉","item":"https://www.8chejil-sujeong.com/clinic/special"}]},{"@type":"MedicalCondition","name":"구안와사·안면마비"},{"@type":"MedicalCondition","name":"만성 편두통"},{"@type":"MedicalCondition","name":"대상포진후 신경통"},{"@type":"MedicalCondition","name":"천식·마이코플라즈마"},{"@type":"MedicalCondition","name":"궤양성대장염"},{"@type":"MedicalCondition","name":"소아성장 클리닉"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"수정한의원","item":"https://www.8chejil-sujeong.com"},{"@type":"ListItem","position":2,"name":"특설클리닉","item":"https://www.8chejil-sujeong.com/clinic/special"}]},{"@type":"MedicalCondition","name":"구안와사·안면마비"},{"@type":"MedicalCondition","name":"만성 편두통"},{"@type":"MedicalCondition","name":"대상포진후 신경통"},{"@type":"MedicalCondition","name":"천식·마이코플라즈마"},{"@type":"MedicalCondition","name":"궤양성대장염"}]}</script>
 
   <link rel="icon" href="/favicon.ico"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -131,7 +131,6 @@ export const clinic_specialPage = `<!DOCTYPE html>
           <li><a href="/clinic/special#herpes">대상포진후 신경통</a></li>
           <li><a href="/clinic/special#asthma">천식·마이코플라즈마</a></li>
           <li><a href="/clinic/special#colitis">궤양성대장염</a></li>
-          <li><a href="/clinic/special#growth">소아성장</a></li>
         </ul>
       </li>
       <li class="has-sub">
@@ -174,12 +173,13 @@ export const clinic_specialPage = `<!DOCTYPE html>
         </ul>
       </li>
       <li class="has-sub">
-        <a href="/clinic/women">여성질환 <i class="fas fa-chevron-down fa-xs"></i></a>
+        <a href="/clinic/women">여성.소아 <i class="fas fa-chevron-down fa-xs"></i></a>
         <ul class="sub-menu">
           <li><a href="/clinic/women#menstrual">생리통·불순</a></li>
           <li><a href="/clinic/women#infertility">난임·계류유산</a></li>
           <li><a href="/clinic/women#postpartum">산후조리·보약</a></li>
           <li><a href="/clinic/women#menopause">갱년기증후군</a></li>
+          <li><a href="/clinic/women#growth">소아성장</a></li>
         </ul>
       </li>
       <li class="has-sub nav-content-item">
@@ -230,7 +230,6 @@ export const clinic_specialPage = `<!DOCTYPE html>
         <a href="/clinic/special#herpes">대상포진후 신경통</a>
         <a href="/clinic/special#asthma">천식·마이코플라즈마</a>
         <a href="/clinic/special#colitis">궤양성대장염</a>
-        <a href="/clinic/special#growth">소아성장</a>
       </div>
     </div>
     <div class="mob-menu-item mob-has-sub">
@@ -286,7 +285,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
     </div>
     <div class="mob-menu-item mob-has-sub">
       <button class="mob-menu-link mob-toggle-btn">
-        <span><i class="fas fa-venus"></i> 여성질환</span>
+        <span><i class="fas fa-venus"></i> 여성.소아</span>
         <i class="fas fa-chevron-down mob-arrow"></i>
       </button>
       <div class="mob-sub">
@@ -294,6 +293,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
         <a href="/clinic/women#infertility">난임·계류유산</a>
         <a href="/clinic/women#postpartum">산후조리·보약</a>
         <a href="/clinic/women#menopause">갱년기증후군</a>
+        <a href="/clinic/women#growth">소아성장</a>
       </div>
     </div>
     <div class="mob-menu-item mob-has-sub mob-content-item">
@@ -338,7 +338,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
       <p class="section-desc">수정한의원은 8체질의학을 기반으로 한 통합의학 치료를 통해,<br/>기존 치료로 호전이 어려웠던 만성·난치성 질환을 중심으로 진료해오고 있습니다</p>
     </div>
 
-    <!-- 6가지 질환 네비게이션 카드 -->
+    <!-- 5가지 질환 네비게이션 카드 -->
     <div class="sc-nav-grid">
       <a href="#facial" class="sc-nav-card">
         <div class="sc-nav-icon" style="background:linear-gradient(135deg,#c0392b,#e74c3c)">
@@ -379,14 +379,6 @@ export const clinic_specialPage = `<!DOCTYPE html>
         <div class="sc-nav-num">05</div>
         <div class="sc-nav-title">궤양성 대장염</div>
         <div class="sc-nav-key">체질 근본치료</div>
-      </a>
-      <a href="#growth" class="sc-nav-card">
-        <div class="sc-nav-icon" style="background:linear-gradient(135deg,#0a4a7c,#1a6bb0)">
-          <i class="fas fa-child-reaching"></i>
-        </div>
-        <div class="sc-nav-num">06</div>
-        <div class="sc-nav-title">소아성장</div>
-        <div class="sc-nav-key">초음파 성장판 검사</div>
       </a>
     </div>
 
@@ -1053,246 +1045,6 @@ export const clinic_specialPage = `<!DOCTYPE html>
 
     </div>
 
-      <!-- ===== 소아성장 ===== -->
-      <div class="special-disease-item" id="growth">
-        <div class="sdi-num">06</div>
-        <div class="sdi-content">
-        <div class="sdi-header">
-          <div class="sdi-icon"><i class="fas fa-child-reaching"></i></div>
-          <h3>소아성장</h3>
-        </div>
-        <div class="sdi-body">
-          <!-- Hero -->
-          <div class="auto-hero-box" style="background:linear-gradient(135deg,#0a2240 0%,#1a4a80 60%,#0a2a50 100%); margin-bottom:18px;">
-            <div class="auto-hero-main" style="font-size:1.1rem;"><strong style="color:#a8d8ff;">초음파 성장판 검사</strong> + <strong style="color:#a8d8ff;">정확한 8체질 진단</strong></div>
-            <div class="auto-hero-sub">수정한의원에서 아이의 남은 <strong style="color:#ffffff;">성장 잠재력</strong>을 키우세요</div>
-          </div>
-
-          <!-- Q1 -->
-          <div class="auto-q-block">
-            <div class="auto-q-title">
-              <span class="auto-qnum">Q1</span>
-              <span>우리 아이, 성장 클리닉이 필요한 신호는?</span>
-            </div>
-            <div class="auto-q-body">
-              <div class="auto-table-wrap">
-                <table class="auto-treat-table">
-                  <thead><tr><th>신호</th><th>설명</th></tr></thead>
-                  <tbody>
-                    <tr><td class="att-label">연간 성장 속도 4cm 미만</td><td>같은 학년에서 키 순서가 계속 뒤로 밀림</td></tr>
-                    <tr><td class="att-label">식욕 부진·편식</td><td>밥 한 공기 채우기 어려움, 영양 불균형</td></tr>
-                    <tr><td class="att-label">잦은 감기·비염·장염</td><td>면역 소모로 성장 에너지 전환 불가</td></tr>
-                    <tr><td class="att-label">수면 문제</td><td>밤 10시 이전 취침 어려움, 자주 깨기</td></tr>
-                    <tr><td class="att-label">소아 비만·성조숙증 조짐</td><td>체지방 과다 → 성호르몬 조기 분비 → 성장판 조기 폐쇄 위험</td></tr>
-                    <tr><td class="att-label">자세 불량·척추 측만</td><td>성장판에 가해지는 비대칭 하중으로 성장 방해</td></tr>
-                    <tr><td class="att-label">부모 키가 작거나 성장 속도 둔화</td><td>유전·환경 복합 요인 점검 필요</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Q2 -->
-          <div class="auto-q-block">
-            <div class="auto-q-title">
-              <span class="auto-qnum">Q2</span>
-              <span>성장판 초음파 검사란?</span>
-            </div>
-            <div class="auto-q-body">
-              <p>수정한의원은 초음파 영상 장비를 이용하여 성장기 아이들의 주요 성장뼈(요골·척골·대퇴골)의 골화 점수를 측정하여 뼈 나이를 분석하고, 1년 후 예상키와 최종 예상키를 예측해 드립니다.</p>
-              <div class="auto-table-wrap">
-                <table class="auto-treat-table">
-                  <thead><tr><th>항목</th><th>내용</th></tr></thead>
-                  <tbody>
-                    <tr><td class="att-label">검사 방법</td><td>비침습 초음파 — 방사선 노출 없이 골화 상태를 영상으로 확인</td></tr>
-                    <tr><td class="att-label">측정 지표</td><td>요골·척골·대퇴골 골화 점수, 뼈 나이(골연령)</td></tr>
-                    <tr><td class="att-label">성장 예측</td><td>골화 점수 + 체질 + 부모 키 데이터를 종합하여 1년 후 예상키 · 최종 예상 신장 산출</td></tr>
-                    <tr><td class="att-label">추적 관리</td><td>3‑6개월 주기 재검으로 치료 전후 골화 변화·성장 속도 비교</td></tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="auto-highlight-box" style="border-left-color:#2980b9; background:#e8f4fd; color:#1a3a52;">
-                X‑ray 골연령 측정과 달리 <strong style="color:#1a5c8a;">방사선이 전혀 없어</strong> 성장기 아이에게 안전하며, 반복 검사로 치료 효과를 객관적 수치로 추적할 수 있습니다.
-              </div>
-            </div>
-          </div>
-
-          <!-- Q3 -->
-          <div class="auto-q-block">
-            <div class="auto-q-title">
-              <span class="auto-qnum">Q3</span>
-              <span>키 성장, 왜 체질에 따라 다른가요?</span>
-            </div>
-            <div class="auto-q-body">
-              <div class="auto-table-wrap">
-                <table class="auto-treat-table">
-                  <thead><tr><th>체질</th><th>성장 특성</th><th>핵심 전략</th></tr></thead>
-                  <tbody>
-                    <tr>
-                      <td class="att-label">목양·목음</td>
-                      <td>간·담 과항진 → 면역 소모(잦은 감기·비염·아토피) → 성장 에너지 전환 부족</td>
-                      <td>면역 안정 + 폐·대장 보강</td>
-                    </tr>
-                    <tr>
-                      <td class="att-label">금양·금음</td>
-                      <td>간 약화 → 근건·인대 영양 부족 → 성장판 자극 불충분</td>
-                      <td>간 기능 보강 + 근골격 영양 지원</td>
-                    </tr>
-                    <tr>
-                      <td class="att-label">토양·토음</td>
-                      <td>위장·췌장 과항진 → 과식·비만 → 습열 축적 → 성조숙증·성장판 조기 폐쇄 위험</td>
-                      <td>식이 조절 + 습열 제거 + 체중 관리</td>
-                    </tr>
-                    <tr>
-                      <td class="att-label">수양·수음</td>
-                      <td>위장 냉·약 → 식욕·흡수 저하 → 체중 미달·영양 결핍</td>
-                      <td>소화기 보강 + 흡수력 증진</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="auto-highlight-box">
-                같은 '키가 작은 아이'라도 원인 장부가 다르기 때문에 체질에 맞지 않는 한약이나 식단은 <strong>오히려 역효과</strong>를 낼 수 있습니다.<br/>
-                특히 성장 한약은 장기 복용이 필요하므로, 반드시 <strong>정확한 체질 진단에 기반한 맞춤 한약</strong>이어야 합니다.
-              </div>
-            </div>
-          </div>
-
-          <!-- Q4 -->
-          <div class="auto-q-block auto-treatment">
-            <div class="auto-q-title auto-treat-title">
-              <span class="auto-qnum auto-qnum-green">Q4</span>
-              <span>수정한의원은 어떻게 치료하나요?</span>
-            </div>
-            <div class="auto-q-body">
-              <div class="auto-table-wrap">
-                <table class="auto-treat-table">
-                  <thead><tr><th>단계</th><th>내용</th></tr></thead>
-                  <tbody>
-                    <tr>
-                      <td class="att-label">① 정확한 8체질 진단</td>
-                      <td>30년·21,560건 데이터 기반 체질 확정 — 장부 강약·자율신경 유형 파악</td>
-                    </tr>
-                    <tr>
-                      <td class="att-label">② 체질 맞춤 성장 한약</td>
-                      <td>체질별 약화 장부 보강 + 성장호르몬(GH)·IGF‑1 분비 환경 개선</td>
-                    </tr>
-                    <tr>
-                      <td class="att-label">③ 초음파 성장판 검사</td>
-                      <td>요골·척골·대퇴골 골화 점수 측정, 뼈 나이 분석, 1년 후 예상키·최종 예상키 산출, 3‑6개월 주기 추적</td>
-                    </tr>
-                    <tr>
-                      <td class="att-label">④ 성장판 자극 침</td>
-                      <td>족삼리·양릉천·현종·삼음교 등 하지 경혈로 성장판 혈류·골세포 활성 촉진</td>
-                    </tr>
-                    <tr>
-                      <td class="att-label">⑤ 8체질 성장침</td>
-                      <td>체질별 장부 균형 회복, 자율신경·면역 안정으로 성장 환경 최적화</td>
-                    </tr>
-                    <tr>
-                      <td class="att-label">⑥ 성장 추나요법</td>
-                      <td>척추·골반 교정 — 성장판에 가해지는 비대칭 하중 제거, 척추 정렬 개선</td>
-                    </tr>
-                    <tr>
-                      <td class="att-label">⑦ 성장 약침요법</td>
-                      <td>한약 유효성분을 경혈에 주입 — 항염·성장판 미세 환경 개선</td>
-                    </tr>
-                    <tr>
-                      <td class="att-label">⑧ 양자돔 + 생활관리</td>
-                      <td>체질별 맞춤 식단표, 수면 루틴(밤 10시 이전 취침), 성장 스트레칭·운동 지도</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Q5 -->
-          <div class="auto-q-block">
-            <div class="auto-q-title">
-              <span class="auto-qnum">Q5</span>
-              <span>성장호르몬 주사와 무엇이 다른가요?</span>
-            </div>
-            <div class="auto-q-body">
-              <div class="auto-table-wrap">
-                <table class="auto-treat-table">
-                  <thead><tr><th>비교</th><th>성장호르몬 주사</th><th>수정한의원 8체질 성장 치료</th></tr></thead>
-                  <tbody>
-                    <tr><td class="att-label">적용 대상</td><td>GH 결핍 확진 아동</td><td>GH 정상이나 저신장인 대다수 아이</td></tr>
-                    <tr><td class="att-label">작용</td><td>외부 호르몬 직접 투여</td><td>소화·면역·수면·장부 환경 개선으로 자체 GH 분비 극대화</td></tr>
-                    <tr><td class="att-label">방사선</td><td>진단 시 X‑ray 골연령 촬영</td><td>초음파 — 방사선 0</td></tr>
-                    <tr><td class="att-label">체질 고려</td><td>없음</td><td>8체질별 원인 장부·식이·생활 맞춤</td></tr>
-                    <tr><td class="att-label">부작용</td><td>관절통·부종·혈당 변화 가능</td><td>한약·침 기반, 부작용 최소</td></tr>
-                    <tr><td class="att-label">병행</td><td colspan="2">주사 치료 중에도 체질 치료 병행 가능</td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
-          <!-- Q6 -->
-          <div class="auto-q-block">
-            <div class="auto-q-title">
-              <span class="auto-qnum">Q6</span>
-              <span>언제 시작하는 것이 가장 좋은가요?</span>
-            </div>
-            <div class="auto-q-body">
-              <p>성장판이 충분히 열려 있는 <strong>7‑10세(초등 저학년)</strong>가 최적의 시작 시점입니다. 다만 여아는 14‑16세, 남아는 16‑17세까지 성장판이 남아 있으므로 늦었다고 포기하기보다 <strong>초음파 검사로 현재 골화 점수와 뼈 나이를 먼저 확인</strong>하는 것이 중요합니다. 성조숙증 징후가 보이면 더 일찍(6‑8세) 개입이 필요합니다.</p>
-              <div class="auto-highlight-box" style="border-left-color:#2980b9; background:#e8f4fd; color:#1a3a52;">
-                <strong style="color:#1a5c8a;">최적 시작:</strong> 7‑10세 &nbsp;|&nbsp; <strong style="color:#1a5c8a;">여아 성장판:</strong> 14‑16세까지 &nbsp;|&nbsp; <strong style="color:#1a5c8a;">남아 성장판:</strong> 16‑17세까지
-              </div>
-            </div>
-          </div>
-
-          <!-- Q7 -->
-          <div class="auto-q-block">
-            <div class="auto-q-title">
-              <span class="auto-qnum">Q7</span>
-              <span>부모 체질 진단도 함께 하나요?</span>
-            </div>
-            <div class="auto-q-body">
-              <p>네. 아이의 식습관·수면·정서 환경은 가정에서 결정됩니다. 부모의 체질을 함께 파악하면 가정 식단·생활 리듬을 체질에 맞게 조정할 수 있어 치료 효과가 배가됩니다.</p>
-              <div class="auto-stat-box">
-                <span class="auto-stat-icon">📊</span>
-                <span>수정한의원은 <strong>21,560건 이상</strong>의 가족 체질 데이터를 보유하고 있습니다.</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Q8 -->
-          <div class="auto-q-block">
-            <div class="auto-q-title">
-              <span class="auto-qnum">Q8</span>
-              <span>양방 치료와 병행할 수 있나요?</span>
-            </div>
-            <div class="auto-q-body">
-              <div class="auto-highlight-box" style="border-left-color:#2e7d32; background:#f1f8f3;">
-                <strong style="color:#1a5c3a;">가능합니다.</strong><br/>
-                현재 성장호르몬 주사, 비만 관리, 아토피·비염 약물 치료를 받고 있어도 체질 치료는 병행 가능합니다. 내원 시 현재 치료 상황을 알려 주시면 통합 치료 계획을 세워 드립니다.
-              </div>
-            </div>
-          </div>
-
-          <!-- CTA -->
-          <div class="sdi-cta-box" style="margin-top:20px;">
-            <div class="sdi-cta-concerns">
-              <span>"우리 아이 키가 또래보다 작아요"</span>
-              <span>"밥을 너무 안 먹어요"</span>
-              <span>"감기를 달고 살아요"</span>
-              <span>"성조숙증이 걱정돼요"</span>
-              <span>"성장판이 얼마나 남았는지 궁금해요"</span>
-            </div>
-            <p class="sdi-cta-lead">초음파 성장판 검사 + 정확한 <strong>8체질 진단</strong>으로<br/>우리 아이의 남은 성장 잠재력을 수치로 확인하세요.</p>
-            <div class="asthma-cta-btns">
-              <a href="tel:02-932-3815" class="asthma-btn-primary"><i class="fas fa-comments"></i> 지금 바로 상담하기</a>
-              <a href="tel:02-932-3815" class="asthma-btn-secondary"><i class="fas fa-phone"></i> 전화 상담 02-932-3815</a>
-            </div>
-          </div>
-
-        </div>
-        </div><!-- /sdi-content -->
-      </div>
-      <!-- ===== /소아성장 ===== -->
 
     <div class="clinic-cta-box">
       <p>다른 병원에서 해결되지 않은 질환이라면<br/><strong>수정한의원 30년 임상경험과 8체질 진단으로 새로운 가능성을 찾아드립니다</strong></p>
@@ -1302,6 +1054,10 @@ export const clinic_specialPage = `<!DOCTYPE html>
 </section>
 
 </main>
+<script>
+  if (location.hash === '#growth') { location.replace('/clinic/women#growth'); }
+</script>
+
 
 <!-- 푸터 -->
 <footer id="footer">
@@ -1352,7 +1108,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
             <li><a href="/clinic/digestion">소화기</a></li>
             <li><a href="/clinic/skin">피부·호흡기</a></li>
             <li><a href="/clinic/spine">척추·관절</a></li>
-            <li><a href="/clinic/women">여성질환</a></li>
+            <li><a href="/clinic/women">여성.소아</a></li>
           </ul>
         </div>
         <div class="footer-col footer-contact-col">

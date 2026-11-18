@@ -48,7 +48,7 @@ export const homePage = `<!DOCTYPE html>
   <!-- Schema.org 구조화 데이터 (AI 검색 최적화) -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalClinic","name":"수정한의원","alternateName":["8체질 수정한의원","Sujeong Korean Medical Center","노원역한의원","노원구한의원"],"description":"1995년 개원, 30년 8체질 임상경험. 한의학박사(침구학 전공)가 직접 체질진단을 시행합니다. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추관협착증, 공황장애·불면증·이명, 난임·갱년기, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료 클리닉.","url":"https://www.8chejil-sujeong.com","logo":"https://www.8chejil-sujeong.com/static/logo.png","image":"https://www.8chejil-sujeong.com/static/og-image.jpg","telephone":"02-932-3815","foundingDate":"1995","address":{"@type":"PostalAddress","streetAddress":"동일로 1374 미산빌딩 6층","addressLocality":"노원구","addressRegion":"서울특별시","postalCode":"01769","addressCountry":"KR"},"geo":{"@type":"GeoCoordinates","latitude":"37.6554","longitude":"127.0567"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Friday"],"opens":"09:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday"],"opens":"09:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"16:00"}],"medicalSpecialty":["8체질의학","한방내과","침구과","추나의학","한방부인과","사상체질과"],"availableService":[{"@type":"MedicalTherapy","name":"8체질 맥진 진단","description":"30년 임상의 정확한 8체질 맥진 진단"},{"@type":"MedicalTherapy","name":"8체질 침치료"},{"@type":"MedicalTherapy","name":"체질 맞춤 1:1 한약 처방"},{"@type":"MedicalTherapy","name":"추나치료"},{"@type":"MedicalTherapy","name":"양자퀀텀 면역치료"},{"@type":"MedicalTherapy","name":"구안와사·안면마비 치료"},{"@type":"MedicalTherapy","name":"만성 편두통 치료"},{"@type":"MedicalTherapy","name":"대상포진후 신경통 치료"},{"@type":"MedicalTherapy","name":"천식·마이코플라즈마 치료"},{"@type":"MedicalTherapy","name":"궤양성대장염 치료"},{"@type":"MedicalTherapy","name":"소아성장 클리닉"},{"@type":"MedicalTherapy","name":"두통·어지럼증 치료"},{"@type":"MedicalTherapy","name":"이명·난청 치료"},{"@type":"MedicalTherapy","name":"불면증·만성피로 치료"},{"@type":"MedicalTherapy","name":"공황장애·우울증 치료"},{"@type":"MedicalTherapy","name":"자율신경실조 치료"},{"@type":"MedicalTherapy","name":"만성소화불량 치료"},{"@type":"MedicalTherapy","name":"역류성식도염 치료"},{"@type":"MedicalTherapy","name":"과민성대장증후군 치료"},{"@type":"MedicalTherapy","name":"만성변비·설사 치료"},{"@type":"MedicalTherapy","name":"췌장염 치료"},{"@type":"MedicalTherapy","name":"아토피 피부염 치료"},{"@type":"MedicalTherapy","name":"지루성피부염 치료"},{"@type":"MedicalTherapy","name":"두드러기·건선 치료"},{"@type":"MedicalTherapy","name":"비염·축농증 치료"},{"@type":"MedicalTherapy","name":"COPD·기관지확장증 치료"},{"@type":"MedicalTherapy","name":"허리디스크(추간판탈출증) 치료"},{"@type":"MedicalTherapy","name":"척추관협착증 치료"},{"@type":"MedicalTherapy","name":"무릎관절염 치료"},{"@type":"MedicalTherapy","name":"오십견·회전근개 치료"},{"@type":"MedicalTherapy","name":"생리통·생리불순 치료"},{"@type":"MedicalTherapy","name":"난임·계류유산 치료"},{"@type":"MedicalTherapy","name":"산후조리·산후보약"},{"@type":"MedicalTherapy","name":"갱년기증후군 치료"}],"hasMap":"https://map.naver.com","publicAccess":true,"priceRange":"$$","currenciesAccepted":"KRW","paymentAccepted":"현금, 카드, 의료보험","employee":{"@type":"Physician","name":"수정한의원 원장","jobTitle":"한의학박사 침구학 전공","description":"30년 8체질 임상경험, 한의학박사(침구학 전공), 대한 한의학회·암한의학회 정회원","hasCredential":["한의학박사","침구학 전공","대한한의학회 정회원","암한의학회 정회원"]},"sameAs":["https://www.8chejil-sujeong.com"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"수정한의원","item":"https://www.8chejil-sujeong.com"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"수정한의원은 어디에 있나요?","acceptedAnswer":{"@type":"Answer","text":"서울시 노원구 동일로 1374 미산빌딩 6층(우리은행 사거리 투썸플레이스 건물 6층)에 있습니다. 7호선 노원역 5번 출구에서 백병원 방향으로 약 300m입니다."}},{"@type":"Question","name":"진료시간과 전화번호는 어떻게 되나요?","acceptedAnswer":{"@type":"Answer","text":"월·화·금 09:00–19:00, 수요일 09:00–20:00(야간진료), 목요일 09:00–13:00, 토요일 09:00–16:00이며 일요일·공휴일은 휴진입니다. 점심시간은 13:00–14:00이고, 전화는 02-932-3815입니다."}},{"@type":"Question","name":"8체질 진단이란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"사람의 몸을 8가지 체질로 나누어 체질마다 강한 장기와 약한 장기가 다르다고 보는 진단·치료 방식입니다. 수정한의원은 원장이 직접 맥진으로 체질을 진단하고, 그 체질에 맞춰 침치료와 한약 처방을 진행합니다."}},{"@type":"Question","name":"수정한의원에서는 어떤 질환을 진료하나요?","acceptedAnswer":{"@type":"Answer","text":"구안와사·안면마비, 만성 편두통, 대상포진후 신경통, 천식, 궤양성대장염, 소아성장 같은 특설 클리닉과 함께 자율신경·뇌신경(두통·어지럼증·이명·불면증·공황장애), 소화기, 피부·호흡기(아토피·비염), 척추·관절(허리디스크·척추관협착증·무릎관절염·오십견), 여성질환(생리통·난임·산후조리·갱년기) 클리닉을 운영합니다."}},{"@type":"Question","name":"원장님은 어떤 분인가요?","acceptedAnswer":{"@type":"Answer","text":"한의학박사(침구학 전공)로 1995년 개원해 30년간 8체질 임상을 이어오고 있으며, 대한한의학회와 암한의학회 정회원입니다. 모든 환자를 원장이 직접 진료합니다."}},{"@type":"Question","name":"실제 치료 후기는 어디에서 볼 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"치료후기 페이지에서 환자분들의 자필 후기와 네이버 후기를 척추·관절, 다이어트, 뇌신경, 면역·대사, 여성질환, 만성 편두통, 천식, 피부, 구안와사 분류별로 볼 수 있습니다. 치료 결과는 개인마다 다를 수 있습니다."}},{"@type":"Question","name":"진료 예약은 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"전화(02-932-3815)로 문의하고 예약하실 수 있습니다. 홈페이지의 '전화 예약' 버튼을 누르면 바로 연결됩니다."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"수정한의원은 어디에 있나요?","acceptedAnswer":{"@type":"Answer","text":"서울시 노원구 동일로 1374 미산빌딩 6층(우리은행 사거리 투썸플레이스 건물 6층)에 있습니다. 7호선 노원역 5번 출구에서 백병원 방향으로 약 300m입니다."}},{"@type":"Question","name":"진료시간과 전화번호는 어떻게 되나요?","acceptedAnswer":{"@type":"Answer","text":"월·화·금 09:00–19:00, 수요일 09:00–20:00(야간진료), 목요일 09:00–13:00, 토요일 09:00–16:00이며 일요일·공휴일은 휴진입니다. 점심시간은 13:00–14:00이고, 전화는 02-932-3815입니다."}},{"@type":"Question","name":"8체질 진단이란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"사람의 몸을 8가지 체질로 나누어 체질마다 강한 장기와 약한 장기가 다르다고 보는 진단·치료 방식입니다. 수정한의원은 원장이 직접 맥진으로 체질을 진단하고, 그 체질에 맞춰 침치료와 한약 처방을 진행합니다."}},{"@type":"Question","name":"수정한의원에서는 어떤 질환을 진료하나요?","acceptedAnswer":{"@type":"Answer","text":"구안와사·안면마비, 만성 편두통, 대상포진후 신경통, 천식, 궤양성대장염 같은 특설 클리닉과 함께 자율신경·뇌신경(두통·어지럼증·이명·불면증·공황장애), 소화기, 피부·호흡기(아토피·비염), 척추·관절(허리디스크·척추관협착증·무릎관절염·오십견), 여성.소아(생리통·난임·산후조리·갱년기·소아성장) 클리닉을 운영합니다."}},{"@type":"Question","name":"원장님은 어떤 분인가요?","acceptedAnswer":{"@type":"Answer","text":"한의학박사(침구학 전공)로 1995년 개원해 30년간 8체질 임상을 이어오고 있으며, 대한한의학회와 암한의학회 정회원입니다. 모든 환자를 원장이 직접 진료합니다."}},{"@type":"Question","name":"실제 치료 후기는 어디에서 볼 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"치료후기 페이지에서 환자분들의 자필 후기와 네이버 후기를 척추·관절, 다이어트, 뇌신경, 면역·대사, 여성질환, 만성 편두통, 천식, 피부, 구안와사 분류별로 볼 수 있습니다. 치료 결과는 개인마다 다를 수 있습니다."}},{"@type":"Question","name":"진료 예약은 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"전화(02-932-3815)로 문의하고 예약하실 수 있습니다. 홈페이지의 '전화 예약' 버튼을 누르면 바로 연결됩니다."}}]}</script>
 
   <link rel="icon" href="/favicon.ico"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -132,7 +132,6 @@ export const homePage = `<!DOCTYPE html>
           <li><a href="/clinic/special#herpes">대상포진후 신경통</a></li>
           <li><a href="/clinic/special#asthma">천식·마이코플라즈마</a></li>
           <li><a href="/clinic/special#colitis">궤양성대장염</a></li>
-          <li><a href="/clinic/special#growth">소아성장</a></li>
         </ul>
       </li>
       <li class="has-sub">
@@ -175,12 +174,13 @@ export const homePage = `<!DOCTYPE html>
         </ul>
       </li>
       <li class="has-sub">
-        <a href="/clinic/women">여성질환 <i class="fas fa-chevron-down fa-xs"></i></a>
+        <a href="/clinic/women">여성.소아 <i class="fas fa-chevron-down fa-xs"></i></a>
         <ul class="sub-menu">
           <li><a href="/clinic/women#menstrual">생리통·불순</a></li>
           <li><a href="/clinic/women#infertility">난임·계류유산</a></li>
           <li><a href="/clinic/women#postpartum">산후조리·보약</a></li>
           <li><a href="/clinic/women#menopause">갱년기증후군</a></li>
+          <li><a href="/clinic/women#growth">소아성장</a></li>
         </ul>
       </li>
       <li class="has-sub nav-content-item">
@@ -231,7 +231,6 @@ export const homePage = `<!DOCTYPE html>
         <a href="/clinic/special#herpes">대상포진후 신경통</a>
         <a href="/clinic/special#asthma">천식·마이코플라즈마</a>
         <a href="/clinic/special#colitis">궤양성대장염</a>
-        <a href="/clinic/special#growth">소아성장</a>
       </div>
     </div>
     <div class="mob-menu-item mob-has-sub">
@@ -287,7 +286,7 @@ export const homePage = `<!DOCTYPE html>
     </div>
     <div class="mob-menu-item mob-has-sub">
       <button class="mob-menu-link mob-toggle-btn">
-        <span><i class="fas fa-venus"></i> 여성질환</span>
+        <span><i class="fas fa-venus"></i> 여성.소아</span>
         <i class="fas fa-chevron-down mob-arrow"></i>
       </button>
       <div class="mob-sub">
@@ -295,6 +294,7 @@ export const homePage = `<!DOCTYPE html>
         <a href="/clinic/women#infertility">난임·계류유산</a>
         <a href="/clinic/women#postpartum">산후조리·보약</a>
         <a href="/clinic/women#menopause">갱년기증후군</a>
+        <a href="/clinic/women#growth">소아성장</a>
       </div>
     </div>
     <div class="mob-menu-item mob-has-sub mob-content-item">
@@ -660,7 +660,7 @@ export const homePage = `<!DOCTYPE html>
       <a href="/clinic/special" class="clinic-card highlight">
         <div class="clinic-card-icon"><i class="fas fa-star"></i></div>
         <h3>특설 클리닉</h3>
-        <p><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">구안와사·안면마비</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">만성편두통·대상포진후 신경통</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">천식·마이코플라즈마</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">궤양성대장염·소아성장</h4></p>
+        <p><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">구안와사·안면마비</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">만성편두통·대상포진후 신경통</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">천식·마이코플라즈마</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">궤양성대장염</h4></p>
         <span class="clinic-tag">난치질환 중점진료</span>
       </a>
       <a href="/clinic/autonomic" class="clinic-card">
@@ -685,8 +685,8 @@ export const homePage = `<!DOCTYPE html>
       </a>
       <a href="/clinic/women" class="clinic-card">
         <div class="clinic-card-icon"><i class="fas fa-venus"></i></div>
-        <h3>여성질환</h3>
-        <p><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">생리통·생리불순</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">난임·습관성유산</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">산후조리</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">갱년기증후군</h4></p>
+        <h3>여성.소아</h3>
+        <p><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">생리통·생리불순</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">난임·습관성유산</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">산후조리</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">갱년기증후군</h4><br/><h4 style="margin:4px 0; font-size:0.95rem; font-weight:500; color:inherit; display:inline;">소아성장</h4></p>
       </a>
     </div>
   </div>
@@ -1024,7 +1024,7 @@ export const homePage = `<!DOCTYPE html>
       <details class="faq-item"><summary>수정한의원은 어디에 있나요?</summary><div class="faq-answer"><p>서울시 노원구 동일로 1374 미산빌딩 6층(우리은행 사거리 투썸플레이스 건물 6층)에 있습니다. 7호선 노원역 5번 출구에서 백병원 방향으로 약 300m입니다.</p></div></details>
       <details class="faq-item"><summary>진료시간과 전화번호는 어떻게 되나요?</summary><div class="faq-answer"><p>월·화·금 09:00–19:00, 수요일 09:00–20:00(야간진료), 목요일 09:00–13:00, 토요일 09:00–16:00이며 일요일·공휴일은 휴진입니다. 점심시간은 13:00–14:00이고, 전화는 02-932-3815입니다.</p></div></details>
       <details class="faq-item"><summary>8체질 진단이란 무엇인가요?</summary><div class="faq-answer"><p>사람의 몸을 8가지 체질로 나누어 체질마다 강한 장기와 약한 장기가 다르다고 보는 진단·치료 방식입니다. 수정한의원은 원장이 직접 맥진으로 체질을 진단하고, 그 체질에 맞춰 침치료와 한약 처방을 진행합니다.</p></div></details>
-      <details class="faq-item"><summary>수정한의원에서는 어떤 질환을 진료하나요?</summary><div class="faq-answer"><p>구안와사·안면마비, 만성 편두통, 대상포진후 신경통, 천식, 궤양성대장염, 소아성장 같은 특설 클리닉과 함께 자율신경·뇌신경(두통·어지럼증·이명·불면증·공황장애), 소화기, 피부·호흡기(아토피·비염), 척추·관절(허리디스크·척추관협착증·무릎관절염·오십견), 여성질환(생리통·난임·산후조리·갱년기) 클리닉을 운영합니다.</p></div></details>
+      <details class="faq-item"><summary>수정한의원에서는 어떤 질환을 진료하나요?</summary><div class="faq-answer"><p>구안와사·안면마비, 만성 편두통, 대상포진후 신경통, 천식, 궤양성대장염 같은 특설 클리닉과 함께 자율신경·뇌신경(두통·어지럼증·이명·불면증·공황장애), 소화기, 피부·호흡기(아토피·비염), 척추·관절(허리디스크·척추관협착증·무릎관절염·오십견), 여성.소아(생리통·난임·산후조리·갱년기·소아성장) 클리닉을 운영합니다.</p></div></details>
       <details class="faq-item"><summary>원장님은 어떤 분인가요?</summary><div class="faq-answer"><p>한의학박사(침구학 전공)로 1995년 개원해 30년간 8체질 임상을 이어오고 있으며, 대한한의학회와 암한의학회 정회원입니다. 모든 환자를 원장이 직접 진료합니다.</p></div></details>
       <details class="faq-item"><summary>실제 치료 후기는 어디에서 볼 수 있나요?</summary><div class="faq-answer"><p>치료후기 페이지에서 환자분들의 자필 후기와 네이버 후기를 척추·관절, 다이어트, 뇌신경, 면역·대사, 여성질환, 만성 편두통, 천식, 피부, 구안와사 분류별로 볼 수 있습니다. 치료 결과는 개인마다 다를 수 있습니다.</p></div></details>
       <details class="faq-item"><summary>진료 예약은 어떻게 하나요?</summary><div class="faq-answer"><p>전화(02-932-3815)로 문의하고 예약하실 수 있습니다. 홈페이지의 &#x27;전화 예약&#x27; 버튼을 누르면 바로 연결됩니다.</p></div></details>
@@ -1183,7 +1183,7 @@ export const homePage = `<!DOCTYPE html>
             <li><a href="/clinic/digestion">소화기</a></li>
             <li><a href="/clinic/skin">피부·호흡기</a></li>
             <li><a href="/clinic/spine">척추·관절</a></li>
-            <li><a href="/clinic/women">여성질환</a></li>
+            <li><a href="/clinic/women">여성.소아</a></li>
           </ul>
         </div>
         <div class="footer-col footer-contact-col">

@@ -131,7 +131,6 @@ export const introPage = `<!DOCTYPE html>
           <li><a href="/clinic/special#herpes">대상포진후 신경통</a></li>
           <li><a href="/clinic/special#asthma">천식·마이코플라즈마</a></li>
           <li><a href="/clinic/special#colitis">궤양성대장염</a></li>
-          <li><a href="/clinic/special#growth">소아성장</a></li>
         </ul>
       </li>
       <li class="has-sub">
@@ -174,12 +173,13 @@ export const introPage = `<!DOCTYPE html>
         </ul>
       </li>
       <li class="has-sub">
-        <a href="/clinic/women">여성질환 <i class="fas fa-chevron-down fa-xs"></i></a>
+        <a href="/clinic/women">여성.소아 <i class="fas fa-chevron-down fa-xs"></i></a>
         <ul class="sub-menu">
           <li><a href="/clinic/women#menstrual">생리통·불순</a></li>
           <li><a href="/clinic/women#infertility">난임·계류유산</a></li>
           <li><a href="/clinic/women#postpartum">산후조리·보약</a></li>
           <li><a href="/clinic/women#menopause">갱년기증후군</a></li>
+          <li><a href="/clinic/women#growth">소아성장</a></li>
         </ul>
       </li>
       <li class="has-sub nav-content-item">
@@ -230,7 +230,6 @@ export const introPage = `<!DOCTYPE html>
         <a href="/clinic/special#herpes">대상포진후 신경통</a>
         <a href="/clinic/special#asthma">천식·마이코플라즈마</a>
         <a href="/clinic/special#colitis">궤양성대장염</a>
-        <a href="/clinic/special#growth">소아성장</a>
       </div>
     </div>
     <div class="mob-menu-item mob-has-sub">
@@ -286,7 +285,7 @@ export const introPage = `<!DOCTYPE html>
     </div>
     <div class="mob-menu-item mob-has-sub">
       <button class="mob-menu-link mob-toggle-btn">
-        <span><i class="fas fa-venus"></i> 여성질환</span>
+        <span><i class="fas fa-venus"></i> 여성.소아</span>
         <i class="fas fa-chevron-down mob-arrow"></i>
       </button>
       <div class="mob-sub">
@@ -294,6 +293,7 @@ export const introPage = `<!DOCTYPE html>
         <a href="/clinic/women#infertility">난임·계류유산</a>
         <a href="/clinic/women#postpartum">산후조리·보약</a>
         <a href="/clinic/women#menopause">갱년기증후군</a>
+        <a href="/clinic/women#growth">소아성장</a>
       </div>
     </div>
     <div class="mob-menu-item mob-has-sub mob-content-item">
@@ -805,7 +805,7 @@ export const introPage = `<!DOCTYPE html>
             <li><a href="/clinic/digestion">소화기</a></li>
             <li><a href="/clinic/skin">피부·호흡기</a></li>
             <li><a href="/clinic/spine">척추·관절</a></li>
-            <li><a href="/clinic/women">여성질환</a></li>
+            <li><a href="/clinic/women">여성.소아</a></li>
           </ul>
         </div>
         <div class="footer-col footer-contact-col">
