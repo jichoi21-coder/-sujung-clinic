@@ -849,7 +849,7 @@ export function specialClinicPage(): string {
                   <tbody>
                     <tr>
                       <td class="att-label">① 정확한 8체질 진단</td>
-                      <td>30년·21,560건 데이터 기반 체질 확정 — 장부 강약·자율신경 유형 파악</td>
+                      <td>30년·23,125건 데이터 기반 체질 확정 — 장부 강약·자율신경 유형 파악</td>
                     </tr>
                     <tr>
                       <td class="att-label">② 체질 맞춤 성장 한약</td>
@@ -932,7 +932,7 @@ export function specialClinicPage(): string {
               <p>네. 아이의 식습관·수면·정서 환경은 가정에서 결정됩니다. 부모의 체질을 함께 파악하면 가정 식단·생활 리듬을 체질에 맞게 조정할 수 있어 치료 효과가 배가됩니다.</p>
               <div class="auto-stat-box">
                 <span class="auto-stat-icon">📊</span>
-                <span>수정한의원은 <strong>21,560건 이상</strong>의 가족 체질 데이터를 보유하고 있습니다.</span>
+                <span>수정한의원은 <strong>23,125건 이상</strong>의 가족 체질 데이터를 보유하고 있습니다.</span>
               </div>
             </div>
           </div>

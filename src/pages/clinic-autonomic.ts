@@ -413,7 +413,7 @@ export const clinic_autonomicPage = `<!DOCTYPE html>
               <tbody>
                 <tr>
                   <td class="att-label"><i class="fas fa-search"></i> 8체질 정밀 진단</td>
-                  <td>30년·21,560건 이상의 데이터 기반 체질 확정 → 교감·부교감 불균형의 체질적 원인 파악</td>
+                  <td>30년·23,125건 이상의 데이터 기반 체질 확정 → 교감·부교감 불균형의 체질적 원인 파악</td>
                 </tr>
                 <tr>
                   <td class="att-label"><i class="fas fa-acupuncture-person"></i> 8체질 침 치료</td>
@@ -476,7 +476,7 @@ export const clinic_autonomicPage = `<!DOCTYPE html>
           </div>
           <div class="auto-stat-box">
             <span class="auto-stat-icon">📊</span>
-            <span>수정한의원은 한의학박사(침구학 전공)의 <strong>30년 임상</strong>과 <strong>21,560건 이상</strong>의 체질 진단 데이터를 통해 8체질을 정밀 확정하고, 그 체질에 맞는 침·한약·구조 교정·생활 관리를 설계합니다.</span>
+            <span>수정한의원은 한의학박사(침구학 전공)의 <strong>30년 임상</strong>과 <strong>23,125건 이상</strong>의 체질 진단 데이터를 통해 8체질을 정밀 확정하고, 그 체질에 맞는 침·한약·구조 교정·생활 관리를 설계합니다.</span>
           </div>
         </div>
       </div>

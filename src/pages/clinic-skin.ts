@@ -459,7 +459,7 @@ export const clinic_skinPage = `<!DOCTYPE html>
               <tbody>
                 <tr>
                   <td class="att-label"><i class="fas fa-search"></i> 8체질 정밀 진단</td>
-                  <td>30년·21,560건 데이터 기반 체질 확정 → 면역 과잉/저하의 체질적 근본 원인 파악</td>
+                  <td>30년·23,125건 데이터 기반 체질 확정 → 면역 과잉/저하의 체질적 근본 원인 파악</td>
                 </tr>
                 <tr>
                   <td class="att-label"><i class="fas fa-bone"></i> 경추 1‑2 교정 추나요법</td>

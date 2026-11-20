@@ -457,7 +457,7 @@ export const clinic_spinePage = `<!DOCTYPE html>
               <tbody>
                 <tr>
                   <td class="att-label"><i class="fas fa-search"></i> 정확한 8체질 진단</td>
-                  <td>30년·21,560건 데이터 기반 체질 확정 → 염증 패턴·회복력·재발 위험의 체질적 원인 파악</td>
+                  <td>30년·23,125건 데이터 기반 체질 확정 → 염증 패턴·회복력·재발 위험의 체질적 원인 파악</td>
                 </tr>
                 <tr>
                   <td class="att-label"><i class="fas fa-leaf"></i> 체질 맞춤 한약</td>

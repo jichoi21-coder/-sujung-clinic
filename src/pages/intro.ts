@@ -388,9 +388,9 @@ export const introPage = `<!DOCTYPE html>
 
         <div class="greeting-closing">
           <div class="greeting-icon"><i class="fas fa-heart"></i></div>
-          <h3>30년 임상, 21,560건 — 숫자가 말하는 신뢰</h3>
+          <h3>30년 임상, 23,125건 — 숫자가 말하는 신뢰</h3>
           <p>병을 치료하는 데 있어 가장 중요한 것은 <strong>환자의 몸과 마음을 함께 살피는 것</strong>이라 생각합니다.</p>
-          <p>1995년 개원 이래 쌓아온 <strong>21,560건 이상의 8체질 진단 임상 데이터</strong>를 바탕으로, 체질에 맞는 정확한 치료는 삶의 질을 바꾸어 줍니다.</p>
+          <p>1995년 개원 이래 쌓아온 <strong>23,125건 이상의 8체질 진단 임상 데이터</strong>를 바탕으로, 체질에 맞는 정확한 치료는 삶의 질을 바꾸어 줍니다.</p>
           <p>지금 아픔을 겪고 계시다면, 혼자 고민하지 마시고 <strong>30년 임상의 수정한의원과 함께하십시오.</strong></p>
           <blockquote class="greeting-quote">
             정확한 체질 진단과 통합적 한방치료,<br/>
@@ -440,17 +440,17 @@ export const introPage = `<!DOCTYPE html>
     <!-- 통계 박스 (가로) -->
     <div class="diag-stats-row profile-stats">
       <div class="diag-stat-block">
-        <div class="diag-stat-num" data-target="30" data-suffix="년">0</div>
+        <div class="diag-stat-num" data-target="32" data-suffix="년">0</div>
         <div class="diag-stat-label">8체질 임상경험</div>
       </div>
       <div class="diag-stat-divider"></div>
       <div class="diag-stat-block">
-        <div class="diag-stat-num" data-target="21560" data-suffix="+">0</div>
+        <div class="diag-stat-num" data-target="23125" data-suffix="+">0</div>
         <div class="diag-stat-label">체질진단검사 누적 건수</div>
       </div>
       <div class="diag-stat-divider"></div>
       <div class="diag-stat-block">
-        <div class="diag-stat-num" data-target="73" data-suffix="%">0</div>
+        <div class="diag-stat-num" data-target="78" data-suffix="%">0</div>
         <div class="diag-stat-label">가족맞춤 체질진단</div>
       </div>
     </div>

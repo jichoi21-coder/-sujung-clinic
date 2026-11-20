@@ -435,8 +435,8 @@ export const homePage = `<!DOCTYPE html>
           <div class="pos-point">
             <div class="pp-icon green"><i class="fas fa-check"></i></div>
             <div>
-              <strong>구안와사·디스크·아토피·공황장애 — 21,560건 임상 데이터</strong>
-              <p>1995년 개원 이래 30년간 쌓은 21,560건 이상의 체질 진단 임상 데이터를 바탕으로, 구안와사·허리디스크·아토피·공황장애 등 각 질환별 체질 치료 효과를 검증해 왔습니다.</p>
+              <strong>구안와사·디스크·아토피·공황장애 — 23,125건 임상 데이터</strong>
+              <p>1995년 개원 이래 30년간 쌓은 23,125건 이상의 체질 진단 임상 데이터를 바탕으로, 구안와사·허리디스크·아토피·공황장애 등 각 질환별 체질 치료 효과를 검증해 왔습니다.</p>
             </div>
           </div>
         </div>
@@ -455,7 +455,7 @@ export const homePage = `<!DOCTYPE html>
     <!-- 블록 1: 20,000건 이상의 숙련된 체질진단 -->
     <div class="stats-block">
       <div class="stats-text-col">
-        <h2 class="stats-title">21,560건 이상 축척된<br/>정확한 체질진단</h2>
+        <h2 class="stats-title">23,125건 이상 축척된<br/>정확한 체질진단</h2>
         <div class="stats-divider"></div>
         <div class="stats-body">
           <p>지난 30년간</p>
@@ -466,7 +466,7 @@ export const homePage = `<!DOCTYPE html>
         </div>
       </div>
       <div class="stats-num-col">
-        <div class="stats-number" data-target="21560" data-suffix="+">0</div>
+        <div class="stats-number" data-target="23125" data-suffix="+">0</div>
         <div class="stats-label">체질진단검사</div>
       </div>
     </div>
@@ -487,7 +487,7 @@ export const homePage = `<!DOCTYPE html>
         </div>
       </div>
       <div class="stats-num-col">
-        <div class="stats-number" data-target="73" data-suffix="%">0</div>
+        <div class="stats-number" data-target="78" data-suffix="%">0</div>
         <div class="stats-label">가족맞춤 체질진단</div>
       </div>
     </div>

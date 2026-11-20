@@ -615,17 +615,17 @@ export const eight_constitutionPage = `<!DOCTYPE html>
     <!-- 카운팅 통계 -->
     <div class="diag-stats-row">
       <div class="diag-stat-block">
-        <div class="diag-stat-num" data-target="21560" data-suffix="+">0</div>
+        <div class="diag-stat-num" data-target="23125" data-suffix="+">0</div>
         <div class="diag-stat-label">체질진단검사 누적 건수</div>
       </div>
       <div class="diag-stat-divider"></div>
       <div class="diag-stat-block">
-        <div class="diag-stat-num" data-target="30" data-suffix="년">0</div>
+        <div class="diag-stat-num" data-target="32" data-suffix="년">0</div>
         <div class="diag-stat-label">8체질 임상경험</div>
       </div>
       <div class="diag-stat-divider"></div>
       <div class="diag-stat-block">
-        <div class="diag-stat-num" data-target="73" data-suffix="%">0</div>
+        <div class="diag-stat-num" data-target="78" data-suffix="%">0</div>
         <div class="diag-stat-label">가족맞춤 체질진단</div>
       </div>
     </div>
