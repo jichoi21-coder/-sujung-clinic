@@ -388,7 +388,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
         </div>
         <div class="sc-nav-num">06</div>
         <div class="sc-nav-title">신부전</div>
-        <div class="sc-nav-key">신기능 보존 관리</div>
+        <div class="sc-nav-key">신기능 보존·빔레이 파동요법</div>
       </a>
     </div>
 
@@ -1181,10 +1181,15 @@ export const clinic_specialPage = `<!DOCTYPE html>
                     <tbody>
                     <tr><td class="att-label">8체질 진단</td><td>체질별 신장 취약 양상 파악, 치료 방향 설정</td></tr>
                     <tr><td class="att-label">8체질 침 치료</td><td>장부 균형 회복, 부종·피로 등 동반 증상 완화</td></tr>
+                    <tr><td class="att-label"><i class="fas fa-wave-square"></i> 빔레이 파동요법</td><td>저에너지 전자기장 파동으로 순환·컨디션 회복 보조, 8체질 치료 효과 지원</td></tr>
                     <tr><td class="att-label">체질 맞춤 한약</td><td>남아 있는 신기능 보존, 체력·면역 회복</td></tr>
                     <tr><td class="att-label">생활관리</td><td>전신 컨디션 회복, 체질별 식이·염분·수분 지도</td></tr>
                     </tbody>
                   </table>
+                </div>
+                <div class="auto-highlight-box">
+                  <strong>빔레이 파동요법은 8체질 치료에 더하는 보조 축입니다.</strong><br/>
+                  로열 레이몬드 라이프(Royal Raymond Rife)의 이론에 기반한 비침습 저에너지 전자기장 요법으로, 신장 기능을 대신하는 치료가 아니라 침·한약과 함께 몸의 순환과 컨디션을 끌어올리는 데 씁니다.
                 </div>
                 <div class="auto-flow-box"><strong>치료 목표는 두 가지입니다.</strong><br/>① 남아 있는 신기능을 지키며 악화 속도를 늦추는 것<br/>② 피로·입맛 저하·부종 같은 동반 불편을 줄여 일상을 유지하게 하는 것</div>
                 <div class="auto-stat-box">
