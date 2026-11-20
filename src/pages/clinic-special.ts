@@ -1094,10 +1094,34 @@ export const clinic_specialPage = `<!DOCTYPE html>
               </div>
               <div class="auto-q-body">
                 <p>병기는 사구체여과율(eGFR) 수치로 나눕니다. 병기마다 해야 할 일이 다르고, 같은 "신부전"이라도 3기와 5기에서 목표는 같지 않습니다.</p>
-                <figure class="kidney-egfr-figure" style="margin:16px 0;">
-                  <img src="/static/kidney-egfr-stages.jpg" alt="신장 기능, 이렇게 읽습니다 - 사구체여과율(eGFR) 기준 만성콩팥병 1기~5기 병기와 크레아티닌·eGFR·소변 알부민-크레아티닌비(ACR) 읽는 법" width="1024" height="614" loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid #d6e4ea;" />
-                  <figcaption style="font-size:0.85rem;color:#6b7c85;margin-top:6px;">사구체여과율(eGFR) 기준 만성콩팥병 병기 (단위: mL/min/1.73㎡). 일반적인 정보이며 개인의 진단·치료 결과를 의미하지 않습니다.</figcaption>
-                </figure>
+                <p style="margin-top:14px;"><strong>신장 기능, 이렇게 읽습니다 - 사구체여과율(eGFR) 기준 만성콩팥병 병기</strong> (eGFR이 높을수록 신장 기능이 좋고, 낮을수록 기능이 떨어집니다. 단위: mL/min/1.73㎡)</p>
+                <div class="auto-table-wrap">
+                  <table class="auto-treat-table" id="kidney-egfr-stage-table">
+                    <caption style="caption-side:top;text-align:left;font-size:0.85rem;color:#6b7c85;padding-bottom:6px;">사구체여과율(eGFR) 기준 만성콩팥병 병기 1기~5기</caption>
+                    <thead><tr><th>병기</th><th>eGFR (mL/min/1.73㎡)</th><th>신장 기능 상태</th></tr></thead>
+                    <tbody>
+                    <tr><td class="att-label">1기</td><td>90 이상</td><td>정상 범위. 소변검사 등에서 손상 징후가 있는지 확인</td></tr>
+                    <tr><td class="att-label">2기</td><td>60~89</td><td>경미한 감소</td></tr>
+                    <tr><td class="att-label">3a기</td><td>45~59</td><td>경도~중등도 감소</td></tr>
+                    <tr><td class="att-label">3b기</td><td>30~44</td><td>중등도~중증 감소</td></tr>
+                    <tr><td class="att-label">4기</td><td>15~29</td><td>중증 감소</td></tr>
+                    <tr><td class="att-label">5기</td><td>15 미만</td><td>신부전</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p style="margin-top:14px;"><strong>수치 읽는 법</strong></p>
+                <div class="auto-table-wrap">
+                  <table class="auto-treat-table" id="kidney-lab-guide-table">
+                    <thead><tr><th>검사 항목</th><th>의미</th></tr></thead>
+                    <tbody>
+                    <tr><td class="att-label">크레아티닌</td><td>근육량·나이·성별에 따라 값이 달라져, 이 수치 하나만으로는 판단하기 어렵습니다.</td></tr>
+                    <tr><td class="att-label">eGFR</td><td>크레아티닌에 나이·성별을 반영해, 신장이 노폐물을 걸러내는 능력을 계산한 값입니다.</td></tr>
+                    <tr><td class="att-label">소변 알부민-크레아티닌비(ACR)</td><td>소변으로 새는 단백(알부민)의 비율로, 신장 손상 정도를 함께 확인합니다.</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p style="margin-top:10px;font-size:0.9rem;color:#6b7c85;">이상 소견이 3개월 이상 이어질 때 만성으로 판단합니다. 일반적인 정보이며 개인의 진단·치료 결과를 의미하지 않습니다.</p>
+                <p style="margin-top:14px;"><strong>병기별로 달라지는 목표와 관리</strong></p>
                 <div class="auto-table-wrap">
                   <table class="auto-treat-table">
                     <thead><tr><th>병기</th><th>이 시기의 목표</th><th>관리 포인트</th><th>주의할 점</th></tr></thead>
@@ -1112,10 +1136,6 @@ export const clinic_specialPage = `<!DOCTYPE html>
                 <div class="auto-highlight-box">
                   <strong>📊 3기(3a·3b)는 조직이 완전히 굳기 전이라 악화 속도를 늦추는 데 가장 유리한 구간입니다.</strong><br/>
                   증상이 뚜렷하지 않아 "나중에 다시 오겠다"는 말이 가장 많이 나오는 시기이기도 합니다.
-                </div>
-                <div class="auto-highlight-box" style="border-left-color:#d68910; background:#fff8e1; color:#5a4310;">
-                  <strong>⚠️ 크레아티닌은 근육량·나이·성별에 따라 기준이 달라 같은 값도 해석이 다릅니다.</strong><br/>
-                  그래서 eGFR과 함께 소변으로 빠져나가는 알부민 비율(ACR)을 같이 보고, 이런 이상이 석 달 이상 되풀이될 때 만성으로 판단합니다.
                 </div>
               </div>
             </div>
