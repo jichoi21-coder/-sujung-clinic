@@ -1093,19 +1093,24 @@ export const clinic_specialPage = `<!DOCTYPE html>
                 <span>병기는 어떻게 나누고, 어디서 달라지나요?</span>
               </div>
               <div class="auto-q-body">
-                <p>병기마다 해야 할 일이 다릅니다. 같은 "신부전"이라도 3기와 5기에서 목표는 같지 않습니다.</p>
+                <p>병기는 사구체여과율(eGFR) 수치로 나눕니다. 병기마다 해야 할 일이 다르고, 같은 "신부전"이라도 3기와 5기에서 목표는 같지 않습니다.</p>
+                <figure class="kidney-egfr-figure" style="margin:16px 0;">
+                  <img src="/static/kidney-egfr-stages.jpg" alt="신장 기능, 이렇게 읽습니다 - 사구체여과율(eGFR) 기준 만성콩팥병 1기~5기 병기와 크레아티닌·eGFR·소변 알부민-크레아티닌비(ACR) 읽는 법" width="1024" height="614" loading="lazy" style="width:100%;height:auto;border-radius:12px;border:1px solid #d6e4ea;" />
+                  <figcaption style="font-size:0.85rem;color:#6b7c85;margin-top:6px;">사구체여과율(eGFR) 기준 만성콩팥병 병기 (단위: mL/min/1.73㎡). 일반적인 정보이며 개인의 진단·치료 결과를 의미하지 않습니다.</figcaption>
+                </figure>
                 <div class="auto-table-wrap">
                   <table class="auto-treat-table">
                     <thead><tr><th>병기</th><th>이 시기의 목표</th><th>관리 포인트</th><th>주의할 점</th></tr></thead>
                     <tbody>
-                    <tr><td class="att-label">3기 (eGFR 30~60)</td><td>악화 속도 늦추기</td><td>혈압·혈당 안정, 정기 혈액·소변검사</td><td>증상이 없다고 관리 중단</td></tr>
-                    <tr><td class="att-label">4기 (eGFR 15~30)</td><td>잔여 기능 보존</td><td>단백질·칼륨·인 조정, 빈혈·부종 관리</td><td>검사 없이 식단만 조정</td></tr>
+                    <tr><td class="att-label">3a기 (eGFR 45~59)</td><td>악화 속도 늦추기</td><td>혈압·혈당 안정, 정기 혈액·소변검사</td><td>증상이 없다고 관리 중단</td></tr>
+                    <tr><td class="att-label">3b기 (eGFR 30~44)</td><td>악화 속도 늦추기, 합병증 예방</td><td>혈압·혈당 안정, 빈혈·부종 점검, 식단 조정 시작</td><td>수치가 유지된다고 검사 간격을 늘리는 것</td></tr>
+                    <tr><td class="att-label">4기 (eGFR 15~29)</td><td>잔여 기능 보존</td><td>단백질·칼륨·인 조정, 빈혈·부종 관리</td><td>검사 없이 식단만 조정</td></tr>
                     <tr><td class="att-label">5기 (eGFR 15 미만)</td><td>투석·이식 준비와 병행 관리</td><td>혈관 상태·영양·체력 유지</td><td>단념하고 관리를 놓는 것</td></tr>
                     </tbody>
                   </table>
                 </div>
                 <div class="auto-highlight-box">
-                  <strong>📊 3기는 조직이 완전히 굳기 전이라 악화 속도를 늦추는 데 가장 유리한 구간입니다.</strong><br/>
+                  <strong>📊 3기(3a·3b)는 조직이 완전히 굳기 전이라 악화 속도를 늦추는 데 가장 유리한 구간입니다.</strong><br/>
                   증상이 뚜렷하지 않아 "나중에 다시 오겠다"는 말이 가장 많이 나오는 시기이기도 합니다.
                 </div>
                 <div class="auto-highlight-box" style="border-left-color:#d68910; background:#fff8e1; color:#5a4310;">
