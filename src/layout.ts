@@ -50,6 +50,7 @@ export function layout(content: string, pageTitle?: string, pageDesc?: string, r
       { "@type": "MedicalTherapy", "name": "천식·마이코플라즈마 치료" },
       { "@type": "MedicalTherapy", "name": "궤양성대장염 치료" },
       { "@type": "MedicalTherapy", "name": "소아성장 클리닉" },
+      { "@type": "MedicalTherapy", "name": "신부전·만성콩팥병 치료" },
       { "@type": "MedicalTherapy", "name": "두통·어지럼증 치료" },
       { "@type": "MedicalTherapy", "name": "이명·난청 치료" },
       { "@type": "MedicalTherapy", "name": "불면증·만성피로 치료" },
@@ -210,6 +211,7 @@ export function layout(content: string, pageTitle?: string, pageDesc?: string, r
           <li><a href="/clinic/special#herpes">대상포진후 신경통</a></li>
           <li><a href="/clinic/special#asthma">천식·마이코플라즈마</a></li>
           <li><a href="/clinic/special#colitis">궤양성대장염</a></li>
+          <li><a href="/clinic/special#kidney">신부전</a></li>
         </ul>
       </li>
       <li class="has-sub">
@@ -309,6 +311,7 @@ export function layout(content: string, pageTitle?: string, pageDesc?: string, r
         <a href="/clinic/special#herpes">대상포진후 신경통</a>
         <a href="/clinic/special#asthma">천식·마이코플라즈마</a>
         <a href="/clinic/special#colitis">궤양성대장염</a>
+        <a href="/clinic/special#kidney">신부전</a>
       </div>
     </div>
     <div class="mob-menu-item mob-has-sub">

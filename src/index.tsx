@@ -340,7 +340,7 @@ app.get('/llms.txt', (c) => {
     '',
     '## 주요 진료 클리닉',
     '',
-    '- [특설 클리닉](https://www.8chejil-sujeong.com/clinic/special): 구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염',
+    '- [특설 클리닉](https://www.8chejil-sujeong.com/clinic/special): 구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염, 신부전(만성콩팥병)',
     '- [자율신경·뇌신경 클리닉](https://www.8chejil-sujeong.com/clinic/autonomic): 두통·편두통, 어지럼증·이명·난청, 불면증·만성피로, 우울증·공황장애',
     '- [소화기 클리닉](https://www.8chejil-sujeong.com/clinic/digestion): 만성소화불량, 역류성식도염, 과민성대장증후군, 만성변비·설사·췌장염',
     '- [피부·호흡기 클리닉](https://www.8chejil-sujeong.com/clinic/skin): 아토피 피부염, 지루성피부염, 두드러기·건선, 비염·축농증, COPD·기관지확장증',

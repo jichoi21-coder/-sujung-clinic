@@ -3,8 +3,8 @@ export const clinic_specialPage = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식 – 수정한의원</title>
-  <meta name="description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
+  <title>특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식·신부전 – 수정한의원</title>
+  <meta name="description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염, 신부전 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
 
   <!-- Google Search Console 소유권 확인 -->
   <meta name="google-site-verification" content="M8jXlZzYhHDmLfmeZp3Bz0Nx8U-A1rqtZGQVAwC1zTw" />
@@ -21,15 +21,15 @@ export const clinic_specialPage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 노원대상포진후신경통, 노원마이코플라즈마, 상계동대상포진, 노원특수클리닉, 노원면역질환, 8체질특수치료, 노원난치병한의원"/>
+  <meta name="keywords" content="수정한의원, 노원대상포진후신경통, 노원마이코플라즈마, 노원신부전한의원, 만성콩팥병, 상계동대상포진, 노원특수클리닉, 노원면역질환, 8체질특수치료, 노원난치병한의원"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>
   <link rel="canonical" href="https://www.8chejil-sujeong.com/clinic/special"/>
 
   <!-- Open Graph -->
-  <meta property="og:title" content="특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식 – 수정한의원"/>
-  <meta property="og:description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
+  <meta property="og:title" content="특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식·신부전 – 수정한의원"/>
+  <meta property="og:description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염, 신부전 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://www.8chejil-sujeong.com/static/og-image.jpg"/>
   <meta property="og:image:width" content="1200"/>
@@ -41,13 +41,13 @@ export const clinic_specialPage = `<!DOCTYPE html>
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식 – 수정한의원"/>
-  <meta name="twitter:description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
+  <meta name="twitter:title" content="특설클리닉 | 구안와사·안면마비·편두통·대상포진후신경통·천식·신부전 – 수정한의원"/>
+  <meta name="twitter:description" content="구안와사·안면마비, 만성편두통, 대상포진후 신경통, 천식·마이코플라즈마, 궤양성대장염, 신부전 클리닉. 난치·희귀 질환도 8체질로 근본 원인부터 치료. 노원구 한의원."/>
   <meta name="twitter:image" content="https://www.8chejil-sujeong.com/static/og-image.jpg"/>
 
   <!-- Schema.org 구조화 데이터 (AI 검색 최적화) -->
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalClinic","name":"수정한의원","alternateName":["8체질 수정한의원","Sujeong Korean Medical Center","노원역한의원","노원구한의원"],"description":"1995년 개원, 30년 8체질 임상경험. 한의학박사(침구학 전공)가 직접 체질진단을 시행합니다. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추관협착증, 공황장애·불면증·이명, 난임·갱년기, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료 클리닉.","url":"https://www.8chejil-sujeong.com","logo":"https://www.8chejil-sujeong.com/static/logo.png","image":"https://www.8chejil-sujeong.com/static/og-image.jpg","telephone":"02-932-3815","foundingDate":"1995","address":{"@type":"PostalAddress","streetAddress":"동일로 1374 미산빌딩 6층","addressLocality":"노원구","addressRegion":"서울특별시","postalCode":"01769","addressCountry":"KR"},"geo":{"@type":"GeoCoordinates","latitude":"37.6554","longitude":"127.0567"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Friday"],"opens":"09:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday"],"opens":"09:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"16:00"}],"medicalSpecialty":["8체질의학","한방내과","침구과","추나의학","한방부인과","사상체질과"],"availableService":[{"@type":"MedicalTherapy","name":"8체질 맥진 진단","description":"30년 임상의 정확한 8체질 맥진 진단"},{"@type":"MedicalTherapy","name":"8체질 침치료"},{"@type":"MedicalTherapy","name":"체질 맞춤 1:1 한약 처방"},{"@type":"MedicalTherapy","name":"추나치료"},{"@type":"MedicalTherapy","name":"양자퀀텀 면역치료"},{"@type":"MedicalTherapy","name":"구안와사·안면마비 치료"},{"@type":"MedicalTherapy","name":"만성 편두통 치료"},{"@type":"MedicalTherapy","name":"대상포진후 신경통 치료"},{"@type":"MedicalTherapy","name":"천식·마이코플라즈마 치료"},{"@type":"MedicalTherapy","name":"궤양성대장염 치료"},{"@type":"MedicalTherapy","name":"소아성장 클리닉"},{"@type":"MedicalTherapy","name":"두통·어지럼증 치료"},{"@type":"MedicalTherapy","name":"이명·난청 치료"},{"@type":"MedicalTherapy","name":"불면증·만성피로 치료"},{"@type":"MedicalTherapy","name":"공황장애·우울증 치료"},{"@type":"MedicalTherapy","name":"자율신경실조 치료"},{"@type":"MedicalTherapy","name":"만성소화불량 치료"},{"@type":"MedicalTherapy","name":"역류성식도염 치료"},{"@type":"MedicalTherapy","name":"과민성대장증후군 치료"},{"@type":"MedicalTherapy","name":"만성변비·설사 치료"},{"@type":"MedicalTherapy","name":"췌장염 치료"},{"@type":"MedicalTherapy","name":"아토피 피부염 치료"},{"@type":"MedicalTherapy","name":"지루성피부염 치료"},{"@type":"MedicalTherapy","name":"두드러기·건선 치료"},{"@type":"MedicalTherapy","name":"비염·축농증 치료"},{"@type":"MedicalTherapy","name":"COPD·기관지확장증 치료"},{"@type":"MedicalTherapy","name":"허리디스크(추간판탈출증) 치료"},{"@type":"MedicalTherapy","name":"척추관협착증 치료"},{"@type":"MedicalTherapy","name":"무릎관절염 치료"},{"@type":"MedicalTherapy","name":"오십견·회전근개 치료"},{"@type":"MedicalTherapy","name":"생리통·생리불순 치료"},{"@type":"MedicalTherapy","name":"난임·계류유산 치료"},{"@type":"MedicalTherapy","name":"산후조리·산후보약"},{"@type":"MedicalTherapy","name":"갱년기증후군 치료"}],"hasMap":"https://map.naver.com","publicAccess":true,"priceRange":"$$","currenciesAccepted":"KRW","paymentAccepted":"현금, 카드, 의료보험","employee":{"@type":"Physician","name":"수정한의원 원장","jobTitle":"한의학박사 침구학 전공","description":"30년 8체질 임상경험, 한의학박사(침구학 전공), 대한 한의학회·암한의학회 정회원","hasCredential":["한의학박사","침구학 전공","대한한의학회 정회원","암한의학회 정회원"]},"sameAs":["https://www.8chejil-sujeong.com"]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"수정한의원","item":"https://www.8chejil-sujeong.com"},{"@type":"ListItem","position":2,"name":"특설클리닉","item":"https://www.8chejil-sujeong.com/clinic/special"}]},{"@type":"MedicalCondition","name":"구안와사·안면마비"},{"@type":"MedicalCondition","name":"만성 편두통"},{"@type":"MedicalCondition","name":"대상포진후 신경통"},{"@type":"MedicalCondition","name":"천식·마이코플라즈마"},{"@type":"MedicalCondition","name":"궤양성대장염"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalClinic","name":"수정한의원","alternateName":["8체질 수정한의원","Sujeong Korean Medical Center","노원역한의원","노원구한의원"],"description":"1995년 개원, 30년 8체질 임상경험. 한의학박사(침구학 전공)가 직접 체질진단을 시행합니다. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추관협착증, 공황장애·불면증·이명, 난임·갱년기, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료 클리닉.","url":"https://www.8chejil-sujeong.com","logo":"https://www.8chejil-sujeong.com/static/logo.png","image":"https://www.8chejil-sujeong.com/static/og-image.jpg","telephone":"02-932-3815","foundingDate":"1995","address":{"@type":"PostalAddress","streetAddress":"동일로 1374 미산빌딩 6층","addressLocality":"노원구","addressRegion":"서울특별시","postalCode":"01769","addressCountry":"KR"},"geo":{"@type":"GeoCoordinates","latitude":"37.6554","longitude":"127.0567"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Friday"],"opens":"09:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday"],"opens":"09:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"16:00"}],"medicalSpecialty":["8체질의학","한방내과","침구과","추나의학","한방부인과","사상체질과"],"availableService":[{"@type":"MedicalTherapy","name":"8체질 맥진 진단","description":"30년 임상의 정확한 8체질 맥진 진단"},{"@type":"MedicalTherapy","name":"8체질 침치료"},{"@type":"MedicalTherapy","name":"체질 맞춤 1:1 한약 처방"},{"@type":"MedicalTherapy","name":"추나치료"},{"@type":"MedicalTherapy","name":"양자퀀텀 면역치료"},{"@type":"MedicalTherapy","name":"구안와사·안면마비 치료"},{"@type":"MedicalTherapy","name":"만성 편두통 치료"},{"@type":"MedicalTherapy","name":"대상포진후 신경통 치료"},{"@type":"MedicalTherapy","name":"천식·마이코플라즈마 치료"},{"@type":"MedicalTherapy","name":"궤양성대장염 치료"},{"@type":"MedicalTherapy","name":"소아성장 클리닉"},{"@type":"MedicalTherapy","name":"신부전·만성콩팥병 치료"},{"@type":"MedicalTherapy","name":"두통·어지럼증 치료"},{"@type":"MedicalTherapy","name":"이명·난청 치료"},{"@type":"MedicalTherapy","name":"불면증·만성피로 치료"},{"@type":"MedicalTherapy","name":"공황장애·우울증 치료"},{"@type":"MedicalTherapy","name":"자율신경실조 치료"},{"@type":"MedicalTherapy","name":"만성소화불량 치료"},{"@type":"MedicalTherapy","name":"역류성식도염 치료"},{"@type":"MedicalTherapy","name":"과민성대장증후군 치료"},{"@type":"MedicalTherapy","name":"만성변비·설사 치료"},{"@type":"MedicalTherapy","name":"췌장염 치료"},{"@type":"MedicalTherapy","name":"아토피 피부염 치료"},{"@type":"MedicalTherapy","name":"지루성피부염 치료"},{"@type":"MedicalTherapy","name":"두드러기·건선 치료"},{"@type":"MedicalTherapy","name":"비염·축농증 치료"},{"@type":"MedicalTherapy","name":"COPD·기관지확장증 치료"},{"@type":"MedicalTherapy","name":"허리디스크(추간판탈출증) 치료"},{"@type":"MedicalTherapy","name":"척추관협착증 치료"},{"@type":"MedicalTherapy","name":"무릎관절염 치료"},{"@type":"MedicalTherapy","name":"오십견·회전근개 치료"},{"@type":"MedicalTherapy","name":"생리통·생리불순 치료"},{"@type":"MedicalTherapy","name":"난임·계류유산 치료"},{"@type":"MedicalTherapy","name":"산후조리·산후보약"},{"@type":"MedicalTherapy","name":"갱년기증후군 치료"}],"hasMap":"https://map.naver.com","publicAccess":true,"priceRange":"$$","currenciesAccepted":"KRW","paymentAccepted":"현금, 카드, 의료보험","employee":{"@type":"Physician","name":"수정한의원 원장","jobTitle":"한의학박사 침구학 전공","description":"30년 8체질 임상경험, 한의학박사(침구학 전공), 대한 한의학회·암한의학회 정회원","hasCredential":["한의학박사","침구학 전공","대한한의학회 정회원","암한의학회 정회원"]},"sameAs":["https://www.8chejil-sujeong.com"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"수정한의원","item":"https://www.8chejil-sujeong.com"},{"@type":"ListItem","position":2,"name":"특설클리닉","item":"https://www.8chejil-sujeong.com/clinic/special"}]},{"@type":"MedicalCondition","name":"구안와사·안면마비"},{"@type":"MedicalCondition","name":"만성 편두통"},{"@type":"MedicalCondition","name":"대상포진후 신경통"},{"@type":"MedicalCondition","name":"천식·마이코플라즈마"},{"@type":"MedicalCondition","name":"궤양성대장염"},{"@type":"MedicalCondition","name":"신부전(만성콩팥병)"}]}</script>
 
   <link rel="icon" href="/favicon.ico"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -131,6 +131,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
           <li><a href="/clinic/special#herpes">대상포진후 신경통</a></li>
           <li><a href="/clinic/special#asthma">천식·마이코플라즈마</a></li>
           <li><a href="/clinic/special#colitis">궤양성대장염</a></li>
+          <li><a href="/clinic/special#kidney">신부전</a></li>
         </ul>
       </li>
       <li class="has-sub">
@@ -230,6 +231,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
         <a href="/clinic/special#herpes">대상포진후 신경통</a>
         <a href="/clinic/special#asthma">천식·마이코플라즈마</a>
         <a href="/clinic/special#colitis">궤양성대장염</a>
+        <a href="/clinic/special#kidney">신부전</a>
       </div>
     </div>
     <div class="mob-menu-item mob-has-sub">
@@ -338,7 +340,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
       <p class="section-desc">수정한의원은 8체질의학을 기반으로 한 통합의학 치료를 통해,<br/>기존 치료로 호전이 어려웠던 만성·난치성 질환을 중심으로 진료해오고 있습니다</p>
     </div>
 
-    <!-- 5가지 질환 네비게이션 카드 -->
+    <!-- 6가지 질환 네비게이션 카드 -->
     <div class="sc-nav-grid">
       <a href="#facial" class="sc-nav-card">
         <div class="sc-nav-icon" style="background:linear-gradient(135deg,#c0392b,#e74c3c)">
@@ -379,6 +381,14 @@ export const clinic_specialPage = `<!DOCTYPE html>
         <div class="sc-nav-num">05</div>
         <div class="sc-nav-title">궤양성 대장염</div>
         <div class="sc-nav-key">체질 근본치료</div>
+      </a>
+      <a href="#kidney" class="sc-nav-card">
+        <div class="sc-nav-icon" style="background:linear-gradient(135deg,#0b3b4a,#1a7a9a)">
+          <i class="fas fa-droplet"></i>
+        </div>
+        <div class="sc-nav-num">06</div>
+        <div class="sc-nav-title">신부전</div>
+        <div class="sc-nav-key">신기능 보존 관리</div>
       </a>
     </div>
 
@@ -1037,6 +1047,204 @@ export const clinic_specialPage = `<!DOCTYPE html>
                 <a href="#contact" class="asthma-btn-primary">지금 바로 상담하기</a>
                 <a href="tel:02-932-3815" class="asthma-btn-secondary"><i class="fas fa-phone"></i> 전화 상담</a>
               </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="special-disease-item" id="kidney">
+        <div class="sdi-num">06</div>
+        <div class="sdi-content">
+          <div class="sdi-header">
+            <div class="sdi-icon"><i class="fas fa-droplet"></i></div>
+            <h3>신부전</h3>
+          </div>
+          <div class="sdi-body">
+
+            <!-- Hero -->
+            <div class="auto-hero-box" style="background:linear-gradient(135deg,#0b3b4a 0%,#14607a 60%,#0b3b4a 100%); margin-bottom:18px;">
+              <div class="auto-hero-main">신부전, 수치는 계속 나빠지는데<br/>투석 말고는 방법이 없나요?</div>
+              <div class="auto-hero-sub">수정한의원이 다른 답을 찾아드립니다.</div>
+            </div>
+
+            <!-- Q1 -->
+            <div class="auto-q-block">
+              <div class="auto-q-title">
+                <span class="auto-qnum">Q1</span>
+                <span>신부전(만성콩팥병)이란 무엇인가요?</span>
+              </div>
+              <div class="auto-q-body">
+                <p>신장이 노폐물을 걸러내는 능력이 떨어져 몸속 환경을 유지하지 못하는 상태입니다. 급성과 만성이 있고, 검진에서 발견되는 경우는 대부분 만성입니다.</p>
+                <p style="margin-top:10px;">만성은 신장의 여과 기능이나 구조에 이상이 생긴 채 3개월 넘게 이어지는 경우를 말합니다. 사구체여과율(eGFR, 신장이 1분에 노폐물을 얼마나 걸러내는지 추정한 수치)을 기준으로 1기부터 5기까지 나누고, 숫자가 낮을수록 기능이 줄어든 상태입니다.</p>
+                <div class="auto-stat-box">
+                  <span class="auto-stat-icon">📊</span>
+                  <span>국내 만성콩팥병 환자는 약 <strong>460만 명</strong>, 성인 <strong>9명 중 1명꼴</strong>로 추정됩니다. 드문 병이 아니라는 뜻입니다.</span>
+                </div>
+                <p style="margin-top:14px;"><strong>이런 증상이 있으신가요?</strong></p>
+                <ul style="list-style:none;padding:0;margin:10px 0 0;"><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-check" style="position:absolute;left:4px;top:11px;color:#1a5c3a;font-size:0.85rem;"></i>얼굴·발이 붓고, 아침에 눈이 붓는다</li><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-check" style="position:absolute;left:4px;top:11px;color:#1a5c3a;font-size:0.85rem;"></i>쉽게 피곤하고 식욕이 없으며 속이 메스껍다</li><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-check" style="position:absolute;left:4px;top:11px;color:#1a5c3a;font-size:0.85rem;"></i>소변에 거품이 많거나, 밤에 소변을 자주 본다</li><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-check" style="position:absolute;left:4px;top:11px;color:#1a5c3a;font-size:0.85rem;"></i>피부가 가렵고 얼굴빛이 창백하다</li><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-check" style="position:absolute;left:4px;top:11px;color:#1a5c3a;font-size:0.85rem;"></i>건강검진에서 크레아티닌·사구체여과율·단백뇨 이상을 지적받았다</li></ul>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="auto-q-block">
+              <div class="auto-q-title">
+                <span class="auto-qnum">Q2</span>
+                <span>병기는 어떻게 나누고, 어디서 달라지나요?</span>
+              </div>
+              <div class="auto-q-body">
+                <p>병기마다 해야 할 일이 다릅니다. 같은 "신부전"이라도 3기와 5기에서 목표는 같지 않습니다.</p>
+                <div class="auto-table-wrap">
+                  <table class="auto-treat-table">
+                    <thead><tr><th>병기</th><th>이 시기의 목표</th><th>관리 포인트</th><th>주의할 점</th></tr></thead>
+                    <tbody>
+                    <tr><td class="att-label">3기 (eGFR 30~60)</td><td>악화 속도 늦추기</td><td>혈압·혈당 안정, 정기 혈액·소변검사</td><td>증상이 없다고 관리 중단</td></tr>
+                    <tr><td class="att-label">4기 (eGFR 15~30)</td><td>잔여 기능 보존</td><td>단백질·칼륨·인 조정, 빈혈·부종 관리</td><td>검사 없이 식단만 조정</td></tr>
+                    <tr><td class="att-label">5기 (eGFR 15 미만)</td><td>투석·이식 준비와 병행 관리</td><td>혈관 상태·영양·체력 유지</td><td>단념하고 관리를 놓는 것</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="auto-highlight-box">
+                  <strong>📊 3기는 조직이 완전히 굳기 전이라 악화 속도를 늦추는 데 가장 유리한 구간입니다.</strong><br/>
+                  증상이 뚜렷하지 않아 "나중에 다시 오겠다"는 말이 가장 많이 나오는 시기이기도 합니다.
+                </div>
+                <div class="auto-highlight-box" style="border-left-color:#d68910; background:#fff8e1; color:#5a4310;">
+                  <strong>⚠️ 크레아티닌은 근육량·나이·성별에 따라 기준이 달라 같은 값도 해석이 다릅니다.</strong><br/>
+                  그래서 eGFR과 함께 소변으로 빠져나가는 알부민 비율(ACR)을 같이 보고, 이런 이상이 석 달 이상 되풀이될 때 만성으로 판단합니다.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q3 -->
+            <div class="auto-q-block">
+              <div class="auto-q-title">
+                <span class="auto-qnum">Q3</span>
+                <span>왜 계속 나빠지나요?</span>
+              </div>
+              <div class="auto-q-body">
+                <p>출발점은 제각각입니다. 당뇨병성 신증, 고혈압성 신경화증, 사구체신염 등 원인은 다르지만, 기능을 잃어가는 경로는 비슷합니다.</p>
+                <p style="margin-top:10px;">원인으로 신장 조직이 손상되면 만성 염증이 이어지고, 사구체의 미세혈관이 줄면서 산소 공급이 부족해집니다. 그 상태가 오래가면 정상 조직이 흉터 조직으로 바뀌는 섬유화가 진행되고, eGFR은 더 떨어집니다.</p>
+                <div class="auto-flow-box">신장 조직 손상 → 만성 염증 → 미세혈관 감소·산소 부족 → 섬유화 → eGFR 추가 하락<br/>이 고리는 한 방향으로 돌기 때문에 가만히 두면 유지되지 않습니다.</div>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="auto-q-block">
+              <div class="auto-q-title">
+                <span class="auto-qnum">Q4</span>
+                <span>병원 치료를 받는데도 수치가 좋아지지 않는 이유는 뭔가요?</span>
+              </div>
+              <div class="auto-q-body">
+                <p>혈압·혈당 조절, 식이 관리, 약물 치료는 신장이 더 상하지 않게 지키는 기본이고 반드시 필요합니다.</p>
+                <div class="auto-highlight-box">
+                  <strong>다만 같은 병명이라도 사람마다 약한 장부와 몸의 반응이 달라서, 같은 치료를 받아도 경과가 다르게 나타납니다.</strong><br/>
+                  수정한의원은 그 차이를 8체질 진단으로 살펴 체질에 맞는 치료를 더합니다.
+                </div>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="auto-q-block auto-treatment">
+              <div class="auto-q-title auto-treat-title">
+                <span class="auto-qnum auto-qnum-green">Q5</span>
+                <span>수정한의원에서는 어떻게 치료하나요?</span>
+              </div>
+              <div class="auto-q-body">
+                <div class="auto-table-wrap">
+                  <table class="auto-treat-table">
+                    <thead><tr><th>치료 축</th><th>역할</th></tr></thead>
+                    <tbody>
+                    <tr><td class="att-label">8체질 진단</td><td>체질별 신장 취약 양상 파악, 치료 방향 설정</td></tr>
+                    <tr><td class="att-label">8체질 침 치료</td><td>장부 균형 회복, 부종·피로 등 동반 증상 완화</td></tr>
+                    <tr><td class="att-label">체질 맞춤 한약</td><td>남아 있는 신기능 보존, 체력·면역 회복</td></tr>
+                    <tr><td class="att-label">생활관리</td><td>전신 컨디션 회복, 체질별 식이·염분·수분 지도</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="auto-flow-box"><strong>치료 목표는 두 가지입니다.</strong><br/>① 남아 있는 신기능을 지키며 악화 속도를 늦추는 것<br/>② 피로·입맛 저하·부종 같은 동반 불편을 줄여 일상을 유지하게 하는 것</div>
+                <div class="auto-stat-box">
+                  <span class="auto-stat-icon">📑</span>
+                  <span>치료 중에는 <strong>크레아티닌·BUN·eGFR·칼륨·간수치</strong>를 정기적으로 확인하며 처방을 조정합니다. 칼륨과 간수치의 안전성을 우선해 약재를 고르고, 이상 수치가 확인되면 즉시 처방을 바꿉니다.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Q6 -->
+            <div class="auto-q-block">
+              <div class="auto-q-title">
+                <span class="auto-qnum">Q6</span>
+                <span>신장이 안 좋은데 한약을 먹어도 안전한가요?</span>
+              </div>
+              <div class="auto-q-body">
+                <div class="auto-highlight-box" style="border-left-color:#d68910; background:#fff8e1; color:#5a4310;">
+                  <strong>아무 약재나 쓸 수는 없습니다. 신장 상태에 맞춰 신중하게 처방하는 것이 원칙입니다.</strong>
+                </div>
+                <ul style="list-style:none;padding:0;margin:10px 0 0;"><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-check" style="position:absolute;left:4px;top:11px;color:#1a5c3a;font-size:0.85rem;"></i>처방 전에 <strong>최근 신기능 검사 결과</strong>를 확인합니다</li><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-check" style="position:absolute;left:4px;top:11px;color:#1a5c3a;font-size:0.85rem;"></i>체질에 맞지 않는 약재는 제외합니다</li><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-check" style="position:absolute;left:4px;top:11px;color:#1a5c3a;font-size:0.85rem;"></i>병기에 따라 약재와 용량을 정합니다</li><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-check" style="position:absolute;left:4px;top:11px;color:#1a5c3a;font-size:0.85rem;"></i>복용 중에도 검사 수치를 확인하며 필요하면 처방을 바꿉니다</li></ul>
+              </div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="auto-q-block">
+              <div class="auto-q-title">
+                <span class="auto-qnum">Q7</span>
+                <span>투석 중이거나 신장내과 약을 먹고 있어도 함께 받을 수 있나요?</span>
+              </div>
+              <div class="auto-q-body">
+                <div class="auto-highlight-box" style="border-left-color:#2e7d32; background:#f1f8f3; color:#1a3d28;">
+                  <strong style="color:#1a5c3a;">가능합니다.</strong><br/>
+                  드시는 약과 투석 여부를 알려주시면 신장내과 치료와 부딪히지 않도록 맞춰 설계합니다.
+                </div>
+                <p style="margin-top:10px;"><strong>이식을 받으셨거나 준비 중이시라면</strong> 면역억제제와 서로 영향을 줄 수 있으니 반드시 먼저 상담해 주세요.</p>
+              </div>
+            </div>
+
+            <!-- Q8 -->
+            <div class="auto-q-block">
+              <div class="auto-q-title">
+                <span class="auto-qnum">Q8</span>
+                <span>어떤 증상이 생기면 병원에 먼저 가야 하나요?</span>
+              </div>
+              <div class="auto-q-body">
+                <div class="auto-highlight-box" style="border-left-color:#c0392b; background:#fdecea; color:#5a1a14;">
+                  <strong>다음 경우에는 한방 치료보다 응급실이나 신장내과 진료가 먼저입니다.</strong>
+                  <ul style="list-style:none;padding:0;margin:10px 0 0;"><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-triangle-exclamation" style="position:absolute;left:4px;top:11px;color:#c0392b;font-size:0.85rem;"></i>소변이 갑자기 거의 나오지 않을 때</li><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-triangle-exclamation" style="position:absolute;left:4px;top:11px;color:#c0392b;font-size:0.85rem;"></i>숨이 차면서 부종이 심해질 때</li><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-triangle-exclamation" style="position:absolute;left:4px;top:11px;color:#c0392b;font-size:0.85rem;"></i>의식이 흐려질 때 / 구토가 계속될 때</li><li style="padding:7px 0 7px 28px;position:relative;border-bottom:1px dashed #d8e6dc;line-height:1.7;"><i class="fas fa-triangle-exclamation" style="position:absolute;left:4px;top:11px;color:#c0392b;font-size:0.85rem;"></i>힘이 갑자기 빠지고 가슴이 두근거릴 때</li></ul>
+                </div>
+                <p style="margin-top:10px;">투석 중이라면 혈관통로 부위가 붓거나 떨림이 느껴지지 않을 때 즉시 투석 병원에 연락하세요.</p>
+              </div>
+            </div>
+
+            <!-- Q9 -->
+            <div class="auto-q-block">
+              <div class="auto-q-title">
+                <span class="auto-qnum">Q9</span>
+                <span>4기·5기인데 지금 시작해도 늦지 않았나요?</span>
+              </div>
+              <div class="auto-q-body">
+                <div class="auto-highlight-box" style="border-left-color:#2e7d32; background:#f1f8f3; color:#1a3d28;">
+                  <strong style="color:#1a5c3a;">늦지 않았습니다.</strong> 진행을 늦추고 일상의 질을 유지하는 관리는 어느 병기에서나 의미가 있습니다.
+                </div>
+                <p style="margin-top:10px;">다만 응급 상황은 한방 치료보다 병원 진료가 먼저라는 점을 기억해 주세요.</p>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="asthma-cta-box">
+              <div class="asthma-cta-tags">
+                <span class="asthma-cta-tag">"수치가 계속 올라가요"</span>
+                <span class="asthma-cta-tag">"단백뇨가 나와요"</span>
+                <span class="asthma-cta-tag">"투석은 피하고 싶어요"</span>
+              </div>
+              <p class="asthma-cta-lead"><strong>8체질 통합의학으로 남아 있는 신장 기능을 지키는 치료를 함께 찾습니다.</strong><br/>이런 고민이 있으시다면, 지금 상담하세요</p>
+              <div class="asthma-cta-tags">
+                <span class="asthma-cta-tag">크레아티닌 수치가 매년 올라가요</span>
+                <span class="asthma-cta-tag">단백뇨가 나온다고 들었어요</span>
+                <span class="asthma-cta-tag">아직 증상은 없는데 4기래요</span>
+              </div>
+              <div class="asthma-cta-btns">
+                <a href="tel:02-932-3815" class="asthma-btn-primary"><i class="fas fa-comments"></i> 지금 바로 상담하기</a>
+                <a href="tel:02-932-3815" class="asthma-btn-secondary"><i class="fas fa-phone"></i> 전화 상담 02-932-3815</a>
+              </div>
+              <p style="margin:12px 0 0;font-size:0.88rem;opacity:0.9;">서울 노원구 동일로 1374 미산빌딩 6층 (노원역 5번 출구)</p>
             </div>
 
           </div>
