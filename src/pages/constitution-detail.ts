@@ -315,7 +315,7 @@ export function constitutionDetailPage(id: string): string {
 <section class="sec-dark-green" style="padding:60px 0; text-align:center">
   <div class="sec-wrap">
     <p style="color:rgba(255,255,255,.7); margin-bottom:12px">내 체질이 맞는지 정확히 알고 싶다면?</p>
-    <h3 style="color:#fff; font-size:1.6rem; margin-bottom:24px">30년 8체질 중점진료 <span style="color:#D4A853">수정한의원</span>에서 진단받으세요</h3>
+    <h3 style="color:#fff; font-size:1.6rem; margin-bottom:24px">32년 8체질 중점진료 <span style="color:#D4A853">수정한의원</span>에서 진단받으세요</h3>
     <a href="tel:02-932-3815" class="btn-primary-green" style="background:#D4A853; color:#1B4332">
       <i class="fas fa-phone"></i> 02-932-3815 예약하기
     </a>

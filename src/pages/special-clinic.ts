@@ -4,7 +4,7 @@ export function specialClinicPage(): string {
   <div class="page-hero-content">
     <div class="page-breadcrumb"><a href="/">홈</a> <i class="fas fa-chevron-right"></i> 특설클리닉</div>
     <h1>특설 클리닉</h1>
-    <p>수정한의원 30년 임상경험이 가장 강력하게 적용되는 중점 진료</p>
+    <p>수정한의원 32년 임상경험이 가장 강력하게 적용되는 중점 진료</p>
   </div>
 </section>
 
@@ -312,7 +312,7 @@ export function specialClinicPage(): string {
                   <span>수정한의원의 치료 접근</span>
                 </div>
                 <div class="migraine-q-body">
-                  <p>수정한의원은 30년의 임상 경험을 통해, 오랜 기간 극심한 두통으로 고통받아 온 환자분들 상당수에서 <strong>경추 1·2번의 부정렬과 턱관절의 부정교합</strong>이 두통의 근본 원인임을 확인해 왔습니다.</p>
+                  <p>수정한의원은 32년의 임상 경험을 통해, 오랜 기간 극심한 두통으로 고통받아 온 환자분들 상당수에서 <strong>경추 1·2번의 부정렬과 턱관절의 부정교합</strong>이 두통의 근본 원인임을 확인해 왔습니다.</p>
                   <p>치료에 앞서 X-ray와 MRI를 활용한 경추 구조 정밀 분석을 시행합니다. 단순히 뇌의 이상 유무를 확인하는 데 그치지 않고, 경추 상부의 정렬 상태, 턱관절의 부정교합, 추간판의 변화, 신경 압박 여부를 면밀히 검토하여 두통의 구조적 원인을 명확히 규명합니다.</p>
                   <p>이를 바탕으로 <strong>구조와 기능, 두 가지 핵심 치료</strong>를 병행하여 오랜 두통의 고리를 끊어냅니다.</p>
                   <ul class="migraine-treat-list">
@@ -401,7 +401,7 @@ export function specialClinicPage(): string {
                   <span>수정한의원의 치료 구성</span>
                 </div>
                 <div class="migraine-q-body">
-                  <p>수정한의원은 30년의 임상 경험을 바탕으로, <strong>세 가지 핵심 치료를 유기적으로 병행</strong>하여 오랜 통증의 고리를 끊어냅니다.</p>
+                  <p>수정한의원은 32년의 임상 경험을 바탕으로, <strong>세 가지 핵심 치료를 유기적으로 병행</strong>하여 오랜 통증의 고리를 끊어냅니다.</p>
                   <ul class="migraine-treat-list">
                     <li>
                       <span class="mtl-icon"><i class="fas fa-wave-square"></i></span>
@@ -849,7 +849,7 @@ export function specialClinicPage(): string {
                   <tbody>
                     <tr>
                       <td class="att-label">① 정확한 8체질 진단</td>
-                      <td>30년·23,125건 데이터 기반 체질 확정 — 장부 강약·자율신경 유형 파악</td>
+                      <td>32년·23,125건 데이터 기반 체질 확정 — 장부 강약·자율신경 유형 파악</td>
                     </tr>
                     <tr>
                       <td class="att-label">② 체질 맞춤 성장 한약</td>
@@ -973,7 +973,7 @@ export function specialClinicPage(): string {
       <!-- ===== /소아성장 ===== -->
 
     <div class="clinic-cta-box">
-      <p>다른 병원에서 해결되지 않은 질환이라면<br/><strong>수정한의원 30년 임상경험과 8체질 진단으로 새로운 가능성을 찾아드립니다</strong></p>
+      <p>다른 병원에서 해결되지 않은 질환이라면<br/><strong>수정한의원 32년 임상경험과 8체질 진단으로 새로운 가능성을 찾아드립니다</strong></p>
       <a href="tel:02-932-3815" class="cta-inline-btn"><i class="fas fa-phone"></i> 02-932-3815 진료예약</a>
     </div>
   </div>

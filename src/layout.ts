@@ -1,6 +1,6 @@
 export function layout(content: string, pageTitle?: string, pageDesc?: string, reqUrl?: string, extraSchema?: object): string {
   const title = pageTitle || '수정한의원 | 노원구 8체질 한의원 – 구안와사·아토피·디스크·공황장애·난임 근본치료'
-  const desc = pageDesc || '서울 노원구 노원역 5번출구. 1995년 개원 30년 임상. 한의학박사가 직접 8체질 진단. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추협착증, 공황장애·불면증, 난임·생리통, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료. ☎ 02-932-3815'
+  const desc = pageDesc || '서울 노원구 노원역 5번출구. 1995년 개원 32년 임상. 한의학박사가 직접 8체질 진단. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추협착증, 공황장애·불면증, 난임·생리통, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료. ☎ 02-932-3815'
   const siteOrigin = reqUrl ? new URL(reqUrl).origin : 'https://www.8chejil-sujeong.com'
   const CANONICAL_ORIGIN = 'https://www.8chejil-sujeong.com'
   const ogImage = `${CANONICAL_ORIGIN}/static/og-image.jpg`
@@ -12,7 +12,7 @@ export function layout(content: string, pageTitle?: string, pageDesc?: string, r
     "@type": "MedicalClinic",
     "name": "수정한의원",
     "alternateName": ["8체질 수정한의원", "Sujeong Korean Medical Center", "노원역한의원", "노원구한의원"],
-    "description": "1995년 개원, 30년 8체질 임상경험. 한의학박사(침구학 전공)가 직접 체질진단을 시행합니다. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추관협착증, 공황장애·불면증·이명, 난임·갱년기, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료 클리닉.",
+    "description": "1995년 개원, 32년 8체질 임상경험. 한의학박사(침구학 전공)가 직접 체질진단을 시행합니다. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추관협착증, 공황장애·불면증·이명, 난임·갱년기, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료 클리닉.",
     "url": "https://www.8chejil-sujeong.com",
     "logo": "https://www.8chejil-sujeong.com/static/logo.png",
     "image": "https://www.8chejil-sujeong.com/static/og-image.jpg",
@@ -39,7 +39,7 @@ export function layout(content: string, pageTitle?: string, pageDesc?: string, r
     ],
     "medicalSpecialty": ["8체질의학", "한방내과", "침구과", "추나의학", "한방부인과", "사상체질과"],
     "availableService": [
-      { "@type": "MedicalTherapy", "name": "8체질 맥진 진단", "description": "30년 임상의 정확한 8체질 맥진 진단" },
+      { "@type": "MedicalTherapy", "name": "8체질 맥진 진단", "description": "32년 임상의 정확한 8체질 맥진 진단" },
       { "@type": "MedicalTherapy", "name": "8체질 침치료" },
       { "@type": "MedicalTherapy", "name": "체질 맞춤 1:1 한약 처방" },
       { "@type": "MedicalTherapy", "name": "추나치료" },
@@ -84,7 +84,7 @@ export function layout(content: string, pageTitle?: string, pageDesc?: string, r
       "@type": "Physician",
       "name": "수정한의원 원장",
       "jobTitle": "한의학박사 침구학 전공",
-      "description": "30년 8체질 임상경험, 한의학박사(침구학 전공), 대한 한의학회·암한의학회 정회원",
+      "description": "32년 8체질 임상경험, 한의학박사(침구학 전공), 대한 한의학회·암한의학회 정회원",
       "hasCredential": ["한의학박사", "침구학 전공", "대한한의학회 정회원", "암한의학회 정회원"]
     },
     "sameAs": [
@@ -420,7 +420,7 @@ ${content}
         </div>
         <p class="footer-slogan">"잘 낫지 않는 병에 답을 찾습니다"</p>
         <div class="footer-meta">
-          <p>1995년 개원 | 30년 8체질 임상경험</p>
+          <p>1995년 개원 | 32년 8체질 임상경험</p>
           <p>난치질환·만성통증 전문</p>
         </div>
         <div class="footer-sns">

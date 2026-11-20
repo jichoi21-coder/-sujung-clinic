@@ -4,7 +4,7 @@ export const homePage = `<!DOCTYPE html>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>수정한의원 | 노원구 8체질 한의원 – 구안와사·아토피·디스크·공황장애·난임 근본치료</title>
-  <meta name="description" content="서울 노원구 노원역 5번출구. 1995년 개원 30년 임상. 한의학박사가 직접 8체질 진단. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추협착증, 공황장애·불면증, 난임·생리통, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료. ☎ 02-932-3815"/>
+  <meta name="description" content="서울 노원구 노원역 5번출구. 1995년 개원 32년 임상. 한의학박사가 직접 8체질 진단. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추협착증, 공황장애·불면증, 난임·생리통, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료. ☎ 02-932-3815"/>
 
   <!-- Google Search Console 소유권 확인 -->
   <meta name="google-site-verification" content="M8jXlZzYhHDmLfmeZp3Bz0Nx8U-A1rqtZGQVAwC1zTw" />
@@ -21,7 +21,7 @@ export const homePage = `<!DOCTYPE html>
   <meta name="naver-site-verification" content="665bb6962efa7103cfd81e612c4de5f66d179655" />
 
   <!-- 검색엔진 최적화 -->
-  <meta name="keywords" content="수정한의원, 노원구한의원, 노원역한의원, 상계동한의원, 중계동한의원, 노원구안와사, 노원안면마비, 노원아토피, 노원지루성피부염, 노원두드러기, 노원비염, 노원디스크, 노원협착증, 노원무릎관절염, 노원오십견, 노원공황장애, 노원불면증, 노원편두통, 노원이명, 노원난임, 노원생리통, 노원갱년기, 노원대상포진, 노원소화불량, 8체질, 8체질의학, 한의학박사, 근본치료, 1995년개원, 30년임상"/>
+  <meta name="keywords" content="수정한의원, 노원구한의원, 노원역한의원, 상계동한의원, 중계동한의원, 노원구안와사, 노원안면마비, 노원아토피, 노원지루성피부염, 노원두드러기, 노원비염, 노원디스크, 노원협착증, 노원무릎관절염, 노원오십견, 노원공황장애, 노원불면증, 노원편두통, 노원이명, 노원난임, 노원생리통, 노원갱년기, 노원대상포진, 노원소화불량, 8체질, 8체질의학, 한의학박사, 근본치료, 1995년개원, 32년임상"/>
   <meta name="author" content="수정한의원"/>
   <meta name="robots" content="index, follow"/>
   <meta name="googlebot" content="index, follow"/>
@@ -29,7 +29,7 @@ export const homePage = `<!DOCTYPE html>
 
   <!-- Open Graph -->
   <meta property="og:title" content="수정한의원 | 노원구 8체질 한의원 – 구안와사·아토피·디스크·공황장애·난임 근본치료"/>
-  <meta property="og:description" content="서울 노원구 노원역 5번출구. 1995년 개원 30년 임상. 한의학박사가 직접 8체질 진단. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추협착증, 공황장애·불면증, 난임·생리통, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료. ☎ 02-932-3815"/>
+  <meta property="og:description" content="서울 노원구 노원역 5번출구. 1995년 개원 32년 임상. 한의학박사가 직접 8체질 진단. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추협착증, 공황장애·불면증, 난임·생리통, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료. ☎ 02-932-3815"/>
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://www.8chejil-sujeong.com/static/og-image.jpg"/>
   <meta property="og:image:width" content="1200"/>
@@ -42,13 +42,13 @@ export const homePage = `<!DOCTYPE html>
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="수정한의원 | 노원구 8체질 한의원 – 구안와사·아토피·디스크·공황장애·난임 근본치료"/>
-  <meta name="twitter:description" content="서울 노원구 노원역 5번출구. 1995년 개원 30년 임상. 한의학박사가 직접 8체질 진단. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추협착증, 공황장애·불면증, 난임·생리통, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료. ☎ 02-932-3815"/>
+  <meta name="twitter:description" content="서울 노원구 노원역 5번출구. 1995년 개원 32년 임상. 한의학박사가 직접 8체질 진단. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추협착증, 공황장애·불면증, 난임·생리통, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료. ☎ 02-932-3815"/>
   <meta name="twitter:image" content="https://www.8chejil-sujeong.com/static/og-image.jpg"/>
 
   <!-- Schema.org 구조화 데이터 (AI 검색 최적화) -->
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalClinic","name":"수정한의원","alternateName":["8체질 수정한의원","Sujeong Korean Medical Center","노원역한의원","노원구한의원"],"description":"1995년 개원, 30년 8체질 임상경험. 한의학박사(침구학 전공)가 직접 체질진단을 시행합니다. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추관협착증, 공황장애·불면증·이명, 난임·갱년기, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료 클리닉.","url":"https://www.8chejil-sujeong.com","logo":"https://www.8chejil-sujeong.com/static/logo.png","image":"https://www.8chejil-sujeong.com/static/og-image.jpg","telephone":"02-932-3815","foundingDate":"1995","address":{"@type":"PostalAddress","streetAddress":"동일로 1374 미산빌딩 6층","addressLocality":"노원구","addressRegion":"서울특별시","postalCode":"01769","addressCountry":"KR"},"geo":{"@type":"GeoCoordinates","latitude":"37.6554","longitude":"127.0567"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Friday"],"opens":"09:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday"],"opens":"09:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"16:00"}],"medicalSpecialty":["8체질의학","한방내과","침구과","추나의학","한방부인과","사상체질과"],"availableService":[{"@type":"MedicalTherapy","name":"8체질 맥진 진단","description":"30년 임상의 정확한 8체질 맥진 진단"},{"@type":"MedicalTherapy","name":"8체질 침치료"},{"@type":"MedicalTherapy","name":"체질 맞춤 1:1 한약 처방"},{"@type":"MedicalTherapy","name":"추나치료"},{"@type":"MedicalTherapy","name":"양자퀀텀 면역치료"},{"@type":"MedicalTherapy","name":"구안와사·안면마비 치료"},{"@type":"MedicalTherapy","name":"만성 편두통 치료"},{"@type":"MedicalTherapy","name":"대상포진후 신경통 치료"},{"@type":"MedicalTherapy","name":"천식·마이코플라즈마 치료"},{"@type":"MedicalTherapy","name":"궤양성대장염 치료"},{"@type":"MedicalTherapy","name":"소아성장 클리닉"},{"@type":"MedicalTherapy","name":"신부전·만성콩팥병 치료"},{"@type":"MedicalTherapy","name":"두통·어지럼증 치료"},{"@type":"MedicalTherapy","name":"이명·난청 치료"},{"@type":"MedicalTherapy","name":"불면증·만성피로 치료"},{"@type":"MedicalTherapy","name":"공황장애·우울증 치료"},{"@type":"MedicalTherapy","name":"자율신경실조 치료"},{"@type":"MedicalTherapy","name":"만성소화불량 치료"},{"@type":"MedicalTherapy","name":"역류성식도염 치료"},{"@type":"MedicalTherapy","name":"과민성대장증후군 치료"},{"@type":"MedicalTherapy","name":"만성변비·설사 치료"},{"@type":"MedicalTherapy","name":"췌장염 치료"},{"@type":"MedicalTherapy","name":"아토피 피부염 치료"},{"@type":"MedicalTherapy","name":"지루성피부염 치료"},{"@type":"MedicalTherapy","name":"두드러기·건선 치료"},{"@type":"MedicalTherapy","name":"비염·축농증 치료"},{"@type":"MedicalTherapy","name":"COPD·기관지확장증 치료"},{"@type":"MedicalTherapy","name":"허리디스크(추간판탈출증) 치료"},{"@type":"MedicalTherapy","name":"척추관협착증 치료"},{"@type":"MedicalTherapy","name":"무릎관절염 치료"},{"@type":"MedicalTherapy","name":"오십견·회전근개 치료"},{"@type":"MedicalTherapy","name":"생리통·생리불순 치료"},{"@type":"MedicalTherapy","name":"난임·계류유산 치료"},{"@type":"MedicalTherapy","name":"산후조리·산후보약"},{"@type":"MedicalTherapy","name":"갱년기증후군 치료"}],"hasMap":"https://map.naver.com","publicAccess":true,"priceRange":"$$","currenciesAccepted":"KRW","paymentAccepted":"현금, 카드, 의료보험","employee":{"@type":"Physician","name":"수정한의원 원장","jobTitle":"한의학박사 침구학 전공","description":"30년 8체질 임상경험, 한의학박사(침구학 전공), 대한 한의학회·암한의학회 정회원","hasCredential":["한의학박사","침구학 전공","대한한의학회 정회원","암한의학회 정회원"]},"sameAs":["https://www.8chejil-sujeong.com"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalClinic","name":"수정한의원","alternateName":["8체질 수정한의원","Sujeong Korean Medical Center","노원역한의원","노원구한의원"],"description":"1995년 개원, 32년 8체질 임상경험. 한의학박사(침구학 전공)가 직접 체질진단을 시행합니다. 구안와사·안면마비, 아토피·지루성피부염, 허리디스크·척추관협착증, 공황장애·불면증·이명, 난임·갱년기, 만성소화불량·역류성식도염, 비염·천식 등 난치·만성질환 근본치료 클리닉.","url":"https://www.8chejil-sujeong.com","logo":"https://www.8chejil-sujeong.com/static/logo.png","image":"https://www.8chejil-sujeong.com/static/og-image.jpg","telephone":"02-932-3815","foundingDate":"1995","address":{"@type":"PostalAddress","streetAddress":"동일로 1374 미산빌딩 6층","addressLocality":"노원구","addressRegion":"서울특별시","postalCode":"01769","addressCountry":"KR"},"geo":{"@type":"GeoCoordinates","latitude":"37.6554","longitude":"127.0567"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Friday"],"opens":"09:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Wednesday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Thursday"],"opens":"09:00","closes":"13:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"09:00","closes":"16:00"}],"medicalSpecialty":["8체질의학","한방내과","침구과","추나의학","한방부인과","사상체질과"],"availableService":[{"@type":"MedicalTherapy","name":"8체질 맥진 진단","description":"32년 임상의 정확한 8체질 맥진 진단"},{"@type":"MedicalTherapy","name":"8체질 침치료"},{"@type":"MedicalTherapy","name":"체질 맞춤 1:1 한약 처방"},{"@type":"MedicalTherapy","name":"추나치료"},{"@type":"MedicalTherapy","name":"양자퀀텀 면역치료"},{"@type":"MedicalTherapy","name":"구안와사·안면마비 치료"},{"@type":"MedicalTherapy","name":"만성 편두통 치료"},{"@type":"MedicalTherapy","name":"대상포진후 신경통 치료"},{"@type":"MedicalTherapy","name":"천식·마이코플라즈마 치료"},{"@type":"MedicalTherapy","name":"궤양성대장염 치료"},{"@type":"MedicalTherapy","name":"소아성장 클리닉"},{"@type":"MedicalTherapy","name":"신부전·만성콩팥병 치료"},{"@type":"MedicalTherapy","name":"두통·어지럼증 치료"},{"@type":"MedicalTherapy","name":"이명·난청 치료"},{"@type":"MedicalTherapy","name":"불면증·만성피로 치료"},{"@type":"MedicalTherapy","name":"공황장애·우울증 치료"},{"@type":"MedicalTherapy","name":"자율신경실조 치료"},{"@type":"MedicalTherapy","name":"만성소화불량 치료"},{"@type":"MedicalTherapy","name":"역류성식도염 치료"},{"@type":"MedicalTherapy","name":"과민성대장증후군 치료"},{"@type":"MedicalTherapy","name":"만성변비·설사 치료"},{"@type":"MedicalTherapy","name":"췌장염 치료"},{"@type":"MedicalTherapy","name":"아토피 피부염 치료"},{"@type":"MedicalTherapy","name":"지루성피부염 치료"},{"@type":"MedicalTherapy","name":"두드러기·건선 치료"},{"@type":"MedicalTherapy","name":"비염·축농증 치료"},{"@type":"MedicalTherapy","name":"COPD·기관지확장증 치료"},{"@type":"MedicalTherapy","name":"허리디스크(추간판탈출증) 치료"},{"@type":"MedicalTherapy","name":"척추관협착증 치료"},{"@type":"MedicalTherapy","name":"무릎관절염 치료"},{"@type":"MedicalTherapy","name":"오십견·회전근개 치료"},{"@type":"MedicalTherapy","name":"생리통·생리불순 치료"},{"@type":"MedicalTherapy","name":"난임·계류유산 치료"},{"@type":"MedicalTherapy","name":"산후조리·산후보약"},{"@type":"MedicalTherapy","name":"갱년기증후군 치료"}],"hasMap":"https://map.naver.com","publicAccess":true,"priceRange":"$$","currenciesAccepted":"KRW","paymentAccepted":"현금, 카드, 의료보험","employee":{"@type":"Physician","name":"수정한의원 원장","jobTitle":"한의학박사 침구학 전공","description":"32년 8체질 임상경험, 한의학박사(침구학 전공), 대한 한의학회·암한의학회 정회원","hasCredential":["한의학박사","침구학 전공","대한한의학회 정회원","암한의학회 정회원"]},"sameAs":["https://www.8chejil-sujeong.com"]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"수정한의원","item":"https://www.8chejil-sujeong.com"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"수정한의원은 어디에 있나요?","acceptedAnswer":{"@type":"Answer","text":"서울시 노원구 동일로 1374 미산빌딩 6층(우리은행 사거리 투썸플레이스 건물 6층)에 있습니다. 7호선 노원역 5번 출구에서 백병원 방향으로 약 300m입니다."}},{"@type":"Question","name":"진료시간과 전화번호는 어떻게 되나요?","acceptedAnswer":{"@type":"Answer","text":"월·화·금 09:00–19:00, 수요일 09:00–20:00(야간진료), 목요일 09:00–13:00, 토요일 09:00–16:00이며 일요일·공휴일은 휴진입니다. 점심시간은 13:00–14:00이고, 전화는 02-932-3815입니다."}},{"@type":"Question","name":"8체질 진단이란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"사람의 몸을 8가지 체질로 나누어 체질마다 강한 장기와 약한 장기가 다르다고 보는 진단·치료 방식입니다. 수정한의원은 원장이 직접 맥진으로 체질을 진단하고, 그 체질에 맞춰 침치료와 한약 처방을 진행합니다."}},{"@type":"Question","name":"수정한의원에서는 어떤 질환을 진료하나요?","acceptedAnswer":{"@type":"Answer","text":"구안와사·안면마비, 만성 편두통, 대상포진후 신경통, 천식, 궤양성대장염, 신부전 같은 특설 클리닉과 함께 자율신경·뇌신경(두통·어지럼증·이명·불면증·공황장애), 소화기, 피부·호흡기(아토피·비염), 척추·관절(허리디스크·척추관협착증·무릎관절염·오십견), 여성.소아(생리통·난임·산후조리·갱년기·소아성장) 클리닉을 운영합니다."}},{"@type":"Question","name":"원장님은 어떤 분인가요?","acceptedAnswer":{"@type":"Answer","text":"한의학박사(침구학 전공)로 1995년 개원해 30년간 8체질 임상을 이어오고 있으며, 대한한의학회와 암한의학회 정회원입니다. 모든 환자를 원장이 직접 진료합니다."}},{"@type":"Question","name":"실제 치료 후기는 어디에서 볼 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"치료후기 페이지에서 환자분들의 자필 후기와 네이버 후기를 척추·관절, 다이어트, 뇌신경, 면역·대사, 여성질환, 만성 편두통, 천식, 피부, 구안와사 분류별로 볼 수 있습니다. 치료 결과는 개인마다 다를 수 있습니다."}},{"@type":"Question","name":"진료 예약은 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"전화(02-932-3815)로 문의하고 예약하실 수 있습니다. 홈페이지의 '전화 예약' 버튼을 누르면 바로 연결됩니다."}}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"수정한의원은 어디에 있나요?","acceptedAnswer":{"@type":"Answer","text":"서울시 노원구 동일로 1374 미산빌딩 6층(우리은행 사거리 투썸플레이스 건물 6층)에 있습니다. 7호선 노원역 5번 출구에서 백병원 방향으로 약 300m입니다."}},{"@type":"Question","name":"진료시간과 전화번호는 어떻게 되나요?","acceptedAnswer":{"@type":"Answer","text":"월·화·금 09:00–19:00, 수요일 09:00–20:00(야간진료), 목요일 09:00–13:00, 토요일 09:00–16:00이며 일요일·공휴일은 휴진입니다. 점심시간은 13:00–14:00이고, 전화는 02-932-3815입니다."}},{"@type":"Question","name":"8체질 진단이란 무엇인가요?","acceptedAnswer":{"@type":"Answer","text":"사람의 몸을 8가지 체질로 나누어 체질마다 강한 장기와 약한 장기가 다르다고 보는 진단·치료 방식입니다. 수정한의원은 원장이 직접 맥진으로 체질을 진단하고, 그 체질에 맞춰 침치료와 한약 처방을 진행합니다."}},{"@type":"Question","name":"수정한의원에서는 어떤 질환을 진료하나요?","acceptedAnswer":{"@type":"Answer","text":"구안와사·안면마비, 만성 편두통, 대상포진후 신경통, 천식, 궤양성대장염, 신부전 같은 특설 클리닉과 함께 자율신경·뇌신경(두통·어지럼증·이명·불면증·공황장애), 소화기, 피부·호흡기(아토피·비염), 척추·관절(허리디스크·척추관협착증·무릎관절염·오십견), 여성.소아(생리통·난임·산후조리·갱년기·소아성장) 클리닉을 운영합니다."}},{"@type":"Question","name":"원장님은 어떤 분인가요?","acceptedAnswer":{"@type":"Answer","text":"한의학박사(침구학 전공)로 1995년 개원해 32년간 8체질 임상을 이어오고 있으며, 대한한의학회와 암한의학회 정회원입니다. 모든 환자를 원장이 직접 진료합니다."}},{"@type":"Question","name":"실제 치료 후기는 어디에서 볼 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"치료후기 페이지에서 환자분들의 자필 후기와 네이버 후기를 척추·관절, 다이어트, 뇌신경, 면역·대사, 여성질환, 만성 편두통, 천식, 피부, 구안와사 분류별로 볼 수 있습니다. 치료 결과는 개인마다 다를 수 있습니다."}},{"@type":"Question","name":"진료 예약은 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"전화(02-932-3815)로 문의하고 예약하실 수 있습니다. 홈페이지의 '전화 예약' 버튼을 누르면 바로 연결됩니다."}}]}</script>
 
   <link rel="icon" href="/favicon.ico"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -332,7 +332,7 @@ export const homePage = `<!DOCTYPE html>
   <div class="hero-content">
     <div class="hero-badge">
       <span style="white-space:nowrap"><i class="fas fa-circle-check"></i> 1995년 개원</span>
-      <span style="white-space:nowrap"><i class="fas fa-circle-check"></i> 30년 8체질 임상</span>
+      <span style="white-space:nowrap"><i class="fas fa-circle-check"></i> 32년 8체질 임상</span>
       <span style="white-space:nowrap"><i class="fas fa-circle-check"></i> 한의학박사 침구학 전공</span>
     </div>
     <h1 class="hero-title">
@@ -367,7 +367,7 @@ export const homePage = `<!DOCTYPE html>
       <div class="core-icon"><i class="fas fa-person-rays"></i></div>
       <div class="core-text">
         <strong>정확한 8체질 진단</strong>
-        <span>한의학박사 30년 임상</span>
+        <span>한의학박사 32년 임상</span>
       </div>
     </div>
     <div class="core-divider"></div>
@@ -414,7 +414,7 @@ export const homePage = `<!DOCTYPE html>
           수정한의원은 단순히 증상을 완화하는 것이 아니라,
           <strong>8체질 의학의 정밀한 진단</strong>을 통해 질환의 근본 원인을 파악하고
           체질에 맞는 통합 치료를 제공합니다. 사람마다 타고난 체질이 다르고, 같은 병이라도
-          체질에 따라 원인과 치료 방법이 달라집니다. 수정한의원은 이 원리를 30년 임상에서
+          체질에 따라 원인과 치료 방법이 달라집니다. 수정한의원은 이 원리를 32년 임상에서
           직접 확인하며, 환자 한 분 한 분께 맞춤화된 진료를 실천해 왔습니다.
         </p>
         <div class="pos-points">
@@ -428,7 +428,7 @@ export const homePage = `<!DOCTYPE html>
           <div class="pos-point">
             <div class="pp-icon green"><i class="fas fa-check"></i></div>
             <div>
-              <strong>30년 임상경험의 정통 8체질</strong>
+              <strong>32년 임상경험의 정통 8체질</strong>
               <p>한의학박사(침구학 전공)가 직접 진단하고, 체질별 맞춤 한약을 처방합니다. 단순 처방 프로토콜이 아닌 개인 맥진과 임상 데이터를 토대로 한 정밀 진단이 기반입니다.</p>
             </div>
           </div>
@@ -436,13 +436,13 @@ export const homePage = `<!DOCTYPE html>
             <div class="pp-icon green"><i class="fas fa-check"></i></div>
             <div>
               <strong>구안와사·디스크·아토피·공황장애 — 23,125건 임상 데이터</strong>
-              <p>1995년 개원 이래 30년간 쌓은 23,125건 이상의 체질 진단 임상 데이터를 바탕으로, 구안와사·허리디스크·아토피·공황장애 등 각 질환별 체질 치료 효과를 검증해 왔습니다.</p>
+              <p>1995년 개원 이래 32년간 쌓은 23,125건 이상의 체질 진단 임상 데이터를 바탕으로, 구안와사·허리디스크·아토피·공황장애 등 각 질환별 체질 치료 효과를 검증해 왔습니다.</p>
             </div>
           </div>
         </div>
       </div>
       <div class="pos-img-col">
-        <img src="/static/profile-original.jpg" alt="수정한의원 8체질 진료 모습 - 노원구 상계동 한의원 30년 임상" title="수정한의원 8체질 진료 모습" class="pos-img" loading="lazy"/>
+        <img src="/static/profile-original.jpg" alt="수정한의원 8체질 진료 모습 - 노원구 상계동 한의원 32년 임상" title="수정한의원 8체질 진료 모습" class="pos-img" loading="lazy"/>
       </div>
     </div>
   </div>
@@ -458,11 +458,11 @@ export const homePage = `<!DOCTYPE html>
         <h2 class="stats-title">23,125건 이상 축척된<br/>정확한 체질진단</h2>
         <div class="stats-divider"></div>
         <div class="stats-body">
-          <p>지난 30년간</p>
+          <p>지난 32년간</p>
           <p>8체질 진단을 기반으로 만성통증과 난치질환을 치료해 왔습니다.</p>
           <p class="stats-emphasis">정확한 체질 진단은 효과적인 치료의 시작입니다.</p>
           <p>침구학 전공 한의학박사의 맥진과</p>
-          <p>최신의료장비와 30년 임상에서 축적된 체질진단 프로세스로 정밀 진단합니다.</p>
+          <p>최신의료장비와 32년 임상에서 축적된 체질진단 프로세스로 정밀 진단합니다.</p>
         </div>
       </div>
       <div class="stats-num-col">
@@ -563,11 +563,11 @@ export const homePage = `<!DOCTYPE html>
         <div class="sp-card-body">
           <div class="sp-card-icon"><i class="fas fa-person-rays"></i></div>
           <h3>정확한 8체질 진단</h3>
-          <p>8체질 전문 한의학박사가 30년 임상경험과 최신 의료장비로 정확한 체질과 병의 근본 원인을 진단합니다.</p>
+          <p>8체질 전문 한의학박사가 32년 임상경험과 최신 의료장비로 정확한 체질과 병의 근본 원인을 진단합니다.</p>
           <ul class="sp-list">
             <li><i class="fas fa-check-circle"></i> 8체질 전문 한의학박사 직접 진료</li>
             <li><i class="fas fa-check-circle"></i> 최신 의료장비 활용 정밀 진단</li>
-            <li><i class="fas fa-check-circle"></i> 30년 체질진단 임상 노하우</li>
+            <li><i class="fas fa-check-circle"></i> 32년 체질진단 임상 노하우</li>
           </ul>
           <span class="sp-link">자세히 보기 <i class="fas fa-arrow-right"></i></span>
         </div>
@@ -644,7 +644,7 @@ export const homePage = `<!DOCTYPE html>
         <div class="value-icon"><i class="fas fa-star"></i></div>
         <div class="value-num">05</div>
         <h4>뛰어난 의술</h4>
-        <p>30년 임상과 지속적 연구로 최선의 치료를 합니다</p>
+        <p>32년 임상과 지속적 연구로 최선의 치료를 합니다</p>
       </div>
     </div>
   </div>
@@ -700,7 +700,7 @@ export const homePage = `<!DOCTYPE html>
     <div class="doctor-grid">
       <div class="doctor-img-col">
         <div class="doctor-img-wrap">
-          <img src="/static/doctor1.jpg" alt="수정한의원 원장 - 한의학박사 침구학 전공 30년 8체질 임상경험" title="수정한의원 원장 - 한의학박사" class="doctor-img" loading="lazy"/>
+          <img src="/static/doctor1.jpg" alt="수정한의원 원장 - 한의학박사 침구학 전공 32년 8체질 임상경험" title="수정한의원 원장 - 한의학박사" class="doctor-img" loading="lazy"/>
         </div>
         <div class="doctor-img-caption">
           <strong>수정한의원 원장</strong>
@@ -717,12 +717,12 @@ export const homePage = `<!DOCTYPE html>
         <p class="doctor-desc">
           1995년 서울 노원구 상계동에 개원한 이래, 정통 8체질의학을 바탕으로
           수많은 환자분들의 건강 회복을 도와왔습니다.
-          한의학박사(침구학 전공)로서 30년간 쌓아온 임상경험과
+          한의학박사(침구학 전공)로서 32년간 쌓아온 임상경험과
           최신 의료장비를 통해 정확한 체질 진단을 시행합니다.
         </p>
         <div class="doctor-career">
           <div class="career-item"><i class="fas fa-circle-check"></i> 한의학박사 침구학 전공</div>
-          <div class="career-item"><i class="fas fa-circle-check"></i> 8체질 전문 30년 임상</div>
+          <div class="career-item"><i class="fas fa-circle-check"></i> 8체질 전문 32년 임상</div>
           <div class="career-item"><i class="fas fa-circle-check"></i> 대한 한의학회·암한의학회 정회원</div>
           <div class="career-item"><i class="fas fa-circle-check"></i> 한방척추관절·피부비만학회 정회원</div>
           <div class="career-item"><i class="fas fa-circle-check"></i> FCST 턱관절통합의학 전문과정 수료</div>
@@ -956,7 +956,7 @@ export const homePage = `<!DOCTYPE html>
       <div class="home-review-stats-row">
         <span><i class="fas fa-pencil-alt"></i> 자필 후기 포함 총 <strong>247건</strong></span>
         <span><i class="fas fa-star"></i> 평균 만족도 <strong>4.9점</strong></span>
-        <span><i class="fas fa-clock"></i> 30년 임상</span>
+        <span><i class="fas fa-clock"></i> 32년 임상</span>
       </div>
       <a href="/reviews" class="btn-review-all">
         <i class="fas fa-book-open"></i> 치료후기 전체 보기
@@ -1027,7 +1027,7 @@ export const homePage = `<!DOCTYPE html>
       <details class="faq-item"><summary>진료시간과 전화번호는 어떻게 되나요?</summary><div class="faq-answer"><p>월·화·금 09:00–19:00, 수요일 09:00–20:00(야간진료), 목요일 09:00–13:00, 토요일 09:00–16:00이며 일요일·공휴일은 휴진입니다. 점심시간은 13:00–14:00이고, 전화는 02-932-3815입니다.</p></div></details>
       <details class="faq-item"><summary>8체질 진단이란 무엇인가요?</summary><div class="faq-answer"><p>사람의 몸을 8가지 체질로 나누어 체질마다 강한 장기와 약한 장기가 다르다고 보는 진단·치료 방식입니다. 수정한의원은 원장이 직접 맥진으로 체질을 진단하고, 그 체질에 맞춰 침치료와 한약 처방을 진행합니다.</p></div></details>
       <details class="faq-item"><summary>수정한의원에서는 어떤 질환을 진료하나요?</summary><div class="faq-answer"><p>구안와사·안면마비, 만성 편두통, 대상포진후 신경통, 천식, 궤양성대장염, 신부전 같은 특설 클리닉과 함께 자율신경·뇌신경(두통·어지럼증·이명·불면증·공황장애), 소화기, 피부·호흡기(아토피·비염), 척추·관절(허리디스크·척추관협착증·무릎관절염·오십견), 여성.소아(생리통·난임·산후조리·갱년기·소아성장) 클리닉을 운영합니다.</p></div></details>
-      <details class="faq-item"><summary>원장님은 어떤 분인가요?</summary><div class="faq-answer"><p>한의학박사(침구학 전공)로 1995년 개원해 30년간 8체질 임상을 이어오고 있으며, 대한한의학회와 암한의학회 정회원입니다. 모든 환자를 원장이 직접 진료합니다.</p></div></details>
+      <details class="faq-item"><summary>원장님은 어떤 분인가요?</summary><div class="faq-answer"><p>한의학박사(침구학 전공)로 1995년 개원해 32년간 8체질 임상을 이어오고 있으며, 대한한의학회와 암한의학회 정회원입니다. 모든 환자를 원장이 직접 진료합니다.</p></div></details>
       <details class="faq-item"><summary>실제 치료 후기는 어디에서 볼 수 있나요?</summary><div class="faq-answer"><p>치료후기 페이지에서 환자분들의 자필 후기와 네이버 후기를 척추·관절, 다이어트, 뇌신경, 면역·대사, 여성질환, 만성 편두통, 천식, 피부, 구안와사 분류별로 볼 수 있습니다. 치료 결과는 개인마다 다를 수 있습니다.</p></div></details>
       <details class="faq-item"><summary>진료 예약은 어떻게 하나요?</summary><div class="faq-answer"><p>전화(02-932-3815)로 문의하고 예약하실 수 있습니다. 홈페이지의 &#x27;전화 예약&#x27; 버튼을 누르면 바로 연결됩니다.</p></div></details>
     </div>
@@ -1150,7 +1150,7 @@ export const homePage = `<!DOCTYPE html>
         </div>
         <p class="footer-slogan">"잘 낫지 않는 병에 답을 찾습니다"</p>
         <div class="footer-meta">
-          <p>1995년 개원 | 30년 8체질 임상경험</p>
+          <p>1995년 개원 | 32년 8체질 임상경험</p>
           <p>난치질환·만성통증 전문</p>
         </div>
         <div class="footer-sns">

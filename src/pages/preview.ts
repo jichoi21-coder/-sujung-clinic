@@ -259,7 +259,7 @@ export function previewPage(): string {
       <div class="ph-content">
         <div class="ph-badge">
           <i class="fas fa-circle-check"></i> 1995년 개원 &nbsp;
-          <i class="fas fa-circle-check"></i> 30년 8체질 임상 &nbsp;
+          <i class="fas fa-circle-check"></i> 32년 8체질 임상 &nbsp;
           <i class="fas fa-circle-check"></i> 서울 노원구
         </div>
         <h1 class="ph-title">
@@ -314,7 +314,7 @@ export function previewPage(): string {
       <div class="ph-content">
         <div class="ph-badge">
           <i class="fas fa-circle-check"></i> 1995년 개원&nbsp;&nbsp;
-          <i class="fas fa-circle-check"></i> 30년 8체질 임상&nbsp;&nbsp;
+          <i class="fas fa-circle-check"></i> 32년 8체질 임상&nbsp;&nbsp;
           <i class="fas fa-circle-check"></i> 서울 노원구
         </div>
         <h1 class="ph-title">
@@ -351,7 +351,7 @@ export function previewPage(): string {
           <p>
             수정한의원 원장은 단순히 병을 치료하는 것을 넘어,
             <strong>바른 진료술과 인류의 건강</strong>에 이바지하는
-            의료인이 되고자 30년간 8체질 임상에 헌신해왔습니다.
+            의료인이 되고자 32년간 8체질 임상에 헌신해왔습니다.
           </p>
           <p>
             삶에 기여하는 건강한 의술로, 환자 한 분 한 분을
