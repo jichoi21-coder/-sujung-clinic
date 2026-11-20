@@ -1191,7 +1191,7 @@ export const clinic_specialPage = `<!DOCTYPE html>
                   <strong>빔레이 파동요법은 8체질 치료에 더하는 보조 축입니다.</strong><br/>
                   로열 레이몬드 라이프(Royal Raymond Rife)의 이론에 기반한 비침습 저에너지 전자기장 요법으로, 신장 기능을 대신하는 치료가 아니라 침·한약과 함께 몸의 순환과 컨디션을 끌어올리는 데 씁니다.
                 </div>
-                <div class="auto-flow-box"><strong>치료 목표는 두 가지입니다.</strong><br/>남아 있는 신기능을 지키며 악화 속도를 늦추면서 최종적으로 신기능을 회복하고,<br/>피로·입맛 저하·부종·가려움 같은 동반 불편을 줄여 일상을 유지하게 하는 것입니다.</div>
+                <div class="auto-flow-box"><strong>치료 목표는 두 가지입니다.</strong><br/>남아 있는 신기능을 지키며 악화 속도를 늦추면서 최종적으로 신기능 회복을 목표로 하고,<br/>피로·입맛 저하·부종·가려움 같은 동반 불편을 줄여 일상을 유지하게 하는 것입니다.</div>
                 <div class="auto-stat-box">
                   <span class="auto-stat-icon">📑</span>
                   <span>치료 중에는 <strong>크레아티닌·BUN·eGFR·칼륨·간수치</strong>를 정기적으로 확인하며 처방을 조정합니다. 칼륨과 간수치의 안전성을 우선해 약재를 고르고, 이상 수치가 확인되면 즉시 처방을 바꿉니다.</span>
