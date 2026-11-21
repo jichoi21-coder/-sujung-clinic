@@ -426,13 +426,13 @@ export function reviewsPage(isLoggedIn: boolean, user?: { name: string; provider
         <span>SNS 로그인으로 간편하게 로그인하실 수 있습니다.</span>
       </p>
       <div class="review-login-btns">
-        <a href="/auth/naver" class="review-login-btn review-login-naver">
-          <img src="/static/naver-logo.svg" alt="N" class="review-login-logo-img">
-          네이버 로그인
-        </a>
         <a href="/auth/kakao" class="review-login-btn review-login-kakao">
           <img src="/static/kakao-logo.svg" alt="TALK" class="review-login-logo-img">
           카카오 로그인
+        </a>
+        <a href="/auth/naver" class="review-login-btn review-login-naver">
+          <img src="/static/naver-logo.svg" alt="N" class="review-login-logo-img">
+          네이버 로그인
         </a>
         <a href="/auth/google" class="review-login-btn review-login-google">
           <img src="/static/google-logo.svg" alt="G" class="review-login-logo-img">
