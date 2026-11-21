@@ -121,7 +121,7 @@ app.get('/auth/naver', (c) => {
   const params = new URLSearchParams({
     response_type: 'code',
     client_id: c.env.NAVER_CLIENT_ID,
-    redirect_uri: 'https://www.8chejil-sujeong.com/auth/naver/callback',
+    redirect_uri: 'https://8chejil-sujeong.com/auth/naver/callback',
     state,
   })
   return c.redirect(`https://nid.naver.com/oauth2.0/authorize?${params}`)
@@ -182,7 +182,7 @@ app.get('/auth/naver/callback', async (c) => {
 app.get('/auth/kakao', (c) => {
   const params = new URLSearchParams({
     client_id: c.env.KAKAO_CLIENT_ID,
-    redirect_uri: 'https://www.8chejil-sujeong.com/auth/kakao/callback',
+    redirect_uri: 'https://8chejil-sujeong.com/auth/kakao/callback',
     response_type: 'code',
   })
   return c.redirect(`https://kauth.kakao.com/oauth/authorize?${params}`)
@@ -203,7 +203,7 @@ app.get('/auth/kakao/callback', async (c) => {
     body: new URLSearchParams({
       grant_type: 'authorization_code',
       client_id: c.env.KAKAO_CLIENT_ID,
-      redirect_uri: 'https://www.8chejil-sujeong.com/auth/kakao/callback',
+      redirect_uri: 'https://8chejil-sujeong.com/auth/kakao/callback',
       code,
     }),
   })
